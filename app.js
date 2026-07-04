@@ -2,11 +2,11 @@
   const STORAGE_KEY = "ildeung_battery_platform_db_v1";
 
   const FILES = {
-    brands: "data/brands.json",
-    vehicleModels: "data/vehicle_models.json",
-    vehicleVariants: "data/vehicle_variants.json",
-    parts: "data/parts.json",
-    vehiclePartMatches: "data/vehicle_part_matches.json"
+    brands: "brands.json",
+    vehicleModels: "vehicle_models.json",
+    vehicleVariants: "vehicle_variants.json",
+    parts: "parts.json",
+    vehiclePartMatches: "vehicle_part_matches.json"
   };
 
   const EXPORT_NAMES = {
