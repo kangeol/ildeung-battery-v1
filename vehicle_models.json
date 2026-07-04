@@ -1,0 +1,222 @@
+[
+  {
+    "id": "hyundai_sonata_dn8",
+    "brandId": "hyundai",
+    "nameKr": "쏘나타",
+    "nameEn": "Sonata",
+    "generation": "DN8",
+    "aliases": ["쏘나타", "소나타", "SONATA", "Sonata", "sonata", "DN8", "쏘나타DN8", "소나타DN8"],
+    "startYear": 2019,
+    "endYear": 2023,
+    "isActive": true
+  },
+  {
+    "id": "hyundai_grandeur_ig",
+    "brandId": "hyundai",
+    "nameKr": "그랜저",
+    "nameEn": "Grandeur",
+    "generation": "IG",
+    "aliases": ["그랜저", "그랜져", "GRANDEUR", "Grandeur", "grandeur", "IG", "그랜저IG", "그랜져IG"],
+    "startYear": 2016,
+    "endYear": 2019,
+    "isActive": true
+  },
+  {
+    "id": "hyundai_avante_cn7",
+    "brandId": "hyundai",
+    "nameKr": "아반떼",
+    "nameEn": "Avante",
+    "generation": "CN7",
+    "aliases": ["아반떼", "아반테", "AVANTE", "Avante", "avante", "ELANTRA", "Elantra", "elantra", "CN7", "아반떼CN7"],
+    "startYear": 2020,
+    "endYear": 2026,
+    "isActive": true
+  },
+  {
+    "id": "hyundai_santafe_tm",
+    "brandId": "hyundai",
+    "nameKr": "싼타페",
+    "nameEn": "Santa Fe",
+    "generation": "TM",
+    "aliases": ["싼타페", "산타페", "SANTA FE", "Santa Fe", "santa fe", "SANTAFE", "SantaFe", "santafe", "TM", "싼타페TM"],
+    "startYear": 2018,
+    "endYear": 2023,
+    "isActive": true
+  },
+  {
+    "id": "kia_k5_dl3",
+    "brandId": "kia",
+    "nameKr": "K5",
+    "nameEn": "K5",
+    "generation": "DL3",
+    "aliases": ["K5", "k5", "케이파이브", "DL3", "K5DL3", "k5dl3"],
+    "startYear": 2019,
+    "endYear": 2025,
+    "isActive": true
+  },
+  {
+    "id": "kia_k7_yg",
+    "brandId": "kia",
+    "nameKr": "K7",
+    "nameEn": "K7",
+    "generation": "YG",
+    "aliases": ["K7", "k7", "케이세븐", "YG", "K7YG", "k7yg"],
+    "startYear": 2016,
+    "endYear": 2021,
+    "isActive": true
+  },
+  {
+    "id": "kia_carnival_ka4",
+    "brandId": "kia",
+    "nameKr": "카니발",
+    "nameEn": "Carnival",
+    "generation": "KA4",
+    "aliases": ["카니발", "CARNIVAL", "Carnival", "carnival", "SEDONA", "Sedona", "sedona", "KA4", "카니발KA4"],
+    "startYear": 2020,
+    "endYear": 2026,
+    "isActive": true
+  },
+  {
+    "id": "kia_sorento_mq4",
+    "brandId": "kia",
+    "nameKr": "쏘렌토",
+    "nameEn": "Sorento",
+    "generation": "MQ4",
+    "aliases": ["쏘렌토", "소렌토", "SORENTO", "Sorento", "sorento", "MQ4", "쏘렌토MQ4", "소렌토MQ4"],
+    "startYear": 2020,
+    "endYear": 2026,
+    "isActive": true
+  },
+  {
+    "id": "genesis_g80_rg3",
+    "brandId": "genesis",
+    "nameKr": "G80",
+    "nameEn": "G80",
+    "generation": "RG3",
+    "aliases": ["G80", "g80", "제네시스G80", "GENESIS G80", "Genesis G80", "genesis g80", "RG3", "G80RG3"],
+    "startYear": 2020,
+    "endYear": 2026,
+    "isActive": true
+  },
+  {
+    "id": "genesis_gv80_jx1",
+    "brandId": "genesis",
+    "nameKr": "GV80",
+    "nameEn": "GV80",
+    "generation": "JX1",
+    "aliases": ["GV80", "gv80", "제네시스GV80", "GENESIS GV80", "Genesis GV80", "genesis gv80", "JX1", "GV80JX1"],
+    "startYear": 2020,
+    "endYear": 2026,
+    "isActive": true
+  },
+  {
+    "id": "bmw_320i_g20",
+    "brandId": "bmw",
+    "nameKr": "320i",
+    "nameEn": "320i",
+    "generation": "G20",
+    "aliases": ["320i", "320I", "BMW320i", "BMW 320i", "bmw 320i", "3시리즈", "3 Series", "G20", "320iG20"],
+    "startYear": 2019,
+    "endYear": 2024,
+    "isActive": true
+  },
+  {
+    "id": "bmw_520i_g30",
+    "brandId": "bmw",
+    "nameKr": "520i",
+    "nameEn": "520i",
+    "generation": "G30",
+    "aliases": ["520i", "520I", "BMW520i", "BMW 520i", "bmw 520i", "5시리즈", "5 Series", "G30", "520iG30"],
+    "startYear": 2017,
+    "endYear": 2023,
+    "isActive": true
+  },
+  {
+    "id": "bmw_530i_g30",
+    "brandId": "bmw",
+    "nameKr": "530i",
+    "nameEn": "530i",
+    "generation": "G30",
+    "aliases": ["530i", "530I", "BMW530i", "BMW 530i", "bmw 530i", "5시리즈", "5 Series", "G30", "530iG30"],
+    "startYear": 2017,
+    "endYear": 2023,
+    "isActive": true
+  },
+  {
+    "id": "mercedes_benz_e300_w213",
+    "brandId": "mercedes_benz",
+    "nameKr": "E300",
+    "nameEn": "E300",
+    "generation": "W213",
+    "aliases": ["E300", "e300", "이300", "벤츠E300", "BENZ E300", "Mercedes E300", "mercedes e300", "E클래스", "E Class", "W213"],
+    "startYear": 2016,
+    "endYear": 2020,
+    "isActive": true
+  },
+  {
+    "id": "mercedes_benz_c200_w205",
+    "brandId": "mercedes_benz",
+    "nameKr": "C200",
+    "nameEn": "C200",
+    "generation": "W205",
+    "aliases": ["C200", "c200", "씨200", "벤츠C200", "BENZ C200", "Mercedes C200", "mercedes c200", "C클래스", "C Class", "W205"],
+    "startYear": 2014,
+    "endYear": 2021,
+    "isActive": true
+  },
+  {
+    "id": "audi_a6_c8",
+    "brandId": "audi",
+    "nameKr": "A6",
+    "nameEn": "A6",
+    "generation": "C8",
+    "aliases": ["A6", "a6", "아우디A6", "AUDI A6", "Audi A6", "audi a6", "에이식스", "C8", "A6C8"],
+    "startYear": 2019,
+    "endYear": 2024,
+    "isActive": true
+  },
+  {
+    "id": "volkswagen_tiguan_2nd",
+    "brandId": "volkswagen",
+    "nameKr": "티구안",
+    "nameEn": "Tiguan",
+    "generation": "2세대",
+    "aliases": ["티구안", "TIGUAN", "Tiguan", "tiguan", "폭스바겐티구안", "Volkswagen Tiguan", "2세대", "2nd", "second generation"],
+    "startYear": 2016,
+    "endYear": 2023,
+    "isActive": true
+  },
+  {
+    "id": "peugeot_5008_2nd",
+    "brandId": "peugeot",
+    "nameKr": "5008",
+    "nameEn": "5008",
+    "generation": "2세대",
+    "aliases": ["5008", "푸조5008", "PEUGEOT 5008", "Peugeot 5008", "peugeot 5008", "2세대", "2nd", "second generation"],
+    "startYear": 2017,
+    "endYear": 2024,
+    "isActive": true
+  },
+  {
+    "id": "chevrolet_all_new_malibu_v400",
+    "brandId": "chevrolet",
+    "nameKr": "올뉴말리부",
+    "nameEn": "All New Malibu",
+    "generation": "V400",
+    "aliases": ["올뉴말리부", "올 뉴 말리부", "더뉴말리부", "말리부", "MALIBU", "Malibu", "malibu", "All New Malibu", "V400", "말리부V400"],
+    "startYear": 2016,
+    "endYear": 2022,
+    "isActive": true
+  },
+  {
+    "id": "renault_korea_qm6_hzg",
+    "brandId": "renault_korea",
+    "nameKr": "QM6",
+    "nameEn": "QM6",
+    "generation": "HZG",
+    "aliases": ["QM6", "qm6", "르노QM6", "르노삼성QM6", "RENAULT QM6", "Renault QM6", "renault qm6", "HZG", "QM6HZG"],
+    "startYear": 2016,
+    "endYear": 2026,
+    "isActive": true
+  }
+]

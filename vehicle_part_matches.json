@@ -1,0 +1,202 @@
+[
+  {
+    "id": "match_001",
+    "vehicleVariantId": "hyundai_sonata_dn8_2020_gasoline",
+    "partId": "delkor_agm70",
+    "category": "battery",
+    "price": 170000,
+    "priority": 1,
+    "memo": "기본 추천 배터리",
+    "isActive": true
+  },
+  {
+    "id": "match_002",
+    "vehicleVariantId": "hyundai_grandeur_ig_2019_gasoline",
+    "partId": "delkor_agm80",
+    "category": "battery",
+    "price": 190000,
+    "priority": 1,
+    "memo": "중대형 세단 기본 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_003",
+    "vehicleVariantId": "hyundai_avante_cn7_2021_gasoline",
+    "partId": "delkor_din60",
+    "category": "battery",
+    "price": 120000,
+    "priority": 1,
+    "memo": "일반 가솔린 기본 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_004",
+    "vehicleVariantId": "hyundai_santafe_tm_2020_diesel",
+    "partId": "delkor_agm95",
+    "category": "battery",
+    "price": 230000,
+    "priority": 1,
+    "memo": "디젤 SUV 고용량 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_005",
+    "vehicleVariantId": "kia_k5_dl3_2021_gasoline",
+    "partId": "varta_agm70",
+    "category": "battery",
+    "price": 180000,
+    "priority": 1,
+    "memo": "가솔린 세단 AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_006",
+    "vehicleVariantId": "kia_k7_yg_2019_gasoline",
+    "partId": "varta_agm80",
+    "category": "battery",
+    "price": 200000,
+    "priority": 1,
+    "memo": "중대형 세단 AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_007",
+    "vehicleVariantId": "kia_carnival_ka4_2021_diesel",
+    "partId": "delkor_agm105",
+    "category": "battery",
+    "price": 270000,
+    "priority": 1,
+    "memo": "대형 RV 디젤 고용량 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_008",
+    "vehicleVariantId": "kia_sorento_mq4_2021_diesel",
+    "partId": "varta_agm95",
+    "category": "battery",
+    "price": 245000,
+    "priority": 1,
+    "memo": "디젤 SUV AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_009",
+    "vehicleVariantId": "genesis_g80_rg3_2021_gasoline",
+    "partId": "delkor_agm105",
+    "category": "battery",
+    "price": 275000,
+    "priority": 1,
+    "memo": "프리미엄 세단 고용량 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_010",
+    "vehicleVariantId": "genesis_gv80_jx1_2021_diesel",
+    "partId": "delkor_agm105",
+    "category": "battery",
+    "price": 280000,
+    "priority": 1,
+    "memo": "프리미엄 디젤 SUV 고용량 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_011",
+    "vehicleVariantId": "bmw_320i_g20_2020_gasoline",
+    "partId": "varta_agm80",
+    "category": "battery",
+    "price": 240000,
+    "priority": 1,
+    "memo": "수입 세단 AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_012",
+    "vehicleVariantId": "bmw_520i_g30_2020_gasoline",
+    "partId": "varta_agm95",
+    "category": "battery",
+    "price": 280000,
+    "priority": 1,
+    "memo": "수입 중형 세단 AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_013",
+    "vehicleVariantId": "bmw_530i_g30_2018_gasoline",
+    "partId": "varta_agm95",
+    "category": "battery",
+    "price": 285000,
+    "priority": 1,
+    "memo": "수입 중형 세단 고성능 AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_014",
+    "vehicleVariantId": "mercedes_benz_e300_w213_2019_gasoline",
+    "partId": "varta_agm95",
+    "category": "battery",
+    "price": 290000,
+    "priority": 1,
+    "memo": "수입 프리미엄 세단 AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_015",
+    "vehicleVariantId": "mercedes_benz_c200_w205_2018_gasoline",
+    "partId": "varta_agm80",
+    "category": "battery",
+    "price": 250000,
+    "priority": 1,
+    "memo": "수입 준중형 세단 AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_016",
+    "vehicleVariantId": "audi_a6_c8_2020_gasoline",
+    "partId": "varta_agm95",
+    "category": "battery",
+    "price": 295000,
+    "priority": 1,
+    "memo": "수입 중형 세단 AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_017",
+    "vehicleVariantId": "volkswagen_tiguan_2nd_2020_diesel",
+    "partId": "rocket_agm80",
+    "category": "battery",
+    "price": 230000,
+    "priority": 1,
+    "memo": "수입 디젤 SUV AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_018",
+    "vehicleVariantId": "peugeot_5008_2nd_2022_diesel",
+    "partId": "rocket_agm80",
+    "category": "battery",
+    "price": 235000,
+    "priority": 1,
+    "memo": "수입 디젤 SUV AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_019",
+    "vehicleVariantId": "chevrolet_all_new_malibu_2020_gasoline",
+    "partId": "rocket_agm70",
+    "category": "battery",
+    "price": 175000,
+    "priority": 1,
+    "memo": "중형 가솔린 AGM 추천",
+    "isActive": true
+  },
+  {
+    "id": "match_020",
+    "vehicleVariantId": "renault_korea_qm6_2020_lpg",
+    "partId": "delkor_agm70",
+    "category": "battery",
+    "price": 165000,
+    "priority": 1,
+    "memo": "LPG SUV 기본 추천",
+    "isActive": true
+  }
+]

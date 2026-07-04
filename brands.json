@@ -1,0 +1,72 @@
+[
+  {
+    "id": "hyundai",
+    "nameKr": "현대",
+    "nameEn": "Hyundai",
+    "country": "KR",
+    "isActive": true
+  },
+  {
+    "id": "kia",
+    "nameKr": "기아",
+    "nameEn": "Kia",
+    "country": "KR",
+    "isActive": true
+  },
+  {
+    "id": "genesis",
+    "nameKr": "제네시스",
+    "nameEn": "Genesis",
+    "country": "KR",
+    "isActive": true
+  },
+  {
+    "id": "bmw",
+    "nameKr": "BMW",
+    "nameEn": "BMW",
+    "country": "DE",
+    "isActive": true
+  },
+  {
+    "id": "mercedes_benz",
+    "nameKr": "벤츠",
+    "nameEn": "Mercedes-Benz",
+    "country": "DE",
+    "isActive": true
+  },
+  {
+    "id": "audi",
+    "nameKr": "아우디",
+    "nameEn": "Audi",
+    "country": "DE",
+    "isActive": true
+  },
+  {
+    "id": "volkswagen",
+    "nameKr": "폭스바겐",
+    "nameEn": "Volkswagen",
+    "country": "DE",
+    "isActive": true
+  },
+  {
+    "id": "peugeot",
+    "nameKr": "푸조",
+    "nameEn": "Peugeot",
+    "country": "FR",
+    "isActive": true
+  },
+  {
+    "id": "chevrolet",
+    "nameKr": "쉐보레",
+    "nameEn": "Chevrolet",
+    "country": "US",
+    "isActive": true
+  },
+  {
+    "id": "renault_korea",
+    "nameKr": "르노",
+    "nameEn": "Renault Korea",
+    "country": "KR",
+    "isActive": true
+  }
+]

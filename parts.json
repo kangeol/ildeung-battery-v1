@@ -1,0 +1,112 @@
+[
+  {
+    "id": "delkor_din60",
+    "category": "battery",
+    "brand": "델코",
+    "manufacturer": "Clarios",
+    "name": "DIN60",
+    "spec": "DIN 60Ah",
+    "type": "DIN",
+    "capacityAh": 60,
+    "isActive": true
+  },
+  {
+    "id": "delkor_agm70",
+    "category": "battery",
+    "brand": "델코",
+    "manufacturer": "Clarios",
+    "name": "AGM70",
+    "spec": "AGM 70Ah",
+    "type": "AGM",
+    "capacityAh": 70,
+    "isActive": true
+  },
+  {
+    "id": "delkor_agm80",
+    "category": "battery",
+    "brand": "델코",
+    "manufacturer": "Clarios",
+    "name": "AGM80",
+    "spec": "AGM 80Ah",
+    "type": "AGM",
+    "capacityAh": 80,
+    "isActive": true
+  },
+  {
+    "id": "delkor_agm95",
+    "category": "battery",
+    "brand": "델코",
+    "manufacturer": "Clarios",
+    "name": "AGM95",
+    "spec": "AGM 95Ah",
+    "type": "AGM",
+    "capacityAh": 95,
+    "isActive": true
+  },
+  {
+    "id": "delkor_agm105",
+    "category": "battery",
+    "brand": "델코",
+    "manufacturer": "Clarios",
+    "name": "AGM105",
+    "spec": "AGM 105Ah",
+    "type": "AGM",
+    "capacityAh": 105,
+    "isActive": true
+  },
+  {
+    "id": "varta_agm70",
+    "category": "battery",
+    "brand": "바르타",
+    "manufacturer": "Clarios",
+    "name": "AGM70",
+    "spec": "AGM 70Ah",
+    "type": "AGM",
+    "capacityAh": 70,
+    "isActive": true
+  },
+  {
+    "id": "varta_agm80",
+    "category": "battery",
+    "brand": "바르타",
+    "manufacturer": "Clarios",
+    "name": "AGM80",
+    "spec": "AGM 80Ah",
+    "type": "AGM",
+    "capacityAh": 80,
+    "isActive": true
+  },
+  {
+    "id": "varta_agm95",
+    "category": "battery",
+    "brand": "바르타",
+    "manufacturer": "Clarios",
+    "name": "AGM95",
+    "spec": "AGM 95Ah",
+    "type": "AGM",
+    "capacityAh": 95,
+    "isActive": true
+  },
+  {
+    "id": "rocket_agm70",
+    "category": "battery",
+    "brand": "로케트",
+    "manufacturer": "Sebang Global Battery",
+    "name": "AGM70",
+    "spec": "AGM 70Ah",
+    "type": "AGM",
+    "capacityAh": 70,
+    "isActive": true
+  },
+  {
+    "id": "rocket_agm80",
+    "category": "battery",
+    "brand": "로케트",
+    "manufacturer": "Sebang Global Battery",
+    "name": "AGM80",
+    "spec": "AGM 80Ah",
+    "type": "AGM",
+    "capacityAh": 80,
+    "isActive": true
+  }
+]

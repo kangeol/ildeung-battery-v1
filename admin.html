@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DB 관리 | 일등밧데리</title>
+  <meta name="description" content="일등밧데리 차량 부품 검색 플랫폼 JSON DB 관리 화면입니다.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header compact">
+    <a class="brand" href="index.html" aria-label="일등밧데리 홈">
+      <span class="brand-mark">1</span>
+      <span>일등밧데리</span>
+    </a>
+    <nav class="nav-links" aria-label="주요 메뉴">
+      <a href="index.html">홈</a>
+      <a href="search.html">검색</a>
+    </nav>
+  </header>
+
+  <main class="page-shell admin-shell">
+    <section class="page-title">
+      <p class="eyebrow">Admin</p>
+      <h1>DB 관리</h1>
+      <p>수정 내용은 이 브라우저에 먼저 저장됩니다. 최종 반영은 JSON 내보내기 후 GitHub의 data 파일을 교체하면 됩니다.</p>
+    </section>
+
+    <section class="admin-summary" id="adminSummary" aria-live="polite"></section>
+
+    <section class="admin-grid">
+      <article class="admin-card wide">
+        <div class="card-heading">
+          <h2>데이터 보기</h2>
+          <select id="datasetSelect" aria-label="데이터셋 선택">
+            <option value="brands">brands.json</option>
+            <option value="vehicleModels">vehicle_models.json</option>
+            <option value="vehicleVariants">vehicle_variants.json</option>
+            <option value="parts">parts.json</option>
+            <option value="vehiclePartMatches">vehicle_part_matches.json</option>
+          </select>
+        </div>
+        <pre class="json-preview" id="dataPreview"></pre>
+      </article>
+
+      <article class="admin-card">
+        <h2>차량 추가</h2>
+        <form id="vehicleForm" class="stack-form">
+          <label>브랜드
+            <select id="vehicleBrandId" required></select>
+          </label>
+          <label>모델 ID
+            <input id="vehicleModelId" type="text" placeholder="hyundai_sonata_dn8" required>
+          </label>
+          <div class="form-row">
+            <label>차종명
+              <input id="vehicleNameKr" type="text" placeholder="쏘나타" required>
+            </label>
+            <label>영문명
+              <input id="vehicleNameEn" type="text" placeholder="Sonata">
+            </label>
+          </div>
+          <div class="form-row">
+            <label>세대
+              <input id="vehicleGeneration" type="text" placeholder="DN8">
+            </label>
+            <label>검색 별칭
+              <input id="vehicleAliases" type="text" placeholder="소나타, SONATA, sonata">
+            </label>
+          </div>
+          <div class="form-row">
+            <label>시작연도
+              <input id="vehicleStartYear" type="number" min="1980" max="2100" required>
+            </label>
+            <label>종료연도
+              <input id="vehicleEndYear" type="number" min="1980" max="2100" required>
+            </label>
+          </div>
+          <label>차량 상세 ID
+            <input id="vehicleVariantId" type="text" placeholder="hyundai_sonata_dn8_2020_gasoline" required>
+          </label>
+          <div class="form-row">
+            <label>연식
+              <input id="vehicleYear" type="number" min="1980" max="2100" required>
+            </label>
+            <label>연료
+              <input id="vehicleFuelType" type="text" placeholder="가솔린" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>엔진
+              <input id="vehicleEngine" type="text" placeholder="2.0">
+            </label>
+            <label>트림
+              <input id="vehicleTrim" type="text">
+            </label>
+          </div>
+          <div class="form-row">
+            <label>차체
+              <input id="vehicleBodyType" type="text" placeholder="세단">
+            </label>
+            <label>변속기
+              <input id="vehicleTransmission" type="text" placeholder="자동">
+            </label>
+          </div>
+          <label>표시명
+            <input id="vehicleDisplayName" type="text" placeholder="현대 쏘나타 DN8 2020년식 가솔린" required>
+          </label>
+          <label class="check-line">
+            <input id="vehicleIsActive" type="checkbox" checked>
+            활성 상태
+          </label>
+          <button class="btn primary full" type="submit">차량 저장</button>
+        </form>
+      </article>
+
+      <article class="admin-card">
+        <h2>부품 추가</h2>
+        <form id="partForm" class="stack-form">
+          <label>부품 ID
+            <input id="partId" type="text" placeholder="delkor_agm70" required>
+          </label>
+          <label>카테고리
+            <input id="partCategory" type="text" value="battery" required>
+          </label>
+          <div class="form-row">
+            <label>브랜드
+              <input id="partBrand" type="text" placeholder="델코" required>
+            </label>
+            <label>제조사
+              <input id="partManufacturer" type="text" placeholder="Clarios">
+            </label>
+          </div>
+          <div class="form-row">
+            <label>부품명
+              <input id="partName" type="text" placeholder="AGM70" required>
+            </label>
+            <label>규격
+              <input id="partSpec" type="text" placeholder="AGM 70Ah" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>타입
+              <input id="partType" type="text" placeholder="AGM">
+            </label>
+            <label>용량 Ah
+              <input id="partCapacityAh" type="number" min="0">
+            </label>
+          </div>
+          <label class="check-line">
+            <input id="partIsActive" type="checkbox" checked>
+            활성 상태
+          </label>
+          <button class="btn primary full" type="submit">부품 저장</button>
+        </form>
+      </article>
+
+      <article class="admin-card">
+        <h2>매칭 추가</h2>
+        <form id="matchForm" class="stack-form">
+          <label>매칭 ID
+            <input id="matchId" type="text" placeholder="match_021" required>
+          </label>
+          <label>차량 상세
+            <select id="matchVehicleVariantId" required></select>
+          </label>
+          <label>부품
+            <select id="matchPartId" required></select>
+          </label>
+          <div class="form-row">
+            <label>카테고리
+              <input id="matchCategory" type="text" value="battery" required>
+            </label>
+            <label>가격
+              <input id="matchPrice" type="number" min="0" step="1000" required>
+            </label>
+          </div>
+          <label>추천순위 priority
+            <input id="matchPriority" type="number" min="1" value="1" required>
+          </label>
+          <label>메모
+            <input id="matchMemo" type="text" placeholder="기본 추천 배터리">
+          </label>
+          <label class="check-line">
+            <input id="matchIsActive" type="checkbox" checked>
+            활성 상태
+          </label>
+          <button class="btn primary full" type="submit">매칭 저장</button>
+        </form>
+      </article>
+
+      <article class="admin-card wide">
+        <h2>가격 / priority / isActive 수정</h2>
+        <div class="table-wrap">
+          <table class="edit-table">
+            <thead>
+              <tr>
+                <th>차량</th>
+                <th>부품</th>
+                <th>가격</th>
+                <th>priority</th>
+                <th>활성</th>
+                <th>저장</th>
+              </tr>
+            </thead>
+            <tbody id="matchEditBody"></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="admin-card">
+        <h2>isActive 빠른 수정</h2>
+        <form id="activeForm" class="stack-form">
+          <label>데이터 종류
+            <select id="activeDataset">
+              <option value="brands">브랜드</option>
+              <option value="vehicleModels">차량 모델</option>
+              <option value="vehicleVariants">차량 상세</option>
+              <option value="parts">부품</option>
+              <option value="vehiclePartMatches">매칭</option>
+            </select>
+          </label>
+          <label>항목
+            <select id="activeItem"></select>
+          </label>
+          <label>상태
+            <select id="activeValue">
+              <option value="true">활성</option>
+              <option value="false">숨김</option>
+            </select>
+          </label>
+          <button class="btn primary full" type="submit">상태 저장</button>
+        </form>
+      </article>
+
+      <article class="admin-card">
+        <h2>JSON 내보내기</h2>
+        <p class="helper-text">현재 localStorage 기준 데이터를 JSON 파일로 내려받습니다.</p>
+        <div class="button-stack">
+          <button class="btn secondary" type="button" data-export="brands">brands.json</button>
+          <button class="btn secondary" type="button" data-export="vehicleModels">vehicle_models.json</button>
+          <button class="btn secondary" type="button" data-export="vehicleVariants">vehicle_variants.json</button>
+          <button class="btn secondary" type="button" data-export="parts">parts.json</button>
+          <button class="btn secondary" type="button" data-export="vehiclePartMatches">vehicle_part_matches.json</button>
+          <button class="btn primary" type="button" id="exportAll">전체 JSON 내보내기</button>
+          <button class="btn danger" type="button" id="resetLocal">localStorage 초기화</button>
+        </div>
+      </article>
+    </section>
+
+    <p class="helper-text admin-status" id="adminStatus" role="status" aria-live="polite">DB를 불러오는 중입니다.</p>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

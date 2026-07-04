@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>배터리 찾기 | 일등밧데리</title>
+  <meta name="description" content="차량 정보를 순서대로 선택해 일등밧데리 배터리 추천 결과와 교체가격을 확인합니다.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="customer-page search-page">
+  <div class="app-shell">
+    <header class="mobile-header search-header">
+      <a class="back-link" href="index.html" aria-label="홈으로 이동">‹ 홈</a>
+      <a class="brand-logo compact-brand-logo" href="index.html" aria-label="일등밧데리 홈">
+        <span class="logo-eyebrow">NO.1 BATTERY</span>
+        <span class="logo-line" aria-hidden="true"></span>
+        <strong>일등밧데리</strong>
+      </a>
+    </header>
+
+    <main class="search-main">
+      <section class="page-title">
+        <h1>배터리 찾기</h1>
+        <p>차량 정보를 순서대로 선택하세요.</p>
+      </section>
+
+      <form class="search-panel" id="batterySearchForm">
+        <div class="step-field">
+          <label for="brandSelect"><span>1</span> 제조사</label>
+          <select id="brandSelect" required>
+            <option value="">제조사 선택</option>
+          </select>
+        </div>
+        <div class="step-field">
+          <label for="modelSelect"><span>2</span> 차종</label>
+          <select id="modelSelect" required disabled>
+            <option value="">제조사를 먼저 선택</option>
+          </select>
+        </div>
+        <div class="step-field">
+          <label for="yearSelect"><span>3</span> 연식</label>
+          <select id="yearSelect" required disabled>
+            <option value="">차종을 먼저 선택</option>
+          </select>
+        </div>
+        <div class="step-field">
+          <label for="fuelSelect"><span>4</span> 연료</label>
+          <select id="fuelSelect" required disabled>
+            <option value="">연식을 먼저 선택</option>
+          </select>
+        </div>
+        <button class="btn primary full search-submit" type="submit">배터리 결과 보기</button>
+        <p class="helper-text" id="searchStatus" role="status" aria-live="polite">차량 정보를 불러오는 중입니다.</p>
+      </form>
+
+      <section class="result-panel" aria-labelledby="resultTitle">
+        <div class="result-heading">
+          <h2 id="resultTitle">추천 결과</h2>
+        </div>
+        <div class="empty-state" id="emptyState">
+          <strong>차량 정보를 선택해 주세요.</strong>
+          <p>선택한 차량에 맞는 배터리와 교체가격이 이곳에 표시됩니다.</p>
+        </div>
+        <div class="result-list" id="resultList"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
