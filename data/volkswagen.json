@@ -1,0 +1,682 @@
+[
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "CC",
+    "year": "12~17년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "뉴 CC",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "CC",
+    "year": "12~17년",
+    "fuel": "디젤 2WD",
+    "detailModel": "뉴 CC",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "CC",
+    "year": "12~17년",
+    "fuel": "디젤 4WD",
+    "detailModel": "뉴 CC",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "CC",
+    "year": "08~12년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "CC",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "CC",
+    "year": "08~12년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "CC",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "CC",
+    "year": "08~12년",
+    "fuel": "디젤 2WD",
+    "detailModel": "CC",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "22년~현재",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "골프 8세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "22년~현재",
+    "fuel": "디젤 2000cc",
+    "detailModel": "골프 8세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "13~19년",
+    "fuel": "가솔린 1600cc 이상",
+    "detailModel": "골프 7세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "13~19년",
+    "fuel": "가솔린 1600cc 이하",
+    "detailModel": "골프 7세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "13~19년",
+    "fuel": "디젤 1600cc 이상",
+    "detailModel": "골프 7세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "13~19년",
+    "fuel": "디젤 1600cc 이하",
+    "detailModel": "골프 7세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "08~14년",
+    "fuel": "가솔린 1600cc 이상",
+    "detailModel": "골프 6세대",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "08~14년",
+    "fuel": "가솔린 1600cc 이하",
+    "detailModel": "골프 6세대",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "08~14년",
+    "fuel": "디젤 1600cc 이상",
+    "detailModel": "골프 6세대",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "08~14년",
+    "fuel": "디젤 1600cc 이하",
+    "detailModel": "골프 6세대",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "04~09년",
+    "fuel": "가솔린 2000cc 이상",
+    "detailModel": "골프 5세대",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "04~09년",
+    "fuel": "가솔린 2000cc 이하",
+    "detailModel": "골프 5세대",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "골프",
+    "year": "04~09년",
+    "fuel": "디젤 2000cc 이하",
+    "detailModel": "골프 5세대",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "비틀",
+    "year": "12~19년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "더 비틀",
+    "defaultBattery": "DIN60L",
+    "upgradeBattery": "AGM60",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "비틀",
+    "year": "12~19년",
+    "fuel": "가솔린 2500cc",
+    "detailModel": "더 비틀",
+    "defaultBattery": "DIN60L",
+    "upgradeBattery": "AGM60",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "비틀",
+    "year": "12~19년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "더 비틀",
+    "defaultBattery": "DIN60L",
+    "upgradeBattery": "AGM60",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "비틀",
+    "year": "98~12년",
+    "fuel": "가솔린 2000cc 이상",
+    "detailModel": "뉴 비틀",
+    "defaultBattery": "DIN60L",
+    "upgradeBattery": "AGM60",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "비틀",
+    "year": "98~12년",
+    "fuel": "가솔린 2000cc 이하",
+    "detailModel": "뉴 비틀",
+    "defaultBattery": "DIN60L",
+    "upgradeBattery": "AGM60",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "비틀",
+    "year": "98~12년",
+    "fuel": "디젤 2000cc 이하",
+    "detailModel": "뉴 비틀",
+    "defaultBattery": "DIN60L",
+    "upgradeBattery": "AGM60",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "시로코",
+    "year": "08~17년",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "시로코",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "시로코",
+    "year": "08~17년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "시로코",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "시로코",
+    "year": "08~17년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "시로코",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "아테온",
+    "year": "18년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "아테온",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "아테온",
+    "year": "18년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "아테온",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "제타",
+    "year": "19년~현재",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "제타 7세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "제타",
+    "year": "19년~현재",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "제타 7세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "제타",
+    "year": "11~18년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "뉴 제타",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "제타",
+    "year": "11~18년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "뉴 제타",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "제타",
+    "year": "11~18년",
+    "fuel": "가솔린 2500cc",
+    "detailModel": "뉴 제타",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "제타",
+    "year": "11~18년",
+    "fuel": "디젤 1600cc",
+    "detailModel": "뉴 제타",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "제타",
+    "year": "11~18년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "뉴 제타",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "제타",
+    "year": "79~11년",
+    "fuel": "가솔린 2000cc 이상",
+    "detailModel": "제타",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "제타",
+    "year": "79~11년",
+    "fuel": "가솔린 2000cc 이하",
+    "detailModel": "제타",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "제타",
+    "year": "79~11년",
+    "fuel": "디젤 2000cc 이하",
+    "detailModel": "제타",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "티구안",
+    "year": "18년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "티구안 올스페이스",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "티구안",
+    "year": "18년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "티구안 올스페이스",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "티구안",
+    "year": "18년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "티구안 2세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "티구안",
+    "year": "18년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "티구안 2세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "티구안",
+    "year": "18년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "티구안 2세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "티구안",
+    "year": "11~16년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "뉴 티구안",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "티구안",
+    "year": "11~16년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "뉴 티구안",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "티구안",
+    "year": "07~11년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "티구안",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "티구안",
+    "year": "07~11년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "티구안",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "티록",
+    "year": "21년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "티록",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "티록",
+    "year": "21년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "티록",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "18년~현재",
+    "fuel": "디젤 2000cc",
+    "detailModel": "파사트 GT(B8)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "11년~현재",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "더 뉴 파사트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "11년~현재",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "더 뉴 파사트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "11년~현재",
+    "fuel": "가솔린 2500cc",
+    "detailModel": "더 뉴 파사트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "11년~현재",
+    "fuel": "디젤 2000cc",
+    "detailModel": "더 뉴 파사트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "05~11년",
+    "fuel": "가솔린 2000cc 이하",
+    "detailModel": "뉴 파사트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "05~11년",
+    "fuel": "가솔린 3200cc 이상",
+    "detailModel": "뉴 파사트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "05~11년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "뉴 파사트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "73~05년",
+    "fuel": "가솔린 2000cc 이상",
+    "detailModel": "파사트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "73~05년",
+    "fuel": "가솔린 2000cc 이하",
+    "detailModel": "파사트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "73년~현재",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "파사트 바리안트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "파사트",
+    "year": "73년~현재",
+    "fuel": "디젤 2000cc",
+    "detailModel": "파사트 바리안트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "폴로",
+    "year": "75년~현재",
+    "fuel": "가솔린 1200cc",
+    "detailModel": "폴로",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "폴로",
+    "year": "75년~현재",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "폴로",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "폴로",
+    "year": "75년~현재",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "폴로",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "폴로",
+    "year": "75년~현재",
+    "fuel": "디젤 1400cc",
+    "detailModel": "폴로",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "폭스바겐",
+    "vehicle": "폴로",
+    "year": "75년~현재",
+    "fuel": "디젤 1600cc",
+    "detailModel": "폴로",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  }
+]

@@ -43,5 +43,10 @@
     "id": "renault",
     "name": "르노",
     "file": "renault.json"
+  },
+  {
+    "id": "volkswagen",
+    "name": "폭스바겐",
+    "file": "volkswagen.json"
   }
 ]
