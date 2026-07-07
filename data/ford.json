@@ -1,0 +1,202 @@
+[
+  {
+    "manufacturer": "포드",
+    "vehicle": "레인저",
+    "year": "23년~현재",
+    "fuel": "디젤 2000cc",
+    "detailModel": "레인저 4세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "레인저",
+    "year": "11~22년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "레인저 3세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "레인저",
+    "year": "83~12년",
+    "fuel": "가솔린",
+    "detailModel": "레인저",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "머스탱",
+    "year": "24년~현재",
+    "fuel": "가솔린 2300cc",
+    "detailModel": "머스탱 7세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "머스탱",
+    "year": "24년~현재",
+    "fuel": "가솔린 5000cc",
+    "detailModel": "머스탱 7세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "머스탱",
+    "year": "64~24년",
+    "fuel": "가솔린",
+    "detailModel": "머스탱",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "몬데오",
+    "year": "15년~현재",
+    "fuel": "디젤 2000cc",
+    "detailModel": "몬데오 4세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "몬데오",
+    "year": "07~14년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "몬데오 3세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "몬데오",
+    "year": "92~07년",
+    "fuel": "가솔린",
+    "detailModel": "몬데오",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "몬데오",
+    "year": "92~07년",
+    "fuel": "디젤",
+    "detailModel": "몬데오",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "브롱코",
+    "year": "22년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "브롱코 6세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "브롱코",
+    "year": "66~96년",
+    "fuel": "가솔린 5000cc",
+    "detailModel": "브롱코",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "브롱코",
+    "year": "66~96년",
+    "fuel": "가솔린 5700cc",
+    "detailModel": "브롱코",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "익스플로러",
+    "year": "19년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "익스플로러 6세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "익스플로러",
+    "year": "19년~현재",
+    "fuel": "디젤",
+    "detailModel": "익스플로러 6세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "익스플로러",
+    "year": "91~19년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "익스플로러",
+    "defaultBattery": "65-900",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "토러스",
+    "year": "09년~현재",
+    "fuel": "가솔린 3500cc",
+    "detailModel": "뉴 토러스",
+    "defaultBattery": "65-900",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "퓨전",
+    "year": "07년~현재",
+    "fuel": "가솔린 2000cc 이상",
+    "detailModel": "퓨전",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "퓨전",
+    "year": "07년~현재",
+    "fuel": "가솔린 2000cc 이하",
+    "detailModel": "퓨전",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "포드",
+    "vehicle": "퓨전",
+    "year": "07년~현재",
+    "fuel": "가솔린+전기 2000cc 이하",
+    "detailModel": "퓨전",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  }
+]
