@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>현대 차량 배터리 찾기 | 일등밧데리</title>
-  <meta name="description" content="현대 차량 정보를 선택해 기본 추천 배터리와 업그레이드 추천 배터리를 확인합니다.">
+  <title>차량 배터리 찾기 | 일등밧데리</title>
+  <meta name="description" content="차량 정보를 선택해 기본 추천 배터리와 업그레이드 추천 배터리를 확인합니다.">
   <link rel="stylesheet" href="css/search.css">
 </head>
 <body>
@@ -15,20 +15,24 @@
         <small>NO.1 BATTERY</small>
         <strong>일등밧데리</strong>
       </a>
+      <a class="top-call" href="tel:16449141" aria-label="출장배터리교체 문의 전화">☎ 1644-9141</a>
     </header>
 
     <main class="content">
       <section class="title">
-        <h1>현대 차량 배터리 찾기</h1>
+        <h1>차량 배터리 찾기</h1>
         <p>제조사, 차량명, 세부모델을 순서대로 선택하세요.</p>
       </section>
 
       <section class="search-box" aria-label="차량 배터리 검색">
         <div class="field">
           <label for="manufacturerSelect"><span>1</span> 제조사</label>
-          <select id="manufacturerSelect">
-            <option value="">제조사 선택</option>
-          </select>
+          <div class="manufacturer-select-wrap">
+            <select id="manufacturerSelect">
+              <option value="">제조사 선택</option>
+            </select>
+            <img class="manufacturer-select-logo" id="manufacturerLogo" alt="" hidden>
+          </div>
         </div>
 
         <div class="field">
@@ -43,9 +47,10 @@
           <select id="detailSelect" disabled>
             <option value="">차량명을 먼저 선택</option>
           </select>
+          <p class="field-note">* 조건에 없는 차량은 고객센터로 문의해 주세요.</p>
         </div>
 
-        <p class="message" id="statusMessage" role="status" aria-live="polite">현대 차량 DB를 불러오는 중입니다.</p>
+        <p class="message" id="statusMessage" role="status" aria-live="polite">차량 DB를 불러오는 중입니다.</p>
       </section>
 
       <section class="result-box" id="resultPanel" aria-labelledby="resultTitle" hidden>

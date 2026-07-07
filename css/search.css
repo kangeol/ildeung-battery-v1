@@ -48,15 +48,17 @@ select {
   top: 0;
   z-index: 10;
   display: grid;
-  grid-template-columns: 72px minmax(0, 1fr) 72px;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  padding: 14px 18px 10px;
+  gap: 8px;
+  padding: 14px 16px 10px;
   background: rgba(244, 247, 251, 0.94);
   backdrop-filter: blur(14px);
 }
 
 .back-link {
   justify-self: start;
+  grid-column: 1;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: #fff;
@@ -67,6 +69,7 @@ select {
 }
 
 .brand {
+  grid-column: 2;
   justify-self: center;
   display: grid;
   gap: 4px;
@@ -83,6 +86,21 @@ select {
   font-size: 22px;
   font-weight: 950;
   line-height: 1;
+}
+
+.top-call {
+  grid-column: 3;
+  justify-self: end;
+  border: 1px solid #cfe0fb;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffffff 0%, #edf5ff 100%);
+  color: var(--primary-dark);
+  padding: 7px 10px;
+  font-size: 12px;
+  font-weight: 950;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: 0 6px 14px rgba(0, 87, 217, 0.08);
 }
 
 .content {
@@ -164,6 +182,34 @@ select:disabled {
   color: #98a2b3;
 }
 
+.manufacturer-select-wrap {
+  position: relative;
+}
+
+#manufacturerSelect.has-logo {
+  padding-right: 96px;
+}
+
+.manufacturer-select-logo {
+  position: absolute;
+  right: 42px;
+  top: 50%;
+  width: auto;
+  max-width: 48px;
+  max-height: 26px;
+  object-fit: contain;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.field-note {
+  margin: -2px 0 0;
+  color: #c24135;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
 .message {
   margin: 0;
   color: var(--muted);
@@ -173,120 +219,172 @@ select:disabled {
 
 .result-box h2 {
   margin: 0;
-  font-size: 23px;
+  font-size: 24px;
+  letter-spacing: 0;
 }
 
 .result-list {
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .result-card {
   display: grid;
-  gap: 12px;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: #fbfcff;
-  padding: 16px;
+  gap: 14px;
+  border: 1px solid #dfe7f2;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  padding: 18px;
+  box-shadow: 0 18px 36px rgba(31, 41, 51, 0.09);
 }
 
 .selected-vehicle,
 .battery-card,
-.status-row,
+.contact-card,
 .notice {
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 18px;
   background: #fff;
-  padding: 14px;
+  padding: 16px;
 }
 
 .selected-vehicle {
   display: grid;
-  justify-items: center;
-  gap: 10px;
-  padding: 22px 18px;
+  align-items: center;
+  gap: 16px;
+  border-color: #dbe7f5;
+  background: linear-gradient(135deg, #ffffff 0%, #f6faff 100%);
+  padding: 18px;
+  text-align: left;
+  box-shadow: 0 12px 24px rgba(31, 41, 51, 0.06);
+}
+
+.selected-vehicle.has-logo {
+  grid-template-columns: minmax(76px, 88px) minmax(0, 1fr);
+}
+
+.selected-vehicle.no-logo {
+  grid-template-columns: 1fr;
   text-align: center;
 }
 
 .selected-vehicle span,
 .battery-card span,
-.status-row span {
+.contact-card span {
   display: block;
   color: var(--muted);
   font-size: 12px;
   font-weight: 850;
+  letter-spacing: 0;
 }
 
 .vehicle-summary {
   display: grid;
-  justify-items: center;
-  gap: 8px;
+  justify-items: start;
+  gap: 9px;
   min-width: 0;
 }
 
+.selected-vehicle.no-logo .vehicle-summary {
+  justify-items: center;
+}
+
+.vehicle-logo-panel {
+  display: grid;
+  place-items: center;
+  min-height: 58px;
+  border-right: 1px solid #e4edf8;
+  padding-right: 14px;
+}
+
+.vehicle-logo {
+  display: block;
+  width: auto;
+  max-width: 64px;
+  max-height: 44px;
+  object-fit: contain;
+}
+
 .vehicle-summary strong {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 950;
-  line-height: 1.28;
+  line-height: 1.38;
 }
 
 .vehicle-summary p {
   margin: 0;
   color: var(--text);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 800;
-  line-height: 1.42;
+  line-height: 1.55;
   overflow-wrap: anywhere;
+}
+
+.vehicle-summary .vehicle-detail-model {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: normal;
 }
 
 .battery-card {
   display: grid;
-  gap: 10px;
-  background: #f8fbff;
+  gap: 12px;
+  border-color: #c8dcff;
+  background: linear-gradient(135deg, #f7fbff 0%, #eaf3ff 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82), 0 12px 26px rgba(0, 87, 217, 0.1);
 }
 
 .battery-card strong {
   color: var(--primary-dark);
-  font-size: clamp(40px, 11vw, 56px);
+  font-size: clamp(42px, 11vw, 60px);
   font-weight: 950;
   line-height: 1.05;
   overflow-wrap: anywhere;
 }
 
 .battery-card.upgrade {
-  background: #fff8f0;
+  border-color: #f3c8cf;
+  background: linear-gradient(135deg, #fffafa 0%, #ffedf1 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.86), 0 12px 26px rgba(158, 45, 62, 0.09);
 }
 
 .battery-card.upgrade strong {
-  color: #a94f00;
-  font-size: clamp(34px, 9vw, 48px);
+  color: #a83a47;
+  font-size: clamp(40px, 10vw, 56px);
 }
 
-.status-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+.contact-card {
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+  border-color: #ead8b7;
+  background: linear-gradient(135deg, #ffffff 0%, #fff9ee 100%);
+  color: #253142;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(145, 108, 45, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
-.status-badge {
-  display: inline-grid;
-  place-items: center;
-  min-height: 32px;
-  border-radius: 999px;
-  padding: 0 12px;
-  font-size: 13px;
+.contact-card:hover,
+.contact-card:focus-visible {
+  border-color: #d9bd83;
+  box-shadow: 0 16px 30px rgba(145, 108, 45, 0.13);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.contact-card strong {
+  color: #1f2933;
+  font-size: clamp(28px, 7vw, 38px);
   font-weight: 950;
-}
-
-.status-badge.is-complete {
-  background: #eaf7ef;
-  color: #137348;
-}
-
-.status-badge.is-waiting {
-  background: #fff3d6;
-  color: var(--warn);
+  line-height: 1.08;
+  letter-spacing: 0;
 }
 
 .notice {
@@ -394,5 +492,49 @@ select:disabled {
   .search-box,
   .result-box {
     align-self: start;
+  }
+
+  .selected-vehicle.has-logo {
+    grid-template-columns: minmax(108px, 124px) minmax(0, 1fr);
+    gap: 20px;
+    padding: 22px;
+  }
+
+  .vehicle-logo-panel {
+    min-height: 76px;
+    padding-right: 18px;
+  }
+
+  .vehicle-logo {
+    max-width: 90px;
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 380px) {
+  .topbar {
+    padding-inline: 12px;
+  }
+
+  .back-link,
+  .top-call {
+    padding: 7px 8px;
+    font-size: 11px;
+  }
+
+  .brand small {
+    font-size: 10px;
+  }
+
+  .brand strong {
+    font-size: 19px;
+  }
+
+  .content {
+    padding-inline: 14px;
+  }
+
+  .vehicle-summary .vehicle-detail-model {
+    font-size: 13px;
   }
 }
