@@ -48,5 +48,10 @@
     "id": "volkswagen",
     "name": "폭스바겐",
     "file": "volkswagen.json"
+  },
+  {
+    "id": "volvo",
+    "name": "볼보",
+    "file": "volvo.json"
   }
 ]

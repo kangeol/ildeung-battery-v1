@@ -1,0 +1,342 @@
+[
+  {
+    "manufacturer": "볼보",
+    "vehicle": "C30",
+    "year": "06~13년",
+    "fuel": "가솔린 2400cc 이상",
+    "detailModel": "C30",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "C30",
+    "year": "06~13년",
+    "fuel": "디젤 2000cc 이하",
+    "detailModel": "C30",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S40",
+    "year": "95~12년",
+    "fuel": "가솔린 2000cc 이하",
+    "detailModel": "S40",
+    "defaultBattery": "DIN74",
+    "upgradeBattery": "DIN90",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S40",
+    "year": "95~12년",
+    "fuel": "가솔린 2400cc 이상",
+    "detailModel": "S40",
+    "defaultBattery": "DIN74",
+    "upgradeBattery": "DIN90",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S40",
+    "year": "95~12년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "S40",
+    "defaultBattery": "DIN74",
+    "upgradeBattery": "DIN90",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S60",
+    "year": "19년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "S60 3세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S60",
+    "year": "00~18년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "S60",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S60",
+    "year": "00~18년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "S60",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S60",
+    "year": "00~18년",
+    "fuel": "디젤 2WD",
+    "detailModel": "S60",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S60",
+    "year": "15~18년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "S60 크로스컨트리",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S80",
+    "year": "98~16년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "S80",
+    "defaultBattery": "DIN74",
+    "upgradeBattery": "DIN90",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S80",
+    "year": "98~16년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "S80",
+    "defaultBattery": "DIN74",
+    "upgradeBattery": "DIN90",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S80",
+    "year": "98~16년",
+    "fuel": "디젤 2WD",
+    "detailModel": "S80",
+    "defaultBattery": "DIN74",
+    "upgradeBattery": "DIN90",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S90",
+    "year": "16년~현재",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "S90",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "S90",
+    "year": "16년~현재",
+    "fuel": "디젤 2000cc",
+    "detailModel": "S90",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "V60",
+    "year": "19년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "V60 크로스컨트리 2세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "V60",
+    "year": "10~18년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "V60",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "V60",
+    "year": "10~18년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "V60",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "V60",
+    "year": "10~18년",
+    "fuel": "디젤 2WD",
+    "detailModel": "V60",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "V60",
+    "year": "15~18년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "V60 크로스컨트리",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "V60",
+    "year": "15~18년",
+    "fuel": "디젤 2WD",
+    "detailModel": "V60 크로스컨트리",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "V60",
+    "year": "15~18년",
+    "fuel": "디젤 4WD",
+    "detailModel": "V60 크로스컨트리",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "V90",
+    "year": "17년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "V90 크로스컨트리",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "V90",
+    "year": "17년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "V90 크로스컨트리",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "XC60",
+    "year": "17년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "XC60 2세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "XC60",
+    "year": "17년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "XC60 2세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "XC60",
+    "year": "09~17년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "XC60",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "XC60",
+    "year": "09~17년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "XC60",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "XC60",
+    "year": "09~17년",
+    "fuel": "디젤 2WD",
+    "detailModel": "XC60",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "XC60",
+    "year": "09~17년",
+    "fuel": "디젤 4WD",
+    "detailModel": "XC60",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "XC70",
+    "year": "97~16년",
+    "fuel": "가솔린",
+    "detailModel": "XC70",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "XC70",
+    "year": "97~16년",
+    "fuel": "디젤",
+    "detailModel": "XC70",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "XC90",
+    "year": "16년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "XC90 2세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "볼보",
+    "vehicle": "XC90",
+    "year": "16년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "XC90 2세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  }
+]
