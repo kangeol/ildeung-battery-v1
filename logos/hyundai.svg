@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" role="img" aria-label="Hyundai">
+  <rect width="160" height="80" rx="18" fill="#ffffff"/>
+  <ellipse cx="80" cy="40" rx="58" ry="26" fill="none" stroke="#0057d9" stroke-width="7"/>
+  <path d="M45 55 63 25h12L64 43h30l11-18h12L95 55H83l10-17H63L53 55H45Z" fill="#0057d9"/>
+</svg>
