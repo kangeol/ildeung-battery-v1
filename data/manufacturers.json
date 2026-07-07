@@ -5,6 +5,11 @@
     "file": "benz.json"
   },
   {
+    "id": "bmw",
+    "name": "BMW",
+    "file": "bmw.json"
+  },
+  {
     "id": "chevrolet",
     "name": "쉐보레",
     "file": "chevrolet.json"

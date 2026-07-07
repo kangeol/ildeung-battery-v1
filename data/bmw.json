@@ -1,0 +1,1152 @@
+[
+  {
+    "manufacturer": "BMW",
+    "vehicle": "1시리즈",
+    "year": "25년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "1시리즈 (F70)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "1시리즈",
+    "year": "25년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "1시리즈 (F70)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "1시리즈",
+    "year": "20~25년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "1시리즈 (F40)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "1시리즈",
+    "year": "20~25년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "1시리즈 (F40)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "1시리즈",
+    "year": "20~25년",
+    "fuel": "디젤 2WD",
+    "detailModel": "1시리즈 (F40)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "1시리즈",
+    "year": "12~19년",
+    "fuel": "디젤 5 인승",
+    "detailModel": "1시리즈 (F20)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "2시리즈",
+    "year": "22년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "2시리즈 (G42)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "2시리즈",
+    "year": "13~15년",
+    "fuel": "가솔린",
+    "detailModel": "2시리즈 (F22)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "2시리즈",
+    "year": "13~15년",
+    "fuel": "디젤",
+    "detailModel": "2시리즈 (F22)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "2시리즈",
+    "year": "25년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "2시리즈 그란쿠페 (F74)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "2시리즈",
+    "year": "25년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "2시리즈 그란쿠페 (F74)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "2시리즈",
+    "year": "20~25년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "2시리즈 그란쿠페 (F44)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "2시리즈",
+    "year": "20~25년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "2시리즈 그란쿠페 (F44)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "2시리즈",
+    "year": "20~25년",
+    "fuel": "디젤 2WD",
+    "detailModel": "2시리즈 그란쿠페 (F44)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "3시리즈",
+    "year": "19년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "3시리즈 (G20)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "3시리즈",
+    "year": "19년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "3시리즈 (G20)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "3시리즈",
+    "year": "19년~현재",
+    "fuel": "가솔린+전기 2WD",
+    "detailModel": "3시리즈 (G20)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "3시리즈",
+    "year": "19년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "3시리즈 (G20)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "3시리즈",
+    "year": "19년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "3시리즈 (G20)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "3시리즈",
+    "year": "12~18년",
+    "fuel": "가솔린",
+    "detailModel": "3시리즈 (F30)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "3시리즈",
+    "year": "12~18년",
+    "fuel": "가솔린+전기",
+    "detailModel": "3시리즈 (F30)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "3시리즈",
+    "year": "12~18년",
+    "fuel": "디젤",
+    "detailModel": "3시리즈 (F30)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "3시리즈",
+    "year": "05~13년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "3시리즈 (E90)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "3시리즈",
+    "year": "05~13년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "3시리즈 (E90)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "3시리즈",
+    "year": "05~13년",
+    "fuel": "디젤 2WD",
+    "detailModel": "3시리즈 (E90)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "4시리즈",
+    "year": "21년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "4시리즈 (G22)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "4시리즈",
+    "year": "21년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "4시리즈 (G22)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "4시리즈",
+    "year": "21년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "4시리즈 (G22)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "4시리즈",
+    "year": "13~20년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "4시리즈 (F32)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "4시리즈",
+    "year": "13~20년",
+    "fuel": "디젤 2WD",
+    "detailModel": "4시리즈 (F32)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "4시리즈",
+    "year": "13~20년",
+    "fuel": "디젤 4WD",
+    "detailModel": "4시리즈 (F32)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "23년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "5시리즈 (G60)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "23년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "5시리즈 (G60)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "23년~현재",
+    "fuel": "가솔린+전기 2WD",
+    "detailModel": "5시리즈 (G60)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "23년~현재",
+    "fuel": "가솔린+전기 4WD",
+    "detailModel": "5시리즈 (G60)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "23년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "5시리즈 (G60)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "23년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "5시리즈 (G60)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "17~23년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "5시리즈 (G30)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "17~23년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "5시리즈 (G30)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "17~23년",
+    "fuel": "가솔린+전기 2WD",
+    "detailModel": "5시리즈 (G30)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "17~23년",
+    "fuel": "디젤 2WD",
+    "detailModel": "5시리즈 (G30)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "17~23년",
+    "fuel": "디젤 4WD",
+    "detailModel": "5시리즈 (G30)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "10~16년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "5시리즈 (F10)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "10~16년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "5시리즈 (F10)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "10~16년",
+    "fuel": "디젤 2WD",
+    "detailModel": "5시리즈 (F10)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "5시리즈",
+    "year": "10~16년",
+    "fuel": "디젤 4WD",
+    "detailModel": "5시리즈 (F10)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "6시리즈",
+    "year": "11~18년",
+    "fuel": "가솔린 3000cc",
+    "detailModel": "6시리즈 (F12)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "6시리즈",
+    "year": "11~18년",
+    "fuel": "가솔린 4400cc",
+    "detailModel": "6시리즈 (F12)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "6시리즈",
+    "year": "11~18년",
+    "fuel": "디젤 3000cc",
+    "detailModel": "6시리즈 (F12)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "22년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "7시리즈 (G70)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "22년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "7시리즈 (G70)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "22년~현재",
+    "fuel": "가솔린+전기 4WD",
+    "detailModel": "7시리즈 (G70)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "22년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "7시리즈 (G70)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "15~22년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "7시리즈 (G11)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "15~22년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "7시리즈 (G11)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "15~22년",
+    "fuel": "가솔린+전기 2WD",
+    "detailModel": "7시리즈 (G11)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "15~22년",
+    "fuel": "디젤 4WD",
+    "detailModel": "7시리즈 (G11)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "08~15년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "7시리즈 (F01)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "08~15년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "7시리즈 (F01)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "08~15년",
+    "fuel": "디젤 2WD",
+    "detailModel": "7시리즈 (F01)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "7시리즈",
+    "year": "08~15년",
+    "fuel": "디젤 4WD",
+    "detailModel": "7시리즈 (F01)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "그란투리스모 (GT)",
+    "year": "17년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "6시리즈 GT (G32)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "그란투리스모 (GT)",
+    "year": "17년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "6시리즈 GT (G32)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "그란투리스모 (GT)",
+    "year": "17년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "6시리즈 GT (G32)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "그란투리스모 (GT)",
+    "year": "10~17년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "5시리즈 GT (F07)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "그란투리스모 (GT)",
+    "year": "10~17년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "5시리즈 GT (F07)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "그란투리스모 (GT)",
+    "year": "10~17년",
+    "fuel": "디젤 2WD",
+    "detailModel": "5시리즈 GT (F07)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "그란투리스모 (GT)",
+    "year": "10~17년",
+    "fuel": "디젤 4WD",
+    "detailModel": "5시리즈 GT (F07)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "그란투리스모 (GT)",
+    "year": "13~21년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "3시리즈 GT (F34)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "그란투리스모 (GT)",
+    "year": "13~21년",
+    "fuel": "디젤 2WD",
+    "detailModel": "3시리즈 GT (F34)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "그란투리스모 (GT)",
+    "year": "13~21년",
+    "fuel": "디젤 4WD",
+    "detailModel": "3시리즈 GT (F34)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X1",
+    "year": "23년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "X1 (U11)",
+    "defaultBattery": "AGM70 / AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X1",
+    "year": "23년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X1 (U11)",
+    "defaultBattery": "AGM70 / AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X1",
+    "year": "23년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "X1 (U11)",
+    "defaultBattery": "AGM70 / AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X1",
+    "year": "16~23년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X1 (F48)",
+    "defaultBattery": "AGM70 / AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X1",
+    "year": "16~23년",
+    "fuel": "디젤 4WD",
+    "detailModel": "X1 (F48)",
+    "defaultBattery": "AGM70 / AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X1",
+    "year": "10~15년",
+    "fuel": "디젤 4WD",
+    "detailModel": "X1 (E84)",
+    "defaultBattery": "AGM70 / AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X2",
+    "year": "24년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X2 (U10)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X2",
+    "year": "18~24년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X2 (F39)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X2",
+    "year": "18~24년",
+    "fuel": "디젤 4WD",
+    "detailModel": "X2 (F39)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X3",
+    "year": "24년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X3 (G45)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X3",
+    "year": "24년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "X3 (G45)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X3",
+    "year": "17~24년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "X3 (G01)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X3",
+    "year": "17~24년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X3 (G01)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X3",
+    "year": "17~24년",
+    "fuel": "가솔린+전기 4WD",
+    "detailModel": "X3 (G01)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X3",
+    "year": "17~24년",
+    "fuel": "디젤 4WD",
+    "detailModel": "X3 (G01)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X3",
+    "year": "11~17년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "X3 (F25)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X3",
+    "year": "11~17년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X3 (F25)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X3",
+    "year": "11~17년",
+    "fuel": "디젤 4WD",
+    "detailModel": "X3 (F25)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X3",
+    "year": "04~10년",
+    "fuel": "가솔린 2500cc 이하",
+    "detailModel": "X3 (E83)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X3",
+    "year": "04~10년",
+    "fuel": "디젤 2500cc 이하",
+    "detailModel": "X3 (E83)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X4",
+    "year": "18년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X4 (G02)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X4",
+    "year": "18년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "X4 (G02)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X4",
+    "year": "14~18년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X4 (F26)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X4",
+    "year": "14~18년",
+    "fuel": "디젤 4WD",
+    "detailModel": "X4 (F26)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X5",
+    "year": "19년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X5 (G05)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X5",
+    "year": "19년~현재",
+    "fuel": "가솔린+전기 4WD",
+    "detailModel": "X5 (G05)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X5",
+    "year": "19년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "X5 (G05)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X5",
+    "year": "13~18년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X5 (F15)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X5",
+    "year": "13~18년",
+    "fuel": "가솔린+전기 4WD",
+    "detailModel": "X5 (F15)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X5",
+    "year": "13~18년",
+    "fuel": "디젤 4WD",
+    "detailModel": "X5 (F15)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X5",
+    "year": "07~13년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X5 (E70)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X5",
+    "year": "07~13년",
+    "fuel": "디젤 4WD",
+    "detailModel": "X5 (E70)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X5",
+    "year": "00~06년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X5 (E53)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X6",
+    "year": "20년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X6 (G06)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X6",
+    "year": "20년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "X6 (G06)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X6",
+    "year": "14~19년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X6 (F16)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X6",
+    "year": "14~19년",
+    "fuel": "디젤 4WD",
+    "detailModel": "X6 (F16)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X6",
+    "year": "08~14년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X6 (E71)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X6",
+    "year": "08~14년",
+    "fuel": "가솔린+전기 4WD",
+    "detailModel": "X6 (E71)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X6",
+    "year": "08~14년",
+    "fuel": "디젤 4WD",
+    "detailModel": "X6 (E71)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X7",
+    "year": "19년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "X7 (G07)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "X7",
+    "year": "19년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "X7 (G07)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "Z4",
+    "year": "19년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "Z4 (G29)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "BMW",
+    "vehicle": "Z4",
+    "year": "09~16년",
+    "fuel": "가솔린 2 인승",
+    "detailModel": "Z4 (E89)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  }
+]
