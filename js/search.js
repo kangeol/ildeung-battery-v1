@@ -16,6 +16,25 @@
     "KG": "kgm",
     "쌍용": "kgm"
   };
+  const DOMESTIC_MANUFACTURER_ORDER = ["hyundai", "kia", "renault", "chevrolet", "kgm"];
+  const IMPORT_PRIORITY_ORDER = ["bmw", "benz", "audi", "mini", "volkswagen"];
+  const MANUFACTURER_GROUP_ALIASES = {
+    hyundai: ["hyundai", "현대"],
+    kia: ["kia", "기아"],
+    renault: ["renault", "르노"],
+    chevrolet: ["chevrolet", "쉐보레", "chevy"],
+    kgm: ["kg", "kgm", "kg모빌리티", "kgmobility", "ssangyong", "쌍용"],
+    bmw: ["bmw"],
+    benz: ["benz", "mercedes", "mercedesbenz", "메르세데스벤츠", "벤츠"],
+    audi: ["audi", "아우디"],
+    mini: ["mini", "미니"],
+    volkswagen: ["volkswagen", "vw", "폭스바겐"]
+  };
+  const MANUFACTURER_GROUP_LOOKUP = Object.fromEntries(
+    Object.entries(MANUFACTURER_GROUP_ALIASES).flatMap(([group, aliases]) => (
+      aliases.map((alias) => [normalizeManufacturerKey(alias), group])
+    ))
+  );
 
   const manufacturerSelect = document.querySelector("#manufacturerSelect");
   const manufacturerLogo = document.querySelector("#manufacturerLogo");
@@ -59,6 +78,63 @@
 
   function setMessage(message) {
     statusMessage.textContent = message;
+  }
+
+  function normalizeManufacturerKey(value) {
+    return String(value || "")
+      .trim()
+      .toLowerCase()
+      .replace(/[\s_\-()]/g, "");
+  }
+
+  function manufacturerGroup(manufacturer) {
+    const keys = [
+      manufacturer?.id,
+      manufacturer?.name,
+      manufacturer?.manufacturer
+    ].map(normalizeManufacturerKey);
+
+    return keys.map((key) => MANUFACTURER_GROUP_LOOKUP[key]).find(Boolean) || keys[0] || "";
+  }
+
+  function sortByOrder(items, order) {
+    return items.sort((a, b) => {
+      const groupA = manufacturerGroup(a);
+      const groupB = manufacturerGroup(b);
+      const orderA = order.indexOf(groupA);
+      const orderB = order.indexOf(groupB);
+      const fixedA = orderA >= 0;
+      const fixedB = orderB >= 0;
+
+      if (fixedA && fixedB && orderA !== orderB) return orderA - orderB;
+      if (fixedA !== fixedB) return fixedA ? -1 : 1;
+      return String(a.name).localeCompare(String(b.name), "ko");
+    });
+  }
+
+  function sortedManufacturers(items) {
+    const domesticGroups = new Set(DOMESTIC_MANUFACTURER_ORDER);
+    const domestic = [];
+    const imports = [];
+
+    items.forEach((manufacturer) => {
+      if (domesticGroups.has(manufacturerGroup(manufacturer))) {
+        domestic.push(manufacturer);
+        return;
+      }
+      imports.push(manufacturer);
+    });
+
+    return {
+      domestic: sortByOrder(domestic, DOMESTIC_MANUFACTURER_ORDER),
+      imports: sortByOrder(imports, IMPORT_PRIORITY_ORDER)
+    };
+  }
+
+  function separatorOption() {
+    const item = option("", "────────────");
+    item.disabled = true;
+    return item;
   }
 
   function manufacturerLogoSrc(manufacturer) {
@@ -227,8 +303,16 @@
   }
 
   function populateManufacturers() {
+    const sorted = sortedManufacturers(manufacturers);
+
     resetSelect(manufacturerSelect, "제조사 선택", false);
-    manufacturers.forEach((manufacturer) => {
+    sorted.domestic.forEach((manufacturer) => {
+      manufacturerSelect.append(option(manufacturer.id, manufacturer.name));
+    });
+    if (sorted.domestic.length && sorted.imports.length) {
+      manufacturerSelect.append(separatorOption());
+    }
+    sorted.imports.forEach((manufacturer) => {
       manufacturerSelect.append(option(manufacturer.id, manufacturer.name));
     });
     updateManufacturerLogo();
@@ -279,8 +363,7 @@
       .map((item, index) => ({ item, index }))
       .filter(({ item }) => (
         item.vehicle === vehicleSelect.value
-      ))
-      .sort((a, b) => detailLabel(a.item).localeCompare(detailLabel(b.item), "ko"));
+      ));
 
     resetSelect(detailSelect, "세부모델 선택", !items.length);
     clearResult();
