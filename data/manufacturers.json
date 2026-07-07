@@ -13,5 +13,10 @@
     "id": "kia",
     "name": "기아",
     "file": "kia.json"
+  },
+  {
+    "id": "renault",
+    "name": "르노",
+    "file": "renault.json"
   }
 ]
