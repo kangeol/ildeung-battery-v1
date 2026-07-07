@@ -1,0 +1,382 @@
+[
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리 스포츠",
+    "year": "20년~현재",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "디스커버리 스포츠 2세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리 스포츠",
+    "year": "20년~현재",
+    "fuel": "디젤 2000cc",
+    "detailModel": "디스커버리 스포츠 2세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리 스포츠",
+    "year": "15~19년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "디스커버리 스포츠",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리 스포츠",
+    "year": "15~19년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "디스커버리 스포츠",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리 스포츠",
+    "year": "15~19년",
+    "fuel": "디젤 2200cc",
+    "detailModel": "디스커버리 스포츠",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리",
+    "year": "17년~현재",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "디스커버리 5",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리",
+    "year": "17년~현재",
+    "fuel": "가솔린 3000cc",
+    "detailModel": "디스커버리 5",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리",
+    "year": "17년~현재",
+    "fuel": "디젤 2000cc",
+    "detailModel": "디스커버리 5",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리",
+    "year": "17년~현재",
+    "fuel": "디젤 3000cc",
+    "detailModel": "디스커버리 5",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리",
+    "year": "09~16년",
+    "fuel": "가솔린 3000cc",
+    "detailModel": "디스커버리 4",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리",
+    "year": "09~16년",
+    "fuel": "가솔린 5000cc",
+    "detailModel": "디스커버리 4",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리",
+    "year": "09~16년",
+    "fuel": "디젤 2700cc",
+    "detailModel": "디스커버리 4",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "디스커버리",
+    "year": "09~16년",
+    "fuel": "디젤 3000cc",
+    "detailModel": "디스커버리 4",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 벨라",
+    "year": "17년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "레인지로버 벨라",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 스포츠",
+    "year": "22년~현재",
+    "fuel": "가솔린 3000cc",
+    "detailModel": "레인지로버 스포츠 3세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 스포츠",
+    "year": "22년~현재",
+    "fuel": "가솔린 4400cc",
+    "detailModel": "레인지로버 스포츠 3세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 스포츠",
+    "year": "22년~현재",
+    "fuel": "디젤 3000cc",
+    "detailModel": "레인지로버 스포츠 3세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 스포츠",
+    "year": "13~22년",
+    "fuel": "가솔린 3000cc",
+    "detailModel": "레인지로버 스포츠 2세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 스포츠",
+    "year": "13~22년",
+    "fuel": "가솔린 5000cc",
+    "detailModel": "레인지로버 스포츠 2세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 스포츠",
+    "year": "13~22년",
+    "fuel": "디젤 3000cc",
+    "detailModel": "레인지로버 스포츠 2세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 스포츠",
+    "year": "13~22년",
+    "fuel": "디젤 4400cc",
+    "detailModel": "레인지로버 스포츠 2세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 스포츠",
+    "year": "04~13년",
+    "fuel": "가솔린 3000cc 이상",
+    "detailModel": "레인지로버 스포츠",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 스포츠",
+    "year": "04~13년",
+    "fuel": "디젤 3000cc 이하",
+    "detailModel": "레인지로버 스포츠",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 이보크",
+    "year": "19년~현재",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "레인지로버 이보크 2세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 이보크",
+    "year": "19년~현재",
+    "fuel": "디젤 2000cc",
+    "detailModel": "레인지로버 이보크 2세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 이보크",
+    "year": "11~19년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "레인지로버 이보크",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 이보크",
+    "year": "11~19년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "레인지로버 이보크",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버 이보크",
+    "year": "11~19년",
+    "fuel": "디젤 2200cc",
+    "detailModel": "레인지로버 이보크",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버",
+    "year": "22년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "레인지로버 5세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버",
+    "year": "13~22년",
+    "fuel": "가솔린 3000cc",
+    "detailModel": "레인지로버 4세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버",
+    "year": "13~22년",
+    "fuel": "가솔린 5000cc",
+    "detailModel": "레인지로버 4세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버",
+    "year": "13~22년",
+    "fuel": "디젤 3000cc",
+    "detailModel": "레인지로버 4세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버",
+    "year": "13~22년",
+    "fuel": "디젤 4400cc",
+    "detailModel": "레인지로버 4세대",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버",
+    "year": "70~12년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "레인지로버",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "레인지로버",
+    "year": "70~12년",
+    "fuel": "디젤 4WD",
+    "detailModel": "레인지로버",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "프리랜더",
+    "year": "06~14년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "프리랜더2",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "프리랜더",
+    "year": "06~14년",
+    "fuel": "가솔린 3200cc",
+    "detailModel": "프리랜더2",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "랜드로버",
+    "vehicle": "프리랜더",
+    "year": "06~14년",
+    "fuel": "디젤 2200cc",
+    "detailModel": "프리랜더2",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  }
+]
