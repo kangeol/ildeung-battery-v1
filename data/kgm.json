@@ -1,0 +1,502 @@
+[
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "렉스턴",
+    "year": "01/09~03/12",
+    "fuel": "가솔린",
+    "detailModel": "렉스턴 (01/09~03/12) 가솔린",
+    "defaultBattery": "DF80R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "렉스턴",
+    "year": "01/09~03/12",
+    "fuel": "디젤",
+    "detailModel": "렉스턴 (01/09~03/12) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "렉스턴",
+    "year": "03/12~06/03",
+    "fuel": "가솔린",
+    "detailModel": "뉴렉스턴 (03/12~06/03) 가솔린",
+    "defaultBattery": "DF80R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "렉스턴",
+    "year": "03/12~06/03",
+    "fuel": "디젤",
+    "detailModel": "뉴렉스턴 (03/12~06/03) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "렉스턴",
+    "year": "06/03~08~07",
+    "fuel": "디젤",
+    "detailModel": "렉스턴2 (06/03~08~07) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "렉스턴",
+    "year": "08/07~12/06",
+    "fuel": "디젤",
+    "detailModel": "슈퍼렉스턴 (08/07~12/06) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "렉스턴",
+    "year": "12/06~17/05",
+    "fuel": "디젤",
+    "detailModel": "렉스턴W (12/06~17/05) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "렉스턴",
+    "year": "17/05~20/11",
+    "fuel": "디젤",
+    "detailModel": "G4렉스턴 (17/05~20/11) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "렉스턴",
+    "year": "18년~",
+    "fuel": "디젤",
+    "detailModel": "렉스턴스포츠 (18년~) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "렉스턴",
+    "year": "19년~",
+    "fuel": "디젤",
+    "detailModel": "렉스턴스포츠 칸 (19년~) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "렉스턴",
+    "year": "2020/11~",
+    "fuel": "디젤",
+    "detailModel": "올뉴렉스턴 (2020/11~) 디젤",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "로디우스",
+    "year": "04~07년",
+    "fuel": "디젤",
+    "detailModel": "로디우스 (04~07년) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "로디우스",
+    "year": "07~12년",
+    "fuel": "",
+    "detailModel": "뉴로디우스 (07~12년)",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "로디우스",
+    "year": "12~13년",
+    "fuel": "",
+    "detailModel": "로디우스 유로 (12~13년)",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "무쏘",
+    "year": "2000년07월이전",
+    "fuel": "디젤",
+    "detailModel": "무쏘 (2000년07월이전) 디젤",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "무쏘",
+    "year": "2000년07월이전",
+    "fuel": "가솔린",
+    "detailModel": "무쏘 (2000년07월이전) 가솔린",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "무쏘",
+    "year": "2000년07월이후",
+    "fuel": "디젤",
+    "detailModel": "무쏘 (2000년07월이후) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "무쏘",
+    "year": "2000년07월이후",
+    "fuel": "가솔린",
+    "detailModel": "무쏘 (2000년07월이후) 가솔린",
+    "defaultBattery": "DF80R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "액티언",
+    "year": "05~11년",
+    "fuel": "디젤",
+    "detailModel": "액티언 (05~11년) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "액티언",
+    "year": "06~11년",
+    "fuel": "디젤",
+    "detailModel": "액티언 스포츠 (06~11년) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "체어맨",
+    "year": "97~03년",
+    "fuel": "",
+    "detailModel": "체어맨 (97~03년)",
+    "defaultBattery": "DIN100L",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "체어맨",
+    "year": "03~08년",
+    "fuel": "",
+    "detailModel": "뉴체어맨 (03~08년)",
+    "defaultBattery": "DIN100L",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "체어맨",
+    "year": "08~11년",
+    "fuel": "",
+    "detailModel": "체어맨W (08~11년)",
+    "defaultBattery": "DIN100L",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "체어맨",
+    "year": "11~17년",
+    "fuel": "",
+    "detailModel": "뉴체어맨W (11~17년)",
+    "defaultBattery": "DIN100L",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "체어맨",
+    "year": "08~11년",
+    "fuel": "",
+    "detailModel": "체어맨H (08~11년)",
+    "defaultBattery": "DIN100L",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "체어맨",
+    "year": "11~14년",
+    "fuel": "",
+    "detailModel": "체어맨H뉴클래식 (11~14년)",
+    "defaultBattery": "DIN100L",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "카이런",
+    "year": "05~07년",
+    "fuel": "디젤",
+    "detailModel": "카이런 (05~07년) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "카이런",
+    "year": "07~11년",
+    "fuel": "디젤",
+    "detailModel": "뉴카이런 (07~11년) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "",
+    "fuel": "가솔린",
+    "detailModel": "코란도 가솔린",
+    "defaultBattery": "DF80R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "69~96년",
+    "fuel": "디젤",
+    "detailModel": "코란도 (69~96년) 디젤",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "88~96년",
+    "fuel": "",
+    "detailModel": "코란도훼밀리 (88~96년)",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "96~05년",
+    "fuel": "",
+    "detailModel": "뉴코란도 (96~05년)",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "11~13년",
+    "fuel": "",
+    "detailModel": "코란도C (11~13년)",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "12~16년",
+    "fuel": "",
+    "detailModel": "코란도스포츠 (12~16년)",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "13년~",
+    "fuel": "",
+    "detailModel": "코란도투리스모 (13년~)",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "13~17년",
+    "fuel": "",
+    "detailModel": "뉴코란도C (13~17년)",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "16~18년",
+    "fuel": "",
+    "detailModel": "더뉴코란도스포츠 (16~18년)",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "17~18년",
+    "fuel": "",
+    "detailModel": "뉴스타일코란도C (17~18년)",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "19년~",
+    "fuel": "가솔린",
+    "detailModel": "뷰티풀코란도 (19년~) 가솔린 1.5",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "코란도",
+    "year": "19년~",
+    "fuel": "디젤",
+    "detailModel": "뷰티풀코란도 (19년~) 디젤 1.6",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "티볼리",
+    "year": "15/01~17/07",
+    "fuel": "디젤",
+    "detailModel": "티볼리 (15/01~17/07) 디젤",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "DF90L",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "티볼리",
+    "year": "15/01~17/07",
+    "fuel": "가솔린",
+    "detailModel": "티볼리 (15/01~17/07) 가솔린",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "티볼리",
+    "year": "16/03~19/09",
+    "fuel": "디젤",
+    "detailModel": "티볼리에어 (16/03~19/09) 디젤",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "DF90L",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "티볼리",
+    "year": "16/03~19/09",
+    "fuel": "가솔린",
+    "detailModel": "티볼리에어 (16/03~19/09) 가솔린",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "티볼리",
+    "year": "17/07~19/06",
+    "fuel": "디젤",
+    "detailModel": "티볼리아머 (17/07~19/06) 디젤",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "DF90L",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "티볼리",
+    "year": "17/07~19/06",
+    "fuel": "가솔린",
+    "detailModel": "티볼리아머 (17/07~19/06) 가솔린",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "티볼리",
+    "year": "19/06~",
+    "fuel": "디젤",
+    "detailModel": "베리뉴티볼리 (19/06~) 디젤",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "티볼리",
+    "year": "19/06~",
+    "fuel": "가솔린",
+    "detailModel": "베리뉴티볼리 (19/06~) 가솔린",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "티볼리",
+    "year": "20/10~",
+    "fuel": "디젤",
+    "detailModel": "베리뉴티볼리 에어 (20/10~) 디젤",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "KG모빌리티",
+    "vehicle": "티볼리",
+    "year": "20/10~",
+    "fuel": "가솔린",
+    "detailModel": "베리뉴티볼리 에어 (20/10~) 가솔린",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  }
+]
