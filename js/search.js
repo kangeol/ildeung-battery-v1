@@ -1,5 +1,5 @@
 (function () {
-  const DATA_URL = "data/hyundai.json";
+  const MANUFACTURERS_URL = "data/manufacturers.json";
 
   const manufacturerSelect = document.querySelector("#manufacturerSelect");
   const vehicleSelect = document.querySelector("#vehicleSelect");
@@ -8,6 +8,7 @@
   const resultBody = document.querySelector("#resultBody");
   const statusMessage = document.querySelector("#statusMessage");
 
+  let manufacturers = [];
   let vehicles = [];
 
   const HTML_ESCAPE = {
@@ -41,6 +42,12 @@
 
   function setMessage(message) {
     statusMessage.textContent = message;
+  }
+
+  async function fetchJson(url) {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) throw new Error(`${url} 파일을 불러오지 못했습니다.`);
+    return response.json();
   }
 
   function yearLabel(year) {
@@ -127,14 +134,40 @@
 
   function populateManufacturers() {
     resetSelect(manufacturerSelect, "제조사 선택", false);
-    unique(vehicles.map((item) => item.manufacturer).filter(Boolean)).forEach((manufacturer) => {
-      manufacturerSelect.append(option(manufacturer));
+    manufacturers.forEach((manufacturer) => {
+      manufacturerSelect.append(option(manufacturer.id, manufacturer.name));
     });
     setMessage("제조사를 선택해 주세요.");
   }
 
-  function populateVehicles() {
-    const items = vehicles.filter((item) => item.manufacturer === manufacturerSelect.value);
+  async function loadManufacturerVehicles() {
+    const manufacturer = manufacturers.find((item) => item.id === manufacturerSelect.value);
+    vehicles = [];
+
+    resetSelect(vehicleSelect, "차량명 선택", true);
+    resetSelect(detailSelect, "차량명을 먼저 선택", true);
+    clearResult();
+
+    if (!manufacturer) {
+      setMessage("제조사를 선택해 주세요.");
+      return [];
+    }
+
+    vehicles = await fetchJson(`data/${manufacturer.file}`);
+    return vehicles;
+  }
+
+  async function populateVehicles() {
+    let items = [];
+
+    try {
+      items = await loadManufacturerVehicles();
+    } catch (error) {
+      console.error(error);
+      setMessage("선택한 제조사 DB를 불러오지 못했습니다.");
+      return;
+    }
+
     resetSelect(vehicleSelect, "차량명 선택", !items.length);
     resetSelect(detailSelect, "차량명을 먼저 선택", true);
     clearResult();
@@ -150,7 +183,6 @@
     const items = vehicles
       .map((item, index) => ({ item, index }))
       .filter(({ item }) => (
-        item.manufacturer === manufacturerSelect.value &&
         item.vehicle === vehicleSelect.value
       ))
       .sort((a, b) => detailLabel(a.item).localeCompare(detailLabel(b.item), "ko"));
@@ -178,13 +210,11 @@
 
   document.addEventListener("DOMContentLoaded", async () => {
     try {
-      const response = await fetch(DATA_URL, { cache: "no-store" });
-      if (!response.ok) throw new Error("현대 차량 DB를 불러오지 못했습니다.");
-      vehicles = await response.json();
+      manufacturers = await fetchJson(MANUFACTURERS_URL);
       populateManufacturers();
     } catch (error) {
       console.error(error);
-      setMessage("현대 차량 DB를 불러오지 못했습니다.");
+      setMessage("제조사 DB를 불러오지 못했습니다.");
     }
   });
 })();

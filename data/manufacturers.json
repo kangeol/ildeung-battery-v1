@@ -1,0 +1,12 @@
+[
+  {
+    "id": "hyundai",
+    "name": "현대",
+    "file": "hyundai.json"
+  },
+  {
+    "id": "kia",
+    "name": "기아",
+    "file": "kia.json"
+  }
+]
