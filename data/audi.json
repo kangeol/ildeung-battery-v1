@@ -1,0 +1,622 @@
+[
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A1",
+    "year": "10~18년",
+    "fuel": "디젤 1600cc",
+    "detailModel": "A1",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A3",
+    "year": "22년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "A3 (8Y)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A3",
+    "year": "22년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A3 (8Y)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A3",
+    "year": "03~22년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "뉴 A3",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A3",
+    "year": "03~22년",
+    "fuel": "디젤 2WD",
+    "detailModel": "뉴 A3",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A4",
+    "year": "16년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "A4 (B9)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A4",
+    "year": "16년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A4 (B9)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A4",
+    "year": "16년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "A4 (B9)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A4",
+    "year": "16년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "A4 (B9)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A4",
+    "year": "05~16년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "뉴 A4",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A4",
+    "year": "05~16년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "뉴 A4",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A4",
+    "year": "05~16년",
+    "fuel": "디젤 2WD",
+    "detailModel": "뉴 A4",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A4",
+    "year": "05~16년",
+    "fuel": "디젤 4WD",
+    "detailModel": "뉴 A4",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A5",
+    "year": "25년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A5 (B10)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A5",
+    "year": "25년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "A5 (B10)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A5",
+    "year": "17년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A5 (F5)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A5",
+    "year": "17년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "A5 (F5)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A5",
+    "year": "07~16년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "A5",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A5",
+    "year": "07~16년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A5",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A5",
+    "year": "07~16년",
+    "fuel": "디젤 4WD",
+    "detailModel": "A5",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "26년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "A6 (C9)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "26년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A6 (C9)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "26년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "A6 (C9)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "19~26년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "A6 (C8)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "19~26년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A6 (C8)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "19~26년",
+    "fuel": "디젤 2WD",
+    "detailModel": "A6 (C8)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "19~26년",
+    "fuel": "디젤 4WD",
+    "detailModel": "A6 (C8)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "04~18년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "뉴 A6",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "04~18년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "뉴 A6",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "04~18년",
+    "fuel": "디젤 2WD",
+    "detailModel": "뉴 A6",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "04~18년",
+    "fuel": "디젤 4WD",
+    "detailModel": "뉴 A6",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "94~04년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "A6",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A6",
+    "year": "94~04년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A6",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A7",
+    "year": "18년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A7 (4K)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A7",
+    "year": "18년~현재",
+    "fuel": "가솔린+전기 4WD",
+    "detailModel": "A7 (4K)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A7",
+    "year": "18년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "A7 (4K)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A7",
+    "year": "10~17년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A7",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A7",
+    "year": "10~17년",
+    "fuel": "디젤 2WD",
+    "detailModel": "A7",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A7",
+    "year": "10~17년",
+    "fuel": "디젤 4WD",
+    "detailModel": "A7",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A8",
+    "year": "18년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A8 (D5)",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A8",
+    "year": "18년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "A8 (D5)",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A8",
+    "year": "02~17년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "뉴 A8",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "A8",
+    "year": "02~17년",
+    "fuel": "디젤 4WD",
+    "detailModel": "뉴 A8",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q3",
+    "year": "18년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "Q3 (F3)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q3",
+    "year": "18년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "Q3 (F3)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q3",
+    "year": "18년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "Q3 (F3)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q3",
+    "year": "11~18년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "Q3",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q3",
+    "year": "11~18년",
+    "fuel": "디젤 4WD",
+    "detailModel": "Q3",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q5",
+    "year": "25년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "Q5 (80A)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q5",
+    "year": "25년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "Q5 (80A)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q5",
+    "year": "17년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "Q5 (FY)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q5",
+    "year": "17년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "Q5 (FY)",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q5",
+    "year": "08~16년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "Q5",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q5",
+    "year": "08~16년",
+    "fuel": "디젤 4WD",
+    "detailModel": "Q5",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "AGM105",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q7",
+    "year": "16~24년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "Q7 (4M)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q7",
+    "year": "16~24년",
+    "fuel": "디젤 4WD",
+    "detailModel": "Q7 (4M)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q7",
+    "year": "05~15년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "Q7",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "Q7",
+    "year": "05~15년",
+    "fuel": "디젤 4WD",
+    "detailModel": "Q7",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "TTS",
+    "year": "15~23년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "TTS (8S)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "TTS",
+    "year": "08~14년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "TTS",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "TT",
+    "year": "14~23년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "TT (8S)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "아우디",
+    "vehicle": "TT",
+    "year": "06~14년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "뉴 TT",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  }
+]
