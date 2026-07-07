@@ -1,5 +1,10 @@
 [
   {
+    "id": "benz",
+    "name": "벤츠",
+    "file": "benz.json"
+  },
+  {
     "id": "chevrolet",
     "name": "쉐보레",
     "file": "chevrolet.json"

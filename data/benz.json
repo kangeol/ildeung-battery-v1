@@ -1,0 +1,902 @@
+[
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "A-클래스",
+    "year": "19년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "A-클래스 W177",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "A-클래스",
+    "year": "19년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A-클래스 W177",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "A-클래스",
+    "year": "19년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "A-클래스 W177",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "A-클래스",
+    "year": "13~18년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "A-클래스 W176",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "A-클래스",
+    "year": "13~18년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "A-클래스 W176",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "A-클래스",
+    "year": "13~18년",
+    "fuel": "디젤 2WD",
+    "detailModel": "A-클래스 W176",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "B-클래스",
+    "year": "12~18년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "B-클래스 W246",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "B-클래스",
+    "year": "12~18년",
+    "fuel": "디젤 2WD",
+    "detailModel": "B-클래스 W246",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "B-클래스",
+    "year": "05~11년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "B-클래스 W245",
+    "defaultBattery": "DIN74",
+    "upgradeBattery": "AGM70",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "C-클래스",
+    "year": "22년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "C-클래스 W206",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "C-클래스",
+    "year": "22년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "C-클래스 W206",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "C-클래스",
+    "year": "14~24년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "C-클래스 W205",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "C-클래스",
+    "year": "14~24년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "C-클래스 W205",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "C-클래스",
+    "year": "14~24년",
+    "fuel": "가솔린+전기 2WD",
+    "detailModel": "C-클래스 W205",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "C-클래스",
+    "year": "14~24년",
+    "fuel": "가솔린+전기 4WD",
+    "detailModel": "C-클래스 W205",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "C-클래스",
+    "year": "14~24년",
+    "fuel": "디젤 2WD",
+    "detailModel": "C-클래스 W205",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "C-클래스",
+    "year": "14~24년",
+    "fuel": "디젤 4WD",
+    "detailModel": "C-클래스 W205",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "C-클래스",
+    "year": "07~14년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "C-클래스 W204",
+    "defaultBattery": "DIN74",
+    "upgradeBattery": "AGM70",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "C-클래스",
+    "year": "07~14년",
+    "fuel": "디젤 2WD",
+    "detailModel": "C-클래스 W204",
+    "defaultBattery": "DIN74",
+    "upgradeBattery": "AGM70",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "C-클래스",
+    "year": "07~14년",
+    "fuel": "디젤 4WD",
+    "detailModel": "C-클래스 W204",
+    "defaultBattery": "DIN74",
+    "upgradeBattery": "AGM70",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLA-클래스",
+    "year": "20년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "CLA-클래스 C118",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLA-클래스",
+    "year": "14~19년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "CLA-클래스 C117",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLA-클래스",
+    "year": "14~19년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "CLA-클래스 C117",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLA-클래스",
+    "year": "14~19년",
+    "fuel": "디젤 2WD",
+    "detailModel": "CLA-클래스 C117",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLA-클래스",
+    "year": "14~19년",
+    "fuel": "디젤 4WD",
+    "detailModel": "CLA-클래스 C117",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLE-클래스",
+    "year": "24년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "CLE-클래스 C236",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLE-클래스",
+    "year": "24년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "CLE-클래스 C236",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLK-클래스",
+    "year": "02~09년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "CLK-클래스 C209",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLS-클래스",
+    "year": "18~24년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "CLS-클래스 C257",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLS-클래스",
+    "year": "18~24년",
+    "fuel": "디젤 2WD",
+    "detailModel": "CLS-클래스 C257",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLS-클래스",
+    "year": "18~24년",
+    "fuel": "디젤 4WD",
+    "detailModel": "CLS-클래스 C257",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLS-클래스",
+    "year": "11~17년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "CLS-클래스 W218",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLS-클래스",
+    "year": "11~17년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "CLS-클래스 W218",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLS-클래스",
+    "year": "11~17년",
+    "fuel": "디젤 2WD",
+    "detailModel": "CLS-클래스 W218",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLS-클래스",
+    "year": "11~17년",
+    "fuel": "디젤 4WD",
+    "detailModel": "CLS-클래스 W218",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "CLS-클래스",
+    "year": "04~11년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "CLS-클래스 W219",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "24년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "E-클래스 W214",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "24년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "E-클래스 W214",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "24년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "E-클래스 W214",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "16~24년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "E-클래스 W213",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "16~24년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "E-클래스 W213",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "16~24년",
+    "fuel": "디젤 2WD",
+    "detailModel": "E-클래스 W213",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "16~24년",
+    "fuel": "디젤 4WD",
+    "detailModel": "E-클래스 W213",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "09~17년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "E-클래스 W212",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "09~17년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "E-클래스 W212",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "09~17년",
+    "fuel": "디젤 2WD",
+    "detailModel": "E-클래스 W212",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "09~17년",
+    "fuel": "디젤 4WD",
+    "detailModel": "E-클래스 W212",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "09~17년",
+    "fuel": "디젤+전기 2WD",
+    "detailModel": "E-클래스 W212",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "02~09년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "E-클래스 W211",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "E-클래스",
+    "year": "02~09년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "E-클래스 W211",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLA-클래스",
+    "year": "20년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "GLA-클래스 H247",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLA-클래스",
+    "year": "20년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "GLA-클래스 H247",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLA-클래스",
+    "year": "14~20년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "GLA-클래스 X156",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLA-클래스",
+    "year": "14~20년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "GLA-클래스 X156",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLA-클래스",
+    "year": "14~20년",
+    "fuel": "디젤 2WD",
+    "detailModel": "GLA-클래스 X156",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLA-클래스",
+    "year": "14~20년",
+    "fuel": "디젤 4WD",
+    "detailModel": "GLA-클래스 X156",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLB-클래스",
+    "year": "20년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "GLB-클래스 X247",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLB-클래스",
+    "year": "20년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "GLB-클래스 X247",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLB-클래스",
+    "year": "20년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "GLB-클래스 X247",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLC-클래스",
+    "year": "23년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "GLC-클래스 X254",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLC-클래스",
+    "year": "23년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "GLC-클래스 X254",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLC-클래스",
+    "year": "16~23년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "GLC-클래스 X253",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLC-클래스",
+    "year": "16~23년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "GLC-클래스 X253",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLC-클래스",
+    "year": "16~23년",
+    "fuel": "디젤 4WD",
+    "detailModel": "GLC-클래스 X253",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLE-클래스",
+    "year": "19년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "GLE-클래스 W167",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLE-클래스",
+    "year": "19년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "GLE-클래스 W167",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLE-클래스",
+    "year": "16~19년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "GLE-클래스 W166",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLE-클래스",
+    "year": "16~19년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "GLE-클래스 W166",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLE-클래스",
+    "year": "16~19년",
+    "fuel": "디젤 4WD",
+    "detailModel": "GLE-클래스 W166",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLK-클래스",
+    "year": "09~15년",
+    "fuel": "가솔린 3500cc",
+    "detailModel": "GLK-클래스 X204",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "GLK-클래스",
+    "year": "09~15년",
+    "fuel": "디젤 2100cc",
+    "detailModel": "GLK-클래스 X204",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "21년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "S-클래스 W223",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "21년~현재",
+    "fuel": "가솔린+전기 4WD",
+    "detailModel": "S-클래스 W223",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "21년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "S-클래스 W223",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "21년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "S-클래스 W223",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "13~21년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "S-클래스 W222",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "13~21년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "S-클래스 W222",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "13~21년",
+    "fuel": "가솔린+전기 2WD",
+    "detailModel": "S-클래스 W222",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "13~21년",
+    "fuel": "디젤 2WD",
+    "detailModel": "S-클래스 W222",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "13~21년",
+    "fuel": "디젤 4WD",
+    "detailModel": "S-클래스 W222",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "05~13년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "S-클래스 W221",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "05~13년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "S-클래스 W221",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "05~13년",
+    "fuel": "가솔린+전기 2WD",
+    "detailModel": "S-클래스 W221",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "S-클래스",
+    "year": "05~13년",
+    "fuel": "디젤 2WD",
+    "detailModel": "S-클래스 W221",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "SL-클래스",
+    "year": "23년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "SL-클래스 R232",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "SL-클래스",
+    "year": "23년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "SL-클래스 R232",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "SLC-클래스",
+    "year": "16~21년",
+    "fuel": "가솔린",
+    "detailModel": "SLC-클래스 R172",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "SLK-클래스",
+    "year": "04~16년",
+    "fuel": "가솔린 3000cc 이상",
+    "detailModel": "뉴 SLK-클래스",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "SLK-클래스",
+    "year": "04~16년",
+    "fuel": "가솔린 3000cc 이하",
+    "detailModel": "뉴 SLK-클래스",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "벤츠",
+    "vehicle": "SLS AMG",
+    "year": "10~14년",
+    "fuel": "가솔린 6200cc",
+    "detailModel": "SLS AMG",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  }
+]
