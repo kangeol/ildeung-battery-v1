@@ -35,6 +35,11 @@
     "file": "kia.json"
   },
   {
+    "id": "mini",
+    "name": "미니",
+    "file": "mini.json"
+  },
+  {
     "id": "renault",
     "name": "르노",
     "file": "renault.json"
