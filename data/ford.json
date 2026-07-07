@@ -7,7 +7,7 @@
     "detailModel": "레인저 4세대",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -17,7 +17,7 @@
     "detailModel": "레인저 3세대",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -27,7 +27,7 @@
     "detailModel": "레인저",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -37,7 +37,7 @@
     "detailModel": "머스탱 7세대",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -47,7 +47,7 @@
     "detailModel": "머스탱 7세대",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -57,7 +57,7 @@
     "detailModel": "머스탱",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -67,7 +67,7 @@
     "detailModel": "몬데오 4세대",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -77,7 +77,7 @@
     "detailModel": "몬데오 3세대",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -87,7 +87,7 @@
     "detailModel": "몬데오",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -97,7 +97,7 @@
     "detailModel": "몬데오",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -107,7 +107,7 @@
     "detailModel": "브롱코 6세대",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -117,7 +117,7 @@
     "detailModel": "브롱코",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -127,7 +127,7 @@
     "detailModel": "브롱코",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -137,7 +137,7 @@
     "detailModel": "익스플로러 6세대",
     "defaultBattery": "AGM70",
     "upgradeBattery": "AGM80",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -147,7 +147,7 @@
     "detailModel": "익스플로러 6세대",
     "defaultBattery": "AGM70",
     "upgradeBattery": "AGM80",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -157,7 +157,7 @@
     "detailModel": "익스플로러",
     "defaultBattery": "65-900",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -167,7 +167,7 @@
     "detailModel": "뉴 토러스",
     "defaultBattery": "65-900",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -177,7 +177,7 @@
     "detailModel": "퓨전",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -187,7 +187,7 @@
     "detailModel": "퓨전",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "포드",
@@ -197,6 +197,6 @@
     "detailModel": "퓨전",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   }
 ]

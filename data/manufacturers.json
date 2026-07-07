@@ -30,6 +30,11 @@
     "file": "hyundai.json"
   },
   {
+    "id": "jeep",
+    "name": "지프",
+    "file": "jeep.json"
+  },
+  {
     "id": "kgm",
     "name": "KG모빌리티",
     "file": "kgm.json"

@@ -1,0 +1,192 @@
+[
+  {
+    "manufacturer": "지프",
+    "vehicle": "랭글러",
+    "year": "18년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "랭글러 (JL)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "랭글러",
+    "year": "18년~현재",
+    "fuel": "가솔린+전기 4WD",
+    "detailModel": "랭글러 (JL)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "랭글러",
+    "year": "07~18년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "랭글러 (JK)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "랭글러",
+    "year": "07~18년",
+    "fuel": "디젤 4WD",
+    "detailModel": "랭글러 (JK)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "랭글러",
+    "year": "96~06년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "랭글러 (TJ)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "랭글러",
+    "year": "87~95년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "랭글러 (YJ)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "레니게이드",
+    "year": "15년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "레니게이드",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "레니게이드",
+    "year": "15년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "레니게이드",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "레니게이드",
+    "year": "15년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "레니게이드",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "레니게이드",
+    "year": "15년~현재",
+    "fuel": "디젤 4WD",
+    "detailModel": "레니게이드",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "체로키",
+    "year": "14년~현재",
+    "fuel": "가솔린 2400cc",
+    "detailModel": "체로키(KL)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "체로키",
+    "year": "14년~현재",
+    "fuel": "가솔린 3200cc",
+    "detailModel": "체로키(KL)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "체로키",
+    "year": "14년~현재",
+    "fuel": "디젤 2000cc",
+    "detailModel": "체로키(KL)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "체로키",
+    "year": "14년~현재",
+    "fuel": "디젤 2200cc",
+    "detailModel": "체로키(KL)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "체로키",
+    "year": "84~13년",
+    "fuel": "가솔린 2800cc 이상",
+    "detailModel": "체로키",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "체로키",
+    "year": "84~13년",
+    "fuel": "가솔린 2800cc 이하",
+    "detailModel": "체로키",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "체로키",
+    "year": "84~13년",
+    "fuel": "디젤 2800cc 이하",
+    "detailModel": "체로키",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "컴패스",
+    "year": "18년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "컴패스 2세대",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "완료"
+  },
+  {
+    "manufacturer": "지프",
+    "vehicle": "컴패스",
+    "year": "18년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "컴패스 2세대",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "완료"
+  }
+]
