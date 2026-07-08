@@ -307,6 +307,42 @@ h3 {
   line-height: 1.55;
 }
 
+.service-area-section {
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.service-area-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.92);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(248, 250, 252, 0.98), rgba(239, 246, 255, 0.98));
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.09);
+}
+
+.service-area-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.service-area-fallback {
+  display: none;
+  color: var(--muted);
+  padding: 28px 18px;
+  font-size: 15px;
+  font-weight: 720;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.service-area-card.is-missing .service-area-fallback {
+  display: block;
+}
+
 .battery-search-section {
   padding-top: 0;
   padding-bottom: 32px;
@@ -690,6 +726,10 @@ h3 {
     border-radius: 20px;
   }
 
+  .service-area-card {
+    border-radius: 20px;
+  }
+
   .hero-dots {
     bottom: 3%;
   }
@@ -706,7 +746,7 @@ h3 {
 
 @media (min-width: 820px) {
   .hero-section {
-    padding: 42px 0;
+    padding: 42px 0 30px;
   }
 
   .battery-search-card {
