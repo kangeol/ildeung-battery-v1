@@ -19,18 +19,55 @@
 
   <main>
     <section class="hero-section">
-      <div class="hero-inner">
-        <div class="hero-copy">
-          <h1>내 차에 맞는 배터리,<br>바로 찾아보세요</h1>
-          <p class="hero-description">
-            국산차부터 수입차까지<br>
-            차량 조건에 맞는 추천 배터리를 확인하세요.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="search.html">차량 배터리 찾기</a>
-            <a class="btn secondary" href="tel:16449141">전화 상담</a>
-          </div>
+      <div class="hero-slider" data-hero-slider>
+        <div class="hero-slide active">
+          <img src="assets/hero/hero-1.png" alt="내 차에 맞는 배터리 바로 찾기" onerror="this.hidden=true">
         </div>
+
+        <div class="hero-slide">
+          <img src="assets/hero/hero-2.png" alt="출장 배터리 교체 서비스" onerror="this.hidden=true">
+        </div>
+
+        <div class="hero-slide">
+          <img src="assets/hero/hero-3.png" alt="전문진단기 보유 무료코딩 기본점검 무료" onerror="this.hidden=true">
+        </div>
+
+        <a class="hero-hotspot hero-hotspot-call" href="tel:16449141" aria-label="전화 상담"></a>
+        <a class="hero-hotspot hero-hotspot-search" href="search.html" aria-label="차량 배터리 찾기"></a>
+
+        <div class="hero-dots" aria-label="Hero 슬라이드 선택"></div>
+      </div>
+    </section>
+
+    <section class="section quick-link-section" aria-labelledby="quickLinkTitle">
+      <div class="section-heading compact">
+        <p class="eyebrow">Store</p>
+        <h2 id="quickLinkTitle">배터리 최저가 바로가기</h2>
+        <p class="section-description">필요한 배터리를 스마트스토어에서 바로 확인해보세요.</p>
+      </div>
+
+      <div class="quick-link-grid">
+        <a class="quick-link-card" href="https://smartstore.naver.com/battery1/products/414050800" target="_blank" rel="noopener noreferrer">
+          <div class="quick-link-image">
+            <img class="quick-link-img" src="assets/quick-links/standard-din.png" alt="일반 DIN 타입 배터리" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-image')" onerror="this.hidden=true">
+            <span class="quick-link-fallback">이미지 준비중</span>
+          </div>
+          <div class="quick-link-text">
+            <strong>일반 · DIN 타입</strong>
+            <span>최저가 바로가기</span>
+          </div>
+        </a>
+
+        <a class="quick-link-card" href="https://smartstore.naver.com/battery1/products/575288571" target="_blank" rel="noopener noreferrer">
+          <div class="quick-link-image">
+            <img class="quick-link-img" src="assets/quick-links/agm.png" alt="AGM 배터리" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-image')" onerror="this.hidden=true">
+            <span class="quick-link-fallback">이미지 준비중</span>
+          </div>
+          <div class="quick-link-text">
+            <strong>AGM 배터리</strong>
+            <span>최저가 바로가기</span>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -142,6 +179,60 @@
 
   <script>
     (() => {
+      const slider = document.querySelector("[data-hero-slider]");
+
+      if (slider) {
+        const slides = Array.from(slider.querySelectorAll(".hero-slide"));
+        const dotsContainer = slider.querySelector(".hero-dots");
+        let currentIndex = 0;
+        let slideTimer = null;
+
+        const dots = slides.map((_, index) => {
+          const dot = document.createElement("button");
+          dot.className = "hero-dot";
+          dot.type = "button";
+          dot.setAttribute("aria-label", `${index + 1}번째 Hero 이미지 보기`);
+          dotsContainer.appendChild(dot);
+          return dot;
+        });
+
+        const showSlide = (nextIndex) => {
+          currentIndex = (nextIndex + slides.length) % slides.length;
+
+          slides.forEach((slide, index) => {
+            slide.classList.toggle("active", index === currentIndex);
+          });
+
+          dots.forEach((dot, index) => {
+            const isActive = index === currentIndex;
+            dot.classList.toggle("active", isActive);
+            dot.setAttribute("aria-current", isActive ? "true" : "false");
+          });
+        };
+
+        const startSlider = () => {
+          if (slides.length <= 1) return;
+          slideTimer = window.setInterval(() => {
+            showSlide(currentIndex + 1);
+          }, 4000);
+        };
+
+        const restartSlider = () => {
+          window.clearInterval(slideTimer);
+          startSlider();
+        };
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            showSlide(index);
+            restartSlider();
+          });
+        });
+
+        showSlide(0);
+        startSlider();
+      }
+
       const items = document.querySelectorAll("[data-accordion] .accordion-item");
 
       items.forEach((item) => {
@@ -161,6 +252,7 @@
           }
         });
       });
+
     })();
   </script>
 </body>
