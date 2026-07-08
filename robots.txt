@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kangeol.github.io/ildeung-battery-v1/sitemap.xml
+Sitemap: https://battery1.co.kr/sitemap.xml
