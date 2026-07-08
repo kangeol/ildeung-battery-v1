@@ -88,11 +88,15 @@ button {
   display: inline-flex;
   align-items: center;
   min-height: 40px;
-  color: var(--navy);
-  font-size: 21px;
-  font-weight: 800;
-  line-height: 1;
-  white-space: nowrap;
+  flex: 0 1 auto;
+}
+
+.brand-logo img {
+  display: block;
+  width: clamp(120px, 34vw, 170px);
+  max-height: 42px;
+  height: auto;
+  object-fit: contain;
 }
 
 .header-call {
@@ -807,7 +811,12 @@ h3 {
   }
 
   .brand-logo {
-    font-size: 19px;
+    min-height: 38px;
+  }
+
+  .brand-logo img {
+    width: clamp(118px, 38vw, 145px);
+    max-height: 38px;
   }
 
   .header-call {
