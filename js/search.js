@@ -55,7 +55,19 @@
 
   const manufacturerSelect = document.querySelector("#manufacturerSelect");
   const manufacturerLogo = document.querySelector("#manufacturerLogo");
+  const manufacturerDropdown = document.querySelector("#manufacturerDropdown");
+  const manufacturerDropdownButton = document.querySelector("#manufacturerDropdownButton");
+  const manufacturerDropdownPanel = document.querySelector("#manufacturerDropdownPanel");
+  const manufacturerDropdownBackdrop = document.querySelector("#manufacturerDropdownBackdrop");
+  const manufacturerDropdownClose = document.querySelector("#manufacturerDropdownClose");
+  const manufacturerDropdownList = document.querySelector("#manufacturerDropdownList");
   const vehicleSelect = document.querySelector("#vehicleSelect");
+  const vehicleDropdown = document.querySelector("#vehicleDropdown");
+  const vehicleDropdownButton = document.querySelector("#vehicleDropdownButton");
+  const vehicleDropdownPanel = document.querySelector("#vehicleDropdownPanel");
+  const vehicleDropdownBackdrop = document.querySelector("#vehicleDropdownBackdrop");
+  const vehicleDropdownClose = document.querySelector("#vehicleDropdownClose");
+  const vehicleDropdownList = document.querySelector("#vehicleDropdownList");
   const detailSelect = document.querySelector("#detailSelect");
   const detailDropdown = document.querySelector("#detailDropdown");
   const detailDropdownButton = document.querySelector("#detailDropdownButton");
@@ -70,6 +82,31 @@
 
   let manufacturers = [];
   let vehicles = [];
+
+  const customDropdowns = [
+    {
+      select: manufacturerSelect,
+      root: manufacturerDropdown,
+      button: manufacturerDropdownButton,
+      panel: manufacturerDropdownPanel,
+      backdrop: manufacturerDropdownBackdrop,
+      closeButton: manufacturerDropdownClose,
+      list: manufacturerDropdownList,
+      enabledPlaceholder: "제조사 선택",
+      disabledPlaceholder: "제조사 선택"
+    },
+    {
+      select: vehicleSelect,
+      root: vehicleDropdown,
+      button: vehicleDropdownButton,
+      panel: vehicleDropdownPanel,
+      backdrop: vehicleDropdownBackdrop,
+      closeButton: vehicleDropdownClose,
+      list: vehicleDropdownList,
+      enabledPlaceholder: "차량명 선택",
+      disabledPlaceholder: "제조사를 먼저 선택해 주세요"
+    }
+  ].filter(({ select, root, button, panel, list }) => select && root && button && panel && list);
 
   const HTML_ESCAPE = {
     "&": "&amp;",
@@ -94,6 +131,7 @@
     select.innerHTML = "";
     select.append(option("", placeholder));
     select.disabled = disabled;
+    syncCustomDropdown(select);
     if (select === detailSelect) syncDetailDropdown();
   }
 
@@ -182,6 +220,7 @@
     if (!manufacturerLogo) return;
 
     manufacturerSelect.classList.remove("has-logo");
+    manufacturerDropdownButton?.classList.remove("has-logo");
     manufacturerLogo.hidden = true;
     manufacturerLogo.alt = logoSrc && manufacturer ? `${manufacturer.name} 로고` : "";
     manufacturerLogo.onload = null;
@@ -195,11 +234,13 @@
     manufacturerLogo.onload = () => {
       manufacturerLogo.hidden = false;
       manufacturerSelect.classList.add("has-logo");
+      manufacturerDropdownButton?.classList.add("has-logo");
     };
 
     manufacturerLogo.onerror = () => {
       manufacturerLogo.hidden = true;
       manufacturerSelect.classList.remove("has-logo");
+      manufacturerDropdownButton?.classList.remove("has-logo");
       manufacturerLogo.removeAttribute("src");
     };
 
@@ -230,6 +271,105 @@
       .join(" ");
   }
 
+  function customDropdownPlaceholder(config) {
+    return config.select.disabled ? config.disabledPlaceholder : config.enabledPlaceholder;
+  }
+
+  function syncDropdownBodyLock() {
+    const customOpen = customDropdowns.some(({ root }) => root.classList.contains("is-open"));
+    const detailOpen = detailDropdown?.classList.contains("is-open");
+    document.body.classList.toggle("dropdown-open", Boolean(customOpen || detailOpen));
+  }
+
+  function closeCustomDropdown(config) {
+    config.root.classList.remove("is-open");
+    config.button.setAttribute("aria-expanded", "false");
+    config.panel.hidden = true;
+    if (config.backdrop) config.backdrop.hidden = true;
+    syncDropdownBodyLock();
+  }
+
+  function closeAllCustomDropdowns() {
+    customDropdowns.forEach(closeCustomDropdown);
+  }
+
+  function updateCustomDropdownSelection(select) {
+    const config = customDropdowns.find((item) => item.select === select);
+    if (!config) return;
+
+    const selectedOption = select.options[select.selectedIndex];
+    const hasValue = Boolean(select.value);
+    config.button.textContent = hasValue && selectedOption ? selectedOption.textContent : customDropdownPlaceholder(config);
+    config.button.classList.toggle("is-placeholder", !hasValue);
+
+    config.list.querySelectorAll(".custom-select-option").forEach((button) => {
+      const isSelected = button.dataset.value === select.value;
+      button.classList.toggle("is-selected", isSelected);
+      button.setAttribute("aria-selected", isSelected ? "true" : "false");
+    });
+  }
+
+  function syncCustomDropdown(select) {
+    const config = customDropdowns.find((item) => item.select === select);
+    if (!config) return;
+
+    closeCustomDropdown(config);
+    config.button.disabled = select.disabled;
+    config.list.innerHTML = "";
+
+    Array.from(select.options).forEach((item, index) => {
+      if (index === 0 && !item.value) return;
+
+      if (item.disabled) {
+        const separator = document.createElement("div");
+        separator.className = "custom-select-separator";
+        separator.textContent = item.textContent || "────────────";
+        config.list.append(separator);
+        return;
+      }
+
+      if (!item.value) return;
+
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "custom-select-option";
+      button.dataset.value = item.value;
+      button.textContent = item.textContent;
+      button.title = item.textContent;
+      button.setAttribute("role", "option");
+      button.setAttribute("aria-selected", "false");
+
+      button.addEventListener("click", () => {
+        select.value = item.value;
+        updateCustomDropdownSelection(select);
+        closeCustomDropdown(config);
+        select.dispatchEvent(new Event("change", { bubbles: true }));
+      });
+
+      config.list.append(button);
+    });
+
+    updateCustomDropdownSelection(select);
+  }
+
+  function toggleCustomDropdown(config) {
+    if (config.button.disabled) return;
+    const willOpen = !config.root.classList.contains("is-open");
+
+    if (!willOpen) {
+      closeCustomDropdown(config);
+      return;
+    }
+
+    closeDetailDropdown();
+    closeAllCustomDropdowns();
+    config.root.classList.add("is-open");
+    config.button.setAttribute("aria-expanded", "true");
+    config.panel.hidden = false;
+    if (config.backdrop) config.backdrop.hidden = false;
+    syncDropdownBodyLock();
+  }
+
   function detailDropdownPlaceholder() {
     if (!detailSelect || detailSelect.disabled) return "차량명을 먼저 선택해 주세요";
     return "세부모델 선택";
@@ -241,7 +381,7 @@
     detailDropdownButton.setAttribute("aria-expanded", "false");
     detailDropdownPanel.hidden = true;
     if (detailDropdownBackdrop) detailDropdownBackdrop.hidden = true;
-    document.body.classList.remove("dropdown-open");
+    syncDropdownBodyLock();
   }
 
   function toggleDetailDropdown() {
@@ -249,11 +389,12 @@
     const willOpen = !detailDropdown.classList.contains("is-open");
 
     if (willOpen) {
+      closeAllCustomDropdowns();
       detailDropdown.classList.add("is-open");
       detailDropdownButton.setAttribute("aria-expanded", "true");
       detailDropdownPanel.hidden = false;
       if (detailDropdownBackdrop) detailDropdownBackdrop.hidden = false;
-      document.body.classList.add("dropdown-open");
+      syncDropdownBodyLock();
       return;
     }
 
@@ -480,6 +621,7 @@
     sorted.imports.forEach((manufacturer) => {
       manufacturerSelect.append(option(manufacturer.id, manufacturer.name));
     });
+    syncCustomDropdown(manufacturerSelect);
     updateManufacturerLogo();
     setMessage("제조사를 선택해 주세요.");
   }
@@ -520,6 +662,7 @@
       vehicleSelect.append(option(vehicle));
     });
 
+    syncCustomDropdown(vehicleSelect);
     setMessage(items.length ? "차량명을 선택해 주세요." : "제조사를 선택해 주세요.");
   }
 
@@ -548,6 +691,16 @@
     });
   }
 
+  customDropdowns.forEach((config) => {
+    config.button.addEventListener("click", () => toggleCustomDropdown(config));
+    config.button.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeCustomDropdown(config);
+    });
+
+    config.closeButton?.addEventListener("click", () => closeCustomDropdown(config));
+    config.backdrop?.addEventListener("click", () => closeCustomDropdown(config));
+  });
+
   if (detailDropdownButton) {
     detailDropdownButton.addEventListener("click", toggleDetailDropdown);
     detailDropdownButton.addEventListener("keydown", (event) => {
@@ -564,19 +717,31 @@
   }
 
   document.addEventListener("click", (event) => {
+    customDropdowns.forEach((config) => {
+      if (config.root.contains(event.target)) return;
+      closeCustomDropdown(config);
+    });
+
     if (!detailDropdown || detailDropdown.contains(event.target)) return;
     closeDetailDropdown();
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeDetailDropdown();
+    if (event.key === "Escape") {
+      closeAllCustomDropdowns();
+      closeDetailDropdown();
+    }
   });
 
   manufacturerSelect.addEventListener("change", () => {
+    updateCustomDropdownSelection(manufacturerSelect);
     updateManufacturerLogo();
     populateVehicles();
   });
-  vehicleSelect.addEventListener("change", populateDetails);
+  vehicleSelect.addEventListener("change", () => {
+    updateCustomDropdownSelection(vehicleSelect);
+    populateDetails();
+  });
   detailSelect.addEventListener("change", () => {
     updateDetailDropdownSelection();
     if (detailSelect.value) {

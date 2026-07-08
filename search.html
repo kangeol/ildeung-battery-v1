@@ -45,20 +45,44 @@
 
       <section class="search-box" aria-label="차량 배터리 검색">
         <div class="field">
-          <label for="manufacturerSelect"><span>1</span> 제조사</label>
-          <div class="manufacturer-select-wrap">
-            <select id="manufacturerSelect">
+          <label for="manufacturerDropdownButton"><span>1</span> 제조사</label>
+          <div class="manufacturer-select-wrap select-dropdown" id="manufacturerDropdown">
+            <select id="manufacturerSelect" class="native-value-select" hidden>
               <option value="">제조사 선택</option>
             </select>
+            <button class="custom-select-button is-placeholder" id="manufacturerDropdownButton" type="button" aria-expanded="false" aria-controls="manufacturerDropdownPanel">
+              제조사 선택
+            </button>
             <img class="manufacturer-select-logo" id="manufacturerLogo" alt="" hidden>
+            <div class="select-dropdown-backdrop" id="manufacturerDropdownBackdrop" hidden></div>
+            <div class="select-dropdown-panel" id="manufacturerDropdownPanel" hidden>
+              <div class="select-dropdown-sheet-header">
+                <strong>제조사 선택</strong>
+                <button class="select-dropdown-close" id="manufacturerDropdownClose" type="button">닫기</button>
+              </div>
+              <div class="select-dropdown-list" id="manufacturerDropdownList" role="listbox"></div>
+            </div>
           </div>
         </div>
 
         <div class="field">
-          <label for="vehicleSelect"><span>2</span> 차량명</label>
-          <select id="vehicleSelect" disabled>
+          <label for="vehicleDropdownButton"><span>2</span> 차량명</label>
+          <select id="vehicleSelect" class="native-value-select" disabled hidden>
             <option value="">제조사를 먼저 선택</option>
           </select>
+          <div class="select-dropdown" id="vehicleDropdown">
+            <button class="custom-select-button is-placeholder" id="vehicleDropdownButton" type="button" aria-expanded="false" aria-controls="vehicleDropdownPanel" disabled>
+              제조사를 먼저 선택해 주세요
+            </button>
+            <div class="select-dropdown-backdrop" id="vehicleDropdownBackdrop" hidden></div>
+            <div class="select-dropdown-panel" id="vehicleDropdownPanel" hidden>
+              <div class="select-dropdown-sheet-header">
+                <strong>차량명 선택</strong>
+                <button class="select-dropdown-close" id="vehicleDropdownClose" type="button">닫기</button>
+              </div>
+              <div class="select-dropdown-list" id="vehicleDropdownList" role="listbox"></div>
+            </div>
+          </div>
         </div>
 
         <div class="field">
