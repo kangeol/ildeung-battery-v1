@@ -7,6 +7,23 @@
     renault: "assets/logos/renault.png",
     kgm: "assets/logos/kgm.png"
   };
+  const PRICE_LINKS = {
+    standard: {
+      title: "일반·DIN 타입",
+      action: "최저가 바로가기",
+      url: "https://smartstore.naver.com/battery1/products/414050800",
+      image: "assets/quick-links/standard-din.png",
+      alt: "일반 DIN 타입 배터리"
+    },
+    agm: {
+      title: "AGM 배터리",
+      action: "최저가 바로가기",
+      url: "https://smartstore.naver.com/battery1/products/575288571",
+      image: "assets/quick-links/agm.png",
+      alt: "AGM 배터리"
+    }
+  };
+  const UNCLEAR_BATTERY_KEYWORDS = ["확인중", "현대순정", "규격 확인", "규격확인", "확인"];
   const MANUFACTURER_LOGO_NAMES = {
     "현대": "hyundai",
     "기아": "kia",
@@ -43,6 +60,7 @@
   const resultPanel = document.querySelector("#resultPanel");
   const resultBody = document.querySelector("#resultBody");
   const statusMessage = document.querySelector("#statusMessage");
+  const preResultContact = document.querySelector("#preResultContact");
 
   let manufacturers = [];
   let vehicles = [];
@@ -208,11 +226,74 @@
   function clearResult() {
     resultPanel.hidden = true;
     resultBody.innerHTML = "";
+    setPreResultContactVisible(true);
   }
 
   function selectedItem() {
     if (detailSelect.value === "") return null;
     return vehicles[Number(detailSelect.value)] || null;
+  }
+
+  function setPreResultContactVisible(visible) {
+    if (preResultContact) preResultContact.hidden = !visible;
+  }
+
+  function priceLinkTypes(defaultBattery) {
+    const batteryText = String(defaultBattery || "").trim();
+    const upperBattery = batteryText.toUpperCase();
+    const compactBattery = upperBattery.replace(/\s+/g, "");
+
+    if (upperBattery.includes("AGM")) return ["agm"];
+
+    const isUnclear = !batteryText || UNCLEAR_BATTERY_KEYWORDS.some((keyword) => (
+      upperBattery.includes(keyword) || compactBattery.includes(keyword.replace(/\s+/g, ""))
+    ));
+
+    return isUnclear ? ["standard", "agm"] : ["standard"];
+  }
+
+  function priceLinkCard(type) {
+    const link = PRICE_LINKS[type];
+    if (!link) return "";
+
+    return `
+          <a class="price-link-card" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">
+            <span class="price-link-media">
+              <img class="price-link-image" src="${escapeHtml(link.image)}" alt="${escapeHtml(link.alt)}" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-image')" onerror="this.hidden=true">
+              <span class="price-link-fallback">상품 바로가기</span>
+            </span>
+            <span class="price-link-text">
+              <strong>${escapeHtml(link.title)}</strong>
+              <em>${escapeHtml(link.action)}</em>
+            </span>
+          </a>
+    `;
+  }
+
+  function priceLinksSection(item) {
+    return `
+        <section class="price-links" aria-label="배터리 최저가 바로가기">
+          <div class="price-links-heading">
+            <strong>배터리 최저가 바로가기</strong>
+            <p>추천 배터리 유형에 맞는 상품을 바로 확인해보세요.</p>
+          </div>
+          <div class="price-link-grid">
+            ${priceLinkTypes(item.defaultBattery).map(priceLinkCard).join("")}
+          </div>
+        </section>
+    `;
+  }
+
+  function phoneCtaMarkup(extraClass = "") {
+    return `
+        <a class="phone-cta ${escapeHtml(extraClass)}" href="tel:16449141" aria-label="출장배터리 전화상담">
+          <span class="phone-cta-copy">
+            <strong>출장배터리 전화상담</strong>
+            <em>차량 위치에서 빠르게 배터리 교체를 도와드립니다.</em>
+          </span>
+          <span class="phone-cta-button">1644-9141 전화하기</span>
+        </a>
+    `;
   }
 
   function renderResult() {
@@ -261,15 +342,14 @@
 
         ${upgradeCard}
 
-        <a class="contact-card" href="tel:16449141" aria-label="출장배터리교체 문의 전화">
-          <span>출장배터리교체 문의</span>
-          <strong>1644-9141</strong>
-        </a>
+        ${priceLinksSection(item)}
 
         <section class="notice" aria-label="안내문">
           <p>※ 위 추천 배터리는 일등밧데리 검수 DB 기준입니다.</p>
           <p>※ 차량 상태에 따라 배터리 규격이 달라질 수 있으므로 전문기사 상담을 권장합니다.</p>
         </section>
+
+        ${phoneCtaMarkup("result-phone-cta")}
       </article>
     `;
 
@@ -299,6 +379,7 @@
     }
 
     resultPanel.hidden = false;
+    setPreResultContactVisible(false);
     setMessage("선택한 차량의 추천 배터리를 확인했습니다.");
   }
 

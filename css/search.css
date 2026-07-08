@@ -27,6 +27,19 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+p,
+a,
+span,
+strong,
+em,
+select {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 button,
 select {
   font: inherit;
@@ -217,6 +230,60 @@ select:disabled {
   line-height: 1.5;
 }
 
+.phone-cta {
+  display: grid;
+  gap: 14px;
+  border: 1px solid #dbeafe;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #f2f7ff 100%);
+  padding: 16px;
+  color: var(--text);
+  box-shadow: 0 14px 28px rgba(0, 87, 217, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.phone-cta-copy {
+  display: grid;
+  gap: 5px;
+}
+
+.phone-cta-copy strong {
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 950;
+  line-height: 1.32;
+}
+
+.phone-cta-copy em {
+  color: var(--muted);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.phone-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary) 0%, #2f7df4 100%);
+  color: #fff;
+  padding: 0 18px;
+  font-size: 15px;
+  font-weight: 950;
+  box-shadow: 0 12px 22px rgba(0, 87, 217, 0.18);
+}
+
+.phone-cta:hover,
+.phone-cta:focus-visible {
+  border-color: #bfd8ff;
+  box-shadow: 0 18px 34px rgba(0, 87, 217, 0.12);
+  transform: translateY(-1px);
+  outline: none;
+}
+
 .result-box h2 {
   margin: 0;
   font-size: 24px;
@@ -335,17 +402,25 @@ select:disabled {
 .battery-card {
   display: grid;
   gap: 12px;
+  justify-items: stretch;
   border-color: #c8dcff;
   background: linear-gradient(135deg, #f7fbff 0%, #eaf3ff 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82), 0 12px 26px rgba(0, 87, 217, 0.1);
 }
 
 .battery-card strong {
+  display: block;
   color: var(--primary-dark);
-  font-size: clamp(42px, 11vw, 60px);
+  width: 100%;
+  font-size: clamp(38px, 9.5vw, 52px);
   font-weight: 950;
-  line-height: 1.05;
-  overflow-wrap: anywhere;
+  line-height: 1.08;
+  text-align: center;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow-wrap: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .battery-card.upgrade {
@@ -356,7 +431,128 @@ select:disabled {
 
 .battery-card.upgrade strong {
   color: #a83a47;
-  font-size: clamp(40px, 10vw, 56px);
+  font-size: clamp(36px, 9vw, 50px);
+}
+
+.price-links {
+  display: grid;
+  gap: 12px;
+  border: 1px solid #dbe7f5;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);
+  padding: 16px;
+  box-shadow: 0 12px 24px rgba(31, 41, 51, 0.055);
+}
+
+.price-links-heading {
+  display: grid;
+  gap: 5px;
+}
+
+.price-links-heading strong {
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 950;
+  line-height: 1.3;
+}
+
+.price-links-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.price-link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 172px));
+  justify-content: start;
+  gap: 10px;
+}
+
+.price-link-card {
+  display: grid;
+  gap: 9px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 10px 22px rgba(31, 41, 51, 0.055);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.price-link-card:hover,
+.price-link-card:focus-visible {
+  border-color: #bfd8ff;
+  box-shadow: 0 14px 26px rgba(0, 87, 217, 0.1);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.price-link-media {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f8fafc 0%, #edf5ff 100%);
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 850;
+  text-align: center;
+}
+
+.price-link-media.has-image {
+  background: #fff;
+}
+
+.price-link-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.price-link-image[hidden] {
+  display: none;
+}
+
+.price-link-fallback {
+  position: relative;
+  z-index: 0;
+  padding: 0 8px;
+}
+
+.price-link-media.has-image .price-link-fallback {
+  opacity: 0;
+}
+
+.price-link-text {
+  display: grid;
+  gap: 3px;
+  text-align: center;
+}
+
+.price-link-text strong {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 950;
+  line-height: 1.35;
+}
+
+.price-link-text em {
+  color: var(--primary);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.35;
 }
 
 .contact-card {
@@ -492,6 +688,15 @@ select:disabled {
   .search-box,
   .result-box {
     align-self: start;
+  }
+
+  .phone-cta {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  .phone-cta-button {
+    min-width: 178px;
   }
 
   .selected-vehicle.has-logo {
