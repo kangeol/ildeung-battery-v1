@@ -230,6 +230,24 @@ select:disabled {
   color: #98a2b3;
 }
 
+#detailSelect {
+  min-height: 54px;
+  height: 54px;
+  padding-right: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#detailSelect option {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .manufacturer-select-wrap {
   position: relative;
 }
@@ -779,6 +797,18 @@ select:disabled {
 
   .content {
     padding-inline: 14px;
+  }
+
+  #detailSelect {
+    min-height: 52px;
+    height: 52px;
+    padding-inline: 10px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  #detailSelect option {
+    font-size: 13px;
   }
 
   .vehicle-summary .vehicle-detail-model {
