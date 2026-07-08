@@ -57,6 +57,9 @@
   const manufacturerLogo = document.querySelector("#manufacturerLogo");
   const vehicleSelect = document.querySelector("#vehicleSelect");
   const detailSelect = document.querySelector("#detailSelect");
+  const detailDropdown = document.querySelector("#detailDropdown");
+  const detailDropdownButton = document.querySelector("#detailDropdownButton");
+  const detailDropdownPanel = document.querySelector("#detailDropdownPanel");
   const resultPanel = document.querySelector("#resultPanel");
   const resultBody = document.querySelector("#resultBody");
   const statusMessage = document.querySelector("#statusMessage");
@@ -88,6 +91,7 @@
     select.innerHTML = "";
     select.append(option("", placeholder));
     select.disabled = disabled;
+    if (select === detailSelect) syncDetailDropdown();
   }
 
   function unique(values) {
@@ -221,6 +225,79 @@
     return [item.detailModel, yearLabel(item.year) ? `(${yearLabel(item.year)})` : ""]
       .filter(Boolean)
       .join(" ");
+  }
+
+  function detailDropdownPlaceholder() {
+    if (!detailSelect || detailSelect.disabled) return "차량명을 먼저 선택해 주세요";
+    return "세부모델 선택";
+  }
+
+  function closeDetailDropdown() {
+    if (!detailDropdown || !detailDropdownButton || !detailDropdownPanel) return;
+    detailDropdown.classList.remove("is-open");
+    detailDropdownButton.setAttribute("aria-expanded", "false");
+    detailDropdownPanel.hidden = true;
+  }
+
+  function toggleDetailDropdown() {
+    if (!detailDropdown || !detailDropdownButton || !detailDropdownPanel || detailDropdownButton.disabled) return;
+    const willOpen = !detailDropdown.classList.contains("is-open");
+
+    if (willOpen) {
+      detailDropdown.classList.add("is-open");
+      detailDropdownButton.setAttribute("aria-expanded", "true");
+      detailDropdownPanel.hidden = false;
+      return;
+    }
+
+    closeDetailDropdown();
+  }
+
+  function updateDetailDropdownSelection() {
+    if (!detailDropdownButton || !detailDropdownPanel) return;
+
+    const selectedOption = detailSelect.options[detailSelect.selectedIndex];
+    const hasValue = Boolean(detailSelect.value);
+    detailDropdownButton.textContent = hasValue && selectedOption ? selectedOption.textContent : detailDropdownPlaceholder();
+    detailDropdownButton.classList.toggle("is-placeholder", !hasValue);
+
+    detailDropdownPanel.querySelectorAll(".detail-dropdown-option").forEach((button) => {
+      const isSelected = button.dataset.value === detailSelect.value;
+      button.classList.toggle("is-selected", isSelected);
+      button.setAttribute("aria-selected", isSelected ? "true" : "false");
+    });
+  }
+
+  function syncDetailDropdown() {
+    if (!detailDropdownButton || !detailDropdownPanel) return;
+
+    closeDetailDropdown();
+    detailDropdownButton.disabled = detailSelect.disabled;
+    detailDropdownPanel.innerHTML = "";
+
+    Array.from(detailSelect.options)
+      .filter((item) => item.value)
+      .forEach((item) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "detail-dropdown-option";
+        button.dataset.value = item.value;
+        button.textContent = item.textContent;
+        button.title = item.textContent;
+        button.setAttribute("role", "option");
+        button.setAttribute("aria-selected", "false");
+
+        button.addEventListener("click", () => {
+          detailSelect.value = item.value;
+          updateDetailDropdownSelection();
+          closeDetailDropdown();
+          detailSelect.dispatchEvent(new Event("change", { bubbles: true }));
+        });
+
+        detailDropdownPanel.append(button);
+      });
+
+    updateDetailDropdownSelection();
   }
 
   function clearResult() {
@@ -453,6 +530,7 @@
       detailSelect.append(option(String(index), detailLabel(item)));
     });
 
+    syncDetailDropdown();
     setMessage(items.length ? "세부모델을 선택해 주세요." : "차량명을 선택해 주세요.");
   }
 
@@ -463,12 +541,29 @@
     });
   }
 
+  if (detailDropdownButton) {
+    detailDropdownButton.addEventListener("click", toggleDetailDropdown);
+    detailDropdownButton.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeDetailDropdown();
+    });
+  }
+
+  document.addEventListener("click", (event) => {
+    if (!detailDropdown || detailDropdown.contains(event.target)) return;
+    closeDetailDropdown();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeDetailDropdown();
+  });
+
   manufacturerSelect.addEventListener("change", () => {
     updateManufacturerLogo();
     populateVehicles();
   });
   vehicleSelect.addEventListener("change", populateDetails);
   detailSelect.addEventListener("change", () => {
+    updateDetailDropdownSelection();
     if (detailSelect.value) {
       renderResult();
       return;

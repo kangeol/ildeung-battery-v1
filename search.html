@@ -62,10 +62,16 @@
         </div>
 
         <div class="field">
-          <label for="detailSelect"><span>3</span> 세부모델</label>
-          <select id="detailSelect" disabled>
+          <label for="detailDropdownButton"><span>3</span> 세부모델</label>
+          <select id="detailSelect" class="detail-native-select" disabled hidden>
             <option value="">차량명을 먼저 선택</option>
           </select>
+          <div class="detail-dropdown" id="detailDropdown">
+            <button class="detail-dropdown-button is-placeholder" id="detailDropdownButton" type="button" aria-expanded="false" aria-controls="detailDropdownPanel" disabled>
+              차량명을 먼저 선택해 주세요
+            </button>
+            <div class="detail-dropdown-panel" id="detailDropdownPanel" role="listbox" hidden></div>
+          </div>
           <p class="field-note">* 조건에 없는 차량은 고객센터로 문의해 주세요.</p>
         </div>
 
