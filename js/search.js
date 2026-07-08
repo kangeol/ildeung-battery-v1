@@ -60,6 +60,9 @@
   const detailDropdown = document.querySelector("#detailDropdown");
   const detailDropdownButton = document.querySelector("#detailDropdownButton");
   const detailDropdownPanel = document.querySelector("#detailDropdownPanel");
+  const detailDropdownBackdrop = document.querySelector("#detailDropdownBackdrop");
+  const detailDropdownClose = document.querySelector("#detailDropdownClose");
+  const detailDropdownList = document.querySelector("#detailDropdownList");
   const resultPanel = document.querySelector("#resultPanel");
   const resultBody = document.querySelector("#resultBody");
   const statusMessage = document.querySelector("#statusMessage");
@@ -237,6 +240,8 @@
     detailDropdown.classList.remove("is-open");
     detailDropdownButton.setAttribute("aria-expanded", "false");
     detailDropdownPanel.hidden = true;
+    if (detailDropdownBackdrop) detailDropdownBackdrop.hidden = true;
+    document.body.classList.remove("dropdown-open");
   }
 
   function toggleDetailDropdown() {
@@ -247,6 +252,8 @@
       detailDropdown.classList.add("is-open");
       detailDropdownButton.setAttribute("aria-expanded", "true");
       detailDropdownPanel.hidden = false;
+      if (detailDropdownBackdrop) detailDropdownBackdrop.hidden = false;
+      document.body.classList.add("dropdown-open");
       return;
     }
 
@@ -254,14 +261,14 @@
   }
 
   function updateDetailDropdownSelection() {
-    if (!detailDropdownButton || !detailDropdownPanel) return;
+    if (!detailDropdownButton || !detailDropdownList) return;
 
     const selectedOption = detailSelect.options[detailSelect.selectedIndex];
     const hasValue = Boolean(detailSelect.value);
     detailDropdownButton.textContent = hasValue && selectedOption ? selectedOption.textContent : detailDropdownPlaceholder();
     detailDropdownButton.classList.toggle("is-placeholder", !hasValue);
 
-    detailDropdownPanel.querySelectorAll(".detail-dropdown-option").forEach((button) => {
+    detailDropdownList.querySelectorAll(".detail-dropdown-option").forEach((button) => {
       const isSelected = button.dataset.value === detailSelect.value;
       button.classList.toggle("is-selected", isSelected);
       button.setAttribute("aria-selected", isSelected ? "true" : "false");
@@ -269,11 +276,11 @@
   }
 
   function syncDetailDropdown() {
-    if (!detailDropdownButton || !detailDropdownPanel) return;
+    if (!detailDropdownButton || !detailDropdownList) return;
 
     closeDetailDropdown();
     detailDropdownButton.disabled = detailSelect.disabled;
-    detailDropdownPanel.innerHTML = "";
+    detailDropdownList.innerHTML = "";
 
     Array.from(detailSelect.options)
       .filter((item) => item.value)
@@ -294,7 +301,7 @@
           detailSelect.dispatchEvent(new Event("change", { bubbles: true }));
         });
 
-        detailDropdownPanel.append(button);
+        detailDropdownList.append(button);
       });
 
     updateDetailDropdownSelection();
@@ -546,6 +553,14 @@
     detailDropdownButton.addEventListener("keydown", (event) => {
       if (event.key === "Escape") closeDetailDropdown();
     });
+  }
+
+  if (detailDropdownClose) {
+    detailDropdownClose.addEventListener("click", closeDetailDropdown);
+  }
+
+  if (detailDropdownBackdrop) {
+    detailDropdownBackdrop.addEventListener("click", closeDetailDropdown);
   }
 
   document.addEventListener("click", (event) => {

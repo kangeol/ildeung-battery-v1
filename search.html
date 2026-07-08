@@ -70,7 +70,14 @@
             <button class="detail-dropdown-button is-placeholder" id="detailDropdownButton" type="button" aria-expanded="false" aria-controls="detailDropdownPanel" disabled>
               차량명을 먼저 선택해 주세요
             </button>
-            <div class="detail-dropdown-panel" id="detailDropdownPanel" role="listbox" hidden></div>
+            <div class="detail-dropdown-backdrop" id="detailDropdownBackdrop" hidden></div>
+            <div class="detail-dropdown-panel" id="detailDropdownPanel" hidden>
+              <div class="detail-dropdown-sheet-header">
+                <strong>세부모델 선택</strong>
+                <button class="detail-dropdown-close" id="detailDropdownClose" type="button">닫기</button>
+              </div>
+              <div class="detail-dropdown-list" id="detailDropdownList" role="listbox"></div>
+            </div>
           </div>
           <p class="field-note">* 조건에 없는 차량은 고객센터로 문의해 주세요.</p>
         </div>
