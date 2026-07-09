@@ -1,492 +1,462 @@
 [
   {
     "manufacturer": "르노",
-    "vehicle": "SM3",
-    "year": "02/09~05/08",
-    "fuel": "가솔린",
-    "detailModel": "SM3D",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "DF80L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM3",
-    "year": "05/08~09/06",
-    "fuel": "가솔린",
-    "detailModel": "SM3 뉴제너레이션",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM3",
-    "year": "09/06~11/03",
-    "fuel": "가솔린",
-    "detailModel": "SM3 CE",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "DF80L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM3",
-    "year": "09/07~14/04",
-    "fuel": "가솔린",
-    "detailModel": "뉴SM3신형",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM3",
-    "year": "13년~",
-    "fuel": "전기차",
-    "detailModel": "SM3 Z.E",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM3",
-    "year": "14/04~20/01",
-    "fuel": "가솔린",
-    "detailModel": "SM3네오",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM3",
-    "year": "14/04~20/01",
-    "fuel": "디젤",
-    "detailModel": "SM3네오",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM5",
-    "year": "98/03~05/01",
-    "fuel": "가솔린, LPG",
-    "detailModel": "SM5",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM5",
-    "year": "05/01~07/07",
-    "fuel": "가솔린, LPG",
-    "detailModel": "뉴SM5",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM5",
-    "year": "07/07~10/11",
-    "fuel": "가솔린, LPG",
-    "detailModel": "SM5뉴임프레션",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM5",
-    "year": "10/01~12/11",
-    "fuel": "가솔린",
-    "detailModel": "뉴SM5신형",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "DIN90L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM5",
-    "year": "10/01~12/11",
+    "vehicle": "QM6",
+    "year": "19년~현재",
     "fuel": "LPG",
-    "detailModel": "뉴SM5신형",
-    "defaultBattery": "DIN90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM5",
-    "year": "12/11~15/01",
-    "fuel": "가솔린, LPG",
-    "detailModel": "뉴SM5플래티넘",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "DIN90L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM5",
-    "year": "12/11~15/01",
-    "fuel": "디젤",
-    "detailModel": "뉴SM5플래티넘",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "AGM80",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM5",
-    "year": "15/01~19/12",
-    "fuel": "가솔린",
-    "detailModel": "SM5노바",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM5",
-    "year": "15/01~19/12",
-    "fuel": "LPG",
-    "detailModel": "SM5노바",
+    "detailModel": "더 뉴 QM6",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM5",
-    "year": "15/01~19/12",
-    "fuel": "디젤",
-    "detailModel": "SM5노바",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "AGM80",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM6",
-    "year": "16/03~20/07",
-    "fuel": "가솔린, 디젤",
-    "detailModel": "SM6",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM6",
-    "year": "16/03~20/07",
-    "fuel": "LPG",
-    "detailModel": "SM6",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM6",
-    "year": "20/07~",
-    "fuel": "가솔린",
-    "detailModel": "더뉴SM6",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM6",
-    "year": "20/07~",
-    "fuel": "LPG",
-    "detailModel": "더뉴SM6",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM7",
-    "year": "04/12~08/01",
-    "fuel": "가솔린",
-    "detailModel": "SM7",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM7",
-    "year": "08/01~11/08",
-    "fuel": "가솔린",
-    "detailModel": "SM7뉴아트",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM7",
-    "year": "11/08~14/09",
-    "fuel": "가솔린",
-    "detailModel": "올뉴SM7",
-    "defaultBattery": "DIN100L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM7",
-    "year": "11/08~14/09",
-    "fuel": "오토스탑",
-    "detailModel": "올뉴SM7",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM7",
-    "year": "11/08~14/09",
-    "fuel": "LPG",
-    "detailModel": "올뉴SM7",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "DIN90L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM7",
-    "year": "14/09~20/01",
-    "fuel": "가솔린",
-    "detailModel": "뉴SM7노바",
-    "defaultBattery": "DIN100L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM7",
-    "year": "14/09~20/01",
-    "fuel": "오토스탑",
-    "detailModel": "뉴SM7노바",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "SM7",
-    "year": "14/09~20/01",
-    "fuel": "LPG",
-    "detailModel": "뉴SM7노바",
-    "defaultBattery": "DIN90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "QM3",
-    "year": "13/11~17/07",
-    "fuel": "디젤",
-    "detailModel": "QM3",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "QM3",
-    "year": "13/11~17/07",
-    "fuel": "디젤",
-    "detailModel": "뉴QM3",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "QM5",
-    "year": "07/12~11/06",
-    "fuel": "가솔린, 디젤",
-    "detailModel": "QM5",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "QM5",
-    "year": "11/06~14/01",
-    "fuel": "가솔린",
-    "detailModel": "뉴QM5",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "QM5",
-    "year": "11/06~14/01",
-    "fuel": "디젤",
-    "detailModel": "뉴QM5",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "QM5",
-    "year": "14/01~16/09",
-    "fuel": "가솔린",
-    "detailModel": "QM5네오",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "QM5",
-    "year": "14/01~16/09",
-    "fuel": "디젤",
-    "detailModel": "QM5네오",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "르노",
     "vehicle": "QM6",
-    "year": "16/09~19/06",
+    "year": "19년~현재",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 QM6",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "QM6",
+    "year": "19년~현재",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 QM6",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "QM6",
+    "year": "16~19년",
     "fuel": "가솔린",
     "detailModel": "QM6",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "DIN74L",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "르노",
     "vehicle": "QM6",
-    "year": "16/09~19/06",
+    "year": "16~19년",
     "fuel": "디젤",
     "detailModel": "QM6",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "르노",
-    "vehicle": "QM6",
-    "year": "19/06~20/11",
-    "fuel": "가솔린",
-    "detailModel": "더뉴QM6",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "QM6",
-    "year": "19/06~20/11",
-    "fuel": "디젤",
-    "detailModel": "더뉴QM6",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "QM6",
-    "year": "19/06~20/11",
+    "vehicle": "SM6",
+    "year": "20년~현재",
     "fuel": "LPG",
-    "detailModel": "더뉴QM6",
+    "detailModel": "더 뉴 SM6",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "르노",
-    "vehicle": "QM6",
-    "year": "20/11~",
+    "vehicle": "SM6",
+    "year": "20년~현재",
     "fuel": "가솔린",
-    "detailModel": "뉴QM6",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "르노",
-    "vehicle": "QM6",
-    "year": "20/11~",
-    "fuel": "디젤",
-    "detailModel": "뉴QM6",
+    "detailModel": "더 뉴 SM6",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "르노",
-    "vehicle": "QM6",
-    "year": "20/11~",
+    "vehicle": "SM6",
+    "year": "16~20년",
     "fuel": "LPG",
-    "detailModel": "뉴QM6",
+    "detailModel": "SM6",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM6",
+    "year": "16~20년",
+    "fuel": "가솔린",
+    "detailModel": "SM6",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM6",
+    "year": "16~20년",
+    "fuel": "디젤",
+    "detailModel": "SM6",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "르노",
     "vehicle": "XM3",
-    "year": "20년~",
-    "fuel": "",
+    "year": "20~24년",
+    "fuel": "가솔린",
     "detailModel": "XM3",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "XM3",
+    "year": "20~24년",
+    "fuel": "가솔린+전기",
+    "detailModel": "XM3",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM5",
+    "year": "15~19년",
+    "fuel": "LPG",
+    "detailModel": "SM5 노바",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM5",
+    "year": "15~19년",
+    "fuel": "가솔린",
+    "detailModel": "SM5 노바",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM5",
+    "year": "15~19년",
+    "fuel": "디젤",
+    "detailModel": "SM5 노바",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM5",
+    "year": "12~15년",
+    "fuel": "LPG",
+    "detailModel": "뉴SM5 플래티넘",
+    "defaultBattery": "DIN90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM5",
+    "year": "12~15년",
+    "fuel": "가솔린",
+    "detailModel": "뉴SM5 플래티넘",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "DIN90L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM5",
+    "year": "12~15년",
+    "fuel": "디젤",
+    "detailModel": "뉴SM5 플래티넘",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM5",
+    "year": "10~12년",
+    "fuel": "LPG",
+    "detailModel": "뉴SM5(신형_)",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM5",
+    "year": "10~12년",
+    "fuel": "가솔린",
+    "detailModel": "뉴SM5(신형_)",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM5",
+    "year": "07~10년",
+    "fuel": "가솔린",
+    "detailModel": "SM5 뉴 임프레션",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM3",
+    "year": "14~19년",
+    "fuel": "가솔린",
+    "detailModel": "SM3 네오",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM3",
+    "year": "14~19년",
+    "fuel": "디젤",
+    "detailModel": "SM3 네오",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM3",
+    "year": "13~20년",
+    "fuel": "전기",
+    "detailModel": "SM3 Z_",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM3",
+    "year": "10~14년",
+    "fuel": "가솔린",
+    "detailModel": "뉴SM3",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM3",
+    "year": "05~09년",
+    "fuel": "가솔린",
+    "detailModel": "SM3 뉴 제너레이션",
+    "defaultBattery": "DF60L",
+    "upgradeBattery": "DF80L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "QM3",
+    "year": "17~19년",
+    "fuel": "디젤",
+    "detailModel": "뉴QM3",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "QM5",
+    "year": "14~16년",
+    "fuel": "가솔린",
+    "detailModel": "QM5 네오",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "QM5",
+    "year": "14~16년",
+    "fuel": "디젤",
+    "detailModel": "QM5 네오",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "QM5",
+    "year": "11~14년",
+    "fuel": "가솔린",
+    "detailModel": "뉴QM5",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "QM5",
+    "year": "11~14년",
+    "fuel": "디젤",
+    "detailModel": "뉴QM5",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "QM5",
+    "year": "07~11년",
+    "fuel": "가솔린",
+    "detailModel": "QM5",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "QM5",
+    "year": "07~11년",
+    "fuel": "디젤",
+    "detailModel": "QM5",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM7",
+    "year": "14~19년",
+    "fuel": "LPG",
+    "detailModel": "SM7 노바",
+    "defaultBattery": "DIN90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM7",
+    "year": "14~19년",
+    "fuel": "가솔린",
+    "detailModel": "SM7 노바",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM7",
+    "year": "11~14년",
+    "fuel": "가솔린",
+    "detailModel": "All New SM7",
+    "defaultBattery": "DIN100L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "SM7",
+    "year": "08~11년",
+    "fuel": "가솔린",
+    "detailModel": "SM7 New Art",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "그랑 콜레오스",
+    "year": "24년~현재",
+    "fuel": "가솔린",
+    "detailModel": "그랑 콜레오스",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "그랑 콜레오스",
+    "year": "24년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "그랑 콜레오스",
     "defaultBattery": "AGM60",
-    "upgradeBattery": "AGM70",
-    "status": "완료"
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "르노",
     "vehicle": "마스터",
-    "year": "18년~",
-    "fuel": "디젤",
+    "year": "18년~현재",
+    "fuel": "디젤 2300cc",
     "detailModel": "마스터",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "아르카나",
+    "year": "24년~현재",
+    "fuel": "가솔린 1300cc",
+    "detailModel": "아르카나",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "아르카나",
+    "year": "24년~현재",
+    "fuel": "가솔린+전기 1600cc",
+    "detailModel": "아르카나",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "르노",
     "vehicle": "캡처",
-    "year": "20년~",
+    "year": "20~21년",
     "fuel": "가솔린",
     "detailModel": "캡처",
     "defaultBattery": "AGM60",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "르노",
     "vehicle": "캡처",
-    "year": "20년~",
+    "year": "20~21년",
     "fuel": "디젤",
     "detailModel": "캡처",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "르노",
     "vehicle": "클리오",
-    "year": "18년~",
+    "year": "18~19년",
     "fuel": "디젤",
     "detailModel": "클리오",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "르노",
+    "vehicle": "필랑트",
+    "year": "26년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "필랑트",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
   }
 ]
