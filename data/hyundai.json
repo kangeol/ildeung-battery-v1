@@ -1,673 +1,1163 @@
 [
   {
     "manufacturer": "현대",
-    "vehicle": "캐스퍼",
-    "year": "21/09~",
+    "vehicle": "그랜저",
+    "year": "26년~현재",
+    "fuel": "LPG",
+    "detailModel": "더 뉴 그랜저 (GN7)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "26년~현재",
     "fuel": "가솔린",
-    "detailModel": "캐스퍼 1.0",
+    "detailModel": "더 뉴 그랜저 (GN7)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "26년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "더 뉴 그랜저 하이브리드 (GN7)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "22~26년",
+    "fuel": "LPG",
+    "detailModel": "그랜저 (GN7)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "22~26년",
+    "fuel": "가솔린",
+    "detailModel": "그랜저 (GN7)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "22~26년",
+    "fuel": "가솔린+전기 1600cc",
+    "detailModel": "그랜저 하이브리드 (GN7)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "19~22년",
+    "fuel": "LPG",
+    "detailModel": "더 뉴 그랜저 IG",
+    "defaultBattery": "DIN90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "19~22년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 그랜저 IG",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "19~22년",
+    "fuel": "가솔린+전기",
+    "detailModel": "더 뉴 그랜저 IG 하이브리드",
+    "defaultBattery": "DIN74R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "16~19년",
+    "fuel": "LPG",
+    "detailModel": "그랜저 IG",
+    "defaultBattery": "DIN90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "16~19년",
+    "fuel": "가솔린",
+    "detailModel": "그랜저 IG",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "16~19년",
+    "fuel": "디젤",
+    "detailModel": "그랜저 IG",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "17~19년",
+    "fuel": "가솔린+전기",
+    "detailModel": "그랜저 IG 하이브리드",
+    "defaultBattery": "DIN74R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "11~16년",
+    "fuel": "LPG",
+    "detailModel": "그랜저 HG",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "15년~",
+    "fuel": "가솔린",
+    "detailModel": "그랜저 HG",
+    "defaultBattery": "DF80L 또는 AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "11~16년",
+    "fuel": "디젤",
+    "detailModel": "그랜저 HG",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "13~17년",
+    "fuel": "가솔린+전기",
+    "detailModel": "그랜저 HG 하이브리드",
+    "defaultBattery": "DIN74R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "09~11년",
+    "fuel": "LPG",
+    "detailModel": "더 럭셔리 그랜저",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "09~11년",
+    "fuel": "가솔린",
+    "detailModel": "더 럭셔리 그랜저",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "08~09년",
+    "fuel": "LPG",
+    "detailModel": "그랜저 뉴 럭셔리",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "08~09년",
+    "fuel": "가솔린",
+    "detailModel": "그랜저 뉴 럭셔리",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "23년~현재",
+    "fuel": "LPG",
+    "detailModel": "더 뉴 아반떼 (CN7)",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "23년~현재",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 아반떼 (CN7)",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "23년~현재",
+    "fuel": "가솔린+전기 1600cc",
+    "detailModel": "더 뉴 아반떼 하이브리드 (CN7)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "20~23년",
+    "fuel": "LPG",
+    "detailModel": "아반떼 (CN7)",
     "defaultBattery": "DIN60HL",
-    "upgradeBattery": "",
-    "status": "완료"
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "캐스퍼",
-    "year": "21/09~",
+    "vehicle": "아반떼",
+    "year": "20~23년",
     "fuel": "가솔린",
-    "detailModel": "캐스퍼 1.0 터보",
-    "defaultBattery": "확인중",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "캐스퍼",
-    "year": "22/02~",
-    "fuel": "가솔린",
-    "detailModel": "캐스퍼 1.0 밴",
-    "defaultBattery": "확인중",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "캐스퍼",
-    "year": "22/02~",
-    "fuel": "가솔린",
-    "detailModel": "캐스퍼 1.0 터보 밴",
-    "defaultBattery": "확인중",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "코나",
-    "year": "17/06~20/10",
-    "fuel": "가솔린",
-    "detailModel": "코나",
+    "detailModel": "아반떼 (CN7)",
     "defaultBattery": "AGM60",
     "upgradeBattery": "AGM70",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "코나",
-    "year": "17/06~20/10",
-    "fuel": "디젤",
-    "detailModel": "코나",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "AGM70",
-    "status": "완료"
+    "vehicle": "아반떼",
+    "year": "20~23년",
+    "fuel": "가솔린+전기",
+    "detailModel": "아반떼 하이브리드 (CN7)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "코나",
-    "year": "20/10~",
+    "vehicle": "아반떼",
+    "year": "18~20년",
+    "fuel": "LPG",
+    "detailModel": "더 뉴 아반떼 AD",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "18~20년",
     "fuel": "가솔린",
-    "detailModel": "더뉴코나",
+    "detailModel": "더 뉴 아반떼 AD",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "18~20년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 아반떼 AD",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "15~18년",
+    "fuel": "LPG",
+    "detailModel": "아반떼 AD",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "15~18년",
+    "fuel": "가솔린",
+    "detailModel": "아반떼 AD",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "15~18년",
+    "fuel": "디젤",
+    "detailModel": "아반떼 AD",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "13~15년",
+    "fuel": "LPG",
+    "detailModel": "더 뉴 아반떼",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "13~15년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 아반떼",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "13~15년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 아반떼",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "10~13년",
+    "fuel": "LPG",
+    "detailModel": "아반떼 MD",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "06~10년",
+    "fuel": "가솔린",
+    "detailModel": "아반떼 HD",
+    "defaultBattery": "DF60L",
+    "upgradeBattery": "DF80L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아반떼",
+    "year": "06~10년",
+    "fuel": "디젤",
+    "detailModel": "아반떼 HD",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "싼타페",
+    "year": "23년~현재",
+    "fuel": "가솔린",
+    "detailModel": "싼타페 (MX5)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "싼타페",
+    "year": "23년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "싼타페 (MX5)",
     "defaultBattery": "AGM60",
-    "upgradeBattery": "AGM70",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "코나",
-    "year": "18/04~",
-    "fuel": "일렉트릭",
-    "detailModel": "코나",
-    "defaultBattery": "DIN50L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "코나",
-    "year": "19/08~",
-    "fuel": "가솔린 / 하이브리드",
-    "detailModel": "코나",
-    "defaultBattery": "DIN50L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "클릭",
-    "year": "05~10년",
+    "vehicle": "싼타페",
+    "year": "20~23년",
     "fuel": "가솔린",
-    "detailModel": "뉴클릭",
-    "defaultBattery": "DF50L / DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "클릭",
-    "year": "05~10년",
-    "fuel": "디젤",
-    "detailModel": "뉴클릭",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "테라칸",
-    "year": "",
-    "fuel": "디젤",
-    "detailModel": "테라칸 2.9",
-    "defaultBattery": "DF100L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "테라칸",
-    "year": "",
-    "fuel": "디젤",
-    "detailModel": "테라칸 2.7, 2.5",
-    "defaultBattery": "DF90L / DF100L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "테라칸",
-    "year": "",
-    "fuel": "가솔린",
-    "detailModel": "테라칸",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "04/03~09/08",
-    "fuel": "디젤",
-    "detailModel": "투싼",
-    "defaultBattery": "DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "04/03~09/08",
-    "fuel": "가솔린",
-    "detailModel": "투싼",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "08/08~12/05",
-    "fuel": "디젤",
-    "detailModel": "투싼ix",
-    "defaultBattery": "DF90R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "08/08~12/05",
-    "fuel": "가솔린",
-    "detailModel": "투싼ix",
-    "defaultBattery": "DF80L / DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "12/05~15/03",
-    "fuel": "디젤",
-    "detailModel": "뉴투싼ix",
-    "defaultBattery": "DF90R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "12/05~15/03",
-    "fuel": "가솔린",
-    "detailModel": "뉴투싼ix",
-    "defaultBattery": "DF80L / DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "15/03~18/08",
-    "fuel": "디젤",
-    "detailModel": "올뉴투싼",
+    "detailModel": "더 뉴 싼타페",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "15/03~18/08",
-    "fuel": "가솔린",
-    "detailModel": "올뉴투싼 1.6 터보",
-    "defaultBattery": "DIN74L / DIN80L / DIN90L",
+    "vehicle": "싼타페",
+    "year": "20~23년",
+    "fuel": "가솔린+전기",
+    "detailModel": "더 뉴 싼타페",
+    "defaultBattery": "AG60",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "18/08~20/09",
+    "vehicle": "싼타페",
+    "year": "20~23년",
     "fuel": "디젤",
-    "detailModel": "더뉴투싼",
+    "detailModel": "더 뉴 싼타페",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "18/08~20/09",
+    "vehicle": "싼타페",
+    "year": "18~20년",
     "fuel": "가솔린",
-    "detailModel": "더뉴투싼",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "AGM80",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "20/09~",
-    "fuel": "디젤",
-    "detailModel": "더올뉴투싼",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "투싼",
-    "year": "20/09~",
-    "fuel": "가솔린",
-    "detailModel": "더올뉴투싼",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "AGM80",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "트라제XG",
-    "year": "99~07년",
-    "fuel": "디젤",
-    "detailModel": "트라제XG",
-    "defaultBattery": "DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "트라제XG",
-    "year": "99~07년",
-    "fuel": "가솔린 / LPG",
-    "detailModel": "트라제XG",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "펠리세이드",
-    "year": "18년~",
-    "fuel": "가솔린 / 디젤",
-    "detailModel": "펠리세이드",
+    "detailModel": "싼타페 TM",
     "defaultBattery": "AGM80",
     "upgradeBattery": "AGM95",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "포터",
-    "year": "04년~",
-    "fuel": "확인필요",
-    "detailModel": "포터2",
-    "defaultBattery": "DF90R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "포터",
-    "year": "19년~",
-    "fuel": "일렉트릭",
-    "detailModel": "포터2",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "i30",
-    "year": "07/07~11/10",
-    "fuel": "가솔린",
-    "detailModel": "i30",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "i30",
-    "year": "07/07~11/10",
+    "vehicle": "싼타페",
+    "year": "18~20년",
     "fuel": "디젤",
-    "detailModel": "i30",
+    "detailModel": "싼타페 TM",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "싼타페",
+    "year": "15~18년",
+    "fuel": "가솔린",
+    "detailModel": "싼타페 더 프라임",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "AGM95",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "싼타페",
+    "year": "15~18년",
+    "fuel": "디젤",
+    "detailModel": "싼타페 더 프라임",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "싼타페",
+    "year": "12~15년",
+    "fuel": "가솔린",
+    "detailModel": "싼타페 DM",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "i30",
-    "year": "11/10~15/01",
+    "vehicle": "싼타페",
+    "year": "12~15년",
+    "fuel": "디젤",
+    "detailModel": "싼타페 DM",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "싼타페",
+    "year": "05~12년",
+    "fuel": "LPG",
+    "detailModel": "싼타페 CM",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "싼타페",
+    "year": "05~12년",
     "fuel": "가솔린",
-    "detailModel": "올뉴i30 1.6, 2.0",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
+    "detailModel": "싼타페 CM",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "i30",
-    "year": "11/10~15/01",
-    "fuel": "가솔린 / 블루세이버",
-    "detailModel": "올뉴i30 1.6 블루세이버",
+    "vehicle": "싼타페",
+    "year": "05~12년",
+    "fuel": "디젤",
+    "detailModel": "싼타페 CM",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "23년~현재",
+    "fuel": "LPG",
+    "detailModel": "쏘나타 디 엣지(DN8)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "23년~현재",
+    "fuel": "가솔린",
+    "detailModel": "쏘나타 디 엣지(DN8)",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "i30",
-    "year": "11/10~15/01",
-    "fuel": "디젤",
-    "detailModel": "올뉴i30",
+    "vehicle": "쏘나타",
+    "year": "23년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "쏘나타 디 엣지 하이브리드(DN8)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "19~23년",
+    "fuel": "LPG",
+    "detailModel": "쏘나타 (DN8)",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "19~23년",
+    "fuel": "가솔린",
+    "detailModel": "쏘나타 (DN8)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "19~23년",
+    "fuel": "가솔린+전기",
+    "detailModel": "쏘나타 하이브리드 (DN8)",
+    "defaultBattery": "DIN74R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "17~19년",
+    "fuel": "LPG",
+    "detailModel": "쏘나타 뉴 라이즈",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "17~19년",
+    "fuel": "가솔린",
+    "detailModel": "쏘나타 뉴 라이즈",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "17~19년",
+    "fuel": "가솔린",
+    "detailModel": "쏘나타 뉴 라이즈",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "17~19년",
+    "fuel": "디젤",
+    "detailModel": "쏘나타 뉴 라이즈",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "14~19년",
+    "fuel": "가솔린+전기",
+    "detailModel": "쏘나타 뉴 라이즈 하이브리드",
+    "defaultBattery": "DIN74R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "14~17년",
+    "fuel": "LPG",
+    "detailModel": "LF 쏘나타",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "14~17년",
+    "fuel": "가솔린",
+    "detailModel": "LF 쏘나타",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "14~17년",
+    "fuel": "디젤",
+    "detailModel": "LF 쏘나타",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "12~14년",
+    "fuel": "LPG 2000cc",
+    "detailModel": "쏘나타 더 브릴리언트",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "12~14년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "쏘나타 더 브릴리언트",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "09~12년",
+    "fuel": "LPG 2000cc",
+    "detailModel": "YF 쏘나타",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "09~12년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "YF 쏘나타",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "09~12년",
+    "fuel": "가솔린 2400cc",
+    "detailModel": "YF 쏘나타",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "11~14년",
+    "fuel": "가솔린+전기 2000cc",
+    "detailModel": "쏘나타 하이브리드",
+    "defaultBattery": "DIN74R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "07~13년",
+    "fuel": "LPG 2000cc",
+    "detailModel": "NF 쏘나타 트랜스폼",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "07~13년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "NF 쏘나타 트랜스폼",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "07~13년",
+    "fuel": "가솔린 2400cc",
+    "detailModel": "NF 쏘나타 트랜스폼",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "쏘나타",
+    "year": "07~13년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "NF 쏘나타 트랜스폼",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "팰리세이드",
+    "year": "25년~현재",
+    "fuel": "가솔린",
+    "detailModel": "팰리세이드 (LX3)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "AGM95",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "팰리세이드",
+    "year": "25년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "팰리세이드 (LX3)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "AGM95",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "팰리세이드",
+    "year": "25년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "팰리세이드 (LX3)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "AGM95",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "팰리세이드",
+    "year": "22~25년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 팰리세이드",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "AGM95",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "팰리세이드",
+    "year": "22~25년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 팰리세이드",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "AGM95",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "팰리세이드",
+    "year": "18~22년",
+    "fuel": "가솔린",
+    "detailModel": "팰리세이드",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "AGM95",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "팰리세이드",
+    "year": "18~22년",
+    "fuel": "디젤",
+    "detailModel": "팰리세이드",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "AGM95",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "23년~현재",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 투싼 (NX4)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "23년~현재",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 투싼 (NX4)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "23년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "더 뉴 투싼 하이브리드 (NX4)",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "20~23년",
+    "fuel": "가솔린",
+    "detailModel": "투싼 (NX4)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "20~23년",
+    "fuel": "디젤",
+    "detailModel": "투싼 (NX4)",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "20~23년",
+    "fuel": "가솔린+전기",
+    "detailModel": "투싼 하이브리드 (NX4)",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "15~20년",
+    "fuel": "가솔린",
+    "detailModel": "올 뉴 투싼",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "15~20년",
+    "fuel": "디젤",
+    "detailModel": "올 뉴 투싼",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "13~15년",
+    "fuel": "가솔린",
+    "detailModel": "뉴 투싼 ix",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "13~15년",
+    "fuel": "디젤",
+    "detailModel": "뉴 투싼 ix",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "09~13년",
+    "fuel": "가솔린",
+    "detailModel": "투싼 ix",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "투싼",
+    "year": "09~13년",
+    "fuel": "디젤",
+    "detailModel": "투싼 ix",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "i30",
-    "year": "15/01~16/09",
+    "year": "16~20년",
     "fuel": "가솔린",
-    "detailModel": "더뉴i30 2.0",
+    "detailModel": "i30 (PD)",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "DIN74L",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "i30",
+    "year": "16~20년",
+    "fuel": "디젤",
+    "detailModel": "i30 (PD)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "i30",
+    "year": "15~16년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 i30",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "i30",
     "year": "15~16년",
     "fuel": "디젤",
-    "detailModel": "더뉴i30",
+    "detailModel": "더 뉴 i30",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "i30",
-    "year": "16/09~20/10",
+    "year": "11~15년",
     "fuel": "가솔린",
-    "detailModel": "i30PD",
+    "detailModel": "i30(신형)",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "DIN74L",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "i30",
-    "year": "16/09~20/10",
+    "year": "11~15년",
     "fuel": "디젤",
-    "detailModel": "i30PD",
-    "defaultBattery": "AGM70",
+    "detailModel": "i30(신형)",
+    "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "i30",
-    "year": "17/09~",
-    "fuel": "확인필요",
-    "detailModel": "i30PD N",
-    "defaultBattery": "AGM70",
+    "year": "07~11년",
+    "fuel": "가솔린",
+    "detailModel": "i30",
+    "defaultBattery": "DF60L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "i30",
+    "year": "07~11년",
+    "fuel": "디젤",
+    "detailModel": "i30",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "i30",
+    "year": "08~11년",
+    "fuel": "가솔린",
+    "detailModel": "i30 cw",
+    "defaultBattery": "DF60L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "i30",
+    "year": "08~11년",
+    "fuel": "디젤",
+    "detailModel": "i30 cw",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "i40",
-    "year": "11/09~15/01",
-    "fuel": "가솔린 / 디젤",
+    "year": "15~19년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 i40 (살룬포함)",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "i40",
+    "year": "15~19년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 i40 (살룬포함)",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "i40",
+    "year": "11~15년",
+    "fuel": "가솔린",
     "detailModel": "i40",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "i40",
-    "year": "12~15년",
-    "fuel": "가솔린 / 디젤",
-    "detailModel": "i40살룬",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "i40",
-    "year": "15/01~18/06",
-    "fuel": "가솔린",
-    "detailModel": "더뉴i40",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "i40",
-    "year": "15/01~18/06",
+    "year": "11~15년",
     "fuel": "디젤",
-    "detailModel": "더뉴i40",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "i40",
-    "year": "15/01~18/06",
-    "fuel": "가솔린",
-    "detailModel": "더뉴i40살룬",
+    "detailModel": "i40",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "i40",
-    "year": "15/01~18/06",
-    "fuel": "디젤",
-    "detailModel": "더뉴i40살룬",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "05/05~08/02",
-    "fuel": "가솔린 / LPG",
-    "detailModel": "그랜저TG",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "08/02~09/12",
-    "fuel": "가솔린 / LPG",
-    "detailModel": "그랜저뉴럭셔리",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "09/11~11/01",
-    "fuel": "가솔린 / LPG",
-    "detailModel": "더럭셔리그랜저",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "11/1~16/11",
-    "fuel": "가솔린",
-    "detailModel": "그랜저HG 3.0",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "11/1~14년",
-    "fuel": "가솔린",
-    "detailModel": "그랜저HG 2.4",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "14년~16/11",
-    "fuel": "가솔린",
-    "detailModel": "그랜저HG 2.4",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "11/1~16/11",
-    "fuel": "LPG",
-    "detailModel": "그랜저HG",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "11/1~16/11",
-    "fuel": "디젤",
-    "detailModel": "그랜저HG",
-    "defaultBattery": "DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "13/12~17/3",
-    "fuel": "하이브리드",
-    "detailModel": "그랜저HG",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "16/11~19/11",
-    "fuel": "가솔린 / 디젤",
-    "detailModel": "그랜저IG",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "16/11~19/11",
-    "fuel": "LPG",
-    "detailModel": "그랜저IG",
-    "defaultBattery": "DIN80L",
-    "upgradeBattery": "DIN90L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "17/03~19/11",
-    "fuel": "하이브리드",
-    "detailModel": "그랜저IG",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "19/11~",
-    "fuel": "가솔린",
-    "detailModel": "더뉴그랜저",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "19/11~",
-    "fuel": "LPG",
-    "detailModel": "더뉴그랜저",
-    "defaultBattery": "DIN80L",
-    "upgradeBattery": "DIN90L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "19/12~",
-    "fuel": "하이브리드",
-    "detailModel": "더뉴-그랜저",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "맥스크루즈",
-    "year": "13~15년",
-    "fuel": "디젤",
-    "detailModel": "맥스크루즈",
-    "defaultBattery": "DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "맥스크루즈",
-    "year": "13~15년",
+    "year": "15~19년",
     "fuel": "가솔린",
-    "detailModel": "맥스크루즈",
+    "detailModel": "더 뉴 맥스크루즈",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "맥스크루즈",
     "year": "15~19년",
     "fuel": "디젤",
-    "detailModel": "더뉴맥스크루즈",
+    "detailModel": "더 뉴 맥스크루즈",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "맥스크루즈",
-    "year": "15~19년",
+    "year": "13~15년",
     "fuel": "가솔린",
-    "detailModel": "더뉴맥스크루즈",
+    "detailModel": "맥스크루즈",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "맥스크루즈",
+    "year": "13~15년",
+    "fuel": "디젤",
+    "detailModel": "맥스크루즈",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "베뉴",
-    "year": "19/07",
+    "year": "19년~현재",
     "fuel": "가솔린",
-    "detailModel": "베뉴 1.6",
+    "detailModel": "베뉴",
     "defaultBattery": "DIN50L",
     "upgradeBattery": "DIN60HL",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "베라크루즈",
+    "year": "06~15년",
+    "fuel": "가솔린",
+    "detailModel": "베라크루즈",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
@@ -677,866 +1167,426 @@
     "detailModel": "베라크루즈",
     "defaultBattery": "DF100L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "베라크루즈",
-    "year": "06~15년",
-    "fuel": "가솔린",
-    "detailModel": "베라크루즈",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "베르나",
-    "year": "05/09~09/06",
+    "year": "09~10년",
     "fuel": "가솔린",
-    "detailModel": "베르나신형",
+    "detailModel": "베르나 트랜스폼",
     "defaultBattery": "DF60L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "베르나",
-    "year": "05/09~09/06",
+    "year": "09~10년",
     "fuel": "디젤",
-    "detailModel": "베르나신형",
+    "detailModel": "베르나 트랜스폼",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "베르나",
-    "year": "05/09~09/06",
-    "fuel": "하이브리드",
-    "detailModel": "베르나신형",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "베르나",
-    "year": "09/06~10/11",
-    "fuel": "가솔린",
-    "detailModel": "베르나트랜스폼",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "베르나",
-    "year": "09/06~10/11",
-    "fuel": "디젤",
-    "detailModel": "베르나트랜스폼",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "벨로스터",
-    "year": "11/03~15/01",
+    "year": "18~22년",
+    "fuel": "가솔린",
+    "detailModel": "벨로스터 (JS)",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "벨로스터",
+    "year": "11~14년",
     "fuel": "가솔린",
     "detailModel": "벨로스터",
     "defaultBattery": "DIN60HL",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "벨로스터",
-    "year": "15/01~18/02",
-    "fuel": "가솔린",
-    "detailModel": "더뉴벨로스터",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "벨로스터",
-    "year": "18/02~20/11",
-    "fuel": "가솔린",
-    "detailModel": "더올뉴벨로스터 1.4",
-    "defaultBattery": "DIN50L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "벨로스터",
-    "year": "18/02~20/11",
-    "fuel": "가솔린",
-    "detailModel": "더올뉴벨로스터 1.6",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "벨로스터",
-    "year": "18/02~20/11",
-    "fuel": "가솔린",
-    "detailModel": "더올뉴벨로스터 2.0",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "스타렉스",
-    "year": "07/05~17/12",
-    "fuel": "디젤",
-    "detailModel": "그랜드스타렉스",
-    "defaultBattery": "DF90R",
-    "upgradeBattery": "DF100R",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "스타렉스",
-    "year": "07/05~17/12",
-    "fuel": "LPG",
-    "detailModel": "그랜드스타렉스",
-    "defaultBattery": "DF80R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "스타렉스",
-    "year": "17/12~21/03",
-    "fuel": "디젤",
-    "detailModel": "더뉴그랜드스타렉스",
-    "defaultBattery": "DF90R",
-    "upgradeBattery": "DF100R",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "스타렉스",
-    "year": "17/12~21/03",
-    "fuel": "LPG",
-    "detailModel": "더뉴그랜드스타렉스",
-    "defaultBattery": "DF80R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "싼타페",
-    "year": "09/07~12/04",
-    "fuel": "디젤",
-    "detailModel": "싼타페더스타일",
-    "defaultBattery": "DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "싼타페",
-    "year": "09/07~12/04",
-    "fuel": "LPG",
-    "detailModel": "싼타페더스타일",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "싼타페",
-    "year": "12/04~13년",
-    "fuel": "디젤",
-    "detailModel": "싼타페DM",
-    "defaultBattery": "DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "싼타페",
-    "year": "13년~15/06",
-    "fuel": "디젤",
-    "detailModel": "싼타페DM",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "싼타페",
-    "year": "12/04~15/06",
-    "fuel": "디젤",
-    "detailModel": "싼타페DM 오토스탑",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "싼타페",
-    "year": "15/06~18/02",
-    "fuel": "디젤",
-    "detailModel": "싼타페더프라임",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "싼타페",
-    "year": "15/06~18/02",
-    "fuel": "가솔린",
-    "detailModel": "싼타페더프라임",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "싼타페",
-    "year": "18/02~20/06",
-    "fuel": "디젤",
-    "detailModel": "싼타페TM",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "싼타페",
-    "year": "18/02~20/06",
-    "fuel": "가솔린",
-    "detailModel": "싼타페TM",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "AGM95",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "싼타페",
-    "year": "20/06~",
-    "fuel": "디젤",
-    "detailModel": "더뉴싼타페TM",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "싼타페",
-    "year": "20/06~",
-    "fuel": "가솔린",
-    "detailModel": "더뉴싼타페TM",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "AGM95",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "07/11~09/09",
-    "fuel": "가솔린 / LPG",
-    "detailModel": "NF쏘나타트랜스폼",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "09/09~12/07",
-    "fuel": "가솔린 / LPG",
-    "detailModel": "YF쏘나타",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "09/09~12/07",
-    "fuel": "가솔린 / 블루세이버",
-    "detailModel": "YF쏘나타 블루세이버",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "09/09~12/07",
-    "fuel": "디젤",
-    "detailModel": "YF쏘나타",
-    "defaultBattery": "DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "11/05~14/12",
-    "fuel": "하이브리드",
-    "detailModel": "YF쏘나타",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "12/07~14/03",
-    "fuel": "가솔린 / LPG",
-    "detailModel": "쏘나타더브릴리언트",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "12~14년",
-    "fuel": "가솔린 / 블루세이버",
-    "detailModel": "쏘나타더브릴리언트 블루세이버",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "14/03~17/03",
-    "fuel": "가솔린",
-    "detailModel": "LF쏘나타 2.0, 2.4",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "14/03~17/03",
-    "fuel": "가솔린",
-    "detailModel": "LF쏘나타 1.6 터보",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "14/03~17/03",
-    "fuel": "디젤",
-    "detailModel": "LF쏘나타 1.7",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "14/03~17/03",
-    "fuel": "LPG",
-    "detailModel": "LF쏘나타",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "14/03~17/03",
-    "fuel": "LPG",
-    "detailModel": "LF쏘나타 블루드라이브",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "AGM80",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "14/12~17/07",
-    "fuel": "하이브리드",
-    "detailModel": "LF쏘나타",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "17/03~19/03",
-    "fuel": "가솔린",
-    "detailModel": "쏘나타뉴라이즈 2.0",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "17/03~19/03",
-    "fuel": "가솔린",
-    "detailModel": "쏘나타뉴라이즈 1.6 터보",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "17/03~19/03",
-    "fuel": "가솔린",
-    "detailModel": "쏘나타뉴라이즈 2.0 터보",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "17/03~19/03",
-    "fuel": "디젤",
-    "detailModel": "쏘나타뉴라이즈 1.7",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "17년~",
-    "fuel": "LPG",
-    "detailModel": "쏘나타뉴라이즈",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "17/05~19/05",
-    "fuel": "하이브리드",
-    "detailModel": "쏘나타뉴라이즈",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "19/03~",
-    "fuel": "가솔린",
-    "detailModel": "쏘나타DN8",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "19/03~",
-    "fuel": "LPG",
-    "detailModel": "쏘나타DN8",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "19/03~",
-    "fuel": "하이브리드",
-    "detailModel": "쏘나타DN8",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏠라티",
-    "year": "15/09~",
-    "fuel": "디젤",
-    "detailModel": "쏠라티 2.5",
-    "defaultBattery": "AGM105",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "09/07~13/12",
-    "fuel": "LPG / 하이브리드",
-    "detailModel": "아반떼",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "DF80L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "10/08~13/08",
-    "fuel": "가솔린 / LPG",
-    "detailModel": "아반떼MD",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "11/05~12/12",
-    "fuel": "가솔린 / 블루세이버",
-    "detailModel": "아반떼MD 블루세이버",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "10/08~13/08",
-    "fuel": "디젤",
-    "detailModel": "아반떼MD",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "13/04~15/04",
-    "fuel": "가솔린",
-    "detailModel": "아반떼MD쿠페",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "13/08~15/09",
-    "fuel": "가솔린 / LPG",
-    "detailModel": "더뉴아반떼MD",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "13/08~15/09",
-    "fuel": "디젤",
-    "detailModel": "더뉴아반떼MD",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "15/09~18/09",
-    "fuel": "가솔린 / LPG",
-    "detailModel": "아반떼AD",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "15/09~18/09",
-    "fuel": "디젤",
-    "detailModel": "아반떼AD",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "18/9~20/04",
-    "fuel": "가솔린 / LPG",
-    "detailModel": "더뉴아반떼AD",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "18/9~20/04",
-    "fuel": "디젤",
-    "detailModel": "더뉴아반떼AD",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "20/04~",
-    "fuel": "가솔린",
-    "detailModel": "올뉴아반떼CN7",
-    "defaultBattery": "AGM60",
     "upgradeBattery": "AGM70",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "20/04~",
+    "vehicle": "스타렉스",
+    "year": "17~21년",
     "fuel": "LPG",
-    "detailModel": "올뉴아반떼CN7",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
+    "detailModel": "더 뉴 그랜드 스타렉스",
+    "defaultBattery": "DF80R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "스타렉스",
+    "year": "17~21년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 그랜드 스타렉스",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "DF100R",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "스타렉스",
+    "year": "07~17년",
+    "fuel": "LPG",
+    "detailModel": "그랜드 스타렉스",
+    "defaultBattery": "DF80R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "스타렉스",
+    "year": "07~17년",
+    "fuel": "디젤",
+    "detailModel": "그랜드 스타렉스",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "DF100R",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "스타리아",
+    "year": "25년~현재",
+    "fuel": "LPG",
+    "detailModel": "더 뉴 스타리아",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "스타리아",
+    "year": "25년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "더 뉴 스타리아",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "스타리아",
+    "year": "25년~현재",
+    "fuel": "전기",
+    "detailModel": "더 뉴 스타리아",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "스타리아",
+    "year": "21~25년",
+    "fuel": "LPG 2WD",
+    "detailModel": "스타리아",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "스타리아",
+    "year": "21~25년",
+    "fuel": "가솔린+전기 2WD",
+    "detailModel": "스타리아",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "스타리아",
+    "year": "21~25년",
+    "fuel": "디젤 2WD",
+    "detailModel": "스타리아",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "아슬란",
     "year": "14~18년",
-    "fuel": "확인필요",
-    "detailModel": "아슬란 G300, G330",
+    "fuel": "가솔린 3000cc",
+    "detailModel": "아슬란",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "아이오닉",
-    "year": "16/01~19/01",
-    "fuel": "하이브리드",
-    "detailModel": "아이오닉",
-    "defaultBattery": "DIN50R",
+    "vehicle": "아슬란",
+    "year": "14~18년",
+    "fuel": "가솔린 3300cc",
+    "detailModel": "아슬란",
+    "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아이오닉5",
+    "year": "24년~현재",
+    "fuel": "전기",
+    "detailModel": "더 뉴 아이오닉5",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아이오닉5",
+    "year": "21년~현재",
+    "fuel": "전기",
+    "detailModel": "아이오닉5",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아이오닉6",
+    "year": "25년~현재",
+    "fuel": "전기",
+    "detailModel": "더 뉴 아이오닉6",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아이오닉6",
+    "year": "22~25년",
+    "fuel": "전기",
+    "detailModel": "아이오닉6",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "아이오닉9",
+    "year": "25년~현재",
+    "fuel": "전기",
+    "detailModel": "아이오닉9",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "에쿠스",
-    "year": "02년09월~09년",
-    "fuel": "확인필요",
-    "detailModel": "에쿠스",
-    "defaultBattery": "DF90R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "엑센트",
-    "year": "10/11~19/07",
+    "year": "09~15년",
     "fuel": "가솔린",
-    "detailModel": "엑센트신형",
-    "defaultBattery": "DIN50L",
-    "upgradeBattery": "DIN60HL",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "엑센트",
-    "year": "10/11~19/07",
-    "fuel": "가솔린 / 블루세이버",
-    "detailModel": "엑센트신형 1.6 블루세이버",
-    "defaultBattery": "AGM70",
+    "detailModel": "에쿠스(신형)",
+    "defaultBattery": "DIN100L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "엑센트",
-    "year": "11/03~15/01",
-    "fuel": "디젤",
-    "detailModel": "엑센트신형",
+    "year": "10~19년",
+    "fuel": "가솔린",
+    "detailModel": "엑센트(신형)",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "DIN74L",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "엑센트",
-    "year": "15/01~19/07",
+    "year": "10~19년",
     "fuel": "디젤",
-    "detailModel": "엑센트신형",
+    "detailModel": "엑센트(신형)",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "AGM70",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "제네시스",
+    "year": "13~16년",
+    "fuel": "가솔린",
+    "detailModel": "제네시스 DH",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "제네시스",
     "year": "08~13년",
-    "fuel": "확인필요",
-    "detailModel": "제네시스BH",
-    "defaultBattery": "DIN100L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "11/05~13/11",
     "fuel": "가솔린",
-    "detailModel": "제네시스 프라다",
+    "detailModel": "제네시스",
     "defaultBattery": "DIN100L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "08~11년",
-    "fuel": "확인필요",
-    "detailModel": "제네시스쿠페",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "13/11~16/07",
-    "fuel": "확인필요",
-    "detailModel": "제네시스DH",
-    "defaultBattery": "AGM105",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "제네시스",
     "year": "11~16년",
-    "fuel": "확인필요",
-    "detailModel": "더뉴제네시스쿠페",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 제네시스 쿠페",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
     "vehicle": "제네시스",
-    "year": "17/09~20/10",
+    "year": "08~11년",
     "fuel": "가솔린",
-    "detailModel": "제네시스G70",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "AGM95",
-    "status": "완료"
+    "detailModel": "제네시스 쿠페",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "17/09~20/10",
+    "vehicle": "캐스퍼",
+    "year": "24년~현재",
+    "fuel": "가솔린 1000cc",
+    "detailModel": "더 뉴 캐스퍼",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "캐스퍼",
+    "year": "21~24년",
+    "fuel": "가솔린 1000cc",
+    "detailModel": "캐스퍼",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "코나",
+    "year": "23년~현재",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "코나 (SX2)",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "코나",
+    "year": "23년~현재",
+    "fuel": "가솔린+전기 1600cc",
+    "detailModel": "코나 하이브리드 (SX2)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "코나",
+    "year": "23년~현재",
+    "fuel": "전기",
+    "detailModel": "코나 일렉트릭 (SX2)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "코나",
+    "year": "20~23년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 코나",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "코나",
+    "year": "20~23년",
+    "fuel": "가솔린+전기",
+    "detailModel": "더 뉴 코나 하이브리드",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "코나",
+    "year": "17~20년",
+    "fuel": "가솔린",
+    "detailModel": "코나",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "코나",
+    "year": "17~20년",
     "fuel": "디젤",
-    "detailModel": "제네시스G70",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
+    "detailModel": "코나",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "20/10~",
-    "fuel": "가솔린",
-    "detailModel": "제네시스 더뉴G70",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "AGM95",
-    "status": "완료"
+    "vehicle": "코나",
+    "year": "19~20년",
+    "fuel": "가솔린+전기",
+    "detailModel": "코나 하이브리드",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "20/10~",
-    "fuel": "디젤",
-    "detailModel": "제네시스 더뉴G70",
-    "defaultBattery": "AGM95",
+    "vehicle": "코나",
+    "year": "18~23년",
+    "fuel": "전기",
+    "detailModel": "코나 일렉트릭",
+    "defaultBattery": "DIN50L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "16/07~20/03",
-    "fuel": "가솔린 / 디젤",
-    "detailModel": "제네시스G80",
-    "defaultBattery": "AGM105",
+    "vehicle": "테라칸",
+    "year": "01~07년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "테라칸",
+    "defaultBattery": "DF100L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "20/03~",
-    "fuel": "가솔린 / 디젤",
-    "detailModel": "제네시스 더올뉴G80",
-    "defaultBattery": "AGM90R",
+    "vehicle": "테라칸",
+    "year": "01~07년",
+    "fuel": "디젤 2WD",
+    "detailModel": "테라칸",
+    "defaultBattery": "DF100L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "15~18년",
-    "fuel": "확인필요",
-    "detailModel": "제네시스 EQ900 3.8",
-    "defaultBattery": "AGM105",
+    "vehicle": "테라칸",
+    "year": "01~07년",
+    "fuel": "디젤 4WD",
+    "detailModel": "테라칸",
+    "defaultBattery": "DF100L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "15~18년",
-    "fuel": "확인필요",
-    "detailModel": "제네시스 EQ900 3.3, 5.0",
-    "defaultBattery": "AGM105",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "18/11~",
-    "fuel": "가솔린",
-    "detailModel": "제네시스G90",
-    "defaultBattery": "AGM105",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "20년~",
-    "fuel": "가솔린",
-    "detailModel": "제네시스GV70",
-    "defaultBattery": "AGM80R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "20년~",
-    "fuel": "디젤",
-    "detailModel": "제네시스GV70",
-    "defaultBattery": "AGM80R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "제네시스",
-    "year": "20/01~",
-    "fuel": "가솔린 / 디젤",
-    "detailModel": "제네시스 GV80",
-    "defaultBattery": "AGM90R",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   }
 ]

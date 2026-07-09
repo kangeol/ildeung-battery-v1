@@ -1,0 +1,1732 @@
+[
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "스파크",
+    "year": "18~23년",
+    "fuel": "가솔린 1000cc",
+    "detailModel": "더 뉴 스파크",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "스파크",
+    "year": "15~18년",
+    "fuel": "가솔린 1000cc",
+    "detailModel": "더 넥스트 스파크",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "스파크",
+    "year": "11~15년",
+    "fuel": "LPG 1000cc",
+    "detailModel": "스파크",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "스파크",
+    "year": "11~15년",
+    "fuel": "가솔린 1000cc",
+    "detailModel": "스파크",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "스파크",
+    "year": "13~16년",
+    "fuel": "전기",
+    "detailModel": "스파크 EV",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트랙스",
+    "year": "23년~현재",
+    "fuel": "가솔린 1200cc",
+    "detailModel": "트랙스 크로스오버",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트랙스",
+    "year": "16~22년",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "더 뉴 트랙스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트랙스",
+    "year": "16~22년",
+    "fuel": "디젤 1600cc",
+    "detailModel": "더 뉴 트랙스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트랙스",
+    "year": "13~16년",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "트랙스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트랙스",
+    "year": "13~16년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "트랙스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트랙스",
+    "year": "13~16년",
+    "fuel": "디젤 1600cc",
+    "detailModel": "트랙스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "18~23년",
+    "fuel": "가솔린 1300cc",
+    "detailModel": "더 뉴 말리부",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "18~23년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "더 뉴 말리부",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "18~23년",
+    "fuel": "가솔린+전기 1800cc",
+    "detailModel": "더 뉴 말리부",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "18~23년",
+    "fuel": "디젤 1600cc",
+    "detailModel": "더 뉴 말리부",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "16~18년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "올 뉴 말리부",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "16~18년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "올 뉴 말리부",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "16~18년",
+    "fuel": "가솔린+전기 1800cc",
+    "detailModel": "올 뉴 말리부",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "11~16년",
+    "fuel": "LPG 2000cc",
+    "detailModel": "말리부",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "11~16년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "말리부",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "11~16년",
+    "fuel": "가솔린 2400cc",
+    "detailModel": "말리부",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "11~16년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "말리부",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트레일블레이저",
+    "year": "23년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "더 뉴 트레일블레이저",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트레일블레이저",
+    "year": "23년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "더 뉴 트레일블레이저",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트레일블레이저",
+    "year": "20~23년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "트레일블레이저",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트레일블레이저",
+    "year": "20~23년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "트레일블레이저",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "올란도",
+    "year": "11~18년",
+    "fuel": "LPG 2000cc",
+    "detailModel": "올란도",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "올란도",
+    "year": "11~18년",
+    "fuel": "디젤 1600cc",
+    "detailModel": "올란도",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "올란도",
+    "year": "11~18년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "올란도",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "17~18년",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "올 뉴 크루즈",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "17~18년",
+    "fuel": "디젤 1600cc",
+    "detailModel": "올 뉴 크루즈",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "15~17년",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "어메이징 뉴 크루즈",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "15~17년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "어메이징 뉴 크루즈",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "15~17년",
+    "fuel": "디젤 1600cc",
+    "detailModel": "어메이징 뉴 크루즈",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "15~17년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "어메이징 뉴 크루즈",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "15~17년",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "어메이징 뉴 크루즈5",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "15~17년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "어메이징 뉴 크루즈5",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "15~17년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "어메이징 뉴 크루즈5",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "11~14년",
+    "fuel": "가솔린 1600cc 이상",
+    "detailModel": "크루즈",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "11~14년",
+    "fuel": "가솔린 1600cc 이하",
+    "detailModel": "크루즈",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "11~14년",
+    "fuel": "디젤 1600cc 이상",
+    "detailModel": "크루즈",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "11~14년",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "크루즈5",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "11~14년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "크루즈5",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "11~14년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "크루즈5",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "G2X",
+    "year": "07~08년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "G2X",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "넥시아",
+    "year": "95~96년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "넥시아",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "누비라",
+    "year": "99~02년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "누비라 2",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "누비라",
+    "year": "99~02년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "누비라 2",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "누비라",
+    "year": "97~99년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "누비라",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "누비라",
+    "year": "97~99년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "누비라",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "누비라",
+    "year": "97~99년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "누비라",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "다마스",
+    "year": "08~21년",
+    "fuel": "LPG 800cc",
+    "detailModel": "뉴 다마스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "다마스",
+    "year": "91~03년",
+    "fuel": "LPG 2 인승",
+    "detailModel": "다마스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "다마스",
+    "year": "91~03년",
+    "fuel": "LPG 5 인승",
+    "detailModel": "다마스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "다마스",
+    "year": "91~03년",
+    "fuel": "LPG 7 인승",
+    "detailModel": "다마스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "다마스",
+    "year": "91~03년",
+    "fuel": "가솔린 5 인승",
+    "detailModel": "다마스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "다마스",
+    "year": "91~03년",
+    "fuel": "가솔린 7 인승",
+    "detailModel": "다마스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "다마스",
+    "year": "03~07년",
+    "fuel": "LPG 2 인승",
+    "detailModel": "다마스 II",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "다마스",
+    "year": "03~07년",
+    "fuel": "LPG 5 인승",
+    "detailModel": "다마스 II",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "다마스",
+    "year": "03~07년",
+    "fuel": "LPG 7 인승",
+    "detailModel": "다마스 II",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라노스",
+    "year": "00~02년",
+    "fuel": "가솔린 1300cc",
+    "detailModel": "라노스 II",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라노스",
+    "year": "00~02년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "라노스 II",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라노스",
+    "year": "96~00년",
+    "fuel": "가솔린 1300cc",
+    "detailModel": "라노스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라노스",
+    "year": "96~00년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "라노스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라노스",
+    "year": "96~00년",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "라노스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라보",
+    "year": "08~21년",
+    "fuel": "LPG 800cc",
+    "detailModel": "뉴 라보",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라보",
+    "year": "91~06년",
+    "fuel": "LPG 800cc",
+    "detailModel": "라보",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라보",
+    "year": "91~06년",
+    "fuel": "가솔린 800cc",
+    "detailModel": "라보",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라세티",
+    "year": "08~11년",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "라세티 프리미어",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라세티",
+    "year": "08~11년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "라세티 프리미어",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라세티",
+    "year": "08~11년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "라세티 프리미어",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라세티",
+    "year": "02~09년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "라세티",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라세티",
+    "year": "02~09년",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "라세티",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "라세티",
+    "year": "02~09년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "라세티",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "레간자",
+    "year": "97~02년",
+    "fuel": "LPG 2000cc",
+    "detailModel": "레간자",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "레간자",
+    "year": "97~02년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "레간자",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "레간자",
+    "year": "97~02년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "레간자",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "레간자",
+    "year": "97~02년",
+    "fuel": "가솔린 2200cc",
+    "detailModel": "레간자",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "레조",
+    "year": "00~07년",
+    "fuel": "LPG 2000cc",
+    "detailModel": "레조",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "레조",
+    "year": "00~07년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "레조",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "로얄살롱",
+    "year": "80~91년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "로얄살롱",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "르망",
+    "year": "86~97년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "르망",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "르망",
+    "year": "86~97년",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "르망",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "르망",
+    "year": "86~97년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "르망",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "마티즈",
+    "year": "09~11년",
+    "fuel": "LPG 1000cc",
+    "detailModel": "마티즈 크리에이티브",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "마티즈",
+    "year": "09~11년",
+    "fuel": "가솔린 1000cc",
+    "detailModel": "마티즈 크리에이티브",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "마티즈",
+    "year": "05~09년",
+    "fuel": "가솔린 800cc",
+    "detailModel": "All New 마티즈",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "마티즈",
+    "year": "09~11년",
+    "fuel": "가솔린 800cc",
+    "detailModel": "마티즈 클래식",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "마티즈",
+    "year": "00~05년",
+    "fuel": "가솔린 800cc",
+    "detailModel": "마티즈 II",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "마티즈",
+    "year": "98~00년",
+    "fuel": "가솔린 800cc",
+    "detailModel": "마티즈",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "매그너스",
+    "year": "99~06년",
+    "fuel": "LPG 2000cc",
+    "detailModel": "매그너스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "매그너스",
+    "year": "99~06년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "매그너스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "매그너스",
+    "year": "99~06년",
+    "fuel": "가솔린 2500cc",
+    "detailModel": "매그너스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "맵시",
+    "year": "82~87년",
+    "fuel": "가솔린 1300cc",
+    "detailModel": "맵시",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "맵시",
+    "year": "82~87년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "맵시",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "베리타스",
+    "year": "08~10년",
+    "fuel": "가솔린 3600cc",
+    "detailModel": "베리타스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "볼트 EV",
+    "year": "21~23년",
+    "fuel": "전기 2WD",
+    "detailModel": "뉴 볼트 EV",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "볼트 EV",
+    "year": "17~21년",
+    "fuel": "전기 2WD",
+    "detailModel": "볼트 EV",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "볼트 EUV",
+    "year": "21~23년",
+    "fuel": "전기 2WD",
+    "detailModel": "볼트 EUV",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "볼트(Volt)",
+    "year": "16~19년",
+    "fuel": "가솔린+전기 1500cc",
+    "detailModel": "볼트(Volt)",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "브로엄",
+    "year": "91~00년",
+    "fuel": "LPG 2000cc",
+    "detailModel": "브로엄",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "브로엄",
+    "year": "91~00년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "브로엄",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "브로엄",
+    "year": "91~00년",
+    "fuel": "가솔린 2200cc",
+    "detailModel": "브로엄",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "슈퍼살롱",
+    "year": "91~99년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "슈퍼살롱",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "슈퍼살롱",
+    "year": "91~99년",
+    "fuel": "가솔린 3000cc",
+    "detailModel": "슈퍼살롱",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "스테이츠맨",
+    "year": "05~07년",
+    "fuel": "가솔린 2800cc",
+    "detailModel": "스테이츠맨",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "스테이츠맨",
+    "year": "05~07년",
+    "fuel": "가솔린 3600cc",
+    "detailModel": "스테이츠맨",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "씨에로",
+    "year": "94~96년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "씨에로",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "아베오",
+    "year": "16~19년",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "더 뉴 아베오 세단",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "아베오",
+    "year": "16~19년",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "더 뉴 아베오 해치백",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "아베오",
+    "year": "11~16년",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "아베오 세단",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "아베오",
+    "year": "11~16년",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "아베오 세단",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "아베오",
+    "year": "11~16년",
+    "fuel": "가솔린 1400cc",
+    "detailModel": "아베오 해치백",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "아베오",
+    "year": "11~16년",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "아베오 해치백",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "아카디아",
+    "year": "94~99년",
+    "fuel": "가솔린 3200cc",
+    "detailModel": "아카디아",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "알페온",
+    "year": "10~15년",
+    "fuel": "가솔린 2400cc",
+    "detailModel": "알페온",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "알페온",
+    "year": "10~15년",
+    "fuel": "가솔린 3000cc",
+    "detailModel": "알페온",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "알페온",
+    "year": "10~15년",
+    "fuel": "가솔린+전기 2400cc",
+    "detailModel": "알페온",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "에스페로",
+    "year": "90~97년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "에스페로",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "에스페로",
+    "year": "90~97년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "에스페로",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "에스페로",
+    "year": "90~97년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "에스페로",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "윈스톰",
+    "year": "06~10년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "윈스톰",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "윈스톰",
+    "year": "06~10년",
+    "fuel": "디젤 2WD",
+    "detailModel": "윈스톰",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "윈스톰",
+    "year": "06~10년",
+    "fuel": "디젤 4WD",
+    "detailModel": "윈스톰",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "윈스톰",
+    "year": "08~10년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "윈스톰 맥스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "이쿼녹스",
+    "year": "22~24년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "더 넥스트 이쿼녹스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "이쿼녹스",
+    "year": "22~24년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "더 넥스트 이쿼녹스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "이쿼녹스",
+    "year": "18~20년",
+    "fuel": "디젤 1600cc",
+    "detailModel": "이쿼녹스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "임팔라",
+    "year": "15~20년",
+    "fuel": "가솔린 2500cc",
+    "detailModel": "임팔라",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "임팔라",
+    "year": "15~20년",
+    "fuel": "가솔린 3600cc",
+    "detailModel": "임팔라",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "임페리얼",
+    "year": "89~93년",
+    "fuel": "가솔린 3000cc",
+    "detailModel": "임페리얼",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "젠트라",
+    "year": "05~11년",
+    "fuel": "가솔린 1200cc",
+    "detailModel": "젠트라",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "젠트라",
+    "year": "05~11년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "젠트라",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "젠트라",
+    "year": "05~11년",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "젠트라",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "젠트라",
+    "year": "07~11년",
+    "fuel": "가솔린 1200cc",
+    "detailModel": "젠트라 X",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "젠트라",
+    "year": "07~11년",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "젠트라 X",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "카마로",
+    "year": "18~22년",
+    "fuel": "가솔린 6200cc",
+    "detailModel": "더 뉴 카마로",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "카마로",
+    "year": "16~18년",
+    "fuel": "가솔린 6200cc",
+    "detailModel": "올 뉴 카마로",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "카마로",
+    "year": "11~15년",
+    "fuel": "가솔린 3600cc",
+    "detailModel": "카마로",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "칼로스",
+    "year": "02~07년",
+    "fuel": "가솔린 1200cc",
+    "detailModel": "칼로스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "칼로스",
+    "year": "02~07년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "칼로스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "칼로스",
+    "year": "02~07년",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "칼로스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "캡티바",
+    "year": "11~18년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "캡티바",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "캡티바",
+    "year": "11~18년",
+    "fuel": "디젤 2WD",
+    "detailModel": "캡티바",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "캡티바",
+    "year": "11~18년",
+    "fuel": "디젤 4WD",
+    "detailModel": "캡티바",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "콜로라도",
+    "year": "24년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "올 뉴 콜로라도",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "콜로라도",
+    "year": "24년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "올 뉴 콜로라도",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "콜로라도",
+    "year": "20~24년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "리얼 뉴 콜로라도",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "콜로라도",
+    "year": "20~24년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "리얼 뉴 콜로라도",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "콜로라도",
+    "year": "19~20년",
+    "fuel": "가솔린 2WD",
+    "detailModel": "콜로라도",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "콜로라도",
+    "year": "19~20년",
+    "fuel": "가솔린 4WD",
+    "detailModel": "콜로라도",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "콜벳",
+    "year": "12~13년",
+    "fuel": "가솔린 6200cc",
+    "detailModel": "콜벳",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "토스카",
+    "year": "08~11년",
+    "fuel": "LPG 2000cc",
+    "detailModel": "토스카 프리미엄6",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "토스카",
+    "year": "08~11년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "토스카 프리미엄6",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "토스카",
+    "year": "08~11년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "토스카 프리미엄6",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "토스카",
+    "year": "08~11년",
+    "fuel": "가솔린 2500cc",
+    "detailModel": "토스카 프리미엄6",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "토스카",
+    "year": "08~11년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "토스카 프리미엄6",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "토스카",
+    "year": "06~08년",
+    "fuel": "LPG 2000cc",
+    "detailModel": "토스카",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "토스카",
+    "year": "06~08년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "토스카",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "토스카",
+    "year": "06~08년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "토스카",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "토스카",
+    "year": "06~08년",
+    "fuel": "가솔린 2500cc",
+    "detailModel": "토스카",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "토스카",
+    "year": "06~08년",
+    "fuel": "디젤 2000cc",
+    "detailModel": "토스카",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트래버스",
+    "year": "19년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "트래버스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "티코",
+    "year": "91~01년",
+    "fuel": "가솔린 800cc",
+    "detailModel": "티코",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "프린스",
+    "year": "91~96년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "프린스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "프린스",
+    "year": "91~96년",
+    "fuel": "가솔린 1900cc",
+    "detailModel": "프린스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "프린스",
+    "year": "91~96년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "프린스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "프린스",
+    "year": "83~91년",
+    "fuel": "가솔린 1500cc",
+    "detailModel": "로얄 프린스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "프린스",
+    "year": "83~91년",
+    "fuel": "가솔린 1900cc",
+    "detailModel": "로얄 프린스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "프린스",
+    "year": "83~91년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "로얄 프린스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "프린스",
+    "year": "96~97년",
+    "fuel": "가솔린 1800cc",
+    "detailModel": "뉴프린스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "프린스",
+    "year": "96~97년",
+    "fuel": "가솔린 2000cc",
+    "detailModel": "뉴프린스",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "타호",
+    "year": "22년~현재",
+    "fuel": "가솔린 4WD",
+    "detailModel": "타호",
+    "defaultBattery": "",
+    "upgradeBattery": "",
+    "status": "대기"
+  }
+]
