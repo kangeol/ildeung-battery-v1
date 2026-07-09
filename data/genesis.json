@@ -75,7 +75,7 @@
     "year": "20년~현재",
     "fuel": "가솔린 2WD",
     "detailModel": "G80 (RG3)",
-    "defaultBattery": "AGM105",
+    "defaultBattery": "AGM95R",
     "upgradeBattery": "",
     "status": "대기"
   },
@@ -85,7 +85,7 @@
     "year": "20년~현재",
     "fuel": "디젤 2WD",
     "detailModel": "G80 (RG3)",
-    "defaultBattery": "AGM105",
+    "defaultBattery": "AGM95R",
     "upgradeBattery": "",
     "status": "대기"
   },
