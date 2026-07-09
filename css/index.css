@@ -996,8 +996,8 @@ h3 {
   }
 
   .howto-visual-install {
-    width: calc(100% + 40px);
-    margin-left: -40px;
+    width: calc(100% + 56px);
+    margin-left: -50px;
   }
 
   .howto-visual img {
