@@ -6,7 +6,16 @@
     chevrolet: "assets/logos/chevrolet.png",
     renault: "assets/logos/renault.png",
     kgm: "assets/logos/kgm.png",
-    genesis: "assets/logos/genesis.png"
+    genesis: "assets/logos/genesis.png",
+    bmw: "assets/logos/bmw.png",
+    benz: "assets/logos/benz.png",
+    audi: "assets/logos/audi.png",
+    mini: "assets/logos/mini.png",
+    volkswagen: "assets/logos/volkswagen.png",
+    landrover: "assets/logos/landrover.png",
+    volvo: "assets/logos/volvo.png",
+    jeep: "assets/logos/jeep.png",
+    ford: "assets/logos/ford.png"
   };
   const PRICE_LINKS = {
     standard: {
