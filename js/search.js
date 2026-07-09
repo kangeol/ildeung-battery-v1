@@ -5,7 +5,8 @@
     kia: "assets/logos/kia.png",
     chevrolet: "assets/logos/chevrolet.png",
     renault: "assets/logos/renault.png",
-    kgm: "assets/logos/kgm.png"
+    kgm: "assets/logos/kgm.png",
+    genesis: "assets/logos/genesis.png"
   };
   const PRICE_LINKS = {
     standard: {
@@ -31,7 +32,8 @@
     "르노": "renault",
     "KG모빌리티": "kgm",
     "KG": "kgm",
-    "쌍용": "kgm"
+    "쌍용": "kgm",
+    "제네시스": "genesis"
   };
   const DOMESTIC_MANUFACTURER_ORDER = ["hyundai", "kia", "renault", "chevrolet", "kgm", "genesis"];
   const IMPORT_PRIORITY_ORDER = ["bmw", "benz", "audi", "mini", "volkswagen"];
