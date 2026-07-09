@@ -1,10 +1,60 @@
 [
   {
     "manufacturer": "쉐보레",
-    "vehicle": "트레일블레이저",
-    "year": "20년~",
-    "fuel": "가솔린 / 디젤",
-    "detailModel": "트레일블레이저",
+    "vehicle": "스파크",
+    "year": "18~23년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 스파크",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "스파크",
+    "year": "15~18년",
+    "fuel": "가솔린",
+    "detailModel": "더 넥스트 스파크",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "AGM60",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "스파크",
+    "year": "11~15년",
+    "fuel": "LPG",
+    "detailModel": "스파크",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "스파크",
+    "year": "11~15년",
+    "fuel": "가솔린",
+    "detailModel": "스파크",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "스파크",
+    "year": "13~16년",
+    "fuel": "전기",
+    "detailModel": "스파크 EV",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트랙스",
+    "year": "23년~현재",
+    "fuel": "가솔린",
+    "detailModel": "트랙스 크로스오버",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
     "status": "대기"
@@ -12,282 +62,242 @@
   {
     "manufacturer": "쉐보레",
     "vehicle": "트랙스",
-    "year": "13/2~16/10",
+    "year": "16~22년",
     "fuel": "가솔린",
-    "detailModel": "트랙스",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "트랙스",
-    "year": "13/2~16/10",
-    "fuel": "디젤",
-    "detailModel": "트랙스",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "트랙스",
-    "year": "16/10~",
-    "fuel": "가솔린",
-    "detailModel": "더뉴트랙스",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "트랙스",
-    "year": "16/10~",
-    "fuel": "디젤",
-    "detailModel": "더뉴트랙스",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "티코",
-    "year": "91~01년",
-    "fuel": "공통",
-    "detailModel": "티코",
-    "defaultBattery": "DF40L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "라세티",
-    "year": "02~09년",
-    "fuel": "가솔린",
-    "detailModel": "라세티",
-    "defaultBattery": "DF60R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "라세티",
-    "year": "02~09년",
-    "fuel": "디젤",
-    "detailModel": "라세티",
-    "defaultBattery": "DIN90R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "라세티",
-    "year": "08~11년",
-    "fuel": "가솔린",
-    "detailModel": "라세티프리미어",
+    "detailModel": "더 뉴 트랙스",
     "defaultBattery": "DIN60L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "라세티",
-    "year": "08~11년",
+    "vehicle": "트랙스",
+    "year": "16~22년",
     "fuel": "디젤",
-    "detailModel": "라세티프리미어",
-    "defaultBattery": "DIN90L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "detailModel": "더 뉴 트랙스",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "마티즈",
-    "year": "05~11년",
-    "fuel": "공통",
-    "detailModel": "올뉴마티즈",
-    "defaultBattery": "DF40L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "마티즈",
-    "year": "09~11년",
-    "fuel": "공통",
-    "detailModel": "마티즈클래식",
-    "defaultBattery": "DF40L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "마티즈",
-    "year": "09~11년",
-    "fuel": "가솔린/LPG",
-    "detailModel": "마티즈크리에이티브",
-    "defaultBattery": "DIN 50L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "말리부",
-    "year": "11/11~16/04",
+    "vehicle": "트랙스",
+    "year": "13~16년",
     "fuel": "가솔린",
-    "detailModel": "말리부",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "말리부",
-    "year": "11/11~16/04",
-    "fuel": "디젤",
-    "detailModel": "말리부",
-    "defaultBattery": "DIN100L",
+    "detailModel": "트랙스",
+    "defaultBattery": "DIN60L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트랙스",
+    "year": "13~16년",
+    "fuel": "디젤",
+    "detailModel": "트랙스",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
     "vehicle": "말리부",
-    "year": "11/11~16/04",
+    "year": "18~23년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 말리부",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "18~23년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 말리부",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "AGM80",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "16~18년",
+    "fuel": "가솔린",
+    "detailModel": "올 뉴 말리부",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "11~16년",
     "fuel": "LPG",
     "detailModel": "말리부",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "11~16년",
+    "fuel": "가솔린",
+    "detailModel": "말리부",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "말리부",
+    "year": "11~16년",
+    "fuel": "디젤",
+    "detailModel": "말리부",
     "defaultBattery": "DIN100L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "말리부",
-    "year": "16/04~18/11",
+    "vehicle": "트레일블레이저",
+    "year": "23년~현재",
     "fuel": "가솔린",
-    "detailModel": "올뉴말리부 1.5터보",
+    "detailModel": "더 뉴 트레일블레이저",
     "defaultBattery": "AGM70",
-    "upgradeBattery": "AGM80",
-    "status": "완료"
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "말리부",
-    "year": "16/04~18/11",
+    "vehicle": "트레일블레이저",
+    "year": "20~23년",
     "fuel": "가솔린",
-    "detailModel": "올뉴말리부 2.0터보",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "DIN90L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "말리부",
-    "year": "18/11~",
-    "fuel": "가솔린",
-    "detailModel": "더뉴말리부 1.3터보",
+    "detailModel": "트레일블레이저",
     "defaultBattery": "AGM70",
-    "upgradeBattery": "AGM80",
-    "status": "완료"
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "말리부",
-    "year": "18/11~",
-    "fuel": "가솔린",
-    "detailModel": "더뉴말리부 2.0터보",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "DIN90L",
-    "status": "완료"
+    "vehicle": "올란도",
+    "year": "11~18년",
+    "fuel": "LPG",
+    "detailModel": "올란도",
+    "defaultBattery": "DIN90L",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "말리부",
-    "year": "18/11~",
+    "vehicle": "올란도",
+    "year": "11~18년",
     "fuel": "디젤",
-    "detailModel": "더뉴말리부 1.6",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "AGM80",
-    "status": "완료"
+    "detailModel": "올란도",
+    "defaultBattery": "DIN90L",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "스파크",
-    "year": "11/03~15/06",
-    "fuel": "가솔린/LPG",
-    "detailModel": "스파크",
+    "vehicle": "크루즈",
+    "year": "17~18년",
+    "fuel": "가솔린",
+    "detailModel": "올 뉴 크루즈",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "17~18년",
+    "fuel": "디젤",
+    "detailModel": "올 뉴 크루즈",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "15~17년",
+    "fuel": "가솔린",
+    "detailModel": "어메이징 뉴 크루즈",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "15~17년",
+    "fuel": "디젤",
+    "detailModel": "어메이징 뉴 크루즈",
+    "defaultBattery": "DIN90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "11~14년",
+    "fuel": "가솔린",
+    "detailModel": "크루즈",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "크루즈",
+    "year": "11~14년",
+    "fuel": "디젤",
+    "detailModel": "크루즈",
+    "defaultBattery": "DIN90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "마티즈",
+    "year": "09~11년",
+    "fuel": "LPG",
+    "detailModel": "마티즈 크리에이티브",
     "defaultBattery": "DIN50L",
     "upgradeBattery": "DF60L",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "스파크",
-    "year": "11/03~15/06",
-    "fuel": "전기차",
-    "detailModel": "스파크",
+    "vehicle": "마티즈",
+    "year": "09~11년",
+    "fuel": "가솔린",
+    "detailModel": "마티즈 크리에이티브",
     "defaultBattery": "DIN50L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "스파크",
-    "year": "15/07~18/05",
-    "fuel": "가솔린",
-    "detailModel": "더넥스트스파크",
-    "defaultBattery": "DIN50L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "스파크",
-    "year": "15/07~18/05",
-    "fuel": "가솔린",
-    "detailModel": "더넥스트스파크 에코",
-    "defaultBattery": "AGM60",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "스파크",
-    "year": "18/05~19/12",
-    "fuel": "가솔린",
-    "detailModel": "더뉴 스파크",
-    "defaultBattery": "AGM60",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "스파크",
-    "year": "20/01~",
-    "fuel": "가솔린",
-    "detailModel": "더뉴 스파크",
-    "defaultBattery": "DIN50L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "upgradeBattery": "DF60L",
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
     "vehicle": "아베오",
-    "year": "11/02~16/08",
-    "fuel": "공통",
-    "detailModel": "아베오",
+    "year": "16~19년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 아베오 세단",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
     "vehicle": "아베오",
-    "year": "16/09~",
-    "fuel": "공통",
-    "detailModel": "더뉴아베오",
+    "year": "11~16년",
+    "fuel": "가솔린",
+    "detailModel": "아베오 세단",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
@@ -295,109 +305,59 @@
     "year": "10~15년",
     "fuel": "가솔린",
     "detailModel": "알페온",
-    "defaultBattery": "DIN74L",
+    "defaultBattery": "DIN70L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "알페온",
-    "year": "10~15년",
-    "fuel": "하이브리드",
-    "detailModel": "알페온 하이브리드",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "올란도",
-    "year": "11/02~18/07",
-    "fuel": "디젤",
-    "detailModel": "올란도 1.6, 2.0",
-    "defaultBattery": "DIN90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "올란도",
-    "year": "11/02~18/07",
-    "fuel": "LPG",
-    "detailModel": "올란도 2.0",
-    "defaultBattery": "DIN90L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
     "vehicle": "임팔라",
-    "year": "15/07~20/02",
+    "year": "15~20년",
     "fuel": "가솔린",
-    "detailModel": "임팔라 2.5",
+    "detailModel": "임팔라",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "임팔라",
-    "year": "15/07~20/02",
-    "fuel": "가솔린",
-    "detailModel": "임팔라 3.6",
-    "defaultBattery": "DIN74L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "젠트라",
-    "year": "05~11년",
-    "fuel": "공통",
-    "detailModel": "젠트라",
-    "defaultBattery": "DF60R",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
     "vehicle": "카마로",
-    "year": "11~15년",
+    "year": "18~22년",
     "fuel": "가솔린",
-    "detailModel": "카마로 3.6",
-    "defaultBattery": "DIN90L",
+    "detailModel": "더 뉴 카마로",
+    "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
     "vehicle": "카마로",
     "year": "16~18년",
     "fuel": "가솔린",
-    "detailModel": "올뉴카마로 SS 6.2",
+    "detailModel": "올 뉴 카마로",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
     "vehicle": "카마로",
-    "year": "18년~",
+    "year": "11~15년",
     "fuel": "가솔린",
-    "detailModel": "더뉴카마로 SS 6.2",
+    "detailModel": "카마로",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "콜로라도",
-    "year": "19년~",
-    "fuel": "공통",
-    "detailModel": "콜로라도 3.6",
-    "defaultBattery": "AGM95",
+    "vehicle": "캡티바",
+    "year": "11~18년",
+    "fuel": "가솔린",
+    "detailModel": "캡티바",
+    "defaultBattery": "DIN100L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
@@ -407,156 +367,86 @@
     "detailModel": "캡티바",
     "defaultBattery": "DIN100L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "캡티바",
-    "year": "11~18년",
+    "vehicle": "콜로라도",
+    "year": "24년~현재",
     "fuel": "가솔린",
-    "detailModel": "캡티바",
-    "defaultBattery": "DIN74L",
+    "detailModel": "올 뉴 콜로라도",
+    "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "크루즈",
-    "year": "11/02~15/01",
+    "vehicle": "콜로라도",
+    "year": "20~24년",
     "fuel": "가솔린",
-    "detailModel": "크루즈 1.4 터보",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
+    "detailModel": "리얼 뉴 콜로라도",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
-    "vehicle": "크루즈",
-    "year": "11/02~13년",
+    "vehicle": "콜로라도",
+    "year": "19~20년",
     "fuel": "가솔린",
-    "detailModel": "크루즈 1.6",
-    "defaultBattery": "DIN60L",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "크루즈",
-    "year": "14년~15/01",
-    "fuel": "가솔린",
-    "detailModel": "크루즈 1.6",
-    "defaultBattery": "DIN60L",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "크루즈",
-    "year": "11/02~15/01",
-    "fuel": "가솔린",
-    "detailModel": "크루즈 1.8",
-    "defaultBattery": "DIN60L",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "크루즈",
-    "year": "11/02~15/01",
-    "fuel": "디젤",
-    "detailModel": "크루즈 2.0",
-    "defaultBattery": "DIN90L",
+    "detailModel": "콜로라도",
+    "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "크루즈",
-    "year": "15/01~17/01",
-    "fuel": "가솔린",
-    "detailModel": "어메이징뉴 크루즈",
-    "defaultBattery": "DIN60L",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "크루즈",
-    "year": "15/01~17/01",
-    "fuel": "디젤",
-    "detailModel": "어메이징뉴 크루즈",
-    "defaultBattery": "DIN90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "크루즈",
-    "year": "17/01~18/07",
-    "fuel": "가솔린/디젤",
-    "detailModel": "올뉴 크루즈",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "토스카",
-    "year": "06~08년",
-    "fuel": "가솔린",
-    "detailModel": "토스카",
-    "defaultBattery": "DF60R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "토스카",
-    "year": "06~08년",
-    "fuel": "LPG",
-    "detailModel": "토스카",
-    "defaultBattery": "DF80R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "토스카",
-    "year": "06~08년",
-    "fuel": "디젤",
-    "detailModel": "토스카",
-    "defaultBattery": "DIN90R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "쉐보레",
-    "vehicle": "토스카",
-    "year": "08~11년",
-    "fuel": "가솔린",
-    "detailModel": "토스카프리미엄",
-    "defaultBattery": "DF60R",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
     "vehicle": "토스카",
     "year": "08~11년",
     "fuel": "LPG",
-    "detailModel": "토스카프리미엄",
-    "defaultBattery": "DF80R",
+    "detailModel": "토스카 프리미엄6",
+    "defaultBattery": "DF60R",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "토스카",
+    "year": "08~11년",
+    "fuel": "가솔린",
+    "detailModel": "토스카 프리미엄6",
+    "defaultBattery": "DF60R",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "쉐보레",
     "vehicle": "토스카",
     "year": "08~11년",
     "fuel": "디젤",
-    "detailModel": "토스카프리미엄",
-    "defaultBattery": "DIN90R",
+    "detailModel": "토스카 프리미엄6",
+    "defaultBattery": "DF80R",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "트래버스",
+    "year": "19년~현재",
+    "fuel": "가솔린",
+    "detailModel": "트래버스",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "타호",
+    "year": "22년~현재",
+    "fuel": "가솔린",
+    "detailModel": "타호",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
   }
 ]

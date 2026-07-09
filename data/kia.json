@@ -1,1243 +1,1473 @@
 [
   {
     "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "23년~현재",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 카니발 4세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "23년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "더 뉴 카니발 4세대",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "23년~현재",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 카니발 4세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "20~23년",
+    "fuel": "LPG",
+    "detailModel": "카니발 4세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "20~23년",
+    "fuel": "가솔린",
+    "detailModel": "카니발 4세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "20~23년",
+    "fuel": "디젤 2",
+    "detailModel": "카니발 4세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "18~20년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 카니발",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "18~20년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 카니발",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "14~18년",
+    "fuel": "가솔린",
+    "detailModel": "올 뉴 카니발",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "DF90L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "14~18년",
+    "fuel": "디젤",
+    "detailModel": "올 뉴 카니발",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "10~14년",
+    "fuel": "LPG",
+    "detailModel": "카니발 R",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "10~14년",
+    "fuel": "디젤",
+    "detailModel": "카니발 R",
+    "defaultBattery": "DF100L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "05~10년",
+    "fuel": "LPG 2700cc",
+    "detailModel": "그랜드 카니발",
+    "defaultBattery": "DF100L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "05~10년",
+    "fuel": "가솔린 3800cc",
+    "detailModel": "그랜드 카니발",
+    "defaultBattery": "DF100L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "카니발",
+    "year": "05~10년",
+    "fuel": "디젤 2900cc",
+    "detailModel": "그랜드 카니발",
+    "defaultBattery": "DF100L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "23년~현재",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 쏘렌토 4세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "23년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "더 뉴 쏘렌토 4세대",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "23년~현재",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 쏘렌토 4세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "20~23년",
+    "fuel": "가솔린",
+    "detailModel": "쏘렌토 4세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "20~23년",
+    "fuel": "가솔린+전기",
+    "detailModel": "쏘렌토 4세대",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "20~23년",
+    "fuel": "디젤",
+    "detailModel": "쏘렌토 4세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "17~20년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 쏘렌토",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "17~20년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 쏘렌토",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "14~17년",
+    "fuel": "가솔린",
+    "detailModel": "올 뉴 쏘렌토",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "14~17년",
+    "fuel": "디젤",
+    "detailModel": "올 뉴 쏘렌토",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "12~14년",
+    "fuel": "가솔린",
+    "detailModel": "뉴 쏘렌토 R",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "12~14년",
+    "fuel": "디젤",
+    "detailModel": "뉴 쏘렌토 R",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "09~12년",
+    "fuel": "가솔린",
+    "detailModel": "쏘렌토 R",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "09~12년",
+    "fuel": "디젤",
+    "detailModel": "쏘렌토 R",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "06~09년",
+    "fuel": "가솔린",
+    "detailModel": "뉴쏘렌토",
+    "defaultBattery": "DF100R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘렌토",
+    "year": "06~09년",
+    "fuel": "디젤",
+    "detailModel": "뉴쏘렌토",
+    "defaultBattery": "DF100R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "23년~현재",
+    "fuel": "LPG",
+    "detailModel": "더 뉴 K5 3세대",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "23년~현재",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 K5 3세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "19~23년",
+    "fuel": "LPG",
+    "detailModel": "K5 3세대",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "19~23년",
+    "fuel": "가솔린",
+    "detailModel": "K5 3세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "19~23년",
+    "fuel": "가솔린+전기",
+    "detailModel": "K5 하이브리드 3세대",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "18~19년",
+    "fuel": "LPG",
+    "detailModel": "더 뉴 K5 2세대",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "18~19년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 K5 2세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "18~19년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 K5 2세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "18~19년",
+    "fuel": "가솔린+전기",
+    "detailModel": "더 뉴 K5 하이브리드 2세대",
+    "defaultBattery": "DIN74R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "15~18년",
+    "fuel": "LPG",
+    "detailModel": "K5 2세대",
+    "defaultBattery": "DIN90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "15~18년",
+    "fuel": "가솔린",
+    "detailModel": "K5 2세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "15~18년",
+    "fuel": "디젤",
+    "detailModel": "K5 2세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "15~18년",
+    "fuel": "가솔린+전기",
+    "detailModel": "K5 하이브리드 2세대",
+    "defaultBattery": "DIN74R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "13~15년",
+    "fuel": "LPG",
+    "detailModel": "더 뉴 K5",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "13~15년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 K5",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "13~15년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 K5",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "10~13년",
+    "fuel": "LPG",
+    "detailModel": "K5",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "10~13년",
+    "fuel": "가솔린",
+    "detailModel": "K5",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "10~13년",
+    "fuel": "가솔린",
+    "detailModel": "K5",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "10~13년",
+    "fuel": "디젤",
+    "detailModel": "K5",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K5",
+    "year": "11~15년",
+    "fuel": "가솔린+전기",
+    "detailModel": "K5 하이브리드",
+    "defaultBattery": "DIN74R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "레이",
+    "year": "22년~현재",
+    "fuel": "가솔린 1000cc",
+    "detailModel": "더 뉴 기아 레이",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "레이",
+    "year": "23년~현재",
+    "fuel": "전기",
+    "detailModel": "더 뉴 기아 레이 EV",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "레이",
+    "year": "17~22년",
+    "fuel": "LPG 1000cc",
+    "detailModel": "더 뉴 레이",
+    "defaultBattery": "DF60L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "레이",
+    "year": "11~17년",
+    "fuel": "가솔린 1000cc",
+    "detailModel": "레이",
+    "defaultBattery": "DF60L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "레이",
+    "year": "11~17년",
+    "fuel": "전기",
+    "detailModel": "레이",
+    "defaultBattery": "DF40AL",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "24년~현재",
+    "fuel": "LPG",
+    "detailModel": "더 뉴 스포티지 5세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "24년~현재",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 스포티지 5세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "24년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "더 뉴 스포티지 5세대 하이브리드",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "21년~현재",
+    "fuel": "LPG",
+    "detailModel": "스포티지 5세대",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "21년~현재",
+    "fuel": "가솔린",
+    "detailModel": "스포티지 5세대",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "21년~현재",
+    "fuel": "디젤",
+    "detailModel": "스포티지 5세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "21~24년",
+    "fuel": "가솔린+전기",
+    "detailModel": "스포티지 5세대 하이브리드",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "18~21년",
+    "fuel": "가솔린",
+    "detailModel": "스포티지 더 볼드",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "18~21년",
+    "fuel": "디젤",
+    "detailModel": "스포티지 더 볼드",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "15~18년",
+    "fuel": "가솔린",
+    "detailModel": "스포티지 4세대",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "15~18년",
+    "fuel": "디젤",
+    "detailModel": "스포티지 4세대",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "13~15년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 스포티지 R",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "13~15년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 스포티지 R",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "10~13년",
+    "fuel": "가솔린",
+    "detailModel": "스포티지 R",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "10~13년",
+    "fuel": "디젤",
+    "detailModel": "스포티지 R",
+    "defaultBattery": "DF90R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "04~10년",
+    "fuel": "가솔린",
+    "detailModel": "New 스포티지",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "스포티지",
+    "year": "04~10년",
+    "fuel": "디젤",
+    "detailModel": "New 스포티지",
+    "defaultBattery": "DF90L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "모닝",
+    "year": "23년~현재",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 모닝 (JA)",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "모닝",
+    "year": "20~23년",
+    "fuel": "가솔린",
+    "detailModel": "모닝 어반 (JA)",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "모닝",
+    "year": "17~20년",
+    "fuel": "LPG",
+    "detailModel": "올 뉴 모닝 (JA)",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "모닝",
+    "year": "17~20년",
+    "fuel": "가솔린",
+    "detailModel": "올 뉴 모닝 (JA)",
+    "defaultBattery": "DIN50L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "모닝",
+    "year": "15~17년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 모닝",
+    "defaultBattery": "DF40AL",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "모닝",
+    "year": "11~15년",
+    "fuel": "가솔린",
+    "detailModel": "올 뉴 모닝",
+    "defaultBattery": "DF40AL",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
     "vehicle": "K3",
-    "year": "12/09~15/11",
+    "year": "21년~현재",
+    "fuel": "가솔린 1600cc",
+    "detailModel": "더 뉴 K3 2세대",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K3",
+    "year": "18~21년",
+    "fuel": "가솔린",
+    "detailModel": "올 뉴 K3",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K3",
+    "year": "15~18년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 K3",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K3",
+    "year": "15~18년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 K3",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K3",
+    "year": "16~18년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 K3",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K3",
+    "year": "12~15년",
     "fuel": "가솔린",
     "detailModel": "K3",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "DIN74L",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "K3",
-    "year": "12/09~15/11",
+    "year": "12~15년",
     "fuel": "디젤",
     "detailModel": "K3",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K3",
-    "year": "13/02~16/02",
-    "fuel": "공통",
-    "detailModel": "K3 쿱",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K3",
-    "year": "15/11~18/02",
-    "fuel": "가솔린",
-    "detailModel": "더뉴K3",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K3",
-    "year": "15/11~18/02",
-    "fuel": "디젤",
-    "detailModel": "더뉴K3",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K3",
-    "year": "16/03~",
-    "fuel": "공통",
-    "detailModel": "더뉴K3 쿱",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K3",
-    "year": "18/02~",
-    "fuel": "가솔린",
-    "detailModel": "올뉴K3",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "AGM60",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K3",
-    "year": "18/02~",
-    "fuel": "디젤",
-    "detailModel": "올뉴K3",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "10/04~13/06",
-    "fuel": "가솔린, LPG",
-    "detailModel": "K5",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "10/04~13/06",
-    "fuel": "가솔린, LPG",
-    "detailModel": "K5 오토스탑",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "11/05~13/12",
-    "fuel": "하이브리드",
-    "detailModel": "K5",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "13/06~15/07",
-    "fuel": "가솔린, LPG",
-    "detailModel": "더뉴K5",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "13/06~15/07",
-    "fuel": "가솔린, LPG",
-    "detailModel": "더뉴K5 오토스탑",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "13/12~15/12",
-    "fuel": "하이브리드",
-    "detailModel": "K5 500h",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "15/07~18/01",
-    "fuel": "가솔린, 디젤",
-    "detailModel": "K5",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "15/12~18/01",
+    "vehicle": "K7",
+    "year": "19~21년",
     "fuel": "LPG",
-    "detailModel": "K5",
+    "detailModel": "K7 프리미어",
     "defaultBattery": "DIN90L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "15/12~18/05",
-    "fuel": "하이브리드",
-    "detailModel": "K5",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "18/01~19/11",
+    "vehicle": "K7",
+    "year": "19~21년",
     "fuel": "가솔린",
-    "detailModel": "더뉴K5",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "18/01~19/11",
-    "fuel": "디젤",
-    "detailModel": "더뉴K5",
+    "detailModel": "K7 프리미어",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "18/01~19/11",
-    "fuel": "LPG",
-    "detailModel": "더뉴K5",
-    "defaultBattery": "DIN90L",
+    "vehicle": "K7",
+    "year": "19~21년",
+    "fuel": "디젤",
+    "detailModel": "K7 프리미어",
+    "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "18/05~20/01",
-    "fuel": "하이브리드",
-    "detailModel": "더뉴K5",
+    "vehicle": "K7",
+    "year": "19~21년",
+    "fuel": "가솔린+전기",
+    "detailModel": "K7 프리미어 하이브리드",
     "defaultBattery": "DIN74R",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "19/12~",
-    "fuel": "가솔린",
-    "detailModel": "올뉴K5 1.6 터보",
-    "defaultBattery": "AGM70",
+    "vehicle": "K7",
+    "year": "16~19년",
+    "fuel": "LPG",
+    "detailModel": "올 뉴 K7",
+    "defaultBattery": "DIN90L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "19/11~",
+    "vehicle": "K7",
+    "year": "16~19년",
     "fuel": "가솔린",
-    "detailModel": "올뉴K5 2.0",
+    "detailModel": "올 뉴 K7",
     "defaultBattery": "AGM70",
     "upgradeBattery": "AGM80",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "19/12~",
+    "vehicle": "K7",
+    "year": "16~19년",
+    "fuel": "디젤",
+    "detailModel": "올 뉴 K7",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K7",
+    "year": "16~19년",
+    "fuel": "가솔린+전기",
+    "detailModel": "올 뉴 K7 하이브리드",
+    "defaultBattery": "DIN74R",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K7",
+    "year": "12~16년",
     "fuel": "LPG",
-    "detailModel": "올뉴K5",
-    "defaultBattery": "DIN90L",
+    "detailModel": "더 뉴 K7",
+    "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K5",
-    "year": "20/01~",
-    "fuel": "하이브리드",
-    "detailModel": "올뉴K5",
+    "vehicle": "K7",
+    "year": "12~16년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 K7",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K7",
+    "year": "13~16년",
+    "fuel": "가솔린+전기",
+    "detailModel": "K7 하이브리드",
     "defaultBattery": "DIN74R",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "K7",
-    "year": "09/11~12/11",
-    "fuel": "가솔린, LPG",
-    "detailModel": "K7",
+    "year": "11~12년",
+    "fuel": "LPG",
+    "detailModel": "더 프레스티지 K7",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "K7",
-    "year": "11/02~12/11",
-    "fuel": "가솔린, LPG",
-    "detailModel": "K7더프레스티지",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K7",
-    "year": "12/11~16/01",
-    "fuel": "가솔린, LPG",
-    "detailModel": "더뉴K7",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K7",
-    "year": "13/11~16/11",
-    "fuel": "하이브리드",
-    "detailModel": "더뉴K7 700h",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K7",
-    "year": "16/01~17/01",
+    "year": "11~12년",
     "fuel": "가솔린",
-    "detailModel": "올뉴K7 2.4",
-    "defaultBattery": "DIN74L",
+    "detailModel": "더 프레스티지 K7",
+    "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K7",
-    "year": "17/01~19/06",
-    "fuel": "가솔린",
-    "detailModel": "올뉴K7 2.4",
+    "vehicle": "K8",
+    "year": "24년~현재",
+    "fuel": "LPG",
+    "detailModel": "더 뉴 K8",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K7",
-    "year": "16/01~19/06",
+    "vehicle": "K8",
+    "year": "24년~현재",
     "fuel": "가솔린",
-    "detailModel": "올뉴K7 3.0 3.3",
-    "defaultBattery": "AGM80",
+    "detailModel": "더 뉴 K8",
+    "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K7",
-    "year": "16/01~19/06",
-    "fuel": "디젤",
-    "detailModel": "올뉴K7",
-    "defaultBattery": "AGM80",
+    "vehicle": "K8",
+    "year": "24년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "더 뉴 K8 하이브리드",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K7",
-    "year": "16/01~19/06",
+    "vehicle": "K8",
+    "year": "21~24년",
     "fuel": "LPG",
-    "detailModel": "올뉴K7",
-    "defaultBattery": "DIN90L",
+    "detailModel": "K8",
+    "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K7",
-    "year": "16/01~19/06",
-    "fuel": "하이브리드",
-    "detailModel": "올뉴K7",
-    "defaultBattery": "DIN74R",
+    "vehicle": "K8",
+    "year": "21~24년",
+    "fuel": "가솔린",
+    "detailModel": "K8",
+    "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "K7",
-    "year": "19/06~21/01",
-    "fuel": "가솔린, 디젤",
-    "detailModel": "K7프리미어",
-    "defaultBattery": "AGM80",
+    "vehicle": "K8",
+    "year": "21~24년",
+    "fuel": "가솔린+전기",
+    "detailModel": "K8 하이브리드",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K7",
-    "year": "19/06~21/01",
-    "fuel": "LPG",
-    "detailModel": "K7프리미어",
-    "defaultBattery": "DIN90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K7",
-    "year": "19/06~21/01",
-    "fuel": "하이브리드",
-    "detailModel": "K7프리미어",
-    "defaultBattery": "DIN74R",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "K9",
-    "year": "12/05~14/11",
+    "year": "21년~현재",
     "fuel": "가솔린",
-    "detailModel": "K9",
-    "defaultBattery": "DIN100L",
+    "detailModel": "더 뉴 K9 2세대",
+    "defaultBattery": "AGM105",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K9",
+    "year": "18~21년",
+    "fuel": "가솔린",
+    "detailModel": "더 K9",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "K9",
     "year": "14~18년",
-    "fuel": "공통",
-    "detailModel": "더뉴K9",
-    "defaultBattery": "DIN100L",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 K9",
+    "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "K9",
-    "year": "18/04~",
-    "fuel": "공통",
-    "detailModel": "더K9",
-    "defaultBattery": "AGM105",
+    "year": "12~14년",
+    "fuel": "가솔린",
+    "detailModel": "K9",
+    "defaultBattery": "DIN100L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "니로",
-    "year": "16/03~19/03",
-    "fuel": "하이브리드",
-    "detailModel": "니로",
-    "defaultBattery": "DIN50L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "레이",
-    "year": "11/12~17/12",
-    "fuel": "가솔린, 바이퓨얼",
-    "detailModel": "레이",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "레이",
-    "year": "11/12~17/12",
+    "vehicle": "EV5",
+    "year": "25년~현재",
     "fuel": "전기",
-    "detailModel": "레이EV 시동용",
-    "defaultBattery": "DF40AL",
+    "detailModel": "EV5",
+    "defaultBattery": "AGM60",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "레이",
-    "year": "17/12~",
-    "fuel": "가솔린, LPG",
-    "detailModel": "더뉴레이",
-    "defaultBattery": "DF60L",
+    "vehicle": "EV6",
+    "year": "24년~현재",
+    "fuel": "전기",
+    "detailModel": "더 뉴 EV6",
+    "defaultBattery": "AGM60",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "로체",
-    "year": "05~07년",
-    "fuel": "가솔린, LPG",
-    "detailModel": "로체",
-    "defaultBattery": "DF80L",
+    "vehicle": "EV6",
+    "year": "21~24년",
+    "fuel": "전기",
+    "detailModel": "EV6",
+    "defaultBattery": "AGM60",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "로체",
-    "year": "05~07년",
-    "fuel": "디젤",
-    "detailModel": "로체",
-    "defaultBattery": "DF90L",
+    "vehicle": "EV9",
+    "year": "23년~현재",
+    "fuel": "전기",
+    "detailModel": "EV9",
+    "defaultBattery": "AGM60",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "로체",
-    "year": "07~08년",
-    "fuel": "가솔린, LPG",
-    "detailModel": "로체어드밴스",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "로체",
     "year": "08~10년",
-    "fuel": "가솔린, LPG",
-    "detailModel": "로체이노베이션",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "모닝",
-    "year": "04/02~07/12",
-    "fuel": "가솔린",
-    "detailModel": "모닝",
-    "defaultBattery": "DF40AL",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "모닝",
-    "year": "08/01~10/11",
-    "fuel": "가솔린, LPG",
-    "detailModel": "뉴모닝",
-    "defaultBattery": "DF40AL",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "모닝",
-    "year": "11/01~14/12",
-    "fuel": "가솔린, LPG",
-    "detailModel": "올뉴모닝",
-    "defaultBattery": "DF40AL",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "모닝",
-    "year": "15/01~17/01",
-    "fuel": "가솔린, LPG",
-    "detailModel": "더뉴모닝",
-    "defaultBattery": "DF40AL",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "모닝",
-    "year": "17/01~20/05",
-    "fuel": "가솔린",
-    "detailModel": "올뉴모닝 1.0",
-    "defaultBattery": "DF40AL",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "모닝",
-    "year": "17/01~20/05",
-    "fuel": "가솔린",
-    "detailModel": "올뉴모닝 1.0 터보",
-    "defaultBattery": "DIN50L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "모닝",
-    "year": "17/01~20/05",
     "fuel": "LPG",
-    "detailModel": "올뉴모닝",
-    "defaultBattery": "DIN50L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "모닝",
-    "year": "20/05~",
-    "fuel": "공통",
-    "detailModel": "모닝어반",
-    "defaultBattery": "DIN50L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "모하비",
-    "year": "08/01~16/02",
-    "fuel": "가솔린",
-    "detailModel": "모하비",
+    "detailModel": "로체 이노베이션",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "모하비",
-    "year": "08/01~16/02",
+    "vehicle": "로체",
+    "year": "08~10년",
+    "fuel": "가솔린",
+    "detailModel": "로체 이노베이션",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "로체",
+    "year": "07~08년",
+    "fuel": "LPG",
+    "detailModel": "로체 어드밴스",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "로체",
+    "year": "07~08년",
+    "fuel": "가솔린",
+    "detailModel": "로체 어드밴스",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "로체",
+    "year": "07~08년",
     "fuel": "디젤",
-    "detailModel": "모하비",
-    "defaultBattery": "DF100L",
+    "detailModel": "로체 어드밴스",
+    "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "모하비",
-    "year": "16/02~19/09",
-    "fuel": "디젤",
-    "detailModel": "더뉴모하비",
-    "defaultBattery": "DF100L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "모하비",
-    "year": "19/09~",
-    "fuel": "디젤",
-    "detailModel": "모하비더마스터",
-    "defaultBattery": "DF100L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "봉고",
-    "year": "04/01~05/05",
-    "fuel": "디젤",
-    "detailModel": "봉고3 미니버스 2.9",
-    "defaultBattery": "DF100L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "봉고",
-    "year": "04/01~19/09",
-    "fuel": "디젤",
-    "detailModel": "봉고3",
-    "defaultBattery": "DF100L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "봉고",
-    "year": "20/01~",
-    "fuel": "전기",
-    "detailModel": "봉고3 EV",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "셀토스",
-    "year": "19/07~",
+    "year": "26년~현재",
     "fuel": "가솔린",
-    "detailModel": "셀토스",
+    "detailModel": "셀토스 2세대",
     "defaultBattery": "AGM60",
     "upgradeBattery": "AGM70",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "셀토스",
-    "year": "19/07~",
+    "year": "26년~현재",
+    "fuel": "가솔린+전기",
+    "detailModel": "셀토스 2세대",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "셀토스",
+    "year": "22~26년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 셀토스",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "셀토스",
+    "year": "19~22년",
+    "fuel": "가솔린",
+    "detailModel": "셀토스",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "AGM70",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "셀토스",
+    "year": "19~22년",
     "fuel": "디젤",
     "detailModel": "셀토스",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "스토닉",
-    "year": "17/07~20/12",
+    "year": "17~20년",
     "fuel": "가솔린",
     "detailModel": "스토닉",
     "defaultBattery": "AGM60",
     "upgradeBattery": "AGM70",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "스토닉",
-    "year": "17/07~20/12",
+    "year": "17~20년",
     "fuel": "디젤",
     "detailModel": "스토닉",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "스팅어",
-    "year": "17/05~20/08",
+    "year": "20~23년",
     "fuel": "가솔린",
-    "detailModel": "스팅어 2.0 터보",
+    "detailModel": "스팅어 마이스터",
     "defaultBattery": "AGM80",
     "upgradeBattery": "AGM95",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "스팅어",
-    "year": "17/05~20/08",
+    "year": "17~20년",
     "fuel": "가솔린",
-    "detailModel": "스팅어 3.3 터보",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스팅어",
-    "year": "17/05~20/08",
-    "fuel": "디젤",
-    "detailModel": "스팅어 2.2 터보",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스팅어",
-    "year": "20/08~",
-    "fuel": "가솔린",
-    "detailModel": "스팅어마이스터 2.5 터보",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스팅어",
-    "year": "20/08~",
-    "fuel": "가솔린",
-    "detailModel": "스팅어마이스터 3.3 터보",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스포티지",
-    "year": "10/03~13/07",
-    "fuel": "디젤",
-    "detailModel": "스포티지R",
-    "defaultBattery": "DF90R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스포티지",
-    "year": "10/03~13/07",
-    "fuel": "가솔린",
-    "detailModel": "스포티지R",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스포티지",
-    "year": "13/07~15/09",
-    "fuel": "디젤",
-    "detailModel": "더뉴스포티지R",
-    "defaultBattery": "DF90R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스포티지",
-    "year": "13/07~15/09",
-    "fuel": "가솔린",
-    "detailModel": "더뉴스포티지R",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스포티지",
-    "year": "15/09~18/07",
-    "fuel": "디젤",
-    "detailModel": "올뉴스포티지QL 1.7 2.0",
+    "detailModel": "스팅어",
     "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
+    "upgradeBattery": "AGM95",
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "스포티지",
-    "year": "15/09~18/07",
+    "vehicle": "스팅어",
+    "year": "17~20년",
     "fuel": "디젤",
-    "detailModel": "올뉴스포티지QL 2.0 4WD",
-    "defaultBattery": "DIN80L / DIN90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스포티지",
-    "year": "15/09~18/07",
-    "fuel": "가솔린",
-    "detailModel": "올뉴스포티지QL",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스포티지",
-    "year": "18/07~",
-    "fuel": "디젤",
-    "detailModel": "스포티지더볼드",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스포티지",
-    "year": "18/07~",
-    "fuel": "가솔린",
-    "detailModel": "스포티지더볼드",
-    "defaultBattery": "DIN60HL",
-    "upgradeBattery": "DIN74L",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘렌토",
-    "year": "02/02~06/04",
-    "fuel": "디젤",
-    "detailModel": "쏘렌토",
-    "defaultBattery": "DF100R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘렌토",
-    "year": "02/02~06/04",
-    "fuel": "가솔린",
-    "detailModel": "쏘렌토",
-    "defaultBattery": "DF80R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘렌토",
-    "year": "06/04~09/04",
-    "fuel": "디젤",
-    "detailModel": "뉴쏘렌토",
-    "defaultBattery": "DF100R",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘렌토",
-    "year": "09/04~12/07",
-    "fuel": "디젤",
-    "detailModel": "쏘렌토R",
-    "defaultBattery": "DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘렌토",
-    "year": "09/04~12/07",
-    "fuel": "가솔린, LPG",
-    "detailModel": "쏘렌토R",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘렌토",
-    "year": "12/07~14/08",
-    "fuel": "디젤",
-    "detailModel": "뉴쏘렌토R",
-    "defaultBattery": "DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘렌토",
-    "year": "14/08~17/07",
-    "fuel": "가솔린, 디젤",
-    "detailModel": "올뉴쏘렌토",
+    "detailModel": "스팅어",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "쏘렌토",
-    "year": "17/07~18/04",
-    "fuel": "가솔린, 디젤",
-    "detailModel": "더뉴쏘렌토",
-    "defaultBattery": "AGM95",
+    "vehicle": "쎄라토",
+    "year": "06~08년",
+    "fuel": "가솔린",
+    "detailModel": "뉴쎄라토",
+    "defaultBattery": "DF60R",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "쏘렌토",
-    "year": "18/04~20년",
-    "fuel": "가솔린, 디젤",
-    "detailModel": "쏘렌토더마스터",
-    "defaultBattery": "AGM95",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘렌토",
-    "year": "20/03~",
-    "fuel": "가솔린, 디젤",
-    "detailModel": "쏘렌토MQ4",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘렌토",
-    "year": "20/03~",
-    "fuel": "하이브리드",
-    "detailModel": "쏘렌토MQ4",
+    "vehicle": "쏘울",
+    "year": "19~21년",
+    "fuel": "가솔린",
+    "detailModel": "쏘울 부스터",
     "defaultBattery": "AGM60",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "쏘울",
-    "year": "08/09~13/10",
-    "fuel": "가솔린",
-    "detailModel": "쏘울",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘울",
-    "year": "11/09~13/10",
-    "fuel": "가솔린",
-    "detailModel": "쏘울 1.6 에코플러스",
-    "defaultBattery": "AGM60",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘울",
-    "year": "08/09~13/10",
-    "fuel": "디젤",
-    "detailModel": "쏘울",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘울",
-    "year": "13/10~16/08",
-    "fuel": "가솔린",
-    "detailModel": "올뉴쏘울",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘울",
-    "year": "13/10~16/08",
-    "fuel": "디젤",
-    "detailModel": "올뉴쏘울",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘울",
-    "year": "14/04~19/01",
+    "year": "19~21년",
     "fuel": "전기",
-    "detailModel": "쏘울EV",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘울",
-    "year": "16/08~19/01",
-    "fuel": "가솔린",
-    "detailModel": "더뉴쏘울",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘울",
-    "year": "16/08~19/01",
-    "fuel": "디젤",
-    "detailModel": "더뉴쏘울",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘울",
-    "year": "16/08~19/01",
-    "fuel": "전기",
-    "detailModel": "더뉴쏘울 EV",
-    "defaultBattery": "AGM60",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘울",
-    "year": "19/01~현재",
-    "fuel": "가솔린",
-    "detailModel": "쏘울부스터",
-    "defaultBattery": "AGM60",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "쏘울",
-    "year": "19/01~현재",
-    "fuel": "전기",
-    "detailModel": "쏘울부스터EV",
+    "detailModel": "쏘울 부스터 EV",
     "defaultBattery": "DIN50L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘울",
+    "year": "16~19년",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 쏘울",
+    "defaultBattery": "DF60L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘울",
+    "year": "16~19년",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 쏘울",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘울",
+    "year": "13~16년",
+    "fuel": "가솔린",
+    "detailModel": "올 뉴 쏘울",
+    "defaultBattery": "DF60L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘울",
+    "year": "13~16년",
+    "fuel": "디젤",
+    "detailModel": "올 뉴 쏘울",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘울",
+    "year": "08~13년",
+    "fuel": "가솔린",
+    "detailModel": "쏘울",
+    "defaultBattery": "DF60L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘울",
+    "year": "08~13년",
+    "fuel": "디젤",
+    "detailModel": "쏘울",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "쏘울",
+    "year": "14~19년",
+    "fuel": "전기",
+    "detailModel": "쏘울 EV",
+    "defaultBattery": "AGM60",
+    "upgradeBattery": "",
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "오피러스",
     "year": "09~11년",
-    "fuel": "가솔린, LPG",
+    "fuel": "LPG",
     "detailModel": "오피러스 프리미엄",
     "defaultBattery": "DF80L",
     "upgradeBattery": "DF90L",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "05/10~10/01",
-    "fuel": "디젤",
-    "detailModel": "그랜드카니발",
-    "defaultBattery": "DF100L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "vehicle": "오피러스",
+    "year": "09~11년",
+    "fuel": "가솔린",
+    "detailModel": "오피러스 프리미엄",
+    "defaultBattery": "DF80L",
+    "upgradeBattery": "DF90L",
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "05/10~10/01",
+    "vehicle": "카렌스",
+    "year": "16~18년",
     "fuel": "LPG",
-    "detailModel": "그랜드카니발",
+    "detailModel": "더 뉴 카렌스",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "06/01~10/01",
+    "vehicle": "카렌스",
+    "year": "16~18년",
     "fuel": "디젤",
-    "detailModel": "뉴카니발",
-    "defaultBattery": "DF100L",
+    "detailModel": "더 뉴 카렌스",
+    "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "06/01~10/01",
+    "vehicle": "카렌스",
+    "year": "13~16년",
     "fuel": "LPG",
-    "detailModel": "뉴카니발",
+    "detailModel": "올 뉴 카렌스",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "10/01~14/06",
-    "fuel": "디젤",
-    "detailModel": "그랜드카니발R",
-    "defaultBattery": "DF100L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "10/01~14/06",
-    "fuel": "가솔린, LPG",
-    "detailModel": "그랜드카니발R",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "10/01~14/06",
-    "fuel": "디젤",
-    "detailModel": "뉴카니발R",
-    "defaultBattery": "DF100L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "10/01~14/06",
-    "fuel": "가솔린, LPG",
-    "detailModel": "뉴카니발R",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "14/06~18/03",
-    "fuel": "디젤",
-    "detailModel": "올뉴카니발",
-    "defaultBattery": "DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "14/06~18/03",
-    "fuel": "가솔린",
-    "detailModel": "올뉴카니발",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "18/03~20/08",
-    "fuel": "디젤",
-    "detailModel": "더뉴카니발",
-    "defaultBattery": "DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "18/03~20/08",
-    "fuel": "가솔린",
-    "detailModel": "더뉴카니발",
-    "defaultBattery": "DF80L / DF90L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "20/08~",
-    "fuel": "디젤",
-    "detailModel": "뉴카니발",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카니발",
-    "year": "20/08~",
-    "fuel": "가솔린",
-    "detailModel": "뉴카니발",
-    "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카렌스",
-    "year": "06~13년",
-    "fuel": "가솔린",
-    "detailModel": "뉴카렌스",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카렌스",
-    "year": "06~13년",
-    "fuel": "디젤",
-    "detailModel": "뉴카렌스",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "카렌스",
-    "year": "14~16년",
-    "fuel": "디젤, LPG",
-    "detailModel": "올뉴카렌스",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "카렌스",
     "year": "13~16년",
     "fuel": "디젤",
-    "detailModel": "올뉴카렌스 에코다이나믹",
-    "defaultBattery": "AGM70",
+    "detailModel": "올 뉴 카렌스",
+    "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
-    "vehicle": "카렌스",
-    "year": "16~18년",
-    "fuel": "디젤, LPG",
-    "detailModel": "더뉴카렌스",
+    "vehicle": "텔루라이드",
+    "year": "19년~현재",
+    "fuel": "가솔린",
+    "detailModel": "텔루라이드",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "포르테",
+    "year": "08~13년",
+    "fuel": "LPG",
+    "detailModel": "포르테",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
@@ -1245,29 +1475,19 @@
     "year": "08~13년",
     "fuel": "가솔린",
     "detailModel": "포르테",
-    "defaultBattery": "DF60L",
+    "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "포르테",
     "year": "08~13년",
-    "fuel": "디젤, LPG",
+    "fuel": "디젤",
     "detailModel": "포르테",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "포르테",
-    "year": "08~13년",
-    "fuel": "하이브리드",
-    "detailModel": "포르테",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
@@ -1277,96 +1497,46 @@
     "detailModel": "포르테 쿱",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "포르테",
-    "year": "10~13년",
-    "fuel": "가솔린",
-    "detailModel": "포르테 해치백",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "프라이드",
-    "year": "87/03~00/02",
-    "fuel": "공통",
-    "detailModel": "프라이드",
-    "defaultBattery": "DF50L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "프라이드",
-    "year": "05/04~11/09",
+    "year": "15~17년",
     "fuel": "가솔린",
-    "detailModel": "뉴프라이드",
+    "detailModel": "더 뉴 프라이드",
     "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "upgradeBattery": "DF80L",
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "프라이드",
-    "year": "05/04~11/09",
+    "year": "15~17년",
     "fuel": "디젤",
-    "detailModel": "뉴프라이드",
+    "detailModel": "더 뉴 프라이드",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "프라이드",
-    "year": "05/04~11/09",
-    "fuel": "하이브리드",
-    "detailModel": "뉴프라이드",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "프라이드",
-    "year": "11/09~14/12",
+    "year": "11~15년",
     "fuel": "가솔린",
-    "detailModel": "올뉴프라이드",
+    "detailModel": "올 뉴 프라이드",
     "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "upgradeBattery": "DF80L",
+    "status": "대기"
   },
   {
     "manufacturer": "기아",
     "vehicle": "프라이드",
-    "year": "11/09~14/12",
+    "year": "11~15년",
     "fuel": "디젤",
-    "detailModel": "올뉴프라이드",
+    "detailModel": "올 뉴 프라이드",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "프라이드",
-    "year": "14/12~17/09",
-    "fuel": "가솔린",
-    "detailModel": "더뉴프라이드",
-    "defaultBattery": "DF60L",
-    "upgradeBattery": "",
-    "status": "완료"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "프라이드",
-    "year": "14/12~17/09",
-    "fuel": "디젤",
-    "detailModel": "더뉴프라이드",
-    "defaultBattery": "DF80L",
-    "upgradeBattery": "",
-    "status": "완료"
+    "status": "대기"
   }
 ]
