@@ -314,7 +314,17 @@
     "vehicle": "임팔라",
     "year": "15~20년",
     "fuel": "가솔린",
-    "detailModel": "임팔라",
+    "detailModel": "임팔라 3.6",
+    "defaultBattery": "DIN74L",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "쉐보레",
+    "vehicle": "임팔라",
+    "year": "15~20년",
+    "fuel": "가솔린",
+    "detailModel": "임팔라 2.4",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
     "status": "대기"

@@ -34,7 +34,7 @@
     "vehicle": "카니발",
     "year": "20~23년",
     "fuel": "LPG",
-    "detailModel": "카니발 4세대",
+    "detailModel": "카니발 KA4",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
     "status": "대기"
@@ -44,7 +44,7 @@
     "vehicle": "카니발",
     "year": "20~23년",
     "fuel": "가솔린",
-    "detailModel": "카니발 4세대",
+    "detailModel": "카니발 KA4",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
     "status": "대기"
@@ -54,7 +54,7 @@
     "vehicle": "카니발",
     "year": "20~23년",
     "fuel": "디젤 2",
-    "detailModel": "카니발 4세대",
+    "detailModel": "카니발 KA4",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
     "status": "대기"
@@ -184,7 +184,7 @@
     "vehicle": "쏘렌토",
     "year": "20~23년",
     "fuel": "가솔린",
-    "detailModel": "쏘렌토 4세대",
+    "detailModel": "쏘렌토MQ4",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
     "status": "대기"
@@ -194,7 +194,7 @@
     "vehicle": "쏘렌토",
     "year": "20~23년",
     "fuel": "가솔린+전기",
-    "detailModel": "쏘렌토 4세대",
+    "detailModel": "쏘렌토MQ4",
     "defaultBattery": "AGM60",
     "upgradeBattery": "",
     "status": "대기"
@@ -204,7 +204,7 @@
     "vehicle": "쏘렌토",
     "year": "20~23년",
     "fuel": "디젤",
-    "detailModel": "쏘렌토 4세대",
+    "detailModel": "쏘렌토MQ4",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
     "status": "대기"
@@ -294,7 +294,7 @@
     "vehicle": "쏘렌토",
     "year": "06~09년",
     "fuel": "가솔린",
-    "detailModel": "뉴쏘렌토",
+    "detailModel": "구형 쏘렌토",
     "defaultBattery": "DF100R",
     "upgradeBattery": "",
     "status": "대기"
@@ -304,7 +304,7 @@
     "vehicle": "쏘렌토",
     "year": "06~09년",
     "fuel": "디젤",
-    "detailModel": "뉴쏘렌토",
+    "detailModel": "구형 쏘렌토",
     "defaultBattery": "DF100R",
     "upgradeBattery": "",
     "status": "대기"
@@ -1044,7 +1044,17 @@
     "vehicle": "K8",
     "year": "21~24년",
     "fuel": "가솔린",
-    "detailModel": "K8",
+    "detailModel": "K8 3.3",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "K8",
+    "year": "21~24년",
+    "fuel": "가솔린",
+    "detailModel": "K8 2.5",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
     "status": "대기"

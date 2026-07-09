@@ -104,7 +104,17 @@
     "vehicle": "그랜저",
     "year": "16~19년",
     "fuel": "가솔린",
-    "detailModel": "그랜저 IG",
+    "detailModel": "그랜저 IG 2.5",
+    "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "16~19년",
+    "fuel": "가솔린",
+    "detailModel": "그랜저 IG 3.3",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
     "status": "대기"
