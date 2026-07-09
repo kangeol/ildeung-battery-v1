@@ -33,7 +33,7 @@
     "KG": "kgm",
     "쌍용": "kgm"
   };
-  const DOMESTIC_MANUFACTURER_ORDER = ["hyundai", "kia", "renault", "chevrolet", "kgm"];
+  const DOMESTIC_MANUFACTURER_ORDER = ["hyundai", "kia", "renault", "chevrolet", "kgm", "genesis"];
   const IMPORT_PRIORITY_ORDER = ["bmw", "benz", "audi", "mini", "volkswagen"];
   const MANUFACTURER_GROUP_ALIASES = {
     hyundai: ["hyundai", "현대"],
@@ -41,6 +41,7 @@
     renault: ["renault", "르노"],
     chevrolet: ["chevrolet", "쉐보레", "chevy"],
     kgm: ["kg", "kgm", "kg모빌리티", "kgmobility", "ssangyong", "쌍용"],
+    genesis: ["genesis", "제네시스"],
     bmw: ["bmw"],
     benz: ["benz", "mercedes", "mercedesbenz", "메르세데스벤츠", "벤츠"],
     audi: ["audi", "아우디"],

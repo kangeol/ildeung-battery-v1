@@ -1,0 +1,182 @@
+[
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "EQ900",
+    "year": "15~18년",
+    "fuel": "가솔린",
+    "detailModel": "EQ900",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "EQ900",
+    "year": "15~18년",
+    "fuel": "가솔",
+    "detailModel": "EQ900",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "G70",
+    "year": "20년~현재",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 G70",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "G70",
+    "year": "20년~현재",
+    "fuel": "디젤",
+    "detailModel": "더 뉴 G70",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "G70",
+    "year": "22년~현재",
+    "fuel": "가솔린",
+    "detailModel": "더 뉴 G70 슈팅브레이크",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "G70",
+    "year": "17~20년",
+    "fuel": "가솔린",
+    "detailModel": "G70",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "G70",
+    "year": "17~20년",
+    "fuel": "디젤",
+    "detailModel": "G70",
+    "defaultBattery": "AGM95",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "G80",
+    "year": "20년~현재",
+    "fuel": "가솔린 2WD",
+    "detailModel": "G80 (RG3)",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "G80",
+    "year": "20년~현재",
+    "fuel": "디젤 2WD",
+    "detailModel": "G80 (RG3)",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "G80",
+    "year": "16~20년",
+    "fuel": "가솔린",
+    "detailModel": "G80",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "G80",
+    "year": "16~20년",
+    "fuel": "디젤",
+    "detailModel": "G80",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "G90",
+    "year": "21년~현재",
+    "fuel": "가솔린",
+    "detailModel": "G90 (RS4)",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "G90",
+    "year": "18~21년",
+    "fuel": "가솔린",
+    "detailModel": "G90",
+    "defaultBattery": "AGM105",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "GV70",
+    "year": "21년~현재",
+    "fuel": "가솔린",
+    "detailModel": "GV70",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "GV70",
+    "year": "21년~현재",
+    "fuel": "디젤",
+    "detailModel": "GV70",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "GV80",
+    "year": "20년~현재",
+    "fuel": "가솔린 2500cc",
+    "detailModel": "GV80",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "GV80",
+    "year": "20년~현재",
+    "fuel": "디젤 3000cc",
+    "detailModel": "GV80",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "제네시스",
+    "vehicle": "GV80",
+    "year": "23년~현재",
+    "fuel": "가솔린 2500cc",
+    "detailModel": "GV80 쿠페",
+    "defaultBattery": "고객센터문의",
+    "upgradeBattery": "",
+    "status": "대기"
+  }
+]

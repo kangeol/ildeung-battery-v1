@@ -25,6 +25,11 @@
     "file": "ford.json"
   },
   {
+    "id": "genesis",
+    "name": "제네시스",
+    "file": "genesis.json"
+  },
+  {
     "id": "hyundai",
     "name": "현대",
     "file": "hyundai.json"
