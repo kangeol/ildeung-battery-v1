@@ -627,7 +627,7 @@ h3 {
 }
 
 .accordion-item.is-open .accordion-panel {
-  max-height: 980px;
+  max-height: 2600px;
 }
 
 .accordion-content {
@@ -677,6 +677,29 @@ h3 {
 }
 
 .service-guide-figure.is-missing {
+  display: none;
+}
+
+.howto-visual {
+  margin: 16px auto 0;
+  width: 100%;
+}
+
+.howto-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.howto-visual-install {
+  width: calc(100% + 42px);
+  margin-left: -42px;
+  overflow: hidden;
+}
+
+.howto-visual.is-missing {
   display: none;
 }
 
@@ -885,6 +908,11 @@ h3 {
     padding-left: 60px;
   }
 
+  .howto-visual-install {
+    width: calc(100% + 38px);
+    margin-left: -38px;
+  }
+
   .cta-card {
     grid-template-columns: minmax(0, 1fr) minmax(360px, 0.65fr);
     align-items: center;
@@ -961,6 +989,19 @@ h3 {
 
   .service-guide-figure figcaption {
     font-size: 11px;
+  }
+
+  .howto-visual {
+    margin-top: 14px;
+  }
+
+  .howto-visual-install {
+    width: calc(100% + 40px);
+    margin-left: -40px;
+  }
+
+  .howto-visual img {
+    border-radius: 16px;
   }
 
   .quick-link-card {
