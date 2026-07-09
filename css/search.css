@@ -198,6 +198,24 @@ select {
   text-decoration: none;
 }
 
+.result-payment-notice {
+  margin: 12px auto 16px;
+  padding: 0 8px;
+  color: #64748b;
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1.55;
+  text-align: center;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.result-payment-notice a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .search-box,
 .result-box {
   display: grid;
@@ -1061,6 +1079,11 @@ select:disabled {
   .payment-notice-line {
     margin: 12px auto 26px;
     font-size: 11.5px;
+  }
+
+  .result-payment-notice {
+    margin: 10px auto 14px;
+    font-size: 11px;
   }
 
   .site-footer {

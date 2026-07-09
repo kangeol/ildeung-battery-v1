@@ -581,6 +581,11 @@
 
         ${priceLinksSection(item)}
 
+        <div class="result-payment-notice" aria-label="전화상담 및 결제 안내">
+          <span>☎ 현장 카드 · 현금 · 이체 결제 가능 · </span>
+          <a href="tel:16449141">1644-9141 전화상담</a>
+        </div>
+
         <section class="notice" aria-label="안내문">
           <p>※ 위 추천 배터리는 일등밧데리 검수 DB 기준입니다.</p>
           <p>※ 차량 상태에 따라 배터리 규격이 달라질 수 있으므로 전문기사 상담을 권장합니다.</p>
