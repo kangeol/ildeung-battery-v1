@@ -995,6 +995,42 @@ select:disabled {
   line-height: 1.45;
 }
 
+.site-footer {
+  margin-top: 10px;
+  border-top: 1px solid var(--border);
+  padding: 24px 18px 30px;
+  color: var(--muted);
+}
+
+.site-footer-inner {
+  display: grid;
+  gap: 6px;
+  max-width: 420px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.site-footer-brand {
+  margin-bottom: 3px;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.site-footer a {
+  color: var(--primary-dark);
+  font-weight: 850;
+}
+
+.site-footer-copy {
+  margin-top: 8px;
+  color: #98a2b3;
+  font-size: 11px;
+}
+
 @media (min-width: 560px) {
   .page {
     min-height: auto;
