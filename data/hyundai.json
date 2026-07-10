@@ -22,16 +22,6 @@
   {
     "manufacturer": "현대",
     "vehicle": "그랜저",
-    "year": "26년~현재",
-    "fuel": "가솔린+전기",
-    "detailModel": "더 뉴 그랜저 하이브리드 (GN7)",
-    "defaultBattery": "고객센터문의",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
     "year": "22~26년",
     "fuel": "LPG",
     "detailModel": "그랜저 (GN7)",
@@ -46,16 +36,6 @@
     "fuel": "가솔린",
     "detailModel": "그랜저 (GN7)",
     "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "22~26년",
-    "fuel": "가솔린+전기",
-    "detailModel": "그랜저 하이브리드 (GN7)",
-    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "대기"
   },
@@ -242,16 +222,6 @@
   {
     "manufacturer": "현대",
     "vehicle": "아반떼",
-    "year": "23년~현재",
-    "fuel": "가솔린+전기",
-    "detailModel": "더 뉴 아반떼 하이브리드 (CN7)",
-    "defaultBattery": "고객센터문의",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
     "year": "20~23년",
     "fuel": "LPG",
     "detailModel": "아반떼 (CN7)",
@@ -267,16 +237,6 @@
     "detailModel": "아반떼 (CN7)",
     "defaultBattery": "AGM60",
     "upgradeBattery": "AGM70",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "아반떼",
-    "year": "20~23년",
-    "fuel": "가솔린+전기",
-    "detailModel": "아반떼 하이브리드 (CN7)",
-    "defaultBattery": "고객센터문의",
-    "upgradeBattery": "",
     "status": "대기"
   },
   {
@@ -414,7 +374,7 @@
     "vehicle": "싼타페",
     "year": "23년~현재",
     "fuel": "가솔린+전기",
-    "detailModel": "싼타페 (MX5)",
+    "detailModel": "싼타페 하이브리드 (MX5)",
     "defaultBattery": "AGM60",
     "upgradeBattery": "",
     "status": "대기"
@@ -434,7 +394,7 @@
     "vehicle": "싼타페",
     "year": "20~23년",
     "fuel": "가솔린+전기",
-    "detailModel": "더 뉴 싼타페 TM",
+    "detailModel": "더 뉴 싼타페 하이브리드 TM",
     "defaultBattery": "AG60",
     "upgradeBattery": "",
     "status": "대기"

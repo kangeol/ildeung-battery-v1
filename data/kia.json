@@ -352,16 +352,6 @@
   {
     "manufacturer": "기아",
     "vehicle": "K5",
-    "year": "19~23년",
-    "fuel": "가솔린+전기",
-    "detailModel": "K5 하이브리드 DL3",
-    "defaultBattery": "고객센터문의",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "K5",
     "year": "18~19년",
     "fuel": "LPG",
     "detailModel": "더 뉴 K5 2세대",
@@ -592,16 +582,6 @@
   {
     "manufacturer": "기아",
     "vehicle": "스포티지",
-    "year": "24년~현재",
-    "fuel": "가솔린+전기",
-    "detailModel": "더 뉴 스포티지 NQ5하이브리드",
-    "defaultBattery": "AGM60",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스포티지",
     "year": "21년~현재",
     "fuel": "LPG",
     "detailModel": "스포티지 NQ5",
@@ -626,16 +606,6 @@
     "fuel": "디젤",
     "detailModel": "스포티지 NQ5",
     "defaultBattery": "AGM80",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "기아",
-    "vehicle": "스포티지",
-    "year": "21~24년",
-    "fuel": "가솔린+전기",
-    "detailModel": "스포티지 NQ5 하이브리드",
-    "defaultBattery": "AGM60",
     "upgradeBattery": "",
     "status": "대기"
   },
