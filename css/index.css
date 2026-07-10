@@ -790,6 +790,22 @@ h3 {
   display: none;
 }
 
+.howto-more-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 4px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 760;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.howto-more-link span {
+  margin-left: 4px;
+}
+
 .howto-visual {
   margin: 16px auto 0;
   width: 100%;
