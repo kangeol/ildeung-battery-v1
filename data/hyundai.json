@@ -522,16 +522,6 @@
   {
     "manufacturer": "현대",
     "vehicle": "쏘나타",
-    "year": "23년~현재",
-    "fuel": "가솔린+전기",
-    "detailModel": "쏘나타 디 엣지 하이브리드(DN8)",
-    "defaultBattery": "고객센터문의",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
     "year": "19~23년",
     "fuel": "LPG",
     "detailModel": "쏘나타 (DN8)",
@@ -546,16 +536,6 @@
     "fuel": "가솔린",
     "detailModel": "쏘나타 (DN8)",
     "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "쏘나타",
-    "year": "19~23년",
-    "fuel": "가솔린+전기",
-    "detailModel": "쏘나타 하이브리드 (DN8)",
-    "defaultBattery": "DIN74R",
     "upgradeBattery": "",
     "status": "대기"
   },
@@ -1392,16 +1372,6 @@
   {
     "manufacturer": "현대",
     "vehicle": "캐스퍼",
-    "year": "24년~현재",
-    "fuel": "가솔린",
-    "detailModel": "더 뉴 캐스퍼",
-    "defaultBattery": "고객센터문의",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "캐스퍼",
     "year": "21~24년",
     "fuel": "가솔린",
     "detailModel": "캐스퍼",
@@ -1422,41 +1392,11 @@
   {
     "manufacturer": "현대",
     "vehicle": "코나",
-    "year": "23년~현재",
-    "fuel": "가솔린+전기",
-    "detailModel": "코나 하이브리드 (SX2)",
-    "defaultBattery": "고객센터문의",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "코나",
-    "year": "23년~현재",
-    "fuel": "전기",
-    "detailModel": "코나 일렉트릭 (SX2)",
-    "defaultBattery": "고객센터문의",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "코나",
     "year": "20~23년",
     "fuel": "가솔린",
     "detailModel": "더 뉴 코나",
     "defaultBattery": "AGM60",
     "upgradeBattery": "AGM70",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "코나",
-    "year": "20~23년",
-    "fuel": "가솔린+전기",
-    "detailModel": "더 뉴 코나 하이브리드",
-    "defaultBattery": "DIN50L",
-    "upgradeBattery": "",
     "status": "대기"
   },
   {

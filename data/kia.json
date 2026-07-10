@@ -14,7 +14,7 @@
     "vehicle": "카니발",
     "year": "23년~현재",
     "fuel": "가솔린+전기",
-    "detailModel": "더 뉴 카니발 KA4",
+    "detailModel": "더 뉴 카니발 KA4 하이브리드",
     "defaultBattery": "AGM60",
     "upgradeBattery": "",
     "status": "대기"
@@ -164,7 +164,7 @@
     "vehicle": "쏘렌토",
     "year": "23년~현재",
     "fuel": "가솔린+전기",
-    "detailModel": "더 뉴 쏘렌토MQ4",
+    "detailModel": "더 뉴 쏘렌토MQ4 하이브리드",
     "defaultBattery": "AGM60",
     "upgradeBattery": "",
     "status": "대기"
