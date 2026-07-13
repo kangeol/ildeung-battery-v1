@@ -33,9 +33,19 @@
     "manufacturer": "현대",
     "vehicle": "그랜저",
     "year": "22~26년",
-    "fuel": "가솔린",
+    "fuel": "가솔린 2.5",
     "detailModel": "그랜저 (GN7)",
     "defaultBattery": "AGM70",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "22~26년",
+    "fuel": "가솔린 3.3",
+    "detailModel": "그랜저 (GN7)",
+    "defaultBattery": "AGM80",
     "upgradeBattery": "",
     "status": "대기"
   },
@@ -53,10 +63,20 @@
     "manufacturer": "현대",
     "vehicle": "그랜저",
     "year": "19~22년",
-    "fuel": "가솔린",
+    "fuel": "가솔린 2.5",
     "detailModel": "더 뉴 그랜저 IG",
     "defaultBattery": "AGM70",
-    "upgradeBattery": "AGM80",
+    "upgradeBattery": "",
+    "status": "대기"
+  },
+  {
+    "manufacturer": "현대",
+    "vehicle": "그랜저",
+    "year": "19~22년",
+    "fuel": "가솔린 3.3",
+    "detailModel": "더 뉴 그랜저 IG",
+    "defaultBattery": "AGM80",
+    "upgradeBattery": "",
     "status": "대기"
   },
   {
@@ -83,17 +103,7 @@
     "manufacturer": "현대",
     "vehicle": "그랜저",
     "year": "16~19년",
-    "fuel": "가솔린 2.5",
-    "detailModel": "그랜저 IG",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
-    "status": "대기"
-  },
-  {
-    "manufacturer": "현대",
-    "vehicle": "그랜저",
-    "year": "16~19년",
-    "fuel": "가솔린 3.3",
+    "fuel": "가솔린",
     "detailModel": "그랜저 IG",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
@@ -1194,7 +1204,7 @@
     "vehicle": "스타리아",
     "year": "25년~현재",
     "fuel": "가솔린+전기",
-    "detailModel": "더 뉴 스타리아",
+    "detailModel": "더 뉴 스타리아 하이브리드",
     "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "대기"
@@ -1224,7 +1234,7 @@
     "vehicle": "스타리아",
     "year": "21~25년",
     "fuel": "가솔린+전기",
-    "detailModel": "스타리아",
+    "detailModel": "스타리아 하이브리드",
     "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "대기"
