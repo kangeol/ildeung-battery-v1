@@ -775,8 +775,8 @@
     "year": "21년~현재",
     "fuel": "가솔린",
     "detailModel": "더 뉴 K3 2세대",
-    "defaultBattery": "AGM60",
-    "upgradeBattery": "AGM70",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
     "status": "대기"
   },
   {
@@ -785,8 +785,8 @@
     "year": "18~21년",
     "fuel": "가솔린",
     "detailModel": "올 뉴 K3",
-    "defaultBattery": "AGM70",
-    "upgradeBattery": "",
+    "defaultBattery": "DIN60HL",
+    "upgradeBattery": "DIN74L",
     "status": "대기"
   },
   {
