@@ -152,8 +152,8 @@ function createSvg({ eyebrow, topLine, mainText }) {
         font-weight: 900;
       }
       .phone {
-        fill: #dbeafe;
-        font-size: 48px;
+        fill: #f8fafc;
+        font-size: 68px;
         font-weight: 900;
       }
       .brand {

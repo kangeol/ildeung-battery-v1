@@ -93,6 +93,16 @@ function buildEntries() {
     add(htmlPathToUrlPath(relativePath), toPosixPath(relativePath).endsWith("/index.html") ? "0.9" : "0.75");
   });
 
+  listHtmlFiles("battery").forEach((relativePath) => {
+    const posix = toPosixPath(relativePath);
+    const priority = posix === "battery/index.html"
+      ? "0.9"
+      : posix.includes("/capacity/")
+        ? "0.75"
+        : "0.8";
+    add(htmlPathToUrlPath(relativePath), priority);
+  });
+
   return entries;
 }
 
