@@ -258,18 +258,43 @@ function isReviewPending(status) {
 function isUnconfirmedBattery(value) {
   const text = normalizeText(value);
   if (!text) return true;
-  return /(확인|규격|순정|미정|예정|대기|검수)/.test(text);
+  return /(확인|규격|순정|미정|예정|대기|검수|고객센터|문의)/.test(text);
 }
 
-function renderBattery(value, status) {
+function renderDefaultBattery(value) {
   const text = normalizeText(value);
-  const needsCheck = !text || isUnconfirmedBattery(text) || isReviewPending(status);
 
-  if (needsCheck) {
+  if (isUnconfirmedBattery(text)) {
     return `<span class="battery-uncertain">차량 확인 필요</span>`;
   }
 
   return `<strong>${escapeHtml(text)}</strong>`;
+}
+
+function renderUpgradeBattery(value) {
+  const text = normalizeText(value);
+
+  if (!text) {
+    return `<span class="battery-empty">—</span>`;
+  }
+
+  if (isUnconfirmedBattery(text)) {
+    return `<span class="battery-uncertain">차량 확인 필요</span>`;
+  }
+
+  return `<strong>${escapeHtml(text)}</strong>`;
+}
+
+function hasBatteryCheckDisplay(row) {
+  const defaultNeedsCheck = isUnconfirmedBattery(row.defaultBattery);
+  const upgradeText = normalizeText(row.upgradeBattery);
+  const upgradeNeedsCheck = upgradeText !== "" && isUnconfirmedBattery(upgradeText);
+
+  return defaultNeedsCheck || upgradeNeedsCheck;
+}
+
+function hasDefaultBatteryCheck(rows) {
+  return rows.some((row) => isUnconfirmedBattery(row.defaultBattery));
 }
 
 function uniqueRows(rows) {
@@ -373,9 +398,13 @@ function renderTable(rows) {
                 <td>${escapeHtml(row.year || "확인 필요")}</td>
                 <td>${escapeHtml(row.fuel || "확인 필요")}</td>
                 <td>${escapeHtml(row.detailModel || "확인 필요")}</td>
-                <td>${renderBattery(row.defaultBattery, row.status)}</td>
-                <td>${renderBattery(row.upgradeBattery, row.status)}</td>
+                <td>${renderDefaultBattery(row.defaultBattery)}</td>
+                <td>${renderUpgradeBattery(row.upgradeBattery)}</td>
               </tr>`).join("");
+  const note = rows.some(hasBatteryCheckDisplay)
+    ? `
+      <p class="table-note">* 차량 확인 필요로 표시된 항목은 확정 규격이 아니므로 전문기사 상담을 권장합니다.</p>`
+    : "";
 
   return `
       <div class="table-card">
@@ -394,8 +423,7 @@ function renderTable(rows) {
             </tbody>
           </table>
         </div>
-      </div>
-      <p class="table-note">* 차량 확인 필요로 표시된 항목은 확정 규격이 아니므로 전문기사 상담을 권장합니다.</p>`;
+      </div>${note}`;
 }
 
 function renderPriceLinks() {
@@ -490,6 +518,10 @@ function renderVehiclePage({ manufacturer, vehicle, rows }) {
   const manufacturerHub = `../${manufacturer.id}.html`;
   const unique = uniqueRows(rows);
   const heroImageAlt = `${vehicle.name} 배터리 가격 및 규격 안내 - 일등밧데리`;
+  const checkNotice = hasDefaultBatteryCheck(unique)
+    ? `
+        <p class="vehicle-check-notice">해당 차량은 연식, 세부모델 및 차량 사양에 따라 적용 배터리가 달라질 수 있어 실차 확인이 필요합니다. 1644-9141로 문의하시면 차량 확인 후 정확한 배터리 규격과 교체 상담을 안내해드립니다.</p>`
+    : "";
 
   const content = `${renderBreadcrumb([
     { label: "홈", href: "../../index.html" },
@@ -521,7 +553,7 @@ function renderVehiclePage({ manufacturer, vehicle, rows }) {
           </div>
         </div>
         <p class="hero-desc">${escapeHtml(vehicle.name)}는 연식, 연료, 세부모델에 따라 적용되는 자동차 배터리(밧데리) 규격이 달라질 수 있습니다. 아래 표에서 일등밧데리 차량 배터리 DB 기준의 기본 배터리와 업그레이드 배터리를 확인한 뒤 현재 판매가격은 최저가 바로가기에서 확인해 주세요.</p>
-        <p class="vehicle-check-notice">해당 차량은 연식, 세부모델 및 차량 사양에 따라 적용 배터리가 달라질 수 있어 실차 확인이 필요합니다. 1644-9141로 문의하시면 차량 확인 후 정확한 배터리 규격과 교체 상담을 안내해드립니다.</p>
+${checkNotice}
       </section>
 
       <section class="section" aria-labelledby="batteryTableTitle">
