@@ -273,6 +273,23 @@ h3 {
   gap: 10px;
 }
 
+.cta-action-group {
+  display: grid;
+  gap: 12px;
+}
+
+.cta-seo-link {
+  justify-self: center;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -982,6 +999,12 @@ h3 {
     box-shadow: 0 18px 34px rgba(37, 99, 235, 0.28);
     transform: translateY(-1px);
   }
+
+  .cta-seo-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1080,6 +1103,10 @@ h3 {
     grid-template-columns: minmax(0, 1fr) minmax(360px, 0.65fr);
     align-items: center;
     padding: 34px;
+  }
+
+  .cta-action-group {
+    align-self: center;
   }
 }
 

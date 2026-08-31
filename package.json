@@ -1,6 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "convert": "node tools/convert-excel-to-json.js"
+    "convert": "node tools/convert-excel-to-json.js",
+    "generate:vehicle-seo": "node tools/generate-vehicle-seo-pages.js",
+    "build:seo": "npm run convert && npm run generate:vehicle-seo"
   }
 }

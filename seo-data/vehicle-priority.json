@@ -1,0 +1,97 @@
+{
+  "manufacturers": [
+    {
+      "id": "hyundai",
+      "name": "현대",
+      "vehicles": [
+        { "name": "아반떼", "slug": "avante", "match": ["아반떼"] },
+        { "name": "쏘나타", "slug": "sonata", "match": ["쏘나타"] },
+        { "name": "그랜저", "slug": "grandeur", "match": ["그랜저"] },
+        { "name": "싼타페", "slug": "santafe", "match": ["싼타페"] },
+        { "name": "투싼", "slug": "tucson", "match": ["투싼"] },
+        { "name": "코나", "slug": "kona", "match": ["코나"] },
+        { "name": "팰리세이드", "slug": "palisade", "match": ["팰리세이드"] }
+      ]
+    },
+    {
+      "id": "kia",
+      "name": "기아",
+      "vehicles": [
+        { "name": "모닝", "slug": "morning", "match": ["모닝"] },
+        { "name": "레이", "slug": "ray", "match": ["레이"] },
+        { "name": "K3", "slug": "k3", "match": ["K3"] },
+        { "name": "K5", "slug": "k5", "match": ["K5"] },
+        { "name": "K7", "slug": "k7", "match": ["K7"] },
+        { "name": "K8", "slug": "k8", "match": ["K8"] },
+        { "name": "쏘렌토", "slug": "sorento", "match": ["쏘렌토"] },
+        { "name": "스포티지", "slug": "sportage", "match": ["스포티지"] },
+        { "name": "카니발", "slug": "carnival", "match": ["카니발"] }
+      ]
+    },
+    {
+      "id": "chevrolet",
+      "name": "쉐보레",
+      "vehicles": [
+        { "name": "스파크", "slug": "spark", "match": ["스파크"] },
+        { "name": "말리부", "slug": "malibu", "match": ["말리부"] },
+        { "name": "트랙스", "slug": "trax", "match": ["트랙스"] },
+        { "name": "트레일블레이저", "slug": "trailblazer", "match": ["트레일블레이저"] }
+      ]
+    },
+    {
+      "id": "renault",
+      "name": "르노",
+      "vehicles": [
+        { "name": "SM6", "slug": "sm6", "match": ["SM6"] },
+        { "name": "QM6", "slug": "qm6", "match": ["QM6"] },
+        { "name": "XM3", "slug": "xm3", "match": ["XM3"] }
+      ]
+    },
+    {
+      "id": "kgm",
+      "name": "KG모빌리티",
+      "vehicles": [
+        { "name": "티볼리", "slug": "tivoli", "match": ["티볼리"] },
+        { "name": "토레스", "slug": "torres", "match": ["토레스"] },
+        { "name": "렉스턴", "slug": "rexton", "match": ["렉스턴"] }
+      ]
+    },
+    {
+      "id": "bmw",
+      "name": "BMW",
+      "vehicles": [
+        { "name": "BMW 3시리즈", "slug": "3-series", "match": ["3시리즈"] },
+        { "name": "BMW 5시리즈", "slug": "5-series", "match": ["5시리즈"] }
+      ]
+    },
+    {
+      "id": "benz",
+      "name": "벤츠",
+      "vehicles": [
+        { "name": "벤츠 C클래스", "slug": "c-class", "match": ["C-클래스"] },
+        { "name": "벤츠 E클래스", "slug": "e-class", "match": ["E-클래스"] }
+      ]
+    },
+    {
+      "id": "audi",
+      "name": "아우디",
+      "vehicles": [
+        { "name": "아우디 A6", "slug": "a6", "match": ["A6"] }
+      ]
+    },
+    {
+      "id": "mini",
+      "name": "미니",
+      "vehicles": [
+        { "name": "미니", "slug": "mini", "match": ["미니"] }
+      ]
+    },
+    {
+      "id": "volkswagen",
+      "name": "폭스바겐",
+      "vehicles": [
+        { "name": "폭스바겐 티구안", "slug": "tiguan", "match": ["티구안"] }
+      ]
+    }
+  ]
+}
