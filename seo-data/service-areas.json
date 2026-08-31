@@ -1,0 +1,4362 @@
+{
+  "generatedAt": "2026-08-31T05:20:28.365Z",
+  "source": {
+    "name": "행정안전부 행정표준코드관리시스템 법정동코드 전체자료",
+    "url": "https://www.code.go.kr/stdcode/regCodeL.do",
+    "downloadedAt": "2026-08-31T05:20:28.367Z",
+    "status": "현존 법정동"
+  },
+  "areas": {
+    "incheon": {
+      "id": "incheon",
+      "name": "인천",
+      "fullName": "인천광역시",
+      "slug": "incheon",
+      "regions": [
+        {
+          "id": "yeonsu-gu",
+          "name": "연수구",
+          "shortName": "연수구",
+          "type": "gu",
+          "province": "인천광역시",
+          "fullName": "인천광역시 연수구",
+          "legalCode": "2818500000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "옥련동",
+              "slug": "okryeon-dong",
+              "legalName": "인천광역시 연수구 옥련동",
+              "code": "2818510100"
+            },
+            {
+              "name": "선학동",
+              "slug": "seonhak-dong",
+              "legalName": "인천광역시 연수구 선학동",
+              "code": "2818510200"
+            },
+            {
+              "name": "연수동",
+              "slug": "yeonsu-dong",
+              "legalName": "인천광역시 연수구 연수동",
+              "code": "2818510300"
+            },
+            {
+              "name": "청학동",
+              "slug": "cheonghak-dong",
+              "legalName": "인천광역시 연수구 청학동",
+              "code": "2818510400"
+            },
+            {
+              "name": "동춘동",
+              "slug": "dongchun-dong",
+              "legalName": "인천광역시 연수구 동춘동",
+              "code": "2818510500"
+            },
+            {
+              "name": "송도동",
+              "slug": "songdo-dong",
+              "legalName": "인천광역시 연수구 송도동",
+              "code": "2818510600"
+            }
+          ]
+        },
+        {
+          "id": "seohae-gu",
+          "name": "서해구",
+          "shortName": "서해구",
+          "type": "gu",
+          "province": "인천광역시",
+          "fullName": "인천광역시 서해구",
+          "legalCode": "2827500000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "검암동",
+              "slug": "geomam-dong",
+              "legalName": "인천광역시 서해구 검암동",
+              "code": "2827510100"
+            },
+            {
+              "name": "경서동",
+              "slug": "gyeongseo-dong",
+              "legalName": "인천광역시 서해구 경서동",
+              "code": "2827510200"
+            },
+            {
+              "name": "공촌동",
+              "slug": "gongchon-dong",
+              "legalName": "인천광역시 서해구 공촌동",
+              "code": "2827510300"
+            },
+            {
+              "name": "연희동",
+              "slug": "yeonhui-dong",
+              "legalName": "인천광역시 서해구 연희동",
+              "code": "2827510400"
+            },
+            {
+              "name": "심곡동",
+              "slug": "simgok-dong",
+              "legalName": "인천광역시 서해구 심곡동",
+              "code": "2827510500"
+            },
+            {
+              "name": "가정동",
+              "slug": "gajeong-dong",
+              "legalName": "인천광역시 서해구 가정동",
+              "code": "2827510600"
+            },
+            {
+              "name": "신현동",
+              "slug": "sinhyeon-dong",
+              "legalName": "인천광역시 서해구 신현동",
+              "code": "2827510700"
+            },
+            {
+              "name": "석남동",
+              "slug": "seoknam-dong",
+              "legalName": "인천광역시 서해구 석남동",
+              "code": "2827510800"
+            },
+            {
+              "name": "원창동",
+              "slug": "wonchang-dong",
+              "legalName": "인천광역시 서해구 원창동",
+              "code": "2827510900"
+            },
+            {
+              "name": "가좌동",
+              "slug": "gajwa-dong",
+              "legalName": "인천광역시 서해구 가좌동",
+              "code": "2827511000"
+            },
+            {
+              "name": "청라동",
+              "slug": "cheongra-dong",
+              "legalName": "인천광역시 서해구 청라동",
+              "code": "2827511100"
+            }
+          ],
+          "note": "2026년 7월 1일 인천 행정체제 개편 이후 서해구 기준입니다."
+        },
+        {
+          "id": "namdong-gu",
+          "name": "남동구",
+          "shortName": "남동구",
+          "type": "gu",
+          "province": "인천광역시",
+          "fullName": "인천광역시 남동구",
+          "legalCode": "2820000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "구월동",
+              "slug": "guwol-dong",
+              "legalName": "인천광역시 남동구 구월동",
+              "code": "2820010100"
+            },
+            {
+              "name": "간석동",
+              "slug": "ganseok-dong",
+              "legalName": "인천광역시 남동구 간석동",
+              "code": "2820010200"
+            },
+            {
+              "name": "만수동",
+              "slug": "mansu-dong",
+              "legalName": "인천광역시 남동구 만수동",
+              "code": "2820010300"
+            },
+            {
+              "name": "장수동",
+              "slug": "jangsu-dong",
+              "legalName": "인천광역시 남동구 장수동",
+              "code": "2820010400"
+            },
+            {
+              "name": "서창동",
+              "slug": "seochang-dong",
+              "legalName": "인천광역시 남동구 서창동",
+              "code": "2820010500"
+            },
+            {
+              "name": "운연동",
+              "slug": "unyeon-dong",
+              "legalName": "인천광역시 남동구 운연동",
+              "code": "2820010600"
+            },
+            {
+              "name": "남촌동",
+              "slug": "namchon-dong",
+              "legalName": "인천광역시 남동구 남촌동",
+              "code": "2820010700"
+            },
+            {
+              "name": "수산동",
+              "slug": "susan-dong",
+              "legalName": "인천광역시 남동구 수산동",
+              "code": "2820010800"
+            },
+            {
+              "name": "도림동",
+              "slug": "dorim-dong",
+              "legalName": "인천광역시 남동구 도림동",
+              "code": "2820010900"
+            },
+            {
+              "name": "논현동",
+              "slug": "nonhyeon-dong",
+              "legalName": "인천광역시 남동구 논현동",
+              "code": "2820011000"
+            },
+            {
+              "name": "고잔동",
+              "slug": "gojan-dong",
+              "legalName": "인천광역시 남동구 고잔동",
+              "code": "2820011100"
+            }
+          ]
+        },
+        {
+          "id": "bupyeong-gu",
+          "name": "부평구",
+          "shortName": "부평구",
+          "type": "gu",
+          "province": "인천광역시",
+          "fullName": "인천광역시 부평구",
+          "legalCode": "2823700000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "부평동",
+              "slug": "bupyeong-dong",
+              "legalName": "인천광역시 부평구 부평동",
+              "code": "2823710100"
+            },
+            {
+              "name": "십정동",
+              "slug": "sipjeong-dong",
+              "legalName": "인천광역시 부평구 십정동",
+              "code": "2823710200"
+            },
+            {
+              "name": "산곡동",
+              "slug": "sangok-dong",
+              "legalName": "인천광역시 부평구 산곡동",
+              "code": "2823710300"
+            },
+            {
+              "name": "청천동",
+              "slug": "cheongcheon-dong",
+              "legalName": "인천광역시 부평구 청천동",
+              "code": "2823710400"
+            },
+            {
+              "name": "삼산동",
+              "slug": "samsan-dong",
+              "legalName": "인천광역시 부평구 삼산동",
+              "code": "2823710500"
+            },
+            {
+              "name": "갈산동",
+              "slug": "galsan-dong",
+              "legalName": "인천광역시 부평구 갈산동",
+              "code": "2823710600"
+            },
+            {
+              "name": "부개동",
+              "slug": "bugae-dong",
+              "legalName": "인천광역시 부평구 부개동",
+              "code": "2823710700"
+            },
+            {
+              "name": "일신동",
+              "slug": "ilsin-dong",
+              "legalName": "인천광역시 부평구 일신동",
+              "code": "2823710800"
+            },
+            {
+              "name": "구산동",
+              "slug": "gusan-dong",
+              "legalName": "인천광역시 부평구 구산동",
+              "code": "2823710900"
+            }
+          ]
+        },
+        {
+          "id": "michuhol-gu",
+          "name": "미추홀구",
+          "shortName": "미추홀구",
+          "type": "gu",
+          "province": "인천광역시",
+          "fullName": "인천광역시 미추홀구",
+          "legalCode": "2817700000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "숭의동",
+              "slug": "sungui-dong",
+              "legalName": "인천광역시 미추홀구 숭의동",
+              "code": "2817710100"
+            },
+            {
+              "name": "용현동",
+              "slug": "yonghyeon-dong",
+              "legalName": "인천광역시 미추홀구 용현동",
+              "code": "2817710200"
+            },
+            {
+              "name": "학익동",
+              "slug": "hakik-dong",
+              "legalName": "인천광역시 미추홀구 학익동",
+              "code": "2817710300"
+            },
+            {
+              "name": "도화동",
+              "slug": "dohwa-dong",
+              "legalName": "인천광역시 미추홀구 도화동",
+              "code": "2817710400"
+            },
+            {
+              "name": "주안동",
+              "slug": "juan-dong",
+              "legalName": "인천광역시 미추홀구 주안동",
+              "code": "2817710500"
+            },
+            {
+              "name": "관교동",
+              "slug": "gwangyo-dong",
+              "legalName": "인천광역시 미추홀구 관교동",
+              "code": "2817710600"
+            },
+            {
+              "name": "문학동",
+              "slug": "munhak-dong",
+              "legalName": "인천광역시 미추홀구 문학동",
+              "code": "2817710700"
+            }
+          ]
+        },
+        {
+          "id": "gyeyang-gu",
+          "name": "계양구",
+          "shortName": "계양구",
+          "type": "gu",
+          "province": "인천광역시",
+          "fullName": "인천광역시 계양구",
+          "legalCode": "2824500000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "효성동",
+              "slug": "hyoseong-dong",
+              "legalName": "인천광역시 계양구 효성동",
+              "code": "2824510100"
+            },
+            {
+              "name": "계산동",
+              "slug": "gyesan-dong",
+              "legalName": "인천광역시 계양구 계산동",
+              "code": "2824510200"
+            },
+            {
+              "name": "작전동",
+              "slug": "jakjeon-dong",
+              "legalName": "인천광역시 계양구 작전동",
+              "code": "2824510300"
+            },
+            {
+              "name": "서운동",
+              "slug": "seoun-dong",
+              "legalName": "인천광역시 계양구 서운동",
+              "code": "2824510400"
+            },
+            {
+              "name": "임학동",
+              "slug": "imhak-dong",
+              "legalName": "인천광역시 계양구 임학동",
+              "code": "2824510500"
+            },
+            {
+              "name": "용종동",
+              "slug": "yongjong-dong",
+              "legalName": "인천광역시 계양구 용종동",
+              "code": "2824510600"
+            },
+            {
+              "name": "병방동",
+              "slug": "byeongbang-dong",
+              "legalName": "인천광역시 계양구 병방동",
+              "code": "2824510700"
+            },
+            {
+              "name": "방축동",
+              "slug": "bangchuk-dong",
+              "legalName": "인천광역시 계양구 방축동",
+              "code": "2824510800"
+            },
+            {
+              "name": "박촌동",
+              "slug": "bakchon-dong",
+              "legalName": "인천광역시 계양구 박촌동",
+              "code": "2824510900"
+            },
+            {
+              "name": "동양동",
+              "slug": "dongyang-dong",
+              "legalName": "인천광역시 계양구 동양동",
+              "code": "2824511000"
+            },
+            {
+              "name": "귤현동",
+              "slug": "gyulhyeon-dong",
+              "legalName": "인천광역시 계양구 귤현동",
+              "code": "2824511100"
+            },
+            {
+              "name": "상야동",
+              "slug": "sangya-dong",
+              "legalName": "인천광역시 계양구 상야동",
+              "code": "2824511200"
+            },
+            {
+              "name": "하야동",
+              "slug": "haya-dong",
+              "legalName": "인천광역시 계양구 하야동",
+              "code": "2824511300"
+            },
+            {
+              "name": "평동",
+              "slug": "pyeong-dong",
+              "legalName": "인천광역시 계양구 평동",
+              "code": "2824511400"
+            },
+            {
+              "name": "노오지동",
+              "slug": "nooji-dong",
+              "legalName": "인천광역시 계양구 노오지동",
+              "code": "2824511500"
+            },
+            {
+              "name": "선주지동",
+              "slug": "seonjuji-dong",
+              "legalName": "인천광역시 계양구 선주지동",
+              "code": "2824511600"
+            },
+            {
+              "name": "이화동",
+              "slug": "ihwa-dong",
+              "legalName": "인천광역시 계양구 이화동",
+              "code": "2824511700"
+            },
+            {
+              "name": "오류동",
+              "slug": "oryu-dong",
+              "legalName": "인천광역시 계양구 오류동",
+              "code": "2824511800"
+            },
+            {
+              "name": "갈현동",
+              "slug": "galhyeon-dong",
+              "legalName": "인천광역시 계양구 갈현동",
+              "code": "2824511900"
+            },
+            {
+              "name": "둑실동",
+              "slug": "duksil-dong",
+              "legalName": "인천광역시 계양구 둑실동",
+              "code": "2824512000"
+            },
+            {
+              "name": "목상동",
+              "slug": "moksang-dong",
+              "legalName": "인천광역시 계양구 목상동",
+              "code": "2824512100"
+            },
+            {
+              "name": "다남동",
+              "slug": "danam-dong",
+              "legalName": "인천광역시 계양구 다남동",
+              "code": "2824512200"
+            },
+            {
+              "name": "장기동",
+              "slug": "janggi-dong",
+              "legalName": "인천광역시 계양구 장기동",
+              "code": "2824512300"
+            }
+          ]
+        },
+        {
+          "id": "geomdan-gu",
+          "name": "검단구",
+          "shortName": "검단구",
+          "type": "gu",
+          "province": "인천광역시",
+          "fullName": "인천광역시 검단구",
+          "legalCode": "2829000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "백석동",
+              "slug": "baekseok-dong",
+              "legalName": "인천광역시 검단구 백석동",
+              "code": "2829010100"
+            },
+            {
+              "name": "시천동",
+              "slug": "sicheon-dong",
+              "legalName": "인천광역시 검단구 시천동",
+              "code": "2829010200"
+            },
+            {
+              "name": "마전동",
+              "slug": "majeon-dong",
+              "legalName": "인천광역시 검단구 마전동",
+              "code": "2829010300"
+            },
+            {
+              "name": "당하동",
+              "slug": "dangha-dong",
+              "legalName": "인천광역시 검단구 당하동",
+              "code": "2829010400"
+            },
+            {
+              "name": "원당동",
+              "slug": "wondang-dong",
+              "legalName": "인천광역시 검단구 원당동",
+              "code": "2829010500"
+            },
+            {
+              "name": "대곡동",
+              "slug": "daegok-dong",
+              "legalName": "인천광역시 검단구 대곡동",
+              "code": "2829010600"
+            },
+            {
+              "name": "금곡동",
+              "slug": "geumgok-dong",
+              "legalName": "인천광역시 검단구 금곡동",
+              "code": "2829010700"
+            },
+            {
+              "name": "오류동",
+              "slug": "oryu-dong",
+              "legalName": "인천광역시 검단구 오류동",
+              "code": "2829010800"
+            },
+            {
+              "name": "왕길동",
+              "slug": "wanggil-dong",
+              "legalName": "인천광역시 검단구 왕길동",
+              "code": "2829010900"
+            },
+            {
+              "name": "불로동",
+              "slug": "bulro-dong",
+              "legalName": "인천광역시 검단구 불로동",
+              "code": "2829011000"
+            }
+          ],
+          "note": "2026년 7월 1일 인천 행정체제 개편 이후 검단구 기준입니다."
+        }
+      ]
+    },
+    "seoul": {
+      "id": "seoul",
+      "name": "서울",
+      "fullName": "서울특별시",
+      "slug": "seoul",
+      "regions": [
+        {
+          "id": "mapo-gu",
+          "name": "마포구",
+          "shortName": "마포구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 마포구",
+          "legalCode": "1144000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "아현동",
+              "slug": "ahyeon-dong",
+              "legalName": "서울특별시 마포구 아현동",
+              "code": "1144010100"
+            },
+            {
+              "name": "공덕동",
+              "slug": "gongdeok-dong",
+              "legalName": "서울특별시 마포구 공덕동",
+              "code": "1144010200"
+            },
+            {
+              "name": "신공덕동",
+              "slug": "singongdeok-dong",
+              "legalName": "서울특별시 마포구 신공덕동",
+              "code": "1144010300"
+            },
+            {
+              "name": "도화동",
+              "slug": "dohwa-dong",
+              "legalName": "서울특별시 마포구 도화동",
+              "code": "1144010400"
+            },
+            {
+              "name": "용강동",
+              "slug": "yonggang-dong",
+              "legalName": "서울특별시 마포구 용강동",
+              "code": "1144010500"
+            },
+            {
+              "name": "토정동",
+              "slug": "tojeong-dong",
+              "legalName": "서울특별시 마포구 토정동",
+              "code": "1144010600"
+            },
+            {
+              "name": "마포동",
+              "slug": "mapo-dong",
+              "legalName": "서울특별시 마포구 마포동",
+              "code": "1144010700"
+            },
+            {
+              "name": "대흥동",
+              "slug": "daeheung-dong",
+              "legalName": "서울특별시 마포구 대흥동",
+              "code": "1144010800"
+            },
+            {
+              "name": "염리동",
+              "slug": "yeomri-dong",
+              "legalName": "서울특별시 마포구 염리동",
+              "code": "1144010900"
+            },
+            {
+              "name": "노고산동",
+              "slug": "nogosan-dong",
+              "legalName": "서울특별시 마포구 노고산동",
+              "code": "1144011000"
+            },
+            {
+              "name": "신수동",
+              "slug": "sinsu-dong",
+              "legalName": "서울특별시 마포구 신수동",
+              "code": "1144011100"
+            },
+            {
+              "name": "현석동",
+              "slug": "hyeonseok-dong",
+              "legalName": "서울특별시 마포구 현석동",
+              "code": "1144011200"
+            },
+            {
+              "name": "구수동",
+              "slug": "gusu-dong",
+              "legalName": "서울특별시 마포구 구수동",
+              "code": "1144011300"
+            },
+            {
+              "name": "창전동",
+              "slug": "changjeon-dong",
+              "legalName": "서울특별시 마포구 창전동",
+              "code": "1144011400"
+            },
+            {
+              "name": "상수동",
+              "slug": "sangsu-dong",
+              "legalName": "서울특별시 마포구 상수동",
+              "code": "1144011500"
+            },
+            {
+              "name": "하중동",
+              "slug": "hajung-dong",
+              "legalName": "서울특별시 마포구 하중동",
+              "code": "1144011600"
+            },
+            {
+              "name": "신정동",
+              "slug": "sinjeong-dong",
+              "legalName": "서울특별시 마포구 신정동",
+              "code": "1144011700"
+            },
+            {
+              "name": "당인동",
+              "slug": "dangin-dong",
+              "legalName": "서울특별시 마포구 당인동",
+              "code": "1144011800"
+            },
+            {
+              "name": "서교동",
+              "slug": "seogyo-dong",
+              "legalName": "서울특별시 마포구 서교동",
+              "code": "1144012000"
+            },
+            {
+              "name": "동교동",
+              "slug": "donggyo-dong",
+              "legalName": "서울특별시 마포구 동교동",
+              "code": "1144012100"
+            },
+            {
+              "name": "합정동",
+              "slug": "hapjeong-dong",
+              "legalName": "서울특별시 마포구 합정동",
+              "code": "1144012200"
+            },
+            {
+              "name": "망원동",
+              "slug": "mangwon-dong",
+              "legalName": "서울특별시 마포구 망원동",
+              "code": "1144012300"
+            },
+            {
+              "name": "연남동",
+              "slug": "yeonnam-dong",
+              "legalName": "서울특별시 마포구 연남동",
+              "code": "1144012400"
+            },
+            {
+              "name": "성산동",
+              "slug": "seongsan-dong",
+              "legalName": "서울특별시 마포구 성산동",
+              "code": "1144012500"
+            },
+            {
+              "name": "중동",
+              "slug": "jung-dong",
+              "legalName": "서울특별시 마포구 중동",
+              "code": "1144012600"
+            },
+            {
+              "name": "상암동",
+              "slug": "sangam-dong",
+              "legalName": "서울특별시 마포구 상암동",
+              "code": "1144012700"
+            }
+          ]
+        },
+        {
+          "id": "yangcheon-gu",
+          "name": "양천구",
+          "shortName": "양천구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 양천구",
+          "legalCode": "1147000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "신정동",
+              "slug": "sinjeong-dong",
+              "legalName": "서울특별시 양천구 신정동",
+              "code": "1147010100"
+            },
+            {
+              "name": "목동",
+              "slug": "mok-dong",
+              "legalName": "서울특별시 양천구 목동",
+              "code": "1147010200"
+            },
+            {
+              "name": "신월동",
+              "slug": "sinwol-dong",
+              "legalName": "서울특별시 양천구 신월동",
+              "code": "1147010300"
+            }
+          ]
+        },
+        {
+          "id": "gangseo-gu",
+          "name": "강서구",
+          "shortName": "강서구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 강서구",
+          "legalCode": "1150000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "염창동",
+              "slug": "yeomchang-dong",
+              "legalName": "서울특별시 강서구 염창동",
+              "code": "1150010100"
+            },
+            {
+              "name": "등촌동",
+              "slug": "deungchon-dong",
+              "legalName": "서울특별시 강서구 등촌동",
+              "code": "1150010200"
+            },
+            {
+              "name": "화곡동",
+              "slug": "hwagok-dong",
+              "legalName": "서울특별시 강서구 화곡동",
+              "code": "1150010300"
+            },
+            {
+              "name": "가양동",
+              "slug": "gayang-dong",
+              "legalName": "서울특별시 강서구 가양동",
+              "code": "1150010400"
+            },
+            {
+              "name": "마곡동",
+              "slug": "magok-dong",
+              "legalName": "서울특별시 강서구 마곡동",
+              "code": "1150010500"
+            },
+            {
+              "name": "내발산동",
+              "slug": "naebalsan-dong",
+              "legalName": "서울특별시 강서구 내발산동",
+              "code": "1150010600"
+            },
+            {
+              "name": "외발산동",
+              "slug": "oebalsan-dong",
+              "legalName": "서울특별시 강서구 외발산동",
+              "code": "1150010700"
+            },
+            {
+              "name": "공항동",
+              "slug": "gonghang-dong",
+              "legalName": "서울특별시 강서구 공항동",
+              "code": "1150010800"
+            },
+            {
+              "name": "방화동",
+              "slug": "banghwa-dong",
+              "legalName": "서울특별시 강서구 방화동",
+              "code": "1150010900"
+            },
+            {
+              "name": "개화동",
+              "slug": "gaehwa-dong",
+              "legalName": "서울특별시 강서구 개화동",
+              "code": "1150011000"
+            },
+            {
+              "name": "과해동",
+              "slug": "gwahae-dong",
+              "legalName": "서울특별시 강서구 과해동",
+              "code": "1150011100"
+            },
+            {
+              "name": "오곡동",
+              "slug": "ogok-dong",
+              "legalName": "서울특별시 강서구 오곡동",
+              "code": "1150011200"
+            },
+            {
+              "name": "오쇠동",
+              "slug": "osoe-dong",
+              "legalName": "서울특별시 강서구 오쇠동",
+              "code": "1150011300"
+            }
+          ]
+        },
+        {
+          "id": "guro-gu",
+          "name": "구로구",
+          "shortName": "구로구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 구로구",
+          "legalCode": "1153000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "신도림동",
+              "slug": "sindorim-dong",
+              "legalName": "서울특별시 구로구 신도림동",
+              "code": "1153010100"
+            },
+            {
+              "name": "구로동",
+              "slug": "guro-dong",
+              "legalName": "서울특별시 구로구 구로동",
+              "code": "1153010200"
+            },
+            {
+              "name": "가리봉동",
+              "slug": "garibong-dong",
+              "legalName": "서울특별시 구로구 가리봉동",
+              "code": "1153010300"
+            },
+            {
+              "name": "고척동",
+              "slug": "gocheok-dong",
+              "legalName": "서울특별시 구로구 고척동",
+              "code": "1153010600"
+            },
+            {
+              "name": "개봉동",
+              "slug": "gaebong-dong",
+              "legalName": "서울특별시 구로구 개봉동",
+              "code": "1153010700"
+            },
+            {
+              "name": "오류동",
+              "slug": "oryu-dong",
+              "legalName": "서울특별시 구로구 오류동",
+              "code": "1153010800"
+            },
+            {
+              "name": "궁동",
+              "slug": "gung-dong",
+              "legalName": "서울특별시 구로구 궁동",
+              "code": "1153010900"
+            },
+            {
+              "name": "온수동",
+              "slug": "onsu-dong",
+              "legalName": "서울특별시 구로구 온수동",
+              "code": "1153011000"
+            },
+            {
+              "name": "천왕동",
+              "slug": "cheonwang-dong",
+              "legalName": "서울특별시 구로구 천왕동",
+              "code": "1153011100"
+            },
+            {
+              "name": "항동",
+              "slug": "hang-dong",
+              "legalName": "서울특별시 구로구 항동",
+              "code": "1153011200"
+            }
+          ]
+        },
+        {
+          "id": "geumcheon-gu",
+          "name": "금천구",
+          "shortName": "금천구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 금천구",
+          "legalCode": "1154500000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "가산동",
+              "slug": "gasan-dong",
+              "legalName": "서울특별시 금천구 가산동",
+              "code": "1154510100"
+            },
+            {
+              "name": "독산동",
+              "slug": "doksan-dong",
+              "legalName": "서울특별시 금천구 독산동",
+              "code": "1154510200"
+            },
+            {
+              "name": "시흥동",
+              "slug": "siheung-dong",
+              "legalName": "서울특별시 금천구 시흥동",
+              "code": "1154510300"
+            }
+          ]
+        },
+        {
+          "id": "yeongdeungpo-gu",
+          "name": "영등포구",
+          "shortName": "영등포구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 영등포구",
+          "legalCode": "1156000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "영등포동",
+              "slug": "yeongdeungpo-dong",
+              "legalName": "서울특별시 영등포구 영등포동",
+              "code": "1156010100"
+            },
+            {
+              "name": "영등포동1가",
+              "slug": "yeongdeungpodong1-ga",
+              "legalName": "서울특별시 영등포구 영등포동1가",
+              "code": "1156010200"
+            },
+            {
+              "name": "영등포동2가",
+              "slug": "yeongdeungpodong2-ga",
+              "legalName": "서울특별시 영등포구 영등포동2가",
+              "code": "1156010300"
+            },
+            {
+              "name": "영등포동3가",
+              "slug": "yeongdeungpodong3-ga",
+              "legalName": "서울특별시 영등포구 영등포동3가",
+              "code": "1156010400"
+            },
+            {
+              "name": "영등포동4가",
+              "slug": "yeongdeungpodong4-ga",
+              "legalName": "서울특별시 영등포구 영등포동4가",
+              "code": "1156010500"
+            },
+            {
+              "name": "영등포동5가",
+              "slug": "yeongdeungpodong5-ga",
+              "legalName": "서울특별시 영등포구 영등포동5가",
+              "code": "1156010600"
+            },
+            {
+              "name": "영등포동6가",
+              "slug": "yeongdeungpodong6-ga",
+              "legalName": "서울특별시 영등포구 영등포동6가",
+              "code": "1156010700"
+            },
+            {
+              "name": "영등포동7가",
+              "slug": "yeongdeungpodong7-ga",
+              "legalName": "서울특별시 영등포구 영등포동7가",
+              "code": "1156010800"
+            },
+            {
+              "name": "영등포동8가",
+              "slug": "yeongdeungpodong8-ga",
+              "legalName": "서울특별시 영등포구 영등포동8가",
+              "code": "1156010900"
+            },
+            {
+              "name": "여의도동",
+              "slug": "yeouido-dong",
+              "legalName": "서울특별시 영등포구 여의도동",
+              "code": "1156011000"
+            },
+            {
+              "name": "당산동1가",
+              "slug": "dangsandong1-ga",
+              "legalName": "서울특별시 영등포구 당산동1가",
+              "code": "1156011100"
+            },
+            {
+              "name": "당산동2가",
+              "slug": "dangsandong2-ga",
+              "legalName": "서울특별시 영등포구 당산동2가",
+              "code": "1156011200"
+            },
+            {
+              "name": "당산동3가",
+              "slug": "dangsandong3-ga",
+              "legalName": "서울특별시 영등포구 당산동3가",
+              "code": "1156011300"
+            },
+            {
+              "name": "당산동4가",
+              "slug": "dangsandong4-ga",
+              "legalName": "서울특별시 영등포구 당산동4가",
+              "code": "1156011400"
+            },
+            {
+              "name": "당산동5가",
+              "slug": "dangsandong5-ga",
+              "legalName": "서울특별시 영등포구 당산동5가",
+              "code": "1156011500"
+            },
+            {
+              "name": "당산동6가",
+              "slug": "dangsandong6-ga",
+              "legalName": "서울특별시 영등포구 당산동6가",
+              "code": "1156011600"
+            },
+            {
+              "name": "당산동",
+              "slug": "dangsan-dong",
+              "legalName": "서울특별시 영등포구 당산동",
+              "code": "1156011700"
+            },
+            {
+              "name": "도림동",
+              "slug": "dorim-dong",
+              "legalName": "서울특별시 영등포구 도림동",
+              "code": "1156011800"
+            },
+            {
+              "name": "문래동1가",
+              "slug": "munraedong1-ga",
+              "legalName": "서울특별시 영등포구 문래동1가",
+              "code": "1156011900"
+            },
+            {
+              "name": "문래동2가",
+              "slug": "munraedong2-ga",
+              "legalName": "서울특별시 영등포구 문래동2가",
+              "code": "1156012000"
+            },
+            {
+              "name": "문래동3가",
+              "slug": "munraedong3-ga",
+              "legalName": "서울특별시 영등포구 문래동3가",
+              "code": "1156012100"
+            },
+            {
+              "name": "문래동4가",
+              "slug": "munraedong4-ga",
+              "legalName": "서울특별시 영등포구 문래동4가",
+              "code": "1156012200"
+            },
+            {
+              "name": "문래동5가",
+              "slug": "munraedong5-ga",
+              "legalName": "서울특별시 영등포구 문래동5가",
+              "code": "1156012300"
+            },
+            {
+              "name": "문래동6가",
+              "slug": "munraedong6-ga",
+              "legalName": "서울특별시 영등포구 문래동6가",
+              "code": "1156012400"
+            },
+            {
+              "name": "양평동1가",
+              "slug": "yangpyeongdong1-ga",
+              "legalName": "서울특별시 영등포구 양평동1가",
+              "code": "1156012500"
+            },
+            {
+              "name": "양평동2가",
+              "slug": "yangpyeongdong2-ga",
+              "legalName": "서울특별시 영등포구 양평동2가",
+              "code": "1156012600"
+            },
+            {
+              "name": "양평동3가",
+              "slug": "yangpyeongdong3-ga",
+              "legalName": "서울특별시 영등포구 양평동3가",
+              "code": "1156012700"
+            },
+            {
+              "name": "양평동4가",
+              "slug": "yangpyeongdong4-ga",
+              "legalName": "서울특별시 영등포구 양평동4가",
+              "code": "1156012800"
+            },
+            {
+              "name": "양평동5가",
+              "slug": "yangpyeongdong5-ga",
+              "legalName": "서울특별시 영등포구 양평동5가",
+              "code": "1156012900"
+            },
+            {
+              "name": "양평동6가",
+              "slug": "yangpyeongdong6-ga",
+              "legalName": "서울특별시 영등포구 양평동6가",
+              "code": "1156013000"
+            },
+            {
+              "name": "양화동",
+              "slug": "yanghwa-dong",
+              "legalName": "서울특별시 영등포구 양화동",
+              "code": "1156013100"
+            },
+            {
+              "name": "신길동",
+              "slug": "singil-dong",
+              "legalName": "서울특별시 영등포구 신길동",
+              "code": "1156013200"
+            },
+            {
+              "name": "대림동",
+              "slug": "daerim-dong",
+              "legalName": "서울특별시 영등포구 대림동",
+              "code": "1156013300"
+            },
+            {
+              "name": "양평동",
+              "slug": "yangpyeong-dong",
+              "legalName": "서울특별시 영등포구 양평동",
+              "code": "1156013400"
+            }
+          ]
+        },
+        {
+          "id": "dongjak-gu",
+          "name": "동작구",
+          "shortName": "동작구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 동작구",
+          "legalCode": "1159000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "노량진동",
+              "slug": "noryangjin-dong",
+              "legalName": "서울특별시 동작구 노량진동",
+              "code": "1159010100"
+            },
+            {
+              "name": "상도동",
+              "slug": "sangdo-dong",
+              "legalName": "서울특별시 동작구 상도동",
+              "code": "1159010200"
+            },
+            {
+              "name": "상도1동",
+              "slug": "sangdo1-dong",
+              "legalName": "서울특별시 동작구 상도1동",
+              "code": "1159010300"
+            },
+            {
+              "name": "본동",
+              "slug": "bon-dong",
+              "legalName": "서울특별시 동작구 본동",
+              "code": "1159010400"
+            },
+            {
+              "name": "흑석동",
+              "slug": "heukseok-dong",
+              "legalName": "서울특별시 동작구 흑석동",
+              "code": "1159010500"
+            },
+            {
+              "name": "동작동",
+              "slug": "dongjak-dong",
+              "legalName": "서울특별시 동작구 동작동",
+              "code": "1159010600"
+            },
+            {
+              "name": "사당동",
+              "slug": "sadang-dong",
+              "legalName": "서울특별시 동작구 사당동",
+              "code": "1159010700"
+            },
+            {
+              "name": "대방동",
+              "slug": "daebang-dong",
+              "legalName": "서울특별시 동작구 대방동",
+              "code": "1159010800"
+            },
+            {
+              "name": "신대방동",
+              "slug": "sindaebang-dong",
+              "legalName": "서울특별시 동작구 신대방동",
+              "code": "1159010900"
+            }
+          ]
+        },
+        {
+          "id": "gwanak-gu",
+          "name": "관악구",
+          "shortName": "관악구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 관악구",
+          "legalCode": "1162000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "봉천동",
+              "slug": "bongcheon-dong",
+              "legalName": "서울특별시 관악구 봉천동",
+              "code": "1162010100"
+            },
+            {
+              "name": "신림동",
+              "slug": "sinrim-dong",
+              "legalName": "서울특별시 관악구 신림동",
+              "code": "1162010200"
+            },
+            {
+              "name": "남현동",
+              "slug": "namhyeon-dong",
+              "legalName": "서울특별시 관악구 남현동",
+              "code": "1162010300"
+            }
+          ]
+        },
+        {
+          "id": "seocho-gu",
+          "name": "서초구",
+          "shortName": "서초구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 서초구",
+          "legalCode": "1165000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "방배동",
+              "slug": "bangbae-dong",
+              "legalName": "서울특별시 서초구 방배동",
+              "code": "1165010100"
+            },
+            {
+              "name": "양재동",
+              "slug": "yangjae-dong",
+              "legalName": "서울특별시 서초구 양재동",
+              "code": "1165010200"
+            },
+            {
+              "name": "우면동",
+              "slug": "umyeon-dong",
+              "legalName": "서울특별시 서초구 우면동",
+              "code": "1165010300"
+            },
+            {
+              "name": "원지동",
+              "slug": "wonji-dong",
+              "legalName": "서울특별시 서초구 원지동",
+              "code": "1165010400"
+            },
+            {
+              "name": "잠원동",
+              "slug": "jamwon-dong",
+              "legalName": "서울특별시 서초구 잠원동",
+              "code": "1165010600"
+            },
+            {
+              "name": "반포동",
+              "slug": "banpo-dong",
+              "legalName": "서울특별시 서초구 반포동",
+              "code": "1165010700"
+            },
+            {
+              "name": "서초동",
+              "slug": "seocho-dong",
+              "legalName": "서울특별시 서초구 서초동",
+              "code": "1165010800"
+            },
+            {
+              "name": "내곡동",
+              "slug": "naegok-dong",
+              "legalName": "서울특별시 서초구 내곡동",
+              "code": "1165010900"
+            },
+            {
+              "name": "염곡동",
+              "slug": "yeomgok-dong",
+              "legalName": "서울특별시 서초구 염곡동",
+              "code": "1165011000"
+            },
+            {
+              "name": "신원동",
+              "slug": "sinwon-dong",
+              "legalName": "서울특별시 서초구 신원동",
+              "code": "1165011100"
+            }
+          ]
+        },
+        {
+          "id": "gangnam-gu",
+          "name": "강남구",
+          "shortName": "강남구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 강남구",
+          "legalCode": "1168000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "역삼동",
+              "slug": "yeoksam-dong",
+              "legalName": "서울특별시 강남구 역삼동",
+              "code": "1168010100"
+            },
+            {
+              "name": "개포동",
+              "slug": "gaepo-dong",
+              "legalName": "서울특별시 강남구 개포동",
+              "code": "1168010300"
+            },
+            {
+              "name": "청담동",
+              "slug": "cheongdam-dong",
+              "legalName": "서울특별시 강남구 청담동",
+              "code": "1168010400"
+            },
+            {
+              "name": "삼성동",
+              "slug": "samseong-dong",
+              "legalName": "서울특별시 강남구 삼성동",
+              "code": "1168010500"
+            },
+            {
+              "name": "대치동",
+              "slug": "daechi-dong",
+              "legalName": "서울특별시 강남구 대치동",
+              "code": "1168010600"
+            },
+            {
+              "name": "신사동",
+              "slug": "sinsa-dong",
+              "legalName": "서울특별시 강남구 신사동",
+              "code": "1168010700"
+            },
+            {
+              "name": "논현동",
+              "slug": "nonhyeon-dong",
+              "legalName": "서울특별시 강남구 논현동",
+              "code": "1168010800"
+            },
+            {
+              "name": "압구정동",
+              "slug": "apgujeong-dong",
+              "legalName": "서울특별시 강남구 압구정동",
+              "code": "1168011000"
+            },
+            {
+              "name": "세곡동",
+              "slug": "segok-dong",
+              "legalName": "서울특별시 강남구 세곡동",
+              "code": "1168011100"
+            },
+            {
+              "name": "자곡동",
+              "slug": "jagok-dong",
+              "legalName": "서울특별시 강남구 자곡동",
+              "code": "1168011200"
+            },
+            {
+              "name": "율현동",
+              "slug": "yulhyeon-dong",
+              "legalName": "서울특별시 강남구 율현동",
+              "code": "1168011300"
+            },
+            {
+              "name": "일원동",
+              "slug": "ilwon-dong",
+              "legalName": "서울특별시 강남구 일원동",
+              "code": "1168011400"
+            },
+            {
+              "name": "수서동",
+              "slug": "suseo-dong",
+              "legalName": "서울특별시 강남구 수서동",
+              "code": "1168011500"
+            },
+            {
+              "name": "도곡동",
+              "slug": "dogok-dong",
+              "legalName": "서울특별시 강남구 도곡동",
+              "code": "1168011800"
+            }
+          ]
+        },
+        {
+          "id": "songpa-gu",
+          "name": "송파구",
+          "shortName": "송파구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 송파구",
+          "legalCode": "1171000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "잠실동",
+              "slug": "jamsil-dong",
+              "legalName": "서울특별시 송파구 잠실동",
+              "code": "1171010100"
+            },
+            {
+              "name": "신천동",
+              "slug": "sincheon-dong",
+              "legalName": "서울특별시 송파구 신천동",
+              "code": "1171010200"
+            },
+            {
+              "name": "풍납동",
+              "slug": "pungnap-dong",
+              "legalName": "서울특별시 송파구 풍납동",
+              "code": "1171010300"
+            },
+            {
+              "name": "송파동",
+              "slug": "songpa-dong",
+              "legalName": "서울특별시 송파구 송파동",
+              "code": "1171010400"
+            },
+            {
+              "name": "석촌동",
+              "slug": "seokchon-dong",
+              "legalName": "서울특별시 송파구 석촌동",
+              "code": "1171010500"
+            },
+            {
+              "name": "삼전동",
+              "slug": "samjeon-dong",
+              "legalName": "서울특별시 송파구 삼전동",
+              "code": "1171010600"
+            },
+            {
+              "name": "가락동",
+              "slug": "garak-dong",
+              "legalName": "서울특별시 송파구 가락동",
+              "code": "1171010700"
+            },
+            {
+              "name": "문정동",
+              "slug": "munjeong-dong",
+              "legalName": "서울특별시 송파구 문정동",
+              "code": "1171010800"
+            },
+            {
+              "name": "장지동",
+              "slug": "jangji-dong",
+              "legalName": "서울특별시 송파구 장지동",
+              "code": "1171010900"
+            },
+            {
+              "name": "방이동",
+              "slug": "bangi-dong",
+              "legalName": "서울특별시 송파구 방이동",
+              "code": "1171011100"
+            },
+            {
+              "name": "오금동",
+              "slug": "ogeum-dong",
+              "legalName": "서울특별시 송파구 오금동",
+              "code": "1171011200"
+            },
+            {
+              "name": "거여동",
+              "slug": "geoyeo-dong",
+              "legalName": "서울특별시 송파구 거여동",
+              "code": "1171011300"
+            },
+            {
+              "name": "마천동",
+              "slug": "macheon-dong",
+              "legalName": "서울특별시 송파구 마천동",
+              "code": "1171011400"
+            }
+          ]
+        },
+        {
+          "id": "gwangjin-gu",
+          "name": "광진구",
+          "shortName": "광진구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 광진구",
+          "legalCode": "1121500000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "중곡동",
+              "slug": "junggok-dong",
+              "legalName": "서울특별시 광진구 중곡동",
+              "code": "1121510100"
+            },
+            {
+              "name": "능동",
+              "slug": "neung-dong",
+              "legalName": "서울특별시 광진구 능동",
+              "code": "1121510200"
+            },
+            {
+              "name": "구의동",
+              "slug": "guui-dong",
+              "legalName": "서울특별시 광진구 구의동",
+              "code": "1121510300"
+            },
+            {
+              "name": "광장동",
+              "slug": "gwangjang-dong",
+              "legalName": "서울특별시 광진구 광장동",
+              "code": "1121510400"
+            },
+            {
+              "name": "자양동",
+              "slug": "jayang-dong",
+              "legalName": "서울특별시 광진구 자양동",
+              "code": "1121510500"
+            },
+            {
+              "name": "화양동",
+              "slug": "hwayang-dong",
+              "legalName": "서울특별시 광진구 화양동",
+              "code": "1121510700"
+            },
+            {
+              "name": "군자동",
+              "slug": "gunja-dong",
+              "legalName": "서울특별시 광진구 군자동",
+              "code": "1121510900"
+            }
+          ]
+        },
+        {
+          "id": "yongsan-gu",
+          "name": "용산구",
+          "shortName": "용산구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 용산구",
+          "legalCode": "1117000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "후암동",
+              "slug": "huam-dong",
+              "legalName": "서울특별시 용산구 후암동",
+              "code": "1117010100"
+            },
+            {
+              "name": "용산동2가",
+              "slug": "yongsandong2-ga",
+              "legalName": "서울특별시 용산구 용산동2가",
+              "code": "1117010200"
+            },
+            {
+              "name": "용산동4가",
+              "slug": "yongsandong4-ga",
+              "legalName": "서울특별시 용산구 용산동4가",
+              "code": "1117010300"
+            },
+            {
+              "name": "갈월동",
+              "slug": "galwol-dong",
+              "legalName": "서울특별시 용산구 갈월동",
+              "code": "1117010400"
+            },
+            {
+              "name": "남영동",
+              "slug": "namyeong-dong",
+              "legalName": "서울특별시 용산구 남영동",
+              "code": "1117010500"
+            },
+            {
+              "name": "용산동1가",
+              "slug": "yongsandong1-ga",
+              "legalName": "서울특별시 용산구 용산동1가",
+              "code": "1117010600"
+            },
+            {
+              "name": "동자동",
+              "slug": "dongja-dong",
+              "legalName": "서울특별시 용산구 동자동",
+              "code": "1117010700"
+            },
+            {
+              "name": "서계동",
+              "slug": "seogye-dong",
+              "legalName": "서울특별시 용산구 서계동",
+              "code": "1117010800"
+            },
+            {
+              "name": "청파동1가",
+              "slug": "cheongpadong1-ga",
+              "legalName": "서울특별시 용산구 청파동1가",
+              "code": "1117010900"
+            },
+            {
+              "name": "청파동2가",
+              "slug": "cheongpadong2-ga",
+              "legalName": "서울특별시 용산구 청파동2가",
+              "code": "1117011000"
+            },
+            {
+              "name": "청파동3가",
+              "slug": "cheongpadong3-ga",
+              "legalName": "서울특별시 용산구 청파동3가",
+              "code": "1117011100"
+            },
+            {
+              "name": "원효로1가",
+              "slug": "wonhyoro1-ga",
+              "legalName": "서울특별시 용산구 원효로1가",
+              "code": "1117011200"
+            },
+            {
+              "name": "원효로2가",
+              "slug": "wonhyoro2-ga",
+              "legalName": "서울특별시 용산구 원효로2가",
+              "code": "1117011300"
+            },
+            {
+              "name": "신창동",
+              "slug": "sinchang-dong",
+              "legalName": "서울특별시 용산구 신창동",
+              "code": "1117011400"
+            },
+            {
+              "name": "산천동",
+              "slug": "sancheon-dong",
+              "legalName": "서울특별시 용산구 산천동",
+              "code": "1117011500"
+            },
+            {
+              "name": "청암동",
+              "slug": "cheongam-dong",
+              "legalName": "서울특별시 용산구 청암동",
+              "code": "1117011600"
+            },
+            {
+              "name": "원효로3가",
+              "slug": "wonhyoro3-ga",
+              "legalName": "서울특별시 용산구 원효로3가",
+              "code": "1117011700"
+            },
+            {
+              "name": "원효로4가",
+              "slug": "wonhyoro4-ga",
+              "legalName": "서울특별시 용산구 원효로4가",
+              "code": "1117011800"
+            },
+            {
+              "name": "효창동",
+              "slug": "hyochang-dong",
+              "legalName": "서울특별시 용산구 효창동",
+              "code": "1117011900"
+            },
+            {
+              "name": "도원동",
+              "slug": "dowon-dong",
+              "legalName": "서울특별시 용산구 도원동",
+              "code": "1117012000"
+            },
+            {
+              "name": "용문동",
+              "slug": "yongmun-dong",
+              "legalName": "서울특별시 용산구 용문동",
+              "code": "1117012100"
+            },
+            {
+              "name": "문배동",
+              "slug": "munbae-dong",
+              "legalName": "서울특별시 용산구 문배동",
+              "code": "1117012200"
+            },
+            {
+              "name": "신계동",
+              "slug": "singye-dong",
+              "legalName": "서울특별시 용산구 신계동",
+              "code": "1117012300"
+            },
+            {
+              "name": "한강로1가",
+              "slug": "hangangro1-ga",
+              "legalName": "서울특별시 용산구 한강로1가",
+              "code": "1117012400"
+            },
+            {
+              "name": "한강로2가",
+              "slug": "hangangro2-ga",
+              "legalName": "서울특별시 용산구 한강로2가",
+              "code": "1117012500"
+            },
+            {
+              "name": "용산동3가",
+              "slug": "yongsandong3-ga",
+              "legalName": "서울특별시 용산구 용산동3가",
+              "code": "1117012600"
+            },
+            {
+              "name": "용산동5가",
+              "slug": "yongsandong5-ga",
+              "legalName": "서울특별시 용산구 용산동5가",
+              "code": "1117012700"
+            },
+            {
+              "name": "한강로3가",
+              "slug": "hangangro3-ga",
+              "legalName": "서울특별시 용산구 한강로3가",
+              "code": "1117012800"
+            },
+            {
+              "name": "이촌동",
+              "slug": "ichon-dong",
+              "legalName": "서울특별시 용산구 이촌동",
+              "code": "1117012900"
+            },
+            {
+              "name": "이태원동",
+              "slug": "itaewon-dong",
+              "legalName": "서울특별시 용산구 이태원동",
+              "code": "1117013000"
+            },
+            {
+              "name": "한남동",
+              "slug": "hannam-dong",
+              "legalName": "서울특별시 용산구 한남동",
+              "code": "1117013100"
+            },
+            {
+              "name": "동빙고동",
+              "slug": "dongbinggo-dong",
+              "legalName": "서울특별시 용산구 동빙고동",
+              "code": "1117013200"
+            },
+            {
+              "name": "서빙고동",
+              "slug": "seobinggo-dong",
+              "legalName": "서울특별시 용산구 서빙고동",
+              "code": "1117013300"
+            },
+            {
+              "name": "주성동",
+              "slug": "juseong-dong",
+              "legalName": "서울특별시 용산구 주성동",
+              "code": "1117013400"
+            },
+            {
+              "name": "용산동6가",
+              "slug": "yongsandong6-ga",
+              "legalName": "서울특별시 용산구 용산동6가",
+              "code": "1117013500"
+            },
+            {
+              "name": "보광동",
+              "slug": "bogwang-dong",
+              "legalName": "서울특별시 용산구 보광동",
+              "code": "1117013600"
+            }
+          ]
+        }
+      ]
+    },
+    "gyeonggi": {
+      "id": "gyeonggi",
+      "name": "경기",
+      "fullName": "경기도",
+      "slug": "gyeonggi",
+      "regions": [
+        {
+          "id": "suwon-si",
+          "name": "수원시",
+          "shortName": "수원",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 수원시",
+          "legalCode": "4111000000",
+          "districts": [
+            {
+              "name": "장안구",
+              "slug": "jangan-gu"
+            },
+            {
+              "name": "권선구",
+              "slug": "gwonseon-gu"
+            },
+            {
+              "name": "팔달구",
+              "slug": "paldal-gu"
+            },
+            {
+              "name": "영통구",
+              "slug": "yeongtong-gu"
+            }
+          ],
+          "neighborhoods": [
+            {
+              "name": "파장동",
+              "slug": "pajang-dong",
+              "legalName": "경기도 수원시 장안구 파장동",
+              "code": "4111112900",
+              "district": "장안구"
+            },
+            {
+              "name": "정자동",
+              "slug": "jeongja-dong",
+              "legalName": "경기도 수원시 장안구 정자동",
+              "code": "4111113000",
+              "district": "장안구"
+            },
+            {
+              "name": "이목동",
+              "slug": "imok-dong",
+              "legalName": "경기도 수원시 장안구 이목동",
+              "code": "4111113100",
+              "district": "장안구"
+            },
+            {
+              "name": "율전동",
+              "slug": "yuljeon-dong",
+              "legalName": "경기도 수원시 장안구 율전동",
+              "code": "4111113200",
+              "district": "장안구"
+            },
+            {
+              "name": "천천동",
+              "slug": "cheoncheon-dong",
+              "legalName": "경기도 수원시 장안구 천천동",
+              "code": "4111113300",
+              "district": "장안구"
+            },
+            {
+              "name": "영화동",
+              "slug": "yeonghwa-dong",
+              "legalName": "경기도 수원시 장안구 영화동",
+              "code": "4111113400",
+              "district": "장안구"
+            },
+            {
+              "name": "송죽동",
+              "slug": "songjuk-dong",
+              "legalName": "경기도 수원시 장안구 송죽동",
+              "code": "4111113500",
+              "district": "장안구"
+            },
+            {
+              "name": "조원동",
+              "slug": "jowon-dong",
+              "legalName": "경기도 수원시 장안구 조원동",
+              "code": "4111113600",
+              "district": "장안구"
+            },
+            {
+              "name": "연무동",
+              "slug": "yeonmu-dong",
+              "legalName": "경기도 수원시 장안구 연무동",
+              "code": "4111113700",
+              "district": "장안구"
+            },
+            {
+              "name": "상광교동",
+              "slug": "sanggwanggyo-dong",
+              "legalName": "경기도 수원시 장안구 상광교동",
+              "code": "4111113800",
+              "district": "장안구"
+            },
+            {
+              "name": "하광교동",
+              "slug": "hagwanggyo-dong",
+              "legalName": "경기도 수원시 장안구 하광교동",
+              "code": "4111113900",
+              "district": "장안구"
+            },
+            {
+              "name": "세류동",
+              "slug": "seryu-dong",
+              "legalName": "경기도 수원시 권선구 세류동",
+              "code": "4111312600",
+              "district": "권선구"
+            },
+            {
+              "name": "평동",
+              "slug": "pyeong-dong",
+              "legalName": "경기도 수원시 권선구 평동",
+              "code": "4111312700",
+              "district": "권선구"
+            },
+            {
+              "name": "고색동",
+              "slug": "gosaek-dong",
+              "legalName": "경기도 수원시 권선구 고색동",
+              "code": "4111312800",
+              "district": "권선구"
+            },
+            {
+              "name": "오목천동",
+              "slug": "omokcheon-dong",
+              "legalName": "경기도 수원시 권선구 오목천동",
+              "code": "4111312900",
+              "district": "권선구"
+            },
+            {
+              "name": "평리동",
+              "slug": "pyeongri-dong",
+              "legalName": "경기도 수원시 권선구 평리동",
+              "code": "4111313000",
+              "district": "권선구"
+            },
+            {
+              "name": "서둔동",
+              "slug": "seodun-dong",
+              "legalName": "경기도 수원시 권선구 서둔동",
+              "code": "4111313100",
+              "district": "권선구"
+            },
+            {
+              "name": "구운동",
+              "slug": "guun-dong",
+              "legalName": "경기도 수원시 권선구 구운동",
+              "code": "4111313200",
+              "district": "권선구"
+            },
+            {
+              "name": "탑동",
+              "slug": "tap-dong",
+              "legalName": "경기도 수원시 권선구 탑동",
+              "code": "4111313300",
+              "district": "권선구"
+            },
+            {
+              "name": "금곡동",
+              "slug": "geumgok-dong",
+              "legalName": "경기도 수원시 권선구 금곡동",
+              "code": "4111313400",
+              "district": "권선구"
+            },
+            {
+              "name": "호매실동",
+              "slug": "homaesil-dong",
+              "legalName": "경기도 수원시 권선구 호매실동",
+              "code": "4111313500",
+              "district": "권선구"
+            },
+            {
+              "name": "곡반정동",
+              "slug": "gokbanjeong-dong",
+              "legalName": "경기도 수원시 권선구 곡반정동",
+              "code": "4111313600",
+              "district": "권선구"
+            },
+            {
+              "name": "권선동",
+              "slug": "gwonseon-dong",
+              "legalName": "경기도 수원시 권선구 권선동",
+              "code": "4111313700",
+              "district": "권선구"
+            },
+            {
+              "name": "장지동",
+              "slug": "jangji-dong",
+              "legalName": "경기도 수원시 권선구 장지동",
+              "code": "4111313800",
+              "district": "권선구"
+            },
+            {
+              "name": "대황교동",
+              "slug": "daehwanggyo-dong",
+              "legalName": "경기도 수원시 권선구 대황교동",
+              "code": "4111313900",
+              "district": "권선구"
+            },
+            {
+              "name": "입북동",
+              "slug": "ipbuk-dong",
+              "legalName": "경기도 수원시 권선구 입북동",
+              "code": "4111314000",
+              "district": "권선구"
+            },
+            {
+              "name": "당수동",
+              "slug": "dangsu-dong",
+              "legalName": "경기도 수원시 권선구 당수동",
+              "code": "4111314100",
+              "district": "권선구"
+            },
+            {
+              "name": "팔달로1가",
+              "slug": "paldalro1-ga",
+              "legalName": "경기도 수원시 팔달구 팔달로1가",
+              "code": "4111512000",
+              "district": "팔달구"
+            },
+            {
+              "name": "팔달로2가",
+              "slug": "paldalro2-ga",
+              "legalName": "경기도 수원시 팔달구 팔달로2가",
+              "code": "4111512100",
+              "district": "팔달구"
+            },
+            {
+              "name": "팔달로3가",
+              "slug": "paldalro3-ga",
+              "legalName": "경기도 수원시 팔달구 팔달로3가",
+              "code": "4111512200",
+              "district": "팔달구"
+            },
+            {
+              "name": "남창동",
+              "slug": "namchang-dong",
+              "legalName": "경기도 수원시 팔달구 남창동",
+              "code": "4111512300",
+              "district": "팔달구"
+            },
+            {
+              "name": "영동",
+              "slug": "yeong-dong",
+              "legalName": "경기도 수원시 팔달구 영동",
+              "code": "4111512400",
+              "district": "팔달구"
+            },
+            {
+              "name": "중동",
+              "slug": "jung-dong",
+              "legalName": "경기도 수원시 팔달구 중동",
+              "code": "4111512500",
+              "district": "팔달구"
+            },
+            {
+              "name": "구천동",
+              "slug": "gucheon-dong",
+              "legalName": "경기도 수원시 팔달구 구천동",
+              "code": "4111512600",
+              "district": "팔달구"
+            },
+            {
+              "name": "남수동",
+              "slug": "namsu-dong",
+              "legalName": "경기도 수원시 팔달구 남수동",
+              "code": "4111512700",
+              "district": "팔달구"
+            },
+            {
+              "name": "매향동",
+              "slug": "maehyang-dong",
+              "legalName": "경기도 수원시 팔달구 매향동",
+              "code": "4111512800",
+              "district": "팔달구"
+            },
+            {
+              "name": "북수동",
+              "slug": "buksu-dong",
+              "legalName": "경기도 수원시 팔달구 북수동",
+              "code": "4111512900",
+              "district": "팔달구"
+            },
+            {
+              "name": "신풍동",
+              "slug": "sinpung-dong",
+              "legalName": "경기도 수원시 팔달구 신풍동",
+              "code": "4111513000",
+              "district": "팔달구"
+            },
+            {
+              "name": "장안동",
+              "slug": "jangan-dong",
+              "legalName": "경기도 수원시 팔달구 장안동",
+              "code": "4111513100",
+              "district": "팔달구"
+            },
+            {
+              "name": "교동",
+              "slug": "gyo-dong",
+              "legalName": "경기도 수원시 팔달구 교동",
+              "code": "4111513200",
+              "district": "팔달구"
+            },
+            {
+              "name": "매교동",
+              "slug": "maegyo-dong",
+              "legalName": "경기도 수원시 팔달구 매교동",
+              "code": "4111513300",
+              "district": "팔달구"
+            },
+            {
+              "name": "매산로1가",
+              "slug": "maesanro1-ga",
+              "legalName": "경기도 수원시 팔달구 매산로1가",
+              "code": "4111513400",
+              "district": "팔달구"
+            },
+            {
+              "name": "매산로2가",
+              "slug": "maesanro2-ga",
+              "legalName": "경기도 수원시 팔달구 매산로2가",
+              "code": "4111513500",
+              "district": "팔달구"
+            },
+            {
+              "name": "매산로3가",
+              "slug": "maesanro3-ga",
+              "legalName": "경기도 수원시 팔달구 매산로3가",
+              "code": "4111513600",
+              "district": "팔달구"
+            },
+            {
+              "name": "고등동",
+              "slug": "godeung-dong",
+              "legalName": "경기도 수원시 팔달구 고등동",
+              "code": "4111513700",
+              "district": "팔달구"
+            },
+            {
+              "name": "화서동",
+              "slug": "hwaseo-dong",
+              "legalName": "경기도 수원시 팔달구 화서동",
+              "code": "4111513800",
+              "district": "팔달구"
+            },
+            {
+              "name": "지동",
+              "slug": "ji-dong",
+              "legalName": "경기도 수원시 팔달구 지동",
+              "code": "4111513900",
+              "district": "팔달구"
+            },
+            {
+              "name": "우만동",
+              "slug": "uman-dong",
+              "legalName": "경기도 수원시 팔달구 우만동",
+              "code": "4111514000",
+              "district": "팔달구"
+            },
+            {
+              "name": "인계동",
+              "slug": "ingye-dong",
+              "legalName": "경기도 수원시 팔달구 인계동",
+              "code": "4111514100",
+              "district": "팔달구"
+            },
+            {
+              "name": "매탄동",
+              "slug": "maetan-dong",
+              "legalName": "경기도 수원시 영통구 매탄동",
+              "code": "4111710100",
+              "district": "영통구"
+            },
+            {
+              "name": "원천동",
+              "slug": "woncheon-dong",
+              "legalName": "경기도 수원시 영통구 원천동",
+              "code": "4111710200",
+              "district": "영통구"
+            },
+            {
+              "name": "이의동",
+              "slug": "iui-dong",
+              "legalName": "경기도 수원시 영통구 이의동",
+              "code": "4111710300",
+              "district": "영통구"
+            },
+            {
+              "name": "하동",
+              "slug": "ha-dong",
+              "legalName": "경기도 수원시 영통구 하동",
+              "code": "4111710400",
+              "district": "영통구"
+            },
+            {
+              "name": "영통동",
+              "slug": "yeongtong-dong",
+              "legalName": "경기도 수원시 영통구 영통동",
+              "code": "4111710500",
+              "district": "영통구"
+            },
+            {
+              "name": "신동",
+              "slug": "sin-dong",
+              "legalName": "경기도 수원시 영통구 신동",
+              "code": "4111710600",
+              "district": "영통구"
+            },
+            {
+              "name": "망포동",
+              "slug": "mangpo-dong",
+              "legalName": "경기도 수원시 영통구 망포동",
+              "code": "4111710700",
+              "district": "영통구"
+            }
+          ]
+        },
+        {
+          "id": "seongnam-si",
+          "name": "성남시",
+          "shortName": "성남",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 성남시",
+          "legalCode": "4113000000",
+          "districts": [
+            {
+              "name": "수정구",
+              "slug": "sujeong-gu"
+            },
+            {
+              "name": "중원구",
+              "slug": "jungwon-gu"
+            },
+            {
+              "name": "분당구",
+              "slug": "bundang-gu"
+            }
+          ],
+          "neighborhoods": [
+            {
+              "name": "신흥동",
+              "slug": "sinheung-dong",
+              "legalName": "경기도 성남시 수정구 신흥동",
+              "code": "4113110100",
+              "district": "수정구"
+            },
+            {
+              "name": "태평동",
+              "slug": "taepyeong-dong",
+              "legalName": "경기도 성남시 수정구 태평동",
+              "code": "4113110200",
+              "district": "수정구"
+            },
+            {
+              "name": "수진동",
+              "slug": "sujin-dong",
+              "legalName": "경기도 성남시 수정구 수진동",
+              "code": "4113110300",
+              "district": "수정구"
+            },
+            {
+              "name": "단대동",
+              "slug": "dandae-dong",
+              "legalName": "경기도 성남시 수정구 단대동",
+              "code": "4113110400",
+              "district": "수정구"
+            },
+            {
+              "name": "산성동",
+              "slug": "sanseong-dong",
+              "legalName": "경기도 성남시 수정구 산성동",
+              "code": "4113110500",
+              "district": "수정구"
+            },
+            {
+              "name": "양지동",
+              "slug": "yangji-dong",
+              "legalName": "경기도 성남시 수정구 양지동",
+              "code": "4113110600",
+              "district": "수정구"
+            },
+            {
+              "name": "복정동",
+              "slug": "bokjeong-dong",
+              "legalName": "경기도 성남시 수정구 복정동",
+              "code": "4113110700",
+              "district": "수정구"
+            },
+            {
+              "name": "창곡동",
+              "slug": "changgok-dong",
+              "legalName": "경기도 성남시 수정구 창곡동",
+              "code": "4113110800",
+              "district": "수정구"
+            },
+            {
+              "name": "신촌동",
+              "slug": "sinchon-dong",
+              "legalName": "경기도 성남시 수정구 신촌동",
+              "code": "4113110900",
+              "district": "수정구"
+            },
+            {
+              "name": "오야동",
+              "slug": "oya-dong",
+              "legalName": "경기도 성남시 수정구 오야동",
+              "code": "4113111000",
+              "district": "수정구"
+            },
+            {
+              "name": "심곡동",
+              "slug": "simgok-dong",
+              "legalName": "경기도 성남시 수정구 심곡동",
+              "code": "4113111100",
+              "district": "수정구"
+            },
+            {
+              "name": "고등동",
+              "slug": "godeung-dong",
+              "legalName": "경기도 성남시 수정구 고등동",
+              "code": "4113111200",
+              "district": "수정구"
+            },
+            {
+              "name": "상적동",
+              "slug": "sangjeok-dong",
+              "legalName": "경기도 성남시 수정구 상적동",
+              "code": "4113111300",
+              "district": "수정구"
+            },
+            {
+              "name": "둔전동",
+              "slug": "dunjeon-dong",
+              "legalName": "경기도 성남시 수정구 둔전동",
+              "code": "4113111400",
+              "district": "수정구"
+            },
+            {
+              "name": "시흥동",
+              "slug": "siheung-dong",
+              "legalName": "경기도 성남시 수정구 시흥동",
+              "code": "4113111500",
+              "district": "수정구"
+            },
+            {
+              "name": "금토동",
+              "slug": "geumto-dong",
+              "legalName": "경기도 성남시 수정구 금토동",
+              "code": "4113111600",
+              "district": "수정구"
+            },
+            {
+              "name": "사송동",
+              "slug": "sasong-dong",
+              "legalName": "경기도 성남시 수정구 사송동",
+              "code": "4113111700",
+              "district": "수정구"
+            },
+            {
+              "name": "성남동",
+              "slug": "seongnam-dong",
+              "legalName": "경기도 성남시 중원구 성남동",
+              "code": "4113310100",
+              "district": "중원구"
+            },
+            {
+              "name": "금광동",
+              "slug": "geumgwang-dong",
+              "legalName": "경기도 성남시 중원구 금광동",
+              "code": "4113310300",
+              "district": "중원구"
+            },
+            {
+              "name": "은행동",
+              "slug": "eunhaeng-dong",
+              "legalName": "경기도 성남시 중원구 은행동",
+              "code": "4113310400",
+              "district": "중원구"
+            },
+            {
+              "name": "상대원동",
+              "slug": "sangdaewon-dong",
+              "legalName": "경기도 성남시 중원구 상대원동",
+              "code": "4113310500",
+              "district": "중원구"
+            },
+            {
+              "name": "여수동",
+              "slug": "yeosu-dong",
+              "legalName": "경기도 성남시 중원구 여수동",
+              "code": "4113310600",
+              "district": "중원구"
+            },
+            {
+              "name": "도촌동",
+              "slug": "dochon-dong",
+              "legalName": "경기도 성남시 중원구 도촌동",
+              "code": "4113310700",
+              "district": "중원구"
+            },
+            {
+              "name": "갈현동",
+              "slug": "galhyeon-dong",
+              "legalName": "경기도 성남시 중원구 갈현동",
+              "code": "4113310800",
+              "district": "중원구"
+            },
+            {
+              "name": "하대원동",
+              "slug": "hadaewon-dong",
+              "legalName": "경기도 성남시 중원구 하대원동",
+              "code": "4113310900",
+              "district": "중원구"
+            },
+            {
+              "name": "중앙동",
+              "slug": "jungang-dong",
+              "legalName": "경기도 성남시 중원구 중앙동",
+              "code": "4113313200",
+              "district": "중원구"
+            },
+            {
+              "name": "분당동",
+              "slug": "bundang-dong",
+              "legalName": "경기도 성남시 분당구 분당동",
+              "code": "4113510100",
+              "district": "분당구"
+            },
+            {
+              "name": "수내동",
+              "slug": "sunae-dong",
+              "legalName": "경기도 성남시 분당구 수내동",
+              "code": "4113510200",
+              "district": "분당구"
+            },
+            {
+              "name": "정자동",
+              "slug": "jeongja-dong",
+              "legalName": "경기도 성남시 분당구 정자동",
+              "code": "4113510300",
+              "district": "분당구"
+            },
+            {
+              "name": "율동",
+              "slug": "yul-dong",
+              "legalName": "경기도 성남시 분당구 율동",
+              "code": "4113510400",
+              "district": "분당구"
+            },
+            {
+              "name": "서현동",
+              "slug": "seohyeon-dong",
+              "legalName": "경기도 성남시 분당구 서현동",
+              "code": "4113510500",
+              "district": "분당구"
+            },
+            {
+              "name": "이매동",
+              "slug": "imae-dong",
+              "legalName": "경기도 성남시 분당구 이매동",
+              "code": "4113510600",
+              "district": "분당구"
+            },
+            {
+              "name": "야탑동",
+              "slug": "yatap-dong",
+              "legalName": "경기도 성남시 분당구 야탑동",
+              "code": "4113510700",
+              "district": "분당구"
+            },
+            {
+              "name": "판교동",
+              "slug": "pangyo-dong",
+              "legalName": "경기도 성남시 분당구 판교동",
+              "code": "4113510800",
+              "district": "분당구"
+            },
+            {
+              "name": "삼평동",
+              "slug": "sampyeong-dong",
+              "legalName": "경기도 성남시 분당구 삼평동",
+              "code": "4113510900",
+              "district": "분당구"
+            },
+            {
+              "name": "백현동",
+              "slug": "baekhyeon-dong",
+              "legalName": "경기도 성남시 분당구 백현동",
+              "code": "4113511000",
+              "district": "분당구"
+            },
+            {
+              "name": "금곡동",
+              "slug": "geumgok-dong",
+              "legalName": "경기도 성남시 분당구 금곡동",
+              "code": "4113511100",
+              "district": "분당구"
+            },
+            {
+              "name": "궁내동",
+              "slug": "gungnae-dong",
+              "legalName": "경기도 성남시 분당구 궁내동",
+              "code": "4113511200",
+              "district": "분당구"
+            },
+            {
+              "name": "동원동",
+              "slug": "dongwon-dong",
+              "legalName": "경기도 성남시 분당구 동원동",
+              "code": "4113511300",
+              "district": "분당구"
+            },
+            {
+              "name": "구미동",
+              "slug": "gumi-dong",
+              "legalName": "경기도 성남시 분당구 구미동",
+              "code": "4113511400",
+              "district": "분당구"
+            },
+            {
+              "name": "운중동",
+              "slug": "unjung-dong",
+              "legalName": "경기도 성남시 분당구 운중동",
+              "code": "4113511500",
+              "district": "분당구"
+            },
+            {
+              "name": "대장동",
+              "slug": "daejang-dong",
+              "legalName": "경기도 성남시 분당구 대장동",
+              "code": "4113511600",
+              "district": "분당구"
+            },
+            {
+              "name": "석운동",
+              "slug": "seokun-dong",
+              "legalName": "경기도 성남시 분당구 석운동",
+              "code": "4113511700",
+              "district": "분당구"
+            },
+            {
+              "name": "하산운동",
+              "slug": "hasanun-dong",
+              "legalName": "경기도 성남시 분당구 하산운동",
+              "code": "4113511800",
+              "district": "분당구"
+            }
+          ]
+        },
+        {
+          "id": "bucheon-si",
+          "name": "부천시",
+          "shortName": "부천",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 부천시",
+          "legalCode": "4119000000",
+          "districts": [
+            {
+              "name": "원미구",
+              "slug": "wonmi-gu"
+            },
+            {
+              "name": "소사구",
+              "slug": "sosa-gu"
+            },
+            {
+              "name": "오정구",
+              "slug": "ojeong-gu"
+            }
+          ],
+          "neighborhoods": [
+            {
+              "name": "원미동",
+              "slug": "wonmi-dong",
+              "legalName": "경기도 부천시 원미구 원미동",
+              "code": "4119210100",
+              "district": "원미구"
+            },
+            {
+              "name": "심곡동",
+              "slug": "simgok-dong",
+              "legalName": "경기도 부천시 원미구 심곡동",
+              "code": "4119210200",
+              "district": "원미구"
+            },
+            {
+              "name": "춘의동",
+              "slug": "chunui-dong",
+              "legalName": "경기도 부천시 원미구 춘의동",
+              "code": "4119210300",
+              "district": "원미구"
+            },
+            {
+              "name": "도당동",
+              "slug": "dodang-dong",
+              "legalName": "경기도 부천시 원미구 도당동",
+              "code": "4119210400",
+              "district": "원미구"
+            },
+            {
+              "name": "약대동",
+              "slug": "yakdae-dong",
+              "legalName": "경기도 부천시 원미구 약대동",
+              "code": "4119210500",
+              "district": "원미구"
+            },
+            {
+              "name": "소사동",
+              "slug": "sosa-dong",
+              "legalName": "경기도 부천시 원미구 소사동",
+              "code": "4119210600",
+              "district": "원미구"
+            },
+            {
+              "name": "역곡동",
+              "slug": "yeokgok-dong",
+              "legalName": "경기도 부천시 원미구 역곡동",
+              "code": "4119210700",
+              "district": "원미구"
+            },
+            {
+              "name": "중동",
+              "slug": "jung-dong",
+              "legalName": "경기도 부천시 원미구 중동",
+              "code": "4119210800",
+              "district": "원미구"
+            },
+            {
+              "name": "상동",
+              "slug": "sang-dong",
+              "legalName": "경기도 부천시 원미구 상동",
+              "code": "4119210900",
+              "district": "원미구"
+            },
+            {
+              "name": "소사본동",
+              "slug": "sosabon-dong",
+              "legalName": "경기도 부천시 소사구 소사본동",
+              "code": "4119410100",
+              "district": "소사구"
+            },
+            {
+              "name": "심곡본동",
+              "slug": "simgokbon-dong",
+              "legalName": "경기도 부천시 소사구 심곡본동",
+              "code": "4119410200",
+              "district": "소사구"
+            },
+            {
+              "name": "범박동",
+              "slug": "beombak-dong",
+              "legalName": "경기도 부천시 소사구 범박동",
+              "code": "4119410300",
+              "district": "소사구"
+            },
+            {
+              "name": "괴안동",
+              "slug": "goean-dong",
+              "legalName": "경기도 부천시 소사구 괴안동",
+              "code": "4119410400",
+              "district": "소사구"
+            },
+            {
+              "name": "송내동",
+              "slug": "songnae-dong",
+              "legalName": "경기도 부천시 소사구 송내동",
+              "code": "4119410500",
+              "district": "소사구"
+            },
+            {
+              "name": "옥길동",
+              "slug": "okgil-dong",
+              "legalName": "경기도 부천시 소사구 옥길동",
+              "code": "4119410600",
+              "district": "소사구"
+            },
+            {
+              "name": "계수동",
+              "slug": "gyesu-dong",
+              "legalName": "경기도 부천시 소사구 계수동",
+              "code": "4119410700",
+              "district": "소사구"
+            },
+            {
+              "name": "오정동",
+              "slug": "ojeong-dong",
+              "legalName": "경기도 부천시 오정구 오정동",
+              "code": "4119610100",
+              "district": "오정구"
+            },
+            {
+              "name": "여월동",
+              "slug": "yeowol-dong",
+              "legalName": "경기도 부천시 오정구 여월동",
+              "code": "4119610200",
+              "district": "오정구"
+            },
+            {
+              "name": "작동",
+              "slug": "jak-dong",
+              "legalName": "경기도 부천시 오정구 작동",
+              "code": "4119610300",
+              "district": "오정구"
+            },
+            {
+              "name": "원종동",
+              "slug": "wonjong-dong",
+              "legalName": "경기도 부천시 오정구 원종동",
+              "code": "4119610400",
+              "district": "오정구"
+            },
+            {
+              "name": "고강동",
+              "slug": "gogang-dong",
+              "legalName": "경기도 부천시 오정구 고강동",
+              "code": "4119610500",
+              "district": "오정구"
+            },
+            {
+              "name": "대장동",
+              "slug": "daejang-dong",
+              "legalName": "경기도 부천시 오정구 대장동",
+              "code": "4119610600",
+              "district": "오정구"
+            },
+            {
+              "name": "삼정동",
+              "slug": "samjeong-dong",
+              "legalName": "경기도 부천시 오정구 삼정동",
+              "code": "4119610700",
+              "district": "오정구"
+            },
+            {
+              "name": "내동",
+              "slug": "nae-dong",
+              "legalName": "경기도 부천시 오정구 내동",
+              "code": "4119610800",
+              "district": "오정구"
+            }
+          ]
+        },
+        {
+          "id": "ansan-si",
+          "name": "안산시",
+          "shortName": "안산",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 안산시",
+          "legalCode": "4127000000",
+          "districts": [
+            {
+              "name": "상록구",
+              "slug": "sangrok-gu"
+            },
+            {
+              "name": "단원구",
+              "slug": "danwon-gu"
+            }
+          ],
+          "neighborhoods": [
+            {
+              "name": "일동",
+              "slug": "il-dong",
+              "legalName": "경기도 안산시 상록구 일동",
+              "code": "4127110100",
+              "district": "상록구"
+            },
+            {
+              "name": "이동",
+              "slug": "i-dong",
+              "legalName": "경기도 안산시 상록구 이동",
+              "code": "4127110200",
+              "district": "상록구"
+            },
+            {
+              "name": "사동",
+              "slug": "sa-dong",
+              "legalName": "경기도 안산시 상록구 사동",
+              "code": "4127110300",
+              "district": "상록구"
+            },
+            {
+              "name": "본오동",
+              "slug": "bono-dong",
+              "legalName": "경기도 안산시 상록구 본오동",
+              "code": "4127110400",
+              "district": "상록구"
+            },
+            {
+              "name": "팔곡이동",
+              "slug": "palgoki-dong",
+              "legalName": "경기도 안산시 상록구 팔곡이동",
+              "code": "4127110500",
+              "district": "상록구"
+            },
+            {
+              "name": "양상동",
+              "slug": "yangsang-dong",
+              "legalName": "경기도 안산시 상록구 양상동",
+              "code": "4127110600",
+              "district": "상록구"
+            },
+            {
+              "name": "부곡동",
+              "slug": "bugok-dong",
+              "legalName": "경기도 안산시 상록구 부곡동",
+              "code": "4127110700",
+              "district": "상록구"
+            },
+            {
+              "name": "성포동",
+              "slug": "seongpo-dong",
+              "legalName": "경기도 안산시 상록구 성포동",
+              "code": "4127110800",
+              "district": "상록구"
+            },
+            {
+              "name": "월피동",
+              "slug": "wolpi-dong",
+              "legalName": "경기도 안산시 상록구 월피동",
+              "code": "4127110900",
+              "district": "상록구"
+            },
+            {
+              "name": "팔곡일동",
+              "slug": "palgokil-dong",
+              "legalName": "경기도 안산시 상록구 팔곡일동",
+              "code": "4127111000",
+              "district": "상록구"
+            },
+            {
+              "name": "건건동",
+              "slug": "geongeon-dong",
+              "legalName": "경기도 안산시 상록구 건건동",
+              "code": "4127111100",
+              "district": "상록구"
+            },
+            {
+              "name": "사사동",
+              "slug": "sasa-dong",
+              "legalName": "경기도 안산시 상록구 사사동",
+              "code": "4127111200",
+              "district": "상록구"
+            },
+            {
+              "name": "수암동",
+              "slug": "suam-dong",
+              "legalName": "경기도 안산시 상록구 수암동",
+              "code": "4127111300",
+              "district": "상록구"
+            },
+            {
+              "name": "장상동",
+              "slug": "jangsang-dong",
+              "legalName": "경기도 안산시 상록구 장상동",
+              "code": "4127111400",
+              "district": "상록구"
+            },
+            {
+              "name": "장하동",
+              "slug": "jangha-dong",
+              "legalName": "경기도 안산시 상록구 장하동",
+              "code": "4127111500",
+              "district": "상록구"
+            },
+            {
+              "name": "고잔동",
+              "slug": "gojan-dong",
+              "legalName": "경기도 안산시 단원구 고잔동",
+              "code": "4127310100",
+              "district": "단원구"
+            },
+            {
+              "name": "와동",
+              "slug": "wa-dong",
+              "legalName": "경기도 안산시 단원구 와동",
+              "code": "4127310200",
+              "district": "단원구"
+            },
+            {
+              "name": "신길동",
+              "slug": "singil-dong",
+              "legalName": "경기도 안산시 단원구 신길동",
+              "code": "4127310300",
+              "district": "단원구"
+            },
+            {
+              "name": "성곡동",
+              "slug": "seonggok-dong",
+              "legalName": "경기도 안산시 단원구 성곡동",
+              "code": "4127310400",
+              "district": "단원구"
+            },
+            {
+              "name": "원시동",
+              "slug": "wonsi-dong",
+              "legalName": "경기도 안산시 단원구 원시동",
+              "code": "4127310500",
+              "district": "단원구"
+            },
+            {
+              "name": "목내동",
+              "slug": "moknae-dong",
+              "legalName": "경기도 안산시 단원구 목내동",
+              "code": "4127310600",
+              "district": "단원구"
+            },
+            {
+              "name": "초지동",
+              "slug": "choji-dong",
+              "legalName": "경기도 안산시 단원구 초지동",
+              "code": "4127310700",
+              "district": "단원구"
+            },
+            {
+              "name": "원곡동",
+              "slug": "wongok-dong",
+              "legalName": "경기도 안산시 단원구 원곡동",
+              "code": "4127310800",
+              "district": "단원구"
+            },
+            {
+              "name": "선부동",
+              "slug": "seonbu-dong",
+              "legalName": "경기도 안산시 단원구 선부동",
+              "code": "4127310900",
+              "district": "단원구"
+            },
+            {
+              "name": "대부동동",
+              "slug": "daebudong-dong",
+              "legalName": "경기도 안산시 단원구 대부동동",
+              "code": "4127311000",
+              "district": "단원구"
+            },
+            {
+              "name": "대부북동",
+              "slug": "daebubuk-dong",
+              "legalName": "경기도 안산시 단원구 대부북동",
+              "code": "4127311100",
+              "district": "단원구"
+            },
+            {
+              "name": "대부남동",
+              "slug": "daebunam-dong",
+              "legalName": "경기도 안산시 단원구 대부남동",
+              "code": "4127311200",
+              "district": "단원구"
+            },
+            {
+              "name": "선감동",
+              "slug": "seongam-dong",
+              "legalName": "경기도 안산시 단원구 선감동",
+              "code": "4127311300",
+              "district": "단원구"
+            },
+            {
+              "name": "풍도동",
+              "slug": "pungdo-dong",
+              "legalName": "경기도 안산시 단원구 풍도동",
+              "code": "4127311400",
+              "district": "단원구"
+            },
+            {
+              "name": "화정동",
+              "slug": "hwajeong-dong",
+              "legalName": "경기도 안산시 단원구 화정동",
+              "code": "4127311500",
+              "district": "단원구"
+            }
+          ]
+        },
+        {
+          "id": "anyang-si",
+          "name": "안양시",
+          "shortName": "안양",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 안양시",
+          "legalCode": "4117000000",
+          "districts": [
+            {
+              "name": "만안구",
+              "slug": "manan-gu"
+            },
+            {
+              "name": "동안구",
+              "slug": "dongan-gu"
+            }
+          ],
+          "neighborhoods": [
+            {
+              "name": "안양동",
+              "slug": "anyang-dong",
+              "legalName": "경기도 안양시 만안구 안양동",
+              "code": "4117110100",
+              "district": "만안구"
+            },
+            {
+              "name": "석수동",
+              "slug": "seoksu-dong",
+              "legalName": "경기도 안양시 만안구 석수동",
+              "code": "4117110200",
+              "district": "만안구"
+            },
+            {
+              "name": "박달동",
+              "slug": "bakdal-dong",
+              "legalName": "경기도 안양시 만안구 박달동",
+              "code": "4117110300",
+              "district": "만안구"
+            },
+            {
+              "name": "비산동",
+              "slug": "bisan-dong",
+              "legalName": "경기도 안양시 동안구 비산동",
+              "code": "4117310100",
+              "district": "동안구"
+            },
+            {
+              "name": "관양동",
+              "slug": "gwanyang-dong",
+              "legalName": "경기도 안양시 동안구 관양동",
+              "code": "4117310200",
+              "district": "동안구"
+            },
+            {
+              "name": "평촌동",
+              "slug": "pyeongchon-dong",
+              "legalName": "경기도 안양시 동안구 평촌동",
+              "code": "4117310300",
+              "district": "동안구"
+            },
+            {
+              "name": "호계동",
+              "slug": "hogye-dong",
+              "legalName": "경기도 안양시 동안구 호계동",
+              "code": "4117310400",
+              "district": "동안구"
+            }
+          ]
+        },
+        {
+          "id": "siheung-si",
+          "name": "시흥시",
+          "shortName": "시흥",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 시흥시",
+          "legalCode": "4139000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "대야동",
+              "slug": "daeya-dong",
+              "legalName": "경기도 시흥시 대야동",
+              "code": "4139010100"
+            },
+            {
+              "name": "신천동",
+              "slug": "sincheon-dong",
+              "legalName": "경기도 시흥시 신천동",
+              "code": "4139010200"
+            },
+            {
+              "name": "방산동",
+              "slug": "bangsan-dong",
+              "legalName": "경기도 시흥시 방산동",
+              "code": "4139010300"
+            },
+            {
+              "name": "포동",
+              "slug": "po-dong",
+              "legalName": "경기도 시흥시 포동",
+              "code": "4139010400"
+            },
+            {
+              "name": "미산동",
+              "slug": "misan-dong",
+              "legalName": "경기도 시흥시 미산동",
+              "code": "4139010500"
+            },
+            {
+              "name": "은행동",
+              "slug": "eunhaeng-dong",
+              "legalName": "경기도 시흥시 은행동",
+              "code": "4139010600"
+            },
+            {
+              "name": "안현동",
+              "slug": "anhyeon-dong",
+              "legalName": "경기도 시흥시 안현동",
+              "code": "4139010700"
+            },
+            {
+              "name": "매화동",
+              "slug": "maehwa-dong",
+              "legalName": "경기도 시흥시 매화동",
+              "code": "4139010800"
+            },
+            {
+              "name": "도창동",
+              "slug": "dochang-dong",
+              "legalName": "경기도 시흥시 도창동",
+              "code": "4139010900"
+            },
+            {
+              "name": "금이동",
+              "slug": "geumi-dong",
+              "legalName": "경기도 시흥시 금이동",
+              "code": "4139011000"
+            },
+            {
+              "name": "과림동",
+              "slug": "gwarim-dong",
+              "legalName": "경기도 시흥시 과림동",
+              "code": "4139011200"
+            },
+            {
+              "name": "계수동",
+              "slug": "gyesu-dong",
+              "legalName": "경기도 시흥시 계수동",
+              "code": "4139011300"
+            },
+            {
+              "name": "화정동",
+              "slug": "hwajeong-dong",
+              "legalName": "경기도 시흥시 화정동",
+              "code": "4139011700"
+            },
+            {
+              "name": "능곡동",
+              "slug": "neunggok-dong",
+              "legalName": "경기도 시흥시 능곡동",
+              "code": "4139011800"
+            },
+            {
+              "name": "하중동",
+              "slug": "hajung-dong",
+              "legalName": "경기도 시흥시 하중동",
+              "code": "4139011900"
+            },
+            {
+              "name": "하상동",
+              "slug": "hasang-dong",
+              "legalName": "경기도 시흥시 하상동",
+              "code": "4139012000"
+            },
+            {
+              "name": "광석동",
+              "slug": "gwangseok-dong",
+              "legalName": "경기도 시흥시 광석동",
+              "code": "4139012100"
+            },
+            {
+              "name": "물왕동",
+              "slug": "mulwang-dong",
+              "legalName": "경기도 시흥시 물왕동",
+              "code": "4139012200"
+            },
+            {
+              "name": "산현동",
+              "slug": "sanhyeon-dong",
+              "legalName": "경기도 시흥시 산현동",
+              "code": "4139012300"
+            },
+            {
+              "name": "조남동",
+              "slug": "jonam-dong",
+              "legalName": "경기도 시흥시 조남동",
+              "code": "4139012400"
+            },
+            {
+              "name": "논곡동",
+              "slug": "nongok-dong",
+              "legalName": "경기도 시흥시 논곡동",
+              "code": "4139012500"
+            },
+            {
+              "name": "목감동",
+              "slug": "mokgam-dong",
+              "legalName": "경기도 시흥시 목감동",
+              "code": "4139012600"
+            },
+            {
+              "name": "거모동",
+              "slug": "geomo-dong",
+              "legalName": "경기도 시흥시 거모동",
+              "code": "4139012700"
+            },
+            {
+              "name": "군자동",
+              "slug": "gunja-dong",
+              "legalName": "경기도 시흥시 군자동",
+              "code": "4139012800"
+            },
+            {
+              "name": "장현동",
+              "slug": "janghyeon-dong",
+              "legalName": "경기도 시흥시 장현동",
+              "code": "4139012900"
+            },
+            {
+              "name": "장곡동",
+              "slug": "janggok-dong",
+              "legalName": "경기도 시흥시 장곡동",
+              "code": "4139013000"
+            },
+            {
+              "name": "월곶동",
+              "slug": "wolgot-dong",
+              "legalName": "경기도 시흥시 월곶동",
+              "code": "4139013100"
+            },
+            {
+              "name": "정왕동",
+              "slug": "jeongwang-dong",
+              "legalName": "경기도 시흥시 정왕동",
+              "code": "4139013200"
+            },
+            {
+              "name": "죽율동",
+              "slug": "jukyul-dong",
+              "legalName": "경기도 시흥시 죽율동",
+              "code": "4139013300"
+            },
+            {
+              "name": "무지내동",
+              "slug": "mujinae-dong",
+              "legalName": "경기도 시흥시 무지내동",
+              "code": "4139013400"
+            },
+            {
+              "name": "배곧동",
+              "slug": "baegot-dong",
+              "legalName": "경기도 시흥시 배곧동",
+              "code": "4139013500"
+            }
+          ]
+        },
+        {
+          "id": "gimpo-si",
+          "name": "김포시",
+          "shortName": "김포",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 김포시",
+          "legalCode": "4157000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "북변동",
+              "slug": "bukbyeon-dong",
+              "legalName": "경기도 김포시 북변동",
+              "code": "4157010100"
+            },
+            {
+              "name": "걸포동",
+              "slug": "geolpo-dong",
+              "legalName": "경기도 김포시 걸포동",
+              "code": "4157010200"
+            },
+            {
+              "name": "운양동",
+              "slug": "unyang-dong",
+              "legalName": "경기도 김포시 운양동",
+              "code": "4157010300"
+            },
+            {
+              "name": "장기동",
+              "slug": "janggi-dong",
+              "legalName": "경기도 김포시 장기동",
+              "code": "4157010400"
+            },
+            {
+              "name": "감정동",
+              "slug": "gamjeong-dong",
+              "legalName": "경기도 김포시 감정동",
+              "code": "4157010500"
+            },
+            {
+              "name": "사우동",
+              "slug": "sau-dong",
+              "legalName": "경기도 김포시 사우동",
+              "code": "4157010600"
+            },
+            {
+              "name": "풍무동",
+              "slug": "pungmu-dong",
+              "legalName": "경기도 김포시 풍무동",
+              "code": "4157010700"
+            },
+            {
+              "name": "마산동",
+              "slug": "masan-dong",
+              "legalName": "경기도 김포시 마산동",
+              "code": "4157010800"
+            },
+            {
+              "name": "구래동",
+              "slug": "gurae-dong",
+              "legalName": "경기도 김포시 구래동",
+              "code": "4157010900"
+            }
+          ]
+        },
+        {
+          "id": "hanam-si",
+          "name": "하남시",
+          "shortName": "하남",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 하남시",
+          "legalCode": "4145000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "천현동",
+              "slug": "cheonhyeon-dong",
+              "legalName": "경기도 하남시 천현동",
+              "code": "4145010100"
+            },
+            {
+              "name": "하산곡동",
+              "slug": "hasangok-dong",
+              "legalName": "경기도 하남시 하산곡동",
+              "code": "4145010200"
+            },
+            {
+              "name": "창우동",
+              "slug": "changu-dong",
+              "legalName": "경기도 하남시 창우동",
+              "code": "4145010300"
+            },
+            {
+              "name": "배알미동",
+              "slug": "baealmi-dong",
+              "legalName": "경기도 하남시 배알미동",
+              "code": "4145010400"
+            },
+            {
+              "name": "상산곡동",
+              "slug": "sangsangok-dong",
+              "legalName": "경기도 하남시 상산곡동",
+              "code": "4145010500"
+            },
+            {
+              "name": "신장동",
+              "slug": "sinjang-dong",
+              "legalName": "경기도 하남시 신장동",
+              "code": "4145010600"
+            },
+            {
+              "name": "당정동",
+              "slug": "dangjeong-dong",
+              "legalName": "경기도 하남시 당정동",
+              "code": "4145010700"
+            },
+            {
+              "name": "덕풍동",
+              "slug": "deokpung-dong",
+              "legalName": "경기도 하남시 덕풍동",
+              "code": "4145010800"
+            },
+            {
+              "name": "망월동",
+              "slug": "mangwol-dong",
+              "legalName": "경기도 하남시 망월동",
+              "code": "4145010900"
+            },
+            {
+              "name": "풍산동",
+              "slug": "pungsan-dong",
+              "legalName": "경기도 하남시 풍산동",
+              "code": "4145011000"
+            },
+            {
+              "name": "미사동",
+              "slug": "misa-dong",
+              "legalName": "경기도 하남시 미사동",
+              "code": "4145011100"
+            },
+            {
+              "name": "선동",
+              "slug": "seon-dong",
+              "legalName": "경기도 하남시 선동",
+              "code": "4145011200"
+            },
+            {
+              "name": "감북동",
+              "slug": "gambuk-dong",
+              "legalName": "경기도 하남시 감북동",
+              "code": "4145011300"
+            },
+            {
+              "name": "감일동",
+              "slug": "gamil-dong",
+              "legalName": "경기도 하남시 감일동",
+              "code": "4145011400"
+            },
+            {
+              "name": "감이동",
+              "slug": "gami-dong",
+              "legalName": "경기도 하남시 감이동",
+              "code": "4145011500"
+            },
+            {
+              "name": "학암동",
+              "slug": "hakam-dong",
+              "legalName": "경기도 하남시 학암동",
+              "code": "4145011600"
+            },
+            {
+              "name": "교산동",
+              "slug": "gyosan-dong",
+              "legalName": "경기도 하남시 교산동",
+              "code": "4145011700"
+            },
+            {
+              "name": "춘궁동",
+              "slug": "chungung-dong",
+              "legalName": "경기도 하남시 춘궁동",
+              "code": "4145011800"
+            },
+            {
+              "name": "하사창동",
+              "slug": "hasachang-dong",
+              "legalName": "경기도 하남시 하사창동",
+              "code": "4145011900"
+            },
+            {
+              "name": "상사창동",
+              "slug": "sangsachang-dong",
+              "legalName": "경기도 하남시 상사창동",
+              "code": "4145012000"
+            },
+            {
+              "name": "항동",
+              "slug": "hang-dong",
+              "legalName": "경기도 하남시 항동",
+              "code": "4145012100"
+            },
+            {
+              "name": "초일동",
+              "slug": "choil-dong",
+              "legalName": "경기도 하남시 초일동",
+              "code": "4145012200"
+            },
+            {
+              "name": "초이동",
+              "slug": "choi-dong",
+              "legalName": "경기도 하남시 초이동",
+              "code": "4145012300"
+            },
+            {
+              "name": "광암동",
+              "slug": "gwangam-dong",
+              "legalName": "경기도 하남시 광암동",
+              "code": "4145012400"
+            }
+          ]
+        },
+        {
+          "id": "gwangmyeong-si",
+          "name": "광명시",
+          "shortName": "광명",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 광명시",
+          "legalCode": "4121000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "광명동",
+              "slug": "gwangmyeong-dong",
+              "legalName": "경기도 광명시 광명동",
+              "code": "4121010100"
+            },
+            {
+              "name": "철산동",
+              "slug": "cheolsan-dong",
+              "legalName": "경기도 광명시 철산동",
+              "code": "4121010200"
+            },
+            {
+              "name": "하안동",
+              "slug": "haan-dong",
+              "legalName": "경기도 광명시 하안동",
+              "code": "4121010300"
+            },
+            {
+              "name": "소하동",
+              "slug": "soha-dong",
+              "legalName": "경기도 광명시 소하동",
+              "code": "4121010400"
+            },
+            {
+              "name": "노온사동",
+              "slug": "noonsa-dong",
+              "legalName": "경기도 광명시 노온사동",
+              "code": "4121010500"
+            },
+            {
+              "name": "일직동",
+              "slug": "iljik-dong",
+              "legalName": "경기도 광명시 일직동",
+              "code": "4121010600"
+            },
+            {
+              "name": "가학동",
+              "slug": "gahak-dong",
+              "legalName": "경기도 광명시 가학동",
+              "code": "4121010700"
+            },
+            {
+              "name": "옥길동",
+              "slug": "okgil-dong",
+              "legalName": "경기도 광명시 옥길동",
+              "code": "4121010800"
+            }
+          ]
+        },
+        {
+          "id": "gunpo-si",
+          "name": "군포시",
+          "shortName": "군포",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 군포시",
+          "legalCode": "4141000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "당동",
+              "slug": "dang-dong",
+              "legalName": "경기도 군포시 당동",
+              "code": "4141010100"
+            },
+            {
+              "name": "당정동",
+              "slug": "dangjeong-dong",
+              "legalName": "경기도 군포시 당정동",
+              "code": "4141010200"
+            },
+            {
+              "name": "부곡동",
+              "slug": "bugok-dong",
+              "legalName": "경기도 군포시 부곡동",
+              "code": "4141010300"
+            },
+            {
+              "name": "산본동",
+              "slug": "sanbon-dong",
+              "legalName": "경기도 군포시 산본동",
+              "code": "4141010400"
+            },
+            {
+              "name": "금정동",
+              "slug": "geumjeong-dong",
+              "legalName": "경기도 군포시 금정동",
+              "code": "4141010500"
+            },
+            {
+              "name": "둔대동",
+              "slug": "dundae-dong",
+              "legalName": "경기도 군포시 둔대동",
+              "code": "4141010600"
+            },
+            {
+              "name": "속달동",
+              "slug": "sokdal-dong",
+              "legalName": "경기도 군포시 속달동",
+              "code": "4141010700"
+            },
+            {
+              "name": "대야미동",
+              "slug": "daeyami-dong",
+              "legalName": "경기도 군포시 대야미동",
+              "code": "4141010800"
+            },
+            {
+              "name": "도마교동",
+              "slug": "domagyo-dong",
+              "legalName": "경기도 군포시 도마교동",
+              "code": "4141010900"
+            }
+          ]
+        },
+        {
+          "id": "uiwang-si",
+          "name": "의왕시",
+          "shortName": "의왕",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 의왕시",
+          "legalCode": "4143000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "고천동",
+              "slug": "gocheon-dong",
+              "legalName": "경기도 의왕시 고천동",
+              "code": "4143010100"
+            },
+            {
+              "name": "이동",
+              "slug": "i-dong",
+              "legalName": "경기도 의왕시 이동",
+              "code": "4143010200"
+            },
+            {
+              "name": "삼동",
+              "slug": "sam-dong",
+              "legalName": "경기도 의왕시 삼동",
+              "code": "4143010300"
+            },
+            {
+              "name": "왕곡동",
+              "slug": "wanggok-dong",
+              "legalName": "경기도 의왕시 왕곡동",
+              "code": "4143010400"
+            },
+            {
+              "name": "오전동",
+              "slug": "ojeon-dong",
+              "legalName": "경기도 의왕시 오전동",
+              "code": "4143010500"
+            },
+            {
+              "name": "학의동",
+              "slug": "hakui-dong",
+              "legalName": "경기도 의왕시 학의동",
+              "code": "4143010600"
+            },
+            {
+              "name": "내손동",
+              "slug": "naeson-dong",
+              "legalName": "경기도 의왕시 내손동",
+              "code": "4143010700"
+            },
+            {
+              "name": "청계동",
+              "slug": "cheonggye-dong",
+              "legalName": "경기도 의왕시 청계동",
+              "code": "4143010800"
+            },
+            {
+              "name": "포일동",
+              "slug": "poil-dong",
+              "legalName": "경기도 의왕시 포일동",
+              "code": "4143010900"
+            },
+            {
+              "name": "월암동",
+              "slug": "wolam-dong",
+              "legalName": "경기도 의왕시 월암동",
+              "code": "4143011000"
+            },
+            {
+              "name": "초평동",
+              "slug": "chopyeong-dong",
+              "legalName": "경기도 의왕시 초평동",
+              "code": "4143011100"
+            }
+          ]
+        },
+        {
+          "id": "gwacheon-si",
+          "name": "과천시",
+          "shortName": "과천",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 과천시",
+          "legalCode": "4129000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "관문동",
+              "slug": "gwanmun-dong",
+              "legalName": "경기도 과천시 관문동",
+              "code": "4129010100"
+            },
+            {
+              "name": "문원동",
+              "slug": "munwon-dong",
+              "legalName": "경기도 과천시 문원동",
+              "code": "4129010200"
+            },
+            {
+              "name": "갈현동",
+              "slug": "galhyeon-dong",
+              "legalName": "경기도 과천시 갈현동",
+              "code": "4129010300"
+            },
+            {
+              "name": "막계동",
+              "slug": "makgye-dong",
+              "legalName": "경기도 과천시 막계동",
+              "code": "4129010400"
+            },
+            {
+              "name": "과천동",
+              "slug": "gwacheon-dong",
+              "legalName": "경기도 과천시 과천동",
+              "code": "4129010500"
+            },
+            {
+              "name": "주암동",
+              "slug": "juam-dong",
+              "legalName": "경기도 과천시 주암동",
+              "code": "4129010600"
+            },
+            {
+              "name": "중앙동",
+              "slug": "jungang-dong",
+              "legalName": "경기도 과천시 중앙동",
+              "code": "4129010700"
+            },
+            {
+              "name": "원문동",
+              "slug": "wonmun-dong",
+              "legalName": "경기도 과천시 원문동",
+              "code": "4129010800"
+            },
+            {
+              "name": "별양동",
+              "slug": "byeolyang-dong",
+              "legalName": "경기도 과천시 별양동",
+              "code": "4129010900"
+            },
+            {
+              "name": "부림동",
+              "slug": "burim-dong",
+              "legalName": "경기도 과천시 부림동",
+              "code": "4129011000"
+            }
+          ]
+        },
+        {
+          "id": "goyang-si",
+          "name": "고양시",
+          "shortName": "고양",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 고양시",
+          "legalCode": "4128000000",
+          "districts": [
+            {
+              "name": "덕양구",
+              "slug": "deokyang-gu"
+            },
+            {
+              "name": "일산동구",
+              "slug": "ilsandong-gu"
+            },
+            {
+              "name": "일산서구",
+              "slug": "ilsanseo-gu"
+            }
+          ],
+          "neighborhoods": [
+            {
+              "name": "주교동",
+              "slug": "jugyo-dong",
+              "legalName": "경기도 고양시 덕양구 주교동",
+              "code": "4128110100",
+              "district": "덕양구"
+            },
+            {
+              "name": "원당동",
+              "slug": "wondang-dong",
+              "legalName": "경기도 고양시 덕양구 원당동",
+              "code": "4128110200",
+              "district": "덕양구"
+            },
+            {
+              "name": "신원동",
+              "slug": "sinwon-dong",
+              "legalName": "경기도 고양시 덕양구 신원동",
+              "code": "4128110300",
+              "district": "덕양구"
+            },
+            {
+              "name": "원흥동",
+              "slug": "wonheung-dong",
+              "legalName": "경기도 고양시 덕양구 원흥동",
+              "code": "4128110400",
+              "district": "덕양구"
+            },
+            {
+              "name": "도내동",
+              "slug": "donae-dong",
+              "legalName": "경기도 고양시 덕양구 도내동",
+              "code": "4128110500",
+              "district": "덕양구"
+            },
+            {
+              "name": "성사동",
+              "slug": "seongsa-dong",
+              "legalName": "경기도 고양시 덕양구 성사동",
+              "code": "4128110600",
+              "district": "덕양구"
+            },
+            {
+              "name": "북한동",
+              "slug": "bukhan-dong",
+              "legalName": "경기도 고양시 덕양구 북한동",
+              "code": "4128110700",
+              "district": "덕양구"
+            },
+            {
+              "name": "효자동",
+              "slug": "hyoja-dong",
+              "legalName": "경기도 고양시 덕양구 효자동",
+              "code": "4128110800",
+              "district": "덕양구"
+            },
+            {
+              "name": "지축동",
+              "slug": "jichuk-dong",
+              "legalName": "경기도 고양시 덕양구 지축동",
+              "code": "4128110900",
+              "district": "덕양구"
+            },
+            {
+              "name": "오금동",
+              "slug": "ogeum-dong",
+              "legalName": "경기도 고양시 덕양구 오금동",
+              "code": "4128111000",
+              "district": "덕양구"
+            },
+            {
+              "name": "삼송동",
+              "slug": "samsong-dong",
+              "legalName": "경기도 고양시 덕양구 삼송동",
+              "code": "4128111100",
+              "district": "덕양구"
+            },
+            {
+              "name": "동산동",
+              "slug": "dongsan-dong",
+              "legalName": "경기도 고양시 덕양구 동산동",
+              "code": "4128111200",
+              "district": "덕양구"
+            },
+            {
+              "name": "용두동",
+              "slug": "yongdu-dong",
+              "legalName": "경기도 고양시 덕양구 용두동",
+              "code": "4128111300",
+              "district": "덕양구"
+            },
+            {
+              "name": "벽제동",
+              "slug": "byeokje-dong",
+              "legalName": "경기도 고양시 덕양구 벽제동",
+              "code": "4128111400",
+              "district": "덕양구"
+            },
+            {
+              "name": "선유동",
+              "slug": "seonyu-dong",
+              "legalName": "경기도 고양시 덕양구 선유동",
+              "code": "4128111500",
+              "district": "덕양구"
+            },
+            {
+              "name": "고양동",
+              "slug": "goyang-dong",
+              "legalName": "경기도 고양시 덕양구 고양동",
+              "code": "4128111600",
+              "district": "덕양구"
+            },
+            {
+              "name": "대자동",
+              "slug": "daeja-dong",
+              "legalName": "경기도 고양시 덕양구 대자동",
+              "code": "4128111700",
+              "district": "덕양구"
+            },
+            {
+              "name": "관산동",
+              "slug": "gwansan-dong",
+              "legalName": "경기도 고양시 덕양구 관산동",
+              "code": "4128111800",
+              "district": "덕양구"
+            },
+            {
+              "name": "내유동",
+              "slug": "naeyu-dong",
+              "legalName": "경기도 고양시 덕양구 내유동",
+              "code": "4128111900",
+              "district": "덕양구"
+            },
+            {
+              "name": "토당동",
+              "slug": "todang-dong",
+              "legalName": "경기도 고양시 덕양구 토당동",
+              "code": "4128112000",
+              "district": "덕양구"
+            },
+            {
+              "name": "내곡동",
+              "slug": "naegok-dong",
+              "legalName": "경기도 고양시 덕양구 내곡동",
+              "code": "4128112100",
+              "district": "덕양구"
+            },
+            {
+              "name": "대장동",
+              "slug": "daejang-dong",
+              "legalName": "경기도 고양시 덕양구 대장동",
+              "code": "4128112200",
+              "district": "덕양구"
+            },
+            {
+              "name": "화정동",
+              "slug": "hwajeong-dong",
+              "legalName": "경기도 고양시 덕양구 화정동",
+              "code": "4128112300",
+              "district": "덕양구"
+            },
+            {
+              "name": "강매동",
+              "slug": "gangmae-dong",
+              "legalName": "경기도 고양시 덕양구 강매동",
+              "code": "4128112400",
+              "district": "덕양구"
+            },
+            {
+              "name": "행주내동",
+              "slug": "haengjunae-dong",
+              "legalName": "경기도 고양시 덕양구 행주내동",
+              "code": "4128112500",
+              "district": "덕양구"
+            },
+            {
+              "name": "행주외동",
+              "slug": "haengjuoe-dong",
+              "legalName": "경기도 고양시 덕양구 행주외동",
+              "code": "4128112600",
+              "district": "덕양구"
+            },
+            {
+              "name": "신평동",
+              "slug": "sinpyeong-dong",
+              "legalName": "경기도 고양시 덕양구 신평동",
+              "code": "4128112700",
+              "district": "덕양구"
+            },
+            {
+              "name": "행신동",
+              "slug": "haengsin-dong",
+              "legalName": "경기도 고양시 덕양구 행신동",
+              "code": "4128112800",
+              "district": "덕양구"
+            },
+            {
+              "name": "화전동",
+              "slug": "hwajeon-dong",
+              "legalName": "경기도 고양시 덕양구 화전동",
+              "code": "4128112900",
+              "district": "덕양구"
+            },
+            {
+              "name": "현천동",
+              "slug": "hyeoncheon-dong",
+              "legalName": "경기도 고양시 덕양구 현천동",
+              "code": "4128113000",
+              "district": "덕양구"
+            },
+            {
+              "name": "덕은동",
+              "slug": "deokeun-dong",
+              "legalName": "경기도 고양시 덕양구 덕은동",
+              "code": "4128113100",
+              "district": "덕양구"
+            },
+            {
+              "name": "향동동",
+              "slug": "hyangdong-dong",
+              "legalName": "경기도 고양시 덕양구 향동동",
+              "code": "4128113200",
+              "district": "덕양구"
+            },
+            {
+              "name": "식사동",
+              "slug": "siksa-dong",
+              "legalName": "경기도 고양시 일산동구 식사동",
+              "code": "4128510100",
+              "district": "일산동구"
+            },
+            {
+              "name": "중산동",
+              "slug": "jungsan-dong",
+              "legalName": "경기도 고양시 일산동구 중산동",
+              "code": "4128510200",
+              "district": "일산동구"
+            },
+            {
+              "name": "정발산동",
+              "slug": "jeongbalsan-dong",
+              "legalName": "경기도 고양시 일산동구 정발산동",
+              "code": "4128510300",
+              "district": "일산동구"
+            },
+            {
+              "name": "장항동",
+              "slug": "janghang-dong",
+              "legalName": "경기도 고양시 일산동구 장항동",
+              "code": "4128510400",
+              "district": "일산동구"
+            },
+            {
+              "name": "마두동",
+              "slug": "madu-dong",
+              "legalName": "경기도 고양시 일산동구 마두동",
+              "code": "4128510500",
+              "district": "일산동구"
+            },
+            {
+              "name": "백석동",
+              "slug": "baekseok-dong",
+              "legalName": "경기도 고양시 일산동구 백석동",
+              "code": "4128510600",
+              "district": "일산동구"
+            },
+            {
+              "name": "풍동",
+              "slug": "pung-dong",
+              "legalName": "경기도 고양시 일산동구 풍동",
+              "code": "4128510700",
+              "district": "일산동구"
+            },
+            {
+              "name": "산황동",
+              "slug": "sanhwang-dong",
+              "legalName": "경기도 고양시 일산동구 산황동",
+              "code": "4128510800",
+              "district": "일산동구"
+            },
+            {
+              "name": "사리현동",
+              "slug": "sarihyeon-dong",
+              "legalName": "경기도 고양시 일산동구 사리현동",
+              "code": "4128510900",
+              "district": "일산동구"
+            },
+            {
+              "name": "지영동",
+              "slug": "jiyeong-dong",
+              "legalName": "경기도 고양시 일산동구 지영동",
+              "code": "4128511000",
+              "district": "일산동구"
+            },
+            {
+              "name": "설문동",
+              "slug": "seolmun-dong",
+              "legalName": "경기도 고양시 일산동구 설문동",
+              "code": "4128511100",
+              "district": "일산동구"
+            },
+            {
+              "name": "문봉동",
+              "slug": "munbong-dong",
+              "legalName": "경기도 고양시 일산동구 문봉동",
+              "code": "4128511200",
+              "district": "일산동구"
+            },
+            {
+              "name": "성석동",
+              "slug": "seongseok-dong",
+              "legalName": "경기도 고양시 일산동구 성석동",
+              "code": "4128511300",
+              "district": "일산동구"
+            },
+            {
+              "name": "일산동",
+              "slug": "ilsan-dong",
+              "legalName": "경기도 고양시 일산서구 일산동",
+              "code": "4128710100",
+              "district": "일산서구"
+            },
+            {
+              "name": "주엽동",
+              "slug": "juyeop-dong",
+              "legalName": "경기도 고양시 일산서구 주엽동",
+              "code": "4128710200",
+              "district": "일산서구"
+            },
+            {
+              "name": "탄현동",
+              "slug": "tanhyeon-dong",
+              "legalName": "경기도 고양시 일산서구 탄현동",
+              "code": "4128710300",
+              "district": "일산서구"
+            },
+            {
+              "name": "대화동",
+              "slug": "daehwa-dong",
+              "legalName": "경기도 고양시 일산서구 대화동",
+              "code": "4128710400",
+              "district": "일산서구"
+            },
+            {
+              "name": "덕이동",
+              "slug": "deoki-dong",
+              "legalName": "경기도 고양시 일산서구 덕이동",
+              "code": "4128710500",
+              "district": "일산서구"
+            },
+            {
+              "name": "가좌동",
+              "slug": "gajwa-dong",
+              "legalName": "경기도 고양시 일산서구 가좌동",
+              "code": "4128710600",
+              "district": "일산서구"
+            },
+            {
+              "name": "구산동",
+              "slug": "gusan-dong",
+              "legalName": "경기도 고양시 일산서구 구산동",
+              "code": "4128710700",
+              "district": "일산서구"
+            },
+            {
+              "name": "법곳동",
+              "slug": "beopgot-dong",
+              "legalName": "경기도 고양시 일산서구 법곳동",
+              "code": "4128710800",
+              "district": "일산서구"
+            }
+          ]
+        },
+        {
+          "id": "yongin-si",
+          "name": "용인시",
+          "shortName": "용인",
+          "type": "si",
+          "province": "경기도",
+          "fullName": "경기도 용인시",
+          "legalCode": "4146000000",
+          "districts": [
+            {
+              "name": "기흥구",
+              "slug": "giheung-gu"
+            },
+            {
+              "name": "수지구",
+              "slug": "suji-gu"
+            }
+          ],
+          "neighborhoods": [
+            {
+              "name": "신갈동",
+              "slug": "singal-dong",
+              "legalName": "경기도 용인시 기흥구 신갈동",
+              "code": "4146310100",
+              "district": "기흥구"
+            },
+            {
+              "name": "구갈동",
+              "slug": "gugal-dong",
+              "legalName": "경기도 용인시 기흥구 구갈동",
+              "code": "4146310200",
+              "district": "기흥구"
+            },
+            {
+              "name": "상갈동",
+              "slug": "sanggal-dong",
+              "legalName": "경기도 용인시 기흥구 상갈동",
+              "code": "4146310300",
+              "district": "기흥구"
+            },
+            {
+              "name": "하갈동",
+              "slug": "hagal-dong",
+              "legalName": "경기도 용인시 기흥구 하갈동",
+              "code": "4146310400",
+              "district": "기흥구"
+            },
+            {
+              "name": "보라동",
+              "slug": "bora-dong",
+              "legalName": "경기도 용인시 기흥구 보라동",
+              "code": "4146310500",
+              "district": "기흥구"
+            },
+            {
+              "name": "지곡동",
+              "slug": "jigok-dong",
+              "legalName": "경기도 용인시 기흥구 지곡동",
+              "code": "4146310600",
+              "district": "기흥구"
+            },
+            {
+              "name": "공세동",
+              "slug": "gongse-dong",
+              "legalName": "경기도 용인시 기흥구 공세동",
+              "code": "4146310700",
+              "district": "기흥구"
+            },
+            {
+              "name": "고매동",
+              "slug": "gomae-dong",
+              "legalName": "경기도 용인시 기흥구 고매동",
+              "code": "4146310800",
+              "district": "기흥구"
+            },
+            {
+              "name": "농서동",
+              "slug": "nongseo-dong",
+              "legalName": "경기도 용인시 기흥구 농서동",
+              "code": "4146310900",
+              "district": "기흥구"
+            },
+            {
+              "name": "서천동",
+              "slug": "seocheon-dong",
+              "legalName": "경기도 용인시 기흥구 서천동",
+              "code": "4146311000",
+              "district": "기흥구"
+            },
+            {
+              "name": "영덕동",
+              "slug": "yeongdeok-dong",
+              "legalName": "경기도 용인시 기흥구 영덕동",
+              "code": "4146311100",
+              "district": "기흥구"
+            },
+            {
+              "name": "언남동",
+              "slug": "eonnam-dong",
+              "legalName": "경기도 용인시 기흥구 언남동",
+              "code": "4146311200",
+              "district": "기흥구"
+            },
+            {
+              "name": "마북동",
+              "slug": "mabuk-dong",
+              "legalName": "경기도 용인시 기흥구 마북동",
+              "code": "4146311300",
+              "district": "기흥구"
+            },
+            {
+              "name": "청덕동",
+              "slug": "cheongdeok-dong",
+              "legalName": "경기도 용인시 기흥구 청덕동",
+              "code": "4146311400",
+              "district": "기흥구"
+            },
+            {
+              "name": "동백동",
+              "slug": "dongbaek-dong",
+              "legalName": "경기도 용인시 기흥구 동백동",
+              "code": "4146311500",
+              "district": "기흥구"
+            },
+            {
+              "name": "중동",
+              "slug": "jung-dong",
+              "legalName": "경기도 용인시 기흥구 중동",
+              "code": "4146311600",
+              "district": "기흥구"
+            },
+            {
+              "name": "상하동",
+              "slug": "sangha-dong",
+              "legalName": "경기도 용인시 기흥구 상하동",
+              "code": "4146311700",
+              "district": "기흥구"
+            },
+            {
+              "name": "보정동",
+              "slug": "bojeong-dong",
+              "legalName": "경기도 용인시 기흥구 보정동",
+              "code": "4146311800",
+              "district": "기흥구"
+            },
+            {
+              "name": "풍덕천동",
+              "slug": "pungdeokcheon-dong",
+              "legalName": "경기도 용인시 수지구 풍덕천동",
+              "code": "4146510100",
+              "district": "수지구"
+            },
+            {
+              "name": "죽전동",
+              "slug": "jukjeon-dong",
+              "legalName": "경기도 용인시 수지구 죽전동",
+              "code": "4146510200",
+              "district": "수지구"
+            },
+            {
+              "name": "동천동",
+              "slug": "dongcheon-dong",
+              "legalName": "경기도 용인시 수지구 동천동",
+              "code": "4146510300",
+              "district": "수지구"
+            },
+            {
+              "name": "고기동",
+              "slug": "gogi-dong",
+              "legalName": "경기도 용인시 수지구 고기동",
+              "code": "4146510400",
+              "district": "수지구"
+            },
+            {
+              "name": "신봉동",
+              "slug": "sinbong-dong",
+              "legalName": "경기도 용인시 수지구 신봉동",
+              "code": "4146510500",
+              "district": "수지구"
+            },
+            {
+              "name": "성복동",
+              "slug": "seongbok-dong",
+              "legalName": "경기도 용인시 수지구 성복동",
+              "code": "4146510600",
+              "district": "수지구"
+            },
+            {
+              "name": "상현동",
+              "slug": "sanghyeon-dong",
+              "legalName": "경기도 용인시 수지구 상현동",
+              "code": "4146510700",
+              "district": "수지구"
+            }
+          ],
+          "note": "용인시는 기흥구·수지구 지역을 중심으로 상담 가능하며 처인구는 서비스 대상에서 제외됩니다."
+        }
+      ]
+    }
+  }
+}

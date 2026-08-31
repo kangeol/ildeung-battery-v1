@@ -3,6 +3,12 @@
   "scripts": {
     "convert": "node tools/convert-excel-to-json.js",
     "generate:vehicle-seo": "node tools/generate-vehicle-seo-pages.js",
-    "build:seo": "npm run convert && npm run generate:vehicle-seo"
+    "generate:area-thumbnails": "node tools/generate-area-thumbnails.js",
+    "generate:area-seo": "node tools/generate-area-seo-pages.js",
+    "generate:sitemap": "node tools/generate-sitemap.js",
+    "build:seo": "npm run convert && npm run generate:vehicle-seo && npm run generate:area-thumbnails && npm run generate:area-seo && npm run generate:sitemap"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4"
   }
 }

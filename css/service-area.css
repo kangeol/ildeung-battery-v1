@@ -79,6 +79,18 @@
   gap: 10px;
 }
 
+.area-detail-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 36px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 760;
+  line-height: 1.45;
+  word-break: keep-all;
+}
+
 .area-guide-section {
   padding-top: 22px;
 }
@@ -236,6 +248,12 @@
   .area-hero-actions .btn,
   .area-cta-actions .btn {
     width: 100%;
+  }
+
+  .area-detail-link {
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
   }
 
   .area-guide-figure {
