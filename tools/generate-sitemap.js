@@ -7,7 +7,6 @@ const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, "..");
 const SITEMAP_FILE = path.join(ROOT_DIR, "sitemap.xml");
 const SITE_ORIGIN = "https://battery1.co.kr";
-const TODAY = new Date().toISOString().slice(0, 10);
 
 const STATIC_PAGES = [
   { file: "index.html", urlPath: "/", priority: "1.0" },
@@ -109,7 +108,6 @@ function buildEntries() {
 function renderSitemap(entries) {
   const body = entries.map((entry) => `  <url>
     <loc>${entry.loc}</loc>
-    <lastmod>${TODAY}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${entry.priority}</priority>
   </url>`).join("\n");

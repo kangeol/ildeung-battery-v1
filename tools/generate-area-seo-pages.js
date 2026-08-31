@@ -389,14 +389,14 @@ function renderAreaCta() {
 function renderFaq(locationLabel, type) {
   const questions = type === "neighborhood"
     ? [
-      [`${locationLabel}에서 출장배터리 교체가 가능한가요?`, `${locationLabel}은 일등밧데리 출장배터리 상담 가능 지역입니다. 다만 현장 위치와 일정에 따라 방문 가능 여부는 상담 시 최종 확인됩니다.`],
+      [`${locationLabel}에서 출장배터리 교체가 가능한가요?`, `${locationLabel} 지역은 일등밧데리 출장배터리 상담 가능 지역입니다. 다만 현장 위치와 일정에 따라 방문 가능 여부는 상담 시 최종 확인됩니다.`],
       [`${locationLabel} 자동차배터리 가격은 어떻게 확인하나요?`, "배터리 가격은 차량 규격, AGM 여부, 제품에 따라 달라질 수 있습니다. 배터리 최저가 바로가기에서 현재 판매가격을 확인하고, 출장교체 비용은 전화상담으로 안내받을 수 있습니다."],
       ["아파트 지하주차장에서도 교체 가능한가요?", "현장 진입과 작업 공간이 확보되면 지하주차장에서도 상담 가능합니다. 차량 위치와 주차 환경을 함께 알려주세요."],
       ["AGM 배터리도 교체 가능한가요?", "AGM 배터리는 차량 충전 제어 방식과 코딩 여부 확인이 중요합니다. 차종과 연식을 알려주시면 적용 가능 여부를 안내합니다."],
       ["정확한 배터리 규격은 어떻게 확인하나요?", "차량별 배터리 찾기에서 제조사, 차량명, 세부모델을 선택하거나 1644-9141로 문의해 주세요."]
     ]
     : [
-      [`${locationLabel} 출장배터리 교체가 가능한가요?`, `${locationLabel}은 일등밧데리 출장배터리 상담 가능 지역입니다. 일부 위치는 이동 거리와 일정에 따라 서비스가 제한될 수 있습니다.`],
+      [`${locationLabel} 출장배터리 교체가 가능한가요?`, `${locationLabel} 지역은 일등밧데리 출장배터리 상담 가능 지역입니다. 일부 위치는 이동 거리와 일정에 따라 서비스가 제한될 수 있습니다.`],
       [`${locationLabel} 자동차배터리 가격은 얼마인가요?`, "자동차배터리 가격은 규격과 AGM 여부에 따라 달라집니다. 고정 가격을 임의로 안내하지 않고, 현재 판매가격과 출장교체 상담을 구분해 안내합니다."],
       ["AGM 배터리도 출장교체 가능한가요?", "AGM 배터리 적용 차량은 차종별 규격 확인이 필요합니다. 차량 정보를 알려주시면 교체 가능 여부와 상담 방향을 안내합니다."],
       ["수입차 배터리 코딩도 가능한가요?", "수입차는 차종에 따라 진단기 확인이나 코딩이 필요할 수 있습니다. 정확한 가능 여부는 차량 정보를 기준으로 상담합니다."],
@@ -483,10 +483,10 @@ function getLocalContextCopy(area, region, neighborhood, duplicatesByArea) {
   const regionName = region.name;
   const neighborhoodName = neighborhood.name;
   const variants = [
-    `${localLabel}은 일등밧데리 출장배터리 서비스 가능 지역입니다. 차량 위치와 차종을 확인한 뒤 자동차배터리 규격 및 방문 교체 상담을 안내합니다.`,
+    `${localLabel} 지역은 일등밧데리 출장배터리 서비스 가능 지역입니다. 차량 위치와 차종을 확인한 뒤 자동차배터리 규격 및 방문 교체 상담을 안내합니다.`,
     `${neighborhoodName}에서 자동차배터리 교체가 필요한 경우 차량 위치와 세부모델을 확인해 출장배터리 상담을 받을 수 있습니다. ${regionName} 서비스 가능지역으로 상담 후 방문 일정을 안내합니다.`,
     `${localLabel}에서는 자동차배터리 방전, 시동 불량, 배터리 교체 상담이 가능합니다. 차량별 배터리 규격과 배터리 가격을 먼저 확인하면 더 정확한 안내를 받을 수 있습니다.`,
-    `${neighborhoodName}은 일등밧데리 출장배터리 가능 지역에 포함됩니다. ${regionName} 내 차량 사양에 맞춰 일반 DIN 배터리와 AGM 배터리 규격을 확인한 뒤 교체 상담을 안내합니다.`
+    `${neighborhoodName} 지역은 일등밧데리 출장배터리 가능 지역에 포함됩니다. ${regionName} 내 차량 사양에 맞춰 일반 DIN 배터리와 AGM 배터리 규격을 확인한 뒤 교체 상담을 안내합니다.`
   ];
   const key = `${area.id}:${region.id}:${neighborhood.slug}:${neighborhood.code || ""}`;
 
@@ -628,6 +628,7 @@ function renderRegionPage(area, region) {
   const imagePath = regionThumbnailPath(area, region);
   const titleLabel = regionTitleLabel(area, region);
   const h1Label = regionH1Label(area, region);
+  const faqLabel = area.id === "gyeonggi" ? `${area.name} ${region.name}` : titleLabel;
   const breadcrumbs = [
     { label: "홈", href: "/" },
     { label: "출장배터리 서비스 지역", href: "/area/" },
@@ -667,7 +668,7 @@ function renderRegionPage(area, region) {
       ${renderPriceLinks()}
       ${renderAreaCta()}
       ${renderReplacementProcess()}
-      ${renderFaq(h1Label, "region")}`;
+      ${renderFaq(faqLabel, "region")}`;
 
   return renderShell({
     depth: 2,
