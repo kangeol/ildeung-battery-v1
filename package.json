@@ -3,12 +3,13 @@
   "scripts": {
     "convert": "node tools/convert-excel-to-json.js",
     "generate:vehicle-seo": "node tools/generate-vehicle-seo-pages.js",
+    "generate:vehicle-thumbnails": "node tools/generate-vehicle-thumbnails.js",
     "generate:area-thumbnails": "node tools/generate-area-thumbnails.js",
     "generate:area-seo": "node tools/generate-area-seo-pages.js",
     "generate:battery-thumbnails": "node tools/generate-battery-topic-thumbnails.js",
     "generate:battery-seo": "node tools/generate-battery-seo-pages.js",
     "generate:sitemap": "node tools/generate-sitemap.js",
-    "build:seo": "npm run convert && npm run generate:vehicle-seo && npm run generate:area-thumbnails && npm run generate:area-seo && npm run generate:battery-thumbnails && npm run generate:battery-seo && npm run generate:sitemap"
+    "build:seo": "npm run convert && npm run generate:vehicle-seo && npm run generate:vehicle-thumbnails && npm run generate:area-thumbnails && npm run generate:area-seo && npm run generate:battery-thumbnails && npm run generate:battery-seo && npm run generate:sitemap"
   },
   "devDependencies": {
     "sharp": "^0.35.4"
