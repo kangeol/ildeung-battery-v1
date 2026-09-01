@@ -12,6 +12,7 @@ const IMPLEMENTATION_ALLOWED_FILES = new Set([
   "package.json",
   "tools/audit-blog-sync-diff.js",
   "tools/audit-blog-sync-regression.js",
+  "tools/submit-indexnow.js",
   "tools/sync-naver-blog-cases.js"
 ]);
 

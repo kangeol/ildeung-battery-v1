@@ -16,6 +16,8 @@
     "build:blog-cases": "npm run generate:vehicle-seo && npm run generate:area-seo && npm run generate:battery-seo && npm run generate:sitemap",
     "audit:blog-sync-regression": "node tools/audit-blog-sync-regression.js",
     "audit:blog-sync-diff": "node tools/audit-blog-sync-diff.js",
+    "indexnow:dry-run": "node tools/submit-indexnow.js --dry-run",
+    "indexnow:submit": "node tools/submit-indexnow.js",
     "build:seo": "npm run convert && npm run generate:vehicle-seo && npm run generate:vehicle-thumbnails && npm run generate:area-thumbnails && npm run generate:area-seo && npm run generate:battery-thumbnails && npm run generate:battery-seo && npm run generate:sitemap"
   },
   "devDependencies": {

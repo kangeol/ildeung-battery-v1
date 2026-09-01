@@ -46,6 +46,13 @@ jobs:
           AFTER_POSTS="n/a"
           NEW_POSTS="n/a"
           NEW_THUMBNAILS="n/a"
+          INDEXNOW_STATUS="SKIPPED_NO_CHANGE"
+          INDEXNOW_CHANGED_HTML_FILES="0"
+          INDEXNOW_CANONICAL_URLS="0"
+          INDEXNOW_SUBMITTED_URLS="0"
+          INDEXNOW_RESPONSE="n/a"
+          INDEXNOW_ENDPOINT="api.indexnow.org"
+          INDEXNOW_KEY_LOCATION="n/a"
           BUILD_STATUS="SKIPPED"
           BLOG_AUDIT_STATUS="SKIPPED"
           SEO_COPY_AUDIT_STATUS="SKIPPED"
@@ -76,8 +83,33 @@ jobs:
               echo "Origin race gate: ${ORIGIN_RACE_STATUS}"
               echo "Commit: ${COMMIT_SHA}"
               echo "Push: ${PUSH_STATUS}"
+              echo ""
+              echo "## INDEXNOW"
+              echo ""
+              echo "Status: ${INDEXNOW_STATUS}"
+              echo "Changed HTML files: ${INDEXNOW_CHANGED_HTML_FILES}"
+              echo "Canonical URLs: ${INDEXNOW_CANONICAL_URLS}"
+              echo "Submitted URLs: ${INDEXNOW_SUBMITTED_URLS}"
+              echo "Endpoint: ${INDEXNOW_ENDPOINT}"
+              echo "Response: ${INDEXNOW_RESPONSE}"
+              echo "Key location: ${INDEXNOW_KEY_LOCATION}"
               echo "Final result: ${FINAL_RESULT}"
             } >> "$GITHUB_STEP_SUMMARY"
+          }
+
+          load_indexnow_result() {
+            local result_file="$1"
+
+            if [[ ! -f "$result_file" ]]; then
+              return
+            fi
+
+            INDEXNOW_STATUS="$(node -e "const p=JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')); console.log(p.status || 'UNKNOWN')" "$result_file")"
+            INDEXNOW_CHANGED_HTML_FILES="$(node -e "const p=JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')); console.log(p.changedHtmlFiles ?? 0)" "$result_file")"
+            INDEXNOW_CANONICAL_URLS="$(node -e "const p=JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')); console.log(p.canonicalUrls ?? 0)" "$result_file")"
+            INDEXNOW_SUBMITTED_URLS="$(node -e "const p=JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')); console.log(p.submittedUrls ?? 0)" "$result_file")"
+            INDEXNOW_RESPONSE="$(node -e "const p=JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')); console.log(p.httpStatus ?? p.response ?? 'n/a')" "$result_file")"
+            INDEXNOW_KEY_LOCATION="$(node -e "const p=JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')); console.log(p.keyLocation || 'n/a')" "$result_file")"
           }
 
           trap write_summary EXIT
@@ -114,6 +146,11 @@ jobs:
 
           npm run audit:blog-sync-regression
           REGRESSION_STATUS="PASS"
+
+          INDEXNOW_URLS="${RUNNER_TEMP:-/tmp}/indexnow-urls.json"
+          INDEXNOW_COLLECT_RESULT="${RUNNER_TEMP:-/tmp}/indexnow-collect-result.json"
+          npm run indexnow:dry-run -- --from-git-diff --output "$INDEXNOW_URLS" --result "$INDEXNOW_COLLECT_RESULT"
+          load_indexnow_result "$INDEXNOW_COLLECT_RESULT"
 
           BLOG_SYNC_STRICT_DIFF=1 npm run audit:blog-sync-diff
           DIFF_GATE_STATUS="PASS"
@@ -155,6 +192,25 @@ jobs:
           if [[ "$FINAL_HEAD" != "$FINAL_REMOTE" || "$AHEAD_BEHIND" != $'0\t0' ]]; then
             echo "Post-push verification failed: HEAD=${FINAL_HEAD}, origin/main=${FINAL_REMOTE}, ahead/behind=${AHEAD_BEHIND}" >&2
             exit 1
+          fi
+
+          if [[ "$INDEXNOW_STATUS" == "DRY_RUN_READY" ]]; then
+            echo "Waiting briefly before IndexNow submission."
+            sleep 45
+
+            INDEXNOW_SUBMIT_RESULT="${RUNNER_TEMP:-/tmp}/indexnow-submit-result.json"
+            set +e
+            npm run indexnow:submit -- --input "$INDEXNOW_URLS" --result "$INDEXNOW_SUBMIT_RESULT"
+            INDEXNOW_EXIT="$?"
+            set -e
+            load_indexnow_result "$INDEXNOW_SUBMIT_RESULT"
+
+            if [[ "$INDEXNOW_EXIT" -ne 0 ]]; then
+              INDEXNOW_STATUS="FAILED"
+              echo "IndexNow submit failed after push. Site update remains pushed." >&2
+            fi
+          else
+            echo "IndexNow skipped: ${INDEXNOW_STATUS}"
           fi
 
           FINAL_RESULT="SUCCESS"
