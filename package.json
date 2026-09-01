@@ -13,6 +13,9 @@
     "sync:blog-cases": "node tools/sync-naver-blog-cases.js",
     "audit:blog-cases": "node tools/audit-blog-cases.js",
     "audit:seo-copy": "node tools/audit-seo-korean-copy.js",
+    "build:blog-cases": "npm run generate:vehicle-seo && npm run generate:area-seo && npm run generate:battery-seo && npm run generate:sitemap",
+    "audit:blog-sync-regression": "node tools/audit-blog-sync-regression.js",
+    "audit:blog-sync-diff": "node tools/audit-blog-sync-diff.js",
     "build:seo": "npm run convert && npm run generate:vehicle-seo && npm run generate:vehicle-thumbnails && npm run generate:area-thumbnails && npm run generate:area-seo && npm run generate:battery-thumbnails && npm run generate:battery-seo && npm run generate:sitemap"
   },
   "devDependencies": {

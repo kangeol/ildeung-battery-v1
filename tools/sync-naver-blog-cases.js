@@ -163,33 +163,76 @@ function readExistingArchive() {
   return JSON.parse(fs.readFileSync(BLOG_CASES_FILE, "utf8"));
 }
 
+function postKey(post) {
+  return normalizeText(post.id) || normalizeText(post.url);
+}
+
+function preferExistingField(existingPost, incomingPost, key) {
+  return Object.hasOwn(existingPost, key) ? existingPost[key] : incomingPost[key];
+}
+
+function mergePost(existingPost = {}, incomingPost = {}) {
+  const merged = {
+    ...existingPost,
+    ...incomingPost,
+    title: preferExistingField(existingPost, incomingPost, "title"),
+    url: preferExistingField(existingPost, incomingPost, "url"),
+    publishedAt: preferExistingField(existingPost, incomingPost, "publishedAt"),
+    thumbnail: preferExistingField(existingPost, incomingPost, "thumbnail"),
+    thumbnailStatus: preferExistingField(existingPost, incomingPost, "thumbnailStatus"),
+    thumbnailError: preferExistingField(existingPost, incomingPost, "thumbnailError"),
+    sourceThumbnailUrl: preferExistingField(existingPost, incomingPost, "sourceThumbnailUrl"),
+    sourceExcerpt: preferExistingField(existingPost, incomingPost, "sourceExcerpt"),
+    tags: preferExistingField(existingPost, incomingPost, "tags")
+  };
+
+  merged.sources = [...new Set([
+    ...(Array.isArray(existingPost.sources) ? existingPost.sources : []),
+    ...(Array.isArray(incomingPost.sources) ? incomingPost.sources : [])
+  ].filter(Boolean))];
+
+  return merged;
+}
+
 function mergePosts(existingPosts, fetchedPosts) {
   const byKey = new Map();
   const existingKeys = new Set();
+  const urlToKey = new Map();
 
   existingPosts.forEach((post) => {
-    const key = post.id || post.url;
+    const key = postKey(post);
     if (key) {
       existingKeys.add(key);
       byKey.set(key, post);
+
+      if (post.url) {
+        urlToKey.set(post.url, key);
+      }
     }
   });
 
   let newPosts = 0;
+  const newPostIds = new Set();
+
   fetchedPosts.forEach((post) => {
-    const key = post.id || post.url;
+    const key = postKey(post);
     if (!key) {
+      return;
+    }
+
+    const existingKey = byKey.has(key) ? key : urlToKey.get(post.url);
+
+    if (existingKey && byKey.has(existingKey)) {
+      byKey.set(existingKey, mergePost(byKey.get(existingKey), post));
       return;
     }
 
     if (!byKey.has(key)) {
       newPosts += 1;
+      newPostIds.add(post.id);
     }
 
-    byKey.set(key, {
-      ...byKey.get(key),
-      ...post
-    });
+    byKey.set(key, mergePost({}, post));
   });
 
   const merged = [...byKey.values()]
@@ -203,12 +246,32 @@ function mergePosts(existingPosts, fetchedPosts) {
     merged,
     newPosts,
     duplicateRemoved: existingPosts.length + fetchedPosts.length - merged.length,
-    preservedPreviousPosts: merged.filter((post) => existingKeys.has(post.id || post.url)).length
+    preservedPreviousPosts: merged.filter((post) => existingKeys.has(postKey(post))).length,
+    newPostIds
   };
 }
 
 function countFacts(posts, key) {
   return posts.reduce((total, post) => total + ((post.facts?.[key] || []).length ? 1 : 0), 0);
+}
+
+function localThumbnailExists(post) {
+  if (!post.thumbnail?.startsWith("/assets/blog-cases/")) {
+    return false;
+  }
+
+  return fs.existsSync(path.join(BLOG_CASES_ASSET_DIR, path.basename(post.thumbnail)));
+}
+
+function archiveForComparison(archive) {
+  return {
+    ...archive,
+    syncedAt: ""
+  };
+}
+
+function hasMaterialArchiveChange(existing, candidate) {
+  return JSON.stringify(archiveForComparison(existing)) !== JSON.stringify(archiveForComparison(candidate));
 }
 
 async function main() {
@@ -229,17 +292,24 @@ async function main() {
   const fetchedPosts = itemBlocks.map(parseRssItem);
   const existing = readExistingArchive();
   const existingPosts = Array.isArray(existing.posts) ? existing.posts : [];
-  const { merged, newPosts, duplicateRemoved, preservedPreviousPosts } = mergePosts(existingPosts, fetchedPosts);
+  const { merged, newPosts, duplicateRemoved, preservedPreviousPosts, newPostIds } = mergePosts(existingPosts, fetchedPosts);
   const index = createBlogCaseIndex();
   let thumbnailSuccess = 0;
   let thumbnailFallback = 0;
+  let newThumbnails = 0;
 
   for (const post of merged) {
-    if (fetchedPosts.some((item) => item.id === post.id) || !post.thumbnail) {
+    const needsThumbnail = newPostIds.has(post.id) || !post.thumbnail || !localThumbnailExists(post);
+
+    if (needsThumbnail) {
       const thumbnailResult = await downloadThumbnail(post);
       post.thumbnail = thumbnailResult.thumbnail;
       post.thumbnailStatus = thumbnailResult.status;
       post.thumbnailError = thumbnailResult.error;
+
+      if (newPostIds.has(post.id) && thumbnailResult.status === "downloaded") {
+        newThumbnails += 1;
+      }
     }
 
     if (post.thumbnailStatus === "downloaded") {
@@ -307,12 +377,16 @@ async function main() {
     posts: merged.map(({ raw, ...post }) => post)
   };
 
-  writeJson(BLOG_CASES_FILE, archive);
+  if (hasMaterialArchiveChange(existing, archive)) {
+    writeJson(BLOG_CASES_FILE, archive);
+  }
 
   console.log("");
   console.log(`Fetched posts: ${archive.stats.fetchedPosts}`);
   console.log(`Merged posts: ${archive.posts.length}`);
   console.log(`New posts: ${archive.stats.newPosts}`);
+  console.log(`New thumbnails: ${newThumbnails}`);
+  console.log(`Material archive changed: ${hasMaterialArchiveChange(existing, archive) ? "yes" : "no"}`);
   console.log(`Duplicate removed: ${archive.stats.duplicateRemoved}`);
   console.log(`Thumbnail success: ${archive.stats.thumbnailSuccess}`);
   console.log(`Thumbnail fallback: ${archive.stats.thumbnailFallback}`);

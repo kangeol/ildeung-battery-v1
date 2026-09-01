@@ -1,0 +1,160 @@
+name: Naver Blog Work Case Sync
+
+on:
+  schedule:
+    - cron: '15 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: naver-blog-sync-main
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    if: github.ref_name == 'main'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync, audit and push
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+
+          RUN_TYPE="${{ github.event_name }}"
+          START_SHA="$(git rev-parse HEAD)"
+          BEFORE_POSTS="$(node -e "console.log((JSON.parse(require('fs').readFileSync('seo-data/blog-cases.json', 'utf8')).posts || []).length)")"
+          BEFORE_NEWEST="$(node -e "const posts=JSON.parse(require('fs').readFileSync('seo-data/blog-cases.json','utf8')).posts||[]; console.log(posts.map(p=>p.publishedAt).filter(Boolean).sort().at(-1)||'')")"
+          RSS_FETCHED="n/a"
+          AFTER_POSTS="n/a"
+          NEW_POSTS="n/a"
+          NEW_THUMBNAILS="n/a"
+          BUILD_STATUS="SKIPPED"
+          BLOG_AUDIT_STATUS="SKIPPED"
+          SEO_COPY_AUDIT_STATUS="SKIPPED"
+          REGRESSION_STATUS="SKIPPED"
+          DIFF_GATE_STATUS="SKIPPED"
+          ORIGIN_RACE_STATUS="PENDING"
+          COMMIT_SHA="NONE"
+          PUSH_STATUS="NONE"
+          FINAL_RESULT="FAIL"
+
+          write_summary() {
+            {
+              echo "## NAVER BLOG SYNC"
+              echo ""
+              echo "Run type: ${RUN_TYPE}"
+              echo "Start SHA: ${START_SHA}"
+              echo "Before posts: ${BEFORE_POSTS}"
+              echo "Before newest date: ${BEFORE_NEWEST}"
+              echo "RSS fetched: ${RSS_FETCHED}"
+              echo "After posts: ${AFTER_POSTS}"
+              echo "New posts: ${NEW_POSTS}"
+              echo "New thumbnails: ${NEW_THUMBNAILS}"
+              echo "Build: ${BUILD_STATUS}"
+              echo "Blog audit: ${BLOG_AUDIT_STATUS}"
+              echo "SEO copy audit: ${SEO_COPY_AUDIT_STATUS}"
+              echo "Regression: ${REGRESSION_STATUS}"
+              echo "Runtime diff gate: ${DIFF_GATE_STATUS}"
+              echo "Origin race gate: ${ORIGIN_RACE_STATUS}"
+              echo "Commit: ${COMMIT_SHA}"
+              echo "Push: ${PUSH_STATUS}"
+              echo "Final result: ${FINAL_RESULT}"
+            } >> "$GITHUB_STEP_SUMMARY"
+          }
+
+          trap write_summary EXIT
+
+          SYNC_OUTPUT="${RUNNER_TEMP:-/tmp}/naver-blog-sync-output.txt"
+          npm run sync:blog-cases | tee "$SYNC_OUTPUT"
+          RSS_FETCHED="$(grep -E '^Fetched posts:' "$SYNC_OUTPUT" | awk -F': ' '{print $2}' | tail -1 || true)"
+          AFTER_POSTS="$(grep -E '^Merged posts:' "$SYNC_OUTPUT" | awk -F': ' '{print $2}' | tail -1 || true)"
+          NEW_POSTS="$(grep -E '^New posts:' "$SYNC_OUTPUT" | awk -F': ' '{print $2}' | tail -1 || true)"
+          NEW_THUMBNAILS="$(grep -E '^New thumbnails:' "$SYNC_OUTPUT" | awk -F': ' '{print $2}' | tail -1 || true)"
+
+          if [[ -z "$AFTER_POSTS" || "$AFTER_POSTS" -lt "$BEFORE_POSTS" ]]; then
+            echo "Post count decreased or could not be read: before=${BEFORE_POSTS}, after=${AFTER_POSTS}" >&2
+            exit 1
+          fi
+
+          BLOG_DIFF="$(git status --porcelain -- seo-data/blog-cases.json assets/blog-cases || true)"
+          if [[ -z "$BLOG_DIFF" ]]; then
+            ORIGIN_RACE_STATUS="SKIPPED"
+            PUSH_STATUS="NONE"
+            FINAL_RESULT="SUCCESS"
+            echo "No new blog changes. Build, commit and push skipped."
+            exit 0
+          fi
+
+          npm run build:blog-cases
+          BUILD_STATUS="PASS"
+
+          npm run audit:blog-cases
+          BLOG_AUDIT_STATUS="PASS"
+
+          npm run audit:seo-copy
+          SEO_COPY_AUDIT_STATUS="PASS"
+
+          npm run audit:blog-sync-regression
+          REGRESSION_STATUS="PASS"
+
+          BLOG_SYNC_STRICT_DIFF=1 npm run audit:blog-sync-diff
+          DIFF_GATE_STATUS="PASS"
+
+          git fetch origin main
+          REMOTE_SHA="$(git rev-parse origin/main)"
+          if [[ "$REMOTE_SHA" != "$START_SHA" ]]; then
+            ORIGIN_RACE_STATUS="REMOTE_CHANGED_SKIP_PUSH"
+            PUSH_STATUS="SKIPPED"
+            FINAL_RESULT="SUCCESS"
+            echo "origin/main changed during run. Commit and push skipped."
+            exit 0
+          fi
+          ORIGIN_RACE_STATUS="PASS"
+
+          git add seo-data/blog-cases.json assets/blog-cases car-battery area battery sitemap.xml
+          BLOG_SYNC_STRICT_DIFF=1 npm run audit:blog-sync-diff
+
+          if git diff --cached --quiet; then
+            COMMIT_SHA="NONE"
+            PUSH_STATUS="NONE"
+            FINAL_RESULT="SUCCESS"
+            echo "No staged changes after allowlist staging. Commit skipped."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sync Naver blog work cases"
+          COMMIT_SHA="$(git rev-parse HEAD)"
+          git push origin HEAD:main
+          PUSH_STATUS="SUCCESS"
+
+          git fetch origin main
+          FINAL_HEAD="$(git rev-parse HEAD)"
+          FINAL_REMOTE="$(git rev-parse origin/main)"
+          AHEAD_BEHIND="$(git rev-list --left-right --count origin/main...HEAD)"
+
+          if [[ "$FINAL_HEAD" != "$FINAL_REMOTE" || "$AHEAD_BEHIND" != $'0\t0' ]]; then
+            echo "Post-push verification failed: HEAD=${FINAL_HEAD}, origin/main=${FINAL_REMOTE}, ahead/behind=${AHEAD_BEHIND}" >&2
+            exit 1
+          fi
+
+          FINAL_RESULT="SUCCESS"
