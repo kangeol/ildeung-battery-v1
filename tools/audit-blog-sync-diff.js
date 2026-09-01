@@ -3,15 +3,20 @@ import { execFileSync } from "node:child_process";
 const STRICT_MODE = process.env.GITHUB_ACTIONS === "true" || process.env.BLOG_SYNC_STRICT_DIFF === "1";
 
 const RUNTIME_ALLOWED_FILES = new Set([
+  "index.html",
   "seo-data/blog-cases.json",
   "sitemap.xml"
 ]);
 
 const IMPLEMENTATION_ALLOWED_FILES = new Set([
   ".github/workflows/naver-blog-sync.yml",
+  "css/work-cases.css",
   "package.json",
   "tools/audit-blog-sync-diff.js",
   "tools/audit-blog-sync-regression.js",
+  "tools/audit-work-cases.js",
+  "tools/generate-sitemap.js",
+  "tools/generate-work-case-pages.js",
   "tools/submit-indexnow.js",
   "tools/sync-naver-blog-cases.js"
 ]);
@@ -53,6 +58,10 @@ function isRuntimeAllowed(filePath) {
   }
 
   if (filePath.startsWith("battery/") && filePath.endsWith(".html")) {
+    return true;
+  }
+
+  if (filePath.startsWith("work-cases/") && filePath.endsWith(".html")) {
     return true;
   }
 

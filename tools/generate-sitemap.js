@@ -102,6 +102,11 @@ function buildEntries() {
     add(htmlPathToUrlPath(relativePath), priority);
   });
 
+  listHtmlFiles("work-cases").forEach((relativePath) => {
+    const posix = toPosixPath(relativePath);
+    add(htmlPathToUrlPath(relativePath), posix === "work-cases/index.html" ? "0.85" : "0.65");
+  });
+
   return entries;
 }
 

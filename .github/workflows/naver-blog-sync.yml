@@ -55,6 +55,7 @@ jobs:
           INDEXNOW_KEY_LOCATION="n/a"
           BUILD_STATUS="SKIPPED"
           BLOG_AUDIT_STATUS="SKIPPED"
+          WORK_CASE_AUDIT_STATUS="SKIPPED"
           SEO_COPY_AUDIT_STATUS="SKIPPED"
           REGRESSION_STATUS="SKIPPED"
           DIFF_GATE_STATUS="SKIPPED"
@@ -77,6 +78,7 @@ jobs:
               echo "New thumbnails: ${NEW_THUMBNAILS}"
               echo "Build: ${BUILD_STATUS}"
               echo "Blog audit: ${BLOG_AUDIT_STATUS}"
+              echo "Work case audit: ${WORK_CASE_AUDIT_STATUS}"
               echo "SEO copy audit: ${SEO_COPY_AUDIT_STATUS}"
               echo "Regression: ${REGRESSION_STATUS}"
               echo "Runtime diff gate: ${DIFF_GATE_STATUS}"
@@ -141,6 +143,9 @@ jobs:
           npm run audit:blog-cases
           BLOG_AUDIT_STATUS="PASS"
 
+          npm run audit:work-cases
+          WORK_CASE_AUDIT_STATUS="PASS"
+
           npm run audit:seo-copy
           SEO_COPY_AUDIT_STATUS="PASS"
 
@@ -166,7 +171,7 @@ jobs:
           fi
           ORIGIN_RACE_STATUS="PASS"
 
-          git add seo-data/blog-cases.json assets/blog-cases car-battery area battery sitemap.xml
+          git add index.html seo-data/blog-cases.json assets/blog-cases car-battery area battery work-cases sitemap.xml
           BLOG_SYNC_STRICT_DIFF=1 npm run audit:blog-sync-diff
 
           if git diff --cached --quiet; then

@@ -14,7 +14,7 @@ const INDEXNOW_KEY_LOCATION = `https://${INDEXNOW_HOST}/${INDEXNOW_KEY_FILE}`;
 const INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow";
 const MAX_RUNTIME_URLS = 100;
 const RETRY_DELAYS_MS = [0, 30_000, 60_000];
-const HTML_ROOTS = ["car-battery/", "area/", "battery/"];
+const HTML_ROOTS = ["car-battery/", "area/", "battery/", "work-cases/"];
 
 function parseArgs(argv) {
   const args = {
@@ -100,11 +100,15 @@ function isDeleted(status) {
 }
 
 function isIndexNowHtmlPath(filePath) {
+  if (filePath === "index.html") {
+    return true;
+  }
+
   return filePath.endsWith(".html") && HTML_ROOTS.some((root) => filePath.startsWith(root));
 }
 
 function collectChangedHtmlFilesFromGit() {
-  const output = runGit(["status", "--porcelain=v1", "-uall", "--", "car-battery", "area", "battery"]);
+  const output = runGit(["status", "--porcelain=v1", "-uall", "--", "index.html", "car-battery", "area", "battery", "work-cases"]);
 
   if (!output) {
     return [];

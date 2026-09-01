@@ -13,7 +13,6 @@ const EXPECTED = {
   carBatteryHtml: 443,
   areaHtml: 637,
   batteryHtml: 19,
-  sitemapUrls: 1103,
   minBlogPosts: 299
 };
 
@@ -136,7 +135,8 @@ function collectHtmlFiles() {
     "battery-replacement.html",
     ...walk("car-battery").filter((filePath) => filePath.endsWith(".html")),
     ...walk("area").filter((filePath) => filePath.endsWith(".html")),
-    ...walk("battery").filter((filePath) => filePath.endsWith(".html"))
+    ...walk("battery").filter((filePath) => filePath.endsWith(".html")),
+    ...walk("work-cases").filter((filePath) => filePath.endsWith(".html"))
   ].filter((filePath, index, all) => all.indexOf(filePath) === index && fs.existsSync(path.join(ROOT_DIR, filePath)));
 }
 
@@ -188,15 +188,19 @@ function countBrokenInternalLinks() {
   return broken.length;
 }
 
-function compareSitemapUrlSet(currentLocs) {
+function isWorkCaseUrl(loc) {
+  return loc.startsWith(`${SITE_ORIGIN}/work-cases/`);
+}
+
+function compareProtectedSitemapUrlSet(currentLocs) {
   const previous = gitShow("sitemap.xml");
 
   if (!previous) {
     return false;
   }
 
-  const before = parseSitemapLocs(previous).sort();
-  const after = [...currentLocs].sort();
+  const before = parseSitemapLocs(previous).filter((loc) => !isWorkCaseUrl(loc)).sort();
+  const after = [...currentLocs].filter((loc) => !isWorkCaseUrl(loc)).sort();
 
   return JSON.stringify(before) !== JSON.stringify(after);
 }
@@ -209,6 +213,10 @@ function countCanonicalChanges() {
     const previous = gitShow(filePath);
 
     if (!previous) {
+      if (filePath.startsWith("work-cases/")) {
+        return;
+      }
+
       changed += 1;
       return;
     }
@@ -291,6 +299,7 @@ function main() {
   const sitemap = readText("sitemap.xml");
   const locs = parseSitemapLocs(sitemap);
   const uniqueLocs = new Set(locs);
+  const htmlFiles = collectHtmlFiles();
   const archive = readJson("seo-data/blog-cases.json");
   const posts = Array.isArray(archive.posts) ? archive.posts : [];
   const postIds = new Set(posts.map((post) => post.id));
@@ -305,13 +314,15 @@ function main() {
     carBatteryHtml: countHtml("car-battery"),
     areaHtml: countHtml("area"),
     batteryHtml: countHtml("battery"),
+    workCaseHtml: countHtml("work-cases"),
     sitemapUrls: locs.length,
+    expectedSitemapUrls: htmlFiles.length,
     duplicateSitemapLoc: locs.length - uniqueLocs.size,
     lastmodCount: (sitemap.match(/<lastmod>/g) || []).length,
     brokenInternalLinks: countBrokenInternalLinks(),
     canonicalChanged: countCanonicalChanges(),
     canonicalConsistencyErrors: checkCurrentCanonicalConsistency(),
-    urlSetChanged: compareSitemapUrlSet(locs),
+    protectedUrlSetChanged: compareProtectedSitemapUrlSet(locs),
     assetsSeoChanged: gitChangedFiles(["assets/seo"]).length,
     protectedSearchChanged: gitChangedFiles(["search.html", "js/search.js"]).length,
     protectedDbChanged: gitChangedFiles(["master-db", "data"]).length,
@@ -329,13 +340,14 @@ function main() {
   assert(result.carBatteryHtml === EXPECTED.carBatteryHtml, `car-battery HTML count changed: ${result.carBatteryHtml}`);
   assert(result.areaHtml === EXPECTED.areaHtml, `area HTML count changed: ${result.areaHtml}`);
   assert(result.batteryHtml === EXPECTED.batteryHtml, `battery HTML count changed: ${result.batteryHtml}`);
-  assert(result.sitemapUrls === EXPECTED.sitemapUrls, `sitemap URL count changed: ${result.sitemapUrls}`);
+  assert(result.workCaseHtml >= 1, `work-case HTML missing: ${result.workCaseHtml}`);
+  assert(result.sitemapUrls === result.expectedSitemapUrls, `sitemap URL count mismatch: ${result.sitemapUrls} / ${result.expectedSitemapUrls}`);
   assert(result.duplicateSitemapLoc === 0, `duplicate sitemap loc count: ${result.duplicateSitemapLoc}`);
   assert(result.lastmodCount === 0, `lastmod count: ${result.lastmodCount}`);
   assert(result.brokenInternalLinks === 0, `broken internal links: ${result.brokenInternalLinks}`);
   assert(result.canonicalChanged === 0, `canonical or og:url changed: ${result.canonicalChanged}`);
   assert(result.canonicalConsistencyErrors === 0, `canonical consistency errors: ${result.canonicalConsistencyErrors}`);
-  assert(result.urlSetChanged === false, "sitemap URL set changed");
+  assert(result.protectedUrlSetChanged === false, "protected sitemap URL set changed");
   assert(result.assetsSeoChanged === 0, `assets/seo changed files: ${result.assetsSeoChanged}`);
   assert(result.protectedSearchChanged === 0, `search function files changed: ${result.protectedSearchChanged}`);
   assert(result.protectedDbChanged === 0, `database files changed: ${result.protectedDbChanged}`);
