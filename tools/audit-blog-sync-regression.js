@@ -11,6 +11,7 @@ const SITE_ORIGIN = "https://battery1.co.kr";
 const EXPECTED = {
   dbRows: 917,
   carBatteryHtml: 443,
+  vehicleDirectAnswerPages: 427,
   areaHtml: 637,
   batteryHtml: 19,
   minBlogPosts: 299
@@ -138,6 +139,116 @@ function collectHtmlFiles() {
     ...walk("battery").filter((filePath) => filePath.endsWith(".html")),
     ...walk("work-cases").filter((filePath) => filePath.endsWith(".html"))
   ].filter((filePath, index, all) => all.indexOf(filePath) === index && fs.existsSync(path.join(ROOT_DIR, filePath)));
+}
+
+function stripHtml(value) {
+  return String(value ?? "")
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, "\"")
+    .replace(/&#39;/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function extractDirectAnswer(source) {
+  const section = source.match(/<section\s+class=["'][^"']*\bdirect-answer\b[^"']*["'][\s\S]*?<\/section>/i)?.[0] || "";
+  const question = section.match(/<h2[^>]*class=["'][^"']*\bdirect-answer-question\b[^"']*["'][^>]*>([\s\S]*?)<\/h2>/i)?.[1] || "";
+  const answer = section.match(/<p[^>]*class=["'][^"']*\bdirect-answer-text\b[^"']*["'][^>]*>([\s\S]*?)<\/p>/i)?.[1] || "";
+
+  return {
+    section,
+    question: stripHtml(question),
+    answer: stripHtml(answer)
+  };
+}
+
+function tokenizeBatteryText(value) {
+  return String(value ?? "").toUpperCase().match(/\b(?:AGM?|DIN|DF)\d{2,3}[A-Z]{0,2}\b|\b\d{2,3}-\d{3}\b/g) || [];
+}
+
+function collectDbBatteryTokens() {
+  const manufacturers = readJson("data/manufacturers.json");
+  const tokens = new Set();
+
+  manufacturers.forEach((manufacturer) => {
+    const rows = readJson(path.join("data", manufacturer.file));
+    rows.forEach((row) => {
+      tokenizeBatteryText(`${row.defaultBattery || ""} ${row.upgradeBattery || ""}`).forEach((token) => tokens.add(token));
+    });
+  });
+
+  return tokens;
+}
+
+function auditVehicleDirectAnswers() {
+  const dbBatteryTokens = collectDbBatteryTokens();
+  const files = walk("car-battery").filter((filePath) => filePath.endsWith(".html"));
+  const vehicleFiles = files.filter((filePath) => readText(filePath).includes("battery-table"));
+  let missing = 0;
+  let empty = 0;
+  let invalidBatteryTokens = 0;
+  let undefinedNull = 0;
+  let duplicateQuestionPages = 0;
+  const invalidExamples = [];
+  const answerCounts = new Map();
+
+  vehicleFiles.forEach((filePath) => {
+    const source = readText(filePath);
+    const directAnswer = extractDirectAnswer(source);
+
+    if (!directAnswer.section) {
+      missing += 1;
+      return;
+    }
+
+    if (!directAnswer.question || !directAnswer.answer) {
+      empty += 1;
+    }
+
+    if (/\b(undefined|null)\b/i.test(directAnswer.section)) {
+      undefinedNull += 1;
+    }
+
+    const questionOccurrences = [...source.matchAll(/direct-answer-question/g)].length;
+    if (questionOccurrences !== 1) {
+      duplicateQuestionPages += 1;
+    }
+
+    tokenizeBatteryText(directAnswer.answer).forEach((token) => {
+      if (!dbBatteryTokens.has(token)) {
+        invalidBatteryTokens += 1;
+        if (invalidExamples.length < 5) {
+          invalidExamples.push(`${filePath}: ${token}`);
+        }
+      }
+    });
+
+    if (directAnswer.answer) {
+      answerCounts.set(directAnswer.answer, (answerCounts.get(directAnswer.answer) || 0) + 1);
+    }
+  });
+
+  const duplicateGroups = [...answerCounts.values()].filter((count) => count > 1);
+  const maxDuplicateGroupSize = Math.max(0, ...answerCounts.values());
+
+  return {
+    directAnswerPages: vehicleFiles.length,
+    directAnswerMissing: missing,
+    directAnswerEmpty: empty,
+    directAnswerInvalidBatteryTokens: invalidBatteryTokens,
+    directAnswerInvalidExamples: invalidExamples,
+    directAnswerUndefinedNull: undefinedNull,
+    directAnswerDuplicateQuestionPages: duplicateQuestionPages,
+    directAnswerUniqueAnswers: answerCounts.size,
+    directAnswerDuplicateGroups: duplicateGroups.length,
+    directAnswerMaxDuplicateGroupSize: maxDuplicateGroupSize
+  };
 }
 
 function countBrokenInternalLinks() {
@@ -305,6 +416,7 @@ function main() {
   const postIds = new Set(posts.map((post) => post.id));
   const postUrls = new Set(posts.map((post) => post.url));
   const history = compareBlogCaseHistory(posts);
+  const directAnswers = auditVehicleDirectAnswers();
 
   const result = {
     dbRows: countVehicleDbRows(),
@@ -326,6 +438,15 @@ function main() {
     assetsSeoChanged: gitChangedFiles(["assets/seo"]).length,
     protectedSearchChanged: gitChangedFiles(["search.html", "js/search.js"]).length,
     protectedDbChanged: gitChangedFiles(["master-db", "data"]).length,
+    directAnswerPages: directAnswers.directAnswerPages,
+    directAnswerMissing: directAnswers.directAnswerMissing,
+    directAnswerEmpty: directAnswers.directAnswerEmpty,
+    directAnswerInvalidBatteryTokens: directAnswers.directAnswerInvalidBatteryTokens,
+    directAnswerUndefinedNull: directAnswers.directAnswerUndefinedNull,
+    directAnswerDuplicateQuestionPages: directAnswers.directAnswerDuplicateQuestionPages,
+    directAnswerUniqueAnswers: directAnswers.directAnswerUniqueAnswers,
+    directAnswerDuplicateGroups: directAnswers.directAnswerDuplicateGroups,
+    directAnswerMaxDuplicateGroupSize: directAnswers.directAnswerMaxDuplicateGroupSize,
     ...history
   };
 
@@ -338,6 +459,13 @@ function main() {
   assert(result.duplicateBlogIds === 0, `duplicate blog ids: ${result.duplicateBlogIds}`);
   assert(result.duplicateBlogUrls === 0, `duplicate blog urls: ${result.duplicateBlogUrls}`);
   assert(result.carBatteryHtml === EXPECTED.carBatteryHtml, `car-battery HTML count changed: ${result.carBatteryHtml}`);
+  assert(result.directAnswerPages === EXPECTED.vehicleDirectAnswerPages, `Direct Answer page count changed: ${result.directAnswerPages}`);
+  assert(result.directAnswerMissing === 0, `Direct Answer missing pages: ${result.directAnswerMissing}`);
+  assert(result.directAnswerEmpty === 0, `Direct Answer empty pages: ${result.directAnswerEmpty}`);
+  assert(result.directAnswerInvalidBatteryTokens === 0, `Direct Answer invalid battery tokens: ${directAnswers.directAnswerInvalidExamples.join(", ")}`);
+  assert(result.directAnswerUndefinedNull === 0, `Direct Answer undefined/null pages: ${result.directAnswerUndefinedNull}`);
+  assert(result.directAnswerDuplicateQuestionPages === 0, `Direct Answer duplicate question pages: ${result.directAnswerDuplicateQuestionPages}`);
+  assert(result.directAnswerUniqueAnswers > 1, "Direct Answer answers appear to be identical across pages");
   assert(result.areaHtml === EXPECTED.areaHtml, `area HTML count changed: ${result.areaHtml}`);
   assert(result.batteryHtml === EXPECTED.batteryHtml, `battery HTML count changed: ${result.batteryHtml}`);
   assert(result.workCaseHtml >= 1, `work-case HTML missing: ${result.workCaseHtml}`);

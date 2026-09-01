@@ -443,6 +443,116 @@ function hasDefaultBatteryCheck(rows) {
   return rows.some((row) => isUnconfirmedBattery(row.defaultBattery));
 }
 
+function getActualBatteryValues(rows, fieldName) {
+  const seen = new Set();
+  const values = [];
+
+  rows.forEach((row) => {
+    const value = normalizeText(row[fieldName]);
+
+    if (!value || isUnconfirmedBattery(value) || seen.has(value)) {
+      return;
+    }
+
+    seen.add(value);
+    values.push(value);
+  });
+
+  return values;
+}
+
+function formatBatteryValueList(values, maxItems = 4) {
+  const actualValues = values.filter(Boolean);
+
+  if (!actualValues.length) {
+    return "";
+  }
+
+  const visible = actualValues.slice(0, maxItems);
+  const suffix = actualValues.length > maxItems ? " 등" : "";
+
+  return `${visible.join(", ")}${suffix}`;
+}
+
+function isRedundantDetailLabel(detailModel, pageLabel) {
+  const detail = compactText(detailModel);
+  const label = compactText(pageLabel);
+
+  return !detail || detail === label || detail.includes(label);
+}
+
+function formatRowCondition(row, pageLabel) {
+  const parts = [];
+  const year = normalizeText(row.year);
+  const fuel = normalizeText(row.fuel);
+  const detailModel = normalizeText(row.detailModel);
+
+  if (year) {
+    parts.push(year);
+  }
+
+  if (fuel) {
+    parts.push(fuel);
+  }
+
+  if (detailModel && !isRedundantDetailLabel(detailModel, pageLabel) && parts.join(" ").length < 32) {
+    parts.push(detailModel);
+  }
+
+  return parts.join(" ") || `${pageLabel} 등록 조건`;
+}
+
+function getDefaultBatteryConditionExamples(rows, values, pageLabel, maxItems = 3) {
+  return values.slice(0, maxItems).map((value) => {
+    const row = rows.find((item) => normalizeText(item.defaultBattery) === value);
+    return `${formatRowCondition(row || {}, pageLabel)}: ${value}`;
+  });
+}
+
+function buildUpgradeSentence(upgradeValues) {
+  if (!upgradeValues.length) {
+    return "";
+  }
+
+  return ` 업그레이드배터리 항목에는 ${formatBatteryValueList(upgradeValues, 3)} 값이 함께 등록되어 있습니다.`;
+}
+
+function buildVehicleDirectAnswer({ pageLabel, rows }) {
+  const unique = uniqueRows(rows);
+  const defaultValues = getActualBatteryValues(unique, "defaultBattery");
+  const upgradeValues = getActualBatteryValues(unique, "upgradeBattery");
+  const upgradeSentence = buildUpgradeSentence(upgradeValues);
+  const hasAgm = [...defaultValues, ...upgradeValues].some((value) => /AGM/i.test(value));
+  const agmSentence = hasAgm ? " AGM 적용 조건이 포함되어 있습니다." : "";
+
+  if (!defaultValues.length) {
+    return `현재 차량 DB 기준으로 ${pageLabel} 페이지는 실차 확인이 필요한 항목으로 등록되어 있습니다. 1644-9141로 문의하시면 차량 확인 후 교체 가능한 배터리를 안내받을 수 있습니다.`;
+  }
+
+  if (defaultValues.length === 1) {
+    return `현재 차량 DB 기준으로 ${pageLabel} 등록 조건의 기본배터리는 ${defaultValues[0]}입니다.${upgradeSentence || agmSentence}`;
+  }
+
+  if (defaultValues.length <= 3 && unique.length <= 8) {
+    const examples = getDefaultBatteryConditionExamples(unique, defaultValues, pageLabel, 3).join(", ");
+    return `현재 차량 DB 기준으로 ${pageLabel} 페이지는 기본배터리 항목이 다음 값으로 나뉩니다: ${formatBatteryValueList(defaultValues, 3)}. 예를 들어 ${examples} 조건이 등록되어 있습니다.${upgradeSentence}`;
+  }
+
+  return `${pageLabel} 페이지는 연식·연료·세부모델에 따라 적용 배터리가 다릅니다. 현재 차량 DB에는 ${formatBatteryValueList(defaultValues, 4)} 기본배터리가 등록되어 있으며 아래 표에서 정확한 조건을 확인할 수 있습니다.${upgradeSentence}`;
+}
+
+function renderDirectAnswer({ question, answer, checkNotice }) {
+  return `
+      <section class="section direct-answer" aria-labelledby="directAnswerTitle">
+        <div class="content-card">
+          <p class="eyebrow">Direct Answer</p>
+          <h2 id="directAnswerTitle" class="direct-answer-question">${escapeHtml(question)}</h2>
+          <p class="direct-answer-text">${escapeHtml(answer)}</p>
+${checkNotice}
+        </div>
+      </section>`;
+}
+
 function rowKey(row) {
   return [
     row.year,
@@ -1072,6 +1182,8 @@ function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups, blogCase
     ? `
         <p class="vehicle-check-notice">해당 차량은 연식, 세부모델 및 차량 사양에 따라 장착되는 배터리가 달라질 수 있어 실차 확인이 필요합니다. 1644-9141로 문의하시면 차량 확인 후 정확한 적용 배터리와 교체 상담을 안내해드립니다.</p>`
     : "";
+  const directAnswer = buildVehicleDirectAnswer({ pageLabel: vehicle.name, rows: unique });
+  const directAnswerQuestion = `${vehicle.name} 배터리 교체 시 어떤 배터리가 필요한가요?`;
   const detailLinkMap = buildDetailLinkMap(vehicle.slug, detailGroups);
   const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
     type: "vehicle",
@@ -1112,9 +1224,9 @@ function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups, blogCase
           </div>
         </div>
         <p class="hero-desc">${escapeHtml(vehicle.name)} 차량은 연식, 연료, 세부모델에 따라 장착되는 자동차 배터리(밧데리)가 달라질 수 있습니다. 아래 표에서 일등밧데리 차량 배터리 DB 기준의 기본 배터리와 업그레이드 배터리를 확인한 뒤 현재 판매가격과 출장교체 상담을 함께 확인해 주세요.</p>
-${checkNotice}
       </section>
 
+${renderDirectAnswer({ question: directAnswerQuestion, answer: directAnswer, checkNotice })}
       <section class="section" aria-labelledby="batteryTableTitle">
         <div class="section-heading">
           <p class="eyebrow">Battery Table</p>
@@ -1162,6 +1274,8 @@ function renderDetailPage({ manufacturer, vehicle, group, detailGroups, blogCase
     ? `
         <p class="vehicle-check-notice">해당 차량은 연식, 세부모델 및 차량 사양에 따라 장착되는 배터리가 달라질 수 있어 실차 확인이 필요합니다. 1644-9141로 문의하시면 차량 확인 후 정확한 적용 배터리와 교체 상담을 안내해드립니다.</p>`
     : "";
+  const directAnswer = buildVehicleDirectAnswer({ pageLabel, rows: unique });
+  const directAnswerQuestion = `${pageLabel} 배터리 교체 시 어떤 배터리가 필요한가요?`;
   const breadcrumbItems = [
     { label: "홈", href: "../../../index.html", path: "/" },
     { label: "차량 배터리", href: "../../index.html", path: "/car-battery/" },
@@ -1198,15 +1312,7 @@ function renderDetailPage({ manufacturer, vehicle, group, detailGroups, blogCase
         </div>
       </section>
 
-      <section class="section direct-answer" aria-labelledby="directAnswerTitle">
-        <div class="content-card">
-          <p class="eyebrow">Direct Answer</p>
-          <h2 id="directAnswerTitle">${escapeHtml(pageLabel)} 배터리 교체 전 어떤 배터리가 맞나요?</h2>
-          <p>${escapeHtml(pageLabel)} 차량은 연식과 연료 및 차량 사양에 따라 적용 배터리가 달라질 수 있습니다. 아래 일등밧데리 차량 DB 기준 표에서 ${escapeHtml(detailLabel)} 세부 조건별 기본 배터리와 업그레이드 배터리를 확인할 수 있습니다.</p>
-${checkNotice}
-        </div>
-      </section>
-
+${renderDirectAnswer({ question: directAnswerQuestion, answer: directAnswer, checkNotice })}
       <section class="section" aria-labelledby="detailTableTitle">
         <div class="section-heading">
           <p class="eyebrow">Battery Table</p>
