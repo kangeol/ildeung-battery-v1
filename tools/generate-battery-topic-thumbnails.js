@@ -15,7 +15,7 @@ const FONT_FAMILY = `"Malgun Gothic", "Noto Sans KR", "Apple SD Gothic Neo", san
 
 const FIXED_SPECS = [
   { slug: "index", topLine: "자동차배터리", mainText: "정보 가이드" },
-  { slug: "car-battery", topLine: "자동차배터리", mainText: "규격 안내" },
+  { slug: "car-battery", topLine: "자동차배터리", mainText: "선택 안내" },
   { slug: "replacement", topLine: "자동차배터리", mainText: "교체 안내" },
   { slug: "price", topLine: "자동차배터리", mainText: "가격 안내" },
   { slug: "replacement-cost", topLine: "배터리 교체", mainText: "비용 안내" },
@@ -24,7 +24,7 @@ const FIXED_SPECS = [
   { slug: "battery-discharge", topLine: "배터리 방전", mainText: "대응 안내" },
   { slug: "import-car-battery", topLine: "수입차배터리", mainText: "교체 안내" },
   { slug: "delkor-battery", topLine: "델코배터리", mainText: "선택 안내" },
-  { slug: "agm", topLine: "AGM 배터리", mainText: "규격 안내" },
+  { slug: "agm", topLine: "AGM 배터리", mainText: "선택 안내" },
   { slug: "agm-price", topLine: "AGM 배터리", mainText: "가격 안내" },
   { slug: "agm-delkor", topLine: "델코 AGM", mainText: "배터리 안내" },
   { slug: "agm-varta", topLine: "바르타 AGM", mainText: "배터리 안내" }

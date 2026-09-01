@@ -184,14 +184,14 @@ function buildThumbnailSpecs(report) {
     imagePath: page.imagePath,
     eyebrow: "VEHICLE BATTERY",
     topLine: page.manufacturerName,
-    mainText: `${stripManufacturerName(page.manufacturerName, page.name)} 배터리 가격·규격`
+    mainText: `${stripManufacturerName(page.manufacturerName, page.name)} 배터리 가격·교체`
   }));
 
   const detailSpecs = report.detailPages.map((page) => ({
     imagePath: page.imagePath,
     eyebrow: "VEHICLE BATTERY",
     topLine: `${page.manufacturerName} ${stripManufacturerName(page.manufacturerName, page.vehicleName)}`,
-    mainText: `${page.label} 배터리 가격·규격`
+    mainText: `${page.label} 배터리 가격·교체`
   }));
 
   return [...parentSpecs, ...detailSpecs];

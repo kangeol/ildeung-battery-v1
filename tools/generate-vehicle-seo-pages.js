@@ -908,11 +908,11 @@ function getVehicleFaqs(vehicleName) {
   return [
     {
       question: `${vehicleName} 배터리 가격은 얼마인가요?`,
-      answer: "배터리 가격은 적용 규격과 AGM 여부, 제품에 따라 달라질 수 있습니다. 위 세부모델별 규격을 확인한 후 일반타입 또는 AGM 배터리 최저가 바로가기에서 현재 판매가격을 확인해 주세요. 정확한 출장교체 비용은 1644-9141로 상담 가능합니다."
+      answer: "배터리 가격은 적용 배터리와 AGM 여부, 제품에 따라 달라질 수 있습니다. 위 세부모델별 적용 배터리를 확인한 후 일반타입 또는 AGM 배터리 최저가 바로가기에서 현재 판매가격을 확인해 주세요. 정확한 출장교체 비용은 1644-9141로 상담 가능합니다."
     },
     {
       question: `같은 ${vehicleName} 차량도 배터리가 다른가요?`,
-      answer: "연식, 연료, 세부모델, 옵션에 따라 적용되는 자동차배터리 규격이 달라질 수 있습니다."
+      answer: "연식, 연료, 세부모델, 옵션에 따라 적용되는 자동차배터리가 달라질 수 있습니다."
     },
     {
       question: "AGM 배터리 차량에 일반 배터리를 장착해도 되나요?",
@@ -957,7 +957,7 @@ function getDetailFaqs(vehicleName, detailLabel, rows) {
   return [
     {
       question: `${label} 배터리 가격은 얼마인가요?`,
-      answer: "배터리 가격은 적용 규격, AGM 여부, 제품에 따라 달라집니다. 위 표에서 세부 조건별 규격을 확인한 뒤 일반타입 또는 AGM 배터리 최저가 바로가기에서 현재 판매가격을 확인해 주세요."
+      answer: "배터리 가격은 적용 배터리, AGM 여부, 제품에 따라 달라집니다. 위 표에서 세부 조건별 기본 배터리와 업그레이드 배터리를 확인한 뒤 일반타입 또는 AGM 배터리 최저가 바로가기에서 현재 판매가격을 확인해 주세요."
     },
     {
       question: `${label} 차량에 AGM 배터리가 적용되나요?`,
@@ -967,11 +967,11 @@ function getDetailFaqs(vehicleName, detailLabel, rows) {
     },
     {
       question: `${detailLabel} 세부모델도 연료에 따라 배터리가 다른가요?`,
-      answer: "가솔린, 디젤, LPG, 하이브리드 등 연료와 차량 사양에 따라 배터리 규격이 달라질 수 있습니다."
+      answer: "가솔린, 디젤, LPG, 하이브리드 등 연료와 차량 사양에 따라 장착되는 배터리가 달라질 수 있습니다."
     },
     {
-      question: "배터리 규격을 정확히 모르면 어떻게 하나요?",
-      answer: "차량 배터리 찾기에서 세부모델을 선택하거나 1644-9141로 문의하시면 차량 확인 후 안내받을 수 있습니다."
+      question: "내 차에 맞는 배터리를 모르면 어떻게 하나요?",
+      answer: "차량 배터리 찾기에서 세부모델을 선택하거나 1644-9141로 문의하시면 차량 확인 후 교체 가능한 배터리를 안내받을 수 있습니다."
     },
     {
       question: "출장교체가 가능한가요?",
@@ -1061,16 +1061,16 @@ function renderDetailBlogCaseSections({ blogCases, manufacturer, vehicle, pageLa
 function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups, blogCases }) {
   const prefix = pageDepthPrefix(2);
   const manufacturerVehicleLabel = formatManufacturerVehicleLabel(manufacturer.name, vehicle.name);
-  const title = `${vehicle.name} 배터리 가격 및 규격 안내 | 자동차배터리 교체 | 일등밧데리`;
-  const description = `${vehicle.name} 배터리 가격과 세부모델별 규격을 확인하세요. 연식·연료·세부모델별 기본 배터리와 업그레이드 배터리를 안내하며 일반 배터리와 AGM 배터리의 현재 판매가격도 확인할 수 있습니다.`;
+  const title = `${vehicle.name} 배터리 가격 및 교체 안내 | 일등밧데리`;
+  const description = `${vehicle.name} 연식·연료·세부모델별 적용 배터리와 현재 판매가격을 확인하고 서울·경기·인천 출장 배터리 교체 상담을 받아보세요.`;
   const canonicalPath = `/car-battery/${manufacturer.id}/${vehicle.slug}.html`;
   const imagePath = getVehicleImagePath(manufacturer.id, vehicle.slug);
   const manufacturerHub = `../${manufacturer.id}.html`;
   const unique = uniqueRows(rows);
-  const heroImageAlt = `${manufacturerVehicleLabel} 배터리 가격 및 규격 안내 - 일등밧데리`;
+  const heroImageAlt = `${manufacturerVehicleLabel} 배터리 가격 및 교체 안내 - 일등밧데리`;
   const checkNotice = hasDefaultBatteryCheck(unique)
     ? `
-        <p class="vehicle-check-notice">해당 차량은 연식, 세부모델 및 차량 사양에 따라 적용 배터리가 달라질 수 있어 실차 확인이 필요합니다. 1644-9141로 문의하시면 차량 확인 후 정확한 배터리 규격과 교체 상담을 안내해드립니다.</p>`
+        <p class="vehicle-check-notice">해당 차량은 연식, 세부모델 및 차량 사양에 따라 장착되는 배터리가 달라질 수 있어 실차 확인이 필요합니다. 1644-9141로 문의하시면 차량 확인 후 정확한 적용 배터리와 교체 상담을 안내해드립니다.</p>`
     : "";
   const detailLinkMap = buildDetailLinkMap(vehicle.slug, detailGroups);
   const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
@@ -1083,13 +1083,13 @@ function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups, blogCase
     { label: "홈", href: "../../index.html", path: "/" },
     { label: "차량 배터리", href: "../index.html", path: "/car-battery/" },
     { label: manufacturer.name, href: manufacturerHub, path: `/car-battery/${manufacturer.id}.html` },
-    { label: `${vehicle.name} 배터리 가격 및 규격`, path: canonicalPath }
+    { label: `${vehicle.name} 배터리 가격 및 교체`, path: canonicalPath }
   ];
 
   const content = `${renderBreadcrumb(breadcrumbItems)}
       <section class="hero-card vehicle-detail-hero">
         <p class="eyebrow">Vehicle Battery Price</p>
-        <h1>${escapeHtml(vehicle.name)} 배터리 가격 및 규격 안내</h1>
+        <h1>${escapeHtml(vehicle.name)} 배터리 가격 및 교체 안내</h1>
         <div class="vehicle-hero-layout">
           <figure class="vehicle-seo-hero-image">
             <img src="${imagePath}" alt="${escapeHtml(heroImageAlt)}" loading="lazy" decoding="async">
@@ -1097,11 +1097,12 @@ function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups, blogCase
           <div class="vehicle-hero-summary">
             <h2>${escapeHtml(vehicle.name)} 배터리 한눈에 확인</h2>
             <ul class="vehicle-check-list">
-              <li>연식별 배터리 규격 확인</li>
-              <li>가솔린·디젤·LPG 등 연료별 구분</li>
+              <li>연식별 적용 배터리 확인</li>
+              <li>연료·세부모델별 배터리 확인</li>
               <li>기본 / 업그레이드 배터리 안내</li>
               <li>AGM 적용 여부 확인</li>
-              <li>배터리 현재 판매가격 확인</li>
+              <li>현재 배터리 판매가격 확인</li>
+              <li>서울·경기·인천 출장교체 상담</li>
             </ul>
             <p class="vehicle-help-copy">차량 세부모델을 모르시면 <a href="${prefix}search.html">차량 배터리 찾기</a>에서 확인해 주세요.</p>
             <div class="button-row">
@@ -1110,7 +1111,7 @@ function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups, blogCase
             </div>
           </div>
         </div>
-        <p class="hero-desc">${escapeHtml(vehicle.name)} 차량은 연식, 연료, 세부모델에 따라 적용되는 자동차 배터리(밧데리) 규격이 달라질 수 있습니다. 아래 표에서 일등밧데리 차량 배터리 DB 기준의 기본 배터리와 업그레이드 배터리를 확인한 뒤 현재 판매가격은 최저가 바로가기에서 확인해 주세요.</p>
+        <p class="hero-desc">${escapeHtml(vehicle.name)} 차량은 연식, 연료, 세부모델에 따라 장착되는 자동차 배터리(밧데리)가 달라질 수 있습니다. 아래 표에서 일등밧데리 차량 배터리 DB 기준의 기본 배터리와 업그레이드 배터리를 확인한 뒤 현재 판매가격과 출장교체 상담을 함께 확인해 주세요.</p>
 ${checkNotice}
       </section>
 
@@ -1142,12 +1143,12 @@ function renderDetailPage({ manufacturer, vehicle, group, detailGroups, blogCase
   const prefix = pageDepthPrefix(3);
   const detailLabel = getDisplayDetailLabel(group.label);
   const pageLabel = getDetailPageLabel(manufacturer, vehicle, group);
-  const title = `${pageLabel} 배터리 가격 및 규격 안내 | 일등밧데리`;
-  const description = `${pageLabel} 배터리 가격과 연식·연료별 규격을 확인하세요. 기본 배터리와 업그레이드 배터리를 DB 기준으로 안내하며 일반 배터리와 AGM 배터리의 현재 판매가격도 확인할 수 있습니다.`;
+  const title = `${pageLabel} 배터리 가격 및 교체 안내 | 일등밧데리`;
+  const description = `${pageLabel} 연식·연료별 적용 배터리와 현재 판매가격을 확인하고 출장 배터리 교체 상담을 안내받을 수 있습니다.`;
   const canonicalPath = `/car-battery/${manufacturer.id}/${vehicle.slug}/${group.slug}.html`;
   const imagePath = getDetailImagePath(manufacturer.id, vehicle.slug, group.slug);
   const unique = uniqueRows(group.rows);
-  const imageAlt = `${formatManufacturerVehicleLabel(manufacturer.name, pageLabel)} 배터리 가격 및 규격 안내 - 일등밧데리`;
+  const imageAlt = `${formatManufacturerVehicleLabel(manufacturer.name, pageLabel)} 배터리 가격 및 교체 안내 - 일등밧데리`;
   const vehiclePath = `/car-battery/${manufacturer.id}/${vehicle.slug}.html`;
   const blogCaseSection = renderDetailBlogCaseSections({
     blogCases,
@@ -1159,21 +1160,21 @@ function renderDetailPage({ manufacturer, vehicle, group, detailGroups, blogCase
   });
   const checkNotice = hasDefaultBatteryCheck(unique)
     ? `
-        <p class="vehicle-check-notice">해당 차량은 연식, 세부모델 및 차량 사양에 따라 적용 배터리가 달라질 수 있어 실차 확인이 필요합니다. 1644-9141로 문의하시면 차량 확인 후 정확한 배터리 규격과 교체 상담을 안내해드립니다.</p>`
+        <p class="vehicle-check-notice">해당 차량은 연식, 세부모델 및 차량 사양에 따라 장착되는 배터리가 달라질 수 있어 실차 확인이 필요합니다. 1644-9141로 문의하시면 차량 확인 후 정확한 적용 배터리와 교체 상담을 안내해드립니다.</p>`
     : "";
   const breadcrumbItems = [
     { label: "홈", href: "../../../index.html", path: "/" },
     { label: "차량 배터리", href: "../../index.html", path: "/car-battery/" },
     { label: manufacturer.name, href: `../../${manufacturer.id}.html`, path: `/car-battery/${manufacturer.id}.html` },
     { label: `${vehicle.name} 배터리`, href: `../${vehicle.slug}.html`, path: `/car-battery/${manufacturer.id}/${vehicle.slug}.html` },
-    { label: `${detailLabel} 배터리 가격 및 규격`, path: canonicalPath }
+    { label: `${detailLabel} 배터리 가격 및 교체`, path: canonicalPath }
   ];
   const faqs = getDetailFaqs(vehicle.name, detailLabel, unique);
 
   const content = `${renderBreadcrumb(breadcrumbItems)}
       <section class="hero-card vehicle-detail-hero">
         <p class="eyebrow">Detail Battery Guide</p>
-        <h1>${escapeHtml(pageLabel)} 배터리 가격 및 규격 안내</h1>
+        <h1>${escapeHtml(pageLabel)} 배터리 가격 및 교체 안내</h1>
         <div class="vehicle-hero-layout">
           <figure class="vehicle-seo-hero-image">
             <img src="${imagePath}" alt="${escapeHtml(imageAlt)}" loading="lazy" decoding="async">
@@ -1181,10 +1182,12 @@ function renderDetailPage({ manufacturer, vehicle, group, detailGroups, blogCase
           <div class="vehicle-hero-summary">
             <h2>${escapeHtml(pageLabel)} 배터리 한눈에 확인</h2>
             <ul class="vehicle-check-list">
-              <li>연식별 배터리 규격 확인</li>
-              <li>연료별 기본 / 업그레이드 배터리 안내</li>
+              <li>연식별 적용 배터리 확인</li>
+              <li>연료·세부모델별 배터리 확인</li>
+              <li>기본 / 업그레이드 배터리 안내</li>
               <li>AGM 적용 여부 확인</li>
-              <li>배터리 현재 판매가격 확인</li>
+              <li>현재 배터리 판매가격 확인</li>
+              <li>서울·경기·인천 출장교체 상담</li>
             </ul>
             <p class="vehicle-help-copy">차량 세부모델을 모르시면 <a href="${prefix}search.html">차량 배터리 찾기</a>에서 확인해 주세요.</p>
             <div class="button-row">
@@ -1198,7 +1201,7 @@ function renderDetailPage({ manufacturer, vehicle, group, detailGroups, blogCase
       <section class="section direct-answer" aria-labelledby="directAnswerTitle">
         <div class="content-card">
           <p class="eyebrow">Direct Answer</p>
-          <h2 id="directAnswerTitle">${escapeHtml(pageLabel)} 배터리는 어떤 규격을 사용하나요?</h2>
+          <h2 id="directAnswerTitle">${escapeHtml(pageLabel)} 배터리 교체 전 어떤 배터리가 맞나요?</h2>
           <p>${escapeHtml(pageLabel)} 차량은 연식과 연료 및 차량 사양에 따라 적용 배터리가 달라질 수 있습니다. 아래 일등밧데리 차량 DB 기준 표에서 ${escapeHtml(detailLabel)} 세부 조건별 기본 배터리와 업그레이드 배터리를 확인할 수 있습니다.</p>
 ${checkNotice}
         </div>
@@ -1216,7 +1219,7 @@ ${renderPriceLinks()}
 ${blogCaseSection}
       <section class="section">
         <a class="parent-link-card" href="../${vehicle.slug}.html">
-          <strong>${escapeHtml(vehicle.name)} 전체 배터리 가격 및 규격 보기 →</strong>
+          <strong>${escapeHtml(vehicle.name)} 배터리 가격 및 교체 안내 보기 →</strong>
           <span>다른 세대와 세부모델 배터리 정보까지 함께 확인할 수 있습니다.</span>
         </a>
       </section>
@@ -1237,8 +1240,8 @@ ${renderFaqCards(faqs, `${pageLabel} 배터리 자주 묻는 질문`)}`;
 
 function renderManufacturerHub({ manufacturer, vehiclePages, allRows, blogCases }) {
   const prefix = pageDepthPrefix(1);
-  const title = `${manufacturer.name} 자동차 배터리 가격 및 규격 안내 | 일등밧데리`;
-  const description = `${manufacturer.name} 주요 차량의 자동차배터리 가격 및 규격을 확인하세요. 차량별 세부모델 기본 배터리와 업그레이드 배터리를 안내합니다.`;
+  const title = `${manufacturer.name} 자동차 배터리 가격 및 교체 안내 | 일등밧데리`;
+  const description = `${manufacturer.name} 주요 차량의 자동차배터리 가격과 교체 정보를 확인하세요. 차량별 세부모델 기본 배터리와 업그레이드 배터리를 안내합니다.`;
   const canonicalPath = `/car-battery/${manufacturer.id}.html`;
   const vehicleCount = new Set(allRows.map((row) => normalizeText(row.vehicle)).filter(Boolean)).size;
   const manufacturerBlogCases = withManufacturerBlogCaseFilters(getBlogCasesForPage(blogCases, {
@@ -1271,8 +1274,8 @@ function renderManufacturerHub({ manufacturer, vehiclePages, allRows, blogCases 
   ])}
       <section class="hero-card">
         <p class="eyebrow">Manufacturer</p>
-        <h1>${escapeHtml(manufacturer.name)} 자동차 배터리 가격 및 규격 안내</h1>
-        <p class="hero-desc">${escapeHtml(manufacturer.name)} 차량은 연식과 세부모델에 따라 배터리 규격이 달라질 수 있습니다. 차량별 배터리 가격 및 규격 안내 페이지와 차량 배터리 찾기 기능을 함께 확인해 주세요.</p>
+        <h1>${escapeHtml(manufacturer.name)} 자동차 배터리 가격 및 교체 안내</h1>
+        <p class="hero-desc">${escapeHtml(manufacturer.name)} 차량은 연식과 세부모델에 따라 장착되는 배터리가 달라질 수 있습니다. 차량별 배터리 가격 및 교체 안내 페이지와 차량 배터리 찾기 기능을 함께 확인해 주세요.</p>
         <p class="notice">현재 DB 기준 ${vehicleCount.toLocaleString("ko-KR")}개 차량명, ${allRows.length.toLocaleString("ko-KR")}개 세부모델 데이터가 등록되어 있습니다.</p>
         <div class="button-row">
           <a class="btn primary" href="${prefix}search.html">차량 배터리 찾기</a>
@@ -1296,8 +1299,8 @@ ${renderCta(prefix)}`;
 
 function renderRootHub({ manufacturers, vehiclePages, blogCases }) {
   const prefix = pageDepthPrefix(1);
-  const title = "차량별 배터리 가격 및 규격 안내 | 일등밧데리";
-  const description = "제조사와 차량명별 자동차배터리 가격 및 규격을 확인하세요. 세부모델별 기본 배터리와 업그레이드 배터리 안내를 제공합니다.";
+  const title = "차량별 배터리 가격 및 교체 안내 | 일등밧데리";
+  const description = "제조사와 차량명별 자동차배터리 가격 및 교체 정보를 확인하세요. 세부모델별 기본 배터리와 업그레이드 배터리 안내를 제공합니다.";
   const canonicalPath = "/car-battery/";
 
   const manufacturerLinks = manufacturers.map((manufacturer) => `
@@ -1322,8 +1325,8 @@ function renderRootHub({ manufacturers, vehiclePages, blogCases }) {
   ])}
       <section class="hero-card">
         <p class="eyebrow">Car Battery Guide</p>
-        <h1>차량별 배터리 가격 및 규격 안내</h1>
-        <p class="hero-desc">일등밧데리 차량 배터리 DB를 기준으로 제조사와 차량명별 기본 배터리, 업그레이드 배터리 정보를 정리했습니다. 실제 장착 규격은 연식, 연료, 세부모델에 따라 달라질 수 있으며 현재 판매가격은 최저가 바로가기에서 확인할 수 있습니다.</p>
+        <h1>차량별 배터리 가격 및 교체 안내</h1>
+        <p class="hero-desc">일등밧데리 차량 배터리 DB를 기준으로 제조사와 차량명별 기본 배터리, 업그레이드 배터리 정보를 정리했습니다. 실제 장착 배터리는 연식, 연료, 세부모델에 따라 달라질 수 있으며 현재 판매가격과 출장교체 상담은 최저가 바로가기와 전화상담에서 확인할 수 있습니다.</p>
         <div class="button-row">
           <a class="btn primary" href="${prefix}search.html">차량 배터리 찾기</a>
           <a class="btn secondary" href="tel:16449141">1644-9141 전화상담</a>

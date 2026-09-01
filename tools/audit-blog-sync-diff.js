@@ -15,7 +15,12 @@ const IMPLEMENTATION_ALLOWED_FILES = new Set([
   "tools/audit-blog-sync-diff.js",
   "tools/audit-blog-sync-regression.js",
   "tools/audit-work-cases.js",
+  "tools/generate-area-seo-pages.js",
+  "tools/generate-battery-seo-pages.js",
+  "tools/generate-battery-topic-thumbnails.js",
   "tools/generate-sitemap.js",
+  "tools/generate-vehicle-seo-pages.js",
+  "tools/generate-vehicle-thumbnails.js",
   "tools/generate-work-case-pages.js",
   "tools/submit-indexnow.js",
   "tools/sync-naver-blog-cases.js"
