@@ -2,7 +2,9 @@ name: Naver Blog Work Case Sync
 
 on:
   schedule:
-    - cron: '15 9 * * *'
+    # KST 18:30 primary, 19:30 fallback
+    - cron: '30 9 * * *'
+    - cron: '30 10 * * *'
   workflow_dispatch:
 
 permissions:
@@ -126,15 +128,6 @@ jobs:
           if [[ -z "$AFTER_POSTS" || "$AFTER_POSTS" -lt "$BEFORE_POSTS" ]]; then
             echo "Post count decreased or could not be read: before=${BEFORE_POSTS}, after=${AFTER_POSTS}" >&2
             exit 1
-          fi
-
-          BLOG_DIFF="$(git status --porcelain -- seo-data/blog-cases.json assets/blog-cases || true)"
-          if [[ -z "$BLOG_DIFF" ]]; then
-            ORIGIN_RACE_STATUS="SKIPPED"
-            PUSH_STATUS="NONE"
-            FINAL_RESULT="SUCCESS"
-            echo "No new blog changes. Build, commit and push skipped."
-            exit 0
           fi
 
           npm run build:blog-cases
