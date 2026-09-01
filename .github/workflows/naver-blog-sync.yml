@@ -130,6 +130,11 @@ jobs:
             exit 1
           fi
 
+          if [[ "${NEW_POSTS:-0}" == "0" && "${NEW_THUMBNAILS:-0}" == "0" ]]; then
+            git restore --source="$START_SHA" -- seo-data/blog-cases.json
+            echo "No new posts or thumbnails. Restored sync metadata-only changes before audit."
+          fi
+
           npm run build:blog-cases
           BUILD_STATUS="PASS"
 
