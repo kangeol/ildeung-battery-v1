@@ -1,6 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadBlogCases } from "./lib/blog-case-data.js";
+import { getBlogCasesForPage } from "./lib/blog-case-matcher.js";
+import { renderBlogCaseSection } from "./lib/blog-case-renderer.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -564,6 +567,8 @@ function renderShell({ output, title, description, canonicalPath, breadcrumbs, i
   <meta name="twitter:description" content="${escapeHtml(description)}">
   <meta name="twitter:image" content="${SITE_ORIGIN}${imagePath}">
   <link rel="stylesheet" href="${prefix}${CSS_FILE}">
+  <link rel="stylesheet" href="${prefix}css/blog-cases.css">
+  <script src="${prefix}js/blog-cases.js" defer></script>
   <script type="application/ld+json">${breadcrumbJsonLd(breadcrumbs, canonicalPath)}</script>
   <script type="application/ld+json">${faqJsonLd(faqs)}</script>
 </head>
@@ -922,7 +927,7 @@ function renderAgmCapacityLinks(capacityGroups) {
       </section>`;
 }
 
-function renderTopicPage(topic, { manufacturers, capacityGroups }) {
+function renderTopicPage(topic, { manufacturers, capacityGroups, blogCases }) {
   const breadcrumbs = [
     { label: "홈", href: "/" },
     { label: "자동차배터리 정보", href: "/battery/" }
@@ -949,6 +954,12 @@ function renderTopicPage(topic, { manufacturers, capacityGroups }) {
     extra += renderAreaLinks();
   }
 
+  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
+    type: "battery-topic",
+    canonicalPath: topic.canonicalPath,
+    topicId: topic.id
+  }), { id: `blogCases-battery-${topic.id}` });
+
   const content = `${renderBreadcrumb(breadcrumbs)}
 ${renderHero(topic)}
 ${renderDirectAnswer(topic)}
@@ -957,6 +968,7 @@ ${extra}
 ${renderTopicLinks(topic)}
 ${renderBridgeLinks({ includeArea: topic.id !== "mobile" })}
 ${renderPriceLinks()}
+${blogCaseSection}
 ${renderCta()}
 ${renderFaq(topic)}`;
 
@@ -1018,7 +1030,7 @@ function renderCapacityTable(rows, vehiclePageMap) {
       </section>`;
 }
 
-function renderCapacityPage({ capacity, rows }, vehiclePageMap) {
+function renderCapacityPage({ capacity, rows }, vehiclePageMap, blogCases) {
   const output = `agm/capacity/${capacity.toLowerCase()}.html`;
   const canonicalPath = `/battery/agm/capacity/${capacity.toLowerCase()}.html`;
   const title = `${capacity} 배터리 가격 및 적용 차량 안내 | 일등밧데리`;
@@ -1050,6 +1062,11 @@ function renderCapacityPage({ capacity, rows }, vehiclePageMap) {
       ["출장교체 상담도 가능한가요?", "서울, 경기, 인천 지역은 차량 위치와 차종 확인 후 1644-9141로 상담 가능합니다."]
     ]
   };
+  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
+    type: "battery-capacity",
+    canonicalPath,
+    capacity
+  }), { id: `blogCases-${capacity.toLowerCase()}` });
 
   const content = `${renderBreadcrumb(breadcrumbs)}
 ${renderHero(topic)}
@@ -1058,6 +1075,7 @@ ${renderCapacityTable(rows, vehiclePageMap)}
 ${renderTopicLinks({ related: ["agm", "agmPrice", "importCar", "replacementCost", "price", "mobile"] })}
 ${renderBridgeLinks()}
 ${renderPriceLinks()}
+${blogCaseSection}
 ${renderCta()}
 ${renderFaq(topic)}`;
 
@@ -1085,17 +1103,18 @@ function generate() {
   const vehicleRows = loadVehicleRows();
   const capacityGroups = buildAgmCapacityGroups(vehicleRows);
   const vehiclePageMap = buildVehiclePageMap(manufacturers);
+  const blogCases = loadBlogCases();
 
   ensureSafeOutputDir();
 
   FIXED_TOPICS.forEach((topic) => {
-    writeFile(outputPath(topic.output), renderTopicPage(topic, { manufacturers, capacityGroups }));
+    writeFile(outputPath(topic.output), renderTopicPage(topic, { manufacturers, capacityGroups, blogCases }));
   });
 
   capacityGroups.forEach((capacityGroup) => {
     writeFile(
       outputPath(`agm/capacity/${capacityGroup.capacity.toLowerCase()}.html`),
-      renderCapacityPage(capacityGroup, vehiclePageMap)
+      renderCapacityPage(capacityGroup, vehiclePageMap, blogCases)
     );
   });
 

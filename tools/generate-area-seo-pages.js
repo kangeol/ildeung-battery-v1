@@ -2,6 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { generateSitemap } from "./generate-sitemap.js";
+import { loadBlogCases } from "./lib/blog-case-data.js";
+import { getBlogCasesForPage } from "./lib/blog-case-matcher.js";
+import { renderBlogCaseSection } from "./lib/blog-case-renderer.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -246,6 +249,8 @@ function renderShell({ depth, title, description, canonicalPath, breadcrumbs, co
   <meta name="twitter:description" content="${escapeHtml(description)}">
   <meta name="twitter:image" content="${SITE_ORIGIN}${resolvedImagePath}">
   <link rel="stylesheet" href="${prefix}${CSS_FILE}">
+  <link rel="stylesheet" href="${prefix}css/blog-cases.css">
+  <script src="${prefix}js/blog-cases.js" defer></script>
   <script type="application/ld+json">${breadcrumbJsonLd(breadcrumbs, canonicalPath)}</script>
 </head>
 <body class="area-seo-page">
@@ -518,8 +523,13 @@ function renderSiblingLinks(area, region, neighborhood) {
       </section>`;
 }
 
-function renderAreaRootPage(areas) {
+function renderAreaRootPage(areas, blogCases) {
   const imagePath = rootAreaThumbnailPath();
+  const canonicalPath = "/area/";
+  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
+    type: "area-root",
+    canonicalPath
+  }), { id: "blogCases-area-root" });
   const breadcrumbs = [
     { label: "홈", href: "/" },
     { label: "출장배터리 서비스 지역" }
@@ -556,6 +566,7 @@ function renderAreaRootPage(areas) {
         </div>
       </section>
       ${renderPriceLinks()}
+      ${blogCaseSection}
       ${renderAreaCta()}
       ${renderReplacementProcess()}
       ${renderFaq("서울·경기·인천", "region")}`;
@@ -564,15 +575,21 @@ function renderAreaRootPage(areas) {
     depth: 1,
     title: "서울·경기·인천 출장배터리 서비스 지역 | 일등밧데리",
     description: "서울·경기·인천 출장배터리 교체 가능 지역과 자동차배터리 가격, DIN·AGM 배터리 상담 정보를 확인하세요.",
-    canonicalPath: "/area/",
+    canonicalPath,
     breadcrumbs,
     content,
     imagePath
   });
 }
 
-function renderAreaHubPage(area) {
+function renderAreaHubPage(area, blogCases) {
   const imagePath = areaHubThumbnailPath(area);
+  const canonicalPath = areaIndexPath(area);
+  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
+    type: "area",
+    canonicalPath,
+    areaId: area.id
+  }), { id: `blogCases-area-${area.id}` });
   const breadcrumbs = [
     { label: "홈", href: "/" },
     { label: "출장배터리 서비스 지역", href: "/area/" },
@@ -609,6 +626,7 @@ function renderAreaHubPage(area) {
       </section>
       ${renderServiceInfo(area.name, area.fullName)}
       ${renderPriceLinks()}
+      ${blogCaseSection}
       ${renderAreaCta()}
       ${renderReplacementProcess()}
       ${renderFaq(area.name, "region")}`;
@@ -617,18 +635,25 @@ function renderAreaHubPage(area) {
     depth: 2,
     title: `${area.name} 출장배터리 서비스 지역 | 자동차배터리 교체 | 일등밧데리`,
     description: `${area.name} 출장배터리 교체 가능 지역을 확인하세요. 자동차배터리 가격, AGM 배터리, 차량 위치 방문 교체 상담을 안내합니다.`,
-    canonicalPath: areaIndexPath(area),
+    canonicalPath,
     breadcrumbs,
     content,
     imagePath
   });
 }
 
-function renderRegionPage(area, region) {
+function renderRegionPage(area, region, blogCases) {
   const imagePath = regionThumbnailPath(area, region);
   const titleLabel = regionTitleLabel(area, region);
   const h1Label = regionH1Label(area, region);
   const faqLabel = area.id === "gyeonggi" ? `${area.name} ${region.name}` : titleLabel;
+  const canonicalPath = regionPath(area, region);
+  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
+    type: "region",
+    canonicalPath,
+    areaId: area.id,
+    regionId: region.id
+  }), { id: `blogCases-${area.id}-${region.id}` });
   const breadcrumbs = [
     { label: "홈", href: "/" },
     { label: "출장배터리 서비스 지역", href: "/area/" },
@@ -666,6 +691,7 @@ function renderRegionPage(area, region) {
       </section>
       ${renderServiceInfo(h1Label, titleLabel)}
       ${renderPriceLinks()}
+      ${blogCaseSection}
       ${renderAreaCta()}
       ${renderReplacementProcess()}
       ${renderFaq(faqLabel, "region")}`;
@@ -674,18 +700,26 @@ function renderRegionPage(area, region) {
     depth: 2,
     title: `${titleLabel} 출장배터리 가격 및 자동차배터리 교체 | 일등밧데리`,
     description: `${titleLabel} 출장배터리 교체와 자동차배터리 가격을 확인하세요. 차량 위치 방문 교체 상담, 일반 DIN·AGM 배터리, 국산차·수입차 배터리 상담을 안내합니다.`,
-    canonicalPath: regionPath(area, region),
+    canonicalPath,
     breadcrumbs,
     content,
     imagePath
   });
 }
 
-function renderNeighborhoodPage(area, region, neighborhood, duplicatesByArea) {
+function renderNeighborhoodPage(area, region, neighborhood, duplicatesByArea, blogCases) {
   const imagePath = neighborhoodThumbnailPath(area, region, neighborhood);
   const titleLabel = neighborhoodTitleLabel(area, region, neighborhood, duplicatesByArea);
   const h1Label = neighborhoodH1Label(area, region, neighborhood, duplicatesByArea);
   const regionLabel = regionH1Label(area, region);
+  const canonicalPath = neighborhoodPath(area, region, neighborhood);
+  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
+    type: "neighborhood",
+    canonicalPath,
+    areaId: area.id,
+    regionId: region.id,
+    neighborhoodName: neighborhood.name
+  }), { id: `blogCases-${area.id}-${region.id}-${neighborhood.slug}` });
   const localContext = getLocalContextCopy(area, region, neighborhood, duplicatesByArea);
   const legalContext = neighborhood.district
     ? `${region.name} ${neighborhood.district}`
@@ -725,6 +759,7 @@ function renderNeighborhoodPage(area, region, neighborhood, duplicatesByArea) {
       ${renderSiblingLinks(area, region, neighborhood)}
       ${renderServiceInfo(h1Label, regionLabel)}
       ${renderPriceLinks()}
+      ${blogCaseSection}
       ${renderAreaCta()}
       ${renderReplacementProcess()}
       ${renderFaq(h1Label, "neighborhood")}`;
@@ -733,7 +768,7 @@ function renderNeighborhoodPage(area, region, neighborhood, duplicatesByArea) {
     depth: 3,
     title: `${titleLabel} 출장배터리 가격 및 자동차배터리 교체 | 일등밧데리`,
     description: `${titleLabel} 출장배터리 교체와 자동차배터리 가격을 확인하세요. 방전·시동불량, 일반 DIN·AGM 배터리, 차량 위치 방문 교체 상담을 안내합니다.`,
-    canonicalPath: neighborhoodPath(area, region, neighborhood),
+    canonicalPath,
     breadcrumbs,
     content,
     imagePath
@@ -787,6 +822,7 @@ function generate() {
   const areas = getAreas(data);
   const duplicateNeighborhoods = buildDuplicateNeighborhoodMap(areas);
   const slugCollisions = validateSlugCollisions(areas);
+  const blogCases = loadBlogCases();
 
   if (slugCollisions.length) {
     throw new Error(`Slug collisions detected: ${slugCollisions.join("; ")}`);
@@ -796,21 +832,21 @@ function generate() {
 
   const generatedPaths = [];
 
-  writeFile(path.join(OUTPUT_DIR, "index.html"), renderAreaRootPage(areas));
+  writeFile(path.join(OUTPUT_DIR, "index.html"), renderAreaRootPage(areas, blogCases));
   generatedPaths.push("/area/");
 
   areas.forEach((area) => {
-    writeFile(path.join(OUTPUT_DIR, area.slug, "index.html"), renderAreaHubPage(area));
+    writeFile(path.join(OUTPUT_DIR, area.slug, "index.html"), renderAreaHubPage(area, blogCases));
     generatedPaths.push(areaIndexPath(area));
 
     area.regions.forEach((region) => {
-      writeFile(path.join(OUTPUT_DIR, area.slug, `${region.id}.html`), renderRegionPage(area, region));
+      writeFile(path.join(OUTPUT_DIR, area.slug, `${region.id}.html`), renderRegionPage(area, region, blogCases));
       generatedPaths.push(regionPath(area, region));
 
       region.neighborhoods.forEach((neighborhood) => {
         writeFile(
           path.join(OUTPUT_DIR, area.slug, region.id, `${neighborhood.slug}.html`),
-          renderNeighborhoodPage(area, region, neighborhood, duplicateNeighborhoods)
+          renderNeighborhoodPage(area, region, neighborhood, duplicateNeighborhoods, blogCases)
         );
         generatedPaths.push(neighborhoodPath(area, region, neighborhood));
       });

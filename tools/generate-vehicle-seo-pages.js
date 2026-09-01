@@ -1,6 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadBlogCases } from "./lib/blog-case-data.js";
+import { getBlogCasesForPage } from "./lib/blog-case-matcher.js";
+import { renderBlogCaseSection } from "./lib/blog-case-renderer.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -795,6 +798,8 @@ function renderShell({ depth, title, description, canonicalPath, content, imageP
   <meta property="og:url" content="${canonical}">
   <meta name="twitter:card" content="summary_large_image">${imageMeta}
   <link rel="stylesheet" href="${prefix}${CSS_FILE}">
+  <link rel="stylesheet" href="${prefix}css/blog-cases.css">
+  <script src="${prefix}js/blog-cases.js" defer></script>
 ${schema}
 </head>
 <body>
@@ -999,7 +1004,7 @@ function renderDetailSiblings({ vehicle, detailGroups, currentSlug }) {
       </section>`;
 }
 
-function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups }) {
+function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups, blogCases }) {
   const prefix = pageDepthPrefix(2);
   const manufacturerVehicleLabel = formatManufacturerVehicleLabel(manufacturer.name, vehicle.name);
   const title = `${vehicle.name} 배터리 가격 및 규격 안내 | 자동차배터리 교체 | 일등밧데리`;
@@ -1014,6 +1019,12 @@ function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups }) {
         <p class="vehicle-check-notice">해당 차량은 연식, 세부모델 및 차량 사양에 따라 적용 배터리가 달라질 수 있어 실차 확인이 필요합니다. 1644-9141로 문의하시면 차량 확인 후 정확한 배터리 규격과 교체 상담을 안내해드립니다.</p>`
     : "";
   const detailLinkMap = buildDetailLinkMap(vehicle.slug, detailGroups);
+  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
+    type: "vehicle",
+    canonicalPath,
+    manufacturerId: manufacturer.id,
+    vehiclePath: canonicalPath
+  }), { id: `blogCases-${manufacturer.id}-${vehicle.slug}` });
   const breadcrumbItems = [
     { label: "홈", href: "../../index.html", path: "/" },
     { label: "차량 배터리", href: "../index.html", path: "/car-battery/" },
@@ -1058,6 +1069,7 @@ ${checkNotice}
 ${renderTable(unique, { detailLinkByRowKey: detailLinkMap })}
       </section>
 ${renderPriceLinks()}
+${blogCaseSection}
 ${renderCta(prefix)}
 ${renderVehicleFaq(vehicle.name)}`;
 
@@ -1072,7 +1084,7 @@ ${renderVehicleFaq(vehicle.name)}`;
   });
 }
 
-function renderDetailPage({ manufacturer, vehicle, group, detailGroups }) {
+function renderDetailPage({ manufacturer, vehicle, group, detailGroups, blogCases }) {
   const prefix = pageDepthPrefix(3);
   const detailLabel = getDisplayDetailLabel(group.label);
   const pageLabel = getDetailPageLabel(manufacturer, vehicle, group);
@@ -1082,6 +1094,14 @@ function renderDetailPage({ manufacturer, vehicle, group, detailGroups }) {
   const imagePath = getDetailImagePath(manufacturer.id, vehicle.slug, group.slug);
   const unique = uniqueRows(group.rows);
   const imageAlt = `${formatManufacturerVehicleLabel(manufacturer.name, pageLabel)} 배터리 가격 및 규격 안내 - 일등밧데리`;
+  const vehiclePath = `/car-battery/${manufacturer.id}/${vehicle.slug}.html`;
+  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
+    type: "vehicle-detail",
+    canonicalPath,
+    manufacturerId: manufacturer.id,
+    vehiclePath,
+    detailLabel
+  }), { id: `blogCases-${manufacturer.id}-${vehicle.slug}-${group.slug}` });
   const checkNotice = hasDefaultBatteryCheck(unique)
     ? `
         <p class="vehicle-check-notice">해당 차량은 연식, 세부모델 및 차량 사양에 따라 적용 배터리가 달라질 수 있어 실차 확인이 필요합니다. 1644-9141로 문의하시면 차량 확인 후 정확한 배터리 규격과 교체 상담을 안내해드립니다.</p>`
@@ -1138,6 +1158,7 @@ ${checkNotice}
 ${renderTable(unique)}
       </section>
 ${renderPriceLinks()}
+${blogCaseSection}
       <section class="section">
         <a class="parent-link-card" href="../${vehicle.slug}.html">
           <strong>${escapeHtml(vehicle.name)} 전체 배터리 가격 및 규격 보기 →</strong>
@@ -1159,12 +1180,17 @@ ${renderFaqCards(faqs, `${pageLabel} 배터리 자주 묻는 질문`)}`;
   });
 }
 
-function renderManufacturerHub({ manufacturer, vehiclePages, allRows }) {
+function renderManufacturerHub({ manufacturer, vehiclePages, allRows, blogCases }) {
   const prefix = pageDepthPrefix(1);
   const title = `${manufacturer.name} 자동차 배터리 가격 및 규격 안내 | 일등밧데리`;
   const description = `${manufacturer.name} 주요 차량의 자동차배터리 가격 및 규격을 확인하세요. 차량별 세부모델 기본 배터리와 업그레이드 배터리를 안내합니다.`;
   const canonicalPath = `/car-battery/${manufacturer.id}.html`;
   const vehicleCount = new Set(allRows.map((row) => normalizeText(row.vehicle)).filter(Boolean)).size;
+  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
+    type: "manufacturer",
+    canonicalPath,
+    manufacturerId: manufacturer.id
+  }), { id: `blogCases-${manufacturer.id}` });
   const links = vehiclePages.length
     ? vehiclePages.map((page) => `
           <a class="link-card" href="${manufacturer.id}/${page.slug}.html">
@@ -1201,12 +1227,13 @@ function renderManufacturerHub({ manufacturer, vehiclePages, allRows }) {
         <div class="popular-grid">${links}
         </div>
       </section>
+${blogCaseSection}
 ${renderCta(prefix)}`;
 
   return renderShell({ depth: 1, title, description, canonicalPath, content });
 }
 
-function renderRootHub({ manufacturers, vehiclePages }) {
+function renderRootHub({ manufacturers, vehiclePages, blogCases }) {
   const prefix = pageDepthPrefix(1);
   const title = "차량별 배터리 가격 및 규격 안내 | 일등밧데리";
   const description = "제조사와 차량명별 자동차배터리 가격 및 규격을 확인하세요. 세부모델별 기본 배터리와 업그레이드 배터리 안내를 제공합니다.";
@@ -1223,6 +1250,10 @@ function renderRootHub({ manufacturers, vehiclePages }) {
             <strong>${escapeHtml(page.name)} 배터리</strong>
             <span>${escapeHtml(page.manufacturerName)} · ${formatRowsLabel(page.rowCount)}</span>
           </a>`).join("");
+  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
+    type: "vehicle-root",
+    canonicalPath
+  }), { id: "blogCases-car-battery-root" });
 
   const content = `${renderBreadcrumb([
     { label: "홈", href: "../index.html" },
@@ -1255,6 +1286,7 @@ function renderRootHub({ manufacturers, vehiclePages }) {
         <div class="popular-grid">${popularLinks}
         </div>
       </section>
+${blogCaseSection}
 ${renderCta(prefix)}`;
 
   return renderShell({ depth: 1, title, description, canonicalPath, content });
@@ -1398,6 +1430,7 @@ function generate() {
   const slugCollisions = [];
   const allPendingPages = [];
   const rawDetailValues = new Set();
+  const blogCases = loadBlogCases();
   let totalRows = 0;
   let totalVehicleGroups = 0;
   let existingVehiclePageCount = 0;
@@ -1480,7 +1513,7 @@ function generate() {
 
       writeFile(
         path.join(OUTPUT_DIR, manufacturer.id, `${vehicleConfig.slug}.html`),
-        renderVehiclePage({ manufacturer, vehicle: vehicleConfig, rows: matchedRows, detailGroups })
+        renderVehiclePage({ manufacturer, vehicle: vehicleConfig, rows: matchedRows, detailGroups, blogCases })
       );
 
       detailGroups.forEach((group) => {
@@ -1502,7 +1535,7 @@ function generate() {
 
         writeFile(
           path.join(OUTPUT_DIR, manufacturer.id, vehicleConfig.slug, `${group.slug}.html`),
-          renderDetailPage({ manufacturer, vehicle: vehicleConfig, group, detailGroups })
+          renderDetailPage({ manufacturer, vehicle: vehicleConfig, group, detailGroups, blogCases })
         );
 
         generatedDetailPages.push(detailPage);
@@ -1527,7 +1560,7 @@ function generate() {
 
     writeFile(
       path.join(OUTPUT_DIR, `${manufacturer.id}.html`),
-      renderManufacturerHub({ manufacturer, vehiclePages: sortedVehiclePages, allRows: rows })
+      renderManufacturerHub({ manufacturer, vehiclePages: sortedVehiclePages, allRows: rows, blogCases })
     );
 
     manufacturerSummaries.push({
@@ -1542,7 +1575,7 @@ function generate() {
 
   writeFile(
     path.join(OUTPUT_DIR, "index.html"),
-    renderRootHub({ manufacturers: manufacturerSummaries, vehiclePages: popularVehiclePages })
+    renderRootHub({ manufacturers: manufacturerSummaries, vehiclePages: popularVehiclePages, blogCases })
   );
 
   const sitemapUrls = [
