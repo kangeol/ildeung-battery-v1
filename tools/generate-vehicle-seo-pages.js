@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadBlogCases } from "./lib/blog-case-data.js";
-import { getBlogCasesForPage } from "./lib/blog-case-matcher.js";
+import { getBlogCasesForPage, getBlogCasesForVehicleDetailGroups } from "./lib/blog-case-matcher.js";
 import { renderBlogCaseSection } from "./lib/blog-case-renderer.js";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -1004,6 +1004,60 @@ function renderDetailSiblings({ vehicle, detailGroups, currentSlug }) {
       </section>`;
 }
 
+function withManufacturerBlogCaseFilters(posts, manufacturer, vehiclePages) {
+  const vehiclePageByPath = new Map(vehiclePages.map((page) => [page.urlPath, page]));
+  const vehicleOrder = new Map(vehiclePages.map((page, index) => [page.urlPath, index]));
+  const counts = new Map();
+  const taggedPosts = posts.map((post) => {
+    const values = [];
+
+    (post.facts?.vehicles || []).forEach((vehicle) => {
+      if (vehicle.manufacturerId === manufacturer.id && vehiclePageByPath.has(vehicle.urlPath)) {
+        values.push(vehicle.urlPath);
+      }
+    });
+
+    const blogCaseFilters = [...new Set(values)];
+    blogCaseFilters.forEach((value) => {
+      counts.set(value, (counts.get(value) || 0) + 1);
+    });
+
+    return { ...post, blogCaseFilters };
+  });
+  const filters = [
+    { value: "all", label: "전체", count: taggedPosts.length },
+    ...[...counts.entries()]
+      .sort((a, b) => (vehicleOrder.get(a[0]) ?? 9999) - (vehicleOrder.get(b[0]) ?? 9999))
+      .map(([value, count]) => ({
+        value,
+        label: `${vehiclePageByPath.get(value)?.name || "차량"} 배터리`,
+        count
+      }))
+  ];
+
+  return { posts: taggedPosts, filters };
+}
+
+function renderDetailBlogCaseSections({ blogCases, manufacturer, vehicle, pageLabel, canonicalPath, vehiclePath }) {
+  const groups = getBlogCasesForVehicleDetailGroups(blogCases, {
+    canonicalPath,
+    manufacturerId: manufacturer.id,
+    vehiclePath
+  });
+  const exactSection = renderBlogCaseSection(groups.exact, {
+    id: `blogCases-${manufacturer.id}-${vehicle.slug}-detail-exact`,
+    title: `${pageLabel} 실제 작업 사례`,
+    description: `${pageLabel} 세부모델이 제목에 명확하게 확인된 네이버 블로그 작업 사례입니다.`
+  });
+  const relatedSection = renderBlogCaseSection(groups.related, {
+    id: `blogCases-${manufacturer.id}-${vehicle.slug}-detail-related`,
+    title: `${vehicle.name} 관련 작업 사례`,
+    description: `${vehicle.name} 차량명은 확인되지만 세대명이 명시되지 않은 관련 작업 사례입니다.`
+  });
+
+  return [exactSection, relatedSection].filter(Boolean).join("\n");
+}
+
 function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups, blogCases }) {
   const prefix = pageDepthPrefix(2);
   const manufacturerVehicleLabel = formatManufacturerVehicleLabel(manufacturer.name, vehicle.name);
@@ -1095,13 +1149,14 @@ function renderDetailPage({ manufacturer, vehicle, group, detailGroups, blogCase
   const unique = uniqueRows(group.rows);
   const imageAlt = `${formatManufacturerVehicleLabel(manufacturer.name, pageLabel)} 배터리 가격 및 규격 안내 - 일등밧데리`;
   const vehiclePath = `/car-battery/${manufacturer.id}/${vehicle.slug}.html`;
-  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
-    type: "vehicle-detail",
+  const blogCaseSection = renderDetailBlogCaseSections({
+    blogCases,
+    manufacturer,
+    vehicle,
+    pageLabel,
     canonicalPath,
-    manufacturerId: manufacturer.id,
-    vehiclePath,
-    detailLabel
-  }), { id: `blogCases-${manufacturer.id}-${vehicle.slug}-${group.slug}` });
+    vehiclePath
+  });
   const checkNotice = hasDefaultBatteryCheck(unique)
     ? `
         <p class="vehicle-check-notice">해당 차량은 연식, 세부모델 및 차량 사양에 따라 적용 배터리가 달라질 수 있어 실차 확인이 필요합니다. 1644-9141로 문의하시면 차량 확인 후 정확한 배터리 규격과 교체 상담을 안내해드립니다.</p>`
@@ -1186,11 +1241,17 @@ function renderManufacturerHub({ manufacturer, vehiclePages, allRows, blogCases 
   const description = `${manufacturer.name} 주요 차량의 자동차배터리 가격 및 규격을 확인하세요. 차량별 세부모델 기본 배터리와 업그레이드 배터리를 안내합니다.`;
   const canonicalPath = `/car-battery/${manufacturer.id}.html`;
   const vehicleCount = new Set(allRows.map((row) => normalizeText(row.vehicle)).filter(Boolean)).size;
-  const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
+  const manufacturerBlogCases = withManufacturerBlogCaseFilters(getBlogCasesForPage(blogCases, {
     type: "manufacturer",
     canonicalPath,
     manufacturerId: manufacturer.id
-  }), { id: `blogCases-${manufacturer.id}` });
+  }), manufacturer, vehiclePages);
+  const blogCaseSection = renderBlogCaseSection(manufacturerBlogCases.posts, {
+    id: `blogCases-${manufacturer.id}`,
+    title: `${manufacturer.name} 배터리 실제 작업 사례`,
+    description: `${manufacturer.name} 차량 작업 사례를 차량별로 모아 확인할 수 있습니다.`,
+    filters: manufacturerBlogCases.filters
+  });
   const links = vehiclePages.length
     ? vehiclePages.map((page) => `
           <a class="link-card" href="${manufacturer.id}/${page.slug}.html">

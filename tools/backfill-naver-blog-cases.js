@@ -516,6 +516,8 @@ async function main() {
       manufacturer: post.facts.manufacturers.length,
       vehicle: post.facts.vehicles.length,
       detail: post.facts.detailModels.length,
+      actualLocation: post.facts.actualWorkLocation ? 1 : 0,
+      mentionedServiceArea: post.facts.mentionedServiceAreas.length,
       region: post.facts.regions.length,
       neighborhood: post.facts.neighborhoods.length,
       battery: post.facts.batteryModels.length
@@ -560,6 +562,16 @@ async function main() {
       manufacturerMatches: countFacts(merged, "manufacturers"),
       vehicleMatches: countFacts(merged, "vehicles"),
       detailMatches: countFacts(merged, "detailModels"),
+      actualAreaMatches: countFacts(merged, "areas"),
+      actualRegionMatches: countFacts(merged, "regions"),
+      actualNeighborhoodMatches: countFacts(merged, "neighborhoods"),
+      mentionedServiceAreaPosts: countFacts(merged, "mentionedServiceAreas"),
+      serviceAreaOnlyMentionsExcluded: merged.filter((post) => (
+        (post.facts?.mentionedServiceAreas || []).length &&
+        !(post.facts?.areas || []).length &&
+        !(post.facts?.regions || []).length &&
+        !(post.facts?.neighborhoods || []).length
+      )).length,
       regionMatches: countFacts(merged, "regions"),
       neighborhoodMatches: countFacts(merged, "neighborhoods"),
       batteryMatches: countFacts(merged, "batteryModels"),
@@ -593,6 +605,11 @@ async function main() {
   console.log(`Manufacturer matched posts: ${archive.stats.manufacturerMatches}`);
   console.log(`Vehicle matched posts: ${archive.stats.vehicleMatches}`);
   console.log(`Detail matched posts: ${archive.stats.detailMatches}`);
+  console.log(`Actual area matched posts: ${archive.stats.actualAreaMatches}`);
+  console.log(`Actual region matched posts: ${archive.stats.actualRegionMatches}`);
+  console.log(`Actual neighborhood matched posts: ${archive.stats.actualNeighborhoodMatches}`);
+  console.log(`Mentioned service area posts: ${archive.stats.mentionedServiceAreaPosts}`);
+  console.log(`Service-area-only mentions excluded: ${archive.stats.serviceAreaOnlyMentionsExcluded}`);
   console.log(`Region matched posts: ${archive.stats.regionMatches}`);
   console.log(`Neighborhood matched posts: ${archive.stats.neighborhoodMatches}`);
   console.log(`Battery matched posts: ${archive.stats.batteryMatches}`);

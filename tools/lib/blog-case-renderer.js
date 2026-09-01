@@ -28,7 +28,12 @@ function formatDisplayText(value) {
   return normalizeText(value).replace(/\b((?:AGM|DIN|DF|EFB)\s*-?\s*[0-9]{2,3}[A-Z]{0,3})(?=[가-힣])/gi, "$1 ");
 }
 
-export function renderBlogCaseSection(posts, { id = "blogCases", title = "실제 작업 사례" } = {}) {
+export function renderBlogCaseSection(posts, {
+  id = "blogCases",
+  title = "실제 작업 사례",
+  description = "일등밧데리 네이버 블로그에 기록된 실제 배터리 작업 사례입니다.",
+  filters = []
+} = {}) {
   const cases = Array.isArray(posts) ? posts.filter(Boolean) : [];
 
   if (!cases.length) {
@@ -36,6 +41,18 @@ export function renderBlogCaseSection(posts, { id = "blogCases", title = "실제
   }
 
   const totalPages = Math.ceil(cases.length / PAGE_SIZE);
+  const filterChips = Array.isArray(filters) && filters.length > 1
+    ? `
+        <div class="blog-case-filters" role="group" aria-label="작업 사례 필터">
+          ${filters.map((filter, index) => {
+            const pressed = index === 0 ? " aria-pressed=\"true\"" : " aria-pressed=\"false\"";
+            const label = normalizeText(filter.label) || "전체";
+            const value = normalizeText(filter.value) || "all";
+            const count = Number.isFinite(filter.count) ? filter.count : 0;
+            return `<button type="button" class="blog-case-filter-chip" data-blog-case-filter="${escapeHtml(value)}"${pressed}>${escapeHtml(label)} <span>${count.toLocaleString("ko-KR")}</span></button>`;
+          }).join("")}
+        </div>`
+    : "";
   const cards = cases.map((post, index) => {
     const page = Math.floor(index / PAGE_SIZE) + 1;
     const titleText = formatDisplayText(post.title) || "일등밧데리 실제 작업 사례";
@@ -43,10 +60,11 @@ export function renderBlogCaseSection(posts, { id = "blogCases", title = "실제
     const dateLabel = formatKoreanDate(post.publishedAt) || "작성일 확인";
     const metadata = buildMetadata(post);
     const thumbnail = normalizeText(post.thumbnail) || BLOG_CASE_FALLBACK_IMAGE;
+    const filterValues = uniqueValues(["all", ...(post.blogCaseFilters || [])]).join(" ");
     const hidden = page > 1 ? " hidden" : "";
 
     return `
-          <article class="blog-case-card" data-blog-case-item data-blog-case-page="${page}"${hidden}>
+          <article class="blog-case-card" data-blog-case-item data-blog-case-page="${page}" data-blog-case-filters="${escapeHtml(filterValues)}"${hidden}>
             <a class="blog-case-link" href="${escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer">
               <span class="blog-case-thumb">
                 <img src="${escapeHtml(thumbnail)}" alt="${escapeHtml(titleText)}" loading="lazy" decoding="async" onerror="this.src='${BLOG_CASE_FALLBACK_IMAGE}'">
@@ -64,9 +82,9 @@ export function renderBlogCaseSection(posts, { id = "blogCases", title = "실제
 
   const controls = totalPages > 1
     ? `
-        <div class="blog-case-pagination" aria-label="실제 작업 사례 페이지 이동">
+        <div class="blog-case-pagination" data-blog-case-pagination aria-label="실제 작업 사례 페이지 이동">
           <button type="button" class="blog-case-nav" data-blog-case-prev aria-label="이전 사례">‹</button>
-          <span class="blog-case-page-status"><span data-blog-case-current>1</span> / ${totalPages}</span>
+          <span class="blog-case-page-status"><span data-blog-case-current>1</span> / <span data-blog-case-total>${totalPages}</span></span>
           <div class="blog-case-page-buttons">
             ${Array.from({ length: totalPages }, (_, index) => {
               const page = index + 1;
@@ -83,8 +101,9 @@ export function renderBlogCaseSection(posts, { id = "blogCases", title = "실제
         <div class="section-heading">
           <p class="eyebrow">Blog Case</p>
           <h2 id="${escapeHtml(id)}Title">${escapeHtml(title)}</h2>
-          <p class="section-desc">일등밧데리 네이버 블로그에 기록된 실제 배터리 작업 사례입니다.</p>
+          <p class="section-desc">${escapeHtml(description)}</p>
         </div>
+${filterChips}
         <div class="blog-case-grid">${cards}
         </div>
 ${controls}
