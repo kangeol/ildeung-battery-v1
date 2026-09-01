@@ -510,7 +510,7 @@ function renderSiblingLinks(area, region, neighborhood) {
         <div class="section-heading">
           <p class="eyebrow">Nearby</p>
           <h2 id="siblingTitle">${escapeHtml(parentLabel)} 다른 출장 가능 지역</h2>
-          <p class="section-desc">현재 선택한 ${escapeHtml(neighborhood.name)}을 제외한 ${escapeHtml(parentLabel)} 서비스 가능 동입니다.</p>
+          <p class="section-desc">현재 선택한 ${escapeHtml(neighborhood.name)} 지역을 제외한 ${escapeHtml(parentLabel)} 서비스 가능 동입니다.</p>
         </div>
         <div class="area-link-grid compact">${links}
         </div>

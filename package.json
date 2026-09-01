@@ -9,6 +9,7 @@
     "generate:battery-thumbnails": "node tools/generate-battery-topic-thumbnails.js",
     "generate:battery-seo": "node tools/generate-battery-seo-pages.js",
     "generate:sitemap": "node tools/generate-sitemap.js",
+    "audit:seo-copy": "node tools/audit-seo-korean-copy.js",
     "build:seo": "npm run convert && npm run generate:vehicle-seo && npm run generate:vehicle-thumbnails && npm run generate:area-thumbnails && npm run generate:area-seo && npm run generate:battery-thumbnails && npm run generate:battery-seo && npm run generate:sitemap"
   },
   "devDependencies": {

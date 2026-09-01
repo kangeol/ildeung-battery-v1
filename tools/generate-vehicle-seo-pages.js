@@ -906,7 +906,7 @@ function getVehicleFaqs(vehicleName) {
       answer: "배터리 가격은 적용 규격과 AGM 여부, 제품에 따라 달라질 수 있습니다. 위 세부모델별 규격을 확인한 후 일반타입 또는 AGM 배터리 최저가 바로가기에서 현재 판매가격을 확인해 주세요. 정확한 출장교체 비용은 1644-9141로 상담 가능합니다."
     },
     {
-      question: `같은 ${vehicleName}라도 배터리가 다른가요?`,
+      question: `같은 ${vehicleName} 차량도 배터리가 다른가요?`,
       answer: "연식, 연료, 세부모델, 옵션에 따라 적용되는 자동차배터리 규격이 달라질 수 있습니다."
     },
     {
@@ -955,13 +955,13 @@ function getDetailFaqs(vehicleName, detailLabel, rows) {
       answer: "배터리 가격은 적용 규격, AGM 여부, 제품에 따라 달라집니다. 위 표에서 세부 조건별 규격을 확인한 뒤 일반타입 또는 AGM 배터리 최저가 바로가기에서 현재 판매가격을 확인해 주세요."
     },
     {
-      question: `${label}은 AGM 배터리를 사용하나요?`,
+      question: `${label} 차량에 AGM 배터리가 적용되나요?`,
       answer: hasAgm
         ? "현재 DB 표에는 AGM 규격이 포함된 조건이 있습니다. 같은 세대라도 연식과 연료에 따라 달라질 수 있으므로 표의 세부 조건을 함께 확인해 주세요."
         : "AGM 적용 여부는 연식, 연료, 세부모델에 따라 달라질 수 있습니다. 표에 표시된 기본 배터리와 업그레이드 배터리를 기준으로 확인해 주세요."
     },
     {
-      question: `같은 ${detailLabel}도 연료에 따라 배터리가 다른가요?`,
+      question: `${detailLabel} 세부모델도 연료에 따라 배터리가 다른가요?`,
       answer: "가솔린, 디젤, LPG, 하이브리드 등 연료와 차량 사양에 따라 배터리 규격이 달라질 수 있습니다."
     },
     {
@@ -1045,7 +1045,7 @@ function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups }) {
             </div>
           </div>
         </div>
-        <p class="hero-desc">${escapeHtml(vehicle.name)}는 연식, 연료, 세부모델에 따라 적용되는 자동차 배터리(밧데리) 규격이 달라질 수 있습니다. 아래 표에서 일등밧데리 차량 배터리 DB 기준의 기본 배터리와 업그레이드 배터리를 확인한 뒤 현재 판매가격은 최저가 바로가기에서 확인해 주세요.</p>
+        <p class="hero-desc">${escapeHtml(vehicle.name)} 차량은 연식, 연료, 세부모델에 따라 적용되는 자동차 배터리(밧데리) 규격이 달라질 수 있습니다. 아래 표에서 일등밧데리 차량 배터리 DB 기준의 기본 배터리와 업그레이드 배터리를 확인한 뒤 현재 판매가격은 최저가 바로가기에서 확인해 주세요.</p>
 ${checkNotice}
       </section>
 
@@ -1124,7 +1124,7 @@ function renderDetailPage({ manufacturer, vehicle, group, detailGroups }) {
         <div class="content-card">
           <p class="eyebrow">Direct Answer</p>
           <h2 id="directAnswerTitle">${escapeHtml(pageLabel)} 배터리는 어떤 규격을 사용하나요?</h2>
-          <p>${escapeHtml(pageLabel)}은 연식과 연료 및 차량 사양에 따라 적용 배터리가 달라질 수 있습니다. 아래 일등밧데리 차량 DB 기준 표에서 ${escapeHtml(detailLabel)} 세부 조건별 기본 배터리와 업그레이드 배터리를 확인할 수 있습니다.</p>
+          <p>${escapeHtml(pageLabel)} 차량은 연식과 연료 및 차량 사양에 따라 적용 배터리가 달라질 수 있습니다. 아래 일등밧데리 차량 DB 기준 표에서 ${escapeHtml(detailLabel)} 세부 조건별 기본 배터리와 업그레이드 배터리를 확인할 수 있습니다.</p>
 ${checkNotice}
         </div>
       </section>
