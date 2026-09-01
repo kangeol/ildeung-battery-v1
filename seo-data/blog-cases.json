@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-01T03:57:30.071Z",
+  "syncedAt": "2026-09-01T09:59:18.543Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 1,
     "preservedPreviousPosts": 299,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 299,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 300,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 252,
-    "vehicleMatches": 233,
+    "manufacturerMatches": 253,
+    "vehicleMatches": 234,
     "detailMatches": 47,
-    "regionMatches": 183,
-    "neighborhoodMatches": 155,
-    "batteryMatches": 182,
+    "regionMatches": 184,
+    "neighborhoodMatches": 156,
+    "batteryMatches": 183,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,170 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 183,
-    "actualRegionMatches": 183,
-    "actualNeighborhoodMatches": 155,
+    "actualAreaMatches": 184,
+    "actualRegionMatches": 184,
+    "actualNeighborhoodMatches": 156,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224397459147",
+      "title": "양천구(신정동) 2016년식 BMW X6 바르타 AGM105 배터리교체 가격 및 비용 안내｜오랜 기간 방치 후 시동불량 배터리 등록 코딩 사례",
+      "url": "https://blog.naver.com/kang10107/224397459147",
+      "publishedAt": "2026-09-01",
+      "thumbnail": "/assets/blog-cases/224397459147.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MDFfMTkw/MDAxNzg4MjQ3MzMzOTA4.F2XIdIHK79Httc6yKXgpAwsgsvCPi5jcpeqk9Qryj-Mg.Vbz2rcLA240IgpF9IdaaWjsFsMr__Ubh2eaEg7juHacg.JPEG/KakaoTalk_20260716_121950615.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종교체 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 양천구 출장배터리 BMW X6 배터리가격 바르타AGM105 가격 차량을 오랫동안 세워둔 뒤 점프 시동으로 다시 살아났다고 해서 배터리 상태까지 정상으로 돌아왔다고 보기는 어렵습니다. 특히 대용량 AGM 배터리가 적용되는 수입 SUV는 겉으로 전압이 어느 정도 회복돼 보여도 실제 저장 능력이나 시동 순간 출력이 크게 낮아져 있을 수 있습니다. 이번 작업은 서울 양천구 신정동에서 진행한 2016년식 BMW X6 차량입니다. 고객님께서는 차량을 오랜 기간 거의 운행하지 못했고, 다시 사용하려는 과정에서 시동 반응이 불안정해 출장.......",
+      "tags": [
+        "양천구배터리",
+        "양천구출장배터리",
+        "신정동배터리",
+        "신정동출장배터리",
+        "X6배터리",
+        "BMWX6배터리",
+        "BMW배터리",
+        "X6배터리가격",
+        "BMW배터리교체",
+        "바르타AGM105",
+        "바르타배터리",
+        "바르타AGM105가격",
+        "바르타AGM105교체비용",
+        "AGM배터리",
+        "자동차배터리",
+        "출장배터리",
+        "배터리교체",
+        "배터리가격",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW X6",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X6",
+            "displayName": "BMW X6",
+            "urlPath": "/car-battery/bmw/x6.html",
+            "matchedAlias": "BMW X6",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X6",
+            "displayName": "BMW X6",
+            "urlPath": "/car-battery/bmw/x6.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "yangcheon-gu",
+          "regionName": "양천구",
+          "neighborhoodName": "신정동",
+          "label": "서울 양천구 신정동",
+          "urlPath": "/area/seoul/yangcheon-gu/sinjeong-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yangcheon-gu",
+            "regionName": "양천구",
+            "label": "서울 양천구",
+            "urlPath": "/area/seoul/yangcheon-gu.html",
+            "matchedAlias": "양천구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yangcheon-gu",
+            "regionName": "양천구",
+            "name": "신정동",
+            "legalName": "서울특별시 양천구 신정동",
+            "label": "서울 양천구 신정동",
+            "urlPath": "/area/seoul/yangcheon-gu/sinjeong-dong.html",
+            "matchedAlias": "신정동"
+          }
+        ],
+        "batteryModels": [
+          "AGM105"
+        ],
+        "symptoms": [
+          "시동불량",
+          "시동 불량",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/x6.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/yangcheon-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/yangcheon-gu/sinjeong-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm105.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "양천구 신정동에서 BMW X6 AGM105 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224390525901",
       "title": "용인시 수지구(죽전동) 2018년식 파일럿 델코 AGM70 배터리교체 가격 및 비용 안내｜잦은 방전 반복 차량 배터리 원인 점검 사례",
