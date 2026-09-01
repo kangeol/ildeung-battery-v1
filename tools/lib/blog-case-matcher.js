@@ -267,6 +267,10 @@ function matchVehicles(text, textLoose, manufacturerMatches, index) {
         return false;
       }
 
+      if (manufacturerIds.size && !hasManufacturer) {
+        return false;
+      }
+
       const looseAlias = normalizeLoose(alias);
       if (/^[a-z0-9]{1,2}$/.test(looseAlias) && !hasManufacturer) {
         return (index.vehicleAliasCounts.get(looseAlias) || 0) === 1 && containsExplicitAlphaNumericTerm(text, alias);

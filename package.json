@@ -9,6 +9,7 @@
     "generate:battery-thumbnails": "node tools/generate-battery-topic-thumbnails.js",
     "generate:battery-seo": "node tools/generate-battery-seo-pages.js",
     "generate:sitemap": "node tools/generate-sitemap.js",
+    "backfill:blog-cases": "node tools/backfill-naver-blog-cases.js",
     "sync:blog-cases": "node tools/sync-naver-blog-cases.js",
     "audit:blog-cases": "node tools/audit-blog-cases.js",
     "audit:seo-copy": "node tools/audit-seo-korean-copy.js",

@@ -266,6 +266,7 @@ async function main() {
     sourceUrl: BLOG_URL,
     rssUrl: BLOG_RSS_URL,
     syncedAt: new Date().toISOString(),
+    historicalBackfill: existing.historicalBackfill || null,
     source: {
       type: "naver-rss",
       httpStatus: rss.status,
@@ -277,6 +278,7 @@ async function main() {
         : "RSS returned fewer than 50 posts; no separate stable public archive pagination was used."
     },
     stats: {
+      ...(existing.stats || {}),
       fetchedPosts: fetchedPosts.length,
       newPosts,
       preservedPreviousPosts,
