@@ -883,6 +883,15 @@ function renderStructuredData(items) {
   return items.map((item) => `  <script type="application/ld+json">${JSON.stringify(item)}</script>`).join("\n");
 }
 
+function renderFaviconLinks(prefix) {
+  return `  <link rel="icon" type="image/svg+xml" href="${prefix}favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="${prefix}favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="${prefix}favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="${prefix}apple-touch-icon.png">
+  <link rel="manifest" href="${prefix}site.webmanifest">
+  <meta name="theme-color" content="#2563eb">`;
+}
+
 function renderShell({ depth, title, description, canonicalPath, content, imagePath, structuredData = [] }) {
   const prefix = pageDepthPrefix(depth);
   const canonical = `${SITE_ORIGIN}${canonicalPath}`;
@@ -907,6 +916,7 @@ function renderShell({ depth, title, description, canonicalPath, content, imageP
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${canonical}">
   <meta name="twitter:card" content="summary_large_image">${imageMeta}
+${renderFaviconLinks(prefix)}
   <link rel="stylesheet" href="${prefix}${CSS_FILE}">
   <link rel="stylesheet" href="${prefix}css/blog-cases.css">
   <script src="${prefix}js/blog-cases.js" defer></script>

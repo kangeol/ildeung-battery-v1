@@ -197,6 +197,12 @@ function renderShell({ depth, pageNumber, totalPages, title, description, canoni
   <meta name="twitter:title" content="${escapeHtml(title)}">
   <meta name="twitter:description" content="${escapeHtml(description)}">
   <meta name="twitter:image" content="${SITE_ORIGIN}${HERO_IMAGE}">
+  <link rel="icon" type="image/svg+xml" href="${prefix}favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="${prefix}favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="${prefix}favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="${prefix}apple-touch-icon.png">
+  <link rel="manifest" href="${prefix}site.webmanifest">
+  <meta name="theme-color" content="#2563eb">
   <link rel="stylesheet" href="${prefix}css/area-seo.css">
   <link rel="stylesheet" href="${prefix}css/work-cases.css">
   <script type="application/ld+json">${breadcrumbJsonLd(breadcrumbs, canonicalPath)}</script>

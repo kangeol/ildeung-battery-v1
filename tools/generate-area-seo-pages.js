@@ -248,6 +248,12 @@ function renderShell({ depth, title, description, canonicalPath, breadcrumbs, co
   <meta name="twitter:title" content="${escapeHtml(title)}">
   <meta name="twitter:description" content="${escapeHtml(description)}">
   <meta name="twitter:image" content="${SITE_ORIGIN}${resolvedImagePath}">
+  <link rel="icon" type="image/svg+xml" href="${prefix}favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="${prefix}favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="${prefix}favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="${prefix}apple-touch-icon.png">
+  <link rel="manifest" href="${prefix}site.webmanifest">
+  <meta name="theme-color" content="#2563eb">
   <link rel="stylesheet" href="${prefix}${CSS_FILE}">
   <link rel="stylesheet" href="${prefix}css/blog-cases.css">
   <script src="${prefix}js/blog-cases.js" defer></script>
