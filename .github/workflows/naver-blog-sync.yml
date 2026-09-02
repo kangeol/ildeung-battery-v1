@@ -130,9 +130,49 @@ jobs:
             exit 1
           fi
 
+          if ! [[ "${NEW_POSTS:-}" =~ ^[0-9]+$ && "${NEW_THUMBNAILS:-}" =~ ^[0-9]+$ ]]; then
+            echo "Could not parse sync change counts: new_posts=${NEW_POSTS}, new_thumbnails=${NEW_THUMBNAILS}" >&2
+            exit 1
+          fi
+
           if [[ "${NEW_POSTS:-0}" == "0" && "${NEW_THUMBNAILS:-0}" == "0" ]]; then
             git restore --source="$START_SHA" -- seo-data/blog-cases.json
             echo "No new posts or thumbnails. Restored sync metadata-only changes before audit."
+
+            if ! git diff --quiet || ! git diff --cached --quiet || [[ -n "$(git status --porcelain=v1 -uall)" ]]; then
+              echo "No-change sync did not restore the worktree to a clean state." >&2
+              git status --short
+              exit 1
+            fi
+
+            BUILD_STATUS="SKIPPED_NO_CHANGE"
+
+            npm run audit:blog-cases
+            BLOG_AUDIT_STATUS="PASS"
+
+            npm run audit:work-cases
+            WORK_CASE_AUDIT_STATUS="PASS"
+
+            npm run audit:seo-copy
+            SEO_COPY_AUDIT_STATUS="PASS"
+
+            npm run audit:blog-sync-regression
+            REGRESSION_STATUS="PASS"
+
+            if ! git diff --quiet || ! git diff --cached --quiet || [[ -n "$(git status --porcelain=v1 -uall)" ]]; then
+              echo "No-change audits left tracked or untracked changes." >&2
+              git status --short
+              exit 1
+            fi
+
+            DIFF_GATE_STATUS="PASS_NO_CHANGE"
+            ORIGIN_RACE_STATUS="NOT_NEEDED_NO_CHANGE"
+            INDEXNOW_STATUS="SKIPPED_NO_CHANGE"
+            COMMIT_SHA="NONE"
+            PUSH_STATUS="NONE"
+            FINAL_RESULT="SUCCESS"
+            echo "No new posts or thumbnails. Build, commit, push and IndexNow skipped."
+            exit 0
           fi
 
           npm run build:blog-cases
