@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-08T03:05:57.098Z",
+  "syncedAt": "2026-09-08T08:00:18.209Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 303,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 305,
+    "newPosts": 1,
+    "preservedPreviousPosts": 305,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 306,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 258,
-    "vehicleMatches": 239,
+    "manufacturerMatches": 259,
+    "vehicleMatches": 240,
     "detailMatches": 47,
-    "regionMatches": 189,
+    "regionMatches": 190,
     "neighborhoodMatches": 160,
-    "batteryMatches": 188,
+    "batteryMatches": 189,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,150 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 189,
-    "actualRegionMatches": 189,
+    "actualAreaMatches": 190,
+    "actualRegionMatches": 190,
     "actualNeighborhoodMatches": 160,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224404823518",
+      "title": "인천 남동구(남동공단) 2016년식 BMW520D 델코 AGM95 출장배터리교체 가격 및 비용 안내｜블랙박스 상시사용중 방전",
+      "url": "https://blog.naver.com/kang10107/224404823518",
+      "publishedAt": "2026-09-08",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224404823518.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MDhfNTYg/MDAxNzg4ODM2MzE3OTY3.ji5HcTsMV1mtGez2zRASWpJqEEq_jxQlby-tg6sUregg.wkL44CrjWXLgfcDL_3TVKYCENJvvpmFHWS4d1alAU4Ag.JPEG/bmw-bmw520d-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 남동구 남동공단에서 2016년식 BMW520D 배터리 교체 작업을 진행했습니다. 이번 차량은 블랙박스와 각종 편의 기능처럼 전기를 사용하는 장치가 많은 차량 특성을 고려해 AGM 타입을 적용한 경우입니다. BMW520D배터리를 알아볼 때는 단순히 용량 숫자만 보는 것보다 차량에서 어떤 배터리 타입을 사용하고 있는지 함께 확인하는 것이 중요합니다. 기존 차량 조건과 적용 규격을 확인한 뒤 델코 AGM95를 장착했고, 교체 후에는 새 배터리로 바뀌었다는 정보를 차량에 알려주는 배터리 등록.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "남동공단출장배터리",
+        "남동공단배터리",
+        "bmw520d배터리",
+        "bmw배터리",
+        "520d배터리가격",
+        "520d배터리",
+        "출장배터리",
+        "델코agm95",
+        "agm95",
+        "델코agm95가격",
+        "일등밧데리",
+        "자동차배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 5시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "BMW5",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "namdong-gu",
+          "regionName": "남동구",
+          "label": "인천 남동구",
+          "urlPath": "/area/incheon/namdong-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "namdong-gu",
+            "regionName": "남동구",
+            "label": "인천 남동구",
+            "urlPath": "/area/incheon/namdong-gu.html",
+            "matchedAlias": "남동구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/5-series.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/namdong-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "인천 남동구에서 BMW 5시리즈 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224404608743",
       "title": "경기 하남시(천현동) 2021년식 카니발4세대 델코 AGM80 출장배터리교체 가격 및 비용 안내｜배터리 성능 저하 교체 시기",
