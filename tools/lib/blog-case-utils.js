@@ -82,6 +82,18 @@ export function toIsoDate(value) {
   return date.toISOString().slice(0, 10);
 }
 
+export function toKstIsoDate(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return "";
+  }
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit"
+  }).formatToParts(date);
+  const fields = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
+  return `${fields.year}-${fields.month}-${fields.day}`;
+}
+
 export function formatKoreanDate(value) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(String(value ?? ""))) {
     return "";

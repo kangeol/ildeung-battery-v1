@@ -39,6 +39,7 @@ function gitOutput(args, options = {}) {
   return execFileSync("git", args, {
     cwd: ROOT_DIR,
     encoding: "utf8",
+    maxBuffer: 32 * 1024 * 1024,
     stdio: options.allowFailure ? ["ignore", "pipe", "ignore"] : ["ignore", "pipe", "pipe"]
   }).trim();
 }
@@ -362,7 +363,9 @@ function compareBlogCaseHistory(currentPosts) {
       historicalLoss: 0,
       originalUrlChanged: 0,
       originalTitleChanged: 0,
-      publishedAtChanged: 0
+      publishedAtChanged: 0,
+      publishedAtKstCorrections: 0,
+      publishedAtUnexpectedChanges: 0
     };
   }
 
@@ -372,6 +375,8 @@ function compareBlogCaseHistory(currentPosts) {
   let originalUrlChanged = 0;
   let originalTitleChanged = 0;
   let publishedAtChanged = 0;
+  let publishedAtKstCorrections = 0;
+  let publishedAtUnexpectedChanges = 0;
 
   previousPosts.forEach((previousPost) => {
     const currentPost = currentById.get(previousPost.id);
@@ -391,6 +396,22 @@ function compareBlogCaseHistory(currentPosts) {
 
     if (currentPost.publishedAt !== previousPost.publishedAt) {
       publishedAtChanged += 1;
+      const dates = [previousPost.publishedAt, currentPost.publishedAt];
+      const validDates = dates.every((value) => {
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(value || "")) return false;
+        const date = new Date(value);
+        return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
+      });
+      if (validDates &&
+          currentPost.publishedAtBasis === "naver-rss-kst" &&
+          Date.parse(dates[1]) - Date.parse(dates[0]) === 86400000 &&
+          currentPost.id === previousPost.id &&
+          currentPost.url === previousPost.url &&
+          currentPost.title === previousPost.title) {
+        publishedAtKstCorrections += 1;
+      } else {
+        publishedAtUnexpectedChanges += 1;
+      }
     }
   });
 
@@ -399,7 +420,9 @@ function compareBlogCaseHistory(currentPosts) {
     historicalLoss,
     originalUrlChanged,
     originalTitleChanged,
-    publishedAtChanged
+    publishedAtChanged,
+    publishedAtKstCorrections,
+    publishedAtUnexpectedChanges
   };
 }
 
@@ -482,7 +505,7 @@ function main() {
   assert(result.historicalLoss === 0, `historical blog post loss: ${result.historicalLoss}`);
   assert(result.originalUrlChanged === 0, `blog original URL changed: ${result.originalUrlChanged}`);
   assert(result.originalTitleChanged === 0, `blog original title changed: ${result.originalTitleChanged}`);
-  assert(result.publishedAtChanged === 0, `blog publishedAt changed: ${result.publishedAtChanged}`);
+  assert(result.publishedAtUnexpectedChanges === 0, `unexpected blog publishedAt changes: ${result.publishedAtUnexpectedChanges}`);
 
   console.log("");
   console.log("Blog Sync Regression Audit PASS");

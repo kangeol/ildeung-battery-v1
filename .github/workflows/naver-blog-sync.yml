@@ -48,6 +48,7 @@ jobs:
           AFTER_POSTS="n/a"
           NEW_POSTS="n/a"
           NEW_THUMBNAILS="n/a"
+          MATERIAL_CHANGED="n/a"
           INDEXNOW_STATUS="SKIPPED_NO_CHANGE"
           INDEXNOW_CHANGED_HTML_FILES="0"
           INDEXNOW_CANONICAL_URLS="0"
@@ -78,6 +79,7 @@ jobs:
               echo "After posts: ${AFTER_POSTS}"
               echo "New posts: ${NEW_POSTS}"
               echo "New thumbnails: ${NEW_THUMBNAILS}"
+              echo "Material archive changed: ${MATERIAL_CHANGED}"
               echo "Build: ${BUILD_STATUS}"
               echo "Blog audit: ${BLOG_AUDIT_STATUS}"
               echo "Work case audit: ${WORK_CASE_AUDIT_STATUS}"
@@ -124,6 +126,7 @@ jobs:
           AFTER_POSTS="$(grep -E '^Merged posts:' "$SYNC_OUTPUT" | awk -F': ' '{print $2}' | tail -1 || true)"
           NEW_POSTS="$(grep -E '^New posts:' "$SYNC_OUTPUT" | awk -F': ' '{print $2}' | tail -1 || true)"
           NEW_THUMBNAILS="$(grep -E '^New thumbnails:' "$SYNC_OUTPUT" | awk -F': ' '{print $2}' | tail -1 || true)"
+          MATERIAL_CHANGED="$(grep -E '^Material archive changed:' "$SYNC_OUTPUT" | awk -F': ' '{print $2}' | tail -1 || true)"
 
           if [[ -z "$AFTER_POSTS" || "$AFTER_POSTS" -lt "$BEFORE_POSTS" ]]; then
             echo "Post count decreased or could not be read: before=${BEFORE_POSTS}, after=${AFTER_POSTS}" >&2
@@ -135,7 +138,12 @@ jobs:
             exit 1
           fi
 
-          if [[ "${NEW_POSTS:-0}" == "0" && "${NEW_THUMBNAILS:-0}" == "0" ]]; then
+          if [[ "$MATERIAL_CHANGED" != "yes" && "$MATERIAL_CHANGED" != "no" ]]; then
+            echo "Could not parse material archive change: ${MATERIAL_CHANGED}" >&2
+            exit 1
+          fi
+
+          if [[ "${NEW_POSTS:-0}" == "0" && "${NEW_THUMBNAILS:-0}" == "0" && "$MATERIAL_CHANGED" != "yes" ]]; then
             git restore --source="$START_SHA" -- seo-data/blog-cases.json
             echo "No new posts or thumbnails. Restored sync metadata-only changes before audit."
 

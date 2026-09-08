@@ -13,7 +13,7 @@ import {
   extractNaverPostId,
   normalizeText,
   stripHtml,
-  toIsoDate,
+  toKstIsoDate,
   truncateText,
   writeJson
 } from "./lib/blog-case-utils.js";
@@ -67,7 +67,7 @@ function parseRssItem(block) {
   const canonicalUrl = canonicalNaverPostUrl(guid || rawLink);
   const postId = extractNaverPostId(canonicalUrl || rawLink || guid);
   const title = stripHtml(extractTag(block, "title"));
-  const publishedAt = toIsoDate(extractTag(block, "pubDate"));
+  const publishedAt = toKstIsoDate(extractTag(block, "pubDate"));
   const tags = parseTags(extractTag(block, "tag"));
   const excerpt = truncateText(stripHtml(rawDescription), 420);
 
@@ -76,6 +76,7 @@ function parseRssItem(block) {
     title,
     url: canonicalUrl,
     publishedAt,
+    ...(publishedAt ? { publishedAtBasis: "naver-rss-kst" } : {}),
     thumbnail: "",
     sourceThumbnailUrl,
     sourceExcerpt: excerpt,
@@ -172,12 +173,15 @@ function preferExistingField(existingPost, incomingPost, key) {
 }
 
 function mergePost(existingPost = {}, incomingPost = {}) {
+  const hasRssDate = incomingPost.publishedAtBasis === "naver-rss-kst" &&
+    /^\d{4}-\d{2}-\d{2}$/.test(incomingPost.publishedAt || "");
   const merged = {
     ...existingPost,
     ...incomingPost,
     title: preferExistingField(existingPost, incomingPost, "title"),
     url: preferExistingField(existingPost, incomingPost, "url"),
-    publishedAt: preferExistingField(existingPost, incomingPost, "publishedAt"),
+    publishedAt: hasRssDate ? incomingPost.publishedAt : preferExistingField(existingPost, incomingPost, "publishedAt"),
+    ...(hasRssDate ? { publishedAtBasis: "naver-rss-kst" } : {}),
     thumbnail: preferExistingField(existingPost, incomingPost, "thumbnail"),
     thumbnailStatus: preferExistingField(existingPost, incomingPost, "thumbnailStatus"),
     thumbnailError: preferExistingField(existingPost, incomingPost, "thumbnailError"),

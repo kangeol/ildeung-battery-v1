@@ -10,6 +10,7 @@ const RUNTIME_ALLOWED_FILES = new Set([
 ]);
 
 const IMPLEMENTATION_ALLOWED_FILES = new Set([
+  "tools/lib/blog-case-utils.js",
   ".github/workflows/naver-blog-sync.yml",
   "css/work-cases.css",
   "package.json",
