@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-01T10:14:50.124Z",
+  "syncedAt": "2026-09-08T00:07:10.555Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 3,
     "preservedPreviousPosts": 300,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 300,
+    "duplicateRemoved": 47,
+    "thumbnailSuccess": 303,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 253,
-    "vehicleMatches": 234,
+    "manufacturerMatches": 256,
+    "vehicleMatches": 237,
     "detailMatches": 47,
-    "regionMatches": 184,
-    "neighborhoodMatches": 156,
-    "batteryMatches": 183,
+    "regionMatches": 187,
+    "neighborhoodMatches": 158,
+    "batteryMatches": 186,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,451 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 184,
-    "actualRegionMatches": 184,
-    "actualNeighborhoodMatches": 156,
+    "actualAreaMatches": 187,
+    "actualRegionMatches": 187,
+    "actualNeighborhoodMatches": 158,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224404408885",
+      "title": "인천 남동구(장수동) 2022년식 제타 델코 AGM70 출장배터리교체 가격 및 비용 안내｜배터리 규격 확인 후 교체",
+      "url": "https://blog.naver.com/kang10107/224404408885",
+      "publishedAt": "2026-09-07",
+      "thumbnail": "/assets/blog-cases/224404408885.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MDhfMjcg/MDAxNzg4ODIzMzc2NDk5.ps1oVU0YxEzrdUQzCPUZ0RtX3BtRsTIem5U_xFIP3BEg.R5hgI1Qre_lzLa5gKdJa0QyPwy8nkyijgsmnKa1e6DAg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 남동구 장수동에서 2022년식 제타 배터리 교체 작업을 진행했습니다. 이번 차량에는 델코 AGM70을 준비했는데요. 배터리를 알아볼 때 AGM70처럼 규격이 같으면 모두 똑같이 장착할 수 있다고 생각하기 쉽습니다. 하지만 실제 차량에서는 배터리가 들어가는 공간과 단자 방향, 고정 위치까지 함께 확인해야 합니다. 이번 작업도 제품 이름만 보고 바로 장착하지 않고 기존 배터리가 들어가 있는 위치와 연결 방향을 먼저 확인한 뒤 차량에 맞게 교체했습니다. 교체 후에는 새 배터리가 장착.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "장수동배터리",
+        "장수동출장배터리",
+        "남동구배터리",
+        "제타배터리",
+        "폭스바겐제타배터리",
+        "제타배터리가격",
+        "제타배터리교체비용",
+        "일등밧데리",
+        "델코agm70",
+        "델코agm70가격",
+        "agm70",
+        "agm70가격",
+        "agm배터리",
+        "출장배터리",
+        "출장배터리교체",
+        "자동차배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "폭스바겐",
+        "manufacturers": [
+          {
+            "id": "volkswagen",
+            "name": "폭스바겐"
+          }
+        ],
+        "vehicle": "폭스바겐 제타",
+        "vehicles": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "제타",
+            "displayName": "폭스바겐 제타",
+            "urlPath": "/car-battery/volkswagen/jetta.html",
+            "matchedAlias": "폭스바겐 제타",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "제타",
+            "displayName": "폭스바겐 제타",
+            "urlPath": "/car-battery/volkswagen/jetta.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "namdong-gu",
+          "regionName": "남동구",
+          "neighborhoodName": "장수동",
+          "label": "인천 남동구 장수동",
+          "urlPath": "/area/incheon/namdong-gu/jangsu-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "namdong-gu",
+            "regionName": "남동구",
+            "label": "인천 남동구",
+            "urlPath": "/area/incheon/namdong-gu.html",
+            "matchedAlias": "남동구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "namdong-gu",
+            "regionName": "남동구",
+            "name": "장수동",
+            "legalName": "인천광역시 남동구 장수동",
+            "label": "인천 남동구 장수동",
+            "urlPath": "/area/incheon/namdong-gu/jangsu-dong.html",
+            "matchedAlias": "장수동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/volkswagen/jetta.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/volkswagen.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/namdong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/namdong-gu/jangsu-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "남동구 장수동에서 폭스바겐 제타 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224403891414",
+      "title": "서울 마포구(공덕동) 2015년식 알페온 델코 AGM70 출장배터리교체 가격 및 비용 안내｜단자위치 장착방향 확인 안내",
+      "url": "https://blog.naver.com/kang10107/224403891414",
+      "publishedAt": "2026-09-07",
+      "thumbnail": "/assets/blog-cases/224403891414.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MDdfOTUg/MDAxNzg4NzcxNzc2NTg0.ShfBuWxLKaoT_YJe09mUgJg_25_JV7KM44_bKYFFit4g.QTqXzI5Gd8EhmmmutXb9bHikfofw_akMiccgXu01roIg.JPEG/image-image-agm70-image-battery-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 **서울 마포구 공덕동에서 2015년식 알페온 배터리 교체 작업**을 진행했습니다. 이번 차량에는 **델코 AGM70**을 준비했습니다. 그런데 배터리는 모델명이 같다고 바로 장착하는 것이 아니라, 실제 차량에 들어가는 공간과 전기를 연결하는 단자 방향까지 한 번 더 확인하는 과정이 중요합니다. 쉽게 말하면 같은 사이즈의 신발이라도 발 모양에 따라 맞는 느낌이 다른 것처럼, 자동차배터리도 **용량 숫자만 같다고 모두 똑같이 장착되는 것은 아닙니다.** 공덕동 현장에서 기존 배터리 장착.......",
+      "tags": [
+        "마포구배터리",
+        "공덕배터리",
+        "마포구출장배터리",
+        "agm배터리",
+        "agm배터리가격",
+        "델코agm배터리",
+        "델코agm70",
+        "agm70",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "쉐보레",
+        "manufacturers": [
+          {
+            "id": "chevrolet",
+            "name": "쉐보레",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "알페온",
+        "vehicles": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "알페온",
+            "displayName": "알페온",
+            "urlPath": "/car-battery/chevrolet/alpheon.html",
+            "matchedAlias": "알페온",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "알페온",
+            "displayName": "알페온",
+            "urlPath": "/car-battery/chevrolet/alpheon.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "mapo-gu",
+          "regionName": "마포구",
+          "neighborhoodName": "공덕동",
+          "label": "서울 마포구 공덕동",
+          "urlPath": "/area/seoul/mapo-gu/gongdeok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "mapo-gu",
+            "regionName": "마포구",
+            "label": "서울 마포구",
+            "urlPath": "/area/seoul/mapo-gu.html",
+            "matchedAlias": "마포구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "mapo-gu",
+            "regionName": "마포구",
+            "name": "공덕동",
+            "legalName": "서울특별시 마포구 공덕동",
+            "label": "서울 마포구 공덕동",
+            "urlPath": "/area/seoul/mapo-gu/gongdeok-dong.html",
+            "matchedAlias": "공덕동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/chevrolet/alpheon.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/chevrolet.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/mapo-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/mapo-gu/gongdeok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "마포구 공덕동에서 알페온 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224403551102",
+      "title": "인천 서해구(검암경서동) 2016년식 벤츠 E300 바르타 AGM80 출장배터리교체 가격 및 비용 안내｜EFB·AGM 배터리 타입 확인",
+      "url": "https://blog.naver.com/kang10107/224403551102",
+      "publishedAt": "2026-09-07",
+      "thumbnail": "/assets/blog-cases/224403551102.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MDdfMTYy/MDAxNzg4NzU1NDk5Njcz.g0adowzVauMtPEGRWoL9g1eHzvuDvk8oMRQOaDdc1bYg._aQoRZ_bd9KYyEMfAIgvvCVidnP6xa19C_L7NfBb7Dsg.JPEG/image-e300-agm80-image-battery-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 **인천 서해구 검암경서동에서 2016년식 벤츠 E300 배터리 교체 작업**을 진행했습니다. 이번 작업에서 먼저 확인한 부분은 배터리 브랜드보다 **차량에 EFB와 AGM 중 어떤 타입이 맞는지**였습니다. 두 제품은 겉모양이 비슷해 보여도 만들어진 방식과 사용하는 환경에 차이가 있기 때문에, 가격이나 크기만 보고 바꾸는 것은 좋지 않습니다. 차량 조건을 확인한 뒤 이번에는 **바르타 AGM80**으로 준비해 교체와 배터리 등록 코딩까지 진행했습니다. --- ## EFB와 AGM, 뭐가 다른 걸까요.......",
+      "tags": [
+        "서해구배터리",
+        "서해구출장배터리",
+        "인천배터리",
+        "인천출장배터리",
+        "검암경서동배터리",
+        "벤츠배터리",
+        "벤츠e300배터리",
+        "벤츠300배터리가격",
+        "출장배터리",
+        "출장배터리교체",
+        "벤츠배터리가격",
+        "바르타agm80",
+        "바르타agm80가격",
+        "바르타agm80교체",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "벤츠",
+        "manufacturers": [
+          {
+            "id": "benz",
+            "name": "벤츠"
+          }
+        ],
+        "vehicle": "벤츠 E클래스",
+        "vehicles": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "E-클래스",
+            "displayName": "벤츠 E클래스",
+            "urlPath": "/car-battery/benz/e-class.html",
+            "matchedAlias": "벤츠E",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "E-클래스",
+            "displayName": "벤츠 E클래스",
+            "urlPath": "/car-battery/benz/e-class.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "seohae-gu",
+          "regionName": "서해구",
+          "label": "인천 서해구",
+          "urlPath": "/area/incheon/seohae-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "seohae-gu",
+            "regionName": "서해구",
+            "label": "인천 서해구",
+            "urlPath": "/area/incheon/seohae-gu.html",
+            "matchedAlias": "서해구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/benz/e-class.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/benz.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/seohae-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "인천 서해구에서 벤츠 E클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224397459147",
       "title": "양천구(신정동) 2016년식 BMW X6 바르타 AGM105 배터리교체 가격 및 비용 안내｜오랜 기간 방치 후 시동불량 배터리 등록 코딩 사례",
