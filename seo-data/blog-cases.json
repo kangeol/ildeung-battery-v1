@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-08T00:07:10.555Z",
+  "syncedAt": "2026-09-08T00:23:01.284Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,9 +479,9 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 3,
-    "preservedPreviousPosts": 300,
-    "duplicateRemoved": 47,
+    "newPosts": 0,
+    "preservedPreviousPosts": 303,
+    "duplicateRemoved": 50,
     "thumbnailSuccess": 303,
     "thumbnailFallback": 0,
     "manufacturerMatches": 256,
@@ -511,7 +511,7 @@
       "id": "224404408885",
       "title": "인천 남동구(장수동) 2022년식 제타 델코 AGM70 출장배터리교체 가격 및 비용 안내｜배터리 규격 확인 후 교체",
       "url": "https://blog.naver.com/kang10107/224404408885",
-      "publishedAt": "2026-09-07",
+      "publishedAt": "2026-09-08",
       "thumbnail": "/assets/blog-cases/224404408885.webp",
       "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MDhfMjcg/MDAxNzg4ODIzMzc2NDk5.ps1oVU0YxEzrdUQzCPUZ0RtX3BtRsTIem5U_xFIP3BEg.R5hgI1Qre_lzLa5gKdJa0QyPwy8nkyijgsmnKa1e6DAg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
       "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 남동구 장수동에서 2022년식 제타 배터리 교체 작업을 진행했습니다. 이번 차량에는 델코 AGM70을 준비했는데요. 배터리를 알아볼 때 AGM70처럼 규격이 같으면 모두 똑같이 장착할 수 있다고 생각하기 쉽습니다. 하지만 실제 차량에서는 배터리가 들어가는 공간과 단자 방향, 고정 위치까지 함께 확인해야 합니다. 이번 작업도 제품 이름만 보고 바로 장착하지 않고 기존 배터리가 들어가 있는 위치와 연결 방향을 먼저 확인한 뒤 차량에 맞게 교체했습니다. 교체 후에는 새 배터리가 장착.......",
@@ -659,7 +659,8 @@
         "region": 1,
         "neighborhood": 1,
         "battery": 1
-      }
+      },
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224403891414",
@@ -807,7 +808,8 @@
         "region": 1,
         "neighborhood": 1,
         "battery": 1
-      }
+      },
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224403551102",
@@ -943,7 +945,8 @@
         "region": 1,
         "neighborhood": 0,
         "battery": 1
-      }
+      },
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224397459147",
@@ -1100,7 +1103,8 @@
         "region": 1,
         "neighborhood": 1,
         "battery": 1
-      }
+      },
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224390525901",
@@ -1228,7 +1232,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224383028197",
@@ -1386,7 +1391,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224381888567",
@@ -1538,7 +1544,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224366366810",
@@ -1694,7 +1701,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224364621306",
@@ -1852,7 +1860,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224363950014",
@@ -2012,7 +2021,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224362923006",
@@ -2166,7 +2176,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224361974536",
@@ -2324,7 +2335,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224360216292",
@@ -2495,7 +2507,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224359008320",
@@ -2669,7 +2682,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224357376714",
@@ -2808,7 +2822,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224356534677",
@@ -2969,7 +2984,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224355178515",
@@ -3126,7 +3142,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224353362606",
@@ -3299,7 +3316,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224352960078",
@@ -3455,7 +3473,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224352032027",
@@ -3611,7 +3630,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224351745240",
@@ -3782,7 +3802,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224350079506",
@@ -3954,7 +3975,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224349456873",
@@ -4110,7 +4132,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224349261130",
@@ -4268,7 +4291,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224347177643",
@@ -4424,7 +4448,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224346343107",
@@ -4594,7 +4619,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224345133317",
@@ -4750,7 +4776,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224342302379",
@@ -4908,7 +4935,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224341650009",
@@ -5060,7 +5088,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224341464433",
@@ -5217,7 +5246,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224340521629",
@@ -5275,7 +5305,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224340419602",
@@ -5434,7 +5465,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224338193558",
@@ -5585,7 +5617,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224337745286",
@@ -5740,7 +5773,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224335765765",
@@ -5909,7 +5943,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224335086145",
@@ -6067,7 +6102,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224334267948",
@@ -6235,7 +6271,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224334111070",
@@ -6393,7 +6430,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224334087434",
@@ -6540,7 +6578,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224332986218",
@@ -6694,7 +6733,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224332776271",
@@ -6857,7 +6897,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224332743008",
@@ -6978,7 +7019,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224321593243",
@@ -7113,7 +7155,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224319589200",
@@ -7252,7 +7295,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224310521275",
@@ -7408,7 +7452,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224263806263",
@@ -7476,7 +7521,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224115149847",
@@ -7630,7 +7676,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224090149837",
@@ -7783,7 +7830,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224088483767",
@@ -7937,7 +7985,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224087221802",
@@ -8106,7 +8155,8 @@
       },
       "sources": [
         "naver-postlist-archive"
-      ]
+      ],
+      "publishedAtBasis": "naver-rss-kst"
     },
     {
       "id": "224083643449",
