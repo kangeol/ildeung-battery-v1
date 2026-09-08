@@ -5,6 +5,7 @@ const STRICT_MODE = process.env.GITHUB_ACTIONS === "true" || process.env.BLOG_SY
 const RUNTIME_ALLOWED_FILES = new Set([
   "index.html",
   "seo-data/blog-cases.json",
+  "seo-data/vehicle-detail-groups.json",
   "sitemap.xml"
 ]);
 

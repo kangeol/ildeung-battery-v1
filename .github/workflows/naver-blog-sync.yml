@@ -2,9 +2,9 @@ name: Naver Blog Work Case Sync
 
 on:
   schedule:
-    # KST 18:30 primary, 19:30 fallback
+    # KST 11:30 / 18:30
+    - cron: '30 2 * * *'
     - cron: '30 9 * * *'
-    - cron: '30 10 * * *'
   workflow_dispatch:
 
 permissions:
@@ -209,7 +209,7 @@ jobs:
           fi
           ORIGIN_RACE_STATUS="PASS"
 
-          git add index.html seo-data/blog-cases.json assets/blog-cases car-battery area battery work-cases sitemap.xml
+          git add index.html seo-data/blog-cases.json seo-data/vehicle-detail-groups.json assets/blog-cases car-battery area battery work-cases sitemap.xml
           BLOG_SYNC_STRICT_DIFF=1 npm run audit:blog-sync-diff
 
           if git diff --cached --quiet; then
