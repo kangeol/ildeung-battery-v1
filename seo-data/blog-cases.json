@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-08T00:23:01.284Z",
+  "syncedAt": "2026-09-08T03:05:57.098Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 2,
     "preservedPreviousPosts": 303,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 303,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 305,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 256,
-    "vehicleMatches": 237,
+    "manufacturerMatches": 258,
+    "vehicleMatches": 239,
     "detailMatches": 47,
-    "regionMatches": 187,
-    "neighborhoodMatches": 158,
-    "batteryMatches": 186,
+    "regionMatches": 189,
+    "neighborhoodMatches": 160,
+    "batteryMatches": 188,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,328 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 187,
-    "actualRegionMatches": 187,
-    "actualNeighborhoodMatches": 158,
+    "actualAreaMatches": 189,
+    "actualRegionMatches": 189,
+    "actualNeighborhoodMatches": 160,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224404608743",
+      "title": "경기 하남시(천현동) 2021년식 카니발4세대 델코 AGM80 출장배터리교체 가격 및 비용 안내｜배터리 성능 저하 교체 시기",
+      "url": "https://blog.naver.com/kang10107/224404608743",
+      "publishedAt": "2026-09-08",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224404608743.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MDhfMjgy/MDAxNzg4ODM0ODAyODUw.dVqkl0DcOof5dK96wyJIrqTP6hVyOCeLxHIvkKuGnpog.7cMOF4SZ4SmPjWDBk7BbSrSEaRwYsDnpxKGqIXO-2O8g.JPEG/image-4-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 하남시 천현동에서 2021년식 카니발4세대 배터리 교체 작업을 진행했습니다. 이번 차량은 사용 중이던 AGM 배터리의 성능이 떨어지면서 교체를 진행한 경우입니다. 하남배터리나 카니발4세대배터리를 알아보시는 분들 중에는 완전히 방전된 뒤에야 배터리를 바꿔야 한다고 생각하는 경우도 있는데요. 자동차배터리는 성능이 서서히 떨어질 수 있기 때문에 사용 기간이 길어졌거나 시동 상태가 예전과 달라졌다면 완전 방전 전에 상태를 확인해 보는 것도 좋습니다. 이번 차량은 현재 사용.......",
+      "tags": [
+        "하남출장배터리",
+        "하남자동차배터리",
+        "하남배터리",
+        "카니발4세대배터리",
+        "카니발4세대배터리가격",
+        "카니발배터리",
+        "카니발배터리교체가격",
+        "카니발배터리교체",
+        "델코agm80",
+        "델코agm80가격",
+        "agm80",
+        "agm80가격",
+        "출장배터리",
+        "자동차배터리",
+        "배터리교체",
+        "일등밧데리",
+        "자동차배터리가격",
+        "배터리교체가격",
+        "출장배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "카니발",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "카니발",
+            "displayName": "카니발",
+            "urlPath": "/car-battery/kia/carnival.html",
+            "matchedAlias": "카니발",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "카니발",
+            "displayName": "카니발",
+            "urlPath": "/car-battery/kia/carnival.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "hanam-si",
+          "regionName": "하남시",
+          "neighborhoodName": "천현동",
+          "label": "경기 하남시 천현동",
+          "urlPath": "/area/gyeonggi/hanam-si/cheonhyeon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "hanam-si",
+            "regionName": "하남시",
+            "label": "경기 하남시",
+            "urlPath": "/area/gyeonggi/hanam-si.html",
+            "matchedAlias": "하남시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "hanam-si",
+            "regionName": "하남시",
+            "name": "천현동",
+            "legalName": "경기도 하남시 천현동",
+            "label": "경기 하남시 천현동",
+            "urlPath": "/area/gyeonggi/hanam-si/cheonhyeon-dong.html",
+            "matchedAlias": "천현동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/carnival.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/hanam-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/hanam-si/cheonhyeon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "하남시 천현동에서 카니발 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224404473833",
+      "title": "서울 광진구(중곡동) 2022년식 벤츠GLB 델코 AGM80 출장배터리교체 가격 및 비용 안내｜기존 규격 그대로 교체",
+      "url": "https://blog.naver.com/kang10107/224404473833",
+      "publishedAt": "2026-09-08",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224404473833.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MDhfMjI1/MDAxNzg4ODI4MTE1OTY1.OCuVRTEeamZV7b1EV6d-pMWzACCVCVfCrkjhDOhvmccg.1JZjuWkNKGQeQxCoAFm4vdoaWRcrIDcwT9DIsm67Kpgg.JPEG/image-glb-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 광진구 중곡동에서 2022년식 벤츠GLB 배터리 교체 작업을 진행했습니다. 이번 차량은 기존에 AGM 타입의 배터리를 사용하는 차량으로, 다른 방식으로 변경하지 않고 차량 조건에 맞춰 델코 AGM80으로 교체했습니다. 자동차배터리는 용량만 비슷하다고 아무 제품이나 사용하는 것보다 현재 차량에서 어떤 타입을 사용하고 있는지 먼저 확인하는 것이 중요합니다. 신품 장착 후에는 새 배터리로 교체됐다는 정보를 차량에 알려주는 배터리 등록 코딩까지 함께 진행했습니다. --- 기존 배.......",
+      "tags": [
+        "광진구배터리",
+        "광진구출장배터리",
+        "중곡동배터리",
+        "중곡동자동차배터리",
+        "광진구자동차배터리",
+        "glb250배터리교체",
+        "glb배터리",
+        "벤츠배터리",
+        "벤츠glb배터리",
+        "벤츠glb250배터리",
+        "벤츠배터리가격",
+        "델코agm80",
+        "agm80",
+        "agm80가격",
+        "델코agm80가격",
+        "출장배터리",
+        "출장배터리교체",
+        "자동차배터리",
+        "자동차배터리교체",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "벤츠",
+        "manufacturers": [
+          {
+            "id": "benz",
+            "name": "벤츠"
+          }
+        ],
+        "vehicle": "벤츠 GLB-클래스",
+        "vehicles": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "GLB-클래스",
+            "displayName": "벤츠 GLB-클래스",
+            "urlPath": "/car-battery/benz/glb-class.html",
+            "matchedAlias": "벤츠GLB",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "GLB-클래스",
+            "displayName": "벤츠 GLB-클래스",
+            "urlPath": "/car-battery/benz/glb-class.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gwangjin-gu",
+          "regionName": "광진구",
+          "neighborhoodName": "중곡동",
+          "label": "서울 광진구 중곡동",
+          "urlPath": "/area/seoul/gwangjin-gu/junggok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gwangjin-gu",
+            "regionName": "광진구",
+            "label": "서울 광진구",
+            "urlPath": "/area/seoul/gwangjin-gu.html",
+            "matchedAlias": "광진구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gwangjin-gu",
+            "regionName": "광진구",
+            "name": "중곡동",
+            "legalName": "서울특별시 광진구 중곡동",
+            "label": "서울 광진구 중곡동",
+            "urlPath": "/area/seoul/gwangjin-gu/junggok-dong.html",
+            "matchedAlias": "중곡동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/benz/glb-class.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/benz.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gwangjin-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gwangjin-gu/junggok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "광진구 중곡동에서 벤츠 GLB-클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224404408885",
       "title": "인천 남동구(장수동) 2022년식 제타 델코 AGM70 출장배터리교체 가격 및 비용 안내｜배터리 규격 확인 후 교체",
