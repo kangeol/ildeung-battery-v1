@@ -2,9 +2,14 @@ name: Naver Blog Work Case Sync
 
 on:
   schedule:
-    # KST 11:30 / 18:30
-    - cron: '30 2 * * *'
-    - cron: '30 9 * * *'
+    # Morning retry window - KST 11:37 / 12:07 / 12:37
+    - cron: '37 2 * * *'
+    - cron: '7 3 * * *'
+    - cron: '37 3 * * *'
+    # Evening retry window - KST 18:37 / 19:07 / 19:37
+    - cron: '37 9 * * *'
+    - cron: '7 10 * * *'
+    - cron: '37 10 * * *'
   workflow_dispatch:
 
 permissions:
@@ -41,6 +46,10 @@ jobs:
           set -Eeuo pipefail
 
           RUN_TYPE="${{ github.event_name }}"
+          TRIGGER_SCHEDULE="${{ github.event.schedule }}"
+          if [[ -z "$TRIGGER_SCHEDULE" ]]; then
+            TRIGGER_SCHEDULE="manual"
+          fi
           START_SHA="$(git rev-parse HEAD)"
           BEFORE_POSTS="$(node -e "console.log((JSON.parse(require('fs').readFileSync('seo-data/blog-cases.json', 'utf8')).posts || []).length)")"
           BEFORE_NEWEST="$(node -e "const posts=JSON.parse(require('fs').readFileSync('seo-data/blog-cases.json','utf8')).posts||[]; console.log(posts.map(p=>p.publishedAt).filter(Boolean).sort().at(-1)||'')")"
@@ -72,6 +81,7 @@ jobs:
               echo "## NAVER BLOG SYNC"
               echo ""
               echo "Run type: ${RUN_TYPE}"
+              echo "Trigger schedule: ${TRIGGER_SCHEDULE}"
               echo "Start SHA: ${START_SHA}"
               echo "Before posts: ${BEFORE_POSTS}"
               echo "Before newest date: ${BEFORE_NEWEST}"
