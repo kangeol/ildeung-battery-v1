@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-09T04:01:23.948Z",
+  "syncedAt": "2026-09-09T07:32:23.378Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 3,
-    "preservedPreviousPosts": 306,
-    "duplicateRemoved": 47,
-    "thumbnailSuccess": 309,
+    "newPosts": 1,
+    "preservedPreviousPosts": 309,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 310,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 262,
-    "vehicleMatches": 243,
+    "manufacturerMatches": 263,
+    "vehicleMatches": 244,
     "detailMatches": 48,
-    "regionMatches": 193,
-    "neighborhoodMatches": 163,
-    "batteryMatches": 192,
+    "regionMatches": 194,
+    "neighborhoodMatches": 164,
+    "batteryMatches": 193,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,169 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 193,
-    "actualRegionMatches": 193,
-    "actualNeighborhoodMatches": 163,
+    "actualAreaMatches": 194,
+    "actualRegionMatches": 194,
+    "actualNeighborhoodMatches": 164,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224406100749",
+      "title": "서울 금천구(시흥동) 2019년식 디스커버리5 바르타 AGM95 출장배터리교체 가격 및 비용 안내｜수입차 배터리 규격 확인",
+      "url": "https://blog.naver.com/kang10107/224406100749",
+      "publishedAt": "2026-09-09",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224406100749.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MDlfMTUg/MDAxNzg4OTM3MjIxNzQ1.2V22pVqEauqKFdSHkSnvP4o_TPWIYLGI6yyvPLw2gjUg.fHWlw-npa6X2XhMHYcP9VNP0U3PENomlndRow4IwV9Yg.JPEG/image-5-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 금천구 시흥동에서 2019년식 디스커버리5 배터리 교체 작업을 진행했습니다. 이번 차량은 차 안의 여러 전자기기와 전기 기능을 사용하면서 배터리에 걸리는 부담을 고려해 AGM 타입을 적용한 경우입니다. 디스커버리5배터리를 알아보실 때는 단순히 용량이 큰 제품을 찾기보다 현재 차량이 어떤 타입과 규격을 사용하고 있는지 확인하는 것이 먼저입니다. 기존 장착 조건을 확인한 뒤 바르타 AGM95로 교체했고, 신품 장착 후에는 배터리 등록 코딩까지 함께 진행했습니다. --- 전기.......",
+      "tags": [
+        "금천구배터리",
+        "금천구출장배터리",
+        "시흥동배터리",
+        "시흥배터리",
+        "디스커버리5배터리",
+        "디스커버리5배터리가격",
+        "디스커버리5배터리교체비용",
+        "델코agm95",
+        "델코agm95가격",
+        "agm95",
+        "agm95가격",
+        "agm배터리",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "배터리교체",
+        "배터리교체비용",
+        "자동차배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "랜드로버",
+        "manufacturers": [
+          {
+            "id": "landrover",
+            "name": "랜드로버",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "랜드로버 디스커버리",
+        "vehicles": [
+          {
+            "manufacturerId": "landrover",
+            "manufacturerName": "랜드로버",
+            "vehicleName": "디스커버리",
+            "displayName": "랜드로버 디스커버리",
+            "urlPath": "/car-battery/landrover/discovery.html",
+            "matchedAlias": "디스커버리",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "landrover",
+            "manufacturerName": "랜드로버",
+            "vehicleName": "디스커버리",
+            "displayName": "랜드로버 디스커버리",
+            "urlPath": "/car-battery/landrover/discovery.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "geumcheon-gu",
+          "regionName": "금천구",
+          "neighborhoodName": "시흥동",
+          "label": "서울 금천구 시흥동",
+          "urlPath": "/area/seoul/geumcheon-gu/siheung-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "geumcheon-gu",
+            "regionName": "금천구",
+            "label": "서울 금천구",
+            "urlPath": "/area/seoul/geumcheon-gu.html",
+            "matchedAlias": "금천구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "geumcheon-gu",
+            "regionName": "금천구",
+            "name": "시흥동",
+            "legalName": "서울특별시 금천구 시흥동",
+            "label": "서울 금천구 시흥동",
+            "urlPath": "/area/seoul/geumcheon-gu/siheung-dong.html",
+            "matchedAlias": "시흥동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/landrover/discovery.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/landrover.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/geumcheon-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/geumcheon-gu/siheung-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "금천구 시흥동에서 랜드로버 디스커버리 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224405845576",
       "title": "인천 계양구(계산동) 2019년식 싼타페TM 델코 AGM95 출장배터리교체 가격 및 비용 안내｜차량에 맞는 규격으로 교체",
