@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-10T03:36:02.508Z",
+  "syncedAt": "2026-09-10T07:28:43.009Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,9 +479,9 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 310,
-    "duplicateRemoved": 48,
+    "newPosts": 0,
+    "preservedPreviousPosts": 312,
+    "duplicateRemoved": 50,
     "thumbnailSuccess": 312,
     "thumbnailFallback": 0,
     "manufacturerMatches": 265,
