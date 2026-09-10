@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-09T08:00:15.179Z",
+  "syncedAt": "2026-09-10T03:36:02.508Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 2,
     "preservedPreviousPosts": 310,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 310,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 312,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 263,
-    "vehicleMatches": 244,
+    "manufacturerMatches": 265,
+    "vehicleMatches": 246,
     "detailMatches": 48,
-    "regionMatches": 194,
-    "neighborhoodMatches": 164,
-    "batteryMatches": 193,
+    "regionMatches": 196,
+    "neighborhoodMatches": 165,
+    "batteryMatches": 195,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,311 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 194,
-    "actualRegionMatches": 194,
-    "actualNeighborhoodMatches": 164,
+    "actualAreaMatches": 196,
+    "actualRegionMatches": 196,
+    "actualNeighborhoodMatches": 165,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224406783337",
+      "title": "인천 검단구(검단동) 2021년식 벤츠 GLB250 바르타 AGM80 출장배터리교체 가격 및 비용 안내｜단거리 운행 배터리 수명",
+      "url": "https://blog.naver.com/kang10107/224406783337",
+      "publishedAt": "2026-09-10",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224406783337.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTBfMjU2/MDAxNzg5MDEwOTc1OTMw.OTgPc4Yvuo0UcEQaZ4bToqpVG1TyXlh71BM11iwdpVsg.7ZrMzpqTt6Ti1ZR0wYR1GvUs7HJ6pg19Vm6ob0Sb0_0g.JPEG/image-glb250-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 검단구 검단동에서 2021년식 벤츠 GLB250 배터리 교체 작업을 진행했습니다. 이번 차량은 장거리 운행보다 가까운 거리의 출퇴근을 반복해 오면서 배터리가 점차 약해진 경우였습니다. 자동차배터리는 시동을 걸 때 비교적 많은 전기를 사용하고 주행하면서 다시 충전합니다. 그런데 이동거리가 짧으면 시동에 사용한 전기를 충분히 채우기 전에 다시 차량을 세우는 일이 반복될 수 있습니다. 차량에 적용되는 배터리 타입과 규격을 확인한 뒤 바르타 AGM80으로 교체하고 배터리 등록 코딩.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "인천자동차배터리",
+        "검단구배터리",
+        "검단구출장배터리",
+        "검단배터리",
+        "검단출장배터리",
+        "벤츠배터리",
+        "벤츠glb배터리",
+        "glb배터리가격",
+        "바르타배터리",
+        "바르타agm80",
+        "바르타agm80가격",
+        "바르타agm80교체비용",
+        "출장배터리",
+        "자동차배터리",
+        "배터리교체비용",
+        "자동차배터리교체",
+        "자동차배터리수명"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "벤츠",
+        "manufacturers": [
+          {
+            "id": "benz",
+            "name": "벤츠"
+          }
+        ],
+        "vehicle": "벤츠 GLB-클래스",
+        "vehicles": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "GLB-클래스",
+            "displayName": "벤츠 GLB-클래스",
+            "urlPath": "/car-battery/benz/glb-class.html",
+            "matchedAlias": "벤츠GLB",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "GLB-클래스",
+            "displayName": "벤츠 GLB-클래스",
+            "urlPath": "/car-battery/benz/glb-class.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "geomdan-gu",
+          "regionName": "검단구",
+          "label": "인천 검단구",
+          "urlPath": "/area/incheon/geomdan-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "geomdan-gu",
+            "regionName": "검단구",
+            "label": "인천 검단구",
+            "urlPath": "/area/incheon/geomdan-gu.html",
+            "matchedAlias": "검단구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/benz/glb-class.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/benz.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/geomdan-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "인천 검단구에서 벤츠 GLB-클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224406775346",
+      "title": "경기 시흥시(능곡동) 2021년식 티구안 델코 AGM70 출장배터리교체 가격 및 비용 안내｜장기주차 후 시동 안 걸림",
+      "url": "https://blog.naver.com/kang10107/224406775346",
+      "publishedAt": "2026-09-10",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224406775346.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTBfODMg/MDAxNzg4OTk3Nzg1MTE1.RIp8pfTqYEGKQIdDwWEeDzlCq46TUO6K8NMM5nShCIQg.wtgaMesGzbScW9aeWi4fgB3vT-UxIdKqszl1udCqt0Mg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 시흥시 능곡동에서 2021년식 티구안 배터리 교체 작업을 진행했습니다. 이번 차량은 한동안 운행하지 않고 장기간 주차해 둔 뒤 다시 차량을 사용하려고 했을 때 갑자기 시동이 걸리지 않았던 경우입니다. 자동차는 세워두면 배터리를 전혀 사용하지 않을 것 같지만 시동이 꺼진 상태에서도 차량의 일부 전자기기나 블랙박스 등에서 전기를 사용할 수 있습니다. 차량에 적용되는 배터리 타입과 장착 조건을 확인한 뒤 델코 AGM70으로 교체했고, 신품 장착 후 배터리 등록 코딩까지 진행했.......",
+      "tags": [
+        "시흥출장배터리",
+        "시흥배터리",
+        "시흥자동차배터리",
+        "시흥능곡배터리",
+        "티구안배터리",
+        "티구안배터리교체",
+        "티구안배터리가격",
+        "티구안배터리교체비용",
+        "델코agm70",
+        "델코agm70가격",
+        "agm70",
+        "agm70교체비용",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "배터리교체",
+        "자동차배터리교체비용",
+        "출장배터리교체비용",
+        "출장배터리추천"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "폭스바겐",
+        "manufacturers": [
+          {
+            "id": "volkswagen",
+            "name": "폭스바겐",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "폭스바겐 티구안",
+        "vehicles": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "티구안",
+            "displayName": "폭스바겐 티구안",
+            "urlPath": "/car-battery/volkswagen/tiguan.html",
+            "matchedAlias": "티구안",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "티구안",
+            "displayName": "폭스바겐 티구안",
+            "urlPath": "/car-battery/volkswagen/tiguan.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "siheung-si",
+          "regionName": "시흥시",
+          "neighborhoodName": "능곡동",
+          "label": "경기 시흥시 능곡동",
+          "urlPath": "/area/gyeonggi/siheung-si/neunggok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "siheung-si",
+            "regionName": "시흥시",
+            "label": "경기 시흥시",
+            "urlPath": "/area/gyeonggi/siheung-si.html",
+            "matchedAlias": "시흥시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "siheung-si",
+            "regionName": "시흥시",
+            "name": "능곡동",
+            "legalName": "경기도 시흥시 능곡동",
+            "label": "경기 시흥시 능곡동",
+            "urlPath": "/area/gyeonggi/siheung-si/neunggok-dong.html",
+            "matchedAlias": "능곡동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/volkswagen/tiguan.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/volkswagen.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/siheung-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/siheung-si/neunggok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "시흥시 능곡동에서 폭스바겐 티구안 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224406100749",
       "title": "서울 금천구(시흥동) 2019년식 디스커버리5 바르타 AGM95 출장배터리교체 가격 및 비용 안내｜수입차 배터리 규격 확인",
