@@ -398,7 +398,7 @@ function renderAreaCta() {
       </section>`;
 }
 
-function renderFaq(locationLabel, type) {
+function renderFaq(locationLabel, type, localFaq) {
   const questions = type === "neighborhood"
     ? [
       [`${locationLabel}에서 출장배터리 교체가 가능한가요?`, `${locationLabel} 지역은 일등밧데리 출장배터리 상담 가능 지역입니다. 다만 현장 위치와 일정에 따라 방문 가능 여부는 상담 시 최종 확인됩니다.`],
@@ -422,7 +422,10 @@ function renderFaq(locationLabel, type) {
           <h2 id="faqTitle">${escapeHtml(locationLabel)} 자주 묻는 질문</h2>
         </div>
         <div class="faq-grid">
-          ${questions.map(([question, answer]) => `
+          ${questions.map(([question, answer], index) => {
+            const replacement = index === 0 ? localFaq?.service : index === 3 ? localFaq?.agm : undefined;
+            return [replacement?.question ?? question, replacement?.answer ?? answer];
+          }).map(([question, answer]) => `
           <article class="faq-card">
             <h3>${escapeHtml(question)}</h3>
             <p>${escapeHtml(answer)}</p>
@@ -720,13 +723,14 @@ function renderNeighborhoodPage(area, region, neighborhood, duplicatesByArea, bl
   const h1Label = neighborhoodH1Label(area, region, neighborhood, duplicatesByArea);
   const regionLabel = regionH1Label(area, region);
   const canonicalPath = neighborhoodPath(area, region, neighborhood);
+  const localContent = neighborhood.localContent;
   const blogCaseSection = renderBlogCaseSection(getBlogCasesForPage(blogCases, {
     type: "neighborhood",
     canonicalPath,
     areaId: area.id,
     regionId: region.id,
     neighborhoodName: neighborhood.name
-  }), { id: `blogCases-${area.id}-${region.id}-${neighborhood.slug}` });
+  }), { id: `blogCases-${area.id}-${region.id}-${neighborhood.slug}`, description: localContent?.caseDescription });
   const localContext = getLocalContextCopy(area, region, neighborhood, duplicatesByArea);
   const legalContext = neighborhood.district
     ? `${region.name} ${neighborhood.district}`
@@ -742,7 +746,7 @@ function renderNeighborhoodPage(area, region, neighborhood, duplicatesByArea, bl
       ${renderHero({
         eyebrow: "Neighborhood Service",
         h1: `${h1Label} 출장배터리 가격 및 교체 안내`,
-        description: `${titleLabel} 지역은 ${regionLabel} 출장배터리 상담 가능 범위에 포함됩니다. 자동차배터리 방전, 시동불량, 일반 DIN 및 AGM 배터리 교체 상담은 차량 정보와 현장 위치 확인 후 안내합니다.`,
+        description: localContent?.intro ?? `${titleLabel} 지역은 ${regionLabel} 출장배터리 상담 가능 범위에 포함됩니다. 자동차배터리 방전, 시동불량, 일반 DIN 및 AGM 배터리 교체 상담은 차량 정보와 현장 위치 확인 후 안내합니다.`,
         imageAlt: `${h1Label} 출장배터리 가격 및 교체 안내 - 일등밧데리`,
         imagePath,
         summaryTitle: `${h1Label} 상담 전 확인`,
@@ -758,7 +762,7 @@ function renderNeighborhoodPage(area, region, neighborhood, duplicatesByArea, bl
         <div class="local-detail-card">
           <p class="eyebrow">Local Detail</p>
           <h2 id="localInfoTitle">${escapeHtml(neighborhood.name)} 출장 가능 안내</h2>
-          <p class="local-context-copy">${escapeHtml(localContext.text)}</p>
+          <p class="local-context-copy">${escapeHtml(localContent?.guidance ?? localContext.text)}</p>
           <p>${escapeHtml(neighborhood.legalName)} 기준의 지역 안내입니다. 실제 방문 가능 여부는 기사 동선과 현장 주차 환경에 따라 달라질 수 있어 1644-9141 전화상담으로 최종 확인합니다.</p>
           <p>자동차 밧데리 교체가 처음이라도 차량명과 연식, 연료만 알려주시면 기본 적용 배터리 확인부터 상담을 도와드립니다.</p>
         </div>
@@ -769,7 +773,7 @@ function renderNeighborhoodPage(area, region, neighborhood, duplicatesByArea, bl
       ${blogCaseSection}
       ${renderAreaCta()}
       ${renderReplacementProcess()}
-      ${renderFaq(h1Label, "neighborhood")}`;
+      ${renderFaq(h1Label, "neighborhood", localContent?.faq)}`;
 
   return renderShell({
     depth: 3,
