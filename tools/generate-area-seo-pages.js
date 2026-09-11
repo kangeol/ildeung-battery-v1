@@ -17,6 +17,8 @@ const AREA_THUMBNAIL_ROOT = "/assets/seo/area";
 const STANDARD_BATTERY_URL = "https://smartstore.naver.com/battery1/products/414050800";
 const AGM_BATTERY_URL = "https://smartstore.naver.com/battery1/products/575288571";
 const AREA_ORDER = ["incheon", "seoul", "gyeonggi"];
+const VISIT_COPY = "차량이 있는 위치로 방문해 차종과 연식, 현재 장착된 배터리 규격을 확인하고 교체합니다.";
+const SCHEDULE_COPY = "방문 시간은 당일 기사 배차와 교통 상황을 확인해 안내합니다.";
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -272,7 +274,7 @@ ${renderFooter()}
 `;
 }
 
-function renderHero({ eyebrow, h1, description, imageAlt, imagePath, summaryTitle, summaryItems, note }) {
+function renderHero({ eyebrow, h1, serviceLabel, description, imageAlt, imagePath, summaryTitle, summaryItems, note }) {
   const items = summaryItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   const noteHtml = note ? `<p class="area-note">${escapeHtml(note)}</p>` : "";
   const resolvedImagePath = imagePath || rootAreaThumbnailPath();
@@ -294,7 +296,7 @@ function renderHero({ eyebrow, h1, description, imageAlt, imagePath, summaryTitl
             </div>
           </div>
         </div>
-        <p class="area-hero-desc">${escapeHtml(description)}</p>
+        <p class="area-hero-desc">저희 일등밧데리는 ${escapeHtml(serviceLabel)}에서 자동차배터리 출장교체 서비스를 제공합니다. ${escapeHtml(description)} ${VISIT_COPY} ${SCHEDULE_COPY}</p>
         ${noteHtml}
       </section>`;
 }
@@ -332,8 +334,8 @@ function renderPriceLinks() {
 
 function renderServiceInfo(locationLabel, parentLabel) {
   const parentCopy = parentLabel
-    ? `${escapeHtml(parentLabel)} 안에서 차량 위치를 기준으로 상담 가능 여부를 확인합니다.`
-    : "서울·경기·인천 서비스 가능 지역을 기준으로 상담 가능 여부를 확인합니다.";
+    ? `${escapeHtml(parentLabel)} 내 차량 위치를 확인한 뒤 방문 시간을 안내합니다.`
+    : "서울·경기·인천 내 차량 위치를 확인한 뒤 방문 시간을 안내합니다.";
 
   return `
       <section class="area-section" aria-labelledby="serviceInfoTitle">
@@ -344,7 +346,7 @@ function renderServiceInfo(locationLabel, parentLabel) {
         <div class="info-grid">
           <article class="info-card">
             <h3>차량 위치 방문 교체</h3>
-            <p>${parentCopy} 아파트 지하주차장, 회사 주차장, 자택 인근 등 현장 상황에 맞춰 출장배터리 교체 상담을 도와드립니다.</p>
+            <p>${parentCopy} 아파트 지하주차장, 회사 주차장, 자택 인근 등 차량이 있는 현장의 진입과 작업 공간을 확인하고 배터리를 교체합니다.</p>
           </article>
           <article class="info-card">
             <h3>방전·시동불량 상담</h3>
@@ -402,14 +404,14 @@ function renderAreaCta() {
 function renderFaq(locationLabel, type, localFaq) {
   const questions = type === "neighborhood"
     ? [
-      [`${locationLabel}에서 출장배터리 교체가 가능한가요?`, `${locationLabel} 지역은 일등밧데리 출장배터리 상담 가능 지역입니다. 다만 현장 위치와 일정에 따라 방문 가능 여부는 상담 시 최종 확인됩니다.`],
+      [`${locationLabel}에서 출장배터리 교체가 가능한가요?`, `네. 저희 일등밧데리는 ${locationLabel}에서 자동차배터리 출장교체 서비스를 제공합니다. ${SCHEDULE_COPY}`],
       [`${locationLabel} 자동차배터리 가격은 어떻게 확인하나요?`, "배터리 가격은 차량 규격, AGM 여부, 제품에 따라 달라질 수 있습니다. 배터리 최저가 바로가기에서 현재 판매가격을 확인하고, 출장교체 비용은 전화상담으로 안내받을 수 있습니다."],
-      ["아파트 지하주차장에서도 교체 가능한가요?", "현장 진입과 작업 공간이 확보되면 지하주차장에서도 상담 가능합니다. 차량 위치와 주차 환경을 함께 알려주세요."],
+      ["아파트 지하주차장에서도 교체 가능한가요?", "현장 진입과 작업 공간이 확보되면 지하주차장에서 배터리를 교체합니다. 차량 위치와 주차 환경을 함께 알려주세요."],
       ["AGM 배터리도 교체 가능한가요?", "AGM 배터리는 차량 충전 제어 방식과 코딩 여부 확인이 중요합니다. 차종과 연식을 알려주시면 적용 가능 여부를 안내합니다."],
       ["내 차에 맞는 배터리는 어떻게 확인하나요?", "차량별 배터리 찾기에서 제조사, 차량명, 세부모델을 선택하거나 1644-9141로 문의해 주세요."]
     ]
     : [
-      [`${locationLabel} 출장배터리 교체가 가능한가요?`, `${locationLabel} 지역은 일등밧데리 출장배터리 상담 가능 지역입니다. 일부 위치는 이동 거리와 일정에 따라 서비스가 제한될 수 있습니다.`],
+      [`${locationLabel} 출장배터리 교체가 가능한가요?`, `네. 저희 일등밧데리는 ${locationLabel}의 안내된 서비스 지역에서 자동차배터리 출장교체 서비스를 제공합니다. ${SCHEDULE_COPY}`],
       [`${locationLabel} 자동차배터리 가격은 얼마인가요?`, "자동차배터리 가격은 규격과 AGM 여부에 따라 달라집니다. 고정 가격을 임의로 안내하지 않고, 현재 판매가격과 출장교체 상담을 구분해 안내합니다."],
       ["AGM 배터리도 출장교체 가능한가요?", "AGM 배터리 적용 차량은 차종별 적용 배터리 확인이 필요합니다. 차량 정보를 알려주시면 교체 가능 여부와 상담 방향을 안내합니다."],
       ["수입차 배터리 코딩도 가능한가요?", "수입차는 차종에 따라 진단기 확인이나 코딩이 필요할 수 있습니다. 정확한 가능 여부는 차량 정보를 기준으로 상담합니다."],
@@ -499,10 +501,10 @@ function getLocalContextCopy(area, region, neighborhood, duplicatesByArea) {
   const regionName = region.name;
   const neighborhoodName = neighborhood.name;
   const variants = [
-    `${localLabel} 지역은 일등밧데리 출장배터리 서비스 가능 지역입니다. 차량 위치와 차종을 확인한 뒤 자동차배터리 적용 정보와 방문 교체 상담을 안내합니다.`,
-    `${neighborhoodName}에서 자동차배터리 교체가 필요한 경우 차량 위치와 세부모델을 확인해 출장배터리 상담을 받을 수 있습니다. ${regionName} 서비스 가능지역으로 상담 후 방문 일정을 안내합니다.`,
-    `${localLabel}에서는 자동차배터리 방전, 시동 불량, 배터리 교체 상담이 가능합니다. 차량별 적용 배터리와 배터리 가격을 먼저 확인하면 더 정확한 안내를 받을 수 있습니다.`,
-    `${neighborhoodName} 지역은 일등밧데리 출장배터리 가능 지역에 포함됩니다. ${regionName} 내 차량 사양에 맞춰 일반 DIN 배터리와 AGM 배터리 적용 여부를 확인한 뒤 교체 상담을 안내합니다.`
+    `${localLabel}에서 차량 위치와 차종을 확인한 뒤 차량에 맞는 배터리로 방문 교체를 진행합니다. 현재 장착된 배터리 정보를 알려주시면 준비에 도움이 됩니다.`,
+    `${regionName} ${neighborhoodName}의 차량 위치와 세부모델을 확인해 출장교체를 준비합니다. ${SCHEDULE_COPY}`,
+    `${localLabel}에서 자동차배터리 방전이나 시동 불량이 발생하면 배터리 상태를 점검하고 필요한 교체를 진행합니다. 차량별 적용 배터리와 배터리 가격을 먼저 확인하면 더 정확한 안내를 받을 수 있습니다.`,
+    `${regionName} ${neighborhoodName}에서 차량 사양에 맞춰 일반 DIN 배터리와 AGM 배터리 적용 여부를 확인한 뒤 교체합니다. 차종과 연식, 현재 장착된 배터리 정보를 함께 알려주세요.`
   ];
   const key = `${area.id}:${region.id}:${neighborhood.slug}:${neighborhood.code || ""}`;
 
@@ -525,8 +527,8 @@ function renderSiblingLinks(area, region, neighborhood) {
       <section class="area-section" aria-labelledby="siblingTitle">
         <div class="section-heading">
           <p class="eyebrow">Nearby</p>
-          <h2 id="siblingTitle">${escapeHtml(parentLabel)} 다른 출장 가능 지역</h2>
-          <p class="section-desc">현재 선택한 ${escapeHtml(neighborhood.name)} 지역을 제외한 ${escapeHtml(parentLabel)} 서비스 가능 동입니다.</p>
+          <h2 id="siblingTitle">${escapeHtml(parentLabel)} 다른 출장교체 서비스 지역</h2>
+          <p class="section-desc">현재 선택한 ${escapeHtml(neighborhood.name)} 지역을 제외한 ${escapeHtml(parentLabel)} 출장교체 서비스 지역입니다.</p>
         </div>
         <div class="area-link-grid compact">${links}
         </div>
@@ -548,7 +550,7 @@ function renderAreaRootPage(areas, blogCases) {
   const regionBlocks = areas.map((area) => `
         <article class="hub-card">
           <h2>${escapeHtml(area.name)} 출장배터리</h2>
-          <p>${escapeHtml(area.fullName)} 서비스 가능 구/시 대표 페이지입니다. 지역명을 선택하면 상세 안내로 이동합니다.</p>
+          <p>${escapeHtml(area.fullName)} 출장교체 서비스 구/시 안내입니다. 지역명을 선택하면 상세 안내로 이동합니다.</p>
           <div class="area-link-grid">${renderRegionLinks(area)}
           </div>
         </article>`).join("");
@@ -556,12 +558,13 @@ function renderAreaRootPage(areas, blogCases) {
       ${renderHero({
         eyebrow: "Service Area",
         h1: "서울·경기·인천 출장배터리 서비스 지역",
-        description: "일등밧데리는 서울·경기·인천 지정 가능 지역을 중심으로 차량 위치 방문 배터리 교체 상담을 안내합니다. 지역별 페이지에서 출장배터리 교체, 자동차배터리 가격 확인, 차량별 적용 배터리 확인으로 바로 이동할 수 있습니다.",
+        serviceLabel: "서울·경기·인천",
+        description: "아래 지역별 페이지에서 출장배터리 교체, 자동차배터리 가격 확인, 차량별 적용 배터리를 확인하실 수 있습니다.",
         imageAlt: "서울 경기 인천 출장배터리 서비스 지역 안내 - 일등밧데리",
         imagePath,
         summaryTitle: "지역별 안내 한눈에 확인",
         summaryItems: [
-          "서울·경기·인천 서비스 가능 지역",
+          "서울·경기·인천 출장교체 서비스 지역",
           "구/시 및 법정동별 안내",
           "현장 카드·현금·이체 결제 상담",
           "일반 DIN·AGM 배터리 가격 확인",
@@ -585,7 +588,7 @@ function renderAreaRootPage(areas, blogCases) {
   return renderShell({
     depth: 1,
     title: "서울·경기·인천 출장배터리 서비스 지역 | 일등밧데리",
-    description: "서울·경기·인천 출장배터리 교체 가능 지역과 자동차배터리 가격, DIN·AGM 배터리 상담 정보를 확인하세요.",
+    description: "서울·경기·인천 출장배터리 교체 서비스 지역과 자동차배터리 가격, DIN·AGM 배터리 상담 정보를 확인하세요.",
     canonicalPath,
     breadcrumbs,
     content,
@@ -607,18 +610,19 @@ function renderAreaHubPage(area, blogCases) {
     { label: area.name }
   ];
   const note = area.id === "incheon"
-    ? "인천 지역 SEO 페이지는 2026년 7월 1일 시행된 행정체제 개편 이후 현행 서해구·검단구 기준을 사용합니다."
+    ? "인천 지역 안내는 2026년 7월 1일 시행된 행정체제 개편 이후 현행 서해구·검단구 기준을 사용합니다."
     : "";
   const content = `${renderBreadcrumb(breadcrumbs)}
       ${renderHero({
         eyebrow: `${area.name} Area`,
         h1: `${area.name} 출장배터리 서비스 지역`,
-        description: `${area.fullName} 내 지정 서비스 가능 지역의 출장배터리 교체와 자동차배터리 가격 확인 안내입니다. 가까운 구/시를 선택해 세부 동별 상담 정보를 확인하세요.`,
+        serviceLabel: area.name,
+        description: `${area.fullName} 내 아래 구/시를 선택해 동별 출장교체 안내와 자동차배터리 가격 정보를 확인하세요.`,
         imageAlt: `${area.name} 출장배터리 서비스 지역 안내 - 일등밧데리`,
         imagePath,
         summaryTitle: `${area.name} 서비스 흐름`,
         summaryItems: [
-          "서비스 가능 구/시 대표 페이지",
+          "출장교체 서비스 구/시 안내",
           "동별 출장배터리 안내",
           "배터리 방전·시동불량 상담",
           "일반 DIN·AGM 배터리 확인",
@@ -630,7 +634,7 @@ function renderAreaHubPage(area, blogCases) {
         <div class="section-heading">
           <p class="eyebrow">Regions</p>
           <h2 id="areaRegionTitle">${escapeHtml(area.name)} 주요 서비스 지역</h2>
-          <p class="section-desc">아래 지역은 현재 지역 SEO V1 기준의 상담 가능 구/시입니다.</p>
+          <p class="section-desc">아래 구/시에서 자동차배터리 출장교체 서비스를 제공합니다.</p>
         </div>
         <div class="area-link-grid">${renderRegionLinks(area)}
         </div>
@@ -645,7 +649,7 @@ function renderAreaHubPage(area, blogCases) {
   return renderShell({
     depth: 2,
     title: `${area.name} 출장배터리 서비스 지역 | 자동차배터리 교체 | 일등밧데리`,
-    description: `${area.name} 출장배터리 교체 가능 지역을 확인하세요. 자동차배터리 가격, AGM 배터리, 차량 위치 방문 교체 상담을 안내합니다.`,
+    description: `${area.name} 출장배터리 교체 서비스 지역을 확인하세요. 자동차배터리 가격, AGM 배터리, 차량 위치 방문 교체 상담을 안내합니다.`,
     canonicalPath,
     breadcrumbs,
     content,
@@ -678,12 +682,13 @@ function renderRegionPage(area, region, blogCases) {
       ${renderHero({
         eyebrow: "Local Service",
         h1: `${h1Label} 출장배터리 가격 및 교체 안내`,
-        description: `${titleLabel} 지역에서 자동차배터리 방전이나 시동불량이 발생했을 때 차량 위치 방문 교체 상담을 받을 수 있습니다. 배터리 가격은 적용 배터리와 AGM 여부에 따라 달라질 수 있으므로 차량별 적용 배터리 확인과 전화상담을 함께 이용해 주세요.`,
+        serviceLabel: titleLabel,
+        description: "배터리 가격은 적용 배터리와 AGM 여부에 따라 달라질 수 있으므로 차량별 적용 배터리 확인과 전화상담을 함께 이용해 주세요.",
         imageAlt: `${h1Label} 출장배터리 가격 및 교체 안내 - 일등밧데리`,
         imagePath,
         summaryTitle: `${h1Label} 출장배터리 한눈에 확인`,
         summaryItems: [
-          "차량 위치 방문 교체 상담",
+          "차량 위치 방문 배터리 교체",
           "방전·시동불량 증상 안내",
           "일반 DIN·AGM 배터리 구분",
           "수입차 배터리 및 코딩 상담",
@@ -694,7 +699,7 @@ function renderRegionPage(area, region, blogCases) {
       <section class="area-section" aria-labelledby="regionLocalTitle">
         <div class="section-heading">
           <p class="eyebrow">Neighborhoods</p>
-          <h2 id="regionLocalTitle">${escapeHtml(h1Label)} 서비스 가능 동</h2>
+          <h2 id="regionLocalTitle">${escapeHtml(h1Label)} 출장교체 서비스 지역</h2>
           <p class="section-desc">${escapeHtml(districtText)} 아래 동 이름을 선택하면 지역별 출장배터리 안내를 확인할 수 있습니다.</p>
         </div>
         <div class="area-link-grid compact">${renderNeighborhoodLinks(area, region)}
@@ -747,13 +752,14 @@ function renderNeighborhoodPage(area, region, neighborhood, duplicatesByArea, bl
       ${renderHero({
         eyebrow: "Neighborhood Service",
         h1: `${h1Label} 출장배터리 가격 및 교체 안내`,
-        description: localContent?.intro ?? `${titleLabel} 지역은 ${regionLabel} 출장배터리 상담 가능 범위에 포함됩니다. 자동차배터리 방전, 시동불량, 일반 DIN 및 AGM 배터리 교체 상담은 차량 정보와 현장 위치 확인 후 안내합니다.`,
+        serviceLabel: `${area.name} ${region.name} ${neighborhood.name}`,
+        description: localContent?.intro ?? "자동차배터리 방전과 시동불량 증상을 확인하고, 차량에 맞는 일반 DIN 또는 AGM 배터리를 안내합니다.",
         imageAlt: `${h1Label} 출장배터리 가격 및 교체 안내 - 일등밧데리`,
         imagePath,
         summaryTitle: `${h1Label} 상담 전 확인`,
         summaryItems: [
           `${legalContext} 서비스 동`,
-          "차량 위치 방문 교체 상담",
+          "차량 위치 방문 배터리 교체",
           "아파트·회사·자택 주차 위치 확인",
           "현장 카드·현금·이체 가능",
           "차량별 적용 배터리 연결"
@@ -762,9 +768,9 @@ function renderNeighborhoodPage(area, region, neighborhood, duplicatesByArea, bl
       <section class="area-section" aria-labelledby="localInfoTitle">
         <div class="local-detail-card">
           <p class="eyebrow">Local Detail</p>
-          <h2 id="localInfoTitle">${escapeHtml(neighborhood.name)} 출장 가능 안내</h2>
+          <h2 id="localInfoTitle">${escapeHtml(neighborhood.name)} 출장배터리 교체 서비스 안내</h2>
           <p class="local-context-copy">${escapeHtml(localContent?.guidance ?? localContext.text)}</p>
-          <p>${escapeHtml(neighborhood.legalName)} 기준의 지역 안내입니다. 실제 방문 가능 여부는 기사 동선과 현장 주차 환경에 따라 달라질 수 있어 1644-9141 전화상담으로 최종 확인합니다.</p>
+          <p>${escapeHtml(neighborhood.legalName)} 기준의 지역 안내입니다. 차량 위치와 주차 환경을 함께 알려주시면 방문 시간을 안내하는 데 도움이 됩니다. 현장 진입과 작업 공간은 1644-9141 전화상담으로 확인합니다.</p>
           <p>자동차 밧데리 교체가 처음이라도 차량명과 연식, 연료만 알려주시면 기본 적용 배터리 확인부터 상담을 도와드립니다.</p>
         </div>
       </section>
