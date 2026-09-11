@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://battery1.co.kr/sitemap.xml
+
+#DaumWebMasterTool:daf58c2ddfe086fb627b095a672486385e2635b542f0a0e26c5d6565497c4c98:LjXfRjgA6nNHoMYtFBIcQw==
