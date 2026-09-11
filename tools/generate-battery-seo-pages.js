@@ -497,6 +497,7 @@ function renderFooter() {
       <p class="footer-line">사업장: 인천광역시 연수구 한나루로86번길 32</p>
       <p class="footer-line">서울 · 경기 · 인천 출장 자동차배터리 교체</p>
       <p class="footer-line">자동차배터리 · AGM배터리 · 출장배터리교체 상담</p>
+      <p class="footer-line"><a href="/company/">일등밧데리 소개</a></p>
       <p class="footer-copy">Copyright © 2026 일등밧데리. All rights reserved.</p>
     </div>
   </footer>`;

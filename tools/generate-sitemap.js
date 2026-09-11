@@ -9,6 +9,7 @@ const SITEMAP_FILE = path.join(ROOT_DIR, "sitemap.xml");
 const SITE_ORIGIN = "https://battery1.co.kr";
 
 const STATIC_PAGES = [
+  { file: "company/index.html", urlPath: "/company/", priority: "0.85" },
   { file: "index.html", urlPath: "/", priority: "1.0" },
   { file: "search.html", urlPath: "/search.html", priority: "0.9" },
   { file: "service-area.html", urlPath: "/service-area.html", priority: "0.8" },
