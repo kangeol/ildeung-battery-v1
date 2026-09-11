@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-10T14:12:43.840Z",
+  "syncedAt": "2026-09-11T08:20:42.184Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 2,
     "preservedPreviousPosts": 313,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 313,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 315,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 266,
-    "vehicleMatches": 247,
+    "manufacturerMatches": 268,
+    "vehicleMatches": 249,
     "detailMatches": 48,
-    "regionMatches": 197,
-    "neighborhoodMatches": 165,
-    "batteryMatches": 196,
+    "regionMatches": 199,
+    "neighborhoodMatches": 167,
+    "batteryMatches": 198,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,331 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 197,
-    "actualRegionMatches": 197,
-    "actualNeighborhoodMatches": 165,
+    "actualAreaMatches": 199,
+    "actualRegionMatches": 199,
+    "actualNeighborhoodMatches": 167,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224407095517",
+      "title": "인천 연수구(청학동) 2020년식 XM3 델코 AGM70 출장배터리교체 가격 및 비용 안내｜며칠 세워둔 뒤 시동이 약할 때",
+      "url": "https://blog.naver.com/kang10107/224407095517",
+      "publishedAt": "2026-09-11",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224407095517.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTBfMTY0/MDAxNzg5MDE1NDQxMDAx.X3AabAwbdLYxLhRq_veT31_5ymRLk_JAZZWz1Pk8nkAg.dyXjRAZf4z_buXUrXHl58V3_Y_iGra4xROeur1iCGjsg.JPEG/image-xm3-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 연수구 청학동에서 2020년식 XM3 배터리 교체 작업을 진행했습니다. 이번 차량은 오랫동안 방치한 경우가 아니라 며칠 정도 차량을 사용하지 않은 뒤 다시 시동을 걸었을 때 평소보다 힘이 약하게 느껴졌던 경우입니다. 자동차배터리는 주행할 때 전기를 다시 채우기 때문에 운행하지 않는 동안에는 충전 기회가 없습니다. 반면 차량의 일부 전자기기나 블랙박스 등은 주차 중에도 전기를 사용할 수 있습니다. XM3에 맞는 배터리 타입과 장착 규격을 확인한 뒤 델코 AGM70으로 교체했습니.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "인천자동차배터리",
+        "연수구배터리",
+        "청학동배터리",
+        "청학동출장배터리",
+        "청학동자동차배터리",
+        "xm3배터리",
+        "xm3배터리가격",
+        "xm3배터리교체",
+        "xm3배터리교체비용",
+        "델코agm70",
+        "agm배터리",
+        "agm70가격",
+        "출장배터리",
+        "자동차배터리",
+        "차량배터리",
+        "차량배터리가격",
+        "자동차배터리가격",
+        "자동차배터리교체",
+        "자동차배터리교체비용",
+        "출장배터리교체비용",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "르노",
+        "manufacturers": [
+          {
+            "id": "renault",
+            "name": "르노",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "XM3",
+        "vehicles": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "XM3",
+            "displayName": "XM3",
+            "urlPath": "/car-battery/renault/xm3.html",
+            "matchedAlias": "XM3",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "XM3",
+            "displayName": "XM3",
+            "urlPath": "/car-battery/renault/xm3.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "yeonsu-gu",
+          "regionName": "연수구",
+          "neighborhoodName": "청학동",
+          "label": "인천 연수구 청학동",
+          "urlPath": "/area/incheon/yeonsu-gu/cheonghak-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "label": "인천 연수구",
+            "urlPath": "/area/incheon/yeonsu-gu.html",
+            "matchedAlias": "연수구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "name": "청학동",
+            "legalName": "인천광역시 연수구 청학동",
+            "label": "인천 연수구 청학동",
+            "urlPath": "/area/incheon/yeonsu-gu/cheonghak-dong.html",
+            "matchedAlias": "청학동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/renault/xm3.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/renault.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/yeonsu-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/yeonsu-gu/cheonghak-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "연수구 청학동에서 XM3 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224407006817",
+      "title": "경기 부천시 원미구(원미동) 2017년식 SM6 델코 AGM70 출장배터리교체 가격 및 비용 안내｜배터리 종류 선택 기준",
+      "url": "https://blog.naver.com/kang10107/224407006817",
+      "publishedAt": "2026-09-11",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224407006817.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTFfODUg/MDAxNzg5MDg0MzE5ODUw.n3DH2Odbo6htj6aWzrK6R7okv88ncLkPuyYtX7zd3wMg.ZwboqHDzdJGx-PsHMrcK2cyUCpd2Csx7-63PiXhXR_Mg.JPEG/image-sm6-agm70-image-battery-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 부천시 원미구 원미동에서 2017년식 SM6 배터리 교체 작업을 진행했습니다. 이번 작업은 단순히 기존 제품과 같은 크기의 배터리를 찾아 바꾸는 것보다 차량에서 사용하는 여러 전기 기능과 배터리에 걸리는 부담을 함께 고려한 경우입니다. 차량에는 시동뿐 아니라 블랙박스, 공조장치, 열선과 각종 전자기기처럼 전기를 사용하는 기능이 많습니다. 이런 사용환경을 생각해 차량에 맞는 델코 AGM70으로 교체를 진행했습니다. --- 배터리 종류는 무엇을 기준으로 선택할까요? 자동차.......",
+      "tags": [
+        "부천배터리",
+        "부천출장배터리",
+        "부천자동차배터리",
+        "sm6배터리",
+        "sm6배터리가격",
+        "sm6배터리교체비용",
+        "sm6배터리교체가격",
+        "델코agm70",
+        "agm배터리",
+        "agm출장배터리",
+        "출장배터리교체",
+        "출장배터리교체가격",
+        "출젱배터리가격비교",
+        "일등밧데리",
+        "자동차배터리",
+        "자동차배터리교체비용",
+        "자동차배터리가격",
+        "자동차배터리출장전문",
+        "배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "르노",
+        "manufacturers": [
+          {
+            "id": "renault",
+            "name": "르노",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "SM6",
+        "vehicles": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "SM6",
+            "displayName": "SM6",
+            "urlPath": "/car-battery/renault/sm6.html",
+            "matchedAlias": "SM6",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "SM6",
+            "displayName": "SM6",
+            "urlPath": "/car-battery/renault/sm6.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "bucheon-si",
+          "regionName": "부천시",
+          "neighborhoodName": "원미동",
+          "label": "경기 부천시 원미동",
+          "urlPath": "/area/gyeonggi/bucheon-si/wonmi-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "bucheon-si",
+            "regionName": "부천시",
+            "label": "경기 부천시",
+            "urlPath": "/area/gyeonggi/bucheon-si.html",
+            "matchedAlias": "부천시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "bucheon-si",
+            "regionName": "부천시",
+            "name": "원미동",
+            "legalName": "경기도 부천시 원미구 원미동",
+            "label": "경기 부천시 원미동",
+            "urlPath": "/area/gyeonggi/bucheon-si/wonmi-dong.html",
+            "matchedAlias": "원미동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/renault/sm6.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/renault.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/bucheon-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/bucheon-si/wonmi-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "부천시 원미동에서 SM6 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224406791162",
       "title": "서울 영등포구(영등포본동) 2014년식 BMW X3 델코 AGM105 출장배터리교체 가격 및 비용 안내｜시동 약해질 때 배터리 점검",
