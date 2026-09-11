@@ -131,6 +131,7 @@ function urlPathToFilePath(urlPath) {
 
 function collectHtmlFiles() {
   return [
+    "company/index.html",
     "index.html",
     "search.html",
     "service-area.html",
