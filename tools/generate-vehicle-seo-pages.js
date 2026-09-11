@@ -1046,7 +1046,7 @@ function getVehicleFaqs(vehicleName) {
     },
     {
       question: "출장 교체 상담도 가능한가요?",
-      answer: "서울, 경기, 인천 지역은 출장배터리 교체 상담이 가능하며, 차량 위치와 차종 확인 후 안내드립니다."
+      answer: "저희 일등밧데리는 서울·경기·인천의 공식 서비스지역에서 자동차배터리 출장교체 서비스를 제공합니다. 차량 위치와 차종을 확인한 뒤 당일 기사 배차와 교통 상황에 맞춰 방문 시간을 안내합니다."
     }
   ];
 }
@@ -1097,7 +1097,7 @@ function getDetailFaqs(vehicleName, detailLabel, rows) {
     },
     {
       question: "출장교체가 가능한가요?",
-      answer: "서울, 경기, 인천 지역은 출장배터리 교체 상담이 가능하며, 차량 위치와 차종 확인 후 방문 일정을 안내드립니다."
+      answer: "저희 일등밧데리는 서울·경기·인천의 공식 서비스지역에서 자동차배터리 출장교체 서비스를 제공합니다. 차량 위치와 차종을 확인한 뒤 당일 기사 배차와 교통 상황에 맞춰 방문 시간을 안내합니다."
     }
   ];
 }
@@ -1226,7 +1226,7 @@ function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups, blogCase
               <li>기본 / 업그레이드 배터리 안내</li>
               <li>AGM 적용 여부 확인</li>
               <li>현재 배터리 판매가격 확인</li>
-              <li>서울·경기·인천 출장교체 상담</li>
+              <li>서울·경기·인천 자동차배터리 출장교체 서비스</li>
             </ul>
             <p class="vehicle-help-copy">차량 세부모델을 모르시면 <a href="${prefix}search.html">차량 배터리 찾기</a>에서 확인해 주세요.</p>
             <div class="button-row">
@@ -1313,7 +1313,7 @@ function renderDetailPage({ manufacturer, vehicle, group, detailGroups, blogCase
               <li>기본 / 업그레이드 배터리 안내</li>
               <li>AGM 적용 여부 확인</li>
               <li>현재 배터리 판매가격 확인</li>
-              <li>서울·경기·인천 출장교체 상담</li>
+              <li>서울·경기·인천 자동차배터리 출장교체 서비스</li>
             </ul>
             <p class="vehicle-help-copy">차량 세부모델을 모르시면 <a href="${prefix}search.html">차량 배터리 찾기</a>에서 확인해 주세요.</p>
             <div class="button-row">
@@ -1444,7 +1444,7 @@ function renderRootHub({ manufacturers, vehiclePages, blogCases }) {
       <section class="hero-card">
         <p class="eyebrow">Car Battery Guide</p>
         <h1>차량별 배터리 가격 및 교체 안내</h1>
-        <p class="hero-desc">일등밧데리 차량 배터리 DB를 기준으로 제조사와 차량명별 기본 배터리, 업그레이드 배터리 정보를 정리했습니다. 실제 장착 배터리는 연식, 연료, 세부모델에 따라 달라질 수 있으며 현재 판매가격과 출장교체 상담은 최저가 바로가기와 전화상담에서 확인할 수 있습니다.</p>
+        <p class="hero-desc">일등밧데리 차량 배터리 DB를 기준으로 제조사와 차량명별 기본 배터리, 업그레이드 배터리 정보를 정리했습니다. 실제 장착 배터리는 연식, 연료, 세부모델에 따라 달라질 수 있으며 현재 판매가격은 최저가 바로가기에서 확인할 수 있습니다. 저희 일등밧데리는 서울·경기·인천의 공식 서비스지역에서 자동차배터리 출장교체 서비스를 제공합니다. 차량 위치와 차종을 확인한 뒤 당일 기사 배차와 교통 상황에 맞춰 방문 시간을 안내합니다.</p>
         <div class="button-row">
           <a class="btn primary" href="${prefix}search.html">차량 배터리 찾기</a>
           <a class="btn secondary" href="tel:16449141">1644-9141 전화상담</a>

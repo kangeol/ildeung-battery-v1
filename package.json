@@ -15,6 +15,7 @@
     "audit:blog-cases": "node tools/audit-blog-cases.js",
     "audit:seo-copy": "node tools/audit-seo-korean-copy.js",
     "audit:area-service": "node tools/audit-area-service.js",
+    "audit:sitewide-service": "node tools/audit-sitewide-service.js",
     "audit:work-cases": "node tools/audit-work-cases.js",
     "build:blog-cases": "npm run generate:vehicle-seo && npm run generate:area-seo && npm run generate:battery-seo && npm run generate:work-cases && npm run generate:sitemap",
     "audit:blog-sync-regression": "node tools/audit-blog-sync-regression.js",
