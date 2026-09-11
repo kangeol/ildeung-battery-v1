@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { generateSitemap } from "./generate-sitemap.js";
 import { loadBlogCases } from "./lib/blog-case-data.js";
 import { getBlogCasesForPage, getBlogCasesForVehicleDetailGroups } from "./lib/blog-case-matcher.js";
 import { renderBlogCaseSection } from "./lib/blog-case-renderer.js";
@@ -15,7 +16,6 @@ const CSS_FILE = "css/vehicle-seo.css";
 const PRIORITY_FILE = path.join(SEO_DATA_DIR, "vehicle-priority.json");
 const DETAIL_GROUPS_FILE = path.join(SEO_DATA_DIR, "vehicle-detail-groups.json");
 const MANUFACTURERS_FILE = path.join(DATA_DIR, "manufacturers.json");
-const SITEMAP_FILE = path.join(ROOT_DIR, "sitemap.xml");
 
 const SITE_ORIGIN = "https://battery1.co.kr";
 const STORE_URL = "https://smartstore.naver.com/battery1";
@@ -1577,28 +1577,6 @@ function buildVehicleConfig({ manufacturer, vehicleName, priorityConfig }) {
   };
 }
 
-function updateSitemap(generatedUrls) {
-  const existing = fs.existsSync(SITEMAP_FILE) ? fs.readFileSync(SITEMAP_FILE, "utf8") : "";
-  const keptBlocks = [...existing.matchAll(/<url>[\s\S]*?<\/url>/g)]
-    .map((match) => match[0])
-    .filter((block) => !block.includes(`${SITE_ORIGIN}/car-battery/`));
-
-  const newBlocks = generatedUrls.map((item) => `  <url>
-    <loc>${item.loc}</loc>
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>${item.priority}</priority>
-  </url>`);
-
-  const content = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...keptBlocks, ...newBlocks].join("\n")}
-</urlset>
-`;
-
-  fs.writeFileSync(SITEMAP_FILE, content, "utf8");
-}
-
 function generate() {
   console.log("Vehicle SEO Generate Start");
   console.log("");
@@ -1760,14 +1738,7 @@ function generate() {
     renderRootHub({ manufacturers: manufacturerSummaries, vehiclePages: popularVehiclePages, blogCases })
   );
 
-  const sitemapUrls = [
-    { loc: `${SITE_ORIGIN}/car-battery/`, priority: "0.9" },
-    ...manufacturerSummaries.map((manufacturer) => ({ loc: manufacturer.loc, priority: "0.8" })),
-    ...generatedVehiclePages.map((page) => ({ loc: page.loc, priority: "0.8" })),
-    ...generatedDetailPages.map((page) => ({ loc: page.loc, priority: "0.75" }))
-  ];
-
-  updateSitemap(sitemapUrls);
+  const sitemapEntries = generateSitemap();
 
   const detailReport = {
     generatedAt: TODAY,
@@ -1797,7 +1768,7 @@ function generate() {
   console.log(`Confident detail groups: ${generatedDetailPages.length}`);
   console.log(`Ambiguous detail groups: ${allAmbiguousGroups.length}`);
   console.log(`All-pending vehicle pages: ${allPendingPages.length}`);
-  console.log(`Sitemap URLs added: ${sitemapUrls.length}`);
+  console.log(`Sitemap URLs: ${sitemapEntries.length}`);
   console.log(`Slug collisions: ${slugCollisions.length}`);
   console.log("");
 
