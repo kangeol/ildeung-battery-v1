@@ -48,7 +48,6 @@ function baselineFiles(ref, paths) {
 }
 
 function main() {
-  assert.equal(files.length, 637, "Area HTML count");
   const data = JSON.parse(read("seo-data/service-areas.json"));
   const labels = new Map([["area/index.html", "서울·경기·인천"]]);
   for (const area of Object.values(data.areas)) {
@@ -60,6 +59,7 @@ function main() {
       }
     }
   }
+  assert.equal(files.length, labels.size, "Area HTML count from service-area data");
   assert.deepEqual(files, [...labels.keys()].sort(), "Area path/data mismatch");
   const forbidden = /출장배터리 가능 지역|출장 가능|상담 가능 범위|서비스 가능\s*(?:지역|동)|상담 가능 여부|방문 가능 여부|서비스가 제한될 수|지역 SEO V1/;
   for (const file of files) {

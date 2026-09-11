@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { classifyProtectedUrls, parseAddedUrlAllowlist } from "./lib/protected-url-regression.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,7 +13,8 @@ const EXPECTED = {
   dbRows: 917,
   carBatteryHtml: 443,
   vehicleDirectAnswerPages: 427,
-  areaHtml: 637,
+  areaHtml: 1 + Object.values(readJson("seo-data/service-areas.json").areas)
+    .reduce((total, area) => total + 1 + area.regions.reduce((sum, region) => sum + 1 + region.neighborhoods.length, 0), 0),
   batteryHtml: 19,
   minBlogPosts: 299
 };
@@ -301,47 +303,16 @@ function countBrokenInternalLinks() {
   return broken.length;
 }
 
-function isWorkCaseUrl(loc) {
-  return loc.startsWith(`${SITE_ORIGIN}/work-cases/`);
-}
-
-function compareProtectedSitemapUrlSet(currentLocs) {
-  const previous = gitShow("sitemap.xml");
-
-  if (!previous) {
-    return false;
-  }
-
-  const before = parseSitemapLocs(previous).filter((loc) => !isWorkCaseUrl(loc)).sort();
-  const after = [...currentLocs].filter((loc) => !isWorkCaseUrl(loc)).sort();
-
-  return JSON.stringify(before) !== JSON.stringify(after);
-}
-
-function countCanonicalChanges() {
+function auditProtectedUrls(currentLocs, allowed) {
+  const beforeUrls = parseSitemapLocs(gitShow("sitemap.xml"));
   const files = collectHtmlFiles();
-  let changed = 0;
-
-  files.forEach((filePath) => {
-    const previous = gitShow(filePath);
-
-    if (!previous) {
-      if (filePath.startsWith("work-cases/")) {
-        return;
-      }
-
-      changed += 1;
-      return;
-    }
-
-    const current = readText(filePath);
-
-    if (extractCanonical(previous) !== extractCanonical(current) || extractOgUrl(previous) !== extractOgUrl(current)) {
-      changed += 1;
-    }
+  const baselinePaths = beforeUrls.map((url) => path.relative(ROOT_DIR, urlPathToFilePath(new URL(url).pathname)).replace(/\\/g, "/"));
+  const record = (file, source) => ({ url: `${SITE_ORIGIN}${htmlPathToUrlPath(file)}`, canonical: extractCanonical(source), ogUrl: extractOgUrl(source) });
+  const beforePages = [...new Set([...files, ...baselinePaths])].flatMap((file) => {
+    const source = gitShow(file);
+    return source ? [record(file, source)] : [];
   });
-
-  return changed;
+  return classifyProtectedUrls({ beforeUrls, afterUrls: currentLocs, beforePages, afterPages: files.map((file) => record(file, readText(file))), allowed });
 }
 
 function checkCurrentCanonicalConsistency() {
@@ -428,6 +399,7 @@ function compareBlogCaseHistory(currentPosts) {
 }
 
 function main() {
+  const allowed = parseAddedUrlAllowlist(process.argv.slice(2));
   console.log("Blog Sync Regression Audit Start");
   console.log("");
 
@@ -441,6 +413,7 @@ function main() {
   const postUrls = new Set(posts.map((post) => post.url));
   const history = compareBlogCaseHistory(posts);
   const directAnswers = auditVehicleDirectAnswers();
+  const protectedUrls = auditProtectedUrls(locs, allowed);
 
   const result = {
     dbRows: countVehicleDbRows(),
@@ -456,9 +429,10 @@ function main() {
     duplicateSitemapLoc: locs.length - uniqueLocs.size,
     lastmodCount: (sitemap.match(/<lastmod>/g) || []).length,
     brokenInternalLinks: countBrokenInternalLinks(),
-    canonicalChanged: countCanonicalChanges(),
+    canonicalChanged: protectedUrls.EXISTING_PROTECTED_CANONICAL_CHANGE_COUNT,
     canonicalConsistencyErrors: checkCurrentCanonicalConsistency(),
-    protectedUrlSetChanged: compareProtectedSitemapUrlSet(locs),
+    protectedUrlSetChanged: protectedUrls.PROTECTED_EXISTING_URL_SET_REGRESSION,
+    ...protectedUrls,
     assetsSeoChanged: gitChangedFiles(["assets/seo"]).length,
     protectedSearchChanged: gitChangedFiles(["search.html", "js/search.js"]).length,
     protectedDbChanged: gitChangedFiles(["master-db", "data"]).length,
@@ -500,6 +474,7 @@ function main() {
   assert(result.canonicalChanged === 0, `canonical or og:url changed: ${result.canonicalChanged}`);
   assert(result.canonicalConsistencyErrors === 0, `canonical consistency errors: ${result.canonicalConsistencyErrors}`);
   assert(result.protectedUrlSetChanged === false, "protected sitemap URL set changed");
+  assert(protectedUrls.pass, `Protected URL regression: ${JSON.stringify(protectedUrls)}`);
   assert(result.assetsSeoChanged === 0, `assets/seo changed files: ${result.assetsSeoChanged}`);
   assert(result.protectedSearchChanged === 0, `search function files changed: ${result.protectedSearchChanged}`);
   assert(result.protectedDbChanged === 0, `database files changed: ${result.protectedDbChanged}`);

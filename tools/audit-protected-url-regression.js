@@ -1,0 +1,27 @@
+import assert from "node:assert/strict";
+import { classifyProtectedUrls, parseAddedUrlAllowlist } from "./lib/protected-url-regression.js";
+
+const page = (name) => ({ url: `https://battery1.co.kr/${name}`, canonical: `https://battery1.co.kr/${name}`, ogUrl: `https://battery1.co.kr/${name}` });
+const a = page("a.html"), b = page("b.html"), c = page("c.html");
+const check = (afterPages, allowed = []) => classifyProtectedUrls({ beforeUrls: [a.url], afterUrls: afterPages.map((p) => p.url), beforePages: [a], afterPages, allowed });
+assert.equal(check([{ ...a, canonical: b.url }]).pass, false, "A: existing canonical change");
+assert.equal(check([a, b]).UNAPPROVED_ADDED_URL_COUNT, 1, "B: default denies additions");
+assert.equal(check([a, b]).pass, false);
+const approved = check([a, b], [b.url]);
+assert.equal(approved.pass, true, "C: exact approval");
+assert.equal(approved.APPROVED_ADDED_URL_COUNT, 1);
+assert.equal(approved.EXISTING_PROTECTED_CANONICAL_CHANGE_COUNT, 0);
+assert.equal(check([a, b, c], [b.url]).pass, false, "D: extra unapproved URL");
+assert.equal(check([a, { ...b, canonical: c.url }], [b.url]).pass, false, "E: new canonical mismatch");
+assert.equal(check([a, { ...b, canonical: "" }], [b.url]).pass, false, "Missing new canonical");
+assert.equal(check([], [a.url]).pass, false, "Approval cannot authorize deletion");
+assert.equal(check([a], [b.url]).pass, false, "Unused approval");
+assert.equal(check([{ ...a, ogUrl: b.url }]).pass, false, "Existing OG URL change");
+assert.equal(classifyProtectedUrls({ beforeUrls: [a.url], afterUrls: [], beforePages: [a], afterPages: [a] }).pass, false, "Sitemap deletion");
+assert.equal(classifyProtectedUrls({ beforeUrls: [a.url], afterUrls: [a.url], beforePages: [a], afterPages: [] }).pass, false, "HTML deletion");
+assert.equal(classifyProtectedUrls({ beforeUrls: [a.url], afterUrls: [a.url, b.url], beforePages: [a, b], afterPages: [a, b] }).pass, false, "New sitemap membership still needs approval for an existing HTML file");
+assert.deepEqual(parseAddedUrlAllowlist(["--allow-added-url", b.url]), [b.url]);
+assert.throws(() => parseAddedUrlAllowlist(["--allow-all-new-urls"]));
+assert.throws(() => parseAddedUrlAllowlist(["--allow-added-url", "https://example.com/b"]));
+assert.throws(() => parseAddedUrlAllowlist(["--allow-added-url", b.url, "--allow-added-url", b.url]));
+console.log("Protected URL regression classification PASS: A/B/C/D/E, deletion, missing canonical, OG URL and strict CLI");

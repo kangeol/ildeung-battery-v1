@@ -5600,4 +5600,54 @@
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
+  <url>
+    <loc>https://battery1.co.kr/area/seoul/gangdong-gu.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://battery1.co.kr/area/seoul/gangdong-gu/amsa-dong.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://battery1.co.kr/area/seoul/gangdong-gu/cheonho-dong.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://battery1.co.kr/area/seoul/gangdong-gu/dunchon-dong.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://battery1.co.kr/area/seoul/gangdong-gu/gangil-dong.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://battery1.co.kr/area/seoul/gangdong-gu/gil-dong.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://battery1.co.kr/area/seoul/gangdong-gu/godeok-dong.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://battery1.co.kr/area/seoul/gangdong-gu/myeongil-dong.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://battery1.co.kr/area/seoul/gangdong-gu/sangil-dong.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://battery1.co.kr/area/seoul/gangdong-gu/seongnae-dong.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
 </urlset>

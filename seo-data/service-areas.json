@@ -1840,6 +1840,72 @@
               "code": "1117013600"
             }
           ]
+        },
+        {
+          "id": "gangdong-gu",
+          "name": "강동구",
+          "shortName": "강동구",
+          "type": "gu",
+          "province": "서울특별시",
+          "fullName": "서울특별시 강동구",
+          "legalCode": "1174000000",
+          "districts": [],
+          "neighborhoods": [
+            {
+              "name": "명일동",
+              "slug": "myeongil-dong",
+              "legalName": "서울특별시 강동구 명일동",
+              "code": "1174010100"
+            },
+            {
+              "name": "고덕동",
+              "slug": "godeok-dong",
+              "legalName": "서울특별시 강동구 고덕동",
+              "code": "1174010200"
+            },
+            {
+              "name": "상일동",
+              "slug": "sangil-dong",
+              "legalName": "서울특별시 강동구 상일동",
+              "code": "1174010300"
+            },
+            {
+              "name": "길동",
+              "slug": "gil-dong",
+              "legalName": "서울특별시 강동구 길동",
+              "code": "1174010500"
+            },
+            {
+              "name": "둔촌동",
+              "slug": "dunchon-dong",
+              "legalName": "서울특별시 강동구 둔촌동",
+              "code": "1174010600"
+            },
+            {
+              "name": "암사동",
+              "slug": "amsa-dong",
+              "legalName": "서울특별시 강동구 암사동",
+              "code": "1174010700"
+            },
+            {
+              "name": "성내동",
+              "slug": "seongnae-dong",
+              "legalName": "서울특별시 강동구 성내동",
+              "code": "1174010800"
+            },
+            {
+              "name": "천호동",
+              "slug": "cheonho-dong",
+              "legalName": "서울특별시 강동구 천호동",
+              "code": "1174010900"
+            },
+            {
+              "name": "강일동",
+              "slug": "gangil-dong",
+              "legalName": "서울특별시 강동구 강일동",
+              "code": "1174011000"
+            }
+          ]
         }
       ]
     },
