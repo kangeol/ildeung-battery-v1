@@ -5650,4 +5650,9 @@
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
+  <url>
+    <loc>https://battery1.co.kr/work-cases/page/17/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.65</priority>
+  </url>
 </urlset>

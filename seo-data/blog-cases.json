@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-11T14:12:17.800Z",
+  "syncedAt": "2026-09-14T08:28:29.092Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 8,
     "preservedPreviousPosts": 316,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 316,
+    "duplicateRemoved": 42,
+    "thumbnailSuccess": 324,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 269,
-    "vehicleMatches": 250,
-    "detailMatches": 48,
-    "regionMatches": 200,
-    "neighborhoodMatches": 168,
-    "batteryMatches": 199,
+    "manufacturerMatches": 277,
+    "vehicleMatches": 258,
+    "detailMatches": 50,
+    "regionMatches": 208,
+    "neighborhoodMatches": 175,
+    "batteryMatches": 207,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,1322 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 200,
-    "actualRegionMatches": 200,
-    "actualNeighborhoodMatches": 168,
+    "actualAreaMatches": 208,
+    "actualRegionMatches": 208,
+    "actualNeighborhoodMatches": 175,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224411333820",
+      "title": "인천 연수구(송도) 2019년식 기아 올뉴K3 GT 터보 델코 AGM60 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224411333820",
+      "publishedAt": "2026-09-14",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224411333820.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTRfMTk3/MDAxNzg5MzY4NDE4Nzg2.Phjwmhv1ROQiXGOICyxUnIAf9e8EnsjHL_mrfZwdrn0g.xVwcQsQRhqPSfN2P3nOz7ZI2vzkJjSxxygrc54we5Ecg.JPEG/image-k3-gt-agm60-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 연수구 송도동에서 2019년식 기아 올뉴K3 GT 터보 배터리 교체 작업을 진행했습니다. 이번 차량은 기존에 AGM 타입의 배터리를 사용하고 있었고, 교체할 때도 차량 조건에 맞춰 같은 타입의 델코 AGM60을 준비했습니다. 배터리는 오래됐다고 무조건 다른 제품으로 바꾸거나 용량을 높일 필요는 없습니다. 현재 차량에 어떤 타입이 들어가 있는지, 실제 장착 규격이 맞는지를 확인한 뒤 필요한 제품으로 교체하는 것이 가장 깔끔합니다. 이번 작업도 기존 조건을 그대로 확인한 뒤 AGM60으.......",
+      "tags": [
+        "연수구배터리",
+        "연수구출장배터리",
+        "송도배터리",
+        "송도동배터리",
+        "송도출장배터리",
+        "송도자동차배터리",
+        "인천배터리",
+        "인천출장배터리",
+        "k3배터리",
+        "k3배터리교체",
+        "k3배터리가격",
+        "k3배터리교체비용",
+        "델코agm60",
+        "델코agm60가격",
+        "델코agm60교체",
+        "agm60",
+        "agm60교체",
+        "agm60가격",
+        "자동차배터리",
+        "출장배터리",
+        "일등밧데리",
+        "자동차배터리교체",
+        "출장배터리교체",
+        "자동차배터리가격",
+        "출장배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "K3",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K3",
+            "displayName": "K3",
+            "urlPath": "/car-battery/kia/k3.html",
+            "matchedAlias": "K3",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K3",
+            "displayVehicleName": "K3",
+            "label": "올 뉴 K3",
+            "slug": "all-new-k3",
+            "urlPath": "/car-battery/kia/k3/all-new-k3.html",
+            "vehicleUrlPath": "/car-battery/kia/k3.html",
+            "matchedAlias": "올 뉴 K3"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K3",
+            "displayName": "K3",
+            "urlPath": "/car-battery/kia/k3.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "yeonsu-gu",
+          "regionName": "연수구",
+          "neighborhoodName": "송도동",
+          "label": "인천 연수구 송도동",
+          "urlPath": "/area/incheon/yeonsu-gu/songdo-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "label": "인천 연수구",
+            "urlPath": "/area/incheon/yeonsu-gu.html",
+            "matchedAlias": "연수구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "name": "송도동",
+            "legalName": "인천광역시 연수구 송도동",
+            "label": "인천 연수구 송도동",
+            "urlPath": "/area/incheon/yeonsu-gu/songdo-dong.html",
+            "matchedAlias": "송도"
+          }
+        ],
+        "batteryModels": [
+          "AGM60"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/k3.html"
+          ],
+          "details": [
+            "/car-battery/kia/k3/all-new-k3.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/yeonsu-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/yeonsu-gu/songdo-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm60.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "연수구 송도동에서 K3 올 뉴 K3 AGM60 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224408404069",
+      "title": "경기 김포시(고촌읍) 2022년식 BMW520I 바르타 AGM95 출장배터리교체 가격 및 비용 안내｜배터리 용량만 보면 될까",
+      "url": "https://blog.naver.com/kang10107/224408404069",
+      "publishedAt": "2026-09-14",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224408404069.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTFfMTE3/MDAxNzg5MTA5MzI2NjE4.Q7cQwsXc1BXm0IVWA7r2e7ryUFwPDSBbrzj5FhlpvvIg.uKpSmnj99GzkzrShJXSlMxdF6eY4D1TR1ZM_PIyRp6Qg.JPEG/bmw-bmw520i-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 김포시 고촌읍에서 2022년식 BMW520I 배터리 교체 작업을 진행했습니다. 이번 차량은 단순히 시동만 걸 수 있는 배터리를 찾기보다, 차량에서 사용하는 여러 전기 기능까지 생각해 배터리 타입을 확인한 경우입니다. 요즘 차량은 시동뿐 아니라 주행 중에도 각종 전자장치가 계속 전기를 사용합니다. 그렇다 보니 배터리를 고를 때는 용량 숫자 하나만 보는 것보다 차량이 어떤 방식의 배터리를 사용하도록 되어 있는지 같이 살펴보는 편이 좋습니다. 이번 BMW520I는 차량 조건을 확인한 뒤.......",
+      "tags": [
+        "김포배터리",
+        "김포출장배터리",
+        "김포자동차배터리",
+        "고촌출장배터리",
+        "bmw520i배터리",
+        "bmw520i배터리교체",
+        "bmw배터리",
+        "bmw배터리교체비용",
+        "bmw배터리교체가격",
+        "일등밧데리",
+        "자동차배터리",
+        "자동차배터리가격",
+        "출장배터리",
+        "출장배터리가격",
+        "차량배터리",
+        "차량배터리가격",
+        "자동차배터리교체비용",
+        "agm배터리",
+        "바르타agm95",
+        "바르타agm95가격",
+        "바르타agm95교체비용",
+        "agm95",
+        "agm95가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 5시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "BMW5",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gimpo-si",
+          "regionName": "김포시",
+          "label": "경기 김포시",
+          "urlPath": "/area/gyeonggi/gimpo-si.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gimpo-si",
+            "regionName": "김포시",
+            "label": "경기 김포시",
+            "urlPath": "/area/gyeonggi/gimpo-si.html",
+            "matchedAlias": "김포시"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/5-series.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gimpo-si.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "경기 김포시에서 BMW 5시리즈 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224408397368",
+      "title": "서울 동작구(노량진동) 2015년식 미니쿠퍼 델코 AGM70 출장배터리교체 가격 및 비용 안내｜추워지기전에 일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224408397368",
+      "publishedAt": "2026-09-14",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224408397368.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTFfMTg5/MDAxNzg5MTA4Nzg5Njk4.c4Ggu4RO3zMmNZxD8FIsLvTAxG3ELHJ6-Tqg35-MEZog.A6o__-gY3w5xZ_vzqhkwWVp5jclCuerKXSezgAWMc2Yg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 동작구 노량진동에서 2015년식 미니쿠퍼 배터리 교체 작업을 진행했습니다. 이번 차량은 평소에는 별다른 불편 없이 운행했는데, 기온이 크게 떨어진 한파 시기에 갑자기 시동이 걸리지 않은적이 있던 고객님게 미리 예방 차원에서 교체 신청 주셨습니다. 추워지면 갑자기 시동이 안걸릴수있는데요 “어제까지 잘 탔는데 왜 갑자기 안 걸리지?”라는 생각부터 들게 됩니다. 배터리는 성능이 조금씩 떨어지고 있어도 따뜻한 날에는 별다른 증상이 없다가 추운 날씨에 시동을 걸면서 부족한.......",
+      "tags": [
+        "동작구배터리",
+        "동작구출장배터리",
+        "동작구자동차배터리",
+        "노량진출장배터리",
+        "노량진자동차배터리",
+        "노량진차량배터리",
+        "미니쿠퍼배터리",
+        "미니쿠퍼배터리가격",
+        "미니쿠퍼배터리교체비용",
+        "미니쿠퍼배터리교체가격",
+        "델코agm70",
+        "델코agm70가격",
+        "델코agm70교체비용",
+        "agm70",
+        "자동차배터리",
+        "자동차배터리교체",
+        "자동차배터리가격",
+        "출장배터리",
+        "출장배터리가격",
+        "출장배터리교체",
+        "배터리교체",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "미니",
+        "manufacturers": [
+          {
+            "id": "mini",
+            "name": "미니"
+          }
+        ],
+        "vehicle": "미니 쿠퍼",
+        "vehicles": [
+          {
+            "manufacturerId": "mini",
+            "manufacturerName": "미니",
+            "vehicleName": "쿠퍼",
+            "displayName": "미니 쿠퍼",
+            "urlPath": "/car-battery/mini/cooper.html",
+            "matchedAlias": "미니 쿠퍼",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "mini",
+            "manufacturerName": "미니",
+            "vehicleName": "쿠퍼",
+            "displayName": "미니 쿠퍼",
+            "urlPath": "/car-battery/mini/cooper.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "dongjak-gu",
+          "regionName": "동작구",
+          "neighborhoodName": "노량진동",
+          "label": "서울 동작구 노량진동",
+          "urlPath": "/area/seoul/dongjak-gu/noryangjin-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "dongjak-gu",
+            "regionName": "동작구",
+            "label": "서울 동작구",
+            "urlPath": "/area/seoul/dongjak-gu.html",
+            "matchedAlias": "동작구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "dongjak-gu",
+            "regionName": "동작구",
+            "name": "노량진동",
+            "legalName": "서울특별시 동작구 노량진동",
+            "label": "서울 동작구 노량진동",
+            "urlPath": "/area/seoul/dongjak-gu/noryangjin-dong.html",
+            "matchedAlias": "노량진동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/mini/cooper.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/mini.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/dongjak-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/dongjak-gu/noryangjin-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "동작구 노량진동에서 미니 쿠퍼 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224408382303",
+      "title": "인천 미추홀구(문학동) 2018년식 벤츠E220D 델코 AGM95 출장배터리교체 가격 및 비용 안내｜배터리 규격 확인 후 교체 일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224408382303",
+      "publishedAt": "2026-09-13",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224408382303.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTFfNzUg/MDAxNzg5MTA4MjEzOTY4.5qxqN6Frw7lsbYwDzZFjWOoeqjYndQdJu_aWTnoYxm0g.V5z7fKFfjd_IaW7N-HuxBXOXDtHu3kZ8DrrnY2cZ8Vgg.JPEG/image-e220d-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 미추홀구 문학동에서 2018년식 벤츠E220D 배터리 교체 작업을 진행했습니다. 이번 차량은 델코 AGM95로 교체했는데요. 배터리 이름에 AGM95라고 똑같이 적혀 있다고 해서 제품만 준비해 바로 장착하는 방식으로 진행하지는 않았습니다. 실제 차량에 들어가는 공간이 맞는지, +·- 단자가 어느 방향에 있는지, 기존 고정 장치를 그대로 사용할 수 있는지를 차량에서 직접 맞춰본 뒤 작업했습니다. 벤츠E220D배터리처럼 수입차 배터리를 알아보실 때는 용량 숫자뿐 아니라 이런 실제 장착 조.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "인천자동차배터리",
+        "문학동배터리",
+        "문학동출장배터리",
+        "문학동자동차배터리",
+        "벤츠배터리",
+        "벤츠배터리가격",
+        "벤츠배터리교체비용",
+        "벤츠e220d배터리",
+        "벤츠e220d배터리교체",
+        "e220d배터리",
+        "벤츠e배터리",
+        "출장배터리",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리교체",
+        "자동차배터리가격",
+        "출장배터리가격",
+        "자동차배터리교체비용",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "벤츠",
+        "manufacturers": [
+          {
+            "id": "benz",
+            "name": "벤츠"
+          }
+        ],
+        "vehicle": "벤츠 E클래스",
+        "vehicles": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "E-클래스",
+            "displayName": "벤츠 E클래스",
+            "urlPath": "/car-battery/benz/e-class.html",
+            "matchedAlias": "벤츠E",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "E-클래스",
+            "displayName": "벤츠 E클래스",
+            "urlPath": "/car-battery/benz/e-class.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "michuhol-gu",
+          "regionName": "미추홀구",
+          "neighborhoodName": "문학동",
+          "label": "인천 미추홀구 문학동",
+          "urlPath": "/area/incheon/michuhol-gu/munhak-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "michuhol-gu",
+            "regionName": "미추홀구",
+            "label": "인천 미추홀구",
+            "urlPath": "/area/incheon/michuhol-gu.html",
+            "matchedAlias": "미추홀구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "michuhol-gu",
+            "regionName": "미추홀구",
+            "name": "문학동",
+            "legalName": "인천광역시 미추홀구 문학동",
+            "label": "인천 미추홀구 문학동",
+            "urlPath": "/area/incheon/michuhol-gu/munhak-dong.html",
+            "matchedAlias": "문학동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/benz/e-class.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/benz.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/michuhol-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/michuhol-gu/munhak-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "미추홀구 문학동에서 벤츠 E클래스 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224408180865",
+      "title": "경기 안양시 동안구(비산동) 2020년식 BMW X1 바르타 AGM70 출장배터리교체 가격 및 비용 안내｜추워진 날씨 시동 약할 때",
+      "url": "https://blog.naver.com/kang10107/224408180865",
+      "publishedAt": "2026-09-13",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224408180865.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTFfNTEg/MDAxNzg5MDk3MjQzNzQy.MN0jIKEl7cVI4Afn5s9HP-a1_G3Cc-H4s91h7Uji39Yg.ztjpCId4snRRYXxng81V9uCNplusqAlCJJAK2y6FoMwg.JPEG/bmw-bmw-x1-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 안양시 동안구 비산동에서 2020년식 BMW X1 배터리 교체 작업을 진행했습니다. 이번 차량은 평소에는 크게 불편하지 않았지만 날씨가 추워지기 시작하면서 시동을 걸 때 힘이 예전 같지 않게 느껴진 경우였습니다. 배터리는 기온이 내려가면 원래 가지고 있던 성능 저하가 더 눈에 띄기도 합니다. 그래서 여름까지 별문제 없이 사용하던 차량이 추운 아침에 갑자기 시동이 무겁게 느껴지는 경우가 있습니다. 차량에 맞는 배터리 규격을 확인한 뒤 바르타 AGM70으로 교체하고, 신품 배터리.......",
+      "tags": [
+        "안양배터리",
+        "안양출장배터리",
+        "안양자동차배터리",
+        "비산동배터리",
+        "비산동출장배터리",
+        "비산동자동차배터리",
+        "bmw배터리",
+        "bmw배터리가격",
+        "bmw배터리교체",
+        "x1배터리",
+        "x1배터리교체",
+        "x1배터리가격",
+        "bmw1배터리가격",
+        "bmwx1배터리교체",
+        "바르타배터리",
+        "바르타agm70",
+        "바르타agm70가격",
+        "바르타agm70교체비용",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리",
+        "자동차배터리교체",
+        "자동차배터리가격",
+        "출장배터리가격",
+        "출장배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 1시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "1시리즈",
+            "displayName": "BMW 1시리즈",
+            "urlPath": "/car-battery/bmw/1series.html",
+            "matchedAlias": "BMW1",
+            "specificity": "vehicle"
+          },
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X1",
+            "displayName": "BMW X1",
+            "urlPath": "/car-battery/bmw/x1.html",
+            "matchedAlias": "BMW X1",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "1시리즈",
+            "displayName": "BMW 1시리즈",
+            "urlPath": "/car-battery/bmw/1series.html",
+            "specificity": "vehicle"
+          },
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X1",
+            "displayName": "BMW X1",
+            "urlPath": "/car-battery/bmw/x1.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "anyang-si",
+          "regionName": "안양시",
+          "neighborhoodName": "비산동",
+          "label": "경기 안양시 비산동",
+          "urlPath": "/area/gyeonggi/anyang-si/bisan-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "anyang-si",
+            "regionName": "안양시",
+            "label": "경기 안양시",
+            "urlPath": "/area/gyeonggi/anyang-si.html",
+            "matchedAlias": "안양시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "anyang-si",
+            "regionName": "안양시",
+            "name": "비산동",
+            "legalName": "경기도 안양시 동안구 비산동",
+            "label": "경기 안양시 비산동",
+            "urlPath": "/area/gyeonggi/anyang-si/bisan-dong.html",
+            "matchedAlias": "비산동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/1series.html",
+            "/car-battery/bmw/x1.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/anyang-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/anyang-si/bisan-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "안양시 비산동에서 BMW 1시리즈 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 2,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224408166537",
+      "title": "서울 강서구(염창동) 2021년식 티구안올스페이스 바르타 AGM70 출장배터리교체 가격 및 비용 안내｜차량에 맞는 배터리 종류 확인",
+      "url": "https://blog.naver.com/kang10107/224408166537",
+      "publishedAt": "2026-09-12",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224408166537.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTFfMTUx/MDAxNzg5MDk2Mjc2NzY0.uSP29K-nWwsA8xQW9WST6H9v9gigOg7hpOR2oCOzVkgg.JDoXq6OhwboFR2t8O74DU9sPZl_-ObfWSkU0dUG2qsEg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 강서구 염창동에서 2021년식 티구안올스페이스 배터리 교체 작업을 진행했습니다. 이번 차량은 단순히 시동만 생각해서 배터리를 고른 것이 아니라 블랙박스와 공조장치, 각종 전자기기처럼 차량에서 사용하는 전기 기능까지 고려한 경우입니다. 요즘 차량은 주행 중 사용하는 전기가 많다 보니 배터리도 전기를 내보냈다가 다시 충전되는 일을 계속 반복하게 됩니다. 티구안올스페이스에 맞는 배터리 타입과 규격을 확인한 뒤 바르타 AGM70으로 교체하고, 신품 배터리 등록 코딩까지 진행.......",
+      "tags": [
+        "강서구배터리",
+        "강서구출장배터리",
+        "강서구자동차배터리",
+        "염창동배터리",
+        "염창동출장배터리",
+        "염창동자동차배터리",
+        "티구안배터리",
+        "티구안출장배터리",
+        "타구안배터리가격",
+        "티구안올스페이스배터리",
+        "티구안올스페이스배터리가격",
+        "바르타배터리",
+        "바르타agm70",
+        "바르타agm70가격",
+        "바르타agm70출장",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "자동차배터리교체",
+        "자동차배터리가격",
+        "출장배터리교체",
+        "출장배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "폭스바겐",
+        "manufacturers": [
+          {
+            "id": "volkswagen",
+            "name": "폭스바겐",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "폭스바겐 티구안",
+        "vehicles": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "티구안",
+            "displayName": "폭스바겐 티구안",
+            "urlPath": "/car-battery/volkswagen/tiguan.html",
+            "matchedAlias": "티구안",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "티구안",
+            "displayName": "폭스바겐 티구안",
+            "urlPath": "/car-battery/volkswagen/tiguan.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangseo-gu",
+          "regionName": "강서구",
+          "neighborhoodName": "염창동",
+          "label": "서울 강서구 염창동",
+          "urlPath": "/area/seoul/gangseo-gu/yeomchang-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangseo-gu",
+            "regionName": "강서구",
+            "label": "서울 강서구",
+            "urlPath": "/area/seoul/gangseo-gu.html",
+            "matchedAlias": "강서구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangseo-gu",
+            "regionName": "강서구",
+            "name": "염창동",
+            "legalName": "서울특별시 강서구 염창동",
+            "label": "서울 강서구 염창동",
+            "urlPath": "/area/seoul/gangseo-gu/yeomchang-dong.html",
+            "matchedAlias": "염창동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/volkswagen/tiguan.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/volkswagen.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangseo-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gangseo-gu/yeomchang-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "강서구 염창동에서 폭스바겐 티구안 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224408063251",
+      "title": "인천 부평(산곡동) 2023년식 제네시스 GV80 델코 AGM95R 출장배터리교체 가격 및 비용 안내｜내 차에 맞는 배터리 종류 확인",
+      "url": "https://blog.naver.com/kang10107/224408063251",
+      "publishedAt": "2026-09-12",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224408063251.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTFfMTk3/MDAxNzg5MDkxMjIxOTM0.fbQrHeWYje9Yw9MXOgUMTo-MBWatnE2I50oK-0wZEfsg.56ByABUg_22QGLc4MAiJ-pBfQixZzzS9QdmaldCEc0Ig.JPEG/image-gv80-agm95r-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 부평구 산곡동에서 2023년식 제네시스 GV80 배터리 교체 작업을 진행했습니다. 이번 작업은 배터리 용량부터 정해놓고 제품을 고른 것이 아니라 EFB와 AGM 중 어떤 타입이 차량에 맞는지 확인하는 것부터 시작했습니다. 요즘은 같은 차량용 배터리라고 해도 EFB, AGM처럼 종류가 나뉘어 있어 처음 알아보시는 분들은 이름부터 헷갈리기 쉽습니다. 이번 GV80은 차량 조건을 확인한 뒤 델코 AGM95R을 준비해 교체했습니다. --- EFB와 AGM, 이름보다 내 차에 맞는지가 먼저입니다 배터리.......",
+      "tags": [
+        "부평배터리",
+        "부평출장배터리",
+        "부평자동차배터리",
+        "산곡동배터리",
+        "gv80배터리",
+        "gv80배터리가격",
+        "gv80배터리교체비용",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리",
+        "배터리교체",
+        "배터리교체비용",
+        "자동차배터리가격",
+        "출장배터리교체비용",
+        "인천배터리",
+        "인천출장배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "제네시스",
+        "manufacturers": [
+          {
+            "id": "genesis",
+            "name": "제네시스"
+          }
+        ],
+        "vehicle": "GV80",
+        "vehicles": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "GV80",
+            "displayName": "GV80",
+            "urlPath": "/car-battery/genesis/gv80.html",
+            "matchedAlias": "GV80",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "GV80",
+            "displayName": "GV80",
+            "urlPath": "/car-battery/genesis/gv80.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "bupyeong-gu",
+          "regionName": "부평구",
+          "neighborhoodName": "부평동",
+          "label": "인천 부평구 부평동",
+          "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "label": "인천 부평구",
+            "urlPath": "/area/incheon/bupyeong-gu.html",
+            "matchedAlias": "부평"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "name": "부평동",
+            "legalName": "인천광역시 부평구 부평동",
+            "label": "인천 부평구 부평동",
+            "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html",
+            "matchedAlias": "부평"
+          },
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "name": "산곡동",
+            "legalName": "인천광역시 부평구 산곡동",
+            "label": "인천 부평구 산곡동",
+            "urlPath": "/area/incheon/bupyeong-gu/sangok-dong.html",
+            "matchedAlias": "산곡동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95",
+          "AGM95R"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/genesis/gv80.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/genesis.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/bupyeong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/bupyeong-gu/bupyeong-dong.html",
+            "/area/incheon/bupyeong-gu/sangok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "부평구 부평동에서 GV80 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 2,
+        "battery": 2
+      }
+    },
+    {
+      "id": "224408050412",
+      "title": "경기 안산시 상록구(본오동) 2020년식 아우디 A6 C8 바르타 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224408050412",
+      "publishedAt": "2026-09-12",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224408050412.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTFfODIg/MDAxNzg5MDkwNDI1MDE4.TQTdlkw5q-cXgTIn90MIpHG2QL3a_i_jSSQ_G6bvYv0g.rkubdJtfMG3GD61osmDv-D5j9hin8MdGpNF27A6rrHIg.JPEG/image-a6-c8-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 안산시 상록구 본오동에서 2020년식 아우디 A6 C8 배터리 교체 작업을 진행했습니다. 이번 차량은 낮이나 주행 후에는 크게 불편하지 않았지만, 밤새 세워둔 뒤 아침에 처음 시동을 걸 때 유독 힘이 떨어지는 느낌이 나타난 경우였습니다. 이런 증상은 운전자 입장에서는 애매할 수 있습니다. 시동이 아예 안 걸리는 것도 아니고 한 번 시동이 걸린 뒤에는 괜찮아 보이기 때문입니다. 하지만 아침 첫 시동처럼 차량을 오래 세워둔 뒤에만 힘이 부족하게 느껴진다면 배터리 상태를 한 번 살.......",
+      "tags": [
+        "안산배터리",
+        "안산출장배터리",
+        "안산자동차배터리",
+        "일등밧데리",
+        "a6배터리",
+        "a6배터리가격",
+        "바르타배터리",
+        "바르타agm70",
+        "바르타agm70가격",
+        "출장배터리교체",
+        "출장배터리가격",
+        "자동차배터리",
+        "자동차배터리가격",
+        "a6배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "아우디",
+        "manufacturers": [
+          {
+            "id": "audi",
+            "name": "아우디"
+          }
+        ],
+        "vehicle": "아우디 A6",
+        "vehicles": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A6",
+            "displayName": "아우디 A6",
+            "urlPath": "/car-battery/audi/a6.html",
+            "matchedAlias": "아우디 A6",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A6",
+            "displayVehicleName": "아우디 A6",
+            "label": "C8",
+            "slug": "c8",
+            "urlPath": "/car-battery/audi/a6/c8.html",
+            "vehicleUrlPath": "/car-battery/audi/a6.html",
+            "matchedAlias": "C8"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A6",
+            "displayName": "아우디 A6",
+            "urlPath": "/car-battery/audi/a6.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "ansan-si",
+          "regionName": "안산시",
+          "neighborhoodName": "본오동",
+          "label": "경기 안산시 본오동",
+          "urlPath": "/area/gyeonggi/ansan-si/bono-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "ansan-si",
+            "regionName": "안산시",
+            "label": "경기 안산시",
+            "urlPath": "/area/gyeonggi/ansan-si.html",
+            "matchedAlias": "안산시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "ansan-si",
+            "regionName": "안산시",
+            "name": "본오동",
+            "legalName": "경기도 안산시 상록구 본오동",
+            "label": "경기 안산시 본오동",
+            "urlPath": "/area/gyeonggi/ansan-si/bono-dong.html",
+            "matchedAlias": "본오동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/audi/a6.html"
+          ],
+          "details": [
+            "/car-battery/audi/a6/c8.html"
+          ],
+          "manufacturers": [
+            "/car-battery/audi.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/ansan-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/ansan-si/bono-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "안산시 본오동에서 아우디 A6 C8 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224407103497",
       "title": "서울 강남구(신사동) 2017년식 벤츠 S350D 델코 AGM105 출장배터리교체 가격 및 비용 안내｜주행거리 적어도 배터리 교체 시기",
