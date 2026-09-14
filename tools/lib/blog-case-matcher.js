@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { extractAgmCapacitiesFromText } from "./battery-capacity.js";
 import {
   ROOT_DIR,
   normalizeLoose,
@@ -487,8 +488,9 @@ function buildAreaIndex(areaData) {
   };
 }
 
-function collectBatteryModels(manufacturers) {
+function collectBatteryIndex(manufacturers) {
   const models = new Set();
+  const capacities = new Set();
 
   manufacturers.forEach((manufacturer) => {
     const filePath = path.join(DATA_DIR, manufacturer.file);
@@ -499,6 +501,7 @@ function collectBatteryModels(manufacturers) {
     readJson(filePath, []).forEach((row) => {
       ["defaultBattery", "upgradeBattery"].forEach((field) => {
         const value = normalizeText(row[field]);
+        extractAgmCapacitiesFromText(value).forEach((capacity) => capacities.add(capacity));
         for (const match of value.matchAll(/(?:AGM|DIN|DF|EFB)\s*-?\s*[0-9]{2,3}[A-Z]{0,3}/gi)) {
           models.add(normalizeBatteryModel(match[0]));
         }
@@ -506,7 +509,10 @@ function collectBatteryModels(manufacturers) {
     });
   });
 
-  return [...models].sort((a, b) => b.length - a.length || a.localeCompare(b, "en"));
+  return {
+    batteryModels: [...models].sort((a, b) => b.length - a.length || a.localeCompare(b, "en")),
+    batteryCapacities: capacities
+  };
 }
 
 function normalizeBatteryModel(value) {
@@ -525,7 +531,7 @@ export function createBlogCaseIndex() {
     vehicleAliasCounts: buildVehicleAliasCounts(vehicles),
     details: buildDetailIndex(detailReport),
     area: buildAreaIndex(areaData),
-    batteryModels: collectBatteryModels(manufacturers)
+    ...collectBatteryIndex(manufacturers)
   };
 }
 
@@ -930,7 +936,7 @@ function matchSymptoms(textLoose) {
   return SYMPTOM_TERMS.filter((term) => containsLoose(textLoose, term));
 }
 
-function buildMatchedPages(facts) {
+function buildMatchedPages(facts, index) {
   const vehicles = (facts.vehicles || []).map((item) => item.urlPath);
   const details = (facts.detailModels || []).map((item) => item.urlPath);
   const manufacturers = [...new Set((facts.manufacturers || []).map((item) => `/car-battery/${item.id}.html`))];
@@ -943,7 +949,9 @@ function buildMatchedPages(facts) {
     if (model.startsWith("AGM")) {
       batteries.add("/battery/agm/");
       batteries.add("/battery/agm/price.html");
-      batteries.add(`/battery/agm/capacity/${model.toLowerCase()}.html`);
+      if (index.batteryCapacities.has(model)) {
+        batteries.add(`/battery/agm/capacity/${model.toLowerCase()}.html`);
+      }
     }
   });
 
@@ -1032,7 +1040,7 @@ export function extractFactsFromPost(post, index = createBlogCaseIndex()) {
     symptoms
   };
 
-  facts.matchedPages = buildMatchedPages(facts);
+  facts.matchedPages = buildMatchedPages(facts, index);
   return facts;
 }
 

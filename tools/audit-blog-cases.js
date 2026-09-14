@@ -45,6 +45,7 @@ function main() {
   let emptySummaryCount = 0;
   let invalidDateCount = 0;
   let nonexistentMatches = 0;
+  const nonexistentMatchDetails = [];
   let orphanMatches = 0;
   let invalidManufacturerCount = 0;
   let invalidVehicleCount = 0;
@@ -109,6 +110,14 @@ function main() {
     ];
 
     nonexistentMatches += matchedPaths.length - getLocalPageCount(matchedPaths);
+    for (const category of ["vehicles", "details", "manufacturers", "areas", "regions", "neighborhoods", "batteries"]) {
+      for (const urlPath of pages[category] || []) {
+        const resolvedFile = urlPathToFilePath(urlPath);
+        if (!fs.existsSync(resolvedFile) && nonexistentMatchDetails.length < 10) {
+          nonexistentMatchDetails.push({ id, title, category, urlPath, resolvedFile });
+        }
+      }
+    }
 
     (facts.manufacturers || []).forEach((manufacturer) => {
       if (!manufacturerIds.has(manufacturer.id)) {
@@ -188,6 +197,9 @@ function main() {
   assert(missingLocalThumbnailCount === 0, `missing local thumbnail count: ${missingLocalThumbnailCount}`);
   assert(unsafeSummaryCount === 0, `unsafe summary count: ${unsafeSummaryCount}`);
   assert(emptySummaryCount === 0, `empty summary count: ${emptySummaryCount}`);
+  if (nonexistentMatchDetails.length) {
+    console.error("Nonexistent matched pages (first 10):", JSON.stringify(nonexistentMatchDetails, null, 2));
+  }
   assert(nonexistentMatches === 0, `nonexistent matched page count: ${nonexistentMatches}`);
   assert(orphanMatches === 0, `orphan match count: ${orphanMatches}`);
   assert(invalidManufacturerCount === 0, `invalid manufacturer match count: ${invalidManufacturerCount}`);

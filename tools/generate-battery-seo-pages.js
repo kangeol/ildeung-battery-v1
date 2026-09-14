@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { extractAgmCapacitiesFromText } from "./lib/battery-capacity.js";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadBlogCases } from "./lib/blog-case-data.js";
@@ -796,17 +797,6 @@ function loadVehicleRows() {
   });
 
   return rows;
-}
-
-function extractAgmCapacitiesFromText(value) {
-  const capacities = new Set();
-  const text = normalizeText(value);
-
-  for (const match of text.matchAll(/\bAGM\s*([0-9]{2,3})\b/gi)) {
-    capacities.add(`AGM${match[1]}`);
-  }
-
-  return capacities;
 }
 
 function buildAgmCapacityGroups(rows) {
