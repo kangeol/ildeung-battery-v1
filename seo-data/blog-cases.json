@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-14T08:44:46.956Z",
+  "syncedAt": "2026-09-15T06:25:33.946Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 2,
     "preservedPreviousPosts": 324,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 324,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 326,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 277,
-    "vehicleMatches": 258,
-    "detailMatches": 50,
-    "regionMatches": 208,
-    "neighborhoodMatches": 175,
-    "batteryMatches": 207,
+    "manufacturerMatches": 279,
+    "vehicleMatches": 260,
+    "detailMatches": 51,
+    "regionMatches": 210,
+    "neighborhoodMatches": 177,
+    "batteryMatches": 209,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,343 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 208,
-    "actualRegionMatches": 208,
-    "actualNeighborhoodMatches": 175,
+    "actualAreaMatches": 210,
+    "actualRegionMatches": 210,
+    "actualNeighborhoodMatches": 177,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224411350822",
+      "title": "경기 광명시(하안동) 2023년식 XM3 델코 AGM70 출장배터리교체 가격 및 비용 안내｜차를 자주 안 타 배터리가 약해졌을 때",
+      "url": "https://blog.naver.com/kang10107/224411350822",
+      "publishedAt": "2026-09-15",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224411350822.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTRfMTE4/MDAxNzg5MzY5MjUzMDMz.aLghCayqT2jJ1erHKUeqESaMkOrJNvQJzy_Os02hphkg.TQCTN3a-J9FBdeW6MHxk0yaxuoBZBam9iy3uPk0RrXYg.JPEG/image-xm3-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 광명시 하안동에서 2023년식 르노코리아 XM3 배터리 교체 작업을 진행했습니다. 이번 차량은 예전보다 차를 타는 횟수가 줄어들면서 배터리 상태도 함께 약해진 경우였습니다. 자동차는 많이 안 타면 배터리도 덜 쓰니까 오래 갈 것 같지만 실제로는 꼭 그렇지만은 않습니다. 시동이 꺼져 있을 때도 차량에서는 일정한 전기를 사용하고, 반대로 운행이 줄면 주행하면서 다시 충전할 기회도 줄어들기 때문입니다. XM3에 맞는 배터리 타입과 규격을 확인한 뒤 델코 AGM70으로 교체했습니다. .......",
+      "tags": [
+        "광명배터리",
+        "광명출장배터리",
+        "광명자동차배터리",
+        "하안동배터리",
+        "하안동출장배터리",
+        "xm3배터리",
+        "xm3배터리교체",
+        "xm3배터리교체비용",
+        "xm3배터리가격",
+        "델코agm70",
+        "agm70",
+        "agm70가격",
+        "델코agm70가격",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리",
+        "배터리교체비용",
+        "배터리교체",
+        "출장배터리교체비용",
+        "자동차배터리교체비용",
+        "자동차배터리방전"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "르노",
+        "manufacturers": [
+          {
+            "id": "renault",
+            "name": "르노"
+          }
+        ],
+        "vehicle": "XM3",
+        "vehicles": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "XM3",
+            "displayName": "XM3",
+            "urlPath": "/car-battery/renault/xm3.html",
+            "matchedAlias": "XM3",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "XM3",
+            "displayName": "XM3",
+            "urlPath": "/car-battery/renault/xm3.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gwangmyeong-si",
+          "regionName": "광명시",
+          "neighborhoodName": "하안동",
+          "label": "경기 광명시 하안동",
+          "urlPath": "/area/gyeonggi/gwangmyeong-si/haan-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwangmyeong-si",
+            "regionName": "광명시",
+            "label": "경기 광명시",
+            "urlPath": "/area/gyeonggi/gwangmyeong-si.html",
+            "matchedAlias": "광명시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwangmyeong-si",
+            "regionName": "광명시",
+            "name": "하안동",
+            "legalName": "경기도 광명시 하안동",
+            "label": "경기 광명시 하안동",
+            "urlPath": "/area/gyeonggi/gwangmyeong-si/haan-dong.html",
+            "matchedAlias": "하안동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/renault/xm3.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/renault.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gwangmyeong-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/gwangmyeong-si/haan-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "광명시 하안동에서 XM3 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224411343586",
+      "title": "서울 강동구(명일동) 2022년식 기아 스포티지NQ5 델코 AGM80 출장배터리교체 가격 및 비용 안내｜겨울철 배터리 점검 시기",
+      "url": "https://blog.naver.com/kang10107/224411343586",
+      "publishedAt": "2026-09-15",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224411343586.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTRfMTAw/MDAxNzg5MzY4ODU4MzEx.vHQwaUQ0Y6Gj9ethpmc_9S8QNjXjBAgvGNyxjCdif0wg._xshFi9w5Ufwz1aIkSiLvgFafXuzJEiYQVRHpR605y0g.JPEG/image-nq5-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 강동구 명일동에서 2022년식 기아 스포티지NQ5 배터리 교체 작업을 진행했습니다. 이번 차량은 한여름을 지나고 날씨가 서늘해지기 시작하면서 배터리 성능 저하가 눈에 띄기 시작한 경우였습니다. 배터리는 겨울에만 약해지는 부품처럼 생각하기 쉽지만, 여름철 높은 온도와 반복적인 전기 사용을 거친 뒤 기온이 내려가면서 그동안 떨어져 있던 성능이 드러나는 경우도 있습니다. 차량에 적용되는 배터리 타입과 장착 규격을 확인한 뒤 델코 AGM80으로 교체했습니다. --- 여름에는.......",
+      "tags": [
+        "강동구배터리",
+        "강동구출장배터리",
+        "강동구배터리교체",
+        "명일동배터리",
+        "명일동자동차배터리",
+        "명일동출장배터리",
+        "스포티지배터리",
+        "스포티지nq5배터리",
+        "스포티지qn5배터리가격",
+        "스포티지출장배터리",
+        "스포티지배터리가격",
+        "델코agm80",
+        "델코agm80가격",
+        "델코agm80교체",
+        "agm80",
+        "agm80배터리",
+        "출장배터리",
+        "출장자동차배터리",
+        "배터리교체",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "스포티지",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "스포티지",
+            "displayName": "스포티지",
+            "urlPath": "/car-battery/kia/sportage.html",
+            "matchedAlias": "스포티지",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "스포티지",
+            "displayVehicleName": "스포티지",
+            "label": "NQ5",
+            "slug": "nq5",
+            "urlPath": "/car-battery/kia/sportage/nq5.html",
+            "vehicleUrlPath": "/car-battery/kia/sportage.html",
+            "matchedAlias": "NQ5"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "스포티지",
+            "displayName": "스포티지",
+            "urlPath": "/car-battery/kia/sportage.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangdong-gu",
+          "regionName": "강동구",
+          "neighborhoodName": "명일동",
+          "label": "서울 강동구 명일동",
+          "urlPath": "/area/seoul/gangdong-gu/myeongil-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "label": "서울 강동구",
+            "urlPath": "/area/seoul/gangdong-gu.html",
+            "matchedAlias": "강동구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "name": "명일동",
+            "legalName": "서울특별시 강동구 명일동",
+            "label": "서울 강동구 명일동",
+            "urlPath": "/area/seoul/gangdong-gu/myeongil-dong.html",
+            "matchedAlias": "명일동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/sportage.html"
+          ],
+          "details": [
+            "/car-battery/kia/sportage/nq5.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangdong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gangdong-gu/myeongil-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "강동구 명일동에서 스포티지 NQ5 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224411333820",
       "title": "인천 연수구(송도) 2019년식 기아 올뉴K3 GT 터보 델코 AGM60 출장배터리교체 가격 및 비용 안내｜일등밧데리",
