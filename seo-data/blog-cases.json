@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-15T14:25:53.589Z",
+  "syncedAt": "2026-09-16T07:51:55.482Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 2,
     "preservedPreviousPosts": 327,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 327,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 329,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 280,
-    "vehicleMatches": 261,
-    "detailMatches": 51,
-    "regionMatches": 211,
+    "manufacturerMatches": 282,
+    "vehicleMatches": 263,
+    "detailMatches": 52,
+    "regionMatches": 213,
     "neighborhoodMatches": 178,
-    "batteryMatches": 210,
+    "batteryMatches": 212,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,315 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 211,
-    "actualRegionMatches": 211,
+    "actualAreaMatches": 213,
+    "actualRegionMatches": 213,
     "actualNeighborhoodMatches": 178,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224411386419",
+      "title": "경기 군포시(군포동) 2021년식 지프 랭글러 델코 AGM80 출장배터리교체 가격 및 비용 안내｜점프 시동을 계속 해야 할 때",
+      "url": "https://blog.naver.com/kang10107/224411386419",
+      "publishedAt": "2026-09-16",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224411386419.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTRfMTQx/MDAxNzg5MzcwODE5OTk4.Llw2donwtG50JoZJPDVNdAbqkTvt3eXFxovx9wAdlrcg.dWdTPPhNTUYNhVc1VPhB9MlYJc8Wj7WzgTvzAdezxnMg.JPEG/image-image-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 군포시 군포동에서 2021년식 지프 랭글러 배터리 교체 작업을 진행했습니다. 이번 차량은 한 번 방전된 뒤 끝난 것이 아니라 차량을 사용할 때마다 점프 시동의 도움을 받아야 했던 경우입니다. 점프를 하면 일단 시동은 걸리니까 며칠 더 사용할 수 있을 것 같지만, 매번 외부 전원을 연결해야 한다면 배터리가 시동에 필요한 힘을 제대로 유지하지 못하고 있는지 확인해 볼 필요가 있습니다. 현재 장착된 배터리와 차량 조건을 확인한 뒤 델코 AGM80으로 교체했습니다. --- 매번 점.......",
+      "tags": [
+        "군포출장배터리",
+        "군포자동차배터리",
+        "군포배터리교체",
+        "군포출장자동차배터리",
+        "지프배터리",
+        "랭글러배터리",
+        "랭글러배터리가격",
+        "랭글러배터리비용",
+        "랭글러배터리교체비용",
+        "델코agm80",
+        "델코agm80가격",
+        "agm80가격",
+        "agm80교체비용",
+        "출장배터리교체",
+        "일등밧데리",
+        "자동차배터리교체",
+        "출장배터리가격",
+        "자동차배터리가격",
+        "배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "지프",
+        "manufacturers": [
+          {
+            "id": "jeep",
+            "name": "지프"
+          }
+        ],
+        "vehicle": "지프 랭글러",
+        "vehicles": [
+          {
+            "manufacturerId": "jeep",
+            "manufacturerName": "지프",
+            "vehicleName": "랭글러",
+            "displayName": "지프 랭글러",
+            "urlPath": "/car-battery/jeep/wrangler.html",
+            "matchedAlias": "지프 랭글러",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "jeep",
+            "manufacturerName": "지프",
+            "vehicleName": "랭글러",
+            "displayName": "지프 랭글러",
+            "urlPath": "/car-battery/jeep/wrangler.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gunpo-si",
+          "regionName": "군포시",
+          "label": "경기 군포시",
+          "urlPath": "/area/gyeonggi/gunpo-si.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gunpo-si",
+            "regionName": "군포시",
+            "label": "경기 군포시",
+            "urlPath": "/area/gyeonggi/gunpo-si.html",
+            "matchedAlias": "군포시"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/jeep/wrangler.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/jeep.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gunpo-si.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "경기 군포시에서 지프 랭글러 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224411379931",
+      "title": "서울 관악구(행운동) 2019년식 기아 올뉴K7 델코 AGM80 출장배터리교체 가격 및 비용 안내｜점프 후 다시 방전될 때",
+      "url": "https://blog.naver.com/kang10107/224411379931",
+      "publishedAt": "2026-09-16",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224411379931.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTRfMjA4/MDAxNzg5MzcwNTIyNzI3.AC5dnCT_z3wlAMDG2unFmJLzobAUq3bgYXVSeebnGTwg.JrSzK1SLDSbpnua3RhJT3A-jd7Bi_lxC_wGrrb5-neAg.JPEG/image-k7-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 관악구 행운동에서 2019년식 기아 올뉴K7 배터리 교체 작업을 진행했습니다. 이번 차량은 한 번 방전된 뒤 점프 시동으로 다시 운행했지만 며칠 지나지 않아 또 시동이 걸리지 않았던 경우입니다. 점프 시동이 성공하면 배터리가 다시 정상으로 돌아왔다고 생각하기 쉬운데요. 실제로는 시동을 걸 수 있을 정도로 전기를 보충했을 뿐, 오래 사용해 성능이 떨어진 배터리가 다시 건강해진 것은 아닐 수 있습니다. 차량에 맞는 배터리 타입과 규격을 확인한 뒤 델코 AGM80으로 교체했습니다.......",
+      "tags": [
+        "관악구배터리",
+        "관악구출장배터리",
+        "관악구배터리교체",
+        "행운동배터리",
+        "행운동배터리가격",
+        "올뉴k7배터리",
+        "올뉴k7배터리가격",
+        "올뉴k7배터리교체비용",
+        "k7배터리",
+        "k7배터리교체비용",
+        "델코agm80",
+        "델코agm80가격",
+        "agm80",
+        "델코agm80교체비용",
+        "agm80가격",
+        "agm80교체비용",
+        "일등밧데리",
+        "출장배터리교체",
+        "자동차배터리",
+        "자동차배터리교체",
+        "배터리교체비용",
+        "배터리가격",
+        "배터리점프"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "K7",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K7",
+            "displayName": "K7",
+            "urlPath": "/car-battery/kia/k7.html",
+            "matchedAlias": "K7",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K7",
+            "displayVehicleName": "K7",
+            "label": "올 뉴 K7",
+            "slug": "all-new-k7",
+            "urlPath": "/car-battery/kia/k7/all-new-k7.html",
+            "vehicleUrlPath": "/car-battery/kia/k7.html",
+            "matchedAlias": "올 뉴 K7"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K7",
+            "displayName": "K7",
+            "urlPath": "/car-battery/kia/k7.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gwanak-gu",
+          "regionName": "관악구",
+          "label": "서울 관악구",
+          "urlPath": "/area/seoul/gwanak-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gwanak-gu",
+            "regionName": "관악구",
+            "label": "서울 관악구",
+            "urlPath": "/area/seoul/gwanak-gu.html",
+            "matchedAlias": "관악구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/k7.html"
+          ],
+          "details": [
+            "/car-battery/kia/k7/all-new-k7.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gwanak-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "서울 관악구에서 K7 올 뉴 K7 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224411370466",
       "title": "인천 남동구(간석동) 2021년식 벤츠 CLA250 4MATIC Coupe 델코 AGM80 출장배터리교체 가격 및 비용 안내｜수입차 배터리 종류 확인",
