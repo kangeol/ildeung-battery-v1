@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-16T08:26:44.533Z",
+  "syncedAt": "2026-09-16T14:19:35.380Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 1,
     "preservedPreviousPosts": 329,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 329,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 330,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 282,
-    "vehicleMatches": 263,
+    "manufacturerMatches": 283,
+    "vehicleMatches": 264,
     "detailMatches": 52,
-    "regionMatches": 213,
-    "neighborhoodMatches": 178,
-    "batteryMatches": 212,
+    "regionMatches": 214,
+    "neighborhoodMatches": 179,
+    "batteryMatches": 213,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,169 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 213,
-    "actualRegionMatches": 213,
-    "actualNeighborhoodMatches": 178,
+    "actualAreaMatches": 214,
+    "actualRegionMatches": 214,
+    "actualNeighborhoodMatches": 179,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224411394679",
+      "title": "인천 계양구(효성동) 2015년식 제타 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224411394679",
+      "publishedAt": "2026-09-16",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224411394679.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTRfNSAg/MDAxNzg5MzcxMTQ4NDQ5.zL9sK_p5OGgtA_2u7ih3dQt8C5JG6q3XQ-mBeHH0EeMg.y3gxnlnoG-twEtmZkALL04kydQaL8CVtZcNlv5Qk8B4g.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 계양구 효성동에서 2015년식 제타 배터리 교체 작업을 진행했습니다. 이번 차량은 배터리가 방전돼 보험 긴급출동을 이용했고, 점프 시동으로 일단 차량은 움직일 수 있었지만 얼마 지나지 않아 다시 방전된 경우였습니다. 처음에는 “한번 방전됐으니 이제 괜찮겠지”라고 생각하기 쉬운데요. 점프 시동은 당장 시동을 걸 수 있도록 도와주는 방법이지, 약해진 배터리 자체를 새것처럼 회복시켜 주는 작업은 아닙니다. 차량에 맞는 배터리 규격을 확인한 뒤 델코 AGM70으로 교체하고 배터.......",
+      "tags": [
+        "인천배터리",
+        "계양구배터리",
+        "계양구출장배터리",
+        "계양구자동차배터리",
+        "효성동배터리",
+        "효성동출장배터리",
+        "효성동자동차배터리",
+        "제타배터리",
+        "제타배터리교체",
+        "제타배터리교체비용",
+        "agm70",
+        "agm70가격",
+        "델코agm70가격",
+        "델코agm70교체비용",
+        "일등밧데리",
+        "출장배터리교체",
+        "자동차배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "폭스바겐",
+        "manufacturers": [
+          {
+            "id": "volkswagen",
+            "name": "폭스바겐",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "폭스바겐 제타",
+        "vehicles": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "제타",
+            "displayName": "폭스바겐 제타",
+            "urlPath": "/car-battery/volkswagen/jetta.html",
+            "matchedAlias": "제타",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "제타",
+            "displayName": "폭스바겐 제타",
+            "urlPath": "/car-battery/volkswagen/jetta.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "gyeyang-gu",
+          "regionName": "계양구",
+          "neighborhoodName": "효성동",
+          "label": "인천 계양구 효성동",
+          "urlPath": "/area/incheon/gyeyang-gu/hyoseong-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "label": "인천 계양구",
+            "urlPath": "/area/incheon/gyeyang-gu.html",
+            "matchedAlias": "계양구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "name": "효성동",
+            "legalName": "인천광역시 계양구 효성동",
+            "label": "인천 계양구 효성동",
+            "urlPath": "/area/incheon/gyeyang-gu/hyoseong-dong.html",
+            "matchedAlias": "효성동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/volkswagen/jetta.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/volkswagen.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/gyeyang-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/gyeyang-gu/hyoseong-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "계양구 효성동에서 폭스바겐 제타 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224411386419",
       "title": "경기 군포시(군포동) 2021년식 지프 랭글러 델코 AGM80 출장배터리교체 가격 및 비용 안내｜점프 시동을 계속 해야 할 때",
