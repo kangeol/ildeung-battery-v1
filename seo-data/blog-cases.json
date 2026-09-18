@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-18T08:06:53.816Z",
+  "syncedAt": "2026-09-18T13:46:01.556Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 1,
     "preservedPreviousPosts": 335,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 335,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 336,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 288,
-    "vehicleMatches": 268,
+    "manufacturerMatches": 289,
+    "vehicleMatches": 269,
     "detailMatches": 54,
-    "regionMatches": 219,
-    "neighborhoodMatches": 182,
-    "batteryMatches": 218,
+    "regionMatches": 220,
+    "neighborhoodMatches": 183,
+    "batteryMatches": 219,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,168 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 219,
-    "actualRegionMatches": 219,
-    "actualNeighborhoodMatches": 182,
+    "actualAreaMatches": 220,
+    "actualRegionMatches": 220,
+    "actualNeighborhoodMatches": 183,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224411438788",
+      "title": "인천 연수구(선학동) 2021년식 현대 캐스퍼 델코 AGM60 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224411438788",
+      "publishedAt": "2026-09-18",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224411438788.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTRfMTM1/MDAxNzg5MzczMjYyODU2.Hbfyo0jebIjROtENwi2WL45UYVgNSOy4GaSoTqurEIEg.aZrtR5qWL85YNRkQamSVLMlABBJ0IPZlKkpH3wCkaBAg.JPEG/image-image-agm60-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 연수구 선학동에서 2021년식 현대 캐스퍼 배터리 교체 작업을 진행했습니다. 이번 차량은 완전히 방전된 뒤 급하게 교체한 경우보다는 사용하던 AGM 배터리의 성능이 떨어지면서 신품으로 교체를 진행한 사례입니다. 자동차배터리는 어느 날 갑자기 완전히 멈추기도 하지만, 사용하면서 서서히 힘이 떨어지는 경우도 많습니다. 차량에 적용되는 배터리 타입과 실제 장착 규격을 확인한 뒤 델코 AGM60으로 교체했습니다. --- 배터리는 완전히 방전되기 전에도 약해질 수 있습니다 시동.......",
+      "tags": [
+        "연수구배터리",
+        "선학동배터리",
+        "선학동출장배터리",
+        "인천배터리",
+        "인천출장배터리",
+        "캐스퍼배터리",
+        "캐스퍼배터리교체",
+        "캐스퍼배터리가격",
+        "델코agm60",
+        "델코agm60가격",
+        "델코agm60교체비용",
+        "자동차배터리",
+        "출장배터리",
+        "출장배터리교체비용",
+        "일등밧데리",
+        "배터리가격",
+        "배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "캐스퍼",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "캐스퍼",
+            "displayName": "캐스퍼",
+            "urlPath": "/car-battery/hyundai/casper.html",
+            "matchedAlias": "캐스퍼",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "캐스퍼",
+            "displayName": "캐스퍼",
+            "urlPath": "/car-battery/hyundai/casper.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "yeonsu-gu",
+          "regionName": "연수구",
+          "neighborhoodName": "선학동",
+          "label": "인천 연수구 선학동",
+          "urlPath": "/area/incheon/yeonsu-gu/seonhak-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "label": "인천 연수구",
+            "urlPath": "/area/incheon/yeonsu-gu.html",
+            "matchedAlias": "연수구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "name": "선학동",
+            "legalName": "인천광역시 연수구 선학동",
+            "label": "인천 연수구 선학동",
+            "urlPath": "/area/incheon/yeonsu-gu/seonhak-dong.html",
+            "matchedAlias": "선학동"
+          }
+        ],
+        "batteryModels": [
+          "AGM60"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/casper.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/yeonsu-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/yeonsu-gu/seonhak-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm60.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "연수구 선학동에서 캐스퍼 AGM60 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224411428985",
       "title": "경기 과천시(중앙동) 2022년식 르노 QM6 델코 AGM80 출장배터리교체 가격 및 비용 안내｜차량에 맞는 배터리 종류 확인",
