@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-17T14:48:48.277Z",
+  "syncedAt": "2026-09-18T07:34:31.955Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 2,
     "preservedPreviousPosts": 333,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 333,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 335,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 286,
-    "vehicleMatches": 266,
-    "detailMatches": 53,
-    "regionMatches": 217,
-    "neighborhoodMatches": 180,
-    "batteryMatches": 216,
+    "manufacturerMatches": 288,
+    "vehicleMatches": 268,
+    "detailMatches": 54,
+    "regionMatches": 219,
+    "neighborhoodMatches": 182,
+    "batteryMatches": 218,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,334 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 217,
-    "actualRegionMatches": 217,
-    "actualNeighborhoodMatches": 180,
+    "actualAreaMatches": 219,
+    "actualRegionMatches": 219,
+    "actualNeighborhoodMatches": 182,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224411428985",
+      "title": "경기 과천시(중앙동) 2022년식 르노 QM6 델코 AGM80 출장배터리교체 가격 및 비용 안내｜차량에 맞는 배터리 종류 확인",
+      "url": "https://blog.naver.com/kang10107/224411428985",
+      "publishedAt": "2026-09-18",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224411428985.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTRfMjAg/MDAxNzg5MzcyODIwMjEx.X7sMqRyDcJa9jrxuYrSEDjFFjHi7XQAj_2aFu-jK0w0g.pltta2m2SgzvM0fkFj94WxbHZ3zPfg7543_djfqcMxsg.JPEG/image-qm6-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 과천시 중앙동에서 2022년식 르노 QM6 배터리 교체 작업을 진행했습니다. 이번 차량은 배터리 용량만 보고 제품을 고르기보다 차량에서 사용하는 여러 전기 기능을 고려해 AGM 타입을 적용한 경우입니다. 요즘 차량은 블랙박스나 공조장치처럼 운전자가 직접 사용하는 기능뿐 아니라 차량 내부에서 작동하는 전자장치도 많습니다. 그만큼 배터리가 해야 할 일도 많아졌는데요. 현재 차량에 적용되는 타입과 장착 조건을 확인한 뒤 델코 AGM80으로 교체했습니다. --- 배터리는 큰 용량.......",
+      "tags": [
+        "과천출장배터리",
+        "과천자동차배터리",
+        "과천자동차배터리교체",
+        "qm6배터리",
+        "qm6배터리가격",
+        "qm6배터리교체비용",
+        "qm6배터리교체",
+        "qm6배터리용량",
+        "델코agm80",
+        "델코agm80가격",
+        "델코agm80교체비용",
+        "출장배터리",
+        "자동차배터리",
+        "일등밧데리",
+        "배터리교체비용",
+        "차량배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "르노",
+        "manufacturers": [
+          {
+            "id": "renault",
+            "name": "르노"
+          }
+        ],
+        "vehicle": "QM6",
+        "vehicles": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "QM6",
+            "displayName": "QM6",
+            "urlPath": "/car-battery/renault/qm6.html",
+            "matchedAlias": "QM6",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "QM6",
+            "displayName": "QM6",
+            "urlPath": "/car-battery/renault/qm6.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gwacheon-si",
+          "regionName": "과천시",
+          "neighborhoodName": "중앙동",
+          "label": "경기 과천시 중앙동",
+          "urlPath": "/area/gyeonggi/gwacheon-si/jungang-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwacheon-si",
+            "regionName": "과천시",
+            "label": "경기 과천시",
+            "urlPath": "/area/gyeonggi/gwacheon-si.html",
+            "matchedAlias": "과천시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwacheon-si",
+            "regionName": "과천시",
+            "name": "중앙동",
+            "legalName": "경기도 과천시 중앙동",
+            "label": "경기 과천시 중앙동",
+            "urlPath": "/area/gyeonggi/gwacheon-si/jungang-dong.html",
+            "matchedAlias": "중앙동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/renault/qm6.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/renault.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gwacheon-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/gwacheon-si/jungang-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "과천시 중앙동에서 QM6 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224411423311",
+      "title": "서울 서초구(잠원동) 2022년식 현대 아반떼CN7 델코 AGM70 출장배터리교체 가격 및 비용 안내｜새 배터리인데 또 방전될 때",
+      "url": "https://blog.naver.com/kang10107/224411423311",
+      "publishedAt": "2026-09-18",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224411423311.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTRfMjUw/MDAxNzg5MzcyNTMzOTg1.BVeDVmez-2TlMANGJ0fARsFNQYLBowWR8h13tbsl2Z4g.aB-4mZIT5e4dV0mjzeC7ubsgcaUI-DPcIInaR2XfYncg.JPEG/image-cn7-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 서초구 잠원동에서 2022년식 현대 아반떼CN7 배터리 교체 작업을 진행했습니다. 이번 차량은 조금 신경 써서 봐야 하는 경우였습니다. 배터리를 새것으로 교체했는데도 며칠 지나지 않아 다시 방전됐기 때문인데요. 이런 상황이면 가장 먼저 “새 배터리가 문제가 있는 것 아닌가?”라는 생각이 들 수 있습니다. 하지만 재방전 원인은 배터리 하나만 놓고 판단하기보다 차량이 충전을 제대로 하고 있는지, 주차 중에도 전기를 계속 사용하는 부분은 없는지 같이 살펴볼 필요가 있습니다. 차.......",
+      "tags": [
+        "서초구배터리",
+        "서초구출장배터리",
+        "서초구자동차배터리",
+        "잠원동배터리",
+        "잠원동출장배터리",
+        "아반떼배터리",
+        "아반떼cn7배터리",
+        "아반떼cn7배터리교체",
+        "아반떼cn7배터리교체비용",
+        "아반떼cn7배터리가격",
+        "델코agm70",
+        "agm70가격",
+        "agm70교체비용",
+        "출장배터리교체비용",
+        "일등밧데리",
+        "자동차배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "아반떼",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "아반떼",
+            "displayName": "아반떼",
+            "urlPath": "/car-battery/hyundai/avante.html",
+            "matchedAlias": "아반떼",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "아반떼",
+            "displayVehicleName": "아반떼",
+            "label": "CN7",
+            "slug": "cn7",
+            "urlPath": "/car-battery/hyundai/avante/cn7.html",
+            "vehicleUrlPath": "/car-battery/hyundai/avante.html",
+            "matchedAlias": "CN7"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "아반떼",
+            "displayName": "아반떼",
+            "urlPath": "/car-battery/hyundai/avante.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "seocho-gu",
+          "regionName": "서초구",
+          "neighborhoodName": "잠원동",
+          "label": "서울 서초구 잠원동",
+          "urlPath": "/area/seoul/seocho-gu/jamwon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "seocho-gu",
+            "regionName": "서초구",
+            "label": "서울 서초구",
+            "urlPath": "/area/seoul/seocho-gu.html",
+            "matchedAlias": "서초구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "seocho-gu",
+            "regionName": "서초구",
+            "name": "잠원동",
+            "legalName": "서울특별시 서초구 잠원동",
+            "label": "서울 서초구 잠원동",
+            "urlPath": "/area/seoul/seocho-gu/jamwon-dong.html",
+            "matchedAlias": "잠원동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/avante.html"
+          ],
+          "details": [
+            "/car-battery/hyundai/avante/cn7.html"
+          ],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/seocho-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/seocho-gu/jamwon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "서초구 잠원동에서 아반떼 CN7 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224411417357",
       "title": "인천 검단구(불로대곡동) 2020년식 벤츠A220 바르타 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
