@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-18T14:17:47.664Z",
+  "syncedAt": "2026-09-19T07:30:02.690Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 2,
     "preservedPreviousPosts": 336,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 336,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 338,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 289,
-    "vehicleMatches": 269,
+    "manufacturerMatches": 291,
+    "vehicleMatches": 271,
     "detailMatches": 54,
-    "regionMatches": 220,
-    "neighborhoodMatches": 183,
-    "batteryMatches": 219,
+    "regionMatches": 222,
+    "neighborhoodMatches": 185,
+    "batteryMatches": 221,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,331 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 220,
-    "actualRegionMatches": 220,
-    "actualNeighborhoodMatches": 183,
+    "actualAreaMatches": 222,
+    "actualRegionMatches": 222,
+    "actualNeighborhoodMatches": 185,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224412411351",
+      "title": "용인시 수지구(상현동) 2015년식 볼보 S60 D2 델코 AGM80 출장배터리교체 가격 및 비용 안내｜배터리 단자 상태 확인",
+      "url": "https://blog.naver.com/kang10107/224412411351",
+      "publishedAt": "2026-09-19",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224412411351.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTVfMTEz/MDAxNzg5NDQ3MDIyMTkx.Za7dOAMolj8k8h3fcrKzSHleu5sL7QPFHGB6_TVKtCEg.AZDzisx4Bn6uF5Ehi251vgDRVlSjdHKmbpZB6x9VVGkg.JPEG/image-s60-d2-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 용인시 수지구 상현동에서 2015년식 볼보 S60 D2 배터리 교체 작업을 진행했습니다. 이번 작업에서는 배터리를 어떤 제품으로 바꾸느냐뿐 아니라 장착할 때 단자와 차량 고정대를 어느 정도로 체결해야 하는지도 따로 확인했습니다. 배터리는 흔들리지 않게 단단히 고정해야 하지만 그렇다고 무조건 세게 조인다고 좋은 것은 아닙니다. 단자 볼트와 배터리를 잡아주는 고정대는 역할이 서로 다르기 때문에 차량과 부품에 맞는 체결 기준을 확인해서 작업하는 편이 좋습니다. 차량 규격을 확.......",
+      "tags": [
+        "용인출장배터리",
+        "용인자동차배터리",
+        "용인배터리교체",
+        "용인배터리출장",
+        "상현동배터리",
+        "상현동출장배터리",
+        "상현동자동차배터리",
+        "볼보s60배터리",
+        "볼보배터리",
+        "s60배터리",
+        "s60배터리가격",
+        "델코agm80교체비용",
+        "델코agm80가격",
+        "델코agm80출장",
+        "agm80",
+        "agm80가격",
+        "agm80교체비용",
+        "일등밧데리",
+        "출장배터리교체",
+        "자동차배터리교체",
+        "차량배터리교체",
+        "자동차배터리교체비용",
+        "출장배터리교체비용",
+        "볼보배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "볼보",
+        "manufacturers": [
+          {
+            "id": "volvo",
+            "name": "볼보"
+          }
+        ],
+        "vehicle": "볼보 S60",
+        "vehicles": [
+          {
+            "manufacturerId": "volvo",
+            "manufacturerName": "볼보",
+            "vehicleName": "S60",
+            "displayName": "볼보 S60",
+            "urlPath": "/car-battery/volvo/s60.html",
+            "matchedAlias": "볼보 S60",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "volvo",
+            "manufacturerName": "볼보",
+            "vehicleName": "S60",
+            "displayName": "볼보 S60",
+            "urlPath": "/car-battery/volvo/s60.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "yongin-si",
+          "regionName": "용인시",
+          "neighborhoodName": "상현동",
+          "label": "경기 용인시 상현동",
+          "urlPath": "/area/gyeonggi/yongin-si/sanghyeon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "yongin-si",
+            "regionName": "용인시",
+            "label": "경기 용인시",
+            "urlPath": "/area/gyeonggi/yongin-si.html",
+            "matchedAlias": "용인시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "yongin-si",
+            "regionName": "용인시",
+            "name": "상현동",
+            "legalName": "경기도 용인시 수지구 상현동",
+            "label": "경기 용인시 상현동",
+            "urlPath": "/area/gyeonggi/yongin-si/sanghyeon-dong.html",
+            "matchedAlias": "상현동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/volvo/s60.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/volvo.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/yongin-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/yongin-si/sanghyeon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "용인시 상현동에서 볼보 S60 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224412405526",
+      "title": "서울 송파구(풍납동) 2011년식 프리랜더2 델코 AGM80 출장배터리교체 가격 및 비용 안내｜배터리 점검할 때 AGM 설정",
+      "url": "https://blog.naver.com/kang10107/224412405526",
+      "publishedAt": "2026-09-19",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224412405526.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTVfMjk3/MDAxNzg5NDQ2NzEyODIz.208isXx7pXsMhkW6WUG4BF_nxHmNgL0dR1Es7EgQ-pog.xphTKMC4XmBnmlg4kKe0UrCw3I_WTeKHM3Utxojeelwg.JPEG/image-2-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 송파구 풍납동에서 2011년식 프리랜더2 배터리 교체 작업을 진행했습니다. 이번 작업에서는 배터리를 점검할 때 사용하는 장비에 어떤 배터리 종류가 입력돼 있는지도 함께 확인했습니다. 배터리 점검 장비는 아무 설정으로 측정하는 것이 아니라 현재 차량에 장착된 제품이 AGM인지, 일반 타입인지 등 배터리 종류를 맞춰 입력한 뒤 확인하는 과정이 필요합니다. 프리랜더2에 적용된 배터리 조건을 확인한 뒤 델코 AGM80으로 교체하고, 신품 장착 후 배터리 등록 코딩까지 진행했습니다. .......",
+      "tags": [
+        "송파구배터리",
+        "송파배터리",
+        "송파자동차배터리",
+        "송파출장배터리",
+        "풍납동배터리",
+        "프리랜더2배터리",
+        "프리랜더2배터리교체",
+        "델코agm80가격",
+        "델코agm80교체",
+        "델코agm80교체비용",
+        "agm80",
+        "agm80교체비용",
+        "출장배터리",
+        "일등밧데리",
+        "자동차배터리",
+        "자동차배터리교체",
+        "출장배터리교체",
+        "출장배터리교체비용",
+        "자동차배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "랜드로버",
+        "manufacturers": [
+          {
+            "id": "landrover",
+            "name": "랜드로버",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "랜드로버 프리랜더",
+        "vehicles": [
+          {
+            "manufacturerId": "landrover",
+            "manufacturerName": "랜드로버",
+            "vehicleName": "프리랜더",
+            "displayName": "랜드로버 프리랜더",
+            "urlPath": "/car-battery/landrover/freelander.html",
+            "matchedAlias": "프리랜더",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "landrover",
+            "manufacturerName": "랜드로버",
+            "vehicleName": "프리랜더",
+            "displayName": "랜드로버 프리랜더",
+            "urlPath": "/car-battery/landrover/freelander.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "songpa-gu",
+          "regionName": "송파구",
+          "neighborhoodName": "풍납동",
+          "label": "서울 송파구 풍납동",
+          "urlPath": "/area/seoul/songpa-gu/pungnap-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "songpa-gu",
+            "regionName": "송파구",
+            "label": "서울 송파구",
+            "urlPath": "/area/seoul/songpa-gu.html",
+            "matchedAlias": "송파구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "songpa-gu",
+            "regionName": "송파구",
+            "name": "풍납동",
+            "legalName": "서울특별시 송파구 풍납동",
+            "label": "서울 송파구 풍납동",
+            "urlPath": "/area/seoul/songpa-gu/pungnap-dong.html",
+            "matchedAlias": "풍납동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/landrover/freelander.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/landrover.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/songpa-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/songpa-gu/pungnap-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "송파구 풍납동에서 랜드로버 프리랜더 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224411438788",
       "title": "인천 연수구(선학동) 2021년식 현대 캐스퍼 델코 AGM60 출장배터리교체 가격 및 비용 안내｜일등밧데리",
