@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-21T08:46:26.131Z",
+  "syncedAt": "2026-09-21T16:00:15.345Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 1,
     "preservedPreviousPosts": 342,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 342,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 343,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 295,
-    "vehicleMatches": 275,
+    "manufacturerMatches": 296,
+    "vehicleMatches": 276,
     "detailMatches": 55,
-    "regionMatches": 226,
-    "neighborhoodMatches": 188,
-    "batteryMatches": 225,
+    "regionMatches": 227,
+    "neighborhoodMatches": 189,
+    "batteryMatches": 226,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,173 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 226,
-    "actualRegionMatches": 226,
-    "actualNeighborhoodMatches": 188,
+    "actualAreaMatches": 227,
+    "actualRegionMatches": 227,
+    "actualNeighborhoodMatches": 189,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224416771192",
+      "title": "경기 하남시(신장동) 2019년식 팰리세이드 델코 AGM95 출장배터리교체 가격 및 비용 안내｜시동이 예전보다 느릴 때",
+      "url": "https://blog.naver.com/kang10107/224416771192",
+      "publishedAt": "2026-09-21",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224416771192.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTlfMjg1/MDAxNzg5Nzc3OTM5MjQ0.hyL3sdsVBKyqEiRJuxDT8J1bsac2v6nNehVTELE5-Mkg.IM1U9ZkOoHcVIWHkuaEgzXR3MDns__S7zGvoivq8IGUg.JPEG/image-image-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 하남시 신장동에서 2019년식 팰리세이드 배터리 교체 작업을 진행했습니다. 이번 차량은 어느 날 갑자기 시동이 안 걸린 경우가 아니라, 요즘 들어 첫 시동이 예전보다 조금씩 느려지는 변화가 있었던 경우입니다. 이런 증상은 애매해서 그냥 지나치기 쉽습니다. 시동이 아예 안 걸리는 것도 아니고, 한 번 걸리고 나면 운행에는 큰 불편이 없기 때문인데요. 하지만 배터리를 오래 사용했다면 이런 작은 변화가 성능 저하를 알려주는 신호일 수 있습니다. 차량에 맞는 규격을 확인한 뒤 델.......",
+      "tags": [
+        "하남배터리",
+        "하남출장배터리",
+        "하남자동차배터리",
+        "신장동배터리",
+        "신장동출장배터리",
+        "팰리세이드배터리",
+        "팰리세이드배터리가격",
+        "팰리세이드배터리교체",
+        "팰리세이드배터리교체가격",
+        "팰리세이드배터리교체비용",
+        "agm95",
+        "델코agm95가격",
+        "델코agm95교체비용",
+        "델코agm95",
+        "agm95가격",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "자동차배터리교체",
+        "출장배터리교체",
+        "출장배터리가격",
+        "자동차배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "팰리세이드",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "팰리세이드",
+            "displayName": "팰리세이드",
+            "urlPath": "/car-battery/hyundai/palisade.html",
+            "matchedAlias": "팰리세이드",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "팰리세이드",
+            "displayName": "팰리세이드",
+            "urlPath": "/car-battery/hyundai/palisade.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "hanam-si",
+          "regionName": "하남시",
+          "neighborhoodName": "신장동",
+          "label": "경기 하남시 신장동",
+          "urlPath": "/area/gyeonggi/hanam-si/sinjang-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "hanam-si",
+            "regionName": "하남시",
+            "label": "경기 하남시",
+            "urlPath": "/area/gyeonggi/hanam-si.html",
+            "matchedAlias": "하남시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "hanam-si",
+            "regionName": "하남시",
+            "name": "신장동",
+            "legalName": "경기도 하남시 신장동",
+            "label": "경기 하남시 신장동",
+            "urlPath": "/area/gyeonggi/hanam-si/sinjang-dong.html",
+            "matchedAlias": "신장동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/palisade.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/hanam-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/hanam-si/sinjang-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "하남시 신장동에서 팰리세이드 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224412442810",
       "title": "인천 미추홀구(도화동) 2020년식 벤츠E220 델코 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
