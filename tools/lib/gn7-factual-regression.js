@@ -1,5 +1,8 @@
 // Exact owner-authorized factual delta; no global SEO/body exclusions.
 export function gn7FactualDelta(html, path) {
+  const page=path.replace(/^car-battery\//,'').replace(/\.html$/,'');
+  if(page==='hyundai/santafe')return html.replace('AGM70, AGM60, AGM80, AG60 등','AGM70, AGM60, AGM80, AGM95 등').replace('<strong>AG60</strong>','<strong>AGM60</strong>');
+  if(page==='hyundai/santafe/tm')return html.replace(/\bAG60\b/g,'AGM60');
   if(!['hyundai/grandeur','hyundai/grandeur/gn7'].includes(path.replace(/^car-battery\//,'').replace(/\.html$/,'')))return html;
   let result=html.replace(/<tr>[\s\S]*?<\/tr>/g,row=>{
     if(!row.includes('(GN7)'))return row;

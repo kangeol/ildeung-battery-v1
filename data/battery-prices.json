@@ -1,0 +1,25 @@
+{
+  "version": "owner-2026-09-22-v1",
+  "effectiveAt": "2026-09-22",
+  "currency": "KRW",
+  "authority": "Owner-authorized replacement price table",
+  "prices": {
+    "DF40AL": 75000, "DF60L": 95000, "DF60R": 100000,
+    "DF80L": 100000, "DF80R": 110000, "DF90L": 110000,
+    "DF90R": 110000, "DF100L": 120000, "DF100R": 125000,
+    "DIN50L": 90000, "DIN60L": 105000, "DIN60HL": 105000,
+    "DIN74": 125000, "DIN74L": 125000, "DIN74R": 130000,
+    "DIN90": 140000, "DIN90L": 140000, "DIN100L": 150000,
+    "65-900": 155000,
+    "AGM60": 155000, "AGM70": 170000, "AGM80": 190000,
+    "AGM80R": 220000, "AGM95": 220000, "AGM95R": 240000,
+    "AGM105": 280000
+  },
+  "aliases": {
+    "40AL": "DF40AL", "60L": "DF60L", "60R": "DF60R",
+    "80L": "DF80L", "80R": "DF80R", "90L": "DF90L",
+    "90R": "DF90R", "100L": "DF100L", "100R": "DF100R",
+    "DIN50": "DIN50L", "DIN60": "DIN60L", "DIN100": "DIN100L"
+  },
+  "unpriced": ["DIN70L"]
+}

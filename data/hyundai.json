@@ -405,7 +405,7 @@
     "year": "20~23년",
     "fuel": "가솔린+전기",
     "detailModel": "더 뉴 싼타페 하이브리드 TM",
-    "defaultBattery": "AG60",
+    "defaultBattery": "AGM60",
     "upgradeBattery": "",
     "status": "완료"
   },

@@ -448,9 +448,11 @@ function main() {
       return !(addition || rename);
     }).length,
     protectedDbChanged: gitChangedFiles(["master-db", "data"]).filter(file=>{
+      if(file==='data/battery-prices.json')return false; // Validated exhaustively by test-battery-pricing.js.
       if(file!=="data/hyundai.json")return true;
       // Explicit GN7 withdrawal + Owner-approved restoration, no broad DB exclusion.
       const expected=JSON.parse(gitShow(file));
+      if(expected[40]?.detailModel==='더 뉴 싼타페 하이브리드 TM'&&expected[40].defaultBattery==='AG60')expected[40].defaultBattery='AGM60';
       for(const row of expected)if(row.vehicle==='그랜저'&&row.detailModel.includes('(GN7)')&&row.fuel==='가솔린 3.3'){row.defaultBattery='고객센터문의';row.fuel='가솔린 3.5';}
       for(const row of expected)if(row.vehicle==='그랜저'&&row.defaultBattery==='고객센터문의'&&(
         row.year==='26년~현재'&&row.detailModel==='더 뉴 그랜저 (GN7)'&&row.fuel==='가솔린' ||

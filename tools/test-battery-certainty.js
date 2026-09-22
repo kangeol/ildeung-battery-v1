@@ -69,7 +69,7 @@ for(const year of [2023,2024,2025,2026,2027,2030])for(const fuel of ['','가솔�
  assert.notEqual(out.state.confirmedBattery,'AGM80');
 }
 const report={cases,partialNluCases,yearCases,ambiguousPrevented,ambiguousAutoConfirm,unknownRowOverridden,wrongBatteryRecommendations:failures.length,failures,transcripts};
-const evidenceDir=process.argv.includes('--continuation')?'docs/evidence/db-driven-flow':'docs/evidence/battery-certainty';
+const evidenceDir=process.argv.includes('--pricing')?'docs/evidence/battery-pricing':process.argv.includes('--continuation')?'docs/evidence/db-driven-flow':'docs/evidence/battery-certainty';
 fs.mkdirSync(evidenceDir,{recursive:true});
 fs.writeFileSync(`${evidenceDir}/simulation.json`,JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({cases,ambiguousPrevented,wrongBatteryRecommendations:failures.length,firstFailures:failures.slice(0,8),transcripts},null,2));

@@ -8,15 +8,18 @@ const before=JSON.parse(git(['show',`${baseline}:data/hyundai.json`]));
 const after=JSON.parse(fs.readFileSync('data/hyundai.json','utf8'));
 const expected=structuredClone(before);
 for(const r of expected)if(r.vehicle==='그랜저'&&r.detailModel.includes('(GN7)')&&r.fuel==='가솔린 3.3'){r.defaultBattery='고객센터문의';r.fuel='가솔린 3.5';}
-assert.deepEqual(after,expected,'only reviewed GN7 canonical correction');
+expected[40].defaultBattery='AGM60';
+assert.equal(before[40].detailModel,'더 뉴 싼타페 하이브리드 TM');
+assert.deepEqual(after,expected,'only reviewed GN7 and AG60 canonical corrections');
 const paths=git(['diff',baseline,'--name-only']).trim().split('\n').filter(Boolean);
 const allowed=new Set(['data/hyundai.json','js/smart-consult-core.js','js/smart-consult-conversation.js','js/smart-consult-session.js','js/smart-consult-entry.js','js/smart-consult.js','smart-consult/index.html','car-battery/hyundai/grandeur.html','car-battery/hyundai/grandeur/gn7.html']);
+for(const p of ['data/battery-prices.json','js/smart-consult-prices.js','car-battery/hyundai/santafe.html','car-battery/hyundai/santafe/tm.html'])allowed.add(p);
 for(const p of paths){
- assert.ok(allowed.has(p)||p==='js/smart-consult-location.js'||p.startsWith('tools/test-')||p.startsWith('tools/audit-battery-')||['tools/lib/gn7-factual-regression.js','tools/lib/smart-consult-page-regression.js','tools/audit-blog-sync-regression.js'].includes(p)||p.startsWith('docs/evidence/battery-certainty/')||p.startsWith('docs/evidence/db-driven-flow/'),`out of scope: ${p}`);
+ assert.ok(allowed.has(p)||p==='js/smart-consult-location.js'||p.startsWith('tools/test-')||p.startsWith('tools/audit-battery-')||['tools/lib/gn7-factual-regression.js','tools/lib/smart-consult-page-regression.js','tools/audit-blog-sync-regression.js'].includes(p)||p.startsWith('docs/evidence/battery-certainty/')||p.startsWith('docs/evidence/battery-pricing/')||p.startsWith('docs/evidence/db-driven-flow/'),`out of scope: ${p}`);
  if(p.endsWith('.html')){
   let expected=gn7FactualDelta(git(['show',`${baseline}:${p}`]).replace(/\r\n/g,'\n'),p);
-  if(p==='smart-consult/index.html')expected=expected.replace('/js/smart-consult.js?v=ai-mobile-v1','/js/smart-consult.js?v=flow-v1');
+  if(p==='smart-consult/index.html')expected=expected.replace('/js/smart-consult.js?v=ai-mobile-v1','/js/smart-consult.js?v=price-v1');
   assert.equal(fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n'),expected,`${p}: exact factual delta only`);
  }
 }
-console.log({status:'PASS',generatedPages:paths.filter(p=>p.startsWith('car-battery/')),protectedSeoStructure:'unchanged',blog:'unchanged',databaseCorrection:'GN7 only'});
+console.log({status:'PASS',generatedPages:paths.filter(p=>p.startsWith('car-battery/')),protectedSeoStructure:'unchanged',blog:'unchanged',databaseCorrection:'reviewed GN7 + Owner AG60 typo only'});

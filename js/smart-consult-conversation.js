@@ -2,6 +2,7 @@ import { MANUFACTURER_ALIASES, batteryStoreType, buildVehicleGroups, normalizeTe
 import { copy, variant, symptomLabels } from "./conversation-copy.js";
 import { resolveLocation } from "./smart-consult-location.js?v=flow-v1";
 import { resolveVehicleText } from "./vehicle-aliases.js";
+import { directPriceSpec, priceDescription, splitBatterySpec } from "./smart-consult-prices.js?v=price-v1";
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -144,7 +145,7 @@ export function vehicleLabel(state) {
   return [state.manufacturerName, state.model || state.vehicleFamily].filter(Boolean).join(" ") + (state.year ? ` · ${state.year}년식` : "");
 }
 
-export function conversationTurn(previous, text, records, localities = []) {
+export function conversationTurn(previous, text, records, localities = [], priceCatalog = null) {
   let state = { ...previous };
   let entities = extractEntities(text, records, state, localities);
   const intent = recognizeIntent(text, entities);
@@ -159,6 +160,13 @@ export function conversationTurn(previous, text, records, localities = []) {
   };
   if (intent === "RESET") { output.state = createConversationState(); say(copy.greeting); return output; }
   if (pricePattern.test(text)) { state.priceIntent=true; state.originalIntent="PRICE"; }
+  const directSpec = directPriceSpec(text);
+  if (directSpec) {
+    // A price lookup is not a vehicle fitment confirmation. Preserve vehicle/area facts.
+    say(priceDescription(directSpec, priceCatalog));
+    output.actions = ["phone"];
+    return output;
+  }
   if (entities.region || entities.ambiguousRegion || /출장|교체.*(?:돼|되|가능)|와요/.test(text)) state.serviceIntent=true;
   if (entities.manufacturer && !entities.matches.length && !state.selectedVehicleKey) {
     state.manufacturer=entities.manufacturer;
@@ -324,7 +332,7 @@ export function conversationTurn(previous, text, records, localities = []) {
   // PRICE is a retained goal, not a terminal reply before vehicle narrowing.
   if (intent === "PRICE_QUESTION" && state.result) {
     if(entities.region) areaAnswer();
-    say(copy.result(state.result.defaultBattery)); say(variant("price",state.turnIndex));
+    say(copy.result(state.result.defaultBattery)); say(priceCatalog ? priceDescription(state.result.defaultBattery,priceCatalog) : variant("price",state.turnIndex));
     output.result=state.result; output.actions=["phone","stores"]; return output;
   }
   if (intent === "BUY_REQUEST") { say(knownBattery(state.result) ? copy.buy : copy.needDetails); output.actions = knownBattery(state.result) ? ["phone", "stores"] : ["phone"]; return output; }
@@ -365,7 +373,8 @@ export function conversationTurn(previous, text, records, localities = []) {
     say(knownBattery(state.result) ? copy.result(state.result.defaultBattery) : copy.needsCheck);
     if (state.result.upgradeBattery) say(copy.upgrade(state.result.upgradeBattery));
     output.result = state.result;
-    if(state.priceIntent) { say(variant("price",state.turnIndex)); output.actions=["phone","stores"]; }
+    if(priceCatalog) { say(priceDescription(state.result.defaultBattery,priceCatalog)); output.actions=["phone","stores"]; }
+    else if(state.priceIntent) { say(variant("price",state.turnIndex)); output.actions=["phone","stores"]; }
     return output;
   }
   const detailRepresentatives=new Map();
@@ -385,5 +394,9 @@ export function conversationTurn(previous, text, records, localities = []) {
     ask(next.field,prompt,choices); return output;
   }
   // Identical known attributes with conflicting facts must never be guessed.
+  const specs = unique(rows.map(row=>row.defaultBattery));
+  if (priceCatalog && specs.length === 1 && splitBatterySpec(specs[0]).length > 1) {
+    say(priceDescription(specs[0],priceCatalog)); output.actions=["phone"]; return output;
+  }
   say(copy.needsCheck); output.actions = ["phone"]; return output;
 }
