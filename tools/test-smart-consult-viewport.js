@@ -11,7 +11,8 @@ assert.ok(html.includes('<div id="chatHeaderTitle"><span>일등밧데리 </span>
 assert.equal(copy.greeting,'안녕하세요. 일등밧데리 AI 배터리 상담입니다.\n차량명이나 궁금한 내용을 편하게 입력해 주세요.');
 assert.equal(/스마트 배터리 상담|AI AI|AI 진단|AI 상담원 연결/.test(html+copy.greeting),false);
 assert.ok(html.includes('일등밧데리 차량 정보를 바탕으로 안내합니다.'));
-for(const asset of ['/css/smart-consult.css','/js/smart-consult.js','/js/smart-consult-viewport.js']) assert.ok(html.includes(`${asset}?v=ai-mobile-v1`),'returning-browser cache safety');
+for(const asset of ['/css/smart-consult.css','/js/smart-consult-viewport.js']) assert.ok(html.includes(`${asset}?v=ai-mobile-v1`),'returning-browser cache safety');
+assert.ok(html.includes('/js/smart-consult.js?v=certainty-v1'));
 assert.ok(read('js/smart-consult.js').includes('./conversation-copy.js?v=ai-mobile-v1'));
 assert.ok(css.includes('.consult-page .site-footer { display: none; }'));
 assert.ok(css.includes('height: var(--app-height, 100dvh)'));
@@ -37,7 +38,7 @@ assert.equal(styles['--app-height'],'420px');assert.equal(styles['--app-top'],'3
 log.scrollTop=1000;events['log:scroll']();events['vv:resize']();queue.shift()();assert.equal(log.scrollTop,1500,'bottom anchored');
 win.visualViewport.scale=2;win.visualViewport.height=200;events['vv:resize']();queue.shift()();assert.equal(styles['--app-height'],'420px','pinch zoom not resized');
 win.visualViewport.scale=1;win.visualViewport.height=780;win.visualViewport.offsetTop=0;events.pageshow();queue.shift()();assert.equal(styles['--app-height'],'780px');
-const changed=execFileSync('git',['diff','7117e98b785e8dfa61a8d0b5d4dc2cdc1537dff2','--name-only'],{encoding:'utf8'}).trim().split('\n').filter(Boolean);
+const changed=execFileSync('git',['diff','7117e98b785e8dfa61a8d0b5d4dc2cdc1537dff2','667b555971603325a4504b6f6e74bd282317c939','--name-only'],{encoding:'utf8'}).trim().split('\n').filter(Boolean);
 const allowed=new Set(['smart-consult/index.html','css/smart-consult.css','js/smart-consult.js','js/smart-consult-viewport.js','js/conversation-copy.js','tools/test-smart-consult.js','tools/test-smart-consult-launcher.js','tools/test-smart-consult-viewport.js','docs/smart-consult-mobile-focus-v1-qa.md']);
 // Branding-only HTML changes are independently checked against the pre-branding baseline.
 execFileSync(process.execPath,['tools/test-smart-consult-branding.js'],{stdio:'pipe'});

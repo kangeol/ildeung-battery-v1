@@ -447,7 +447,13 @@ function main() {
       const rename=before.split(oldLauncher).length===2 && after===before.replace(oldLauncher,launcherMarkup);
       return !(addition || rename);
     }).length,
-    protectedDbChanged: gitChangedFiles(["master-db", "data"]).length,
+    protectedDbChanged: gitChangedFiles(["master-db", "data"]).filter(file=>{
+      if(file!=="data/hyundai.json")return true;
+      // Explicit GN7 fact withdrawal; no other DB mutation is exempted.
+      const expected=JSON.parse(gitShow(file));
+      for(const row of expected)if(row.vehicle==='그랜저'&&row.detailModel.includes('(GN7)')){row.defaultBattery='고객센터문의';if(row.fuel==='가솔린 3.3')row.fuel='가솔린 3.5';}
+      return JSON.stringify(readJson(file))!==JSON.stringify(expected);
+    }).length,
     directAnswerPages: directAnswers.directAnswerPages,
     directAnswerMissing: directAnswers.directAnswerMissing,
     directAnswerEmpty: directAnswers.directAnswerEmpty,

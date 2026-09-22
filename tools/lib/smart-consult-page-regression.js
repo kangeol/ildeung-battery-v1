@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { launcherMarkup } from "./smart-consult-launcher.js";
+import { gn7FactualDelta } from './gn7-factual-regression.js';
 
 // Audited, owner-authorized merge parent; never follow a moving remote implicitly.
 export const AUTHORIZED_MERGE = "e71c422ea433dcbbaeeb3dbc68fcc4c748ed3e6b";
@@ -15,7 +16,7 @@ export function assertConsultPage(actual, before, id) {
   assert.equal(html.includes("이 차량 스마트 상담하기"),false);
   assert.equal(lf(before).split(line).length-1,1,`${id}: production inline CTA`);
   // Normalize only the two owner-authorized changes; preserve every other byte.
-  assert.equal(html.replace(launcherMarkup,""),lf(before).replace(line,""),`${id}: protected full page differs from authorized production baseline`);
+  assert.equal(html.replace(launcherMarkup,""),gn7FactualDelta(lf(before).replace(line,""),id),`${id}: protected full page differs from authorized production baseline`);
 }
 export function assertNegativeMutations(actual, before, id) {
   const html=lf(actual);

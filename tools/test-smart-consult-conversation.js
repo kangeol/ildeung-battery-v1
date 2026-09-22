@@ -42,7 +42,7 @@ equal(carnival.state.vehicleFamily,"카니발"); equal(carnival.state.year,2018)
 equal(carnival.state.confirmedBattery,"DF90L"); equal(carnival.state.previousQuestion,null);
 const benz=flow(["벤츠 e300","2020년식","인천인데","가솔린"]);
 equal(benz.state.model,"E300"); equal(benz.state.year,2020); equal(benz.state.region.area,"incheon"); equal(benz.state.confirmedBattery,"AGM80");
-equal(benz.outputs[0].state.previousQuestion.field,"year"); equal(benz.outputs[1].state.previousQuestion.field,"fuel");
+equal(benz.outputs[0].state.previousQuestion.field,"detailModel"); equal(benz.outputs[1].state.previousQuestion.field,"fuel");
 equal(benz.outputs[2].state.previousQuestion.field,"fuel","area follow-up must preserve pending question");
 for (const text of ["벤츠 e300 2020", "20년식 e300이야"]) {
   const {state}=flow([text]); equal(state.year,2020); equal(state.previousQuestion.field,"fuel");
@@ -55,7 +55,7 @@ equal(correction.outputs[3].state.lastIntent,"CORRECTION");
 const oneSentence=flow(["BMW 520d 2019년식이고 인천이야"]);
 equal(oneSentence.state.year,2019); equal(oneSentence.state.region.area,"incheon"); equal(oneSentence.state.confirmedBattery,"AGM95");
 const preYear=flow(["2019년식","bmw 520d"]); equal(preYear.state.year,2019); equal(preYear.state.confirmedBattery,"AGM95");
-const confirmation=flow(["벤츠 e300 2020년식","응"]); equal(confirmation.state.fuel,"디젤"); equal(confirmation.state.confirmedBattery,"AGM95");
+const confirmation=flow(["벤츠 e300 2020년식","응"]); equal(confirmation.state.fuel,""); equal(confirmation.state.confirmedBattery,null,"yes without selecting fuel cannot establish diesel");
 const fuelCorrection=flow(["벤츠 e300 2020년식 디젤","아니 디젤 아니고 가솔린이야"]); equal(fuelCorrection.state.fuel,"가솔린"); equal(fuelCorrection.state.confirmedBattery,"AGM80");
 const negative=flow(["벤츠 e300 2020년식","아니요","가솔린"]); equal(negative.state.confirmedBattery,"AGM80");
 const barePrice=flow(["가격 얼마야?"]); equal(barePrice.outputs[0].messages,[copy.needVehicle]);

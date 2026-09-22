@@ -87,7 +87,7 @@ eq(flow(["BMW3 2019년식","맞아"]).state.year,2019);
 eq(flow(["BMW520d"]).state.model,"520d");eq(flow(["BMW520d"]).state.pendingVehicleConfirmation,null);
 for(const input of ["BMW5 2019년식 520d","벤츠C 2020년식 C220d"]) {const result=flow([input]);eq(result.state.pendingVehicleConfirmation,null,input);ok(result.state.model,input);}
 const traxRows=records.filter(row=>row.vehicle==="트랙스");
-eq(flow(["트랙스"]).state.detailModel,"");eq(flow(["트랙스"]).state.previousQuestion.field,"year");
+eq(flow(["트랙스"]).state.detailModel,"");eq(flow(["트랙스"]).state.previousQuestion.field,"fuel");
 eq(flow(["트랙스 2018년식"]).state.previousQuestion.field,"fuel");
 eq(flow(["트랙스 2018년식","가솔린"]).state.confirmedBattery,"DIN60L");
 eq(flow(["트랙스 2018년식","디젤"]).state.confirmedBattery,"DIN74L");

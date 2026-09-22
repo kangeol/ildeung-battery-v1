@@ -15,7 +15,7 @@
     "year": "26년~현재",
     "fuel": "가솔린",
     "detailModel": "더 뉴 그랜저 (GN7)",
-    "defaultBattery": "AGM70",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },
@@ -25,7 +25,7 @@
     "year": "22~26년",
     "fuel": "LPG",
     "detailModel": "그랜저 (GN7)",
-    "defaultBattery": "AGM70",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },
@@ -35,7 +35,7 @@
     "year": "22~26년",
     "fuel": "가솔린 2.5",
     "detailModel": "그랜저 (GN7)",
-    "defaultBattery": "AGM70",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },
@@ -43,9 +43,9 @@
     "manufacturer": "현대",
     "vehicle": "그랜저",
     "year": "22~26년",
-    "fuel": "가솔린 3.3",
+    "fuel": "가솔린 3.5",
     "detailModel": "그랜저 (GN7)",
-    "defaultBattery": "AGM80",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },

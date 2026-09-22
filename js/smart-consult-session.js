@@ -1,8 +1,9 @@
 import { copy, symptomLabels } from "./conversation-copy.js";
-import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js";
+import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=certainty-v1";
 
 export const SESSION_KEY = "ildeung.smart-consult.v5";
-const VERSION = 1;
+// Old transcripts can contain the withdrawn GN7 battery value. Do not replay them.
+const VERSION = 2;
 const MAX_AGE = 12 * 60 * 60 * 1000;
 const intentLabels = {CORRECTION:"정보 수정",PRICE_QUESTION:"가격 문의",CALL_REQUEST:"전화 문의",BUY_REQUEST:"구매 문의",AGM_DIN_QUESTION:"배터리 타입 문의",BATTERY_QUESTION:"배터리 문의",SERVICE_AREA_AVAILABILITY:"출장 지역 문의",LIVE_DISPATCH_AVAILABILITY:"지금 방문 문의",TODAY_SERVICE:"오늘 방문 문의",ARRIVAL_TIME:"도착 시간 문의",URGENT_SERVICE:"긴급 방문 문의",RECOVERY:"정보 확인 도움 요청"};
 
@@ -49,7 +50,7 @@ export function decodeSession(raw, now = Date.now()) {
     }
     if (s.year !== null && (!Number.isInteger(s.year) || s.year < 1900 || s.year > 2199)) return null;
     if (s.symptom && (!Object.hasOwn(symptomLabels,s.symptom.intent) || s.symptom.rawSafeText !== symptomLabels[s.symptom.intent] || !Number.isSafeInteger(s.symptom.confirmedAt))) return null;
-    if (s.previousQuestion && (!Array.isArray(s.previousQuestion.choices) || s.previousQuestion.choices.some(c=>typeof c.label!=="string" || typeof c.value!=="string") || typeof s.previousQuestion.prompt !== "string" || !["year","fuel","exactFuel","vehicle","detailModel"].includes(s.previousQuestion.field))) return null;
+    if (s.previousQuestion && (!Array.isArray(s.previousQuestion.choices) || s.previousQuestion.choices.some(c=>typeof c.label!=="string" || typeof c.value!=="string") || typeof s.previousQuestion.prompt !== "string" || !["year","fuel","exactFuel","vehicle","detailModel","engine","drivetrain"].includes(s.previousQuestion.field))) return null;
     if (s.pendingLocationDisambiguation !== null && !Array.isArray(s.pendingLocationDisambiguation)) return null;
     for (const key of ["result","region","location","pendingVehicleConfirmation"]) if (s[key] !== null && (typeof s[key] !== "object" || Array.isArray(s[key]))) return null;
     if (s.result && (typeof s.result.defaultBattery!=="string" || typeof s.result.vehicle!=="string" || typeof s.result.manufacturerId!=="string")) return null;

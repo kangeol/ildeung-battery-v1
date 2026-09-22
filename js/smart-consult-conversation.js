@@ -1,4 +1,4 @@
-import { batteryStoreType, buildVehicleGroups, normalizeText, parseYearRange, resolveConsultation, yearMatches } from "./smart-consult-core.js";
+import { batteryStoreType, buildVehicleGroups, normalizeText, parseYearRange, resolveConsultation, yearMatches, batteryCertainty, nextBatteryDiscriminator } from "./smart-consult-core.js?v=certainty-v1";
 import { copy, variant, symptomLabels } from "./conversation-copy.js";
 import { resolveLocation } from "./smart-consult-location.js";
 import { resolveVehicleText } from "./vehicle-aliases.js";
@@ -10,7 +10,7 @@ const signature = row => `${row.defaultBattery}|${row.upgradeBattery || ""}`;
 const knownBattery = result => result?.defaultBattery && !/문의|확인/.test(result.defaultBattery);
 
 export function createConversationState() {
-  return { symptom: null, customerGoal: "UNKNOWN", turnIndex: 0, manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
+  return { engine: "", drivetrain: "", yearRange: "", symptom: null, customerGoal: "UNKNOWN", turnIndex: 0, manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
 }
 
 export function symptomIntent(text) {
@@ -46,7 +46,7 @@ function fuelType(value) {
 
 function yearFromText(text, rows, nowYear) {
   if (/\d{2,4}\s*[~～–]\s*(?:\d{2,4}|현재)/.test(text)) return {};
-  const full = text.match(/(?:^|[^\d])((?:19|20)\d{2})(?!\d)/);
+  const full = text.match(/(?:^|[^\d])((?:19|20)\d{2})(?!\d|\s*(?:cc|씨씨))/i);
   if (full) return { year: Number(full[1]) };
   const short = text.match(/(?:^|[^\d])(\d{2})\s*년(?:식)?/) || text.match(/^\s*(\d{2})\s*$/);
   if (!short) return {};
@@ -72,7 +72,7 @@ export function recognizeIntent(text, entities) {
   if (entities.matches.length) return "VEHICLE_IDENTIFICATION";
   if (entities.year || entities.ambiguousYear) return "YEAR_INFO";
   if (entities.fuel) return "FUEL_INFO";
-  if (entities.detailModel || entities.exactFuel) return "MODEL_INFO";
+  if (entities.detailModel || entities.exactFuel || entities.engine || entities.drivetrain) return "MODEL_INFO";
   if (/배터리|밧데리|규격|용량/.test(text)) return "BATTERY_QUESTION";
   return "UNKNOWN";
 }
@@ -99,13 +99,31 @@ export function extractEntities(text, records, state = createConversationState()
   const positiveText = text.replace(/(?:디젤|가솔린|휘발유|하이브리드|LPG)\s*(?:이\s*)?아니(?:고|라|야|에요|요)?/gi, "");
   const fuel = fuelType(positiveText);
   const exactFuels = unique(rows.map(row => row.fuel)).filter(value => normalizeText(positiveText).includes(normalizeText(value)));
-  const exactFuel = exactFuels.sort((a,b) => b.length - a.length)[0] || "";
+  // Generic fuel words are not evidence for a particular engine/drive source row.
+  const exactFuel = exactFuels.filter(value=>normalizeText(value)!==normalizeText(fuel)).sort((a,b) => b.length - a.length)[0] || "";
+  const engineMatch=positiveText.match(/(?:^|[^\d])([1-9]\.\d)(?!\d)/) || positiveText.match(/(?:^|[^\d])(\d{3,4})\s*(?:cc|씨씨)/i);
+  const engine=engineMatch ? String(Number(engineMatch[1]) * (engineMatch[1].includes('.') ? 1000 : 1)) : "";
+  const drivetrain=positiveText.match(/\b([24]WD)\b/i)?.[1]?.toUpperCase() || "";
   const trim = vehicle.shorthand ? "" : text.match(/(?:^|[^a-z0-9])((?:[235]\d{2}[di]|[ecs]\s?\d{3}d?))(?![a-z0-9])/i)?.[1]?.replace(/\s/g, "") || text.normalize("NFKC").match(/(?:bmw|벤츠)\s*([235]\d{2}[di]|[ecs]\d{3}d?)(?![a-z0-9])/i)?.[1] || "";
-  return { matches, shorthand:vehicle.shorthand, detailModels:vehicle.detailModels, detailModel, generation:vehicle.generation || generation, fuel, exactFuel, trim: trim.toUpperCase().replace(/D$/, "d").replace(/I$/, "i"), ...yearFromText(text, rows.length ? rows : records, nowYear), ...resolveLocation(text, localities, state.location || state.region, state.pendingLocationDisambiguation) };
+  return { engine, drivetrain, matches, shorthand:vehicle.shorthand, detailModels:vehicle.detailModels, detailModel, generation:vehicle.generation || generation, fuel, exactFuel, trim: trim.toUpperCase().replace(/D$/, "d").replace(/I$/, "i"), ...yearFromText(text, rows.length ? rows : records, nowYear), ...resolveLocation(text, localities, state.location || state.region, state.pendingLocationDisambiguation) };
 }
 
-function filteredRows(records, state) {
-  return records.filter(row => `${row.manufacturerId}|${row.vehicle}` === state.selectedVehicleKey && (!state.year || yearMatches(row.year, state.year)) && (!state.detailModel || row.detailModel === state.detailModel) && (!state.detailModels?.length || state.detailModels.includes(row.detailModel)) && (!state.fuel || fuelType(row.fuel) === state.fuel) && (!state.exactFuel || row.fuel === state.exactFuel));
+function engineMatches(fuel, engine) {
+  if (!engine) return true;
+  const match=fuel.match(/(\d{3,4})\s*cc/i) || fuel.match(/(\d\.\d)/);
+  if (!match) return true; // Missing discriminator is not proof of exclusion.
+  const value=Number(match[1])*(match[1].includes('.')?1000:1);
+  return /이상/.test(fuel)?Number(engine)>=value:/이하/.test(fuel)?Number(engine)<=value:Number(engine)===value;
+}
+
+function engineLabel(fuel) {
+  const match=fuel.match(/\d{3,4}\s*cc(?:\s*(?:이상|이하))?/i) || fuel.match(/\d\.\d/);
+  if(!match)return "";
+  return match[0].includes('.')?`${Number(match[0])*1000}cc`:match[0];
+}
+
+export function filteredRows(records, state) {
+  return records.filter(row => `${row.manufacturerId}|${row.vehicle}` === state.selectedVehicleKey && (!state.year || yearMatches(row.year, state.year)) && (!state.yearRange || row.year===state.yearRange) && (!state.detailModel || row.detailModel === state.detailModel) && (!state.detailModels?.length || state.detailModels.includes(row.detailModel)) && (!state.generation || row.detailModel.toUpperCase().includes(state.generation.toUpperCase())) && (!state.fuel || !fuelType(row.fuel) || fuelType(row.fuel) === state.fuel) && (!state.exactFuel || row.fuel === state.exactFuel) && engineMatches(row.fuel,state.engine) && (!state.drivetrain || !/[24]WD/i.test(row.fuel) || row.fuel.toUpperCase().includes(state.drivetrain)));
 }
 
 function detailLabel(detail, rows) {
@@ -180,6 +198,9 @@ export function conversationTurn(previous, text, records, localities = []) {
       if (question.field === "detailModel") entities.detailModel = choice.value;
       if (question.field === "fuel") entities.fuel = choice.value;
       if (question.field === "exactFuel") entities.exactFuel = choice.value;
+      if (question.field === "year") entities.yearRange = choice.value;
+      if (question.field === "engine") entities.engine = String(parseInt(choice.value,10));
+      if (question.field === "drivetrain") entities.drivetrain = choice.value;
       answered = true;
     }
   }
@@ -200,6 +221,7 @@ export function conversationTurn(previous, text, records, localities = []) {
   }
   const changedYear = entities.year && entities.year !== state.year;
   if (changedYear) {
+    state.yearRange = "";
     if (state.year) { state.detailModel = ""; state.detailModels=[]; state.generation = ""; }
     state.year = entities.year;
   }
@@ -208,6 +230,9 @@ export function conversationTurn(previous, text, records, localities = []) {
   if (entities.generation) state.generation = entities.generation;
   if (entities.fuel) { state.fuel = entities.fuel; state.exactFuel = ""; }
   if (entities.exactFuel) state.exactFuel = entities.exactFuel;
+  if (entities.engine) state.engine = entities.engine;
+  if (entities.drivetrain) state.drivetrain = entities.drivetrain;
+  if (entities.yearRange) state.yearRange = entities.yearRange;
   if (entities.region) {
     state.region = entities.region;
     state.location = entities.region;
@@ -219,14 +244,16 @@ export function conversationTurn(previous, text, records, localities = []) {
     state.pendingLocationDisambiguation=entities.locationCandidates;
     if(entities.locationScope) { state.location=entities.locationScope;state.region=entities.locationScope; }
   }
-  if (entities.year || entities.fuel || entities.detailModel || entities.exactFuel) answered = true;
+  if (entities.year || entities.fuel || entities.detailModel || entities.exactFuel || entities.engine || entities.drivetrain || entities.yearRange) answered = true;
   if (intent === "CORRECTION") say(copy.correction(entities.year));
 
   let rows = filteredRows(records, state);
-  if (answered) {
-    state.result = null; state.confirmedBattery = null; state.previousQuestion = null; state.ambiguity = null;
+  // Revalidate even a restored session or a follow-up asking for price/AGM.
+  {
+    state.result = null; state.confirmedBattery = null;
+    if (answered) { state.previousQuestion = null; state.ambiguity = null; }
     state.batteryCandidates = unique(rows.map(row => row.defaultBattery));
-    if (rows.length && unique(rows.map(signature)).length === 1) {
+    if (batteryCertainty(rows).safe) {
       state.result = resolveConsultation(rows, {}).result;
       state.confirmedBattery = knownBattery(state.result) ? state.result.defaultBattery : null;
       state.generation = state.result.detailModel?.match(/\b([GFW]\d{2,3})\b/i)?.[1]?.toUpperCase() || state.generation;
@@ -311,29 +338,20 @@ export function conversationTurn(previous, text, records, localities = []) {
     output.result = state.result;
     return output;
   }
-  if (!state.year && unique(rows.map(row => row.year)).length > 1) {
-    if (entities.matches.length === 1) say(variant("vehicle",state.turnIndex,[state.manufacturerName, state.model || state.vehicleFamily].join(" ")));
-    ask("year", variant("clarification",state.turnIndex)); return output;
-  }
-  const fuels = unique(rows.map(row => fuelType(row.fuel)));
-  const fuelSeparates = unique(fuels.map(fuel => unique(rows.filter(row => fuelType(row.fuel) === fuel).map(signature)).sort().join(";"))).length > 1;
-  if (!state.fuel && fuels.length > 1 && fuelSeparates) {
-    if (entities.matches.length === 1) say(copy.recognized(vehicleLabel(state)));
-    const choices = fuels.map(value => ({label: value, value}));
-    const confirm = fuels.includes("디젤") ? "디젤" : fuels[0];
-    ask("fuel", copy.fuelConfirm(confirm), choices, {confirm}); return output;
-  }
-  const fuelsExact = unique(rows.map(row => row.fuel));
-  if (!state.exactFuel && fuelsExact.length > 1 && unique(rows.map(row => row.detailModel)).length === 1) {
-    // Ask trim only when it separates battery specifications, not duplicate drive variants.
-    const separates = fuelsExact.some(fuel => unique(rows.filter(row => row.fuel === fuel).map(signature)).length < unique(rows.map(signature)).length);
-    if (separates) { const choices = fuelsExact.map(value => ({label:value, value})); ask("exactFuel", copy.detail(choices.map(choice => choice.label)), choices); return output; }
-  }
-  const details = unique(rows.map(row => row.detailModel));
-  if (!state.detailModel && details.length > 1) {
-    const choices = details.map(value => ({value, label:detailLabel(value,rows)}));
-    ask("detailModel", copy.detail(choices.map(choice => choice.label)), choices); return output;
+  const dimensions = [
+    ...(!state.detailModel ? [{field:"detailModel",value:r=>r.detailModel}] : []),
+    ...(!state.year && !state.yearRange ? [{field:"year",value:r=>r.year}] : []),
+    ...(!state.fuel ? [{field:"fuel",value:r=>fuelType(r.fuel)}] : []),
+    ...(!state.engine ? [{field:"engine",value:r=>engineLabel(r.fuel)}] : []),
+    ...(!state.drivetrain ? [{field:"drivetrain",value:r=>r.fuel.match(/[24]WD/i)?.[0]?.toUpperCase()||""}] : []),
+    ...(!state.exactFuel ? [{field:"exactFuel",value:r=>r.fuel}] : [])
+  ];
+  const next=nextBatteryDiscriminator(rows,dimensions);
+  if(next){
+    const choices=next.values.map(value=>({value,label:next.field==='detailModel'?detailLabel(value,rows):value}));
+    const prompt=next.field==='year'?copy.year:next.field==='fuel'?copy.fuel:copy.detail(choices.map(c=>c.label));
+    ask(next.field,prompt,choices); return output;
   }
   // Identical known attributes with conflicting facts must never be guessed.
-  say(copy.noMatchAgain); output.actions = ["phone"]; return output;
+  say(copy.needsCheck); output.actions = ["phone"]; return output;
 }

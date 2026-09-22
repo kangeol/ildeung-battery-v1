@@ -1,0 +1,518 @@
+{
+  "cases": 3668,
+  "partialNluCases": 2751,
+  "yearCases": 3404,
+  "ambiguousPrevented": 878,
+  "ambiguousAutoConfirm": 0,
+  "unknownRowOverridden": 0,
+  "wrongBatteryRecommendations": 0,
+  "failures": [],
+  "transcripts": [
+    {
+      "text": "그랜저 GN7 2023년식",
+      "messages": [
+        "이 차량은 배터리 규격을 전화로 확인해야 해요. 1644-9141로 문의해 주세요."
+      ],
+      "choices": [],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/hyundai.json",
+          "index": 2,
+          "defaultBattery": "고객센터문의"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 3,
+          "defaultBattery": "고객센터문의"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 4,
+          "defaultBattery": "고객센터문의"
+        }
+      ]
+    },
+    {
+      "text": "그랜저 2023년식",
+      "messages": [
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2022~2026년형 · 그랜저 (GN7) / 2015~현재년형 · 그랜저 HG 중 어떤 차량인가요?"
+      ],
+      "choices": [
+        {
+          "label": "2022~2026년형 · 그랜저 (GN7)",
+          "value": "그랜저 (GN7)"
+        },
+        {
+          "label": "2015~현재년형 · 그랜저 HG",
+          "value": "그랜저 HG"
+        }
+      ],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/hyundai.json",
+          "index": 2,
+          "defaultBattery": "고객센터문의"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 3,
+          "defaultBattery": "고객센터문의"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 4,
+          "defaultBattery": "고객센터문의"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 14,
+          "defaultBattery": "DF80L 또는 AGM70"
+        }
+      ]
+    },
+    {
+      "text": "그랜저 GN7 2024년식 가솔린 2.5",
+      "messages": [
+        "이 차량은 배터리 규격을 전화로 확인해야 해요. 1644-9141로 문의해 주세요."
+      ],
+      "choices": [],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/hyundai.json",
+          "index": 3,
+          "defaultBattery": "고객센터문의"
+        }
+      ]
+    },
+    {
+      "text": "그랜저 GN7 2024년식 가솔린 3.5",
+      "messages": [
+        "이 차량은 배터리 규격을 전화로 확인해야 해요. 1644-9141로 문의해 주세요."
+      ],
+      "choices": [],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/hyundai.json",
+          "index": 4,
+          "defaultBattery": "고객센터문의"
+        }
+      ]
+    },
+    {
+      "text": "그랜저 GN7 2024년식 LPG",
+      "messages": [
+        "이 차량은 배터리 규격을 전화로 확인해야 해요. 1644-9141로 문의해 주세요."
+      ],
+      "choices": [],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/hyundai.json",
+          "index": 2,
+          "defaultBattery": "고객센터문의"
+        }
+      ]
+    },
+    {
+      "text": "그랜저 2021년식",
+      "messages": [
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\nLPG / 가솔린 2.5 / 가솔린 3.3 / 가솔린+전기 / 가솔린 중 어떤 차량인가요?"
+      ],
+      "choices": [
+        {
+          "label": "LPG",
+          "value": "LPG"
+        },
+        {
+          "label": "가솔린 2.5",
+          "value": "가솔린 2.5"
+        },
+        {
+          "label": "가솔린 3.3",
+          "value": "가솔린 3.3"
+        },
+        {
+          "label": "가솔린+전기",
+          "value": "가솔린+전기"
+        }
+      ],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/hyundai.json",
+          "index": 5,
+          "defaultBattery": "DIN90L"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 6,
+          "defaultBattery": "AGM70"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 7,
+          "defaultBattery": "AGM80"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 8,
+          "defaultBattery": "DIN74R"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 14,
+          "defaultBattery": "DF80L 또는 AGM70"
+        }
+      ]
+    },
+    {
+      "text": "벤츠 E-클래스 2024년식",
+      "messages": [
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2024~현재년형 · E-클래스 W214 / 2016~2024년형 · E-클래스 W213 중 어떤 차량인가요?"
+      ],
+      "choices": [
+        {
+          "label": "2024~현재년형 · E-클래스 W214",
+          "value": "E-클래스 W214"
+        },
+        {
+          "label": "2016~2024년형 · E-클래스 W213",
+          "value": "E-클래스 W213"
+        }
+      ],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/benz.json",
+          "index": 36,
+          "defaultBattery": "AGM70"
+        },
+        {
+          "source": "data/benz.json",
+          "index": 37,
+          "defaultBattery": "AGM70"
+        },
+        {
+          "source": "data/benz.json",
+          "index": 38,
+          "defaultBattery": "AGM70"
+        },
+        {
+          "source": "data/benz.json",
+          "index": 39,
+          "defaultBattery": "AGM80"
+        },
+        {
+          "source": "data/benz.json",
+          "index": 40,
+          "defaultBattery": "AGM80"
+        },
+        {
+          "source": "data/benz.json",
+          "index": 41,
+          "defaultBattery": "AGM95"
+        },
+        {
+          "source": "data/benz.json",
+          "index": 42,
+          "defaultBattery": "AGM95"
+        }
+      ]
+    },
+    {
+      "text": "BMW 5시리즈 2023년식",
+      "messages": [
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2023~현재년형 · 5시리즈 (G60) / 2017~2023년형 · 5시리즈 (G30) 중 어떤 차량인가요?"
+      ],
+      "choices": [
+        {
+          "label": "2023~현재년형 · 5시리즈 (G60)",
+          "value": "5시리즈 (G60)"
+        },
+        {
+          "label": "2017~2023년형 · 5시리즈 (G30)",
+          "value": "5시리즈 (G30)"
+        }
+      ],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/bmw.json",
+          "index": 31,
+          "defaultBattery": "고객센터문의"
+        },
+        {
+          "source": "data/bmw.json",
+          "index": 32,
+          "defaultBattery": "고객센터문의"
+        },
+        {
+          "source": "data/bmw.json",
+          "index": 33,
+          "defaultBattery": "고객센터문의"
+        },
+        {
+          "source": "data/bmw.json",
+          "index": 34,
+          "defaultBattery": "고객센터문의"
+        },
+        {
+          "source": "data/bmw.json",
+          "index": 35,
+          "defaultBattery": "고객센터문의"
+        },
+        {
+          "source": "data/bmw.json",
+          "index": 36,
+          "defaultBattery": "고객센터문의"
+        },
+        {
+          "source": "data/bmw.json",
+          "index": 37,
+          "defaultBattery": "AGM95"
+        },
+        {
+          "source": "data/bmw.json",
+          "index": 38,
+          "defaultBattery": "AGM95"
+        },
+        {
+          "source": "data/bmw.json",
+          "index": 39,
+          "defaultBattery": "AGM95"
+        },
+        {
+          "source": "data/bmw.json",
+          "index": 40,
+          "defaultBattery": "AGM95"
+        },
+        {
+          "source": "data/bmw.json",
+          "index": 41,
+          "defaultBattery": "AGM95"
+        }
+      ]
+    },
+    {
+      "text": "제네시스 G70 2024년식",
+      "messages": [
+        "어떤 연료를 사용하는 차량인가요?"
+      ],
+      "choices": [
+        {
+          "label": "가솔린",
+          "value": "가솔린"
+        },
+        {
+          "label": "디젤",
+          "value": "디젤"
+        }
+      ],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/genesis.json",
+          "index": 2,
+          "defaultBattery": "AGM80"
+        },
+        {
+          "source": "data/genesis.json",
+          "index": 3,
+          "defaultBattery": "AGM95"
+        },
+        {
+          "source": "data/genesis.json",
+          "index": 4,
+          "defaultBattery": "AGM80"
+        }
+      ]
+    },
+    {
+      "text": "현대 아반떼 2023년식",
+      "messages": [
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2023~현재년형 · 더 뉴 아반떼 (CN7) / 2020~2023년형 · 아반떼 (CN7) 중 어떤 차량인가요?"
+      ],
+      "choices": [
+        {
+          "label": "2023~현재년형 · 더 뉴 아반떼 (CN7)",
+          "value": "더 뉴 아반떼 (CN7)"
+        },
+        {
+          "label": "2020~2023년형 · 아반떼 (CN7)",
+          "value": "아반떼 (CN7)"
+        }
+      ],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/hyundai.json",
+          "index": 21,
+          "defaultBattery": "AGM60"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 22,
+          "defaultBattery": "AGM60"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 23,
+          "defaultBattery": "DIN60HL"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 24,
+          "defaultBattery": "AGM60"
+        }
+      ]
+    },
+    {
+      "text": "현대 싼타페 2023년식",
+      "messages": [
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2023~현재년형 · 싼타페 (MX5) / 2023~현재년형 · 싼타페 하이브리드 (MX5) / 2020~2023년형 · 더 뉴 싼타페 TM / 2020~2023년형 · 더 뉴 싼타페 하이브리드 TM 중 어떤 차량인가요?"
+      ],
+      "choices": [
+        {
+          "label": "2023~현재년형 · 싼타페 (MX5)",
+          "value": "싼타페 (MX5)"
+        },
+        {
+          "label": "2023~현재년형 · 싼타페 하이브리드 (MX5)",
+          "value": "싼타페 하이브리드 (MX5)"
+        },
+        {
+          "label": "2020~2023년형 · 더 뉴 싼타페 TM",
+          "value": "더 뉴 싼타페 TM"
+        },
+        {
+          "label": "2020~2023년형 · 더 뉴 싼타페 하이브리드 TM",
+          "value": "더 뉴 싼타페 하이브리드 TM"
+        }
+      ],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/hyundai.json",
+          "index": 37,
+          "defaultBattery": "AGM70"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 38,
+          "defaultBattery": "AGM60"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 39,
+          "defaultBattery": "AGM80"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 40,
+          "defaultBattery": "AG60"
+        },
+        {
+          "source": "data/hyundai.json",
+          "index": 41,
+          "defaultBattery": "AGM80"
+        }
+      ]
+    },
+    {
+      "text": "기아 카니발 2020년식",
+      "messages": [
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2020~2023년형 · 카니발 KA4 / 2018~2020년형 · 더 뉴 카니발 중 어떤 차량인가요?"
+      ],
+      "choices": [
+        {
+          "label": "2020~2023년형 · 카니발 KA4",
+          "value": "카니발 KA4"
+        },
+        {
+          "label": "2018~2020년형 · 더 뉴 카니발",
+          "value": "더 뉴 카니발"
+        }
+      ],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/kia.json",
+          "index": 3,
+          "defaultBattery": "AGM80"
+        },
+        {
+          "source": "data/kia.json",
+          "index": 4,
+          "defaultBattery": "AGM80"
+        },
+        {
+          "source": "data/kia.json",
+          "index": 5,
+          "defaultBattery": "AGM80"
+        },
+        {
+          "source": "data/kia.json",
+          "index": 6,
+          "defaultBattery": "DF90L"
+        },
+        {
+          "source": "data/kia.json",
+          "index": 7,
+          "defaultBattery": "DF90L"
+        }
+      ]
+    },
+    {
+      "text": "르노 QM6 2019년식",
+      "messages": [
+        "어떤 연료를 사용하는 차량인가요?"
+      ],
+      "choices": [
+        {
+          "label": "LPG",
+          "value": "LPG"
+        },
+        {
+          "label": "가솔린",
+          "value": "가솔린"
+        },
+        {
+          "label": "디젤",
+          "value": "디젤"
+        }
+      ],
+      "battery": null,
+      "candidates": [
+        {
+          "source": "data/renault.json",
+          "index": 0,
+          "defaultBattery": "DIN74L"
+        },
+        {
+          "source": "data/renault.json",
+          "index": 1,
+          "defaultBattery": "DIN60HL"
+        },
+        {
+          "source": "data/renault.json",
+          "index": 2,
+          "defaultBattery": "AGM70"
+        },
+        {
+          "source": "data/renault.json",
+          "index": 3,
+          "defaultBattery": "DIN60HL"
+        },
+        {
+          "source": "data/renault.json",
+          "index": 4,
+          "defaultBattery": "AGM70"
+        }
+      ]
+    }
+  ]
+}

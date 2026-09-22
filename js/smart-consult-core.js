@@ -206,8 +206,25 @@ function uniqueValues(records, field) {
   return [...new Set(records.map((record) => record[field]).filter(Boolean))];
 }
 
-function batterySignature(record) {
-  return `${record.defaultBattery || ""}|${record.upgradeBattery || ""}`;
+export const usableBattery = value => /^(AGM\d+(?:R)?|DIN\d+(?:HL|L|R)?|DF\d+(?:AL|L|R)|65-900)$/.test(value || "");
+
+// A single source row may itself contain alternatives. Never present those as certainty.
+export function batteryCertainty(records = []) {
+  const values = [...new Set(records.map(row => row.defaultBattery || ""))];
+  return {safe: records.length > 0 && values.length === 1 && usableBattery(values[0]), values};
+}
+
+export function nextBatteryDiscriminator(records, dimensions) {
+  const parent = new Set(records.map(r=>r.defaultBattery)).size;
+  const candidates = dimensions.map((dimension, priority) => {
+    const values = [...new Set(records.map(dimension.value))];
+    if (values.length < 2 || values.some(v=>!v)) return null;
+    const sizes = values.map(value=>new Set(records.filter(r=>dimension.value(r)===value).map(r=>r.defaultBattery)).size);
+    if (!sizes.some(size=>size<parent)) return null;
+    return {...dimension,values,priority,worst:Math.max(...sizes),average:sizes.reduce((a,b)=>a+b,0)/sizes.length};
+  }).filter(Boolean);
+  candidates.sort((a,b)=>a.worst-b.worst || a.average-b.average || a.priority-b.priority);
+  return candidates[0] || null;
 }
 
 function filterForState(records, state) {
@@ -247,9 +264,12 @@ export function resolveConsultation(records = [], state = {}) {
   const filtered = filterForState(records, state);
   if (!filtered.length) return { type: "no-match", records: [] };
 
-  const fullSignatures = [...new Set(filtered.map(batterySignature))];
-  if (fullSignatures.length === 1) {
-    return { type: "result", records: filtered, result: summarizeResult(filtered) };
+  const certainty = batteryCertainty(filtered);
+  if (certainty.safe) {
+    const result = summarizeResult(filtered);
+    // An upgrade must also agree, including rows explicitly carrying no upgrade.
+    if (new Set(filtered.map(r=>r.upgradeBattery || "")).size !== 1 || !usableBattery(result.upgradeBattery)) result.upgradeBattery = "";
+    return { type: "result", records: filtered, result };
   }
 
   const dimensions = [
@@ -258,26 +278,10 @@ export function resolveConsultation(records = [], state = {}) {
     { field: "fuel", prompt: "차량 연료를 선택해 주세요." }
   ];
 
-  for (const dimension of dimensions) {
-    if (state[dimension.field === "year" ? "yearRange" : dimension.field]) continue;
-    const choices = choicesFor(filtered, dimension.field);
-    if (choices.length > 1) {
-      return { type: "question", field: dimension.field, prompt: dimension.prompt, choices, records: filtered };
-    }
-  }
-
-  const fallbackChoices = filtered.map((record, index) => ({
-    value: String(index),
-    label: [record.detailModel, record.year, record.fuel].filter(Boolean).join(" · "),
-    record
-  }));
-  return {
-    type: "question",
-    field: "record",
-    prompt: "아래 실제 DB 조건 중 차량과 일치하는 항목을 선택해 주세요.",
-    choices: fallbackChoices,
-    records: filtered
-  };
+  const dimension=nextBatteryDiscriminator(filtered,dimensions.filter(d=>!state[d.field==='year'?'yearRange':d.field] && !(d.field==='year'&&state.year)).map(d=>({...d,value:r=>r[d.field]})));
+  if (dimension) return {type:"question",field:dimension.field,prompt:dimension.prompt,choices:choicesFor(filtered,dimension.field),records:filtered};
+  // No row picker: identical conditions with contradictory facts cannot be resolved by order.
+  return {type:"manual-confirmation",records:filtered};
 }
 
 export function applyDetectedFilters(match, searchResult) {

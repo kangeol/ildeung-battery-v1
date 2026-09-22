@@ -40,7 +40,7 @@ eq(flow(["영등포구 가능?"]).state.lastIntent,"SERVICE_AREA_AVAILABILITY");
 const mixed=flow(["BMW 520d 2019년식","영등포구 지금 와?"]);
 eq(mixed.state.location.fullLabel,"서울 영등포구");ok(mixed.outputs[1].messages.join(" ").includes("출장 교체 가능"));
 for(const input of ["몰라요","잘 모르겠어요","모르겠는데","기억 안 나요","잘 몰라","어디서 봐요?","그건 모르겠어요"]) {
-  const f=flow(["BMW 520d",input]);ok(f.outputs.at(-1).messages.includes(copy.recoveryYear));eq(f.state.previousQuestion.field,"year");eq(f.outputs.at(-1).actions,["phone"]);
+  const f=flow(["BMW 520d",input]);ok(f.outputs.at(-1).messages.includes(/연식|몇\s*년/.test(input)?copy.recoveryYear:copy.recoveryModel));eq(f.state.previousQuestion.field,"detailModel");eq(f.outputs.at(-1).actions,["phone"]);
 }
 const fuel=flow(["벤츠 e300","2020년식","잘 모르겠어요","가솔린"]);eq(fuel.state.confirmedBattery,"AGM80");ok(fuel.outputs[2].messages.includes(copy.recoveryFuel));
 for(const text of ["연식 어디서 봐?","차량명도 모르겠는데","차량명 어디서 확인해?","연료 모르겠어"]) ok(flow([text]).outputs[0].messages.join(" ").includes("차량등록증"));
@@ -48,7 +48,7 @@ const session=flow(["BMW 520d","2019년식","인천"]);
 const encoded=encodeSession(session.state,session.messages,null,100000);
 const restored=decodeSession(encoded,100001);eq(restored.state,session.state);eq(restored.messages,session.messages);
 eq(flow(["가격은?"],restored.state).outputs[0].actions,["phone","stores"]);
-for(const raw of ["{", "null", "{}",encoded.replace('"version":1','"version":0'),encoded.replace('AGM95','FAKE')]) eq(decodeSession(raw,100001),null);
+for(const raw of ["{", "null", "{}",encoded.replace('"version":2','"version":1'),encoded.replace('AGM95','FAKE')]) eq(decodeSession(raw,100001),null);
 eq(decodeSession(encoded,100000+13*60*60*1000),null);
 eq(decodeSession(encoded,99999),null);
 let removed;clearSession({removeItem:key=>removed=key});eq(removed,SESSION_KEY);

@@ -1,9 +1,9 @@
-import { AGM_STORE_URL, DIN_STORE_URL, PHONE_HREF, batteryStoreType } from "./smart-consult-core.js";
+import { AGM_STORE_URL, DIN_STORE_URL, PHONE_HREF, batteryStoreType } from "./smart-consult-core.js?v=certainty-v1";
 import { copy, variant } from "./conversation-copy.js?v=ai-mobile-v1";
-import { conversationTurn, createConversationState, vehicleLabel } from "./smart-consult-conversation.js";
-import { findEntry, entryState } from "./smart-consult-entry.js";
+import { conversationTurn, createConversationState, vehicleLabel } from "./smart-consult-conversation.js?v=certainty-v1";
+import { findEntry, entryState } from "./smart-consult-entry.js?v=certainty-v1";
 import { LAUNCHER_KEY, decodeLauncherContext, hasEntryConflict } from "./smart-consult-launcher-context.js";
-import { SESSION_KEY, encodeSession, decodeSession, clearSession, safeUserMessage, summaryFields } from "./smart-consult-session.js";
+import { SESSION_KEY, encodeSession, decodeSession, clearSession, safeUserMessage, summaryFields } from "./smart-consult-session.js?v=certainty-v1";
 
 const chatLog = document.querySelector("#chatLog");
 const chatForm = document.querySelector("#chatForm");
@@ -78,7 +78,7 @@ function addChips(row, choices) {
 
 async function loadData() {
   if (!dataPromise) {
-    const read = async url => { const response = await fetch(url); if (!response.ok) throw new Error("load-failed"); return response.json(); };
+    const read = async url => { const response = await fetch(url,{cache:"no-store"}); if (!response.ok) throw new Error("load-failed"); return response.json(); };
     dataPromise = Promise.all([read("/data/manufacturers.json"), read("/seo-data/smart-consult-location-index.json")])
       .then(async ([manufacturers, areas]) => ({
         records: (await Promise.all(manufacturers.map(async manufacturer => (await read(`/data/${manufacturer.file}`)).map(row => ({ ...row, manufacturerId: manufacturer.id, manufacturerName: manufacturer.name }))))).flat(),

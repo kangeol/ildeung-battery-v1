@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import {execFileSync} from "node:child_process";
 import {launcherMarkup} from "./lib/smart-consult-launcher.js";
+import {gn7FactualDelta} from './lib/gn7-factual-regression.js';
 import {LAUNCHER_KEY,ENTRY_MAX_AGE,vehicleIdFromCanonical,encodeLauncherContext,decodeLauncherContext,hasEntryConflict} from "../js/smart-consult-launcher-context.js";
 import {entryState} from "../js/smart-consult-entry.js";
 import {createConversationState} from "../js/smart-consult-conversation.js";
@@ -25,7 +26,7 @@ for(const p of files) {
     const oldLine=/^              <a class="btn secondary smart-consult-link" href="\/smart-consult\/\?vehicleId=[^"]+">이 차량 스마트 상담하기<\/a>\n/m;
     if(oldLine.test(before)) vehiclePages++;
     const expected = p === 'index.html' ? before.replaceAll('스마트 배터리 상담','AI 배터리 상담') : before;
-    assert.equal(html.replace(launcherMarkup,""),expected.replace(oldLine,""),`${p}: full HTML SEO/body/blog freeze`);
+    assert.equal(html.replace(launcherMarkup,""),gn7FactualDelta(expected.replace(oldLine,""),p),`${p}: full HTML SEO/body/blog freeze`);
     assert.equal(/href="\/smart-consult\/\?/.test(html),false,p);
   } else {
     excluded++;
