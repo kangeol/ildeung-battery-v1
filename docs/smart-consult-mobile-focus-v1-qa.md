@@ -50,3 +50,7 @@ Actual desktop Chrome browser with mobile viewport emulation, NOT physical Andro
 ## Release governance
 
 Separate forward commit; no amend/history rewrite. Fetch/audit remote before push; only authorized automatic blog updates may merge. Normal push only after clean tree and all gates pass. Production verification reported in task response after deployment.
+
+## Returning-browser cache correction
+
+Initial f328cb53 Pages deployment succeeded and 65 production resources matched local content. A previously opened browser nevertheless mixed new HTML with cached old CSS/copy; disabling cache confirmed the cause. Page-local CSS/main/viewport imports and the UI copy import now use `?v=ai-mobile-v1` asset versions. These are asset URLs, not consultation/vehicle URLs, and do not enter sitemap. Added cache-contract tests; separate forward follow-up commit, no history rewrite or vehicle/floating-source edits.

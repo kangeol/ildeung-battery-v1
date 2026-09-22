@@ -1,5 +1,5 @@
 import { AGM_STORE_URL, DIN_STORE_URL, PHONE_HREF, batteryStoreType } from "./smart-consult-core.js";
-import { copy, variant } from "./conversation-copy.js";
+import { copy, variant } from "./conversation-copy.js?v=ai-mobile-v1";
 import { conversationTurn, createConversationState, vehicleLabel } from "./smart-consult-conversation.js";
 import { findEntry, entryState } from "./smart-consult-entry.js";
 import { LAUNCHER_KEY, decodeLauncherContext, hasEntryConflict } from "./smart-consult-launcher-context.js";
