@@ -430,6 +430,11 @@ h3 {
   line-height: 1.62;
 }
 
+.battery-search-actions {
+  display: grid;
+  gap: 10px;
+}
+
 .battery-search-button {
   display: inline-flex;
   align-items: center;
@@ -446,6 +451,18 @@ h3 {
   text-align: center;
   box-shadow: 0 14px 28px rgba(37, 99, 235, 0.22);
   transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+}
+
+.battery-search-button.finder-button {
+  border: 1px solid #BFDBFE;
+  background: #FFFFFF;
+  color: var(--blue);
+  box-shadow: none;
+}
+
+.smart-consult-icon {
+  font-size: 19px;
+  line-height: 1;
 }
 
 .battery-search-icon {
@@ -1000,6 +1017,11 @@ h3 {
     transform: translateY(-1px);
   }
 
+  .battery-search-button.finder-button:hover {
+    background: var(--blue-soft);
+    box-shadow: none;
+  }
+
   .cta-seo-link:hover {
     color: #1d4ed8;
     text-decoration: underline;
@@ -1059,6 +1081,7 @@ h3 {
     padding: 28px 30px;
   }
 
+  .battery-search-actions,
   .battery-search-button {
     min-width: 220px;
   }

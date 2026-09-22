@@ -135,6 +135,7 @@ function collectHtmlFiles() {
   return [
     "company/index.html",
     "index.html",
+    "smart-consult/index.html",
     "search.html",
     "service-area.html",
     "battery-replacement.html",

@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-08-31T05:20:28.365Z",
+  "source": "seo-data/service-areas.json",
+  "areas": {
+    "seoul": {
+      "id": "seoul",
+      "name": "서울",
+      "fullName": "서울특별시",
+      "slug": "seoul"
+    },
+    "gyeonggi": {
+      "id": "gyeonggi",
+      "name": "경기",
+      "fullName": "경기도",
+      "slug": "gyeonggi"
+    },
+    "incheon": {
+      "id": "incheon",
+      "name": "인천",
+      "fullName": "인천광역시",
+      "slug": "incheon"
+    }
+  }
+}

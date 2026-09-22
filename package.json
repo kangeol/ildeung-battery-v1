@@ -6,6 +6,7 @@
     "generate:vehicle-thumbnails": "node tools/generate-vehicle-thumbnails.js",
     "generate:area-thumbnails": "node tools/generate-area-thumbnails.js",
     "generate:area-seo": "node tools/generate-area-seo-pages.js",
+    "generate:smart-consult-areas": "node tools/generate-smart-consult-area-summary.js",
     "generate:battery-thumbnails": "node tools/generate-battery-topic-thumbnails.js",
     "generate:battery-seo": "node tools/generate-battery-seo-pages.js",
     "generate:work-cases": "node tools/generate-work-case-pages.js",
@@ -18,12 +19,13 @@
     "audit:sitewide-service": "node tools/audit-sitewide-service.js",
     "audit:sitemap-stability": "node tools/audit-sitemap-stability.js",
     "audit:work-cases": "node tools/audit-work-cases.js",
+    "test:smart-consult": "node tools/test-smart-consult.js",
     "build:blog-cases": "npm run generate:vehicle-seo && npm run generate:area-seo && npm run generate:battery-seo && npm run generate:work-cases && npm run generate:sitemap",
     "audit:blog-sync-regression": "node tools/audit-blog-sync-regression.js",
     "audit:blog-sync-diff": "node tools/audit-blog-sync-diff.js",
     "indexnow:dry-run": "node tools/submit-indexnow.js --dry-run",
     "indexnow:submit": "node tools/submit-indexnow.js",
-    "build:seo": "npm run convert && npm run generate:vehicle-seo && npm run generate:vehicle-thumbnails && npm run generate:area-thumbnails && npm run generate:area-seo && npm run generate:battery-thumbnails && npm run generate:battery-seo && npm run generate:work-cases && npm run generate:sitemap"
+    "build:seo": "npm run convert && npm run generate:vehicle-seo && npm run generate:vehicle-thumbnails && npm run generate:area-thumbnails && npm run generate:area-seo && npm run generate:smart-consult-areas && npm run generate:battery-thumbnails && npm run generate:battery-seo && npm run generate:work-cases && npm run generate:sitemap"
   },
   "devDependencies": {
     "sharp": "^0.35.4"

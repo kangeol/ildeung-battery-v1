@@ -69,6 +69,9 @@ assert.equal(reconcileSitemap(before.toString("utf8"), desired), before.toString
 const root = path.dirname(sitemap);
 const tracked = execFileSync("git", ["ls-files", "-z"], { cwd: root, encoding: "utf8" }).split("\0").filter(Boolean);
 const hash = (file) => createHash("sha256").update(fs.readFileSync(file)).digest("hex");
+const contentHash = (file) => createHash("sha256")
+  .update(fs.readFileSync(file, "utf8").replace(/\r\n/g, "\n"))
+  .digest("hex");
 const liveHashes = new Map(tracked.map((file) => [file, hash(path.join(root, file))]));
 const tempRoot = fs.realpathSync(os.tmpdir());
 const isolated = fs.mkdtempSync(path.join(tempRoot, "ildeung-sitemap-audit-"));
@@ -87,9 +90,11 @@ try {
     assert.deepEqual(fs.readFileSync(path.join(isolated, "sitemap.xml")), before, `Sitemap changed: ${script}`);
   };
   const vehicle = tracked.filter((file) => file.startsWith("car-battery/") && file.endsWith(".html"));
-  const vehicleHashes = new Map(vehicle.map((file) => [file, hash(path.join(isolated, file))]));
+  // Git for Windows can materialize CRLF while generators intentionally write LF.
+  // Compare rendered content here; raw sitemap and live-checkout bytes remain strict.
+  const vehicleHashes = new Map(vehicle.map((file) => [file, contentHash(path.join(isolated, file))]));
   run("generate:vehicle-seo");
-  for (const [file, value] of vehicleHashes) assert.equal(hash(path.join(isolated, file)), value, `Vehicle bytes changed: ${file}`);
+  for (const [file, value] of vehicleHashes) assert.equal(contentHash(path.join(isolated, file)), value, `Vehicle content changed: ${file}`);
   run("generate:sitemap");
   run("generate:sitemap");
   const sequence = pkg.scripts["build:blog-cases"].split(/\s*&&\s*/);

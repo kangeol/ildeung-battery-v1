@@ -11,6 +11,7 @@ const SITE_ORIGIN = "https://battery1.co.kr";
 const STATIC_PAGES = [
   { file: "company/index.html", urlPath: "/company/", priority: "0.85" },
   { file: "index.html", urlPath: "/", priority: "1.0" },
+  { file: "smart-consult/index.html", urlPath: "/smart-consult/", priority: "0.9" },
   { file: "search.html", urlPath: "/search.html", priority: "0.9" },
   { file: "service-area.html", urlPath: "/service-area.html", priority: "0.8" },
   { file: "battery-replacement.html", urlPath: "/battery-replacement.html", priority: "0.8" }
