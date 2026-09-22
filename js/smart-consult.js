@@ -35,6 +35,7 @@ function createElement(tagName, className = "", text = "") {
 }
 
 function scrollToLatest() {
+  chatLog.scrollTop = chatLog.scrollHeight;
   window.requestAnimationFrame(() => {
     chatLog.scrollTop = chatLog.scrollHeight;
   });
@@ -321,8 +322,8 @@ function selectPendingFromText(text) {
   return true;
 }
 
-async function handleMessage(text) {
-  addUserMessage(text);
+async function handleMessage(text, showUserMessage = true) {
+  if (showUserMessage) addUserMessage(text);
 
   if (selectPendingFromText(text)) return;
 
@@ -368,7 +369,6 @@ async function handleMessage(text) {
     addMessage(`차량 DB를 불러오는 중 문제가 생겼습니다. 잠시 후 다시 시도하거나 ${PHONE_LABEL}로 문의해 주세요.`);
   } finally {
     setBusy(false);
-    chatInput.focus();
   }
 }
 
@@ -383,7 +383,7 @@ function resetChat(focusInput = false) {
     { label: "벤츠 E300", value: "벤츠 E300" },
     { label: "카니발", value: "카니발" },
     { label: "그랜저 IG", value: "그랜저 IG" }
-  ], (choice) => handleMessage(choice.value));
+  ], (choice) => handleMessage(choice.value, false));
   if (focusInput) chatInput.focus();
 }
 

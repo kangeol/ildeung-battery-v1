@@ -135,19 +135,19 @@ const homepage = read("index.html");
 const legacyFinder = read("search.html");
 const sitemap = read("sitemap.xml");
 
-check(page.includes("<h1 id=\"pageTitle\">내 차 배터리, 채팅으로 간편하게 확인하세요</h1>"), "page H1 missing");
-check(page.includes("차량명을 입력하면 일등밧데리 차량 DB를 기준으로 적용 가능한 배터리 정보를 단계별로 안내합니다."), "required page intro missing");
+check(page.includes("<h1 id=\"chatTitle\">스마트 배터리 상담</h1>"), "chat page H1 missing");
+equal(/consult-hero|static-guide|faq-section/.test(page), false, "chat page must not include removed intro/guide/FAQ sections");
+check(page.includes("<footer class=\"site-footer\""), "site footer must remain");
 check(page.includes("/js/smart-consult.js"), "chat module missing");
 check(browserScript.includes("textContent"), "safe text rendering missing");
 equal(/innerHTML|insertAdjacentHTML|document\.write/.test(browserScript), false, "unsafe HTML rendering API found");
 check(browserScript.includes('link.target = "_blank"') && browserScript.includes('link.rel = "noopener noreferrer"'), "external link protection missing");
-check(page.includes(`href="${DIN_STORE_URL}" target="_blank" rel="noopener noreferrer"`), "static DIN link or security attributes missing");
-check(page.includes(`href="${AGM_STORE_URL}" target="_blank" rel="noopener noreferrer"`), "static AGM link or security attributes missing");
 check(browserScript.includes("정확한 규격 확인 후 선택해 주세요."), "unknown battery type warning missing");
 check(browserScript.includes("일반 · DIN 배터리 가격 보기") && browserScript.includes("AGM 배터리 가격 보기"), "both result purchase CTAs must be present");
 equal(/localStorage|sessionStorage|indexedDB/.test(browserScript + coreScript), false, "persistent browser storage must not be used");
 check(style.includes("min-height: 44px"), "minimum touch target rule missing");
 check(style.includes("font-size: 16px"), "mobile input font size rule missing");
+check(style.includes("height: calc(100svh - 64px)"), "mobile chat must fill the screen below the header");
 check(style.includes("prefers-reduced-motion"), "reduced-motion support missing");
 
 check(homepage.includes('href="/smart-consult/"'), "homepage smart consultation CTA missing");
