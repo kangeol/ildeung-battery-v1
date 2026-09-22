@@ -23,6 +23,7 @@
     "test:smart-consult-conversation": "node tools/test-smart-consult-conversation.js",
     "test:smart-consult-nlu-v4": "node tools/test-smart-consult-nlu-v4.js",
     "test:smart-consult-v5": "node tools/test-smart-consult-v5.js",
+    "test:smart-consult-v7": "node tools/test-smart-consult-v7.js",
     "build:blog-cases": "npm run generate:vehicle-seo && npm run generate:area-seo && npm run generate:battery-seo && npm run generate:work-cases && npm run generate:sitemap",
     "audit:blog-sync-regression": "node tools/audit-blog-sync-regression.js",
     "audit:blog-sync-diff": "node tools/audit-blog-sync-diff.js",

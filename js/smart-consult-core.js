@@ -21,7 +21,7 @@ export const MANUFACTURER_ALIASES = {
   volvo: ["볼보", "volvo"]
 };
 
-const FAMILY_ALIASES = [
+export const FAMILY_ALIASES = [
   { manufacturerId: "bmw", vehicle: "5시리즈", aliases: ["520d", "520i", "523i", "525d", "528i", "530d", "530i", "535d", "5series"] },
   { manufacturerId: "bmw", vehicle: "3시리즈", aliases: ["320d", "320i", "330e", "330i", "3series"] },
   { manufacturerId: "benz", vehicle: "E-클래스", aliases: ["e200", "e220", "e220d", "e250", "e300", "e350", "e400", "eclass"] },

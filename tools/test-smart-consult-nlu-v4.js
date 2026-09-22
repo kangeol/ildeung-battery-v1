@@ -44,7 +44,9 @@ for(const confirmation of ["응","맞아","네","ㅇㅇ"]){const result=flow(["B
 const seriesCorrection=flow(["BMW5","아니 4","응"]);eq(seriesCorrection.state.manufacturer,"bmw");eq(seriesCorrection.state.vehicleFamily,"4시리즈");
 const exact=flow(["BMW520d"]);eq(exact.state.model,"520d");eq(exact.state.pendingVehicleConfirmation,null);
 eq(flow(["BMW5","5시리즈","응"]).state.vehicleFamily,"5시리즈");
-for(const broad of ["5","4","e","5시리즈","BMW52"]){const result=flow([broad]);eq(result.state.selectedVehicleKey,"",broad);eq(result.state.pendingVehicleConfirmation,null,broad);}
+// V7 intentionally accepts a complete canonical family; bare class tokens stay unsafe.
+eq(flow(["5시리즈"]).state.vehicleFamily,"5시리즈");
+for(const broad of ["5","4","e","BMW52"]){const result=flow([broad]);eq(result.state.selectedVehicleKey,"",broad);eq(result.state.pendingVehicleConfirmation,null,broad);}
 
 for(const [alias,target] of Object.entries(SAFE_ALIAS_MAP)){
  const result=flow([alias]);eq(result.state.vehicleFamily,target,alias);eq(result.state.pendingVehicleConfirmation,null);

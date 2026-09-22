@@ -41,6 +41,7 @@ export const copy = {
   service: name => `네, ${name}에서 출장 교체 가능합니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.`,
   serviceUnknown: "현재 출장 가능 지역으로 확인되지 않아요. 정확한 가능 여부는 1644-9141로 문의해 주세요.",
   serviceAsk: "어느 지역에 계신가요? 시·구·동 이름을 알려주세요.",
+  serviceShort: name => `${name} 말씀하시는 거죠?\n출장 교체 가능 지역입니다. 정확한 방문 시간은 1644-9141로 확인해드릴게요.`,
   locationChoices: labels => `같은 이름의 지역이 여러 곳이에요.\n${labels.join(" / ")} 중 어디인가요?`,
   vehicleConfirm: name => `${name} 말씀하시는 걸까요?`,
   error: "지금 정보를 불러오지 못했어요. 잠시 후 다시 입력하시거나 1644-9141로 문의해 주세요.",

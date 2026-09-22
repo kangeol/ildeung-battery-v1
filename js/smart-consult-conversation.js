@@ -82,7 +82,10 @@ export function extractEntities(text, records, state = createConversationState()
   const normalized = vehicle.rejected ? "" : normalizeText(vehicle.text);
   // Search recognises family aliases; an exact detail phrase inside a sentence is retained too.
   let matches = vehicle.matches;
-  const detailMatches = unique(records.map(row => row.detailModel)).filter(detail => normalized.includes(normalizeText(detail))).sort((a,b) => normalizeText(b).length - normalizeText(a).length);
+  const detailRows = matches.length ? matches.flatMap(group=>group.records) : records.filter(row=>`${row.manufacturerId}|${row.vehicle}`===state.selectedVehicleKey);
+  // A detail sharing the family name is not evidence for that older generation.
+  // For example "트랙스 2018" must consider every Trax row, not only 2013~2016.
+  const detailMatches = unique(detailRows.filter(row=>normalizeText(row.detailModel)!==normalizeText(row.vehicle)).map(row => row.detailModel)).filter(detail => normalized.includes(normalizeText(detail))).sort((a,b) => normalizeText(b).length - normalizeText(a).length);
   let detailModel = detailMatches[0] || "";
   if (!detailModel && /그랜저ig/.test(normalized)) detailModel = "그랜저 IG";
   if (detailModel) matches = buildVehicleGroups(records.filter(row => row.detailModel === detailModel)).map(group => ({ ...group, records: records.filter(row => `${row.manufacturerId}|${row.vehicle}` === group.key), matchedDetail: detailModel }));
@@ -97,7 +100,7 @@ export function extractEntities(text, records, state = createConversationState()
   const fuel = fuelType(positiveText);
   const exactFuels = unique(rows.map(row => row.fuel)).filter(value => normalizeText(positiveText).includes(normalizeText(value)));
   const exactFuel = exactFuels.sort((a,b) => b.length - a.length)[0] || "";
-  const trim = text.match(/(?:^|[^a-z0-9])((?:[235]\d{2}[di]|[ecs]\s?\d{3}d?))(?![a-z0-9])/i)?.[1]?.replace(/\s/g, "") || normalized.match(/(?:bmw|벤츠)([235]\d{2}[di]|[ecs]\d{3}d?)/)?.[1] || "";
+  const trim = vehicle.shorthand ? "" : text.match(/(?:^|[^a-z0-9])((?:[235]\d{2}[di]|[ecs]\s?\d{3}d?))(?![a-z0-9])/i)?.[1]?.replace(/\s/g, "") || text.normalize("NFKC").match(/(?:bmw|벤츠)\s*([235]\d{2}[di]|[ecs]\d{3}d?)(?![a-z0-9])/i)?.[1] || "";
   return { matches, shorthand:vehicle.shorthand, detailModels:vehicle.detailModels, detailModel, generation:vehicle.generation || generation, fuel, exactFuel, trim: trim.toUpperCase().replace(/D$/, "d").replace(/I$/, "i"), ...yearFromText(text, rows.length ? rows : records, nowYear), ...resolveLocation(text, localities, state.location || state.region, state.pendingLocationDisambiguation) };
 }
 
@@ -242,7 +245,7 @@ export function conversationTurn(previous, text, records, localities = []) {
     const explicitPlace = placeBeforeService && !["여기", "거기", "오늘", "내일", "지금", "배터리"].includes(placeBeforeService);
     const newUnknownPlace = !entities.region && (explicitPlace || /[가-힣]{2,}(?:인데|이야|에도|도\s*와)/.test(text));
     if (newUnknownPlace) { say(copy.serviceUnknown); output.actions = ["phone"]; return; }
-    if (state.region) { say(variant("area", state.turnIndex, state.region.fullLabel || state.region.name)); output.region = state.region; output.actions = ["phone"]; }
+    if (state.region) { say(entities.shortLocation ? copy.serviceShort(state.region.fullLabel) : variant("area", state.turnIndex, state.region.fullLabel || state.region.name)); output.region = state.region; output.actions = ["phone"]; }
     else if (/출장\s*(가능|돼|되)|방문\s*가능/.test(text)) say(copy.serviceAsk);
     else { say(copy.serviceUnknown); output.actions = ["phone"]; }
   };
@@ -260,7 +263,7 @@ export function conversationTurn(previous, text, records, localities = []) {
     }
   }
   if (shorthand) {
-    if(entities.region) areaAnswer();
+    if(entities.region || entities.ambiguousRegion) areaAnswer();
     say(copy.vehicleConfirm(state.pendingVehicleConfirmation.label));
     return output;
   }
