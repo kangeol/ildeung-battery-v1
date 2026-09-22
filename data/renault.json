@@ -7,7 +7,7 @@
     "detailModel": "더 뉴 QM6",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -17,7 +17,7 @@
     "detailModel": "더 뉴 QM6",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "DIN74L",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -27,7 +27,7 @@
     "detailModel": "더 뉴 QM6",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -37,7 +37,7 @@
     "detailModel": "QM6",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "DIN74L",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -47,7 +47,7 @@
     "detailModel": "QM6",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -57,7 +57,7 @@
     "detailModel": "더 뉴 SM6",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -67,7 +67,7 @@
     "detailModel": "더 뉴 SM6",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -77,7 +77,7 @@
     "detailModel": "SM6",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -87,7 +87,7 @@
     "detailModel": "SM6",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -97,7 +97,7 @@
     "detailModel": "SM6",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -107,7 +107,7 @@
     "detailModel": "XM3",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -117,7 +117,7 @@
     "detailModel": "XM3",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -127,7 +127,7 @@
     "detailModel": "SM5 노바",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "DIN74L",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -137,7 +137,7 @@
     "detailModel": "SM5 노바",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -147,7 +147,7 @@
     "detailModel": "SM5 노바",
     "defaultBattery": "AGM70",
     "upgradeBattery": "AGM80",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -157,7 +157,7 @@
     "detailModel": "뉴SM5 플래티넘",
     "defaultBattery": "DIN90L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -167,7 +167,7 @@
     "detailModel": "뉴SM5 플래티넘",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "DIN90L",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -177,7 +177,7 @@
     "detailModel": "뉴SM5 플래티넘",
     "defaultBattery": "AGM70",
     "upgradeBattery": "AGM80",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -187,7 +187,7 @@
     "detailModel": "뉴SM5(신형_)",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -197,7 +197,7 @@
     "detailModel": "뉴SM5(신형_)",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -207,7 +207,7 @@
     "detailModel": "SM5 뉴 임프레션",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -217,7 +217,7 @@
     "detailModel": "SM3 네오",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "DIN74L",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -227,7 +227,7 @@
     "detailModel": "SM3 네오",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -237,7 +237,7 @@
     "detailModel": "SM3 Z_",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -247,7 +247,7 @@
     "detailModel": "뉴SM3",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -257,7 +257,7 @@
     "detailModel": "SM3 뉴 제너레이션",
     "defaultBattery": "DF60L",
     "upgradeBattery": "DF80L",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -267,7 +267,7 @@
     "detailModel": "뉴QM3",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -277,7 +277,7 @@
     "detailModel": "QM5 네오",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -287,7 +287,7 @@
     "detailModel": "QM5 네오",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -297,7 +297,7 @@
     "detailModel": "뉴QM5",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -307,7 +307,7 @@
     "detailModel": "뉴QM5",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -317,7 +317,7 @@
     "detailModel": "QM5",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -327,7 +327,7 @@
     "detailModel": "QM5",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -337,7 +337,7 @@
     "detailModel": "SM7 노바",
     "defaultBattery": "DIN90L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -347,7 +347,7 @@
     "detailModel": "SM7 노바",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -357,7 +357,7 @@
     "detailModel": "All New SM7",
     "defaultBattery": "DIN100L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -367,7 +367,7 @@
     "detailModel": "SM7 New Art",
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -377,7 +377,7 @@
     "detailModel": "그랑 콜레오스",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -387,7 +387,7 @@
     "detailModel": "그랑 콜레오스",
     "defaultBattery": "AGM60",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -397,7 +397,7 @@
     "detailModel": "마스터",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -407,7 +407,7 @@
     "detailModel": "아르카나",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -417,7 +417,7 @@
     "detailModel": "아르카나",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -427,7 +427,7 @@
     "detailModel": "캡처",
     "defaultBattery": "AGM60",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -437,7 +437,7 @@
     "detailModel": "캡처",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -447,7 +447,7 @@
     "detailModel": "클리오",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "르노",
@@ -457,6 +457,6 @@
     "detailModel": "필랑트",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   }
 ]

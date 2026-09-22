@@ -7,7 +7,7 @@
     "detailModel": "EQ900",
     "defaultBattery": "AGM105",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -17,7 +17,7 @@
     "detailModel": "EQ900",
     "defaultBattery": "AGM105",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -27,7 +27,7 @@
     "detailModel": "더 뉴 G70",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -37,7 +37,7 @@
     "detailModel": "더 뉴 G70",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -47,7 +47,7 @@
     "detailModel": "더 뉴 G70 슈팅브레이크",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -57,7 +57,7 @@
     "detailModel": "G70",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -67,7 +67,7 @@
     "detailModel": "G70",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -77,7 +77,7 @@
     "detailModel": "G80 (RG3)",
     "defaultBattery": "AGM95R",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -87,7 +87,7 @@
     "detailModel": "G80 (RG3)",
     "defaultBattery": "AGM95R",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -97,7 +97,7 @@
     "detailModel": "G80",
     "defaultBattery": "AGM105",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -107,7 +107,7 @@
     "detailModel": "G80",
     "defaultBattery": "AGM105",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -117,7 +117,7 @@
     "detailModel": "G90 (RS4)",
     "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -127,7 +127,7 @@
     "detailModel": "G90",
     "defaultBattery": "AGM105",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -137,7 +137,7 @@
     "detailModel": "GV70",
     "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -147,7 +147,7 @@
     "detailModel": "GV70",
     "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -157,7 +157,7 @@
     "detailModel": "GV80",
     "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -167,7 +167,7 @@
     "detailModel": "GV80",
     "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "제네시스",
@@ -177,6 +177,6 @@
     "detailModel": "GV80 쿠페",
     "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   }
 ]

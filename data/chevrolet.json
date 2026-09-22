@@ -7,7 +7,7 @@
     "detailModel": "더 뉴 스파크",
     "defaultBattery": "DIN50L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -17,7 +17,7 @@
     "detailModel": "더 넥스트 스파크",
     "defaultBattery": "DIN50L",
     "upgradeBattery": "AGM60",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -27,7 +27,7 @@
     "detailModel": "스파크",
     "defaultBattery": "DIN50L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -37,7 +37,7 @@
     "detailModel": "스파크",
     "defaultBattery": "DIN50L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -47,7 +47,7 @@
     "detailModel": "스파크 EV",
     "defaultBattery": "DIN50L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -57,7 +57,7 @@
     "detailModel": "트랙스 크로스오버",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -67,7 +67,7 @@
     "detailModel": "더 뉴 트랙스",
     "defaultBattery": "DIN60L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -77,7 +77,7 @@
     "detailModel": "더 뉴 트랙스",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "AGM70",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -87,7 +87,7 @@
     "detailModel": "트랙스",
     "defaultBattery": "DIN60L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -97,7 +97,7 @@
     "detailModel": "트랙스",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "AGM70",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -107,7 +107,7 @@
     "detailModel": "더 뉴 말리부",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -117,7 +117,7 @@
     "detailModel": "더 뉴 말리부",
     "defaultBattery": "AGM70",
     "upgradeBattery": "AGM80",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -127,7 +127,7 @@
     "detailModel": "올 뉴 말리부",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -137,7 +137,7 @@
     "detailModel": "말리부",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -147,7 +147,7 @@
     "detailModel": "말리부",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -157,7 +157,7 @@
     "detailModel": "말리부",
     "defaultBattery": "DIN100L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -167,7 +167,7 @@
     "detailModel": "더 뉴 트레일블레이저",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -177,7 +177,7 @@
     "detailModel": "트레일블레이저",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -187,7 +187,7 @@
     "detailModel": "올란도",
     "defaultBattery": "DIN90L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -197,7 +197,7 @@
     "detailModel": "올란도",
     "defaultBattery": "DIN90L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -207,7 +207,7 @@
     "detailModel": "올 뉴 크루즈",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -217,7 +217,7 @@
     "detailModel": "올 뉴 크루즈",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -227,7 +227,7 @@
     "detailModel": "어메이징 뉴 크루즈",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "DIN74L",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -237,7 +237,7 @@
     "detailModel": "어메이징 뉴 크루즈",
     "defaultBattery": "DIN90L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -247,7 +247,7 @@
     "detailModel": "크루즈",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "DIN74L",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -257,7 +257,7 @@
     "detailModel": "크루즈",
     "defaultBattery": "DIN90L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -267,7 +267,7 @@
     "detailModel": "마티즈 크리에이티브",
     "defaultBattery": "DIN50L",
     "upgradeBattery": "DF60L",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -277,7 +277,7 @@
     "detailModel": "마티즈 크리에이티브",
     "defaultBattery": "DIN50L",
     "upgradeBattery": "DF60L",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -287,7 +287,7 @@
     "detailModel": "더 뉴 아베오 세단",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -297,7 +297,7 @@
     "detailModel": "아베오 세단",
     "defaultBattery": "DIN60HL",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -307,7 +307,7 @@
     "detailModel": "알페온",
     "defaultBattery": "DIN70L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -317,7 +317,7 @@
     "detailModel": "임팔라",
     "defaultBattery": "DIN74L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -327,7 +327,7 @@
     "detailModel": "임팔라",
     "defaultBattery": "AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -337,7 +337,7 @@
     "detailModel": "더 뉴 카마로",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -347,7 +347,7 @@
     "detailModel": "올 뉴 카마로",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -357,7 +357,7 @@
     "detailModel": "카마로",
     "defaultBattery": "AGM70",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -367,7 +367,7 @@
     "detailModel": "캡티바",
     "defaultBattery": "DIN100L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -377,7 +377,7 @@
     "detailModel": "캡티바",
     "defaultBattery": "DIN100L",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -387,7 +387,7 @@
     "detailModel": "올 뉴 콜로라도",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -397,7 +397,7 @@
     "detailModel": "리얼 뉴 콜로라도",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -407,7 +407,7 @@
     "detailModel": "콜로라도",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -417,7 +417,7 @@
     "detailModel": "토스카 프리미엄6",
     "defaultBattery": "DF60R",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -427,7 +427,7 @@
     "detailModel": "토스카 프리미엄6",
     "defaultBattery": "DF60R",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -437,7 +437,7 @@
     "detailModel": "토스카 프리미엄6",
     "defaultBattery": "DF80R",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -447,7 +447,7 @@
     "detailModel": "트래버스",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "쉐보레",
@@ -457,6 +457,6 @@
     "detailModel": "타호",
     "defaultBattery": "AGM95",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   }
 ]

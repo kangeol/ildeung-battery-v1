@@ -7,7 +7,7 @@
     "detailModel": "쿠퍼 C 4세대",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -17,7 +17,7 @@
     "detailModel": "쿠퍼 S 4세대",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -27,7 +27,7 @@
     "detailModel": "쿠퍼",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -37,7 +37,7 @@
     "detailModel": "쿠퍼 S",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -47,7 +47,7 @@
     "detailModel": "쿠퍼 D",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -57,7 +57,7 @@
     "detailModel": "쿠퍼 SD",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -67,7 +67,7 @@
     "detailModel": "쿠퍼 S 컨버터블 4세대",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -77,7 +77,7 @@
     "detailModel": "쿠퍼 C 컨버터블 4세대",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -87,7 +87,7 @@
     "detailModel": "쿠퍼 컨버터블",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -97,7 +97,7 @@
     "detailModel": "쿠퍼 S 컨버터블",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -107,7 +107,7 @@
     "detailModel": "쿠퍼 쿠페",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -117,7 +117,7 @@
     "detailModel": "쿠퍼 S 쿠페",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -127,7 +127,7 @@
     "detailModel": "쿠퍼 SD 쿠페",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -137,7 +137,7 @@
     "detailModel": "쿠퍼 로드스터",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -147,7 +147,7 @@
     "detailModel": "쿠퍼 S 로드스터",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -157,7 +157,7 @@
     "detailModel": "쿠퍼 클럽맨",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -167,7 +167,7 @@
     "detailModel": "쿠퍼 S 클럽맨",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -177,7 +177,7 @@
     "detailModel": "쿠퍼 D 클럽맨",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -187,7 +187,7 @@
     "detailModel": "쿠퍼 SD 클럽맨",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -197,7 +197,7 @@
     "detailModel": "쿠퍼 D 페이스맨",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -207,7 +207,7 @@
     "detailModel": "쿠퍼 D 페이스맨",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -217,7 +217,7 @@
     "detailModel": "쿠퍼 SD 페이스맨",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   },
   {
     "manufacturer": "미니",
@@ -227,6 +227,6 @@
     "detailModel": "쿠퍼 SD 페이스맨",
     "defaultBattery": "AGM70 또는 AGM80",
     "upgradeBattery": "",
-    "status": "대기"
+    "status": "완료"
   }
 ]
