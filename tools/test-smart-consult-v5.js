@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import {execFileSync} from "node:child_process";
+import {pageBaseline,assertConsultPage,assertNegativeMutations,AUTHORIZED_PAGE_BASELINE} from "./lib/smart-consult-page-regression.js";
 import {conversationTurn,createConversationState} from "../js/smart-consult-conversation.js";
 import {copy,variants,variant} from "../js/conversation-copy.js";
 import {findEntry,entryState} from "../js/smart-consult-entry.js";
@@ -67,10 +68,13 @@ for(const entry of index.vehicles) {
   const page=`car-battery/${entry.id}.html`,html=read(page);
   eq((html.match(/이 차량 스마트 상담하기/g)||[]).length,1,page);
   ok(html.includes(`/smart-consult/?vehicleId=${encodeURIComponent(entry.id)}`));
-  // These pages must differ from the audited baseline ONLY by the single CTA line.
-  const before=execFileSync("git",["show",`90eb274e:${page}`],{encoding:"utf8",maxBuffer:5e6}).replace(/\r\n/g,"\n");
-  eq(html.replace(/\r\n/g,"\n").replace(/^.*class="btn secondary smart-consult-link".*\n/gm,""),before,page);
+  // Includes the latest owner-authorized blog content; only the exact CTA line differs.
+  assertConsultPage(html,pageBaseline(page),entry.id); assertions++;
 }
+const mutationPage="car-battery/chevrolet/impala.html";
+const mutations=assertNegativeMutations(read(mutationPage),pageBaseline(mutationPage),"chevrolet/impala");
+assertions+=mutations.length*2+1;
+console.log({authorizedPageBaseline:AUTHORIZED_PAGE_BASELINE,negativeMutations:mutations,falsePositiveFixed:true,falseNegativeProtection:"PASS"});
 for(const id of ["bmw/5-series","benz/e-class","kia/carnival","hyundai/sonata"]) ok(findEntry(id,index),id);
 for(const id of ["fake/car","bmw/520d-fake","<img>","__proto__","../bmw/5-series",null]) eq(findEntry(id,index),null);
 const detail=index.vehicles.find(e=>e.id==="bmw/5-series/g30");
