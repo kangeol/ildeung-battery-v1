@@ -1,5 +1,5 @@
 import { copy, symptomLabels } from "./conversation-copy.js";
-import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=certainty-v1";
+import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=flow-v1";
 
 export const SESSION_KEY = "ildeung.smart-consult.v5";
 // Old transcripts can contain the withdrawn GN7 battery value. Do not replay them.
@@ -45,6 +45,7 @@ export function decodeSession(raw, now = Date.now()) {
     if (!s || Object.keys(s).sort().join() !== Object.keys(createConversationState()).sort().join()) return null;
     for (const [key, value] of Object.entries(createConversationState())) {
       if (typeof value === "string" && typeof s[key] !== "string") return null;
+      if (typeof value === "boolean" && typeof s[key] !== "boolean") return null;
       if (typeof value === "number" && (!Number.isSafeInteger(s[key]) || s[key] < 0)) return null;
       if (Array.isArray(value) && (!Array.isArray(s[key]) || s[key].some(item=>typeof item!=="string"))) return null;
     }

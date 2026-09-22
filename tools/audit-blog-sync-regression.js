@@ -449,9 +449,13 @@ function main() {
     }).length,
     protectedDbChanged: gitChangedFiles(["master-db", "data"]).filter(file=>{
       if(file!=="data/hyundai.json")return true;
-      // Explicit GN7 fact withdrawal; no other DB mutation is exempted.
+      // Explicit GN7 withdrawal + Owner-approved restoration, no broad DB exclusion.
       const expected=JSON.parse(gitShow(file));
-      for(const row of expected)if(row.vehicle==='그랜저'&&row.detailModel.includes('(GN7)')){row.defaultBattery='고객센터문의';if(row.fuel==='가솔린 3.3')row.fuel='가솔린 3.5';}
+      for(const row of expected)if(row.vehicle==='그랜저'&&row.detailModel.includes('(GN7)')&&row.fuel==='가솔린 3.3'){row.defaultBattery='고객센터문의';row.fuel='가솔린 3.5';}
+      for(const row of expected)if(row.vehicle==='그랜저'&&row.defaultBattery==='고객센터문의'&&(
+        row.year==='26년~현재'&&row.detailModel==='더 뉴 그랜저 (GN7)'&&row.fuel==='가솔린' ||
+        row.year==='22~26년'&&row.detailModel==='그랜저 (GN7)'&&['LPG','가솔린 2.5'].includes(row.fuel)
+      ))row.defaultBattery='AGM70';
       return JSON.stringify(readJson(file))!==JSON.stringify(expected);
     }).length,
     directAnswerPages: directAnswers.directAnswerPages,

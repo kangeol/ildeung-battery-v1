@@ -41,6 +41,9 @@ function indexFor(localities) {
 
 export function resolveLocation(text, localities, previous = null, pending = null) {
   const normalized = normalizeText(text);
+  const boundaries = new Set([0]);
+  let offset = 0;
+  for (const word of text.normalize("NFKC").split(/\s+/)) { offset += normalizeText(word).length; boundaries.add(offset); }
   const hits = [];
   for (const entry of indexFor(localities)) {
     let start = normalized.indexOf(entry.alias);
@@ -50,11 +53,12 @@ export function resolveLocation(text, localities, previous = null, pending = nul
     }
   }
   // Match the place's own name, never all descendants whose full path contains it.
+  const safeEnd = end => !normalized.slice(end) || boundaries.has(end) || /^(?:배터리|밧데리|지역|교체|에서|에서도|은|는|에|도|인데|이야|쪽|근처|출장|방문|가능|와|이요|요|으로|맞|야|지금|오늘|내일|몇시|언제|급해|긴급|\d+분)/.test(normalized.slice(end));
   let tokens = hits.filter(hit => {
     const before = normalized.slice(0,hit.start);
     const after = normalized.slice(hit.end);
     const left = !before || /(?:아니|지역은|지역|서울|경기|인천|이고|인데|년식|년식인데|년식이고)$/.test(before) || hits.some(other=>other.end===hit.start) || /\d$/.test(before);
-    const right = !after || /^(?:지역|교체|에서|에서도|은|는|에|도|인데|이야|쪽|근처|출장|방문|가능|와|이요|요|으로|맞|야|지금|오늘|내일|몇시|언제|급해|긴급|\d+분)/.test(after) || hits.some(other=>other.start===hit.end);
+    const right = safeEnd(hit.end) || hits.some(other=>other.start===hit.end && safeEnd(other.end));
     // Spaces around names may have disappeared during normalization.
     const words = text.normalize("NFKC").toLowerCase().split(/\s+/).map(normalizeText);
     return (left || words.some(word=>word.startsWith(hit.alias))) && right;

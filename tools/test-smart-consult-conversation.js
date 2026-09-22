@@ -58,7 +58,7 @@ const preYear=flow(["2019년식","bmw 520d"]); equal(preYear.state.year,2019); e
 const confirmation=flow(["벤츠 e300 2020년식","응"]); equal(confirmation.state.fuel,""); equal(confirmation.state.confirmedBattery,null,"yes without selecting fuel cannot establish diesel");
 const fuelCorrection=flow(["벤츠 e300 2020년식 디젤","아니 디젤 아니고 가솔린이야"]); equal(fuelCorrection.state.fuel,"가솔린"); equal(fuelCorrection.state.confirmedBattery,"AGM80");
 const negative=flow(["벤츠 e300 2020년식","아니요","가솔린"]); equal(negative.state.confirmedBattery,"AGM80");
-const barePrice=flow(["가격 얼마야?"]); equal(barePrice.outputs[0].messages,[copy.needVehicle]);
+const barePrice=flow(["가격 얼마야?"]); equal(barePrice.outputs[0].messages,["차량마다 배터리 규격이 달라요. 어떤 차량이세요?"]);
 const unknown=flow(["없는차량테스트","다른없는차량","벤츠 e300 20년식","가솔린","날씨는?"]);
 equal(unknown.outputs[1].messages,[copy.noMatchAgain]); equal(unknown.state.confirmedBattery,"AGM80"); equal(unknown.outputs[4].messages,[copy.unsupported]);
 const substitution=flow(["BMW 520d 2019","일반 배터리 써도돼?","코딩해야돼?"]);
