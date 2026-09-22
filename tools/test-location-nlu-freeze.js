@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+const baseline='de199b25c62cf2d6ef0faa1e0e2bb6f9af65f8c8';
+const git=(...args)=>execFileSync('git',['-c','core.safecrlf=false',...args],{encoding:'utf8',maxBuffer:20e6});
+const changed=git('diff','--name-only',baseline).trim().split(/\r?\n/).filter(Boolean);
+const runtime=new Set(['js/smart-consult-location.js','js/smart-consult-conversation.js','js/smart-consult.js','js/smart-consult-entry.js','js/smart-consult-session.js','smart-consult/index.html']);
+for(const file of changed)assert.ok(runtime.has(file)||file.startsWith('tools/test-')||file.startsWith('docs/evidence/location-nlu/'),`out of scope ${file}`);
+const html=changed.filter(p=>p.endsWith('.html'));assert.deepEqual(html,['smart-consult/index.html']);
+const before=git('show',`${baseline}:smart-consult/index.html`).replace(/\r\n/g,'\n');
+assert.equal(fs.readFileSync('smart-consult/index.html','utf8').replace(/\r\n/g,'\n'),before.replace('/js/smart-consult.js?v=product-v1','/js/smart-consult.js?v=location-v1'));
+for(const p of ['js/smart-consult.js','js/smart-consult-entry.js','js/smart-consult-session.js'])assert.equal(fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n'),git('show',`${baseline}:${p}`).replace(/\r\n/g,'\n').replaceAll('product-v1','location-v1'));
+const sitemapCount=(fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length;assert.equal(sitemapCount,1133);
+const evidence={status:'PASS',baseline,changed,htmlChanged:html.length,htmlCacheOnly:html,generatedVehicleAreaHtmlChanged:0,seoGeoContentDiffs:0,titleH1CanonicalSchemaDiffs:0,canonicalVehicleAreaPricePolicyDiffs:0,blogContentDiffs:0,sitemapUrls:sitemapCount};
+fs.mkdirSync('docs/evidence/location-nlu',{recursive:true});fs.writeFileSync('docs/evidence/location-nlu/freeze.json',JSON.stringify(evidence,null,2)+'\n');console.log(evidence);

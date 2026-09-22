@@ -1,6 +1,6 @@
 import { MANUFACTURER_ALIASES, batteryStoreType, buildVehicleGroups, normalizeText, parseYearRange, resolveConsultation, yearMatches, batteryCertainty, nextBatteryDiscriminator } from "./smart-consult-core.js?v=certainty-v1";
 import { copy, variant, symptomLabels } from "./conversation-copy.js";
-import { resolveLocation } from "./smart-consult-location.js?v=flow-v1";
+import { resolveLocation } from "./smart-consult-location.js?v=location-v1";
 import { resolveVehicleText } from "./vehicle-aliases.js";
 import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand } from "./smart-consult-prices.js?v=product-v1";
 import { servicePolicyIntent } from "./smart-consult-policy.js?v=brand-v1";
@@ -82,7 +82,7 @@ export function recognizeIntent(text, entities) {
 
 export function extractEntities(text, records, state = createConversationState(), localities = [], nowYear = new Date().getFullYear()) {
   const vehicle = resolveVehicleText(text, records, state);
-  const brandHits = Object.entries(MANUFACTURER_ALIASES).filter(([,aliases]) => aliases.some(alias => text.toLowerCase().split(/\s+/).some(word => normalizeText(word)===normalizeText(alias)) || normalizeText(text).startsWith(normalizeText(alias))));
+  const brandHits = Object.entries(MANUFACTURER_ALIASES).filter(([,aliases]) => aliases.some(alias => text.toLowerCase().split(/\s+/).some(word => normalizeText(word).replace(/(?:이고요|이구요|이고|고|인데요|인데|입니다|이에요|예요)$/,'')===normalizeText(alias)) || normalizeText(text).startsWith(normalizeText(alias))));
   const manufacturer = brandHits.length===1 ? brandHits[0][0] : "";
   if (state.selectedVehicleKey && /^(?:\s*(?:[1-9]\.\d|\d{3,4}\s*cc|가솔린|휘발유|디젤|엘피지|LPG|이요|예요|요)\s*)+$/i.test(text)) {
     vehicle.matches=[]; vehicle.shorthand=false; vehicle.detailModels=undefined; vehicle.generation="";
@@ -301,23 +301,25 @@ export function conversationTurn(previous, text, records, localities = [], price
     }
   }
   const areaAnswer = () => {
+    output.locationState=entities.ambiguousRegion ? "AMBIGUOUS_AREA" : state.region ? "SUPPORTED_AREA" : "MISSING_AREA";
     if (entities.ambiguousRegion) {
       const candidates=entities.locationCandidates;
       say(copy.locationChoices(candidates.map(item=>item.fullLabel)));
       output.chips=candidates.slice(0,4).map(item=>({label:item.fullLabel,value:item.fullName}));
       return;
     }
-    if (entities.unsupportedLocation) { say(copy.serviceUnknown); output.actions=["phone"]; return; }
+    if (entities.unsupportedLocation) { state.region=null;state.location=null;state.city="";state.district="";state.pendingLocationDisambiguation=null;output.locationState="EXPLICIT_UNSUPPORTED_AREA";say(copy.serviceUnknown); output.actions=["phone"]; return; }
     // An explicit unknown place must not be replaced with the old remembered place.
-    const placeBeforeService = text.match(/(?:^|\s)([가-힣]{2,})(?=\s+(?:출장|방문))/)?.[1];
-    const explicitPlace = placeBeforeService && !["여기", "거기", "오늘", "내일", "지금", "배터리", "근처", "쪽"].includes(placeBeforeService);
+    const placeBeforeService = (text.match(/(?:^|\s)([가-힣]{2,}?)(?=\s*(?:출장|방문|도\s*와))/)?.[1]
+      || text.match(/지역(?:은|이)?\s*([가-힣]{2,}?)(?:입니다만|입니다|이에요|예요|인데요|인데|이구요|이고요|이고|$)/)?.[1])?.replace(/(?:인데요|인데|이고요|이고|입니다|이에요|예요)$/,'');
+    const noun=placeBeforeService?.replace(/(?:으로|이요|은|는|도|로)$/,'');
+    const explicitPlace = placeBeforeService && !["여기", "거기", "오늘", "내일", "지금", "배터리", "밧데리", "근처", "쪽", "지역", "방문", "출장", "교체", "무료", "유료", "차량", "자동차", "가능", "혹시", "정말", "타이어", "장착", "서비스"].includes(noun);
     const placeResult=explicitPlace ? resolveLocation(placeBeforeService,localities) : null;
-    const explicitUnsupported=explicitPlace && !placeResult.region && !placeResult.ambiguousRegion && !records.some(row=>row.vehicle===placeBeforeService);
-    const newUnknownPlace = explicitUnsupported || (!entities.region && (explicitPlace || /[가-힣]{2,}(?:인데|이야|에도|도\s*와)/.test(text)));
-    if (newUnknownPlace) { say(copy.serviceUnknown); output.actions = ["phone"]; return; }
+    const explicitUnsupported=explicitPlace && !placeResult.region && !placeResult.ambiguousRegion && !records.some(row=>[row.vehicle,row.manufacturerName].includes(placeBeforeService)||[row.vehicle,row.manufacturerName].includes(noun)) && !brandIntent(noun,priceCatalog);
+    const newUnknownPlace = explicitUnsupported;
+    if (newUnknownPlace) { state.region=null;state.location=null;state.city="";state.district="";state.pendingLocationDisambiguation=null;output.locationState="EXPLICIT_UNSUPPORTED_AREA";say(copy.serviceUnknown); output.actions = ["phone"]; return; }
     if (state.region) { say(entities.shortLocation ? copy.serviceShort(state.region.fullLabel) : variant("area", state.turnIndex, state.region.fullLabel || state.region.name)); output.region = state.region; output.actions = ["phone"]; }
-    else if (/출장\s*(가능|돼|되)|방문\s*가능/.test(text)) say(copy.serviceAsk);
-    else { say(copy.serviceUnknown); output.actions = ["phone"]; }
+    else say("네, 출장 배터리 교체 가능합니다. 차량이 있는 지역을 알려주세요. 동이나 구 이름만 말씀해주셔도 됩니다.");
   };
   if (liveIntents.includes(intent)) {
     if (entities.region || entities.ambiguousRegion || entities.unsupportedLocation || state.region) areaAnswer();
@@ -372,7 +374,7 @@ export function conversationTurn(previous, text, records, localities = [], price
     }
     return output;
   }
-  if (intent === "SERVICE_AREA_AVAILABILITY" && !answered && !state.priceIntent) { areaAnswer(); return output; }
+  if (intent === "SERVICE_AREA_AVAILABILITY" && !answered) { areaAnswer(); return output; }
   if (/코딩/.test(text)) { say(copy.coding); output.actions = ["phone"]; return output; }
   if (entities.ambiguousYear) { state.result = null; state.confirmedBattery = null; ask("year", copy.yearAmbiguous); return output; }
   if (entities.matches.length > 1) {

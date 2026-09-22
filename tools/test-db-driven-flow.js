@@ -76,7 +76,7 @@ for(const text of ['구월동 지금 와요?','구월동 오늘 가능?','구월
 for(const text of ['BMW 5시리즈 2023','E클래스 2024','G70 2024','아반떼 2023','싼타페 2023']){const f=flow([text]);assert.equal(f.state.confirmedBattery,null);assert.ok(f.state.previousQuestion||f.state.pendingVehicleConfirmation);}
 assert.equal(PHONE_HREF,'tel:1644-9141');assert.equal(DIN_STORE_URL,'https://smartstore.naver.com/battery1/products/414050800');assert.equal(AGM_STORE_URL,'https://smartstore.naver.com/battery1/products/575288571');
 const report={inventory:auditLocations(localities).counts,areaCases:areaMatrix.length,qualifiedAreaCases:areaMatrix.length,collisionCases,questionLoopCases,metrics,failures,transcripts,areaMatrix};
-const evidenceDir=process.argv.includes('--product')?'docs/evidence/product-as-hours':process.argv.includes('--brand')?'docs/evidence/brand-service':process.argv.includes('--pricing')?'docs/evidence/battery-pricing':'docs/evidence/db-driven-flow';
+const evidenceDir=process.argv.includes('--location')?'docs/evidence/location-nlu/regression':process.argv.includes('--product')?'docs/evidence/product-as-hours':process.argv.includes('--brand')?'docs/evidence/brand-service':process.argv.includes('--pricing')?'docs/evidence/battery-pricing':'docs/evidence/db-driven-flow';
 fs.mkdirSync(evidenceDir,{recursive:true});fs.writeFileSync(`${evidenceDir}/matrix.json`,JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({...report,areaMatrix:undefined,transcripts:undefined},null,2));
 assert.equal(failures.length,0);for(const value of Object.values(metrics))assert.equal(value,0);

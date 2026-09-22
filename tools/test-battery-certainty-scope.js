@@ -16,11 +16,12 @@ const allowed=new Set(['data/hyundai.json','js/smart-consult-core.js','js/smart-
 for(const p of ['data/battery-prices.json','js/smart-consult-prices.js','car-battery/hyundai/santafe.html','car-battery/hyundai/santafe/tm.html'])allowed.add(p);
 for(const p of ['data/consult-service-policy.json','js/smart-consult-policy.js',...paths.filter(p=>p.startsWith('docs/evidence/brand-service/'))])allowed.add(p);
 for(const p of ['data/chevrolet.json','car-battery/chevrolet/alpheon.html','js/smart-consult-product-policy.js',...paths.filter(p=>p.startsWith('docs/evidence/product-as-hours/'))])allowed.add(p);
+for(const p of paths.filter(p=>p.startsWith('docs/evidence/location-nlu/')))allowed.add(p);
 for(const p of paths){
  assert.ok(allowed.has(p)||p==='js/smart-consult-location.js'||p.startsWith('tools/test-')||p.startsWith('tools/audit-battery-')||['tools/lib/gn7-factual-regression.js','tools/lib/smart-consult-page-regression.js','tools/audit-blog-sync-regression.js'].includes(p)||p.startsWith('docs/evidence/battery-certainty/')||p.startsWith('docs/evidence/battery-pricing/')||p.startsWith('docs/evidence/db-driven-flow/'),`out of scope: ${p}`);
  if(p.endsWith('.html')){
   let expected=gn7FactualDelta(git(['show',`${baseline}:${p}`]).replace(/\r\n/g,'\n'),p);
-  if(p==='smart-consult/index.html')expected=expected.replace('/js/smart-consult.js?v=ai-mobile-v1','/js/smart-consult.js?v=product-v1');
+  if(p==='smart-consult/index.html')expected=expected.replace('/js/smart-consult.js?v=ai-mobile-v1','/js/smart-consult.js?v=location-v1');
   assert.equal(fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n'),expected,`${p}: exact factual delta only`);
  }
 }

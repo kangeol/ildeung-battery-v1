@@ -53,7 +53,13 @@ export function resolveLocation(text, localities, previous = null, pending = nul
     }
   }
   // Match the place's own name, never all descendants whose full path contains it.
-  const safeEnd = end => !normalized.slice(end) || boundaries.has(end) || /^(?:배터리|밧데리|지역|교체|에서|에서도|은|는|에|도|인데|이야|쪽|근처|출장|방문|가능|와|이요|요|으로|맞|야|지금|오늘|내일|몇시|언제|급해|긴급|\d+분)/.test(normalized.slice(end));
+  // Copular endings follow any canonical alias, including suffixless parents.
+  // Require an end or a new clause after a polite ending (not arbitrary substrings).
+  const politeEnd = /^(?:입니다만|이에요만|예요만|입니다|이에요|예요|에요|인데요|이구요|이고요|이고|인데)/;
+  const safeEnd = end => {
+    const rest=normalized.slice(end), ending=rest.match(politeEnd)?.[0];
+    return !rest || boundaries.has(end) || (ending && (rest===ending || boundaries.has(end+ending.length) || /^(?:이고|인데)$/.test(ending))) || /^(?:배터리|밧데리|지역|교체|에서|에서도|은|는|에|도|인데|이야|쪽|근처|출장|방문|가능|와|이요|요|으로|맞|야|지금|오늘|내일|몇시|언제|급해|긴급|\d+분)/.test(rest);
+  };
   let tokens = hits.filter(hit => {
     const before = normalized.slice(0,hit.start);
     const after = normalized.slice(hit.end);
@@ -64,7 +70,7 @@ export function resolveLocation(text, localities, previous = null, pending = nul
     return (left || words.some(word=>word.startsWith(hit.alias))) && right;
   });
   tokens = tokens.filter(hit => !tokens.some(other => other.start <= hit.start && other.end >= hit.end && other.alias.length > hit.alias.length));
-  if (!tokens.length) return {region:null};
+  if (!tokens.length) return {region:null,locationState:"MISSING_AREA"};
   const provinceHit = tokens.find(hit=>hit.item.level==="province");
   const lastStart = Math.max(...tokens.map(hit=>hit.start));
   let candidates = [...new Map(tokens.filter(hit=>hit.start===lastStart).map(hit=>[hit.item.canonicalId,hit.item])).values()];
@@ -95,10 +101,10 @@ export function resolveLocation(text, localities, previous = null, pending = nul
   if (candidates.length===1) {
     const item=candidates[0];
     const shortLocation=["city","district"].includes(item.level) && matchedAlias===stem(item) && matchedAlias!==normalizeText(item.name);
-    return {region:{...item,confidence:"canonical"},shortLocation,locationCandidates:[]};
+    return {region:{...item,confidence:"canonical"},shortLocation,locationCandidates:[],locationState:"SUPPORTED_AREA"};
   }
-  if (candidates.length>1) return {region:null,ambiguousRegion:true,locationCandidates:candidates,locationScope:provinceHit?.item || null};
-  return {region:null,unsupportedLocation:true};
+  if (candidates.length>1) return {region:null,ambiguousRegion:true,locationCandidates:candidates,locationScope:provinceHit?.item || null,locationState:"AMBIGUOUS_AREA"};
+  return {region:null,unsupportedLocation:true,locationState:"EXPLICIT_UNSUPPORTED_AREA"};
 }
 
 export function auditLocations(localities) {
