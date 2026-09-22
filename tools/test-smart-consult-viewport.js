@@ -12,7 +12,7 @@ assert.equal(copy.greeting,'안녕하세요. 일등밧데리 AI 배터리 상담
 assert.equal(/스마트 배터리 상담|AI AI|AI 진단|AI 상담원 연결/.test(html+copy.greeting),false);
 assert.ok(html.includes('일등밧데리 차량 정보를 바탕으로 안내합니다.'));
 for(const asset of ['/css/smart-consult.css','/js/smart-consult-viewport.js']) assert.ok(html.includes(`${asset}?v=ai-mobile-v1`),'returning-browser cache safety');
-assert.ok(html.includes('/js/smart-consult.js?v=location-v1'));
+assert.ok(html.includes('/js/smart-consult.js?v=faq-v1'));
 assert.ok(read('js/smart-consult.js').includes('./conversation-copy.js?v=ai-mobile-v1'));
 assert.ok(css.includes('.consult-page .site-footer { display: none; }'));
 assert.ok(css.includes('height: var(--app-height, 100dvh)'));

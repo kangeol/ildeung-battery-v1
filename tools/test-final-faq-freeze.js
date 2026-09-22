@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+const baseline='d43217e431073aeb9dbb0343bbae941749cf8f75';
+const git=(...args)=>execFileSync('git',['-c','core.safecrlf=false',...args],{encoding:'utf8',maxBuffer:20e6});
+const changed=git('diff','--name-only',baseline).trim().split(/\r?\n/).filter(Boolean);
+const allowed=new Set(['data/consult-service-policy.json','js/smart-consult-faq.js','js/smart-consult-conversation.js','js/smart-consult-policy.js','js/smart-consult.js','js/smart-consult-entry.js','js/smart-consult-session.js','smart-consult/index.html']);
+for(const p of changed)assert.ok(allowed.has(p)||p.startsWith('tools/test-')||p.startsWith('docs/evidence/final-faq/'),`out of scope ${p}`);
+const html=changed.filter(p=>p.endsWith('.html'));assert.deepEqual(html,['smart-consult/index.html']);
+for(const p of ['smart-consult/index.html','js/smart-consult.js','js/smart-consult-entry.js','js/smart-consult-session.js'])assert.equal(fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n'),git('show',`${baseline}:${p}`).replace(/\r\n/g,'\n').replaceAll('location-v1','faq-v1'),`cache-only ${p}`);
+const previous=JSON.parse(git('show',`${baseline}:data/consult-service-policy.json`)),current=JSON.parse(fs.readFileSync('data/consult-service-policy.json','utf8'));
+assert.deepEqual({...current,version:previous.version,finalFaq:undefined},{...previous,finalFaq:undefined},'old policy fields preserved');
+const sitemap=(fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length;assert.equal(sitemap,1133);
+const result={status:'PASS',baseline,changed,htmlChanged:1,cacheOnlyHtml:html,generatedVehicleAreaHtml:0,titleH1CanonicalSchema:0,seoGeoContent:0,blogContentDiffs:0,sitemapUrls:sitemap,oldPolicyFieldChanges:0};
+fs.mkdirSync('docs/evidence/final-faq',{recursive:true});fs.writeFileSync('docs/evidence/final-faq/freeze.json',JSON.stringify(result,null,2)+'\n');console.log(result);

@@ -3,8 +3,9 @@ import { copy, variant, symptomLabels } from "./conversation-copy.js";
 import { resolveLocation } from "./smart-consult-location.js?v=location-v1";
 import { resolveVehicleText } from "./vehicle-aliases.js";
 import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand } from "./smart-consult-prices.js?v=product-v1";
-import { servicePolicyIntent } from "./smart-consult-policy.js?v=brand-v1";
+import { servicePolicyIntent } from "./smart-consult-policy.js?v=faq-v1";
 import { extendedPolicyReply } from "./smart-consult-product-policy.js?v=product-v1";
+import { finalFaqReply } from "./smart-consult-faq.js?v=faq-v1";
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -62,7 +63,7 @@ export function recognizeIntent(text, entities) {
   if (/^(처음부터|다시시작|초기화|리셋|새상담)$/.test(normalizeText(text))) return "RESET";
   if (/몰라|모르겠|기억\s*안\s*나|어디서.*(?:봐|보|확인)/.test(text)) return "RECOVERY";
   if (/\d+\s*분\s*(?:안|내)|급해|급하|긴급/.test(text)) return "URGENT_SERVICE";
-  if (/몇\s*시|언제.*(?:와|오|방문|도착)|도착.*시간/.test(text)) return "ARRIVAL_TIME";
+  if (/몇\s*시|언제.*(?:와|오|방문|도착)|도착|출장.*시간/.test(text)) return "ARRIVAL_TIME";
   if (/지금.*(?:와|오|돼|되|가능|출발|방문)/.test(text)) return "LIVE_DISPATCH_AVAILABILITY";
   if (/(?:오늘|내일).*?(?:와|오|돼|되|가능|방문)/.test(text)) return "TODAY_SERVICE";
   if (/아니|정정|수정|잘못|바꿔/.test(text) && (entities.year || entities.fuel || entities.matches.length)) return "CORRECTION";
@@ -168,6 +169,8 @@ export function conversationTurn(previous, text, records, localities = [], price
   };
   if (intent === "RESET") { output.state = createConversationState(); say(copy.greeting); return output; }
   // Policy questions must not be mistaken for a new vehicle, price, year or brand selection.
+  const faqReply=finalFaqReply(text,servicePolicy);
+  if(faqReply){output.messages.push(...faqReply.messages);output.actions=faqReply.actions;return output;}
   const policyReply=extendedPolicyReply(text,state,priceCatalog,servicePolicy);
   if(policyReply){output.messages.push(...policyReply.messages);output.actions=policyReply.actions;return output;}
   if (pricePattern.test(text)) { state.priceIntent=true; state.originalIntent="PRICE"; }

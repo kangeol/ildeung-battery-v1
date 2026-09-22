@@ -46,7 +46,8 @@ for(const text of ['구월동물원','구월동화책','강남스타일','인천
 assert.equal(records.length,917);assert.equal(areas.length,665);
 const changed=execFileSync('git',['diff','--name-only','de199b25'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
 const html=changed.filter(p=>p.endsWith('.html'));assert.ok(html.every(p=>p==='smart-consult/index.html'));
-assert.equal(changed.filter(p=>/^(data|seo-data|car-battery|areas|blog)\//.test(p)).length,0,'canonical/SEO freeze');
+assert.equal(changed.filter(p=>/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
 const evidence={canonicalCases,aliasCases,totalCases:cases,areas:areas.length,rows:records.length,gates,failures,transcripts,changedHTML:html};
-fs.mkdirSync('docs/evidence/location-nlu',{recursive:true});fs.writeFileSync('docs/evidence/location-nlu/matrix.json',JSON.stringify(evidence,null,2)+'\n');
+const evidenceDir=process.argv.includes('--faq')?'docs/evidence/final-faq/location':'docs/evidence/location-nlu';
+fs.mkdirSync(evidenceDir,{recursive:true});fs.writeFileSync(`${evidenceDir}/matrix.json`,JSON.stringify(evidence,null,2)+'\n');
 console.log(JSON.stringify(evidence,null,2));assert.equal(failures.length,0);for(const [key,value] of Object.entries(gates))assert.equal(value,0,key);

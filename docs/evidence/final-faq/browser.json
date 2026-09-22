@@ -1,0 +1,420 @@
+[
+  {
+    "width": 1440,
+    "scenario": 1,
+    "input": "BMW 5시리즈 2020년식 배터리 얼마예요?",
+    "answers": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+      "AGM95 델코 기준 교체 가격은 22만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 1440,
+    "scenario": 1,
+    "input": "카드돼요?",
+    "answers": [
+      "네. 카드결제 가능합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 1440,
+    "scenario": 1,
+    "input": "현금영수증은?",
+    "answers": [
+      "네. 현금영수증 발행 가능합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 1440,
+    "scenario": 1,
+    "input": "작업시간은?",
+    "answers": [
+      "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 1440,
+    "scenario": 1,
+    "input": "AS는?",
+    "answers": [
+      "네. 일등밧데리에서 설치한 배터리는 설치일 기준 3개월 이내 A/S가 가능합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 1440,
+    "scenario": 1,
+    "input": "일요일도 하나요?",
+    "answers": [
+      "일요일 운영 여부는 당일 일정에 따라 달라질 수 있어 고객센터 1644-9141로 확인해 주세요."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 1440,
+    "scenario": 2,
+    "input": "구월동 BMW 5시리즈 2020년식 바르타 배터리 얼마예요?",
+    "answers": [
+      "인천 남동구 구월동 지역은 출장 교체 가능 지역입니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+      "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "/area/incheon/",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 1440,
+    "scenario": 2,
+    "input": "세금계산서 돼요?",
+    "answers": [
+      "네. 세금계산서 발행 가능합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "/area/incheon/",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 1440,
+    "scenario": 2,
+    "input": "직접 방문해도 돼요?",
+    "answers": [
+      "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+    ],
+    "overflow": false,
+    "links": [
+      "/area/incheon/",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 1440,
+    "scenario": 2,
+    "input": "폐배터리 제가 갖고 있으면?",
+    "answers": [
+      "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+    ],
+    "overflow": false,
+    "links": [
+      "/area/incheon/",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 1440,
+    "scenario": 3,
+    "input": "결제수단 뭐 있어요?",
+    "answers": [
+      "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+    ],
+    "overflow": false,
+    "links": []
+  },
+  {
+    "width": 1440,
+    "scenario": 4,
+    "input": "지금 방문해도 돼요?",
+    "answers": [
+      "직접 방문은 가능하지만 지금 방문 가능한 일정은 실시간 확인이 필요합니다. 방문 전 고객센터 1644-9141로 확인해 주세요."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141"
+    ]
+  },
+  {
+    "width": 1440,
+    "scenario": 5,
+    "input": "20분 안에 무조건 끝나요?",
+    "answers": [
+      "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+    ],
+    "overflow": false,
+    "links": []
+  },
+  {
+    "width": 1440,
+    "scenario": 6,
+    "input": "몇 분 뒤 도착해요?",
+    "answers": [
+      "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 1,
+    "input": "BMW 5시리즈 2020년식 배터리 얼마예요?",
+    "answers": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+      "AGM95 델코 기준 교체 가격은 22만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 1,
+    "input": "카드돼요?",
+    "answers": [
+      "네. 카드결제 가능합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 1,
+    "input": "현금영수증은?",
+    "answers": [
+      "네. 현금영수증 발행 가능합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 1,
+    "input": "작업시간은?",
+    "answers": [
+      "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 1,
+    "input": "AS는?",
+    "answers": [
+      "네. 일등밧데리에서 설치한 배터리는 설치일 기준 3개월 이내 A/S가 가능합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 1,
+    "input": "일요일도 하나요?",
+    "answers": [
+      "일요일 운영 여부는 당일 일정에 따라 달라질 수 있어 고객센터 1644-9141로 확인해 주세요."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 2,
+    "input": "구월동 BMW 5시리즈 2020년식 바르타 배터리 얼마예요?",
+    "answers": [
+      "인천 남동구 구월동 지역은 출장 교체 가능 지역입니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+      "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "/area/incheon/",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 2,
+    "input": "세금계산서 돼요?",
+    "answers": [
+      "네. 세금계산서 발행 가능합니다."
+    ],
+    "overflow": false,
+    "links": [
+      "/area/incheon/",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 2,
+    "input": "직접 방문해도 돼요?",
+    "answers": [
+      "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+    ],
+    "overflow": false,
+    "links": [
+      "/area/incheon/",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 2,
+    "input": "폐배터리 제가 갖고 있으면?",
+    "answers": [
+      "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+    ],
+    "overflow": false,
+    "links": [
+      "/area/incheon/",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "tel:1644-9141",
+      "https://smartstore.naver.com/battery1/products/575288571"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 3,
+    "input": "결제수단 뭐 있어요?",
+    "answers": [
+      "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+    ],
+    "overflow": false,
+    "links": []
+  },
+  {
+    "width": 390,
+    "scenario": 4,
+    "input": "지금 방문해도 돼요?",
+    "answers": [
+      "직접 방문은 가능하지만 지금 방문 가능한 일정은 실시간 확인이 필요합니다. 방문 전 고객센터 1644-9141로 확인해 주세요."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141"
+    ]
+  },
+  {
+    "width": 390,
+    "scenario": 5,
+    "input": "20분 안에 무조건 끝나요?",
+    "answers": [
+      "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+    ],
+    "overflow": false,
+    "links": []
+  },
+  {
+    "width": 390,
+    "scenario": 6,
+    "input": "몇 분 뒤 도착해요?",
+    "answers": [
+      "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+    ],
+    "overflow": false,
+    "links": [
+      "tel:1644-9141"
+    ]
+  }
+]

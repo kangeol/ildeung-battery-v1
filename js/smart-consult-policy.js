@@ -2,7 +2,7 @@
 export function servicePolicyIntent(text) {
   const s=String(text).replace(/\s/g,'');
   if(/(?:폐|헌|기존)배터리|배터리반납/.test(s)) {
-    if(/보관|안(?:가져|가져가|줘|주|내|반납|수거|하면|할)|수거하지|반납하지|갖고|가지고|제가.*(?:갖|가지)|돌려/.test(s))return 'KEEP_OLD_BATTERY';
+    if(/보관|안(?:가져|가져가|줘|주|내|반납|수거|하면|할)|수거하지|반납하지|갖고|가지고|제가.*(?:갖|가지|가져)|돌려/.test(s))return 'KEEP_OLD_BATTERY';
     return 'OLD_BATTERY';
   }
   const kinds=[];
