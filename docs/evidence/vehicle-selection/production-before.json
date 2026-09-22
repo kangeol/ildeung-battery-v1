@@ -1,0 +1,617 @@
+[
+  {
+    "input": "G90",
+    "candidates": [
+      {
+        "label": "2021~현재년형 · G90 (RS4)",
+        "value": "G90 (RS4)"
+      },
+      {
+        "label": "2018~2021년형 · G90",
+        "value": "G90"
+      }
+    ],
+    "clicked": {
+      "label": "2021~현재년형 · G90 (RS4)",
+      "value": "G90 (RS4)"
+    },
+    "handlerOutput": "G90 (RS4)",
+    "routerInput": "G90 (RS4)",
+    "before": {
+      "brand": "",
+      "quotedSpec": "",
+      "priceSummaryShown": false,
+      "originalIntent": "",
+      "priceIntent": false,
+      "serviceIntent": false,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "",
+      "symptom": null,
+      "customerGoal": "UNKNOWN",
+      "turnIndex": 1,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "",
+      "detailModels": [
+        "G90 (RS4)",
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "고객센터문의",
+        "AGM105"
+      ],
+      "confirmedBattery": null,
+      "result": null,
+      "region": null,
+      "location": null,
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "",
+      "lastIntent": "VEHICLE_IDENTIFICATION",
+      "previousQuestion": {
+        "field": "detailModel",
+        "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?",
+        "choices": [
+          {
+            "value": "G90 (RS4)",
+            "label": "2021~현재년형 · G90 (RS4)"
+          },
+          {
+            "value": "G90",
+            "label": "2018~2021년형 · G90"
+          }
+        ]
+      },
+      "ambiguity": "detailModel",
+      "failures": 0
+    },
+    "after": {
+      "brand": "",
+      "quotedSpec": "",
+      "priceSummaryShown": false,
+      "originalIntent": "",
+      "priceIntent": false,
+      "serviceIntent": false,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "",
+      "symptom": null,
+      "customerGoal": "UNKNOWN",
+      "turnIndex": 2,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G90 (RS4)",
+      "detailModels": [
+        "G90 (RS4)"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "고객센터문의"
+      ],
+      "confirmedBattery": null,
+      "result": null,
+      "region": null,
+      "location": null,
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "",
+      "lastIntent": "VEHICLE_IDENTIFICATION",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    },
+    "messages": [
+      {
+        "role": "user",
+        "text": "제네시스 G90 · G90 (RS4)",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "이 차량은 배터리 규격을 전화로 확인해야 해요. 1644-9141로 문의해 주세요.",
+        "actions": [
+          "phone"
+        ],
+        "chips": [],
+        "battery": null,
+        "areaSlug": null
+      }
+    ],
+    "loop": false
+  },
+  {
+    "input": "G90",
+    "candidates": [
+      {
+        "label": "2021~현재년형 · G90 (RS4)",
+        "value": "G90 (RS4)"
+      },
+      {
+        "label": "2018~2021년형 · G90",
+        "value": "G90"
+      }
+    ],
+    "clicked": {
+      "label": "2018~2021년형 · G90",
+      "value": "G90"
+    },
+    "handlerOutput": "G90",
+    "routerInput": "G90",
+    "before": {
+      "brand": "",
+      "quotedSpec": "",
+      "priceSummaryShown": false,
+      "originalIntent": "",
+      "priceIntent": false,
+      "serviceIntent": false,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "",
+      "symptom": null,
+      "customerGoal": "UNKNOWN",
+      "turnIndex": 1,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "",
+      "detailModels": [
+        "G90 (RS4)",
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "고객센터문의",
+        "AGM105"
+      ],
+      "confirmedBattery": null,
+      "result": null,
+      "region": null,
+      "location": null,
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "",
+      "lastIntent": "VEHICLE_IDENTIFICATION",
+      "previousQuestion": {
+        "field": "detailModel",
+        "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?",
+        "choices": [
+          {
+            "value": "G90 (RS4)",
+            "label": "2021~현재년형 · G90 (RS4)"
+          },
+          {
+            "value": "G90",
+            "label": "2018~2021년형 · G90"
+          }
+        ]
+      },
+      "ambiguity": "detailModel",
+      "failures": 0
+    },
+    "after": {
+      "brand": "",
+      "quotedSpec": "",
+      "priceSummaryShown": false,
+      "originalIntent": "",
+      "priceIntent": false,
+      "serviceIntent": false,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "",
+      "symptom": null,
+      "customerGoal": "UNKNOWN",
+      "turnIndex": 2,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "",
+      "detailModels": [
+        "G90 (RS4)",
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "고객센터문의",
+        "AGM105"
+      ],
+      "confirmedBattery": null,
+      "result": null,
+      "region": null,
+      "location": null,
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "",
+      "lastIntent": "VEHICLE_IDENTIFICATION",
+      "previousQuestion": {
+        "field": "detailModel",
+        "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?",
+        "choices": [
+          {
+            "value": "G90 (RS4)",
+            "label": "2021~현재년형 · G90 (RS4)"
+          },
+          {
+            "value": "G90",
+            "label": "2018~2021년형 · G90"
+          }
+        ]
+      },
+      "ambiguity": "detailModel",
+      "failures": 0
+    },
+    "messages": [
+      {
+        "role": "user",
+        "text": "제네시스 G90",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?",
+        "actions": [],
+        "chips": [
+          {
+            "label": "2021~현재년형 · G90 (RS4)",
+            "value": "G90 (RS4)"
+          },
+          {
+            "label": "2018~2021년형 · G90",
+            "value": "G90"
+          }
+        ],
+        "battery": null,
+        "areaSlug": null
+      }
+    ],
+    "loop": true
+  },
+  {
+    "input": "G80",
+    "candidates": [
+      {
+        "label": "2020~현재년형 · G80 (RG3)",
+        "value": "G80 (RG3)"
+      },
+      {
+        "label": "2016~2020년형 · G80",
+        "value": "G80"
+      }
+    ],
+    "clicked": {
+      "label": "2020~현재년형 · G80 (RG3)",
+      "value": "G80 (RG3)"
+    },
+    "handlerOutput": "G80 (RG3)",
+    "routerInput": "G80 (RG3)",
+    "before": {
+      "brand": "",
+      "quotedSpec": "",
+      "priceSummaryShown": false,
+      "originalIntent": "",
+      "priceIntent": false,
+      "serviceIntent": false,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "",
+      "symptom": null,
+      "customerGoal": "UNKNOWN",
+      "turnIndex": 1,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G80",
+      "model": "",
+      "generation": "G80",
+      "year": null,
+      "fuel": "",
+      "detailModel": "",
+      "detailModels": [
+        "G80 (RG3)",
+        "G80"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G80",
+      "batteryCandidates": [
+        "AGM95R",
+        "AGM105"
+      ],
+      "confirmedBattery": null,
+      "result": null,
+      "region": null,
+      "location": null,
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "",
+      "lastIntent": "VEHICLE_IDENTIFICATION",
+      "previousQuestion": {
+        "field": "detailModel",
+        "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2020~현재년형 · G80 (RG3) / 2016~2020년형 · G80 중 어떤 차량인가요?",
+        "choices": [
+          {
+            "value": "G80 (RG3)",
+            "label": "2020~현재년형 · G80 (RG3)"
+          },
+          {
+            "value": "G80",
+            "label": "2016~2020년형 · G80"
+          }
+        ]
+      },
+      "ambiguity": "detailModel",
+      "failures": 0
+    },
+    "after": {
+      "brand": "",
+      "quotedSpec": "AGM95R",
+      "priceSummaryShown": true,
+      "originalIntent": "",
+      "priceIntent": false,
+      "serviceIntent": false,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "",
+      "symptom": null,
+      "customerGoal": "UNKNOWN",
+      "turnIndex": 2,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G80",
+      "model": "",
+      "generation": "G80",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G80 (RG3)",
+      "detailModels": [
+        "G80 (RG3)"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G80",
+      "batteryCandidates": [
+        "AGM95R"
+      ],
+      "confirmedBattery": "AGM95R",
+      "result": {
+        "manufacturerId": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicle": "G80",
+        "detailModel": "G80 (RG3)",
+        "year": "20년~현재",
+        "fuel": "",
+        "defaultBattery": "AGM95R",
+        "upgradeBattery": "",
+        "matchedRows": 2
+      },
+      "region": null,
+      "location": null,
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "",
+      "lastIntent": "VEHICLE_IDENTIFICATION",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    },
+    "messages": [
+      {
+        "role": "user",
+        "text": "제네시스 G80 · G80 (RG3)",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95R입니다.",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "AGM95R 델코 기준 교체 가격은 24만원입니다.",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다.",
+        "actions": [
+          "phone",
+          "stores"
+        ],
+        "chips": [],
+        "battery": "AGM95R",
+        "areaSlug": null
+      }
+    ],
+    "loop": false
+  },
+  {
+    "input": "G80",
+    "candidates": [
+      {
+        "label": "2020~현재년형 · G80 (RG3)",
+        "value": "G80 (RG3)"
+      },
+      {
+        "label": "2016~2020년형 · G80",
+        "value": "G80"
+      }
+    ],
+    "clicked": {
+      "label": "2016~2020년형 · G80",
+      "value": "G80"
+    },
+    "handlerOutput": "G80",
+    "routerInput": "G80",
+    "before": {
+      "brand": "",
+      "quotedSpec": "",
+      "priceSummaryShown": false,
+      "originalIntent": "",
+      "priceIntent": false,
+      "serviceIntent": false,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "",
+      "symptom": null,
+      "customerGoal": "UNKNOWN",
+      "turnIndex": 1,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G80",
+      "model": "",
+      "generation": "G80",
+      "year": null,
+      "fuel": "",
+      "detailModel": "",
+      "detailModels": [
+        "G80 (RG3)",
+        "G80"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G80",
+      "batteryCandidates": [
+        "AGM95R",
+        "AGM105"
+      ],
+      "confirmedBattery": null,
+      "result": null,
+      "region": null,
+      "location": null,
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "",
+      "lastIntent": "VEHICLE_IDENTIFICATION",
+      "previousQuestion": {
+        "field": "detailModel",
+        "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2020~현재년형 · G80 (RG3) / 2016~2020년형 · G80 중 어떤 차량인가요?",
+        "choices": [
+          {
+            "value": "G80 (RG3)",
+            "label": "2020~현재년형 · G80 (RG3)"
+          },
+          {
+            "value": "G80",
+            "label": "2016~2020년형 · G80"
+          }
+        ]
+      },
+      "ambiguity": "detailModel",
+      "failures": 0
+    },
+    "after": {
+      "brand": "",
+      "quotedSpec": "",
+      "priceSummaryShown": false,
+      "originalIntent": "",
+      "priceIntent": false,
+      "serviceIntent": false,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "",
+      "symptom": null,
+      "customerGoal": "UNKNOWN",
+      "turnIndex": 2,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G80",
+      "model": "",
+      "generation": "G80",
+      "year": null,
+      "fuel": "",
+      "detailModel": "",
+      "detailModels": [
+        "G80 (RG3)",
+        "G80"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G80",
+      "batteryCandidates": [
+        "AGM95R",
+        "AGM105"
+      ],
+      "confirmedBattery": null,
+      "result": null,
+      "region": null,
+      "location": null,
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "",
+      "lastIntent": "VEHICLE_IDENTIFICATION",
+      "previousQuestion": {
+        "field": "detailModel",
+        "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2020~현재년형 · G80 (RG3) / 2016~2020년형 · G80 중 어떤 차량인가요?",
+        "choices": [
+          {
+            "value": "G80 (RG3)",
+            "label": "2020~현재년형 · G80 (RG3)"
+          },
+          {
+            "value": "G80",
+            "label": "2016~2020년형 · G80"
+          }
+        ]
+      },
+      "ambiguity": "detailModel",
+      "failures": 0
+    },
+    "messages": [
+      {
+        "role": "user",
+        "text": "제네시스 G80",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2020~현재년형 · G80 (RG3) / 2016~2020년형 · G80 중 어떤 차량인가요?",
+        "actions": [],
+        "chips": [
+          {
+            "label": "2020~현재년형 · G80 (RG3)",
+            "value": "G80 (RG3)"
+          },
+          {
+            "label": "2016~2020년형 · G80",
+            "value": "G80"
+          }
+        ],
+        "battery": null,
+        "areaSlug": null
+      }
+    ],
+    "loop": true
+  }
+]

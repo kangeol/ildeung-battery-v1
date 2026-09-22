@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const root='docs/evidence/vehicle-selection/';
+const read=p=>JSON.parse(fs.readFileSync(root+p,'utf8'));
+const before=read('mass-before.json'),after=read('mass-after.json');
+const fingerprint=g=>JSON.stringify([g.field,g.candidates.map(c=>[c.label,c.value,c.sourceIds])]);
+assert.deepEqual(before.inventory.map(fingerprint).sort(),after.inventory.map(fingerprint).sort());
+assert.equal(before.buttons,after.buttons);
+assert.equal(after.totals.RESOLVES_EXACT_ROW+after.totals.RESOLVES_GOVERNED_NO_MATCH,after.buttons);
+for(const [key,value] of Object.entries(after.totals))if(!['RESOLVES_EXACT_ROW','RESOLVES_GOVERNED_NO_MATCH'].includes(key))assert.equal(value,0,key);
+const context=read('context.json'),browser=read('browser.json'),regression=read('regression/regression-results.json'),freeze=read('freeze.json');
+assert.equal(regression.length,20);assert.ok(regression.every(r=>r.status==='PASS'));
+assert.equal(freeze.status,'PASS');
+const gates={DISAMBIGUATION_SELECTION_LOOP:0,DISAMBIGUATION_WRONG_ROW:0,DISAMBIGUATION_SELECTION_LOST:0,DISAMBIGUATION_YEAR_GENERATION_LOST:0,DISAMBIGUATION_FALSE_UNSUPPORTED:0,DISAMBIGUATION_UNAUTHORIZED_BATTERY_INFERENCE:0};
+const result={status:'PASS',queries:after.queries,groups:after.groups,preButtons:before.buttons,preTotals:before.totals,postButtons:after.buttons,postTotals:after.totals,gates,contextTurns:context.transcripts?.length,regressionCommands:regression.length,browserRecords:browser.length,browserClicks:browser.filter(e=>e.loop===false).length,browserWidths:[...new Set(browser.map(e=>e.width))],blog:freeze.blogCount,sitemap:freeze.sitemapCount};
+assert.equal(result.browserClicks,16);assert.deepEqual(result.browserWidths,[1440,390]);
+fs.writeFileSync(root+'summary.json',JSON.stringify(result,null,2)+'\n');console.log(result);

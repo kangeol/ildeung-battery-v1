@@ -1,0 +1,1474 @@
+[
+  {
+    "width": 1440,
+    "input": "G90",
+    "label": "2021~현재년형 · G90 (RS4)",
+    "value": "G90 (RS4)",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"detailModel\",\"genesis|G90\",\"G90 (RS4)\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"21년~현재\\\",\\\"가솔린\\\",\\\"G90 (RS4)\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G90\",\"21년~현재\",\"가솔린\",\"G90 (RS4)\"]"
+    ],
+    "battery": null,
+    "messages": [
+      "이 차량은 배터리 규격을 전화로 확인해야 해요. 1644-9141로 문의해 주세요."
+    ],
+    "loop": false
+  },
+  {
+    "width": 1440,
+    "input": "G90",
+    "label": "2018~2021년형 · G90",
+    "value": "G90",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G90\",\"18~21년\",\"가솔린\",\"G90\"]"
+    ],
+    "battery": "AGM105",
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+      "AGM105 델코 기준 교체 가격은 28만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 1440,
+    "input": "G80",
+    "label": "2020~현재년형 · G80 (RG3)",
+    "value": "G80 (RG3)",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"detailModel\",\"genesis|G80\",\"G80 (RG3)\",[\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"가솔린 2WD\\\",\\\"G80 (RG3)\\\"]\",\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"디젤 2WD\\\",\\\"G80 (RG3)\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G80\",\"20년~현재\",\"가솔린 2WD\",\"G80 (RG3)\"]",
+      "[\"genesis\",\"G80\",\"20년~현재\",\"디젤 2WD\",\"G80 (RG3)\"]"
+    ],
+    "battery": "AGM95R",
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95R입니다.",
+      "AGM95R 델코 기준 교체 가격은 24만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 1440,
+    "input": "G80",
+    "label": "2016~2020년형 · G80",
+    "value": "G80",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"detailModel\",\"genesis|G80\",\"G80\",[\"[\\\"genesis\\\",\\\"G80\\\",\\\"16~20년\\\",\\\"가솔린\\\",\\\"G80\\\"]\",\"[\\\"genesis\\\",\\\"G80\\\",\\\"16~20년\\\",\\\"디젤\\\",\\\"G80\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G80\",\"16~20년\",\"가솔린\",\"G80\"]",
+      "[\"genesis\",\"G80\",\"16~20년\",\"디젤\",\"G80\"]"
+    ],
+    "battery": "AGM105",
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+      "AGM105 델코 기준 교체 가격은 28만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 1440,
+    "input": "제네시스 G70 2024년식",
+    "label": "가솔린",
+    "value": "가솔린",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"fuel\",\"genesis|G70\",\"가솔린\",[\"[\\\"genesis\\\",\\\"G70\\\",\\\"20년~현재\\\",\\\"가솔린\\\",\\\"더 뉴 G70\\\"]\",\"[\\\"genesis\\\",\\\"G70\\\",\\\"22년~현재\\\",\\\"가솔린\\\",\\\"더 뉴 G70 슈팅브레이크\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G70\",\"20년~현재\",\"가솔린\",\"더 뉴 G70\"]",
+      "[\"genesis\",\"G70\",\"22년~현재\",\"가솔린\",\"더 뉴 G70 슈팅브레이크\"]"
+    ],
+    "battery": "AGM80",
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM80입니다.",
+      "AGM80 델코 기준 교체 가격은 19만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 1440,
+    "input": "제네시스 G70 2024년식",
+    "label": "디젤",
+    "value": "디젤",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"fuel\",\"genesis|G70\",\"디젤\",[\"[\\\"genesis\\\",\\\"G70\\\",\\\"20년~현재\\\",\\\"디젤\\\",\\\"더 뉴 G70\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G70\",\"20년~현재\",\"디젤\",\"더 뉴 G70\"]"
+    ],
+    "battery": "AGM95",
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+      "AGM95 델코 기준 교체 가격은 22만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 1440,
+    "input": "legacy pending G90 session reload",
+    "label": "2018~2021년형 · G90",
+    "identity": [
+      "[\"genesis\",\"G90\",\"18~21년\",\"가솔린\",\"G90\"]"
+    ],
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+      "AGM105 델코 기준 교체 가격은 28만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 1440,
+    "input": "구월동 -> G90",
+    "label": "2018~2021년형 · G90",
+    "identity": [
+      "[\"genesis\",\"G90\",\"18~21년\",\"가솔린\",\"G90\"]"
+    ],
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+      "AGM105 델코 기준 교체 가격은 28만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 1440,
+    "input": "바르타로 하면?",
+    "messages": [
+      {
+        "role": "user",
+        "text": "문의 내용 (개인정보 보호를 위해 원문은 저장하지 않아요)",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "AGM105 바르타 기준 교체 가격은 33만원입니다.",
+        "actions": [
+          "phone"
+        ],
+        "chips": [],
+        "battery": "AGM105",
+        "areaSlug": null
+      }
+    ],
+    "state": {
+      "brand": "VARTA",
+      "quotedSpec": "AGM105",
+      "priceSummaryShown": true,
+      "originalIntent": "PRICE",
+      "priceIntent": true,
+      "serviceIntent": true,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "18~21년",
+      "symptom": null,
+      "customerGoal": "AREA",
+      "turnIndex": 4,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G90",
+      "detailModels": [
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "AGM105"
+      ],
+      "confirmedBattery": "AGM105",
+      "result": {
+        "manufacturerId": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicle": "G90",
+        "detailModel": "G90",
+        "year": "18~21년",
+        "fuel": "가솔린",
+        "defaultBattery": "AGM105",
+        "upgradeBattery": "",
+        "matchedRows": 1
+      },
+      "region": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "location": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "남동구",
+      "lastIntent": "UNKNOWN",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    }
+  },
+  {
+    "width": 1440,
+    "input": "카드",
+    "messages": [
+      {
+        "role": "user",
+        "text": "문의 내용 (개인정보 보호를 위해 원문은 저장하지 않아요)",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "네. 카드결제 가능합니다.",
+        "actions": [],
+        "chips": [],
+        "battery": "AGM105",
+        "areaSlug": null
+      }
+    ],
+    "state": {
+      "brand": "VARTA",
+      "quotedSpec": "AGM105",
+      "priceSummaryShown": true,
+      "originalIntent": "PRICE",
+      "priceIntent": true,
+      "serviceIntent": true,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "18~21년",
+      "symptom": null,
+      "customerGoal": "AREA",
+      "turnIndex": 4,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G90",
+      "detailModels": [
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "AGM105"
+      ],
+      "confirmedBattery": "AGM105",
+      "result": {
+        "manufacturerId": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicle": "G90",
+        "detailModel": "G90",
+        "year": "18~21년",
+        "fuel": "가솔린",
+        "defaultBattery": "AGM105",
+        "upgradeBattery": "",
+        "matchedRows": 1
+      },
+      "region": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "location": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "남동구",
+      "lastIntent": "UNKNOWN",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    }
+  },
+  {
+    "width": 1440,
+    "input": "작업시간",
+    "messages": [
+      {
+        "role": "user",
+        "text": "문의 내용 (개인정보 보호를 위해 원문은 저장하지 않아요)",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다.",
+        "actions": [],
+        "chips": [],
+        "battery": "AGM105",
+        "areaSlug": null
+      }
+    ],
+    "state": {
+      "brand": "VARTA",
+      "quotedSpec": "AGM105",
+      "priceSummaryShown": true,
+      "originalIntent": "PRICE",
+      "priceIntent": true,
+      "serviceIntent": true,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "18~21년",
+      "symptom": null,
+      "customerGoal": "AREA",
+      "turnIndex": 4,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G90",
+      "detailModels": [
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "AGM105"
+      ],
+      "confirmedBattery": "AGM105",
+      "result": {
+        "manufacturerId": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicle": "G90",
+        "detailModel": "G90",
+        "year": "18~21년",
+        "fuel": "가솔린",
+        "defaultBattery": "AGM105",
+        "upgradeBattery": "",
+        "matchedRows": 1
+      },
+      "region": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "location": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "남동구",
+      "lastIntent": "UNKNOWN",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    }
+  },
+  {
+    "width": 1440,
+    "input": "가격",
+    "messages": [
+      {
+        "role": "bot",
+        "text": "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "AGM105 바르타 기준 교체 가격은 33만원입니다.",
+        "actions": [
+          "phone",
+          "stores"
+        ],
+        "chips": [],
+        "battery": "AGM105",
+        "areaSlug": null
+      }
+    ],
+    "state": {
+      "brand": "VARTA",
+      "quotedSpec": "AGM105",
+      "priceSummaryShown": true,
+      "originalIntent": "PRICE",
+      "priceIntent": true,
+      "serviceIntent": true,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "18~21년",
+      "symptom": null,
+      "customerGoal": "PRICE",
+      "turnIndex": 5,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G90",
+      "detailModels": [
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "AGM105"
+      ],
+      "confirmedBattery": "AGM105",
+      "result": {
+        "manufacturerId": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicle": "G90",
+        "detailModel": "G90",
+        "year": "18~21년",
+        "fuel": "가솔린",
+        "defaultBattery": "AGM105",
+        "upgradeBattery": "",
+        "matchedRows": 1
+      },
+      "region": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "location": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "남동구",
+      "lastIntent": "PRICE_QUESTION",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    }
+  },
+  {
+    "width": 1440,
+    "input": "출장배터리되나요?",
+    "messages": [
+      {
+        "role": "user",
+        "text": "출장 지역 문의",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "네, 인천 남동구 구월동에서 출장 교체 가능합니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+        "actions": [
+          "phone"
+        ],
+        "chips": [],
+        "battery": "AGM105",
+        "areaSlug": "incheon"
+      }
+    ],
+    "state": {
+      "brand": "VARTA",
+      "quotedSpec": "AGM105",
+      "priceSummaryShown": true,
+      "originalIntent": "PRICE",
+      "priceIntent": true,
+      "serviceIntent": true,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "18~21년",
+      "symptom": null,
+      "customerGoal": "AREA",
+      "turnIndex": 6,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G90",
+      "detailModels": [
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "AGM105"
+      ],
+      "confirmedBattery": "AGM105",
+      "result": {
+        "manufacturerId": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicle": "G90",
+        "detailModel": "G90",
+        "year": "18~21년",
+        "fuel": "가솔린",
+        "defaultBattery": "AGM105",
+        "upgradeBattery": "",
+        "matchedRows": 1
+      },
+      "region": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "location": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "남동구",
+      "lastIntent": "SERVICE_AREA_AVAILABILITY",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    }
+  },
+  {
+    "width": 1440,
+    "input": "AGM105",
+    "messages": [
+      {
+        "role": "bot",
+        "text": "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다.",
+        "actions": [
+          "phone"
+        ],
+        "chips": [],
+        "battery": null,
+        "areaSlug": null
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "input": "AGM105 가격",
+    "messages": [
+      {
+        "role": "user",
+        "text": "가격 문의",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "actions": [
+          "phone"
+        ],
+        "chips": [],
+        "battery": null,
+        "areaSlug": null
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "input": "AGM105 얼마야?",
+    "messages": [
+      {
+        "role": "user",
+        "text": "가격 문의",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "actions": [
+          "phone"
+        ],
+        "chips": [],
+        "battery": null,
+        "areaSlug": null
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "ui": {
+      "focused": "chatInput",
+      "bodyScroll": 224,
+      "composerVisible": true,
+      "overflow": false,
+      "phone": true
+    },
+    "restored": true,
+    "correction": true,
+    "replacement": true,
+    "screenshot": "✓ Screenshot saved to C:\\Users\\kang1\\.agent-browser\\tmp\\screenshots\\screenshot-1790096844288.png"
+  },
+  {
+    "width": 390,
+    "input": "G90",
+    "label": "2021~현재년형 · G90 (RS4)",
+    "value": "G90 (RS4)",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"detailModel\",\"genesis|G90\",\"G90 (RS4)\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"21년~현재\\\",\\\"가솔린\\\",\\\"G90 (RS4)\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G90\",\"21년~현재\",\"가솔린\",\"G90 (RS4)\"]"
+    ],
+    "battery": null,
+    "messages": [
+      "이 차량은 배터리 규격을 전화로 확인해야 해요. 1644-9141로 문의해 주세요."
+    ],
+    "loop": false
+  },
+  {
+    "width": 390,
+    "input": "G90",
+    "label": "2018~2021년형 · G90",
+    "value": "G90",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G90\",\"18~21년\",\"가솔린\",\"G90\"]"
+    ],
+    "battery": "AGM105",
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+      "AGM105 델코 기준 교체 가격은 28만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 390,
+    "input": "G80",
+    "label": "2020~현재년형 · G80 (RG3)",
+    "value": "G80 (RG3)",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"detailModel\",\"genesis|G80\",\"G80 (RG3)\",[\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"가솔린 2WD\\\",\\\"G80 (RG3)\\\"]\",\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"디젤 2WD\\\",\\\"G80 (RG3)\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G80\",\"20년~현재\",\"가솔린 2WD\",\"G80 (RG3)\"]",
+      "[\"genesis\",\"G80\",\"20년~현재\",\"디젤 2WD\",\"G80 (RG3)\"]"
+    ],
+    "battery": "AGM95R",
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95R입니다.",
+      "AGM95R 델코 기준 교체 가격은 24만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 390,
+    "input": "G80",
+    "label": "2016~2020년형 · G80",
+    "value": "G80",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"detailModel\",\"genesis|G80\",\"G80\",[\"[\\\"genesis\\\",\\\"G80\\\",\\\"16~20년\\\",\\\"가솔린\\\",\\\"G80\\\"]\",\"[\\\"genesis\\\",\\\"G80\\\",\\\"16~20년\\\",\\\"디젤\\\",\\\"G80\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G80\",\"16~20년\",\"가솔린\",\"G80\"]",
+      "[\"genesis\",\"G80\",\"16~20년\",\"디젤\",\"G80\"]"
+    ],
+    "battery": "AGM105",
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+      "AGM105 델코 기준 교체 가격은 28만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 390,
+    "input": "제네시스 G70 2024년식",
+    "label": "가솔린",
+    "value": "가솔린",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"fuel\",\"genesis|G70\",\"가솔린\",[\"[\\\"genesis\\\",\\\"G70\\\",\\\"20년~현재\\\",\\\"가솔린\\\",\\\"더 뉴 G70\\\"]\",\"[\\\"genesis\\\",\\\"G70\\\",\\\"22년~현재\\\",\\\"가솔린\\\",\\\"더 뉴 G70 슈팅브레이크\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G70\",\"20년~현재\",\"가솔린\",\"더 뉴 G70\"]",
+      "[\"genesis\",\"G70\",\"22년~현재\",\"가솔린\",\"더 뉴 G70 슈팅브레이크\"]"
+    ],
+    "battery": "AGM80",
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM80입니다.",
+      "AGM80 델코 기준 교체 가격은 19만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 390,
+    "input": "제네시스 G70 2024년식",
+    "label": "디젤",
+    "value": "디젤",
+    "selection": {
+      "type": "vehicle-candidate",
+      "id": "[\"fuel\",\"genesis|G70\",\"디젤\",[\"[\\\"genesis\\\",\\\"G70\\\",\\\"20년~현재\\\",\\\"디젤\\\",\\\"더 뉴 G70\\\"]\"]]"
+    },
+    "identity": [
+      "[\"genesis\",\"G70\",\"20년~현재\",\"디젤\",\"더 뉴 G70\"]"
+    ],
+    "battery": "AGM95",
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+      "AGM95 델코 기준 교체 가격은 22만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 390,
+    "input": "legacy pending G90 session reload",
+    "label": "2018~2021년형 · G90",
+    "identity": [
+      "[\"genesis\",\"G90\",\"18~21년\",\"가솔린\",\"G90\"]"
+    ],
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+      "AGM105 델코 기준 교체 가격은 28만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 390,
+    "input": "구월동 -> G90",
+    "label": "2018~2021년형 · G90",
+    "identity": [
+      "[\"genesis\",\"G90\",\"18~21년\",\"가솔린\",\"G90\"]"
+    ],
+    "messages": [
+      "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+      "AGM105 델코 기준 교체 가격은 28만원입니다.",
+      "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+    ],
+    "loop": false
+  },
+  {
+    "width": 390,
+    "input": "바르타로 하면?",
+    "messages": [
+      {
+        "role": "user",
+        "text": "문의 내용 (개인정보 보호를 위해 원문은 저장하지 않아요)",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "AGM105 바르타 기준 교체 가격은 33만원입니다.",
+        "actions": [
+          "phone"
+        ],
+        "chips": [],
+        "battery": "AGM105",
+        "areaSlug": null
+      }
+    ],
+    "state": {
+      "brand": "VARTA",
+      "quotedSpec": "AGM105",
+      "priceSummaryShown": true,
+      "originalIntent": "PRICE",
+      "priceIntent": true,
+      "serviceIntent": true,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "18~21년",
+      "symptom": null,
+      "customerGoal": "AREA",
+      "turnIndex": 4,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G90",
+      "detailModels": [
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "AGM105"
+      ],
+      "confirmedBattery": "AGM105",
+      "result": {
+        "manufacturerId": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicle": "G90",
+        "detailModel": "G90",
+        "year": "18~21년",
+        "fuel": "가솔린",
+        "defaultBattery": "AGM105",
+        "upgradeBattery": "",
+        "matchedRows": 1
+      },
+      "region": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "location": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "남동구",
+      "lastIntent": "UNKNOWN",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    }
+  },
+  {
+    "width": 390,
+    "input": "카드",
+    "messages": [
+      {
+        "role": "user",
+        "text": "문의 내용 (개인정보 보호를 위해 원문은 저장하지 않아요)",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "네. 카드결제 가능합니다.",
+        "actions": [],
+        "chips": [],
+        "battery": "AGM105",
+        "areaSlug": null
+      }
+    ],
+    "state": {
+      "brand": "VARTA",
+      "quotedSpec": "AGM105",
+      "priceSummaryShown": true,
+      "originalIntent": "PRICE",
+      "priceIntent": true,
+      "serviceIntent": true,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "18~21년",
+      "symptom": null,
+      "customerGoal": "AREA",
+      "turnIndex": 4,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G90",
+      "detailModels": [
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "AGM105"
+      ],
+      "confirmedBattery": "AGM105",
+      "result": {
+        "manufacturerId": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicle": "G90",
+        "detailModel": "G90",
+        "year": "18~21년",
+        "fuel": "가솔린",
+        "defaultBattery": "AGM105",
+        "upgradeBattery": "",
+        "matchedRows": 1
+      },
+      "region": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "location": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "남동구",
+      "lastIntent": "UNKNOWN",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    }
+  },
+  {
+    "width": 390,
+    "input": "작업시간",
+    "messages": [
+      {
+        "role": "user",
+        "text": "문의 내용 (개인정보 보호를 위해 원문은 저장하지 않아요)",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다.",
+        "actions": [],
+        "chips": [],
+        "battery": "AGM105",
+        "areaSlug": null
+      }
+    ],
+    "state": {
+      "brand": "VARTA",
+      "quotedSpec": "AGM105",
+      "priceSummaryShown": true,
+      "originalIntent": "PRICE",
+      "priceIntent": true,
+      "serviceIntent": true,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "18~21년",
+      "symptom": null,
+      "customerGoal": "AREA",
+      "turnIndex": 4,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G90",
+      "detailModels": [
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "AGM105"
+      ],
+      "confirmedBattery": "AGM105",
+      "result": {
+        "manufacturerId": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicle": "G90",
+        "detailModel": "G90",
+        "year": "18~21년",
+        "fuel": "가솔린",
+        "defaultBattery": "AGM105",
+        "upgradeBattery": "",
+        "matchedRows": 1
+      },
+      "region": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "location": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "남동구",
+      "lastIntent": "UNKNOWN",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    }
+  },
+  {
+    "width": 390,
+    "input": "가격",
+    "messages": [
+      {
+        "role": "bot",
+        "text": "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "AGM105 바르타 기준 교체 가격은 33만원입니다.",
+        "actions": [
+          "phone",
+          "stores"
+        ],
+        "chips": [],
+        "battery": "AGM105",
+        "areaSlug": null
+      }
+    ],
+    "state": {
+      "brand": "VARTA",
+      "quotedSpec": "AGM105",
+      "priceSummaryShown": true,
+      "originalIntent": "PRICE",
+      "priceIntent": true,
+      "serviceIntent": true,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "18~21년",
+      "symptom": null,
+      "customerGoal": "PRICE",
+      "turnIndex": 5,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G90",
+      "detailModels": [
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "AGM105"
+      ],
+      "confirmedBattery": "AGM105",
+      "result": {
+        "manufacturerId": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicle": "G90",
+        "detailModel": "G90",
+        "year": "18~21년",
+        "fuel": "가솔린",
+        "defaultBattery": "AGM105",
+        "upgradeBattery": "",
+        "matchedRows": 1
+      },
+      "region": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "location": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "남동구",
+      "lastIntent": "PRICE_QUESTION",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    }
+  },
+  {
+    "width": 390,
+    "input": "출장배터리되나요?",
+    "messages": [
+      {
+        "role": "user",
+        "text": "출장 지역 문의",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "네, 인천 남동구 구월동에서 출장 교체 가능합니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+        "actions": [
+          "phone"
+        ],
+        "chips": [],
+        "battery": "AGM105",
+        "areaSlug": "incheon"
+      }
+    ],
+    "state": {
+      "brand": "VARTA",
+      "quotedSpec": "AGM105",
+      "priceSummaryShown": true,
+      "originalIntent": "PRICE",
+      "priceIntent": true,
+      "serviceIntent": true,
+      "engine": "",
+      "drivetrain": "",
+      "yearRange": "18~21년",
+      "symptom": null,
+      "customerGoal": "AREA",
+      "turnIndex": 6,
+      "manufacturer": "genesis",
+      "manufacturerName": "제네시스",
+      "vehicleFamily": "G90",
+      "model": "",
+      "generation": "G90",
+      "year": null,
+      "fuel": "",
+      "detailModel": "G90",
+      "detailModels": [
+        "G90"
+      ],
+      "exactFuel": "",
+      "selectedVehicleKey": "genesis|G90",
+      "batteryCandidates": [
+        "AGM105"
+      ],
+      "confirmedBattery": "AGM105",
+      "result": {
+        "manufacturerId": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicle": "G90",
+        "detailModel": "G90",
+        "year": "18~21년",
+        "fuel": "가솔린",
+        "defaultBattery": "AGM105",
+        "upgradeBattery": "",
+        "matchedRows": 1
+      },
+      "region": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "location": {
+        "name": "구월동",
+        "fullName": "인천광역시 남동구 구월동",
+        "area": "incheon",
+        "region": "남동구",
+        "slug": "incheon",
+        "province": "인천광역시",
+        "city": "",
+        "district": "남동구",
+        "locality": "구월동",
+        "level": "locality",
+        "canonicalId": "2820010100",
+        "fullLabel": "인천 남동구 구월동",
+        "confidence": "canonical"
+      },
+      "pendingLocationDisambiguation": null,
+      "pendingVehicleConfirmation": null,
+      "city": "",
+      "district": "남동구",
+      "lastIntent": "SERVICE_AREA_AVAILABILITY",
+      "previousQuestion": null,
+      "ambiguity": null,
+      "failures": 0
+    }
+  },
+  {
+    "width": 390,
+    "input": "AGM105",
+    "messages": [
+      {
+        "role": "bot",
+        "text": "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다.",
+        "actions": [
+          "phone"
+        ],
+        "chips": [],
+        "battery": null,
+        "areaSlug": null
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "input": "AGM105 가격",
+    "messages": [
+      {
+        "role": "user",
+        "text": "가격 문의",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "actions": [
+          "phone"
+        ],
+        "chips": [],
+        "battery": null,
+        "areaSlug": null
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "input": "AGM105 얼마야?",
+    "messages": [
+      {
+        "role": "user",
+        "text": "가격 문의",
+        "actions": [],
+        "chips": []
+      },
+      {
+        "role": "bot",
+        "text": "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "actions": [
+          "phone"
+        ],
+        "chips": [],
+        "battery": null,
+        "areaSlug": null
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "ui": {
+      "focused": "chatInput",
+      "bodyScroll": 0,
+      "composerVisible": true,
+      "overflow": false,
+      "phone": true
+    },
+    "restored": true,
+    "correction": true,
+    "replacement": true,
+    "screenshot": "✓ Screenshot saved to C:\\Users\\kang1\\.agent-browser\\tmp\\screenshots\\screenshot-1790097035658.png"
+  }
+]

@@ -148,10 +148,52 @@ export function vehicleLabel(state) {
   return [state.manufacturerName, state.model || state.vehicleFamily].filter(Boolean).join(" ") + (state.year ? ` · ${state.year}년식` : "");
 }
 
-export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null) {
+export function canonicalVehicleRowKey(row) {
+  return JSON.stringify([row.manufacturerId,row.vehicle,row.year,row.fuel,row.detailModel]);
+}
+
+// The ID binds a displayed discriminator to its exact canonical condition set.
+// Duplicate/conflicting facts for the same conditions stay together for certainty checks.
+export function vehicleCandidateOptions(records, state) {
+  const rows=filteredRows(records,state);
+  if(batteryCertainty(rows).safe)return null;
+  const details=new Map();
+  for(const row of rows)if(!details.has(normalizeText(row.detailModel)))details.set(normalizeText(row.detailModel),row.detailModel);
+  const dimensions=[
+    ...(!state.detailModel?[{field:'detailModel',value:r=>details.get(normalizeText(r.detailModel))}]:[]),
+    ...(!state.year&&!state.yearRange?[{field:'year',value:r=>r.year}]:[]),
+    ...(!state.fuel?[{field:'fuel',value:r=>fuelType(r.fuel)}]:[]),
+    ...(!state.engine?[{field:'engine',value:r=>engineLabel(r.fuel)}]:[]),
+    ...(!state.drivetrain?[{field:'drivetrain',value:r=>r.fuel.match(/[24]WD/i)?.[0]?.toUpperCase()||''}]:[]),
+    ...(!state.exactFuel?[{field:'exactFuel',value:r=>r.fuel}]:[])
+  ];
+  const next=nextBatteryDiscriminator(rows,dimensions);
+  if(!next)return null;
+  return {field:next.field,choices:next.values.map(value=>({value,label:next.field==='detailModel'?detailLabel(value,rows):value,selection:{type:'vehicle-candidate',id:JSON.stringify([next.field,state.selectedVehicleKey,value,unique(rows.filter(r=>next.value(r)===value).map(canonicalVehicleRowKey)).sort()])}}))};
+}
+
+export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
   let state = { ...previous };
-  let entities = extractEntities(text, records, state, localities);
-  const intent = recognizeIntent(text, entities);
+  let selected=null;
+  if(selection!==null){
+    const current=vehicleCandidateOptions(records,state);
+    selected=selection?.type==='vehicle-candidate'&&typeof selection.id==='string'&&current&&current.field===state.previousQuestion?.field&&Array.isArray(state.previousQuestion?.choices)
+      ? current.choices.slice(0,4).find(c=>c.selection.id===selection.id&&state.previousQuestion.choices.some(p=>p.value===c.value&&p.label===c.label)) : null;
+    if(!selected)return {state:previous,messages:[copy.needDetails],chips:[],actions:['phone'],result:null,region:null};
+    const value=selected.value;
+    if(current.field==='detailModel'){
+      state.detailModels=unique(filteredRows(records,state).filter(r=>normalizeText(r.detailModel)===normalizeText(value)).map(r=>r.detailModel));
+      state.detailModel=state.detailModels.length===1?state.detailModels[0]:'';
+    } else if(current.field==='year')state.yearRange=value;
+    else if(current.field==='engine')state.engine=String(parseInt(value,10));
+    else state[current.field]=value;
+    const selectedRanges=unique(filteredRows(records,state).map(row=>row.year));
+    if(selectedRanges.length===1)state.yearRange=selectedRanges[0];
+    // Labels are presentation, not natural-language input. Do not re-expand aliases.
+    text='';
+  }
+  let entities = selected ? {matches:[]} : extractEntities(text, records, state, localities);
+  const intent = selected ? 'MODEL_INFO' : recognizeIntent(text, entities);
   const messages = [];
   const output = { state, messages, chips: [], actions: [], result: null, region: null };
   const say = value => messages.push(value);
@@ -164,7 +206,7 @@ export function conversationTurn(previous, text, records, localities = [], price
   const ask = (field, prompt, choices = [], extra = {}) => {
     state.previousQuestion = { field, prompt, choices, ...extra };
     state.ambiguity = field;
-    output.chips = choices.slice(0,4).map(choice => ({ label: choice.label, value: choice.value }));
+    output.chips = choices.slice(0,4).map(choice => ({ label: choice.label, value: choice.value, ...(choice.selection?{selection:choice.selection}:{}) }));
     say(prompt);
   };
   if (intent === "RESET") { output.state = createConversationState(); say(copy.greeting); return output; }
@@ -225,8 +267,8 @@ export function conversationTurn(previous, text, records, localities = [], price
 
   // Plain answers can resolve any displayed option; no chip is required.
   const question = state.previousQuestion;
-  let answered = false;
-  if (question && !/가격|얼마|전화|출장|agm|배터리/i.test(text)) {
+  let answered = Boolean(selected);
+  if (!selected && question && !/가격|얼마|전화|출장|agm|배터리/i.test(text)) {
     const normalized = normalizeText(text).replace(/(이야|이에요|예요|맞아|입니다)$/, "");
     const choices = question.choices.filter(choice => [choice.value, choice.label].some(value => normalizeText(value) === normalized || (normalized.length >= 2 && normalizeText(value).includes(normalized))));
     const choice = choices.length === 1 ? choices[0] : null;
@@ -265,8 +307,8 @@ export function conversationTurn(previous, text, records, localities = [], price
   }
   const changedYear = entities.year && entities.year !== state.year;
   if (changedYear) {
+    if (state.year || (intent==='CORRECTION' && state.yearRange)) { state.detailModel = ""; state.detailModels=[]; state.generation = ""; }
     state.yearRange = "";
-    if (state.year) { state.detailModel = ""; state.detailModels=[]; state.generation = ""; }
     state.year = entities.year;
   }
   if (entities.detailModel) state.detailModel = entities.detailModel;
@@ -408,19 +450,9 @@ export function conversationTurn(previous, text, records, localities = [], price
     else if(state.priceIntent) { say(variant("price",state.turnIndex)); output.actions=["phone","stores"]; }
     return output;
   }
-  const detailRepresentatives=new Map();
-  for(const row of rows)if(!detailRepresentatives.has(normalizeText(row.detailModel)))detailRepresentatives.set(normalizeText(row.detailModel),row.detailModel);
-  const dimensions = [
-    ...(!state.detailModel ? [{field:"detailModel",value:r=>detailRepresentatives.get(normalizeText(r.detailModel))}] : []),
-    ...(!state.year && !state.yearRange ? [{field:"year",value:r=>r.year}] : []),
-    ...(!state.fuel ? [{field:"fuel",value:r=>fuelType(r.fuel)}] : []),
-    ...(!state.engine ? [{field:"engine",value:r=>engineLabel(r.fuel)}] : []),
-    ...(!state.drivetrain ? [{field:"drivetrain",value:r=>r.fuel.match(/[24]WD/i)?.[0]?.toUpperCase()||""}] : []),
-    ...(!state.exactFuel ? [{field:"exactFuel",value:r=>r.fuel}] : [])
-  ];
-  const next=nextBatteryDiscriminator(rows,dimensions);
+  const next=vehicleCandidateOptions(records,state);
   if(next){
-    const choices=next.values.map(value=>({value,label:next.field==='detailModel'?detailLabel(value,rows):value}));
+    const choices=next.choices;
     const prompt=next.field==='year'?copy.year:next.field==='fuel'?copy.fuel:copy.detail(choices.map(c=>c.label));
     ask(next.field,prompt,choices); return output;
   }

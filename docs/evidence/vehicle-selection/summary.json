@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "queries": 17496,
+  "groups": 499,
+  "preButtons": 1277,
+  "preTotals": {
+    "RESOLVES_EXACT_ROW": 1208,
+    "RESOLVES_GOVERNED_NO_MATCH": 4,
+    "REPEATS_SAME_AMBIGUITY": 62,
+    "RESOLVES_WRONG_ROW": 3,
+    "LOSES_YEAR_OR_GENERATION": 0,
+    "RETURNS_UNSUPPORTED": 0,
+    "OTHER_FAILURE": 0
+  },
+  "postButtons": 1277,
+  "postTotals": {
+    "RESOLVES_EXACT_ROW": 1273,
+    "RESOLVES_GOVERNED_NO_MATCH": 4,
+    "REPEATS_SAME_AMBIGUITY": 0,
+    "RESOLVES_WRONG_ROW": 0,
+    "LOSES_YEAR_OR_GENERATION": 0,
+    "RETURNS_UNSUPPORTED": 0,
+    "OTHER_FAILURE": 0
+  },
+  "gates": {
+    "DISAMBIGUATION_SELECTION_LOOP": 0,
+    "DISAMBIGUATION_WRONG_ROW": 0,
+    "DISAMBIGUATION_SELECTION_LOST": 0,
+    "DISAMBIGUATION_YEAR_GENERATION_LOST": 0,
+    "DISAMBIGUATION_FALSE_UNSUPPORTED": 0,
+    "DISAMBIGUATION_UNAUTHORIZED_BATTERY_INFERENCE": 0
+  },
+  "contextTurns": 33,
+  "regressionCommands": 20,
+  "browserRecords": 34,
+  "browserClicks": 16,
+  "browserWidths": [
+    1440,
+    390
+  ],
+  "blog": 345,
+  "sitemap": 1133
+}

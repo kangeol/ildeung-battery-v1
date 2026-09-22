@@ -1,9 +1,9 @@
 import { AGM_STORE_URL, DIN_STORE_URL, PHONE_HREF, batteryStoreType } from "./smart-consult-core.js?v=certainty-v1";
 import { copy, variant } from "./conversation-copy.js?v=ai-mobile-v1";
-import { conversationTurn, createConversationState, vehicleLabel } from "./smart-consult-conversation.js?v=faq-v1";
-import { findEntry, entryState } from "./smart-consult-entry.js?v=faq-v1";
+import { conversationTurn, createConversationState, vehicleLabel, vehicleCandidateOptions } from "./smart-consult-conversation.js?v=selection-v1";
+import { findEntry, entryState } from "./smart-consult-entry.js?v=selection-v1";
 import { LAUNCHER_KEY, decodeLauncherContext, hasEntryConflict } from "./smart-consult-launcher-context.js";
-import { SESSION_KEY, encodeSession, decodeSession, clearSession, safeUserMessage, summaryFields } from "./smart-consult-session.js?v=faq-v1";
+import { SESSION_KEY, encodeSession, decodeSession, clearSession, safeUserMessage, summaryFields } from "./smart-consult-session.js?v=selection-v1";
 
 const chatLog = document.querySelector("#chatLog");
 const chatForm = document.querySelector("#chatForm");
@@ -70,7 +70,8 @@ function addChips(row, choices) {
   for (const choice of choices.slice(0, 4)) {
     const button = createElement("button", "quick-reply", choice.label);
     button.type = "button";
-    button.addEventListener("click", () => { if (!busy) handleMessage(choice.value); });
+    if(choice.selection)button.dataset.candidateId=choice.selection.id;
+    button.addEventListener("click", () => { if (!busy) handleMessage(choice.selection?choice.label:choice.value,choice.selection); });
     wrap.appendChild(button);
   }
   row.appendChild(wrap);
@@ -116,7 +117,7 @@ function renderSummary() {
   chatLog.appendChild(row);
 }
 
-async function handleMessage(text) {
+async function handleMessage(text, selection = null) {
   if (busy) return;
   if (/^(처음부터(?:다시)?|다시시작|초기화|리셋|새상담)$/.test(text.replace(/\s/g,""))) { resetChat(); return; }
   busy = true;
@@ -136,7 +137,7 @@ async function handleMessage(text) {
     if (delay) await new Promise(resolve => setTimeout(resolve, delay));
     if (activeSession !== session) return;
     transcript.push({role:"user",text:safeUserMessage(text,state,data.records,data.localities),actions:[],chips:[]});
-    const response = conversationTurn(state, text, data.records, data.localities, data.priceCatalog, data.servicePolicy);
+    const response = conversationTurn(state, text, data.records, data.localities, data.priceCatalog, data.servicePolicy, selection);
     state = response.state;
     typing.remove();
     let last;
@@ -211,6 +212,16 @@ async function initialize() {
     const compatible=saved && !invalidEntry;
     if (compatible) {
       state=saved.state; transcript=saved.messages; entryId=saved.entryId;
+      // Rehydrate pre-upgrade pending buttons from canonical data, not saved IDs.
+      if (state.previousQuestion && transcript.at(-1)?.chips?.length) {
+        const data=await loadData();
+        if (activeSession!==session) return;
+        const current=vehicleCandidateOptions(data.records,state);
+        if (current?.field===state.previousQuestion.field) {
+          transcript.at(-1).chips=transcript.at(-1).chips.map(chip=>
+            current.choices.slice(0,4).find(choice=>choice.value===chip.value&&choice.label===chip.label) || chip);
+        }
+      }
       for (const [index,message] of transcript.entries()) {
         const row=addMessage(message.text,message.role);
         if (message.areaSlug) addLink(row,copy.labels.area,`/area/${message.areaSlug}/`);
