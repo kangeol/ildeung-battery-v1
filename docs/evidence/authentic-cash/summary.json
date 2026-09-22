@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "focusedTurns": 581,
+  "gates": {
+    "AUTHENTIC_PRODUCT_WRONG_ANSWER": 0,
+    "RECENT_MANUFACTURE_WRONG_ANSWER": 0,
+    "EXACT_MANUFACTURE_DATE_FABRICATED": 0,
+    "EXACT_SHIPMENT_DATE_FABRICATED": 0,
+    "INVENTORY_ARRIVAL_DATE_FABRICATED": 0,
+    "UNVERIFIED_CURRENT_MONTH_CLAIM": 0,
+    "CASH_PAYMENT_WRONG_ANSWER": 0,
+    "CASH_DISCOUNT_FABRICATED": 0,
+    "CARD_SURCHARGE_FABRICATED": 0,
+    "VAT_CONDITION_FABRICATED": 0,
+    "ACCOUNT_NUMBER_FABRICATED": 0,
+    "PRODUCT_PAYMENT_MULTI_INTENT_LOST": 0,
+    "PRODUCT_POLICY_CONTEXT_LOST": 0
+  },
+  "massGroups": 499,
+  "massButtons": 1277,
+  "massTotals": {
+    "RESOLVES_EXACT_ROW": 1273,
+    "RESOLVES_GOVERNED_NO_MATCH": 4,
+    "REPEATS_SAME_AMBIGUITY": 0,
+    "RESOLVES_WRONG_ROW": 0,
+    "LOSES_YEAR_OR_GENERATION": 0,
+    "RETURNS_UNSUPPORTED": 0,
+    "OTHER_FAILURE": 0
+  },
+  "contextTurns": 33,
+  "rejectedSelections": 19,
+  "standaloneTurns": 178,
+  "regressionCommands": 20,
+  "browser": [
+    {
+      "width": 1440,
+      "records": 45,
+      "candidateClicks": 7
+    },
+    {
+      "width": 390,
+      "records": 45,
+      "candidateClicks": 7
+    }
+  ],
+  "blog": 345,
+  "sitemap": 1133,
+  "blockers": 0
+}

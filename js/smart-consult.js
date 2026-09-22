@@ -1,9 +1,9 @@
 import { AGM_STORE_URL, DIN_STORE_URL, PHONE_HREF, batteryStoreType } from "./smart-consult-core.js?v=certainty-v1";
 import { copy, variant } from "./conversation-copy.js?v=ai-mobile-v1";
-import { conversationTurn, createConversationState, vehicleLabel, vehicleCandidateOptions } from "./smart-consult-conversation.js?v=selection-v1";
-import { findEntry, entryState } from "./smart-consult-entry.js?v=selection-v1";
+import { conversationTurn, createConversationState, vehicleLabel, vehicleCandidateOptions } from "./smart-consult-conversation.js?v=authentic-v1";
+import { findEntry, entryState } from "./smart-consult-entry.js?v=authentic-v1";
 import { LAUNCHER_KEY, decodeLauncherContext, hasEntryConflict } from "./smart-consult-launcher-context.js";
-import { SESSION_KEY, encodeSession, decodeSession, clearSession, safeUserMessage, summaryFields } from "./smart-consult-session.js?v=selection-v1";
+import { SESSION_KEY, encodeSession, decodeSession, clearSession, safeUserMessage, summaryFields } from "./smart-consult-session.js?v=authentic-v1";
 
 const chatLog = document.querySelector("#chatLog");
 const chatForm = document.querySelector("#chatForm");

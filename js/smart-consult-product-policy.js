@@ -1,6 +1,18 @@
 import {brandIntent,batteryPrice,priceDescription,splitBatterySpec,formatWon} from './smart-consult-prices.js?v=product-v1';
 import {PHONE_LABEL} from './smart-consult-core.js?v=certainty-v1';
 
+// Recognition only; all Owner-authorized assertions remain in the policy JSON.
+export function assuranceReply(text,policy) {
+  const s=String(text).normalize('NFKC').replace(/\s/g,'').toLowerCase();
+  const authentic=/정품|가품/.test(s);
+  const recent=/(?:최신|최근).*(?:제조|생산)|제조(?:일자|일)?.*(?:최신|최근)|오래.*재고|재고.*오래|새(?:배터리|제품)/.test(s);
+  const exact=/(?:제조|생산|출고|입고).*(?:언제|정확|날짜|일자|주차|몇월|몇년)|(?:언제|정확|몇월|몇년|이번달|이번월|오늘|이번주|\d+월|\d+년).*(?:제조|생산|출고|입고|제품)|출고일|입고일/.test(s)
+    && !(/제조일자(?:도|가|는)?(?:최신|최근)/.test(s)&&!/(?:정확|언제|몇월|몇년|이번달|이번주|출고|입고)/.test(s));
+  const a=policy?.product?.assurance;if(!a||!authentic&&!recent&&!exact)return null;
+  const messages=exact?[...(authentic?[a.AUTHENTIC]:[]),a.EXACT_DATE]:[a[authentic&&recent?'COMBINED':authentic?'AUTHENTIC':'RECENT']];
+  return {messages:messages.map(m=>m.replaceAll('{phone}',PHONE_LABEL)),actions:exact?['phone']:[]};
+}
+
 export function extendedPolicyIntent(text) {
   const s=String(text).normalize('NFKC').replace(/\s/g,'').toLowerCase();
   if(/무조건.*교환|새배터리.*(?:바꿔|교환)|어떤경우.*a\/?s|(?:3|삼)개월.*(?:넘|지났|이후)|교환조건|환불/.test(s))return 'AS_DETAIL';

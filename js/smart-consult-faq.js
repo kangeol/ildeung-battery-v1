@@ -11,6 +11,7 @@ export function finalFaqIntent(text) {
   if(/수수료|할인|부가세|vat|계좌번호/.test(s))return 'PAYMENT_CONFIRM';
   const payments=[];
   if(/카드/.test(s))payments.push('CARD');
+  if(/현금|현찰/.test(s.replaceAll('현금영수증','')))payments.push('CASH');
   if(/현금영수증/.test(s))payments.push('CASH_RECEIPT');
   if(/세금계산서/.test(s))payments.push('TAX_INVOICE');
   if(/계좌이체|이체|계좌로/.test(s))payments.push('BANK_TRANSFER');

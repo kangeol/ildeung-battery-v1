@@ -2,10 +2,10 @@ import { MANUFACTURER_ALIASES, batteryStoreType, buildVehicleGroups, normalizeTe
 import { copy, variant, symptomLabels } from "./conversation-copy.js";
 import { resolveLocation } from "./smart-consult-location.js?v=location-v1";
 import { resolveVehicleText } from "./vehicle-aliases.js";
-import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand } from "./smart-consult-prices.js?v=product-v1";
+import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand, normalizeBatteryCode } from "./smart-consult-prices.js?v=product-v1";
 import { servicePolicyIntent } from "./smart-consult-policy.js?v=faq-v1";
-import { extendedPolicyReply } from "./smart-consult-product-policy.js?v=product-v1";
-import { finalFaqReply } from "./smart-consult-faq.js?v=faq-v1";
+import { extendedPolicyReply, assuranceReply } from "./smart-consult-product-policy.js?v=authentic-v1";
+import { finalFaqReply } from "./smart-consult-faq.js?v=authentic-v1";
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -173,6 +173,42 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  const assurance=selection===null?assuranceReply(text,servicePolicy):null;
+  const cash=/현금|현찰/.test(String(text).replace(/현금\s*영수증/g,''));
+  if(selection!==null||(!assurance&&!cash))return conversationCore(previous,text,records,localities,priceCatalog,servicePolicy,selection);
+  // A policy question may also supply a new vehicle/product. Keep product pricing
+  // separate from fitment, and never parse manufacture dates as a vehicle year.
+  const state={...previous},entities=extractEntities(text,records,previous,localities);
+  const brand=brandIntent(text,priceCatalog);if(brand)state.brand=brand;
+  const token=String(text).match(/(?<![a-z0-9])(?:AGM\s*\d+R?|DIN\s*\d+(?:HL|L|R)?|DF\s*\d+(?:AL|L|R)|65\s*-\s*900|\d+(?:AL|L|R))(?![a-z0-9])/i)?.[0];
+  const spec=token?normalizeBatteryCode(token,priceCatalog):'';
+  const context=[];
+  if(entities.region)context.push(entities.region.fullName||entities.region.fullLabel);
+  if(entities.matches.length){
+    context.push(...entities.matches.map(m=>`${m.manufacturerName} ${m.vehicle}`));
+    if(entities.detailModel)context.push(entities.detailModel);
+    if(entities.year&&(!assurance?.actions.includes('phone')||/년식/.test(text)))context.push(`${entities.year}년식`);
+    if(entities.fuel)context.push(entities.fuel);
+    if(entities.engine)context.push(`${entities.engine}cc`);
+    if(entities.drivetrain)context.push(entities.drivetrain);
+  }else if(entities.manufacturer)context.push(records.find(r=>r.manufacturerId===entities.manufacturer)?.manufacturerName||'');
+  const pricing=pricePattern.test(text)&&(!assurance?.actions.includes('phone')||/가격|비용|견적|배터리값|밧데리값/.test(text));
+  const productOnly=Boolean(token)&&!entities.matches.length&&!entities.manufacturer;
+  let out={state,messages:[],chips:[],actions:[],result:null,region:null};
+  if(context.length)out=conversationCore(state,context.join(' ')+(pricing&&!productOnly?' 가격':''),records,localities,priceCatalog,servicePolicy);
+  if(productOnly){
+    if(Object.hasOwn(priceCatalog?.prices||{},spec))out.state.quotedSpec=spec;
+    if(pricing){
+      const priced=conversationCore(out.state,`${brand||''} ${token} 가격`,records,localities,priceCatalog,servicePolicy);
+      out={...priced,messages:[...out.messages,...priced.messages],actions:unique([...out.actions,...priced.actions])};
+    }
+  }else if(!context.length&&pricing&&!/수수료|할인|부가세|vat|계좌번호/i.test(text))out=conversationCore(state,'배터리 가격',records,localities,priceCatalog,servicePolicy);
+  const faq=finalFaqReply(text,servicePolicy),existing=assurance?extendedPolicyReply(text,out.state,priceCatalog,servicePolicy):null;
+  for(const reply of [assurance,existing,faq])if(reply){out.messages.push(...reply.messages);out.actions=unique([...out.actions,...reply.actions]);}
+  return out;
+}
+
+function conversationCore(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
   let state = { ...previous };
   let selected=null;
   if(selection!==null){

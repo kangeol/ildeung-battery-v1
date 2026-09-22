@@ -1,0 +1,9 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
+const git=(...a)=>execFileSync('git',a,{encoding:'utf8',maxBuffer:5e6}).trim(),base='6ea87f5c0f8fc72821b723b7caf586de6e04c7bd';
+const changed=git('diff','--name-only',base).split('\n').filter(Boolean);
+const allowed=new Set(['data/consult-service-policy.json','js/smart-consult-conversation.js','js/smart-consult-product-policy.js','js/smart-consult-faq.js','js/smart-consult.js','js/smart-consult-entry.js','js/smart-consult-session.js','smart-consult/index.html','tools/test-battery-certainty-scope.js','tools/test-battery-pricing.js','tools/test-brand-service.js','tools/test-product-as-hours.js','tools/test-final-faq.js','tools/test-smart-consult-branding.js','tools/test-smart-consult-viewport.js']);
+for(const p of [...changed,...git('ls-files','--others','--exclude-standard').split('\n').filter(Boolean)])assert.ok(allowed.has(p)||p.startsWith('tools/test-authentic-')||p.startsWith('docs/evidence/authentic-cash/'),p);
+assert.deepEqual(changed.filter(p=>p.endsWith('.html')),['smart-consult/index.html']);
+const norm=s=>s.replace(/\r\n/g,'\n').trim();assert.equal(norm(fs.readFileSync('smart-consult/index.html','utf8')),norm(git('show',base+':smart-consult/index.html')).replace('?v=selection-v1','?v=authentic-v1'));
+const blog=JSON.parse(fs.readFileSync('seo-data/blog-cases.json')).posts.length,sitemap=(fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length;assert.equal(blog,345);assert.equal(sitemap,1133);
+const result={status:'PASS',baseline:base,changed,unexpectedHtml:0,generatedVehicleHtml:0,generatedAreaHtml:0,metadataDiff:0,seoGeoBodyDiff:0,vehicleDataDiff:0,areaDataDiff:0,priceDataDiff:0,blog,sitemap};fs.mkdirSync('docs/evidence/authentic-cash',{recursive:true});fs.writeFileSync('docs/evidence/authentic-cash/freeze.json',JSON.stringify(result,null,2)+'\n');console.log(result);

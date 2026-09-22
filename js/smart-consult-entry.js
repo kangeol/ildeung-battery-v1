@@ -1,4 +1,4 @@
-import { createConversationState } from "./smart-consult-conversation.js?v=selection-v1";
+import { createConversationState } from "./smart-consult-conversation.js?v=authentic-v1";
 import { copy } from "./conversation-copy.js";
 
 export function findEntry(id, index) {
