@@ -449,6 +449,7 @@ function main() {
     }).length,
     protectedDbChanged: gitChangedFiles(["master-db", "data"]).filter(file=>{
       if(file==='data/battery-prices.json')return false; // Validated exhaustively by test-battery-pricing.js.
+      if(file==='data/consult-service-policy.json')return false; // Exact Owner fixture in test-brand-service.js.
       if(file!=="data/hyundai.json")return true;
       // Explicit GN7 withdrawal + Owner-approved restoration, no broad DB exclusion.
       const expected=JSON.parse(gitShow(file));

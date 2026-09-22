@@ -1,9 +1,9 @@
 import { copy, symptomLabels } from "./conversation-copy.js";
-import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=flow-v1";
+import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=brand-v1";
 
 export const SESSION_KEY = "ildeung.smart-consult.v5";
-// Old transcripts can contain the withdrawn GN7 battery value. Do not replay them.
-const VERSION = 2;
+// Version 1 GN7 transcripts remain rejected; version 2 gains safe empty brand fields.
+const VERSION = 3;
 const MAX_AGE = 12 * 60 * 60 * 1000;
 const intentLabels = {CORRECTION:"정보 수정",PRICE_QUESTION:"가격 문의",CALL_REQUEST:"전화 문의",BUY_REQUEST:"구매 문의",AGM_DIN_QUESTION:"배터리 타입 문의",BATTERY_QUESTION:"배터리 문의",SERVICE_AREA_AVAILABILITY:"출장 지역 문의",LIVE_DISPATCH_AVAILABILITY:"지금 방문 문의",TODAY_SERVICE:"오늘 방문 문의",ARRIVAL_TIME:"도착 시간 문의",URGENT_SERVICE:"긴급 방문 문의",RECOVERY:"정보 확인 도움 요청"};
 
@@ -39,9 +39,15 @@ export function decodeSession(raw, now = Date.now()) {
   try {
     if (!raw || raw.length > 200000) return null;
     const envelope = JSON.parse(raw);
-    if (envelope.version !== VERSION || !Number.isFinite(envelope.savedAt) || envelope.savedAt > now || now - envelope.savedAt > MAX_AGE || typeof envelope.body !== "string" || checksum(envelope.body) !== envelope.checksum) return null;
+    if (![2,VERSION].includes(envelope.version) || !Number.isFinite(envelope.savedAt) || envelope.savedAt > now || now - envelope.savedAt > MAX_AGE || typeof envelope.body !== "string" || checksum(envelope.body) !== envelope.checksum) return null;
     const data = JSON.parse(envelope.body);
     const s = data.state;
+    if(envelope.version===2 && s){
+      const added=['brand','quotedSpec','priceSummaryShown'];
+      if(Object.keys(s).sort().join()!==Object.keys(createConversationState()).filter(k=>!added.includes(k)).sort().join())return null;
+      Object.assign(s,{brand:'',quotedSpec:s.confirmedBattery||'',priceSummaryShown:false});
+    }
+    if(s && !['','DELKOR','VARTA'].includes(s.brand))return null;
     if (!s || Object.keys(s).sort().join() !== Object.keys(createConversationState()).sort().join()) return null;
     for (const [key, value] of Object.entries(createConversationState())) {
       if (typeof value === "string" && typeof s[key] !== "string") return null;

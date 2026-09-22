@@ -48,7 +48,7 @@ const session=flow(["BMW 520d","2019년식","인천"]);
 const encoded=encodeSession(session.state,session.messages,null,100000);
 const restored=decodeSession(encoded,100001);eq(restored.state,session.state);eq(restored.messages,session.messages);
 eq(flow(["가격은?"],restored.state).outputs[0].actions,["phone","stores"]);
-for(const raw of ["{", "null", "{}",encoded.replace('"version":2','"version":1'),encoded.replace('AGM95','FAKE')]) eq(decodeSession(raw,100001),null);
+for(const raw of ["{", "null", "{}",JSON.stringify({...JSON.parse(encoded),version:1}),encoded.replace('AGM95','FAKE')]) eq(decodeSession(raw,100001),null);
 eq(decodeSession(encoded,100000+13*60*60*1000),null);
 eq(decodeSession(encoded,99999),null);
 let removed;clearSession({removeItem:key=>removed=key});eq(removed,SESSION_KEY);

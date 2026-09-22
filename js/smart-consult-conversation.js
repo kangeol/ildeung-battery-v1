@@ -2,7 +2,8 @@ import { MANUFACTURER_ALIASES, batteryStoreType, buildVehicleGroups, normalizeTe
 import { copy, variant, symptomLabels } from "./conversation-copy.js";
 import { resolveLocation } from "./smart-consult-location.js?v=flow-v1";
 import { resolveVehicleText } from "./vehicle-aliases.js";
-import { directPriceSpec, priceDescription, splitBatterySpec } from "./smart-consult-prices.js?v=price-v1";
+import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand } from "./smart-consult-prices.js?v=brand-v1";
+import { servicePolicyIntent } from "./smart-consult-policy.js?v=brand-v1";
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -11,7 +12,7 @@ const pricePattern = /가격|얼마|비용|견적|배터리값|밧데리값/;
 const knownBattery = result => result?.defaultBattery && !/문의|확인/.test(result.defaultBattery);
 
 export function createConversationState() {
-  return { originalIntent: "", priceIntent: false, serviceIntent: false, engine: "", drivetrain: "", yearRange: "", symptom: null, customerGoal: "UNKNOWN", turnIndex: 0, manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
+  return { brand: "", quotedSpec: "", priceSummaryShown: false, originalIntent: "", priceIntent: false, serviceIntent: false, engine: "", drivetrain: "", yearRange: "", symptom: null, customerGoal: "UNKNOWN", turnIndex: 0, manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
 }
 
 export function symptomIntent(text) {
@@ -145,13 +146,19 @@ export function vehicleLabel(state) {
   return [state.manufacturerName, state.model || state.vehicleFamily].filter(Boolean).join(" ") + (state.year ? ` · ${state.year}년식` : "");
 }
 
-export function conversationTurn(previous, text, records, localities = [], priceCatalog = null) {
+export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null) {
   let state = { ...previous };
   let entities = extractEntities(text, records, state, localities);
   const intent = recognizeIntent(text, entities);
   const messages = [];
   const output = { state, messages, chips: [], actions: [], result: null, region: null };
   const say = value => messages.push(value);
+  const quote = spec => {
+    state.quotedSpec=spec;
+    const answer=priceDescription(spec,priceCatalog,state.brand);
+    say(answer);
+    if(servicePolicy?.summary && !state.priceSummaryShown && /교체 가격은/.test(answer)) {say(servicePolicy.summary);state.priceSummaryShown=true;}
+  };
   const ask = (field, prompt, choices = [], extra = {}) => {
     state.previousQuestion = { field, prompt, choices, ...extra };
     state.ambiguity = field;
@@ -160,10 +167,13 @@ export function conversationTurn(previous, text, records, localities = [], price
   };
   if (intent === "RESET") { output.state = createConversationState(); say(copy.greeting); return output; }
   if (pricePattern.test(text)) { state.priceIntent=true; state.originalIntent="PRICE"; }
-  const directSpec = directPriceSpec(text);
+  const requestedBrand=brandIntent(text,priceCatalog);
+  const policyIntent=servicePolicy && servicePolicyIntent(text);
+  if(requestedBrand){state.brand=requestedBrand;state.priceIntent=true;state.originalIntent='PRICE';}
+  const directSpec = directPriceSpec(withoutBrand(text,priceCatalog));
   if (directSpec) {
     // A price lookup is not a vehicle fitment confirmation. Preserve vehicle/area facts.
-    say(priceDescription(directSpec, priceCatalog));
+    quote(directSpec);
     output.actions = ["phone"];
     return output;
   }
@@ -187,10 +197,11 @@ export function conversationTurn(previous, text, records, localities = [], price
   }
 
   const explicitFamilyAnswer=state.previousQuestion?.field==="vehicle" && entities.matches.length===1 && normalizeText(text)===normalizeText(entities.matches[0].vehicle);
-  const shorthand = entities.shorthand && !explicitFamilyAnswer && entities.matches.length === 1 ? entities.matches[0] : null;
+  const canonicalNamedWithYear=entities.matches.length===1 && entities.year && normalizeText(text).includes(normalizeText(entities.matches[0].manufacturerName)) && normalizeText(text).includes(normalizeText(entities.matches[0].vehicle));
+  const shorthand = entities.shorthand && !explicitFamilyAnswer && !canonicalNamedWithYear && entities.matches.length === 1 ? entities.matches[0] : null;
   if (shorthand) {
     if (state.selectedVehicleKey && state.selectedVehicleKey !== shorthand.key) {
-      state = {...createConversationState(),originalIntent:state.originalIntent,priceIntent:state.priceIntent,serviceIntent:state.serviceIntent,symptom:state.symptom,customerGoal:state.customerGoal,turnIndex:state.turnIndex,region:state.region,location:state.location,city:state.city,district:state.district,lastIntent:intent}; output.state=state;
+      state = {...createConversationState(),brand:state.brand,originalIntent:state.originalIntent,priceIntent:state.priceIntent,serviceIntent:state.serviceIntent,symptom:state.symptom,customerGoal:state.customerGoal,turnIndex:state.turnIndex,region:state.region,location:state.location,city:state.city,district:state.district,lastIntent:intent}; output.state=state;
     }
     state.manufacturer = shorthand.manufacturerId;
     state.manufacturerName = shorthand.manufacturerName;
@@ -232,7 +243,7 @@ export function conversationTurn(previous, text, records, localities = [], price
   if (entities.matches.length === 1) {
     const match = entities.matches[0];
     if (state.selectedVehicleKey && state.selectedVehicleKey !== match.key) {
-      state = { ...createConversationState(), originalIntent:state.originalIntent,priceIntent:state.priceIntent,serviceIntent:state.serviceIntent,symptom:state.symptom,customerGoal:state.customerGoal,turnIndex:state.turnIndex,region: state.region, location:state.location, pendingLocationDisambiguation:state.pendingLocationDisambiguation, city: state.city, district: state.district, lastIntent: intent };
+      state = { ...createConversationState(), brand:state.brand, originalIntent:state.originalIntent,priceIntent:state.priceIntent,serviceIntent:state.serviceIntent,symptom:state.symptom,customerGoal:state.customerGoal,turnIndex:state.turnIndex,region: state.region, location:state.location, pendingLocationDisambiguation:state.pendingLocationDisambiguation, city: state.city, district: state.district, lastIntent: intent };
       output.state = state;
     }
     state.selectedVehicleKey = match.key;
@@ -270,6 +281,7 @@ export function conversationTurn(previous, text, records, localities = [], price
     if(entities.locationScope) { state.location=entities.locationScope;state.region=entities.locationScope; }
   }
   if (entities.year || entities.fuel || entities.detailModel || entities.exactFuel || entities.engine || entities.drivetrain || entities.yearRange) answered = true;
+  if(answered || shorthand)state.quotedSpec="";
   if (intent === "CORRECTION") say(copy.correction(entities.year));
 
   let rows = filteredRows(records, state);
@@ -329,10 +341,19 @@ export function conversationTurn(previous, text, records, localities = [], price
     areaAnswer(); return output;
   }
   if (intent === "CALL_REQUEST") { say(copy.call); output.actions = ["phone"]; return output; }
+  if(policyIntent && servicePolicy.answers?.[policyIntent]) {
+    if(entities.region)areaAnswer();
+    say(servicePolicy.answers[policyIntent]);
+    if(policyIntent==='KEEP_OLD_BATTERY')output.actions=['phone'];
+    return output;
+  }
+  if(requestedBrand && !answered && (state.quotedSpec || state.result?.defaultBattery)) {
+    quote(state.quotedSpec || state.result.defaultBattery);output.actions=['phone'];return output;
+  }
   // PRICE is a retained goal, not a terminal reply before vehicle narrowing.
   if (intent === "PRICE_QUESTION" && state.result) {
     if(entities.region) areaAnswer();
-    say(copy.result(state.result.defaultBattery)); say(priceCatalog ? priceDescription(state.result.defaultBattery,priceCatalog) : variant("price",state.turnIndex));
+    say(copy.result(state.result.defaultBattery)); if(priceCatalog)quote(state.result.defaultBattery);else say(variant("price",state.turnIndex));
     output.result=state.result; output.actions=["phone","stores"]; return output;
   }
   if (intent === "BUY_REQUEST") { say(knownBattery(state.result) ? copy.buy : copy.needDetails); output.actions = knownBattery(state.result) ? ["phone", "stores"] : ["phone"]; return output; }
@@ -373,7 +394,7 @@ export function conversationTurn(previous, text, records, localities = [], price
     say(knownBattery(state.result) ? copy.result(state.result.defaultBattery) : copy.needsCheck);
     if (state.result.upgradeBattery) say(copy.upgrade(state.result.upgradeBattery));
     output.result = state.result;
-    if(priceCatalog) { say(priceDescription(state.result.defaultBattery,priceCatalog)); output.actions=["phone","stores"]; }
+    if(priceCatalog) { quote(state.result.defaultBattery); output.actions=["phone","stores"]; }
     else if(state.priceIntent) { say(variant("price",state.turnIndex)); output.actions=["phone","stores"]; }
     return output;
   }
@@ -396,7 +417,7 @@ export function conversationTurn(previous, text, records, localities = [], price
   // Identical known attributes with conflicting facts must never be guessed.
   const specs = unique(rows.map(row=>row.defaultBattery));
   if (priceCatalog && specs.length === 1 && splitBatterySpec(specs[0]).length > 1) {
-    say(priceDescription(specs[0],priceCatalog)); output.actions=["phone"]; return output;
+    quote(specs[0]); output.actions=["phone"]; return output;
   }
   say(copy.needsCheck); output.actions = ["phone"]; return output;
 }

@@ -1,0 +1,23 @@
+{
+  "version": "owner-2026-09-22-v1",
+  "authority": "Owner-authorized quoted replacement conditions",
+  "facts": {
+    "PRICE_INCLUDES_MOBILE_SERVICE": true,
+    "PRICE_INCLUDES_LABOR": true,
+    "PRICE_REQUIRES_OLD_BATTERY_COLLECTION": true,
+    "REQUIRED_CODING_INCLUDED_FREE": true,
+    "BASIC_INSPECTION_INCLUDED_FREE": true,
+    "NO_ONSITE_SURCHARGE_FOR_QUOTED_CONDITIONS": true
+  },
+  "answers": {
+    "MOBILE_SERVICE_FEE": "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다.",
+    "LABOR_FEE": "교체 공임이 포함된 가격이라 별도 공임비는 없습니다.",
+    "OLD_BATTERY": "안내드린 가격은 기존 폐배터리 수거 조건입니다. 교체 후 기존 배터리는 수거합니다.",
+    "KEEP_OLD_BATTERY": "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요.",
+    "CODING": "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다.",
+    "BASIC_INSPECTION": "배터리 교체 시 기본점검도 무료로 진행합니다.",
+    "ONSITE_SURCHARGE": "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다.",
+    "COMBINED": "안내드린 교체 가격에는 출장교체비용과 공임이 포함되어 있고, 코딩이 필요한 차량은 코딩비도 별도로 받지 않습니다. 기본점검은 무료이며, 기존 폐배터리 수거 조건입니다. 안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다."
+  },
+  "summary": "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+}

@@ -1,5 +1,5 @@
 {
-  "version": "owner-2026-09-22-v1",
+  "version": "owner-2026-09-22-brand-v1",
   "effectiveAt": "2026-09-22",
   "currency": "KRW",
   "authority": "Owner-authorized replacement price table",
@@ -21,5 +21,10 @@
     "90R": "DF90R", "100L": "DF100L", "100R": "DF100R",
     "DIN50": "DIN50L", "DIN60": "DIN60L", "DIN100": "DIN100L"
   },
-  "unpriced": ["DIN70L"]
+  "unpriced": ["DIN70L"],
+  "defaultAgmBrand": "DELKOR",
+  "brands": {
+    "DELKOR": {"label": "델코", "aliases": ["델코", "DELKOR"], "baseFamily": "AGM"},
+    "VARTA": {"label": "바르타", "aliases": ["바르타", "VARTA"], "prices": {"AGM70": 220000, "AGM80": 240000, "AGM95": 270000, "AGM105": 330000}}
+  }
 }
