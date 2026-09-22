@@ -145,7 +145,7 @@ equal(/innerHTML|insertAdjacentHTML|document\.write/.test(browserScript), false,
 check(browserScript.includes('link.target = "_blank"') && browserScript.includes('link.rel = "noopener noreferrer"'), "external link protection missing");
 check(customerCopy.includes("정확한 규격 확인 후 선택해 주세요."), "unknown battery type warning missing");
 check(customerCopy.includes("일반 · DIN 배터리 가격 보기") && customerCopy.includes("AGM 배터리 가격 보기"), "both result purchase CTAs must be present");
-equal(/localStorage|sessionStorage|indexedDB/.test(browserScript + coreScript), false, "persistent browser storage must not be used");
+equal(/localStorage|indexedDB/.test(browserScript + coreScript), false, "persistent browser storage must not be used (V5 allows sessionStorage)");
 check(style.includes("min-height: 44px"), "minimum touch target rule missing");
 check(style.includes("font-size: 16px"), "mobile input font size rule missing");
 check(style.includes("height: calc(100svh - 64px)"), "mobile chat must fill the screen below the header");

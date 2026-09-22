@@ -79,7 +79,7 @@ const changedArea=flow(["인천인데","부산 출장가능해?"]); equal(change
 const rangeAnswer=flow(["BMW 520d 2023","2017~2023년형 · 5시리즈 (G30)"]); equal(rangeAnswer.state.year,2023); equal(rangeAnswer.state.confirmedBattery,"AGM95");
 const xss=flow(["<img src=x onerror=alert(1)>"]); equal(xss.state.confirmedBattery,null);
 check(!/innerHTML|insertAdjacentHTML|document\.write/.test(read("js/smart-consult.js")),"safe DOM rendering");
-check(!/localStorage|sessionStorage|indexedDB/.test(read("js/smart-consult.js")+read("js/smart-consult-conversation.js")),"memory only");
+check(!/localStorage|indexedDB/.test(read("js/smart-consult.js")+read("js/smart-consult-conversation.js")),"session only; no persistent storage");
 for(const value of Object.values(copy)) {
   if(typeof value==="string") check(!forbidden.test(value),"customer copy contains internal wording");
   if(typeof value==="function") check(!forbidden.test(value(["AGM95"])),"customer template contains internal wording");

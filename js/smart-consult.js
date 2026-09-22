@@ -1,6 +1,8 @@
 import { AGM_STORE_URL, DIN_STORE_URL, PHONE_HREF, batteryStoreType } from "./smart-consult-core.js";
-import { copy } from "./conversation-copy.js";
+import { copy, variant } from "./conversation-copy.js";
 import { conversationTurn, createConversationState, vehicleLabel } from "./smart-consult-conversation.js";
+import { findEntry, entryState } from "./smart-consult-entry.js";
+import { SESSION_KEY, encodeSession, decodeSession, clearSession, safeUserMessage, summaryFields } from "./smart-consult-session.js";
 
 const chatLog = document.querySelector("#chatLog");
 const chatForm = document.querySelector("#chatForm");
@@ -11,6 +13,17 @@ let state = createConversationState();
 let dataPromise;
 let busy = false;
 let session = 0;
+let transcript = [];
+let entryId = null;
+let entryIndexPromise;
+const entryIndex = () => entryIndexPromise ||= fetch("/seo-data/smart-consult-vehicles.json").then(response => {
+  if (!response.ok) throw new Error("entry-load-failed");
+  return response.json();
+});
+function saveSession() {
+  try { sessionStorage.setItem(SESSION_KEY, encodeSession(state, transcript, entryId)); } catch { /* Continue in memory if storage is unavailable. */ }
+}
+function forgetSession() { try { clearSession(sessionStorage); } catch { /* Disabled storage. */ } }
 
 function createElement(tag, className = "", text = "") {
   const element = document.createElement(tag);
@@ -44,8 +57,8 @@ function addActions(parent, actions, result = state.result) {
   if (actions.includes("phone")) addLink(wrap, copy.labels.phone, PHONE_HREF, "result-action primary");
   if (actions.includes("stores")) {
     const type = batteryStoreType(result?.defaultBattery);
-    addLink(wrap, copy.labels.agm, AGM_STORE_URL, `result-action ${type === "agm" ? "primary" : "secondary"}`, true);
-    addLink(wrap, copy.labels.din, DIN_STORE_URL, `result-action ${type === "din" ? "primary" : "secondary"}`, true);
+    if (type === "agm") addLink(wrap, copy.labels.agm, AGM_STORE_URL, "result-action secondary", true);
+    if (type === "din") addLink(wrap, copy.labels.din, DIN_STORE_URL, "result-action secondary", true);
   }
   parent.appendChild(wrap);
 }
@@ -65,24 +78,28 @@ function addChips(row, choices) {
 async function loadData() {
   if (!dataPromise) {
     const read = async url => { const response = await fetch(url); if (!response.ok) throw new Error("load-failed"); return response.json(); };
-    dataPromise = Promise.all([read("/data/manufacturers.json"), read("/seo-data/vehicle-detail-groups.json"), read("/seo-data/smart-consult-location-index.json")])
-      .then(async ([manufacturers, details, areas]) => ({
+    dataPromise = Promise.all([read("/data/manufacturers.json"), read("/seo-data/smart-consult-location-index.json")])
+      .then(async ([manufacturers, areas]) => ({
         records: (await Promise.all(manufacturers.map(async manufacturer => (await read(`/data/${manufacturer.file}`)).map(row => ({ ...row, manufacturerId: manufacturer.id, manufacturerName: manufacturer.name }))))).flat(),
-        pages: details.vehiclePages || [], localities: areas.localities || []
+        localities: areas.localities || []
       })).catch(error => { dataPromise = null; throw error; });
   }
   return dataPromise;
 }
 
-function renderResult(result, pages) {
+function renderSummary() {
+  chatLog.querySelector(".consult-summary-row")?.remove();
+  const fields = summaryFields(state);
+  if (!fields.length) return;
   const row = createElement("div", "message-row");
-  const card = createElement("article", "result-card");
+  row.classList.add("consult-summary-row");
+  const card = createElement("article", "result-card consult-summary");
+  card.setAttribute("aria-label",copy.summaryTitle);
   const head = createElement("div", "result-card-head");
-  head.appendChild(createElement("small", "", copy.labels.title));
-  head.appendChild(createElement("strong", "", vehicleLabel(state)));
+  head.appendChild(createElement("strong", "", copy.summaryTitle));
   card.appendChild(head);
   const facts = createElement("dl", "result-facts");
-  for (const [label, value] of [[copy.labels.model,result.detailModel], [copy.labels.year,state.year ? `${state.year}년식` : result.year], [copy.labels.fuel,state.exactFuel || state.fuel || result.fuel], [copy.labels.battery,result.defaultBattery], [copy.labels.upgrade,result.upgradeBattery]]) {
+  for (const [label, value] of fields) {
     if (!value) continue;
     const fact = createElement("div", "result-fact");
     fact.appendChild(createElement("dt", "", label));
@@ -90,17 +107,17 @@ function renderResult(result, pages) {
     facts.appendChild(fact);
   }
   card.appendChild(facts);
-  card.appendChild(createElement("p", "result-note", copy.resultNote));
-  if (batteryStoreType(result.defaultBattery) === "unknown") card.appendChild(createElement("p", "result-type-note", copy.labels.typeNote));
-  addActions(card, ["phone", "stores"], result);
-  const page = pages.find(item => item.manufacturerId === result.manufacturerId && item.sourceVehicleName === result.vehicle);
-  if (page?.urlPath?.startsWith("/car-battery/")) addLink(card, copy.labels.detail, page.urlPath, "result-detail-link");
+  if (state.confirmedBattery) card.appendChild(createElement("p", "result-note", copy.resultNote));
+  addActions(card, ["phone", "stores"]);
+  const reset = createElement("button","text-button",copy.restart);
+  reset.type="button"; reset.addEventListener("click",resetChat); card.appendChild(reset);
   row.appendChild(card);
   chatLog.appendChild(row);
 }
 
 async function handleMessage(text) {
   if (busy) return;
+  if (/^(처음부터(?:다시)?|다시시작|초기화|리셋|새상담)$/.test(text.replace(/\s/g,""))) { resetChat(); return; }
   busy = true;
   const activeSession = session;
   chatLog.querySelectorAll("button.quick-reply").forEach(button => { button.disabled = true; });
@@ -117,15 +134,23 @@ async function handleMessage(text) {
     const delay = matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : Math.max(0, 300 - (performance.now() - started));
     if (delay) await new Promise(resolve => setTimeout(resolve, delay));
     if (activeSession !== session) return;
+    transcript.push({role:"user",text:safeUserMessage(text,state,data.records,data.localities),actions:[],chips:[]});
     const response = conversationTurn(state, text, data.records, data.localities);
     state = response.state;
     typing.remove();
     let last;
-    for (const message of response.messages) last = addMessage(message);
-    if (response.result) renderResult(response.result, data.pages);
+    for (const message of response.messages) {
+      last = addMessage(message);
+      transcript.push({role:"bot",text:message,actions:[],chips:[]});
+    }
     if (response.region && last) addLink(last, copy.labels.area, `/area/${response.region.slug}/`);
     if (response.actions.length && last) addActions(last, response.actions);
     if (last) addChips(last, response.chips);
+    if (last) {
+      Object.assign(transcript.at(-1),{actions:response.actions,chips:response.chips,battery:state.result?.defaultBattery || null,areaSlug:response.region?.slug || null});
+    }
+    renderSummary();
+    saveSession();
     scrollToLatest();
   } catch {
     if (activeSession === session) { typing.remove(); addActions(addMessage(copy.error), ["phone"]); }
@@ -134,7 +159,14 @@ async function handleMessage(text) {
   }
 }
 
-function resetChat() {
+function resetChat(removeEntry = true) {
+  forgetSession();
+  if (removeEntry) {
+    const url = new URL(location.href);
+    url.searchParams.delete("vehicleId");
+    history.replaceState(null,"",url);
+  }
+  entryId=null; transcript=[];
   session += 1;
   busy = false;
   sendButton.disabled = false;
@@ -142,7 +174,10 @@ function resetChat() {
   chatInput.value = "";
   chatInput.placeholder = "예: BMW 520d 2019년식";
   chatLog.replaceChildren();
-  addChips(addMessage(copy.greeting), ["BMW 520d", "벤츠 E300", "카니발"].map(value => ({ label:value, value })));
+  const greeting=variant("greeting",0);
+  const chips=["BMW 520d", "벤츠 E300", "카니발"].map(value => ({ label:value, value }));
+  addChips(addMessage(greeting),chips);
+  transcript.push({role:"bot",text:greeting,actions:[],chips});
 }
 
 chatForm.addEventListener("submit", event => {
@@ -153,5 +188,42 @@ chatForm.addEventListener("submit", event => {
   chatInput.value = "";
   handleMessage(text);
 });
-resetButton.addEventListener("click", resetChat);
-resetChat();
+resetButton.addEventListener("click", () => resetChat());
+
+async function initialize() {
+  const activeSession=++session;
+  busy=true; sendButton.disabled=true;
+  let saved;
+  try { saved=decodeSession(sessionStorage.getItem(SESSION_KEY)); } catch { /* No storage. */ }
+  const requested=new URL(location.href).searchParams.get("vehicleId");
+  try {
+    // Generic fresh visits remain DB-lazy. Only deep links fetch this compact index.
+    const entry=requested ? findEntry(requested,await entryIndex()) : null;
+    if (activeSession!==session) return;
+    const compatible=saved && (!requested || (entry && saved.entryId===entry.id));
+    if (compatible) {
+      state=saved.state; transcript=saved.messages; entryId=saved.entryId;
+      for (const [index,message] of transcript.entries()) {
+        const row=addMessage(message.text,message.role);
+        if (message.areaSlug) addLink(row,copy.labels.area,`/area/${message.areaSlug}/`);
+        if (message.actions.length) addActions(row,message.actions,{defaultBattery:message.battery});
+        if (index===transcript.length-1) addChips(row,message.chips);
+      }
+      renderSummary(); scrollToLatest();
+    } else {
+      resetChat(false);
+      if (entry) {
+        entryId=entry.id; state=entryState(entry);
+        chatLog.replaceChildren();
+        const text=copy.entry(vehicleLabel(state));
+        addMessage(text); transcript=[{role:"bot",text,actions:[],chips:[]}];
+        renderSummary(); saveSession();
+      }
+    }
+  } catch {
+    if (activeSession===session) { resetChat(false); addActions(addMessage(copy.error),["phone"]); }
+  } finally {
+    if (activeSession===session) { busy=false; sendButton.disabled=false; }
+  }
+}
+initialize();

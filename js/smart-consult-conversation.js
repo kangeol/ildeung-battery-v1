@@ -1,5 +1,5 @@
 import { batteryStoreType, buildVehicleGroups, normalizeText, parseYearRange, resolveConsultation, yearMatches } from "./smart-consult-core.js";
-import { copy } from "./conversation-copy.js";
+import { copy, variant, symptomLabels } from "./conversation-copy.js";
 import { resolveLocation } from "./smart-consult-location.js";
 import { resolveVehicleText } from "./vehicle-aliases.js";
 
@@ -10,7 +10,29 @@ const signature = row => `${row.defaultBattery}|${row.upgradeBattery || ""}`;
 const knownBattery = result => result?.defaultBattery && !/문의|확인/.test(result.defaultBattery);
 
 export function createConversationState() {
-  return { manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
+  return { symptom: null, customerGoal: "UNKNOWN", turnIndex: 0, manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
+}
+
+export function symptomIntent(text) {
+  if (/시동.*약/.test(text)) return "WEAK_START";
+  if (/시동.*(?:안\s*걸|못\s*걸)/.test(text)) return "NO_START";
+  // Negated discharge must not overwrite a symptom with an invented positive one.
+  const positive = text.replace(/방전(?:은|이)?\s*아니(?:고|라|야|에요|요)?/g, "");
+  if (/점프/.test(positive) && /방전/.test(positive)) return "JUMP_REDISCHARGE";
+  if (/(?:또|다시|반복|자꾸).*방전|재방전/.test(positive)) return "REPEATED_DISCHARGE";
+  if (/방전/.test(positive)) return "DISCHARGE";
+  if (/점프/.test(positive)) return "JUMP";
+  if (/(?:미리|오래\s*써|예방).*(?:바꾸|교체)/.test(text)) return "PREVENTIVE_REPLACE";
+  if (/배터리.*(?:바꾸려고|교체하려|교체하고|교체할래)/.test(text)) return "REPLACE";
+  return null;
+}
+
+const liveIntents = ["LIVE_DISPATCH_AVAILABILITY", "ARRIVAL_TIME", "TODAY_SERVICE", "URGENT_SERVICE"];
+function recoveryField(text, state) {
+  if (/연식|몇\s*년/.test(text)) return "year";
+  if (/연료|디젤|가솔린/.test(text)) return "fuel";
+  if (/차량명|차종|모델/.test(text)) return "vehicle";
+  return state.previousQuestion?.field || "vehicle";
 }
 
 function fuelType(value) {
@@ -35,12 +57,18 @@ function yearFromText(text, rows, nowYear) {
 
 export function recognizeIntent(text, entities) {
   if (/^(처음부터|다시시작|초기화|리셋|새상담)$/.test(normalizeText(text))) return "RESET";
+  if (/몰라|모르겠|기억\s*안\s*나|어디서.*(?:봐|보|확인)/.test(text)) return "RECOVERY";
+  if (/\d+\s*분\s*(?:안|내)|급해|급하|긴급/.test(text)) return "URGENT_SERVICE";
+  if (/몇\s*시|언제.*(?:와|오|방문|도착)|도착.*시간/.test(text)) return "ARRIVAL_TIME";
+  if (/지금.*(?:와|오|돼|되|가능|출발|방문)/.test(text)) return "LIVE_DISPATCH_AVAILABILITY";
+  if (/(?:오늘|내일).*?(?:와|오|돼|되|가능|방문)/.test(text)) return "TODAY_SERVICE";
   if (/아니|정정|수정|잘못|바꿔/.test(text) && (entities.year || entities.fuel || entities.matches.length)) return "CORRECTION";
   if (/가격|얼마|비용|견적/.test(text)) return "PRICE_QUESTION";
   if (/전화|통화/.test(text)) return "CALL_REQUEST";
   if (/구매|살래|주문|상품/.test(text)) return "BUY_REQUEST";
+  if (symptomIntent(text)) return "SYMPTOM";
   if (/agm|din|일반\s*배터리|다른\s*(타입|배터리)/i.test(text)) return "AGM_DIN_QUESTION";
-  if (/출장|방문|지역|도\s*와|도와\?|가능해/.test(text) || entities.region || entities.ambiguousRegion) return "SERVICE_AREA_QUESTION";
+  if (/출장|방문|지역|도\s*와|도와\?|가능해/.test(text) || entities.region || entities.ambiguousRegion) return "SERVICE_AREA_AVAILABILITY";
   if (entities.matches.length) return "VEHICLE_IDENTIFICATION";
   if (entities.year || entities.ambiguousYear) return "YEAR_INFO";
   if (entities.fuel) return "FUEL_INFO";
@@ -103,12 +131,24 @@ export function conversationTurn(previous, text, records, localities = []) {
     say(prompt);
   };
   if (intent === "RESET") { output.state = createConversationState(); say(copy.greeting); return output; }
+  state.turnIndex = (state.turnIndex || 0) + 1;
   state.lastIntent = intent;
+  const symptom = symptomIntent(text);
+  if (symptom) state.symptom = { intent: symptom, rawSafeText: symptomLabels[symptom], confirmedAt: state.turnIndex };
+  const goal = {PRICE_QUESTION:"PRICE",BUY_REQUEST:"REPLACE",SERVICE_AREA_AVAILABILITY:"AREA",AGM_DIN_QUESTION:"BATTERY_TYPE"}[intent];
+  if (goal) state.customerGoal = goal;
+  if (symptom && !goal) state.customerGoal = "REPLACE";
+  if (liveIntents.includes(intent)) state.customerGoal = "AREA";
+  if (intent === "RECOVERY") {
+    const field = recoveryField(text, state);
+    say(field === "year" ? copy.recoveryYear : /fuel/i.test(field) ? copy.recoveryFuel : copy.recoveryModel);
+    say(copy.recoveryNext); output.actions = ["phone"]; output.chips = [{label:copy.restart,value:"처음부터"}]; return output;
+  }
 
   const shorthand = entities.shorthand && entities.matches.length === 1 ? entities.matches[0] : null;
   if (shorthand) {
     if (state.selectedVehicleKey && state.selectedVehicleKey !== shorthand.key) {
-      state = {...createConversationState(),region:state.region,location:state.location,city:state.city,district:state.district,lastIntent:intent}; output.state=state;
+      state = {...createConversationState(),symptom:state.symptom,customerGoal:state.customerGoal,turnIndex:state.turnIndex,region:state.region,location:state.location,city:state.city,district:state.district,lastIntent:intent}; output.state=state;
     }
     state.manufacturer = shorthand.manufacturerId;
     state.manufacturerName = shorthand.manufacturerName;
@@ -143,7 +183,7 @@ export function conversationTurn(previous, text, records, localities = []) {
   if (entities.matches.length === 1) {
     const match = entities.matches[0];
     if (state.selectedVehicleKey && state.selectedVehicleKey !== match.key) {
-      state = { ...createConversationState(), region: state.region, location:state.location, pendingLocationDisambiguation:state.pendingLocationDisambiguation, city: state.city, district: state.district, lastIntent: intent };
+      state = { ...createConversationState(), symptom:state.symptom,customerGoal:state.customerGoal,turnIndex:state.turnIndex,region: state.region, location:state.location, pendingLocationDisambiguation:state.pendingLocationDisambiguation, city: state.city, district: state.district, lastIntent: intent };
       output.state = state;
     }
     state.selectedVehicleKey = match.key;
@@ -156,7 +196,10 @@ export function conversationTurn(previous, text, records, localities = []) {
     answered = true;
   }
   const changedYear = entities.year && entities.year !== state.year;
-  if (changedYear) { state.year = entities.year; state.detailModel = ""; state.detailModels=[]; state.generation = ""; }
+  if (changedYear) {
+    if (state.year) { state.detailModel = ""; state.detailModels=[]; state.generation = ""; }
+    state.year = entities.year;
+  }
   if (entities.detailModel) state.detailModel = entities.detailModel;
   if (entities.detailModels) state.detailModels = entities.detailModels;
   if (entities.generation) state.generation = entities.generation;
@@ -199,10 +242,23 @@ export function conversationTurn(previous, text, records, localities = []) {
     const explicitPlace = placeBeforeService && !["여기", "거기", "오늘", "내일", "지금", "배터리"].includes(placeBeforeService);
     const newUnknownPlace = !entities.region && (explicitPlace || /[가-힣]{2,}(?:인데|이야|에도|도\s*와)/.test(text));
     if (newUnknownPlace) { say(copy.serviceUnknown); output.actions = ["phone"]; return; }
-    if (state.region) { say(copy.service(state.region.fullLabel || state.region.name)); output.region = state.region; output.actions = ["phone"]; }
+    if (state.region) { say(variant("area", state.turnIndex, state.region.fullLabel || state.region.name)); output.region = state.region; output.actions = ["phone"]; }
     else if (/출장\s*(가능|돼|되)|방문\s*가능/.test(text)) say(copy.serviceAsk);
     else { say(copy.serviceUnknown); output.actions = ["phone"]; }
   };
+  if (liveIntents.includes(intent)) {
+    if (entities.region || entities.ambiguousRegion || entities.unsupportedLocation || state.region) areaAnswer();
+    say(copy.dispatch); output.actions = ["phone"]; return output;
+  }
+  if (symptom) {
+    say(copy.symptomAck(symptomLabels[symptom]));
+    if (!answered) {
+      if (!state.selectedVehicleKey) say(copy.needVehicle);
+      else if (state.previousQuestion) { say(state.previousQuestion.prompt); output.chips=state.previousQuestion.choices.slice(0,4); }
+      else if (state.result) output.result=state.result;
+      output.actions=["phone"]; return output;
+    }
+  }
   if (shorthand) {
     if(entities.region) areaAnswer();
     say(copy.vehicleConfirm(state.pendingVehicleConfirmation.label));
@@ -216,7 +272,7 @@ export function conversationTurn(previous, text, records, localities = []) {
     areaAnswer(); return output;
   }
   if (intent === "CALL_REQUEST") { say(copy.call); output.actions = ["phone"]; return output; }
-  if (intent === "PRICE_QUESTION") { say(state.result ? copy.price : state.selectedVehicleKey ? copy.needDetails : copy.needVehicle); if (state.result) output.actions = ["phone", "stores"]; return output; }
+  if (intent === "PRICE_QUESTION") { say(state.result ? variant("price",state.turnIndex) : state.selectedVehicleKey ? copy.needDetails : copy.needVehicle); if (state.result) output.actions = ["phone", "stores"]; return output; }
   if (intent === "BUY_REQUEST") { say(knownBattery(state.result) ? copy.buy : copy.needDetails); output.actions = knownBattery(state.result) ? ["phone", "stores"] : ["phone"]; return output; }
   if (["AGM_DIN_QUESTION", "BATTERY_QUESTION"].includes(intent)) {
     if (!knownBattery(state.result)) say(state.selectedVehicleKey ? copy.needDetails : copy.needVehicle);
@@ -230,7 +286,7 @@ export function conversationTurn(previous, text, records, localities = []) {
     }
     return output;
   }
-  if (intent === "SERVICE_AREA_QUESTION" && !answered) { areaAnswer(); return output; }
+  if (intent === "SERVICE_AREA_AVAILABILITY" && !answered) { areaAnswer(); return output; }
   if (/코딩/.test(text)) { say(copy.coding); output.actions = ["phone"]; return output; }
   if (entities.ambiguousYear) { state.result = null; state.confirmedBattery = null; ask("year", copy.yearAmbiguous); return output; }
   if (entities.matches.length > 1) {
@@ -239,7 +295,7 @@ export function conversationTurn(previous, text, records, localities = []) {
   }
   if (!answered) {
     if (state.selectedVehicleKey) { say(copy.unsupported); output.actions = ["phone"]; }
-    else { state.failures += 1; say(state.failures > 1 ? copy.noMatchAgain : copy.noMatch); if (state.failures > 1) output.actions = ["phone"]; }
+    else { state.failures += 1; say(state.failures > 1 ? copy.noMatchAgain : variant("fallback",state.turnIndex)); if (state.failures > 1) output.actions = ["phone"]; }
     return output;
   }
   if (!state.selectedVehicleKey) { say(copy.needVehicle); return output; }
@@ -253,8 +309,8 @@ export function conversationTurn(previous, text, records, localities = []) {
     return output;
   }
   if (!state.year && unique(rows.map(row => row.year)).length > 1) {
-    if (entities.matches.length === 1) say(copy.recognized([state.manufacturerName, state.model || state.vehicleFamily].join(" ")));
-    ask("year", copy.year); return output;
+    if (entities.matches.length === 1) say(variant("vehicle",state.turnIndex,[state.manufacturerName, state.model || state.vehicleFamily].join(" ")));
+    ask("year", variant("clarification",state.turnIndex)); return output;
   }
   const fuels = unique(rows.map(row => fuelType(row.fuel)));
   const fuelSeparates = unique(fuels.map(fuel => unique(rows.filter(row => fuelType(row.fuel) === fuel).map(signature)).sort().join(";"))).length > 1;

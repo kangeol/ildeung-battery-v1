@@ -408,6 +408,15 @@ a:focus-visible {
 
 .result-fact:last-child { border-bottom: 0; }
 
+/* V5 summary only: keep the approved shell/composer unchanged. */
+.consult-summary .result-card-head { padding: 12px 16px; }
+.consult-summary .result-card-head strong { font-size: 16px; }
+.consult-summary .result-facts { padding: 4px 16px; }
+.consult-summary .result-fact { padding: 6px 0; }
+.consult-summary .result-note { margin: 0; padding: 8px 16px 0; }
+.consult-summary .result-actions { padding: 10px 16px 4px; }
+.consult-summary > .text-button { margin: 2px 16px 8px; }
+
 .result-fact dt {
   color: var(--muted);
   font-size: 13px;

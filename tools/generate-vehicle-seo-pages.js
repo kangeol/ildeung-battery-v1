@@ -1180,6 +1180,14 @@ function renderDetailBlogCaseSections({ blogCases, manufacturer, vehicle, pageLa
   return [exactSection, relatedSection].filter(Boolean).join("\n");
 }
 
+function consultId(canonicalPath) {
+  return canonicalPath.replace(/^\/car-battery\//, "").replace(/\.html$/, "");
+}
+function renderSmartConsultLink(canonicalPath) {
+  return `<a class="btn secondary smart-consult-link" href="/smart-consult/?vehicleId=${encodeURIComponent(consultId(canonicalPath))}">이 차량 스마트 상담하기</a>`;
+}
+const consultEntries = [];
+
 function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups, blogCases }) {
   const prefix = pageDepthPrefix(2);
   const manufacturerVehicleLabel = formatManufacturerVehicleLabel(manufacturer.name, vehicle.name);
@@ -1230,6 +1238,7 @@ function renderVehiclePage({ manufacturer, vehicle, rows, detailGroups, blogCase
             </ul>
             <p class="vehicle-help-copy">차량 세부모델을 모르시면 <a href="${prefix}search.html">차량 배터리 찾기</a>에서 확인해 주세요.</p>
             <div class="button-row">
+              ${renderSmartConsultLink(canonicalPath)}
               <a class="btn primary" href="${prefix}search.html">차량 배터리 찾기</a>
               <a class="btn secondary" href="tel:16449141">1644-9141 전화상담</a>
             </div>
@@ -1317,6 +1326,7 @@ function renderDetailPage({ manufacturer, vehicle, group, detailGroups, blogCase
             </ul>
             <p class="vehicle-help-copy">차량 세부모델을 모르시면 <a href="${prefix}search.html">차량 배터리 찾기</a>에서 확인해 주세요.</p>
             <div class="button-row">
+              ${renderSmartConsultLink(canonicalPath)}
               <a class="btn primary" href="${prefix}search.html">차량 배터리 찾기</a>
               <a class="btn secondary" href="tel:16449141">1644-9141 전화상담</a>
             </div>
@@ -1675,6 +1685,7 @@ function generate() {
         path.join(OUTPUT_DIR, manufacturer.id, `${vehicleConfig.slug}.html`),
         renderVehiclePage({ manufacturer, vehicle: vehicleConfig, rows: matchedRows, detailGroups, blogCases })
       );
+      consultEntries.push({ id: consultId(vehiclePage.urlPath), manufacturerId: manufacturer.id, manufacturerName: manufacturer.name, vehicle: vehicleConfig.sourceVehicleName, details: [] });
 
       detailGroups.forEach((group) => {
         const detailPage = {
@@ -1699,6 +1710,7 @@ function generate() {
         );
 
         generatedDetailPages.push(detailPage);
+        consultEntries.push({ id: consultId(detailPage.urlPath), manufacturerId: manufacturer.id, manufacturerName: manufacturer.name, vehicle: vehicleConfig.sourceVehicleName, details: [...new Set(group.rows.map(row => row.detailModel))] });
       });
 
       vehiclePages.push(vehiclePage);
@@ -1757,6 +1769,7 @@ function generate() {
     ambiguousGroups: allAmbiguousGroups
   };
   writeJson(DETAIL_GROUPS_FILE, detailReport);
+  writeFile(path.join(SEO_DATA_DIR, "smart-consult-vehicles.json"), `${JSON.stringify({version:1,vehicles:consultEntries})}\n`);
 
   console.log(`DB rows: ${totalRows}`);
   console.log(`DB manufacturers: ${manufacturerSummaries.length}`);
