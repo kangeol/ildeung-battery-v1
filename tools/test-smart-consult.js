@@ -129,6 +129,7 @@ assertions += 1;
 
 const page = read("smart-consult/index.html");
 const browserScript = read("js/smart-consult.js");
+const customerCopy = read("js/conversation-copy.js");
 const coreScript = read("js/smart-consult-core.js");
 const style = read("css/smart-consult.css");
 const homepage = read("index.html");
@@ -142,8 +143,8 @@ check(page.includes("/js/smart-consult.js"), "chat module missing");
 check(browserScript.includes("textContent"), "safe text rendering missing");
 equal(/innerHTML|insertAdjacentHTML|document\.write/.test(browserScript), false, "unsafe HTML rendering API found");
 check(browserScript.includes('link.target = "_blank"') && browserScript.includes('link.rel = "noopener noreferrer"'), "external link protection missing");
-check(browserScript.includes("정확한 규격 확인 후 선택해 주세요."), "unknown battery type warning missing");
-check(browserScript.includes("일반 · DIN 배터리 가격 보기") && browserScript.includes("AGM 배터리 가격 보기"), "both result purchase CTAs must be present");
+check(customerCopy.includes("정확한 규격 확인 후 선택해 주세요."), "unknown battery type warning missing");
+check(customerCopy.includes("일반 · DIN 배터리 가격 보기") && customerCopy.includes("AGM 배터리 가격 보기"), "both result purchase CTAs must be present");
 equal(/localStorage|sessionStorage|indexedDB/.test(browserScript + coreScript), false, "persistent browser storage must not be used");
 check(style.includes("min-height: 44px"), "minimum touch target rule missing");
 check(style.includes("font-size: 16px"), "mobile input font size rule missing");

@@ -1,0 +1,4660 @@
+{
+  "source": "seo-data/service-areas.json",
+  "localities": [
+    {
+      "name": "인천",
+      "fullName": "인천광역시",
+      "area": "incheon",
+      "region": "",
+      "slug": "incheon"
+    },
+    {
+      "name": "연수구",
+      "fullName": "인천광역시 연수구",
+      "area": "incheon",
+      "region": "연수구",
+      "slug": "incheon"
+    },
+    {
+      "name": "옥련동",
+      "fullName": "인천광역시 연수구 옥련동",
+      "area": "incheon",
+      "region": "연수구",
+      "slug": "incheon"
+    },
+    {
+      "name": "선학동",
+      "fullName": "인천광역시 연수구 선학동",
+      "area": "incheon",
+      "region": "연수구",
+      "slug": "incheon"
+    },
+    {
+      "name": "연수동",
+      "fullName": "인천광역시 연수구 연수동",
+      "area": "incheon",
+      "region": "연수구",
+      "slug": "incheon"
+    },
+    {
+      "name": "청학동",
+      "fullName": "인천광역시 연수구 청학동",
+      "area": "incheon",
+      "region": "연수구",
+      "slug": "incheon"
+    },
+    {
+      "name": "동춘동",
+      "fullName": "인천광역시 연수구 동춘동",
+      "area": "incheon",
+      "region": "연수구",
+      "slug": "incheon"
+    },
+    {
+      "name": "송도동",
+      "fullName": "인천광역시 연수구 송도동",
+      "area": "incheon",
+      "region": "연수구",
+      "slug": "incheon"
+    },
+    {
+      "name": "서해구",
+      "fullName": "인천광역시 서해구",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "검암동",
+      "fullName": "인천광역시 서해구 검암동",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "경서동",
+      "fullName": "인천광역시 서해구 경서동",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "공촌동",
+      "fullName": "인천광역시 서해구 공촌동",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "연희동",
+      "fullName": "인천광역시 서해구 연희동",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "심곡동",
+      "fullName": "인천광역시 서해구 심곡동",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "가정동",
+      "fullName": "인천광역시 서해구 가정동",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "신현동",
+      "fullName": "인천광역시 서해구 신현동",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "석남동",
+      "fullName": "인천광역시 서해구 석남동",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "원창동",
+      "fullName": "인천광역시 서해구 원창동",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "가좌동",
+      "fullName": "인천광역시 서해구 가좌동",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "청라동",
+      "fullName": "인천광역시 서해구 청라동",
+      "area": "incheon",
+      "region": "서해구",
+      "slug": "incheon"
+    },
+    {
+      "name": "남동구",
+      "fullName": "인천광역시 남동구",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "구월동",
+      "fullName": "인천광역시 남동구 구월동",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "간석동",
+      "fullName": "인천광역시 남동구 간석동",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "만수동",
+      "fullName": "인천광역시 남동구 만수동",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "장수동",
+      "fullName": "인천광역시 남동구 장수동",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "서창동",
+      "fullName": "인천광역시 남동구 서창동",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "운연동",
+      "fullName": "인천광역시 남동구 운연동",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "남촌동",
+      "fullName": "인천광역시 남동구 남촌동",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "수산동",
+      "fullName": "인천광역시 남동구 수산동",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "도림동",
+      "fullName": "인천광역시 남동구 도림동",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "논현동",
+      "fullName": "인천광역시 남동구 논현동",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "고잔동",
+      "fullName": "인천광역시 남동구 고잔동",
+      "area": "incheon",
+      "region": "남동구",
+      "slug": "incheon"
+    },
+    {
+      "name": "부평구",
+      "fullName": "인천광역시 부평구",
+      "area": "incheon",
+      "region": "부평구",
+      "slug": "incheon"
+    },
+    {
+      "name": "부평동",
+      "fullName": "인천광역시 부평구 부평동",
+      "area": "incheon",
+      "region": "부평구",
+      "slug": "incheon"
+    },
+    {
+      "name": "십정동",
+      "fullName": "인천광역시 부평구 십정동",
+      "area": "incheon",
+      "region": "부평구",
+      "slug": "incheon"
+    },
+    {
+      "name": "산곡동",
+      "fullName": "인천광역시 부평구 산곡동",
+      "area": "incheon",
+      "region": "부평구",
+      "slug": "incheon"
+    },
+    {
+      "name": "청천동",
+      "fullName": "인천광역시 부평구 청천동",
+      "area": "incheon",
+      "region": "부평구",
+      "slug": "incheon"
+    },
+    {
+      "name": "삼산동",
+      "fullName": "인천광역시 부평구 삼산동",
+      "area": "incheon",
+      "region": "부평구",
+      "slug": "incheon"
+    },
+    {
+      "name": "갈산동",
+      "fullName": "인천광역시 부평구 갈산동",
+      "area": "incheon",
+      "region": "부평구",
+      "slug": "incheon"
+    },
+    {
+      "name": "부개동",
+      "fullName": "인천광역시 부평구 부개동",
+      "area": "incheon",
+      "region": "부평구",
+      "slug": "incheon"
+    },
+    {
+      "name": "일신동",
+      "fullName": "인천광역시 부평구 일신동",
+      "area": "incheon",
+      "region": "부평구",
+      "slug": "incheon"
+    },
+    {
+      "name": "구산동",
+      "fullName": "인천광역시 부평구 구산동",
+      "area": "incheon",
+      "region": "부평구",
+      "slug": "incheon"
+    },
+    {
+      "name": "미추홀구",
+      "fullName": "인천광역시 미추홀구",
+      "area": "incheon",
+      "region": "미추홀구",
+      "slug": "incheon"
+    },
+    {
+      "name": "숭의동",
+      "fullName": "인천광역시 미추홀구 숭의동",
+      "area": "incheon",
+      "region": "미추홀구",
+      "slug": "incheon"
+    },
+    {
+      "name": "용현동",
+      "fullName": "인천광역시 미추홀구 용현동",
+      "area": "incheon",
+      "region": "미추홀구",
+      "slug": "incheon"
+    },
+    {
+      "name": "학익동",
+      "fullName": "인천광역시 미추홀구 학익동",
+      "area": "incheon",
+      "region": "미추홀구",
+      "slug": "incheon"
+    },
+    {
+      "name": "도화동",
+      "fullName": "인천광역시 미추홀구 도화동",
+      "area": "incheon",
+      "region": "미추홀구",
+      "slug": "incheon"
+    },
+    {
+      "name": "주안동",
+      "fullName": "인천광역시 미추홀구 주안동",
+      "area": "incheon",
+      "region": "미추홀구",
+      "slug": "incheon"
+    },
+    {
+      "name": "관교동",
+      "fullName": "인천광역시 미추홀구 관교동",
+      "area": "incheon",
+      "region": "미추홀구",
+      "slug": "incheon"
+    },
+    {
+      "name": "문학동",
+      "fullName": "인천광역시 미추홀구 문학동",
+      "area": "incheon",
+      "region": "미추홀구",
+      "slug": "incheon"
+    },
+    {
+      "name": "계양구",
+      "fullName": "인천광역시 계양구",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "효성동",
+      "fullName": "인천광역시 계양구 효성동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "계산동",
+      "fullName": "인천광역시 계양구 계산동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "작전동",
+      "fullName": "인천광역시 계양구 작전동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "서운동",
+      "fullName": "인천광역시 계양구 서운동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "임학동",
+      "fullName": "인천광역시 계양구 임학동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "용종동",
+      "fullName": "인천광역시 계양구 용종동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "병방동",
+      "fullName": "인천광역시 계양구 병방동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "방축동",
+      "fullName": "인천광역시 계양구 방축동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "박촌동",
+      "fullName": "인천광역시 계양구 박촌동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "동양동",
+      "fullName": "인천광역시 계양구 동양동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "귤현동",
+      "fullName": "인천광역시 계양구 귤현동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "상야동",
+      "fullName": "인천광역시 계양구 상야동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "하야동",
+      "fullName": "인천광역시 계양구 하야동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "평동",
+      "fullName": "인천광역시 계양구 평동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "노오지동",
+      "fullName": "인천광역시 계양구 노오지동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "선주지동",
+      "fullName": "인천광역시 계양구 선주지동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "이화동",
+      "fullName": "인천광역시 계양구 이화동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "오류동",
+      "fullName": "인천광역시 계양구 오류동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "갈현동",
+      "fullName": "인천광역시 계양구 갈현동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "둑실동",
+      "fullName": "인천광역시 계양구 둑실동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "목상동",
+      "fullName": "인천광역시 계양구 목상동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "다남동",
+      "fullName": "인천광역시 계양구 다남동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "장기동",
+      "fullName": "인천광역시 계양구 장기동",
+      "area": "incheon",
+      "region": "계양구",
+      "slug": "incheon"
+    },
+    {
+      "name": "검단구",
+      "fullName": "인천광역시 검단구",
+      "area": "incheon",
+      "region": "검단구",
+      "slug": "incheon"
+    },
+    {
+      "name": "백석동",
+      "fullName": "인천광역시 검단구 백석동",
+      "area": "incheon",
+      "region": "검단구",
+      "slug": "incheon"
+    },
+    {
+      "name": "시천동",
+      "fullName": "인천광역시 검단구 시천동",
+      "area": "incheon",
+      "region": "검단구",
+      "slug": "incheon"
+    },
+    {
+      "name": "마전동",
+      "fullName": "인천광역시 검단구 마전동",
+      "area": "incheon",
+      "region": "검단구",
+      "slug": "incheon"
+    },
+    {
+      "name": "당하동",
+      "fullName": "인천광역시 검단구 당하동",
+      "area": "incheon",
+      "region": "검단구",
+      "slug": "incheon"
+    },
+    {
+      "name": "원당동",
+      "fullName": "인천광역시 검단구 원당동",
+      "area": "incheon",
+      "region": "검단구",
+      "slug": "incheon"
+    },
+    {
+      "name": "대곡동",
+      "fullName": "인천광역시 검단구 대곡동",
+      "area": "incheon",
+      "region": "검단구",
+      "slug": "incheon"
+    },
+    {
+      "name": "금곡동",
+      "fullName": "인천광역시 검단구 금곡동",
+      "area": "incheon",
+      "region": "검단구",
+      "slug": "incheon"
+    },
+    {
+      "name": "오류동",
+      "fullName": "인천광역시 검단구 오류동",
+      "area": "incheon",
+      "region": "검단구",
+      "slug": "incheon"
+    },
+    {
+      "name": "왕길동",
+      "fullName": "인천광역시 검단구 왕길동",
+      "area": "incheon",
+      "region": "검단구",
+      "slug": "incheon"
+    },
+    {
+      "name": "불로동",
+      "fullName": "인천광역시 검단구 불로동",
+      "area": "incheon",
+      "region": "검단구",
+      "slug": "incheon"
+    },
+    {
+      "name": "서울",
+      "fullName": "서울특별시",
+      "area": "seoul",
+      "region": "",
+      "slug": "seoul"
+    },
+    {
+      "name": "마포구",
+      "fullName": "서울특별시 마포구",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "아현동",
+      "fullName": "서울특별시 마포구 아현동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "공덕동",
+      "fullName": "서울특별시 마포구 공덕동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신공덕동",
+      "fullName": "서울특별시 마포구 신공덕동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "도화동",
+      "fullName": "서울특별시 마포구 도화동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "용강동",
+      "fullName": "서울특별시 마포구 용강동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "토정동",
+      "fullName": "서울특별시 마포구 토정동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "마포동",
+      "fullName": "서울특별시 마포구 마포동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "대흥동",
+      "fullName": "서울특별시 마포구 대흥동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "염리동",
+      "fullName": "서울특별시 마포구 염리동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "노고산동",
+      "fullName": "서울특별시 마포구 노고산동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신수동",
+      "fullName": "서울특별시 마포구 신수동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "현석동",
+      "fullName": "서울특별시 마포구 현석동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "구수동",
+      "fullName": "서울특별시 마포구 구수동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "창전동",
+      "fullName": "서울특별시 마포구 창전동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "상수동",
+      "fullName": "서울특별시 마포구 상수동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "하중동",
+      "fullName": "서울특별시 마포구 하중동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신정동",
+      "fullName": "서울특별시 마포구 신정동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "당인동",
+      "fullName": "서울특별시 마포구 당인동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "서교동",
+      "fullName": "서울특별시 마포구 서교동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "동교동",
+      "fullName": "서울특별시 마포구 동교동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "합정동",
+      "fullName": "서울특별시 마포구 합정동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "망원동",
+      "fullName": "서울특별시 마포구 망원동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "연남동",
+      "fullName": "서울특별시 마포구 연남동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "성산동",
+      "fullName": "서울특별시 마포구 성산동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "중동",
+      "fullName": "서울특별시 마포구 중동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "상암동",
+      "fullName": "서울특별시 마포구 상암동",
+      "area": "seoul",
+      "region": "마포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "양천구",
+      "fullName": "서울특별시 양천구",
+      "area": "seoul",
+      "region": "양천구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신정동",
+      "fullName": "서울특별시 양천구 신정동",
+      "area": "seoul",
+      "region": "양천구",
+      "slug": "seoul"
+    },
+    {
+      "name": "목동",
+      "fullName": "서울특별시 양천구 목동",
+      "area": "seoul",
+      "region": "양천구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신월동",
+      "fullName": "서울특별시 양천구 신월동",
+      "area": "seoul",
+      "region": "양천구",
+      "slug": "seoul"
+    },
+    {
+      "name": "강서구",
+      "fullName": "서울특별시 강서구",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "염창동",
+      "fullName": "서울특별시 강서구 염창동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "등촌동",
+      "fullName": "서울특별시 강서구 등촌동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "화곡동",
+      "fullName": "서울특별시 강서구 화곡동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "가양동",
+      "fullName": "서울특별시 강서구 가양동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "마곡동",
+      "fullName": "서울특별시 강서구 마곡동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "내발산동",
+      "fullName": "서울특별시 강서구 내발산동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "외발산동",
+      "fullName": "서울특별시 강서구 외발산동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "공항동",
+      "fullName": "서울특별시 강서구 공항동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "방화동",
+      "fullName": "서울특별시 강서구 방화동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "개화동",
+      "fullName": "서울특별시 강서구 개화동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "과해동",
+      "fullName": "서울특별시 강서구 과해동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "오곡동",
+      "fullName": "서울특별시 강서구 오곡동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "오쇠동",
+      "fullName": "서울특별시 강서구 오쇠동",
+      "area": "seoul",
+      "region": "강서구",
+      "slug": "seoul"
+    },
+    {
+      "name": "구로구",
+      "fullName": "서울특별시 구로구",
+      "area": "seoul",
+      "region": "구로구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신도림동",
+      "fullName": "서울특별시 구로구 신도림동",
+      "area": "seoul",
+      "region": "구로구",
+      "slug": "seoul"
+    },
+    {
+      "name": "구로동",
+      "fullName": "서울특별시 구로구 구로동",
+      "area": "seoul",
+      "region": "구로구",
+      "slug": "seoul"
+    },
+    {
+      "name": "가리봉동",
+      "fullName": "서울특별시 구로구 가리봉동",
+      "area": "seoul",
+      "region": "구로구",
+      "slug": "seoul"
+    },
+    {
+      "name": "고척동",
+      "fullName": "서울특별시 구로구 고척동",
+      "area": "seoul",
+      "region": "구로구",
+      "slug": "seoul"
+    },
+    {
+      "name": "개봉동",
+      "fullName": "서울특별시 구로구 개봉동",
+      "area": "seoul",
+      "region": "구로구",
+      "slug": "seoul"
+    },
+    {
+      "name": "오류동",
+      "fullName": "서울특별시 구로구 오류동",
+      "area": "seoul",
+      "region": "구로구",
+      "slug": "seoul"
+    },
+    {
+      "name": "궁동",
+      "fullName": "서울특별시 구로구 궁동",
+      "area": "seoul",
+      "region": "구로구",
+      "slug": "seoul"
+    },
+    {
+      "name": "온수동",
+      "fullName": "서울특별시 구로구 온수동",
+      "area": "seoul",
+      "region": "구로구",
+      "slug": "seoul"
+    },
+    {
+      "name": "천왕동",
+      "fullName": "서울특별시 구로구 천왕동",
+      "area": "seoul",
+      "region": "구로구",
+      "slug": "seoul"
+    },
+    {
+      "name": "항동",
+      "fullName": "서울특별시 구로구 항동",
+      "area": "seoul",
+      "region": "구로구",
+      "slug": "seoul"
+    },
+    {
+      "name": "금천구",
+      "fullName": "서울특별시 금천구",
+      "area": "seoul",
+      "region": "금천구",
+      "slug": "seoul"
+    },
+    {
+      "name": "가산동",
+      "fullName": "서울특별시 금천구 가산동",
+      "area": "seoul",
+      "region": "금천구",
+      "slug": "seoul"
+    },
+    {
+      "name": "독산동",
+      "fullName": "서울특별시 금천구 독산동",
+      "area": "seoul",
+      "region": "금천구",
+      "slug": "seoul"
+    },
+    {
+      "name": "시흥동",
+      "fullName": "서울특별시 금천구 시흥동",
+      "area": "seoul",
+      "region": "금천구",
+      "slug": "seoul"
+    },
+    {
+      "name": "영등포구",
+      "fullName": "서울특별시 영등포구",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "영등포동",
+      "fullName": "서울특별시 영등포구 영등포동",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "영등포동1가",
+      "fullName": "서울특별시 영등포구 영등포동1가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "영등포동2가",
+      "fullName": "서울특별시 영등포구 영등포동2가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "영등포동3가",
+      "fullName": "서울특별시 영등포구 영등포동3가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "영등포동4가",
+      "fullName": "서울특별시 영등포구 영등포동4가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "영등포동5가",
+      "fullName": "서울특별시 영등포구 영등포동5가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "영등포동6가",
+      "fullName": "서울특별시 영등포구 영등포동6가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "영등포동7가",
+      "fullName": "서울특별시 영등포구 영등포동7가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "영등포동8가",
+      "fullName": "서울특별시 영등포구 영등포동8가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "여의도동",
+      "fullName": "서울특별시 영등포구 여의도동",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "당산동1가",
+      "fullName": "서울특별시 영등포구 당산동1가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "당산동2가",
+      "fullName": "서울특별시 영등포구 당산동2가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "당산동3가",
+      "fullName": "서울특별시 영등포구 당산동3가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "당산동4가",
+      "fullName": "서울특별시 영등포구 당산동4가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "당산동5가",
+      "fullName": "서울특별시 영등포구 당산동5가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "당산동6가",
+      "fullName": "서울특별시 영등포구 당산동6가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "당산동",
+      "fullName": "서울특별시 영등포구 당산동",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "도림동",
+      "fullName": "서울특별시 영등포구 도림동",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "문래동1가",
+      "fullName": "서울특별시 영등포구 문래동1가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "문래동2가",
+      "fullName": "서울특별시 영등포구 문래동2가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "문래동3가",
+      "fullName": "서울특별시 영등포구 문래동3가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "문래동4가",
+      "fullName": "서울특별시 영등포구 문래동4가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "문래동5가",
+      "fullName": "서울특별시 영등포구 문래동5가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "문래동6가",
+      "fullName": "서울특별시 영등포구 문래동6가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "양평동1가",
+      "fullName": "서울특별시 영등포구 양평동1가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "양평동2가",
+      "fullName": "서울특별시 영등포구 양평동2가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "양평동3가",
+      "fullName": "서울특별시 영등포구 양평동3가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "양평동4가",
+      "fullName": "서울특별시 영등포구 양평동4가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "양평동5가",
+      "fullName": "서울특별시 영등포구 양평동5가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "양평동6가",
+      "fullName": "서울특별시 영등포구 양평동6가",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "양화동",
+      "fullName": "서울특별시 영등포구 양화동",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신길동",
+      "fullName": "서울특별시 영등포구 신길동",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "대림동",
+      "fullName": "서울특별시 영등포구 대림동",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "양평동",
+      "fullName": "서울특별시 영등포구 양평동",
+      "area": "seoul",
+      "region": "영등포구",
+      "slug": "seoul"
+    },
+    {
+      "name": "동작구",
+      "fullName": "서울특별시 동작구",
+      "area": "seoul",
+      "region": "동작구",
+      "slug": "seoul"
+    },
+    {
+      "name": "노량진동",
+      "fullName": "서울특별시 동작구 노량진동",
+      "area": "seoul",
+      "region": "동작구",
+      "slug": "seoul"
+    },
+    {
+      "name": "상도동",
+      "fullName": "서울특별시 동작구 상도동",
+      "area": "seoul",
+      "region": "동작구",
+      "slug": "seoul"
+    },
+    {
+      "name": "상도1동",
+      "fullName": "서울특별시 동작구 상도1동",
+      "area": "seoul",
+      "region": "동작구",
+      "slug": "seoul"
+    },
+    {
+      "name": "본동",
+      "fullName": "서울특별시 동작구 본동",
+      "area": "seoul",
+      "region": "동작구",
+      "slug": "seoul"
+    },
+    {
+      "name": "흑석동",
+      "fullName": "서울특별시 동작구 흑석동",
+      "area": "seoul",
+      "region": "동작구",
+      "slug": "seoul"
+    },
+    {
+      "name": "동작동",
+      "fullName": "서울특별시 동작구 동작동",
+      "area": "seoul",
+      "region": "동작구",
+      "slug": "seoul"
+    },
+    {
+      "name": "사당동",
+      "fullName": "서울특별시 동작구 사당동",
+      "area": "seoul",
+      "region": "동작구",
+      "slug": "seoul"
+    },
+    {
+      "name": "대방동",
+      "fullName": "서울특별시 동작구 대방동",
+      "area": "seoul",
+      "region": "동작구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신대방동",
+      "fullName": "서울특별시 동작구 신대방동",
+      "area": "seoul",
+      "region": "동작구",
+      "slug": "seoul"
+    },
+    {
+      "name": "관악구",
+      "fullName": "서울특별시 관악구",
+      "area": "seoul",
+      "region": "관악구",
+      "slug": "seoul"
+    },
+    {
+      "name": "봉천동",
+      "fullName": "서울특별시 관악구 봉천동",
+      "area": "seoul",
+      "region": "관악구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신림동",
+      "fullName": "서울특별시 관악구 신림동",
+      "area": "seoul",
+      "region": "관악구",
+      "slug": "seoul"
+    },
+    {
+      "name": "남현동",
+      "fullName": "서울특별시 관악구 남현동",
+      "area": "seoul",
+      "region": "관악구",
+      "slug": "seoul"
+    },
+    {
+      "name": "서초구",
+      "fullName": "서울특별시 서초구",
+      "area": "seoul",
+      "region": "서초구",
+      "slug": "seoul"
+    },
+    {
+      "name": "방배동",
+      "fullName": "서울특별시 서초구 방배동",
+      "area": "seoul",
+      "region": "서초구",
+      "slug": "seoul"
+    },
+    {
+      "name": "양재동",
+      "fullName": "서울특별시 서초구 양재동",
+      "area": "seoul",
+      "region": "서초구",
+      "slug": "seoul"
+    },
+    {
+      "name": "우면동",
+      "fullName": "서울특별시 서초구 우면동",
+      "area": "seoul",
+      "region": "서초구",
+      "slug": "seoul"
+    },
+    {
+      "name": "원지동",
+      "fullName": "서울특별시 서초구 원지동",
+      "area": "seoul",
+      "region": "서초구",
+      "slug": "seoul"
+    },
+    {
+      "name": "잠원동",
+      "fullName": "서울특별시 서초구 잠원동",
+      "area": "seoul",
+      "region": "서초구",
+      "slug": "seoul"
+    },
+    {
+      "name": "반포동",
+      "fullName": "서울특별시 서초구 반포동",
+      "area": "seoul",
+      "region": "서초구",
+      "slug": "seoul"
+    },
+    {
+      "name": "서초동",
+      "fullName": "서울특별시 서초구 서초동",
+      "area": "seoul",
+      "region": "서초구",
+      "slug": "seoul"
+    },
+    {
+      "name": "내곡동",
+      "fullName": "서울특별시 서초구 내곡동",
+      "area": "seoul",
+      "region": "서초구",
+      "slug": "seoul"
+    },
+    {
+      "name": "염곡동",
+      "fullName": "서울특별시 서초구 염곡동",
+      "area": "seoul",
+      "region": "서초구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신원동",
+      "fullName": "서울특별시 서초구 신원동",
+      "area": "seoul",
+      "region": "서초구",
+      "slug": "seoul"
+    },
+    {
+      "name": "강남구",
+      "fullName": "서울특별시 강남구",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "역삼동",
+      "fullName": "서울특별시 강남구 역삼동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "개포동",
+      "fullName": "서울특별시 강남구 개포동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "청담동",
+      "fullName": "서울특별시 강남구 청담동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "삼성동",
+      "fullName": "서울특별시 강남구 삼성동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "대치동",
+      "fullName": "서울특별시 강남구 대치동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신사동",
+      "fullName": "서울특별시 강남구 신사동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "논현동",
+      "fullName": "서울특별시 강남구 논현동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "압구정동",
+      "fullName": "서울특별시 강남구 압구정동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "세곡동",
+      "fullName": "서울특별시 강남구 세곡동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "자곡동",
+      "fullName": "서울특별시 강남구 자곡동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "율현동",
+      "fullName": "서울특별시 강남구 율현동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "일원동",
+      "fullName": "서울특별시 강남구 일원동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "수서동",
+      "fullName": "서울특별시 강남구 수서동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "도곡동",
+      "fullName": "서울특별시 강남구 도곡동",
+      "area": "seoul",
+      "region": "강남구",
+      "slug": "seoul"
+    },
+    {
+      "name": "송파구",
+      "fullName": "서울특별시 송파구",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "잠실동",
+      "fullName": "서울특별시 송파구 잠실동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신천동",
+      "fullName": "서울특별시 송파구 신천동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "풍납동",
+      "fullName": "서울특별시 송파구 풍납동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "송파동",
+      "fullName": "서울특별시 송파구 송파동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "석촌동",
+      "fullName": "서울특별시 송파구 석촌동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "삼전동",
+      "fullName": "서울특별시 송파구 삼전동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "가락동",
+      "fullName": "서울특별시 송파구 가락동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "문정동",
+      "fullName": "서울특별시 송파구 문정동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "장지동",
+      "fullName": "서울특별시 송파구 장지동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "방이동",
+      "fullName": "서울특별시 송파구 방이동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "오금동",
+      "fullName": "서울특별시 송파구 오금동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "거여동",
+      "fullName": "서울특별시 송파구 거여동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "마천동",
+      "fullName": "서울특별시 송파구 마천동",
+      "area": "seoul",
+      "region": "송파구",
+      "slug": "seoul"
+    },
+    {
+      "name": "광진구",
+      "fullName": "서울특별시 광진구",
+      "area": "seoul",
+      "region": "광진구",
+      "slug": "seoul"
+    },
+    {
+      "name": "중곡동",
+      "fullName": "서울특별시 광진구 중곡동",
+      "area": "seoul",
+      "region": "광진구",
+      "slug": "seoul"
+    },
+    {
+      "name": "능동",
+      "fullName": "서울특별시 광진구 능동",
+      "area": "seoul",
+      "region": "광진구",
+      "slug": "seoul"
+    },
+    {
+      "name": "구의동",
+      "fullName": "서울특별시 광진구 구의동",
+      "area": "seoul",
+      "region": "광진구",
+      "slug": "seoul"
+    },
+    {
+      "name": "광장동",
+      "fullName": "서울특별시 광진구 광장동",
+      "area": "seoul",
+      "region": "광진구",
+      "slug": "seoul"
+    },
+    {
+      "name": "자양동",
+      "fullName": "서울특별시 광진구 자양동",
+      "area": "seoul",
+      "region": "광진구",
+      "slug": "seoul"
+    },
+    {
+      "name": "화양동",
+      "fullName": "서울특별시 광진구 화양동",
+      "area": "seoul",
+      "region": "광진구",
+      "slug": "seoul"
+    },
+    {
+      "name": "군자동",
+      "fullName": "서울특별시 광진구 군자동",
+      "area": "seoul",
+      "region": "광진구",
+      "slug": "seoul"
+    },
+    {
+      "name": "용산구",
+      "fullName": "서울특별시 용산구",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "후암동",
+      "fullName": "서울특별시 용산구 후암동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "용산동2가",
+      "fullName": "서울특별시 용산구 용산동2가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "용산동4가",
+      "fullName": "서울특별시 용산구 용산동4가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "갈월동",
+      "fullName": "서울특별시 용산구 갈월동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "남영동",
+      "fullName": "서울특별시 용산구 남영동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "용산동1가",
+      "fullName": "서울특별시 용산구 용산동1가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "동자동",
+      "fullName": "서울특별시 용산구 동자동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "서계동",
+      "fullName": "서울특별시 용산구 서계동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "청파동1가",
+      "fullName": "서울특별시 용산구 청파동1가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "청파동2가",
+      "fullName": "서울특별시 용산구 청파동2가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "청파동3가",
+      "fullName": "서울특별시 용산구 청파동3가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "원효로1가",
+      "fullName": "서울특별시 용산구 원효로1가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "원효로2가",
+      "fullName": "서울특별시 용산구 원효로2가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신창동",
+      "fullName": "서울특별시 용산구 신창동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "산천동",
+      "fullName": "서울특별시 용산구 산천동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "청암동",
+      "fullName": "서울특별시 용산구 청암동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "원효로3가",
+      "fullName": "서울특별시 용산구 원효로3가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "원효로4가",
+      "fullName": "서울특별시 용산구 원효로4가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "효창동",
+      "fullName": "서울특별시 용산구 효창동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "도원동",
+      "fullName": "서울특별시 용산구 도원동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "용문동",
+      "fullName": "서울특별시 용산구 용문동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "문배동",
+      "fullName": "서울특별시 용산구 문배동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "신계동",
+      "fullName": "서울특별시 용산구 신계동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "한강로1가",
+      "fullName": "서울특별시 용산구 한강로1가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "한강로2가",
+      "fullName": "서울특별시 용산구 한강로2가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "용산동3가",
+      "fullName": "서울특별시 용산구 용산동3가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "용산동5가",
+      "fullName": "서울특별시 용산구 용산동5가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "한강로3가",
+      "fullName": "서울특별시 용산구 한강로3가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "이촌동",
+      "fullName": "서울특별시 용산구 이촌동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "이태원동",
+      "fullName": "서울특별시 용산구 이태원동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "한남동",
+      "fullName": "서울특별시 용산구 한남동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "동빙고동",
+      "fullName": "서울특별시 용산구 동빙고동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "서빙고동",
+      "fullName": "서울특별시 용산구 서빙고동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "주성동",
+      "fullName": "서울특별시 용산구 주성동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "용산동6가",
+      "fullName": "서울특별시 용산구 용산동6가",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "보광동",
+      "fullName": "서울특별시 용산구 보광동",
+      "area": "seoul",
+      "region": "용산구",
+      "slug": "seoul"
+    },
+    {
+      "name": "강동구",
+      "fullName": "서울특별시 강동구",
+      "area": "seoul",
+      "region": "강동구",
+      "slug": "seoul"
+    },
+    {
+      "name": "명일동",
+      "fullName": "서울특별시 강동구 명일동",
+      "area": "seoul",
+      "region": "강동구",
+      "slug": "seoul"
+    },
+    {
+      "name": "고덕동",
+      "fullName": "서울특별시 강동구 고덕동",
+      "area": "seoul",
+      "region": "강동구",
+      "slug": "seoul"
+    },
+    {
+      "name": "상일동",
+      "fullName": "서울특별시 강동구 상일동",
+      "area": "seoul",
+      "region": "강동구",
+      "slug": "seoul"
+    },
+    {
+      "name": "길동",
+      "fullName": "서울특별시 강동구 길동",
+      "area": "seoul",
+      "region": "강동구",
+      "slug": "seoul"
+    },
+    {
+      "name": "둔촌동",
+      "fullName": "서울특별시 강동구 둔촌동",
+      "area": "seoul",
+      "region": "강동구",
+      "slug": "seoul"
+    },
+    {
+      "name": "암사동",
+      "fullName": "서울특별시 강동구 암사동",
+      "area": "seoul",
+      "region": "강동구",
+      "slug": "seoul"
+    },
+    {
+      "name": "성내동",
+      "fullName": "서울특별시 강동구 성내동",
+      "area": "seoul",
+      "region": "강동구",
+      "slug": "seoul"
+    },
+    {
+      "name": "천호동",
+      "fullName": "서울특별시 강동구 천호동",
+      "area": "seoul",
+      "region": "강동구",
+      "slug": "seoul"
+    },
+    {
+      "name": "강일동",
+      "fullName": "서울특별시 강동구 강일동",
+      "area": "seoul",
+      "region": "강동구",
+      "slug": "seoul"
+    },
+    {
+      "name": "경기",
+      "fullName": "경기도",
+      "area": "gyeonggi",
+      "region": "",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "수원시",
+      "fullName": "경기도 수원시",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "장안구",
+      "fullName": "장안구",
+      "area": "gyeonggi",
+      "region": "장안구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "권선구",
+      "fullName": "권선구",
+      "area": "gyeonggi",
+      "region": "권선구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "팔달구",
+      "fullName": "팔달구",
+      "area": "gyeonggi",
+      "region": "팔달구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "영통구",
+      "fullName": "영통구",
+      "area": "gyeonggi",
+      "region": "영통구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "파장동",
+      "fullName": "경기도 수원시 장안구 파장동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "정자동",
+      "fullName": "경기도 수원시 장안구 정자동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "이목동",
+      "fullName": "경기도 수원시 장안구 이목동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "율전동",
+      "fullName": "경기도 수원시 장안구 율전동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "천천동",
+      "fullName": "경기도 수원시 장안구 천천동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "영화동",
+      "fullName": "경기도 수원시 장안구 영화동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "송죽동",
+      "fullName": "경기도 수원시 장안구 송죽동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "조원동",
+      "fullName": "경기도 수원시 장안구 조원동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "연무동",
+      "fullName": "경기도 수원시 장안구 연무동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "상광교동",
+      "fullName": "경기도 수원시 장안구 상광교동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "하광교동",
+      "fullName": "경기도 수원시 장안구 하광교동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "세류동",
+      "fullName": "경기도 수원시 권선구 세류동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "평동",
+      "fullName": "경기도 수원시 권선구 평동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "고색동",
+      "fullName": "경기도 수원시 권선구 고색동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "오목천동",
+      "fullName": "경기도 수원시 권선구 오목천동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "평리동",
+      "fullName": "경기도 수원시 권선구 평리동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "서둔동",
+      "fullName": "경기도 수원시 권선구 서둔동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "구운동",
+      "fullName": "경기도 수원시 권선구 구운동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "탑동",
+      "fullName": "경기도 수원시 권선구 탑동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "금곡동",
+      "fullName": "경기도 수원시 권선구 금곡동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "호매실동",
+      "fullName": "경기도 수원시 권선구 호매실동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "곡반정동",
+      "fullName": "경기도 수원시 권선구 곡반정동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "권선동",
+      "fullName": "경기도 수원시 권선구 권선동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "장지동",
+      "fullName": "경기도 수원시 권선구 장지동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "대황교동",
+      "fullName": "경기도 수원시 권선구 대황교동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "입북동",
+      "fullName": "경기도 수원시 권선구 입북동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "당수동",
+      "fullName": "경기도 수원시 권선구 당수동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "팔달로1가",
+      "fullName": "경기도 수원시 팔달구 팔달로1가",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "팔달로2가",
+      "fullName": "경기도 수원시 팔달구 팔달로2가",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "팔달로3가",
+      "fullName": "경기도 수원시 팔달구 팔달로3가",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "남창동",
+      "fullName": "경기도 수원시 팔달구 남창동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "영동",
+      "fullName": "경기도 수원시 팔달구 영동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "중동",
+      "fullName": "경기도 수원시 팔달구 중동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "구천동",
+      "fullName": "경기도 수원시 팔달구 구천동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "남수동",
+      "fullName": "경기도 수원시 팔달구 남수동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "매향동",
+      "fullName": "경기도 수원시 팔달구 매향동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "북수동",
+      "fullName": "경기도 수원시 팔달구 북수동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "신풍동",
+      "fullName": "경기도 수원시 팔달구 신풍동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "장안동",
+      "fullName": "경기도 수원시 팔달구 장안동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "교동",
+      "fullName": "경기도 수원시 팔달구 교동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "매교동",
+      "fullName": "경기도 수원시 팔달구 매교동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "매산로1가",
+      "fullName": "경기도 수원시 팔달구 매산로1가",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "매산로2가",
+      "fullName": "경기도 수원시 팔달구 매산로2가",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "매산로3가",
+      "fullName": "경기도 수원시 팔달구 매산로3가",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "고등동",
+      "fullName": "경기도 수원시 팔달구 고등동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "화서동",
+      "fullName": "경기도 수원시 팔달구 화서동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "지동",
+      "fullName": "경기도 수원시 팔달구 지동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "우만동",
+      "fullName": "경기도 수원시 팔달구 우만동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "인계동",
+      "fullName": "경기도 수원시 팔달구 인계동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "매탄동",
+      "fullName": "경기도 수원시 영통구 매탄동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "원천동",
+      "fullName": "경기도 수원시 영통구 원천동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "이의동",
+      "fullName": "경기도 수원시 영통구 이의동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "하동",
+      "fullName": "경기도 수원시 영통구 하동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "영통동",
+      "fullName": "경기도 수원시 영통구 영통동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "신동",
+      "fullName": "경기도 수원시 영통구 신동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "망포동",
+      "fullName": "경기도 수원시 영통구 망포동",
+      "area": "gyeonggi",
+      "region": "수원시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "성남시",
+      "fullName": "경기도 성남시",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "수정구",
+      "fullName": "수정구",
+      "area": "gyeonggi",
+      "region": "수정구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "중원구",
+      "fullName": "중원구",
+      "area": "gyeonggi",
+      "region": "중원구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "분당구",
+      "fullName": "분당구",
+      "area": "gyeonggi",
+      "region": "분당구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "신흥동",
+      "fullName": "경기도 성남시 수정구 신흥동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "태평동",
+      "fullName": "경기도 성남시 수정구 태평동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "수진동",
+      "fullName": "경기도 성남시 수정구 수진동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "단대동",
+      "fullName": "경기도 성남시 수정구 단대동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "산성동",
+      "fullName": "경기도 성남시 수정구 산성동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "양지동",
+      "fullName": "경기도 성남시 수정구 양지동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "복정동",
+      "fullName": "경기도 성남시 수정구 복정동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "창곡동",
+      "fullName": "경기도 성남시 수정구 창곡동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "신촌동",
+      "fullName": "경기도 성남시 수정구 신촌동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "오야동",
+      "fullName": "경기도 성남시 수정구 오야동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "심곡동",
+      "fullName": "경기도 성남시 수정구 심곡동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "고등동",
+      "fullName": "경기도 성남시 수정구 고등동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "상적동",
+      "fullName": "경기도 성남시 수정구 상적동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "둔전동",
+      "fullName": "경기도 성남시 수정구 둔전동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "시흥동",
+      "fullName": "경기도 성남시 수정구 시흥동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "금토동",
+      "fullName": "경기도 성남시 수정구 금토동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "사송동",
+      "fullName": "경기도 성남시 수정구 사송동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "성남동",
+      "fullName": "경기도 성남시 중원구 성남동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "금광동",
+      "fullName": "경기도 성남시 중원구 금광동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "은행동",
+      "fullName": "경기도 성남시 중원구 은행동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "상대원동",
+      "fullName": "경기도 성남시 중원구 상대원동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "여수동",
+      "fullName": "경기도 성남시 중원구 여수동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "도촌동",
+      "fullName": "경기도 성남시 중원구 도촌동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "갈현동",
+      "fullName": "경기도 성남시 중원구 갈현동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "하대원동",
+      "fullName": "경기도 성남시 중원구 하대원동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "중앙동",
+      "fullName": "경기도 성남시 중원구 중앙동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "분당동",
+      "fullName": "경기도 성남시 분당구 분당동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "수내동",
+      "fullName": "경기도 성남시 분당구 수내동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "정자동",
+      "fullName": "경기도 성남시 분당구 정자동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "율동",
+      "fullName": "경기도 성남시 분당구 율동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "서현동",
+      "fullName": "경기도 성남시 분당구 서현동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "이매동",
+      "fullName": "경기도 성남시 분당구 이매동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "야탑동",
+      "fullName": "경기도 성남시 분당구 야탑동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "판교동",
+      "fullName": "경기도 성남시 분당구 판교동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "삼평동",
+      "fullName": "경기도 성남시 분당구 삼평동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "백현동",
+      "fullName": "경기도 성남시 분당구 백현동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "금곡동",
+      "fullName": "경기도 성남시 분당구 금곡동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "궁내동",
+      "fullName": "경기도 성남시 분당구 궁내동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "동원동",
+      "fullName": "경기도 성남시 분당구 동원동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "구미동",
+      "fullName": "경기도 성남시 분당구 구미동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "운중동",
+      "fullName": "경기도 성남시 분당구 운중동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "대장동",
+      "fullName": "경기도 성남시 분당구 대장동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "석운동",
+      "fullName": "경기도 성남시 분당구 석운동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "하산운동",
+      "fullName": "경기도 성남시 분당구 하산운동",
+      "area": "gyeonggi",
+      "region": "성남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "부천시",
+      "fullName": "경기도 부천시",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "원미구",
+      "fullName": "원미구",
+      "area": "gyeonggi",
+      "region": "원미구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "소사구",
+      "fullName": "소사구",
+      "area": "gyeonggi",
+      "region": "소사구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "오정구",
+      "fullName": "오정구",
+      "area": "gyeonggi",
+      "region": "오정구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "원미동",
+      "fullName": "경기도 부천시 원미구 원미동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "심곡동",
+      "fullName": "경기도 부천시 원미구 심곡동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "춘의동",
+      "fullName": "경기도 부천시 원미구 춘의동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "도당동",
+      "fullName": "경기도 부천시 원미구 도당동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "약대동",
+      "fullName": "경기도 부천시 원미구 약대동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "소사동",
+      "fullName": "경기도 부천시 원미구 소사동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "역곡동",
+      "fullName": "경기도 부천시 원미구 역곡동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "중동",
+      "fullName": "경기도 부천시 원미구 중동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "상동",
+      "fullName": "경기도 부천시 원미구 상동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "소사본동",
+      "fullName": "경기도 부천시 소사구 소사본동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "심곡본동",
+      "fullName": "경기도 부천시 소사구 심곡본동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "범박동",
+      "fullName": "경기도 부천시 소사구 범박동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "괴안동",
+      "fullName": "경기도 부천시 소사구 괴안동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "송내동",
+      "fullName": "경기도 부천시 소사구 송내동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "옥길동",
+      "fullName": "경기도 부천시 소사구 옥길동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "계수동",
+      "fullName": "경기도 부천시 소사구 계수동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "오정동",
+      "fullName": "경기도 부천시 오정구 오정동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "여월동",
+      "fullName": "경기도 부천시 오정구 여월동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "작동",
+      "fullName": "경기도 부천시 오정구 작동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "원종동",
+      "fullName": "경기도 부천시 오정구 원종동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "고강동",
+      "fullName": "경기도 부천시 오정구 고강동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "대장동",
+      "fullName": "경기도 부천시 오정구 대장동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "삼정동",
+      "fullName": "경기도 부천시 오정구 삼정동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "내동",
+      "fullName": "경기도 부천시 오정구 내동",
+      "area": "gyeonggi",
+      "region": "부천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "안산시",
+      "fullName": "경기도 안산시",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "상록구",
+      "fullName": "상록구",
+      "area": "gyeonggi",
+      "region": "상록구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "단원구",
+      "fullName": "단원구",
+      "area": "gyeonggi",
+      "region": "단원구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "일동",
+      "fullName": "경기도 안산시 상록구 일동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "이동",
+      "fullName": "경기도 안산시 상록구 이동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "사동",
+      "fullName": "경기도 안산시 상록구 사동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "본오동",
+      "fullName": "경기도 안산시 상록구 본오동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "팔곡이동",
+      "fullName": "경기도 안산시 상록구 팔곡이동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "양상동",
+      "fullName": "경기도 안산시 상록구 양상동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "부곡동",
+      "fullName": "경기도 안산시 상록구 부곡동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "성포동",
+      "fullName": "경기도 안산시 상록구 성포동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "월피동",
+      "fullName": "경기도 안산시 상록구 월피동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "팔곡일동",
+      "fullName": "경기도 안산시 상록구 팔곡일동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "건건동",
+      "fullName": "경기도 안산시 상록구 건건동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "사사동",
+      "fullName": "경기도 안산시 상록구 사사동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "수암동",
+      "fullName": "경기도 안산시 상록구 수암동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "장상동",
+      "fullName": "경기도 안산시 상록구 장상동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "장하동",
+      "fullName": "경기도 안산시 상록구 장하동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "고잔동",
+      "fullName": "경기도 안산시 단원구 고잔동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "와동",
+      "fullName": "경기도 안산시 단원구 와동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "신길동",
+      "fullName": "경기도 안산시 단원구 신길동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "성곡동",
+      "fullName": "경기도 안산시 단원구 성곡동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "원시동",
+      "fullName": "경기도 안산시 단원구 원시동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "목내동",
+      "fullName": "경기도 안산시 단원구 목내동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "초지동",
+      "fullName": "경기도 안산시 단원구 초지동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "원곡동",
+      "fullName": "경기도 안산시 단원구 원곡동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "선부동",
+      "fullName": "경기도 안산시 단원구 선부동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "대부동동",
+      "fullName": "경기도 안산시 단원구 대부동동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "대부북동",
+      "fullName": "경기도 안산시 단원구 대부북동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "대부남동",
+      "fullName": "경기도 안산시 단원구 대부남동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "선감동",
+      "fullName": "경기도 안산시 단원구 선감동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "풍도동",
+      "fullName": "경기도 안산시 단원구 풍도동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "화정동",
+      "fullName": "경기도 안산시 단원구 화정동",
+      "area": "gyeonggi",
+      "region": "안산시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "안양시",
+      "fullName": "경기도 안양시",
+      "area": "gyeonggi",
+      "region": "안양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "만안구",
+      "fullName": "만안구",
+      "area": "gyeonggi",
+      "region": "만안구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "동안구",
+      "fullName": "동안구",
+      "area": "gyeonggi",
+      "region": "동안구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "안양동",
+      "fullName": "경기도 안양시 만안구 안양동",
+      "area": "gyeonggi",
+      "region": "안양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "석수동",
+      "fullName": "경기도 안양시 만안구 석수동",
+      "area": "gyeonggi",
+      "region": "안양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "박달동",
+      "fullName": "경기도 안양시 만안구 박달동",
+      "area": "gyeonggi",
+      "region": "안양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "비산동",
+      "fullName": "경기도 안양시 동안구 비산동",
+      "area": "gyeonggi",
+      "region": "안양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "관양동",
+      "fullName": "경기도 안양시 동안구 관양동",
+      "area": "gyeonggi",
+      "region": "안양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "평촌동",
+      "fullName": "경기도 안양시 동안구 평촌동",
+      "area": "gyeonggi",
+      "region": "안양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "호계동",
+      "fullName": "경기도 안양시 동안구 호계동",
+      "area": "gyeonggi",
+      "region": "안양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "시흥시",
+      "fullName": "경기도 시흥시",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "대야동",
+      "fullName": "경기도 시흥시 대야동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "신천동",
+      "fullName": "경기도 시흥시 신천동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "방산동",
+      "fullName": "경기도 시흥시 방산동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "포동",
+      "fullName": "경기도 시흥시 포동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "미산동",
+      "fullName": "경기도 시흥시 미산동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "은행동",
+      "fullName": "경기도 시흥시 은행동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "안현동",
+      "fullName": "경기도 시흥시 안현동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "매화동",
+      "fullName": "경기도 시흥시 매화동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "도창동",
+      "fullName": "경기도 시흥시 도창동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "금이동",
+      "fullName": "경기도 시흥시 금이동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "과림동",
+      "fullName": "경기도 시흥시 과림동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "계수동",
+      "fullName": "경기도 시흥시 계수동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "화정동",
+      "fullName": "경기도 시흥시 화정동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "능곡동",
+      "fullName": "경기도 시흥시 능곡동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "하중동",
+      "fullName": "경기도 시흥시 하중동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "하상동",
+      "fullName": "경기도 시흥시 하상동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "광석동",
+      "fullName": "경기도 시흥시 광석동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "물왕동",
+      "fullName": "경기도 시흥시 물왕동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "산현동",
+      "fullName": "경기도 시흥시 산현동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "조남동",
+      "fullName": "경기도 시흥시 조남동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "논곡동",
+      "fullName": "경기도 시흥시 논곡동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "목감동",
+      "fullName": "경기도 시흥시 목감동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "거모동",
+      "fullName": "경기도 시흥시 거모동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "군자동",
+      "fullName": "경기도 시흥시 군자동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "장현동",
+      "fullName": "경기도 시흥시 장현동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "장곡동",
+      "fullName": "경기도 시흥시 장곡동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "월곶동",
+      "fullName": "경기도 시흥시 월곶동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "정왕동",
+      "fullName": "경기도 시흥시 정왕동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "죽율동",
+      "fullName": "경기도 시흥시 죽율동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "무지내동",
+      "fullName": "경기도 시흥시 무지내동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "배곧동",
+      "fullName": "경기도 시흥시 배곧동",
+      "area": "gyeonggi",
+      "region": "시흥시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "김포시",
+      "fullName": "경기도 김포시",
+      "area": "gyeonggi",
+      "region": "김포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "북변동",
+      "fullName": "경기도 김포시 북변동",
+      "area": "gyeonggi",
+      "region": "김포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "걸포동",
+      "fullName": "경기도 김포시 걸포동",
+      "area": "gyeonggi",
+      "region": "김포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "운양동",
+      "fullName": "경기도 김포시 운양동",
+      "area": "gyeonggi",
+      "region": "김포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "장기동",
+      "fullName": "경기도 김포시 장기동",
+      "area": "gyeonggi",
+      "region": "김포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "감정동",
+      "fullName": "경기도 김포시 감정동",
+      "area": "gyeonggi",
+      "region": "김포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "사우동",
+      "fullName": "경기도 김포시 사우동",
+      "area": "gyeonggi",
+      "region": "김포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "풍무동",
+      "fullName": "경기도 김포시 풍무동",
+      "area": "gyeonggi",
+      "region": "김포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "마산동",
+      "fullName": "경기도 김포시 마산동",
+      "area": "gyeonggi",
+      "region": "김포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "구래동",
+      "fullName": "경기도 김포시 구래동",
+      "area": "gyeonggi",
+      "region": "김포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "하남시",
+      "fullName": "경기도 하남시",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "천현동",
+      "fullName": "경기도 하남시 천현동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "하산곡동",
+      "fullName": "경기도 하남시 하산곡동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "창우동",
+      "fullName": "경기도 하남시 창우동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "배알미동",
+      "fullName": "경기도 하남시 배알미동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "상산곡동",
+      "fullName": "경기도 하남시 상산곡동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "신장동",
+      "fullName": "경기도 하남시 신장동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "당정동",
+      "fullName": "경기도 하남시 당정동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "덕풍동",
+      "fullName": "경기도 하남시 덕풍동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "망월동",
+      "fullName": "경기도 하남시 망월동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "풍산동",
+      "fullName": "경기도 하남시 풍산동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "미사동",
+      "fullName": "경기도 하남시 미사동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "선동",
+      "fullName": "경기도 하남시 선동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "감북동",
+      "fullName": "경기도 하남시 감북동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "감일동",
+      "fullName": "경기도 하남시 감일동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "감이동",
+      "fullName": "경기도 하남시 감이동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "학암동",
+      "fullName": "경기도 하남시 학암동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "교산동",
+      "fullName": "경기도 하남시 교산동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "춘궁동",
+      "fullName": "경기도 하남시 춘궁동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "하사창동",
+      "fullName": "경기도 하남시 하사창동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "상사창동",
+      "fullName": "경기도 하남시 상사창동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "항동",
+      "fullName": "경기도 하남시 항동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "초일동",
+      "fullName": "경기도 하남시 초일동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "초이동",
+      "fullName": "경기도 하남시 초이동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "광암동",
+      "fullName": "경기도 하남시 광암동",
+      "area": "gyeonggi",
+      "region": "하남시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "광명시",
+      "fullName": "경기도 광명시",
+      "area": "gyeonggi",
+      "region": "광명시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "광명동",
+      "fullName": "경기도 광명시 광명동",
+      "area": "gyeonggi",
+      "region": "광명시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "철산동",
+      "fullName": "경기도 광명시 철산동",
+      "area": "gyeonggi",
+      "region": "광명시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "하안동",
+      "fullName": "경기도 광명시 하안동",
+      "area": "gyeonggi",
+      "region": "광명시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "소하동",
+      "fullName": "경기도 광명시 소하동",
+      "area": "gyeonggi",
+      "region": "광명시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "노온사동",
+      "fullName": "경기도 광명시 노온사동",
+      "area": "gyeonggi",
+      "region": "광명시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "일직동",
+      "fullName": "경기도 광명시 일직동",
+      "area": "gyeonggi",
+      "region": "광명시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "가학동",
+      "fullName": "경기도 광명시 가학동",
+      "area": "gyeonggi",
+      "region": "광명시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "옥길동",
+      "fullName": "경기도 광명시 옥길동",
+      "area": "gyeonggi",
+      "region": "광명시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "군포시",
+      "fullName": "경기도 군포시",
+      "area": "gyeonggi",
+      "region": "군포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "당동",
+      "fullName": "경기도 군포시 당동",
+      "area": "gyeonggi",
+      "region": "군포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "당정동",
+      "fullName": "경기도 군포시 당정동",
+      "area": "gyeonggi",
+      "region": "군포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "부곡동",
+      "fullName": "경기도 군포시 부곡동",
+      "area": "gyeonggi",
+      "region": "군포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "산본동",
+      "fullName": "경기도 군포시 산본동",
+      "area": "gyeonggi",
+      "region": "군포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "금정동",
+      "fullName": "경기도 군포시 금정동",
+      "area": "gyeonggi",
+      "region": "군포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "둔대동",
+      "fullName": "경기도 군포시 둔대동",
+      "area": "gyeonggi",
+      "region": "군포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "속달동",
+      "fullName": "경기도 군포시 속달동",
+      "area": "gyeonggi",
+      "region": "군포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "대야미동",
+      "fullName": "경기도 군포시 대야미동",
+      "area": "gyeonggi",
+      "region": "군포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "도마교동",
+      "fullName": "경기도 군포시 도마교동",
+      "area": "gyeonggi",
+      "region": "군포시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "의왕시",
+      "fullName": "경기도 의왕시",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "고천동",
+      "fullName": "경기도 의왕시 고천동",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "이동",
+      "fullName": "경기도 의왕시 이동",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "삼동",
+      "fullName": "경기도 의왕시 삼동",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "왕곡동",
+      "fullName": "경기도 의왕시 왕곡동",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "오전동",
+      "fullName": "경기도 의왕시 오전동",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "학의동",
+      "fullName": "경기도 의왕시 학의동",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "내손동",
+      "fullName": "경기도 의왕시 내손동",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "청계동",
+      "fullName": "경기도 의왕시 청계동",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "포일동",
+      "fullName": "경기도 의왕시 포일동",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "월암동",
+      "fullName": "경기도 의왕시 월암동",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "초평동",
+      "fullName": "경기도 의왕시 초평동",
+      "area": "gyeonggi",
+      "region": "의왕시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "과천시",
+      "fullName": "경기도 과천시",
+      "area": "gyeonggi",
+      "region": "과천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "관문동",
+      "fullName": "경기도 과천시 관문동",
+      "area": "gyeonggi",
+      "region": "과천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "문원동",
+      "fullName": "경기도 과천시 문원동",
+      "area": "gyeonggi",
+      "region": "과천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "갈현동",
+      "fullName": "경기도 과천시 갈현동",
+      "area": "gyeonggi",
+      "region": "과천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "막계동",
+      "fullName": "경기도 과천시 막계동",
+      "area": "gyeonggi",
+      "region": "과천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "과천동",
+      "fullName": "경기도 과천시 과천동",
+      "area": "gyeonggi",
+      "region": "과천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "주암동",
+      "fullName": "경기도 과천시 주암동",
+      "area": "gyeonggi",
+      "region": "과천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "중앙동",
+      "fullName": "경기도 과천시 중앙동",
+      "area": "gyeonggi",
+      "region": "과천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "원문동",
+      "fullName": "경기도 과천시 원문동",
+      "area": "gyeonggi",
+      "region": "과천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "별양동",
+      "fullName": "경기도 과천시 별양동",
+      "area": "gyeonggi",
+      "region": "과천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "부림동",
+      "fullName": "경기도 과천시 부림동",
+      "area": "gyeonggi",
+      "region": "과천시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "고양시",
+      "fullName": "경기도 고양시",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "덕양구",
+      "fullName": "덕양구",
+      "area": "gyeonggi",
+      "region": "덕양구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "일산동구",
+      "fullName": "일산동구",
+      "area": "gyeonggi",
+      "region": "일산동구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "일산서구",
+      "fullName": "일산서구",
+      "area": "gyeonggi",
+      "region": "일산서구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "주교동",
+      "fullName": "경기도 고양시 덕양구 주교동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "원당동",
+      "fullName": "경기도 고양시 덕양구 원당동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "신원동",
+      "fullName": "경기도 고양시 덕양구 신원동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "원흥동",
+      "fullName": "경기도 고양시 덕양구 원흥동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "도내동",
+      "fullName": "경기도 고양시 덕양구 도내동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "성사동",
+      "fullName": "경기도 고양시 덕양구 성사동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "북한동",
+      "fullName": "경기도 고양시 덕양구 북한동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "효자동",
+      "fullName": "경기도 고양시 덕양구 효자동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "지축동",
+      "fullName": "경기도 고양시 덕양구 지축동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "오금동",
+      "fullName": "경기도 고양시 덕양구 오금동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "삼송동",
+      "fullName": "경기도 고양시 덕양구 삼송동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "동산동",
+      "fullName": "경기도 고양시 덕양구 동산동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "용두동",
+      "fullName": "경기도 고양시 덕양구 용두동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "벽제동",
+      "fullName": "경기도 고양시 덕양구 벽제동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "선유동",
+      "fullName": "경기도 고양시 덕양구 선유동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "고양동",
+      "fullName": "경기도 고양시 덕양구 고양동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "대자동",
+      "fullName": "경기도 고양시 덕양구 대자동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "관산동",
+      "fullName": "경기도 고양시 덕양구 관산동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "내유동",
+      "fullName": "경기도 고양시 덕양구 내유동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "토당동",
+      "fullName": "경기도 고양시 덕양구 토당동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "내곡동",
+      "fullName": "경기도 고양시 덕양구 내곡동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "대장동",
+      "fullName": "경기도 고양시 덕양구 대장동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "화정동",
+      "fullName": "경기도 고양시 덕양구 화정동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "강매동",
+      "fullName": "경기도 고양시 덕양구 강매동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "행주내동",
+      "fullName": "경기도 고양시 덕양구 행주내동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "행주외동",
+      "fullName": "경기도 고양시 덕양구 행주외동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "신평동",
+      "fullName": "경기도 고양시 덕양구 신평동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "행신동",
+      "fullName": "경기도 고양시 덕양구 행신동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "화전동",
+      "fullName": "경기도 고양시 덕양구 화전동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "현천동",
+      "fullName": "경기도 고양시 덕양구 현천동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "덕은동",
+      "fullName": "경기도 고양시 덕양구 덕은동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "향동동",
+      "fullName": "경기도 고양시 덕양구 향동동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "식사동",
+      "fullName": "경기도 고양시 일산동구 식사동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "중산동",
+      "fullName": "경기도 고양시 일산동구 중산동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "정발산동",
+      "fullName": "경기도 고양시 일산동구 정발산동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "장항동",
+      "fullName": "경기도 고양시 일산동구 장항동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "마두동",
+      "fullName": "경기도 고양시 일산동구 마두동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "백석동",
+      "fullName": "경기도 고양시 일산동구 백석동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "풍동",
+      "fullName": "경기도 고양시 일산동구 풍동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "산황동",
+      "fullName": "경기도 고양시 일산동구 산황동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "사리현동",
+      "fullName": "경기도 고양시 일산동구 사리현동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "지영동",
+      "fullName": "경기도 고양시 일산동구 지영동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "설문동",
+      "fullName": "경기도 고양시 일산동구 설문동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "문봉동",
+      "fullName": "경기도 고양시 일산동구 문봉동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "성석동",
+      "fullName": "경기도 고양시 일산동구 성석동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "일산동",
+      "fullName": "경기도 고양시 일산서구 일산동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "주엽동",
+      "fullName": "경기도 고양시 일산서구 주엽동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "탄현동",
+      "fullName": "경기도 고양시 일산서구 탄현동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "대화동",
+      "fullName": "경기도 고양시 일산서구 대화동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "덕이동",
+      "fullName": "경기도 고양시 일산서구 덕이동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "가좌동",
+      "fullName": "경기도 고양시 일산서구 가좌동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "구산동",
+      "fullName": "경기도 고양시 일산서구 구산동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "법곳동",
+      "fullName": "경기도 고양시 일산서구 법곳동",
+      "area": "gyeonggi",
+      "region": "고양시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "용인시",
+      "fullName": "경기도 용인시",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "기흥구",
+      "fullName": "기흥구",
+      "area": "gyeonggi",
+      "region": "기흥구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "수지구",
+      "fullName": "수지구",
+      "area": "gyeonggi",
+      "region": "수지구",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "신갈동",
+      "fullName": "경기도 용인시 기흥구 신갈동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "구갈동",
+      "fullName": "경기도 용인시 기흥구 구갈동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "상갈동",
+      "fullName": "경기도 용인시 기흥구 상갈동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "하갈동",
+      "fullName": "경기도 용인시 기흥구 하갈동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "보라동",
+      "fullName": "경기도 용인시 기흥구 보라동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "지곡동",
+      "fullName": "경기도 용인시 기흥구 지곡동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "공세동",
+      "fullName": "경기도 용인시 기흥구 공세동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "고매동",
+      "fullName": "경기도 용인시 기흥구 고매동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "농서동",
+      "fullName": "경기도 용인시 기흥구 농서동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "서천동",
+      "fullName": "경기도 용인시 기흥구 서천동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "영덕동",
+      "fullName": "경기도 용인시 기흥구 영덕동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "언남동",
+      "fullName": "경기도 용인시 기흥구 언남동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "마북동",
+      "fullName": "경기도 용인시 기흥구 마북동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "청덕동",
+      "fullName": "경기도 용인시 기흥구 청덕동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "동백동",
+      "fullName": "경기도 용인시 기흥구 동백동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "중동",
+      "fullName": "경기도 용인시 기흥구 중동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "상하동",
+      "fullName": "경기도 용인시 기흥구 상하동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "보정동",
+      "fullName": "경기도 용인시 기흥구 보정동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "풍덕천동",
+      "fullName": "경기도 용인시 수지구 풍덕천동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "죽전동",
+      "fullName": "경기도 용인시 수지구 죽전동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "동천동",
+      "fullName": "경기도 용인시 수지구 동천동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "고기동",
+      "fullName": "경기도 용인시 수지구 고기동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "신봉동",
+      "fullName": "경기도 용인시 수지구 신봉동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "성복동",
+      "fullName": "경기도 용인시 수지구 성복동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    },
+    {
+      "name": "상현동",
+      "fullName": "경기도 용인시 수지구 상현동",
+      "area": "gyeonggi",
+      "region": "용인시",
+      "slug": "gyeonggi"
+    }
+  ]
+}
