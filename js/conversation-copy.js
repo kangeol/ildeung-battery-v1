@@ -29,9 +29,10 @@ export const copy = {
   agm: "AGM은 차량에 사용되는 배터리 타입 중 하나입니다.",
   substitution: battery => `고객님 차량의 기본 배터리는 ${battery}입니다. 다른 타입 사용 가능 여부는 전화로 확인해 주세요.`,
   service: name => `네, ${name}에서 출장 교체 가능합니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.`,
-  serviceUnknown: "출장 교체는 서울·경기·인천에서 안내해드리고 있어요. 말씀하신 장소의 방문 가능 여부는 1644-9141로 확인해 주세요.",
+  serviceUnknown: "현재 출장 가능 지역으로 확인되지 않아요. 정확한 가능 여부는 1644-9141로 문의해 주세요.",
   serviceAsk: "어느 지역에 계신가요? 시·구·동 이름을 알려주세요.",
-  serviceAmbiguous: "같은 이름의 지역이 여러 곳이라 확인이 필요해요. 서울·경기·인천 중 어디인가요?",
+  locationChoices: labels => `같은 이름의 지역이 여러 곳이에요.\n${labels.join(" / ")} 중 어디인가요?`,
+  vehicleConfirm: name => `${name} 말씀하시는 걸까요?`,
   error: "지금 정보를 불러오지 못했어요. 잠시 후 다시 입력하시거나 1644-9141로 문의해 주세요.",
   labels: { title: "내 차량 배터리", model: "세부모델", year: "연식", fuel: "연료", battery: "기본 배터리", upgrade: "업그레이드", phone: "출장교체 상담 1644-9141", din: "일반 · DIN 배터리 가격 보기", agm: "AGM 배터리 가격 보기", detail: "차량 상세 안내", area: "지역 안내 보기", send: "보내기", typing: "답변 준비 중", typeNote: "정확한 규격 확인 후 선택해 주세요." },
   resultNote: "현재 장착된 배터리나 차량 옵션에 따라 달라질 수 있어요. 구매 전 정확한 확인이 필요하면 전화로 바로 확인해드릴게요."

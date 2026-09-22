@@ -9,7 +9,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = name => fs.readFileSync(path.join(root,name), "utf8");
 const json = name => JSON.parse(read(name));
 const records = json("data/manufacturers.json").flatMap(m => json(`data/${m.file}`).map(row => ({...row,manufacturerId:m.id,manufacturerName:m.name})));
-const localities = json("data/smart-consult-localities.json").localities;
+const localities = json("seo-data/smart-consult-location-index.json").localities;
 let assertions = 0;
 const check = (condition, message) => { assert.ok(condition, message); assertions++; };
 const equal = (actual, expected, message) => { assert.deepEqual(actual, expected, message); assertions++; };

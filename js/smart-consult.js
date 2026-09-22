@@ -65,7 +65,7 @@ function addChips(row, choices) {
 async function loadData() {
   if (!dataPromise) {
     const read = async url => { const response = await fetch(url); if (!response.ok) throw new Error("load-failed"); return response.json(); };
-    dataPromise = Promise.all([read("/data/manufacturers.json"), read("/seo-data/vehicle-detail-groups.json"), read("/data/smart-consult-localities.json")])
+    dataPromise = Promise.all([read("/data/manufacturers.json"), read("/seo-data/vehicle-detail-groups.json"), read("/seo-data/smart-consult-location-index.json")])
       .then(async ([manufacturers, details, areas]) => ({
         records: (await Promise.all(manufacturers.map(async manufacturer => (await read(`/data/${manufacturer.file}`)).map(row => ({ ...row, manufacturerId: manufacturer.id, manufacturerName: manufacturer.name }))))).flat(),
         pages: details.vehiclePages || [], localities: areas.localities || []

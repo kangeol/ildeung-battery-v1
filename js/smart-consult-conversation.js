@@ -1,14 +1,16 @@
-import { batteryStoreType, buildVehicleGroups, normalizeText, parseYearRange, resolveConsultation, searchVehicles, yearMatches } from "./smart-consult-core.js";
+import { batteryStoreType, buildVehicleGroups, normalizeText, parseYearRange, resolveConsultation, yearMatches } from "./smart-consult-core.js";
 import { copy } from "./conversation-copy.js";
+import { resolveLocation } from "./smart-consult-location.js";
+import { resolveVehicleText } from "./vehicle-aliases.js";
 
 const unique = values => [...new Set(values.filter(Boolean))];
-const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요)[.!\s]*$/;
+const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
 const negative = /^(아니|아니요|아냐|아니야)[.!\s]*$/;
 const signature = row => `${row.defaultBattery}|${row.upgradeBattery || ""}`;
 const knownBattery = result => result?.defaultBattery && !/문의|확인/.test(result.defaultBattery);
 
 export function createConversationState() {
-  return { manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
+  return { manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
 }
 
 function fuelType(value) {
@@ -31,23 +33,6 @@ function yearFromText(text, rows, nowYear) {
   return years.length === 1 ? { year: years[0] } : { ambiguousYear: true };
 }
 
-function regionFromText(text, localities, previous) {
-  const normalized = normalizeText(text);
-  const namedArea = localities.find(item => !item.region && [item.name, item.fullName].some(name => normalized.includes(normalizeText(name))));
-  const found = localities.filter(item => {
-    const alias = item.name.replace(/[시구동읍면]$/, "");
-    return [item.name, item.fullName, ...(alias.length >= 2 ? [alias] : [])].some(name => normalized.includes(normalizeText(name)));
-  });
-  const scope = namedArea?.area || previous?.area;
-  let matches = namedArea ? found.filter(item => item.area === scope) : found;
-  if (!namedArea && scope && matches.some(item => item.area === scope)) matches = matches.filter(item => item.area === scope);
-  if (!matches.length) return { region: null };
-  const longest = Math.max(...matches.map(item => item.name.length));
-  matches = matches.filter(item => item.name.length === longest);
-  const distinct = [...new Map(matches.map(item => [`${item.area}|${item.fullName}`, item])).values()];
-  return distinct.length === 1 ? { region: distinct[0] } : { ambiguousRegion: true };
-}
-
 export function recognizeIntent(text, entities) {
   if (/^(처음부터|다시시작|초기화|리셋|새상담)$/.test(normalizeText(text))) return "RESET";
   if (/아니|정정|수정|잘못|바꿔/.test(text) && (entities.year || entities.fuel || entities.matches.length)) return "CORRECTION";
@@ -65,10 +50,10 @@ export function recognizeIntent(text, entities) {
 }
 
 export function extractEntities(text, records, state = createConversationState(), localities = [], nowYear = new Date().getFullYear()) {
-  const normalized = normalizeText(text);
+  const vehicle = resolveVehicleText(text, records, state);
+  const normalized = vehicle.rejected ? "" : normalizeText(vehicle.text);
   // Search recognises family aliases; an exact detail phrase inside a sentence is retained too.
-  const search = searchVehicles(text, records);
-  let matches = search.matches;
+  let matches = vehicle.matches;
   const detailMatches = unique(records.map(row => row.detailModel)).filter(detail => normalized.includes(normalizeText(detail))).sort((a,b) => normalizeText(b).length - normalizeText(a).length);
   let detailModel = detailMatches[0] || "";
   if (!detailModel && /그랜저ig/.test(normalized)) detailModel = "그랜저 IG";
@@ -85,11 +70,11 @@ export function extractEntities(text, records, state = createConversationState()
   const exactFuels = unique(rows.map(row => row.fuel)).filter(value => normalizeText(positiveText).includes(normalizeText(value)));
   const exactFuel = exactFuels.sort((a,b) => b.length - a.length)[0] || "";
   const trim = text.match(/(?:^|[^a-z0-9])((?:[235]\d{2}[di]|[ecs]\s?\d{3}d?))(?![a-z0-9])/i)?.[1]?.replace(/\s/g, "") || normalized.match(/(?:bmw|벤츠)([235]\d{2}[di]|[ecs]\d{3}d?)/)?.[1] || "";
-  return { matches, detailModel, generation, fuel, exactFuel, trim: trim.toUpperCase().replace(/D$/, "d").replace(/I$/, "i"), ...yearFromText(text, rows.length ? rows : records, nowYear), ...regionFromText(text, localities, state.region) };
+  return { matches, shorthand:vehicle.shorthand, detailModels:vehicle.detailModels, detailModel, generation:vehicle.generation || generation, fuel, exactFuel, trim: trim.toUpperCase().replace(/D$/, "d").replace(/I$/, "i"), ...yearFromText(text, rows.length ? rows : records, nowYear), ...resolveLocation(text, localities, state.location || state.region, state.pendingLocationDisambiguation) };
 }
 
 function filteredRows(records, state) {
-  return records.filter(row => `${row.manufacturerId}|${row.vehicle}` === state.selectedVehicleKey && (!state.year || yearMatches(row.year, state.year)) && (!state.detailModel || row.detailModel === state.detailModel) && (!state.fuel || fuelType(row.fuel) === state.fuel) && (!state.exactFuel || row.fuel === state.exactFuel));
+  return records.filter(row => `${row.manufacturerId}|${row.vehicle}` === state.selectedVehicleKey && (!state.year || yearMatches(row.year, state.year)) && (!state.detailModel || row.detailModel === state.detailModel) && (!state.detailModels?.length || state.detailModels.includes(row.detailModel)) && (!state.fuel || fuelType(row.fuel) === state.fuel) && (!state.exactFuel || row.fuel === state.exactFuel));
 }
 
 function detailLabel(detail, rows) {
@@ -120,6 +105,23 @@ export function conversationTurn(previous, text, records, localities = []) {
   if (intent === "RESET") { output.state = createConversationState(); say(copy.greeting); return output; }
   state.lastIntent = intent;
 
+  const shorthand = entities.shorthand && entities.matches.length === 1 ? entities.matches[0] : null;
+  if (shorthand) {
+    if (state.selectedVehicleKey && state.selectedVehicleKey !== shorthand.key) {
+      state = {...createConversationState(),region:state.region,location:state.location,city:state.city,district:state.district,lastIntent:intent}; output.state=state;
+    }
+    state.manufacturer = shorthand.manufacturerId;
+    state.manufacturerName = shorthand.manufacturerName;
+    state.pendingVehicleConfirmation = {key:shorthand.key,label:`${shorthand.manufacturerName} ${shorthand.vehicle}`};
+    state.result = null; state.confirmedBattery = null;
+    entities.matches = [];
+  } else if (state.pendingVehicleConfirmation && affirmative.test(text)) {
+    entities.matches = buildVehicleGroups(records).filter(group=>group.key===state.pendingVehicleConfirmation.key);
+    state.pendingVehicleConfirmation = null;
+  } else if (state.pendingVehicleConfirmation && negative.test(text)) {
+    state.pendingVehicleConfirmation=null; say(copy.needVehicle); return output;
+  }
+
   // Plain answers can resolve any displayed option; no chip is required.
   const question = state.previousQuestion;
   let answered = false;
@@ -141,10 +143,11 @@ export function conversationTurn(previous, text, records, localities = []) {
   if (entities.matches.length === 1) {
     const match = entities.matches[0];
     if (state.selectedVehicleKey && state.selectedVehicleKey !== match.key) {
-      state = { ...createConversationState(), region: state.region, city: state.city, district: state.district, lastIntent: intent };
+      state = { ...createConversationState(), region: state.region, location:state.location, pendingLocationDisambiguation:state.pendingLocationDisambiguation, city: state.city, district: state.district, lastIntent: intent };
       output.state = state;
     }
     state.selectedVehicleKey = match.key;
+    state.pendingVehicleConfirmation = null;
     state.manufacturer = match.manufacturerId;
     state.manufacturerName = match.manufacturerName;
     state.vehicleFamily = match.vehicle;
@@ -153,15 +156,22 @@ export function conversationTurn(previous, text, records, localities = []) {
     answered = true;
   }
   const changedYear = entities.year && entities.year !== state.year;
-  if (changedYear) { state.year = entities.year; state.detailModel = ""; state.generation = ""; }
+  if (changedYear) { state.year = entities.year; state.detailModel = ""; state.detailModels=[]; state.generation = ""; }
   if (entities.detailModel) state.detailModel = entities.detailModel;
+  if (entities.detailModels) state.detailModels = entities.detailModels;
   if (entities.generation) state.generation = entities.generation;
   if (entities.fuel) { state.fuel = entities.fuel; state.exactFuel = ""; }
   if (entities.exactFuel) state.exactFuel = entities.exactFuel;
   if (entities.region) {
     state.region = entities.region;
-    state.city = entities.region.area;
-    state.district = entities.region.region;
+    state.location = entities.region;
+    state.city = entities.region.city;
+    state.district = entities.region.district;
+    state.pendingLocationDisambiguation = null;
+  }
+  if (entities.ambiguousRegion) {
+    state.pendingLocationDisambiguation=entities.locationCandidates;
+    if(entities.locationScope) { state.location=entities.locationScope;state.region=entities.locationScope; }
   }
   if (entities.year || entities.fuel || entities.detailModel || entities.exactFuel) answered = true;
   if (intent === "CORRECTION") say(copy.correction(entities.year));
@@ -177,16 +187,34 @@ export function conversationTurn(previous, text, records, localities = []) {
     }
   }
   const areaAnswer = () => {
-    if (entities.ambiguousRegion) { say(copy.serviceAmbiguous); return; }
+    if (entities.ambiguousRegion) {
+      const candidates=entities.locationCandidates;
+      say(copy.locationChoices(candidates.map(item=>item.fullLabel)));
+      output.chips=candidates.slice(0,4).map(item=>({label:item.fullLabel,value:item.fullName}));
+      return;
+    }
+    if (entities.unsupportedLocation) { say(copy.serviceUnknown); output.actions=["phone"]; return; }
     // An explicit unknown place must not be replaced with the old remembered place.
     const placeBeforeService = text.match(/(?:^|\s)([가-힣]{2,})(?=\s+(?:출장|방문))/)?.[1];
     const explicitPlace = placeBeforeService && !["여기", "거기", "오늘", "내일", "지금", "배터리"].includes(placeBeforeService);
     const newUnknownPlace = !entities.region && (explicitPlace || /[가-힣]{2,}(?:인데|이야|에도|도\s*와)/.test(text));
     if (newUnknownPlace) { say(copy.serviceUnknown); output.actions = ["phone"]; return; }
-    if (state.region) { say(copy.service(state.region.name)); output.region = state.region; output.actions = ["phone"]; }
+    if (state.region) { say(copy.service(state.region.fullLabel || state.region.name)); output.region = state.region; output.actions = ["phone"]; }
     else if (/출장\s*(가능|돼|되)|방문\s*가능/.test(text)) say(copy.serviceAsk);
     else { say(copy.serviceUnknown); output.actions = ["phone"]; }
   };
+  if (shorthand) {
+    if(entities.region) areaAnswer();
+    say(copy.vehicleConfirm(state.pendingVehicleConfirmation.label));
+    return output;
+  }
+  if (!entities.region && state.pendingLocationDisambiguation && answered) {
+    entities.ambiguousRegion=true;entities.locationCandidates=state.pendingLocationDisambiguation;
+  }
+  if (entities.ambiguousRegion) {
+    if(state.result) {say(copy.result(state.result.defaultBattery));output.result=state.result;}
+    areaAnswer(); return output;
+  }
   if (intent === "CALL_REQUEST") { say(copy.call); output.actions = ["phone"]; return output; }
   if (intent === "PRICE_QUESTION") { say(state.result ? copy.price : state.selectedVehicleKey ? copy.needDetails : copy.needVehicle); if (state.result) output.actions = ["phone", "stores"]; return output; }
   if (intent === "BUY_REQUEST") { say(knownBattery(state.result) ? copy.buy : copy.needDetails); output.actions = knownBattery(state.result) ? ["phone", "stores"] : ["phone"]; return output; }
