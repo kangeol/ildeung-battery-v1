@@ -1,5 +1,5 @@
 import { copy, symptomLabels } from "./conversation-copy.js";
-import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=brand-v1";
+import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=product-v1";
 
 export const SESSION_KEY = "ildeung.smart-consult.v5";
 // Version 1 GN7 transcripts remain rejected; version 2 gains safe empty brand fields.
@@ -42,6 +42,8 @@ export function decodeSession(raw, now = Date.now()) {
     if (![2,VERSION].includes(envelope.version) || !Number.isFinite(envelope.savedAt) || envelope.savedAt > now || now - envelope.savedAt > MAX_AGE || typeof envelope.body !== "string" || checksum(envelope.body) !== envelope.checksum) return null;
     const data = JSON.parse(envelope.body);
     const s = data.state;
+    // Never replay a vehicle fitment withdrawn by the canonical DIN74L correction.
+    if(s?.confirmedBattery==='DIN70L' || s?.result?.defaultBattery==='DIN70L')return null;
     if(envelope.version===2 && s){
       const added=['brand','quotedSpec','priceSummaryShown'];
       if(Object.keys(s).sort().join()!==Object.keys(createConversationState()).filter(k=>!added.includes(k)).sort().join())return null;

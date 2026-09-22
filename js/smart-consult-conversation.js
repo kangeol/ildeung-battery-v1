@@ -2,8 +2,9 @@ import { MANUFACTURER_ALIASES, batteryStoreType, buildVehicleGroups, normalizeTe
 import { copy, variant, symptomLabels } from "./conversation-copy.js";
 import { resolveLocation } from "./smart-consult-location.js?v=flow-v1";
 import { resolveVehicleText } from "./vehicle-aliases.js";
-import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand } from "./smart-consult-prices.js?v=brand-v1";
+import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand } from "./smart-consult-prices.js?v=product-v1";
 import { servicePolicyIntent } from "./smart-consult-policy.js?v=brand-v1";
+import { extendedPolicyReply } from "./smart-consult-product-policy.js?v=product-v1";
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -166,6 +167,9 @@ export function conversationTurn(previous, text, records, localities = [], price
     say(prompt);
   };
   if (intent === "RESET") { output.state = createConversationState(); say(copy.greeting); return output; }
+  // Policy questions must not be mistaken for a new vehicle, price, year or brand selection.
+  const policyReply=extendedPolicyReply(text,state,priceCatalog,servicePolicy);
+  if(policyReply){output.messages.push(...policyReply.messages);output.actions=policyReply.actions;return output;}
   if (pricePattern.test(text)) { state.priceIntent=true; state.originalIntent="PRICE"; }
   const requestedBrand=brandIntent(text,priceCatalog);
   const policyIntent=servicePolicy && servicePolicyIntent(text);

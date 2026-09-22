@@ -28,6 +28,7 @@ export function priceDescription(value, catalog, brand = "") {
     const label=catalog?.brands?.[p.brand]?.label;
     if(!p.supported && p.brand==='VARTA')return `현재 바르타 AGM은 ${Object.keys(catalog.brands.VARTA.prices).join('·')} 규격을 안내하고 있습니다. ${p.code}는 바르타 판매 지원 규격이 아닙니다.`;
     if(!p.supported && label)return `${p.code}는 현재 ${label} 브랜드 가격 안내 범위에 포함되지 않습니다.`;
+    if(p.amount===null && !Object.hasOwn(catalog?.prices||{},p.code) && !catalog?.unpriced?.includes(p.code))return `${p.code}는 현재 등록된 규격이 아닙니다. 정확한 규격과 가격 확인이 필요합니다.`;
     return p.amount === null ? `${label ? `${label} ` : ''}${p.code}: 정확한 가격 확인이 필요합니다.` : `${p.code} ${label ? `${label} 기준 ` : ''}교체 가격은 ${formatWon(p.amount)}입니다.`;
   });
   if (parts.length > 1) return `차량에 따라 ${prices.map(p => p.code).join(" 또는 ")} 중 하나가 장착될 수 있습니다.\n${lines.join("\n")}\n정확한 규격은 현재 장착된 배터리를 현장에서 확인해야 합니다.`;

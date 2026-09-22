@@ -450,6 +450,11 @@ function main() {
     protectedDbChanged: gitChangedFiles(["master-db", "data"]).filter(file=>{
       if(file==='data/battery-prices.json')return false; // Validated exhaustively by test-battery-pricing.js.
       if(file==='data/consult-service-policy.json')return false; // Exact Owner fixture in test-brand-service.js.
+      if(file==='data/chevrolet.json'){
+        const expected=JSON.parse(gitShow(file));
+        if(expected[30]?.vehicle==='알페온'&&expected[30].year==='10~15년'&&expected[30].fuel==='가솔린'&&expected[30].defaultBattery==='DIN70L')expected[30].defaultBattery='DIN74L';
+        return JSON.stringify(readJson(file))!==JSON.stringify(expected);
+      }
       if(file!=="data/hyundai.json")return true;
       // Explicit GN7 withdrawal + Owner-approved restoration, no broad DB exclusion.
       const expected=JSON.parse(gitShow(file));

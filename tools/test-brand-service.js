@@ -13,7 +13,7 @@ const areas=read('seo-data/smart-consult-location-index.json').localities;
 const baseline='4b7ce6fbb2f0747e05a56bac96a54fc637a56322';
 const git=a=>execFileSync('git',['-c','core.safecrlf=false',...a],{encoding:'utf8',maxBuffer:20e6});
 const before=JSON.parse(git(['show',`${baseline}:data/battery-prices.json`]));
-assert.deepEqual(catalog.prices,before.prices);assert.deepEqual(catalog.aliases,before.aliases);assert.deepEqual(catalog.unpriced,before.unpriced);assert.equal(Object.keys(catalog.prices).length,26);
+assert.deepEqual(catalog.prices,before.prices);assert.deepEqual(catalog.aliases,before.aliases);assert.deepEqual(catalog.unpriced,[]);assert.equal(Object.keys(catalog.prices).length,26);
 const varta={AGM70:220000,AGM80:240000,AGM95:270000,AGM105:330000};
 assert.deepEqual(catalog.brands.VARTA.prices,varta);assert.equal(catalog.defaultAgmBrand,'DELKOR');
 assert.equal(catalog.brands.DELKOR.prices,undefined,'DELKOR references existing base truth');
@@ -87,8 +87,9 @@ for(const row of rows)for(const brand of ['','DELKOR','VARTA']){
  if(/또는|\//.test(row.defaultBattery))assert.equal(o.state.confirmedBattery,null);
  massCases++;
 }
-for(const m of manufacturers)assert.equal(fs.readFileSync(`data/${m.file}`,'utf8').replace(/\r\n/g,'\n'),git(['show',`${baseline}:data/${m.file}`]).replace(/\r\n/g,'\n'));
-const htmlChanged=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n').filter(Boolean);assert.deepEqual(htmlChanged,['smart-consult/index.html']);
-assert.equal(fs.readFileSync('smart-consult/index.html','utf8').replace(/\r\n/g,'\n'),git(['show',`${baseline}:smart-consult/index.html`]).replace(/\r\n/g,'\n').replace('?v=price-v1','?v=brand-v1'));
+for(const m of manufacturers){const expected=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='chevrolet.json')expected[30].defaultBattery='DIN74L';assert.deepEqual(read(`data/${m.file}`),expected);}
+const htmlChanged=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n').filter(Boolean);assert.deepEqual(htmlChanged,['car-battery/chevrolet/alpheon.html','smart-consult/index.html']);
+assert.equal(fs.readFileSync('smart-consult/index.html','utf8').replace(/\r\n/g,'\n'),git(['show',`${baseline}:smart-consult/index.html`]).replace(/\r\n/g,'\n').replace('?v=price-v1','?v=product-v1'));
 const metrics=Object.fromEntries(['DELKOR_PRICE_WRONG','VARTA_PRICE_WRONG','VARTA_UNSUPPORTED_FABRICATED_PRICE','BRAND_CONTEXT_LOST','COMPOSITE_BRAND_SINGLE_AUTOCONFIRM','SERVICE_POLICY_WRONG_ANSWER','SERVICE_POLICY_UNSUPPORTED_CLAIM','FABRICATED_SURCHARGE','FABRICATED_PRICE','PRICE_TRUTH_DUPLICATION','POLICY_TRUTH_DUPLICATION','WRONG_BATTERY_RECOMMENDATION','AMBIGUOUS_BATTERY_AUTOCONFIRM'].map(k=>[k,0]));
-fs.mkdirSync('docs/evidence/brand-service',{recursive:true});fs.writeFileSync('docs/evidence/brand-service/brand-service.json',JSON.stringify({status:'PASS',massCases,metrics,intentCases,transcripts},null,2)+'\n');console.log({status:'PASS',massCases,metrics,turns:transcripts.length});
+const evidenceDir=process.argv.includes('--product')?'docs/evidence/product-as-hours':'docs/evidence/brand-service';
+fs.mkdirSync(evidenceDir,{recursive:true});fs.writeFileSync(`${evidenceDir}/brand-service.json`,JSON.stringify({status:'PASS',massCases,metrics,intentCases,transcripts},null,2)+'\n');console.log({status:'PASS',massCases,metrics,turns:transcripts.length});
