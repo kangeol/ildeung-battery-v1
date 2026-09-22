@@ -177,9 +177,10 @@ export function conversationTurn(previous, text, records, localities = [], price
   const requestedBrand=brandIntent(text,priceCatalog);
   const policyIntent=servicePolicy && servicePolicyIntent(text);
   if(requestedBrand){state.brand=requestedBrand;state.priceIntent=true;state.originalIntent='PRICE';}
-  const directSpec = directPriceSpec(withoutBrand(text,priceCatalog));
+  const directSpec = directPriceSpec(withoutBrand(text,priceCatalog),priceCatalog,Boolean(requestedBrand));
   if (directSpec) {
     // A price lookup is not a vehicle fitment confirmation. Preserve vehicle/area facts.
+    state.priceIntent=true; state.originalIntent="PRICE";
     quote(directSpec);
     output.actions = ["phone"];
     return output;

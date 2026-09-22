@@ -44,7 +44,14 @@ export function withoutBrand(text,catalog) {
   for(const definition of Object.values(catalog?.brands||{}))for(const alias of definition.aliases)result=result.replace(new RegExp(alias.split('').join('\\s*')+'(?:\\s*배터리)?','gi'),'');
   return result.trim();
 }
-export function directPriceSpec(text) {
+export function directPriceSpec(text, catalog = null, brandRequested = false) {
+  // A whole catalog-backed product code is a price lookup, never vehicle fitment.
+  // Brand removal happens in the caller; accept its remaining follow-up suffix only
+  // when the customer explicitly named a brand in this same turn.
+  const cleaned=String(text).normalize("NFKC").trim().replace(/[?!.,]+$/, "");
+  const standalone=brandRequested ? cleaned.replace(/\s*(?:으로|로)?\s*하면$/, "") : cleaned;
+  const canonical=normalizeBatteryCode(standalone,catalog);
+  if (Object.hasOwn(catalog?.prices || {},canonical)) return canonical;
   // A whole battery-only price question; never steal a vehicle/area multi-intent turn.
   const code = "(?:AGM\\s*\\d+(?:R)?|DIN\\s*\\d+(?:HL|L|R)?|DF\\s*\\d+(?:AL|L|R)|\\d+(?:AL|L|R)|65\\s*-\\s*900)";
   const match = String(text).normalize("NFKC").match(new RegExp(`^\\s*(${code}(?:\\s*(?:또는|/)\\s*${code})*)\\s*(?:배터리\\s*)?(?:(?:교체\\s*)?(?:가격|비용|얼마|견적|있어요|있나요))[가-힣\\s?!.,]*$`, "i"));

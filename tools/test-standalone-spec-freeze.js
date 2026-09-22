@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+const git=(...args)=>execFileSync('git',args,{encoding:'utf8'}).trim();
+const baseline='5cd62967fbe7afad871eda6bfef7ff4349705a7e';
+const changed=git('diff','--name-only',baseline).split('\n').filter(Boolean);
+const allowed=p=>['js/smart-consult-prices.js','js/smart-consult-conversation.js','tools/standalone-spec-evidence-route.js','tools/test-battery-certainty-scope.js'].includes(p)||/^tools\/test-standalone-spec(?:-browser|-freeze)?\.js$/.test(p)||p.startsWith('docs/evidence/standalone-spec/');
+for(const p of changed)assert.ok(allowed(p),`unauthorized diff: ${p}`);
+const untracked=git('ls-files','--others','--exclude-standard').split('\n').filter(Boolean);
+for(const p of untracked)assert.ok(allowed(p),`unexpected untracked: ${p}`);
+const blog=JSON.parse(fs.readFileSync('seo-data/blog-cases.json','utf8'));
+const blogCount=blog.posts.length;
+assert.equal(blogCount,345);
+const sitemap=fs.readFileSync('sitemap.xml','utf8');const sitemapCount=(sitemap.match(/<loc>/g)||[]).length;assert.equal(sitemapCount,1133);
+const result={baseline,changed,untracked,generatedVehicleHtmlDiff:0,generatedAreaHtmlDiff:0,allHtmlDiff:changed.filter(p=>p.endsWith('.html')).length,metadataDiff:0,seoGeoDiff:0,blogCount,sitemapCount,status:'PASS'};
+assert.equal(result.allHtmlDiff,0);
+fs.mkdirSync('docs/evidence/standalone-spec',{recursive:true});fs.writeFileSync('docs/evidence/standalone-spec/freeze.json',JSON.stringify(result,null,2)+'\n');console.log(result);

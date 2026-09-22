@@ -18,6 +18,7 @@ for(const p of ['data/consult-service-policy.json','js/smart-consult-policy.js',
 for(const p of ['data/chevrolet.json','car-battery/chevrolet/alpheon.html','js/smart-consult-product-policy.js',...paths.filter(p=>p.startsWith('docs/evidence/product-as-hours/'))])allowed.add(p);
 for(const p of paths.filter(p=>p.startsWith('docs/evidence/location-nlu/')))allowed.add(p);
 for(const p of ['js/smart-consult-faq.js',...paths.filter(p=>p.startsWith('docs/evidence/final-faq/'))])allowed.add(p);
+for(const p of ['tools/standalone-spec-evidence-route.js',...paths.filter(p=>p.startsWith('docs/evidence/standalone-spec/'))])allowed.add(p);
 for(const p of paths){
  assert.ok(allowed.has(p)||p==='js/smart-consult-location.js'||p.startsWith('tools/test-')||p.startsWith('tools/audit-battery-')||['tools/lib/gn7-factual-regression.js','tools/lib/smart-consult-page-regression.js','tools/audit-blog-sync-regression.js'].includes(p)||p.startsWith('docs/evidence/battery-certainty/')||p.startsWith('docs/evidence/battery-pricing/')||p.startsWith('docs/evidence/db-driven-flow/'),`out of scope: ${p}`);
  if(p.endsWith('.html')){

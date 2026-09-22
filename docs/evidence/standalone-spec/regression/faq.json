@@ -1,0 +1,6784 @@
+{
+  "status": "PASS",
+  "turns": 284,
+  "groups": {
+    "CARD": [
+      "카드 되나요?",
+      "카드결제 가능해요?",
+      "신용카드 돼요?",
+      "체크카드 돼요?",
+      "카드로 계산할 수 있나요?",
+      "카드돼요?",
+      "카드 가능해요?"
+    ],
+    "CASH_RECEIPT": [
+      "현금영수증 되나요?",
+      "현금영수증 발행돼요?",
+      "현금영수증 해주시나요?",
+      "현금영수증도?",
+      "현금영수증은?"
+    ],
+    "TAX_INVOICE": [
+      "세금계산서 되나요?",
+      "세금계산서 발행 가능해요?",
+      "사업자인데 세금계산서 돼요?",
+      "세금계산서 가능해요?",
+      "세금계산서도 돼요?"
+    ],
+    "BANK_TRANSFER": [
+      "계좌이체 되나요?",
+      "이체 가능해요?",
+      "계좌로 보내도 돼요?"
+    ],
+    "PAYMENT_COMBINED": [
+      "결제는 뭐로 돼요?",
+      "결제수단 뭐 있어요?",
+      "카드나 계좌이체 돼요?",
+      "영수증이나 세금계산서 돼요?"
+    ],
+    "VISIT": [
+      "직접 가도 되나요?",
+      "방문해도 되나요?",
+      "매장 방문 가능해요?",
+      "출장 말고 제가 가도 되나요?",
+      "직접 방문해서 교체할 수 있나요?",
+      "방문구매 가능해요?",
+      "배터리 사러 가도 돼요?",
+      "방문하려고 하는데요",
+      "직접 방문해도 되나요?",
+      "그냥 제가 방문해도 돼요?"
+    ],
+    "VISIT_ADDRESS": [
+      "주소로 가면 되나요?",
+      "방문 주소 알려주세요"
+    ],
+    "VISIT_NOW": [
+      "지금 방문해도 돼요?",
+      "오늘 매장 방문 가능해요?"
+    ],
+    "WORK_TIME": [
+      "교체시간 얼마나 걸려요?",
+      "작업시간 얼마나 걸리나요?",
+      "배터리 교체 몇 분 걸려요?",
+      "장착하는데 얼마나 걸려요?",
+      "작업 오래 걸려요?",
+      "교체하는 데 시간 얼마나 걸려요?",
+      "10분이면 되나요?",
+      "20분 안에 끝나요?",
+      "20분 안에 무조건 끝나요?",
+      "작업시간은?",
+      "교체하는데 얼마나 걸려요?",
+      "출장 배터리 교체시간 얼마나 걸려요?"
+    ],
+    "DURATION_CLARIFY": [
+      "지금 가면 얼마나 걸려요?"
+    ],
+    "PAYMENT_CONFIRM": [
+      "카드 수수료 있나요?",
+      "현금 할인 되나요?",
+      "세금계산서 부가세 별도인가요?",
+      "계좌번호 알려주세요"
+    ]
+  },
+  "gates": {
+    "PAYMENT_WRONG_ANSWER": 0,
+    "PAYMENT_UNSUPPORTED_CLAIM": 0,
+    "VISIT_WRONG_ANSWER": 0,
+    "VISIT_STATIC_TIME_FABRICATION": 0,
+    "OLD_BATTERY_SURCHARGE_FABRICATED": 0,
+    "WORKTIME_WRONG_RANGE": 0,
+    "WORKTIME_GUARANTEE_CLAIM": 0,
+    "WORKTIME_ARRIVAL_CONFUSION": 0,
+    "FAQ_CONTEXT_LOST": 0,
+    "PAYMENT_POLICY_TRUTH_DUPLICATION": 0,
+    "VISIT_POLICY_TRUTH_DUPLICATION": 0,
+    "WORKTIME_POLICY_TRUTH_DUPLICATION": 0
+  },
+  "transcripts": [
+    {
+      "input": "BMW 5시리즈 2020년식 배터리 얼마예요?",
+      "messages": [
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+        "AGM95 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "actions": [
+        "phone",
+        "stores"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "구월동 BMW 5시리즈 2020년식 바르타 배터리 얼마예요?",
+      "messages": [
+        "인천 남동구 구월동 지역은 출장 교체 가능 지역입니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+        "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "actions": [
+        "phone",
+        "stores"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "바르타 AGM95 얼마예요?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드 되나요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "카드결제 가능해요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "신용카드 돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "체크카드 돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "카드로 계산할 수 있나요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "카드돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "카드 가능해요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "현금영수증 되나요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "현금영수증 발행돼요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "현금영수증 해주시나요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "현금영수증도?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "현금영수증은?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "세금계산서 되나요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "세금계산서 발행 가능해요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "사업자인데 세금계산서 돼요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "세금계산서 가능해요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "세금계산서도 돼요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "계좌이체 되나요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "이체 가능해요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "계좌로 보내도 돼요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "결제는 뭐로 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "결제수단 뭐 있어요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "카드나 계좌이체 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "영수증이나 세금계산서 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "직접 가도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "방문해도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "매장 방문 가능해요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "출장 말고 제가 가도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "직접 방문해서 교체할 수 있나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "방문구매 가능해요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "배터리 사러 가도 돼요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "방문하려고 하는데요",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "직접 방문해도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "그냥 제가 방문해도 돼요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "주소로 가면 되나요?",
+      "messages": [
+        "방문 주소와 가능한 일정은 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "방문 주소 알려주세요",
+      "messages": [
+        "방문 주소와 가능한 일정은 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "지금 방문해도 돼요?",
+      "messages": [
+        "직접 방문은 가능하지만 지금 방문 가능한 일정은 실시간 확인이 필요합니다. 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "오늘 매장 방문 가능해요?",
+      "messages": [
+        "직접 방문은 가능하지만 지금 방문 가능한 일정은 실시간 확인이 필요합니다. 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "교체시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "작업시간 얼마나 걸리나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "배터리 교체 몇 분 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "장착하는데 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "작업 오래 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "교체하는 데 시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "10분이면 되나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "20분 안에 끝나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "20분 안에 무조건 끝나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "작업시간은?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "교체하는데 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "출장 배터리 교체시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "지금 가면 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업시간을 말씀하시는 건가요, 방문 대기시간을 말씀하시는 건가요? 방문 대기시간은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "카드 수수료 있나요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "현금 할인 되나요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "세금계산서 부가세 별도인가요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "계좌번호 알려주세요",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "카드 되나요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드결제 가능해요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "신용카드 돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "체크카드 돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드로 계산할 수 있나요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드 가능해요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증 되나요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증 발행돼요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증 해주시나요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증도?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증은?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 되나요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 발행 가능해요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "사업자인데 세금계산서 돼요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 가능해요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서도 돼요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "계좌이체 되나요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "이체 가능해요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "계좌로 보내도 돼요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "결제는 뭐로 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "결제수단 뭐 있어요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드나 계좌이체 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "영수증이나 세금계산서 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "직접 가도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문해도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "매장 방문 가능해요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "출장 말고 제가 가도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "직접 방문해서 교체할 수 있나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문구매 가능해요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "배터리 사러 가도 돼요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문하려고 하는데요",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "직접 방문해도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "그냥 제가 방문해도 돼요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "주소로 가면 되나요?",
+      "messages": [
+        "방문 주소와 가능한 일정은 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문 주소 알려주세요",
+      "messages": [
+        "방문 주소와 가능한 일정은 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "지금 방문해도 돼요?",
+      "messages": [
+        "직접 방문은 가능하지만 지금 방문 가능한 일정은 실시간 확인이 필요합니다. 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "오늘 매장 방문 가능해요?",
+      "messages": [
+        "직접 방문은 가능하지만 지금 방문 가능한 일정은 실시간 확인이 필요합니다. 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "교체시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업시간 얼마나 걸리나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "배터리 교체 몇 분 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "장착하는데 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업 오래 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "교체하는 데 시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "10분이면 되나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "20분 안에 끝나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "20분 안에 무조건 끝나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업시간은?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "교체하는데 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "출장 배터리 교체시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "지금 가면 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업시간을 말씀하시는 건가요, 방문 대기시간을 말씀하시는 건가요? 방문 대기시간은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드 수수료 있나요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금 할인 되나요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 부가세 별도인가요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "계좌번호 알려주세요",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드 되나요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드결제 가능해요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "신용카드 돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "체크카드 돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드로 계산할 수 있나요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드 가능해요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증 되나요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증 발행돼요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증 해주시나요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증도?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증은?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 되나요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 발행 가능해요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "사업자인데 세금계산서 돼요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 가능해요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서도 돼요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "계좌이체 되나요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "이체 가능해요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "계좌로 보내도 돼요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "결제는 뭐로 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "결제수단 뭐 있어요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드나 계좌이체 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "영수증이나 세금계산서 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "직접 가도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문해도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "매장 방문 가능해요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "출장 말고 제가 가도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "직접 방문해서 교체할 수 있나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문구매 가능해요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "배터리 사러 가도 돼요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문하려고 하는데요",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "직접 방문해도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "그냥 제가 방문해도 돼요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "주소로 가면 되나요?",
+      "messages": [
+        "방문 주소와 가능한 일정은 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문 주소 알려주세요",
+      "messages": [
+        "방문 주소와 가능한 일정은 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "지금 방문해도 돼요?",
+      "messages": [
+        "직접 방문은 가능하지만 지금 방문 가능한 일정은 실시간 확인이 필요합니다. 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "오늘 매장 방문 가능해요?",
+      "messages": [
+        "직접 방문은 가능하지만 지금 방문 가능한 일정은 실시간 확인이 필요합니다. 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "교체시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업시간 얼마나 걸리나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "배터리 교체 몇 분 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "장착하는데 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업 오래 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "교체하는 데 시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "10분이면 되나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "20분 안에 끝나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "20분 안에 무조건 끝나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업시간은?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "교체하는데 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "출장 배터리 교체시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "지금 가면 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업시간을 말씀하시는 건가요, 방문 대기시간을 말씀하시는 건가요? 방문 대기시간은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드 수수료 있나요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금 할인 되나요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 부가세 별도인가요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "계좌번호 알려주세요",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드 되나요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드결제 가능해요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "신용카드 돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "체크카드 돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드로 계산할 수 있나요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드 가능해요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증 되나요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증 발행돼요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증 해주시나요?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증도?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증은?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 되나요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 발행 가능해요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "사업자인데 세금계산서 돼요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 가능해요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서도 돼요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "계좌이체 되나요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "이체 가능해요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "계좌로 보내도 돼요?",
+      "messages": [
+        "네. 계좌이체 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "결제는 뭐로 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "결제수단 뭐 있어요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드나 계좌이체 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "영수증이나 세금계산서 돼요?",
+      "messages": [
+        "카드결제와 계좌이체가 가능하고, 현금영수증과 세금계산서 발행도 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "직접 가도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문해도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "매장 방문 가능해요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "출장 말고 제가 가도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "직접 방문해서 교체할 수 있나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문구매 가능해요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "배터리 사러 가도 돼요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문하려고 하는데요",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "직접 방문해도 되나요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "그냥 제가 방문해도 돼요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "주소로 가면 되나요?",
+      "messages": [
+        "방문 주소와 가능한 일정은 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "방문 주소 알려주세요",
+      "messages": [
+        "방문 주소와 가능한 일정은 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "지금 방문해도 돼요?",
+      "messages": [
+        "직접 방문은 가능하지만 지금 방문 가능한 일정은 실시간 확인이 필요합니다. 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "오늘 매장 방문 가능해요?",
+      "messages": [
+        "직접 방문은 가능하지만 지금 방문 가능한 일정은 실시간 확인이 필요합니다. 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "교체시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업시간 얼마나 걸리나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "배터리 교체 몇 분 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "장착하는데 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업 오래 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "교체하는 데 시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "10분이면 되나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "20분 안에 끝나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "20분 안에 무조건 끝나요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업시간은?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "교체하는데 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "출장 배터리 교체시간 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "지금 가면 얼마나 걸려요?",
+      "messages": [
+        "배터리 교체 작업시간을 말씀하시는 건가요, 방문 대기시간을 말씀하시는 건가요? 방문 대기시간은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드 수수료 있나요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금 할인 되나요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 부가세 별도인가요?",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "계좌번호 알려주세요",
+      "messages": [
+        "말씀하신 세부 결제 조건은 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "언제 와요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "언제 와요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "언제 와요?",
+      "messages": [
+        "네, 인천 남동구 구월동에서 출장 교체 가능합니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "언제 와요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "몇 분 뒤 도착해요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "몇 분 뒤 도착해요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "몇 분 뒤 도착해요?",
+      "messages": [
+        "네, 인천 남동구 구월동에서 출장 교체 가능합니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "몇 분 뒤 도착해요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "오늘 몇 시에 와요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "오늘 몇 시에 와요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "오늘 몇 시에 와요?",
+      "messages": [
+        "네, 인천 남동구 구월동에서 출장 교체 가능합니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "오늘 몇 시에 와요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "10분 안에 도착해요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "10분 안에 도착해요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "10분 안에 도착해요?",
+      "messages": [
+        "네, 인천 남동구 구월동에서 출장 교체 가능합니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "10분 안에 도착해요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "출장시간 얼마나 걸려요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "출장시간 얼마나 걸려요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "출장시간 얼마나 걸려요?",
+      "messages": [
+        "네, 인천 남동구 구월동에서 출장 교체 가능합니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "출장시간 얼마나 걸려요?",
+      "messages": [
+        "지금·오늘 방문 가능 여부와 도착 시간은 실시간 확인이 필요해요. 1644-9141로 전화주시면 가능한 시간을 확인해드릴게요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "폐배터리 제가 가져가도 돼요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "폐배터리 제가 가져가도 돼요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "폐배터리 제가 가져가도 돼요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "폐배터리 제가 가져가도 돼요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "기존 배터리 안 주면 얼마예요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "기존 배터리 안 주면 얼마예요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "기존 배터리 안 주면 얼마예요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "기존 배터리 안 주면 얼마예요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "헌 배터리 제가 보관하고 싶어요",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "헌 배터리 제가 보관하고 싶어요",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "헌 배터리 제가 보관하고 싶어요",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "헌 배터리 제가 보관하고 싶어요",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "배터리 반납 안 하면요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "배터리 반납 안 하면요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "배터리 반납 안 하면요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "배터리 반납 안 하면요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "폐배터리 제가 가져가면요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "폐배터리 제가 가져가면요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "폐배터리 제가 가져가면요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "폐배터리 제가 가져가면요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "폐배터리 제가 갖고 있으면?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "",
+        "quotedSpec": "",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": false,
+        "originalIntent": ""
+      }
+    },
+    {
+      "input": "폐배터리 제가 갖고 있으면?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "폐배터리 제가 갖고 있으면?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "폐배터리 제가 갖고 있으면?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "BMW 5시리즈 2020년식 배터리 얼마예요?",
+      "messages": [
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+        "AGM95 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "actions": [
+        "phone",
+        "stores"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드돼요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "현금영수증은?",
+      "messages": [
+        "네. 현금영수증 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업시간은?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "AS는?",
+      "messages": [
+        "네. 일등밧데리에서 설치한 배터리는 설치일 기준 3개월 이내 A/S가 가능합니다."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "일요일도 하나요?",
+      "messages": [
+        "일요일 운영 여부는 당일 일정에 따라 달라질 수 있어 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업시간은?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "구월동 BMW 5시리즈 2020년식 바르타 배터리 얼마예요?",
+      "messages": [
+        "인천 남동구 구월동 지역은 출장 교체 가능 지역입니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+        "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "actions": [
+        "phone",
+        "stores"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서 돼요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "직접 방문해도 돼요?",
+      "messages": [
+        "네. 직접 방문도 가능합니다. 다만 방문 가능 시간은 일정 확인이 필요하니 방문 전 고객센터 1644-9141로 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "폐배터리 제가 갖고 있으면?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업시간은?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "bmw|5시리즈",
+        "manufacturer": "bmw",
+        "vehicleFamily": "5시리즈",
+        "year": 2020,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": "AGM95",
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "바르타 AGM95 얼마예요?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "actions": [
+        "phone"
+      ],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "카드 가능해요?",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "세금계산서도 돼요?",
+      "messages": [
+        "네. 세금계산서 발행 가능합니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "출장비는?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    },
+    {
+      "input": "작업시간은?",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "actions": [],
+      "context": {
+        "selectedVehicleKey": "",
+        "manufacturer": "",
+        "vehicleFamily": "",
+        "year": null,
+        "brand": "VARTA",
+        "quotedSpec": "AGM95",
+        "confirmedBattery": null,
+        "region": null,
+        "priceIntent": true,
+        "originalIntent": "PRICE"
+      }
+    }
+  ]
+}
