@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { launcherMarkup } from "./lib/smart-consult-launcher.js";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { generateSitemap } from "./generate-sitemap.js";
@@ -269,6 +270,7 @@ ${renderHeader(prefix)}
 ${content}
   </main>
 ${renderFooter()}
+${launcherMarkup.trimEnd()}
 </body>
 </html>
 `;

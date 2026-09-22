@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { launcherMarkup } from "./lib/smart-consult-launcher.js";
 import { extractAgmCapacitiesFromText } from "./lib/battery-capacity.js";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -587,6 +588,7 @@ ${renderHeader(prefix)}
 ${content}
   </main>
 ${renderFooter()}
+${launcherMarkup.trimEnd()}
 </body>
 </html>
 `;

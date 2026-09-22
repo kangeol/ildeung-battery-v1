@@ -2,6 +2,7 @@ import { AGM_STORE_URL, DIN_STORE_URL, PHONE_HREF, batteryStoreType } from "./sm
 import { copy, variant } from "./conversation-copy.js";
 import { conversationTurn, createConversationState, vehicleLabel } from "./smart-consult-conversation.js";
 import { findEntry, entryState } from "./smart-consult-entry.js";
+import { LAUNCHER_KEY, decodeLauncherContext, hasEntryConflict } from "./smart-consult-launcher-context.js";
 import { SESSION_KEY, encodeSession, decodeSession, clearSession, safeUserMessage, summaryFields } from "./smart-consult-session.js";
 
 const chatLog = document.querySelector("#chatLog");
@@ -161,6 +162,7 @@ async function handleMessage(text) {
 
 function resetChat(removeEntry = true) {
   forgetSession();
+  try { sessionStorage.removeItem(LAUNCHER_KEY); } catch { /* Disabled storage. */ }
   if (removeEntry) {
     const url = new URL(location.href);
     url.searchParams.delete("vehicleId");
@@ -173,6 +175,7 @@ function resetChat(removeEntry = true) {
   state = createConversationState();
   chatInput.value = "";
   chatInput.placeholder = "예: BMW 520d 2019년식";
+  chatInput.disabled = false;
   chatLog.replaceChildren();
   const greeting=variant("greeting",0);
   const chips=["BMW 520d", "벤츠 E300", "카니발"].map(value => ({ label:value, value }));
@@ -196,11 +199,16 @@ async function initialize() {
   let saved;
   try { saved=decodeSession(sessionStorage.getItem(SESSION_KEY)); } catch { /* No storage. */ }
   const requested=new URL(location.href).searchParams.get("vehicleId");
+  let launchRaw;
+  try { launchRaw=sessionStorage.getItem(LAUNCHER_KEY); sessionStorage.removeItem(LAUNCHER_KEY); } catch { /* No storage. */ }
   try {
     // Generic fresh visits remain DB-lazy. Only deep links fetch this compact index.
-    const entry=requested ? findEntry(requested,await entryIndex()) : null;
+    const index=(launchRaw || requested) ? await entryIndex() : null;
+    const entry=launchRaw ? decodeLauncherContext(launchRaw,index) : requested ? findEntry(requested,index) : null;
     if (activeSession!==session) return;
-    const compatible=saved && (!requested || (entry && saved.entryId===entry.id));
+    const invalidEntry=(launchRaw || requested) && !entry;
+    const conflict=hasEntryConflict(saved,entry);
+    const compatible=saved && !invalidEntry;
     if (compatible) {
       state=saved.state; transcript=saved.messages; entryId=saved.entryId;
       for (const [index,message] of transcript.entries()) {
@@ -210,20 +218,38 @@ async function initialize() {
         if (index===transcript.length-1) addChips(row,message.chips);
       }
       renderSummary(); scrollToLatest();
+      if (conflict) {
+        const row=addMessage(`${entry.manufacturerName} ${entry.vehicle} 페이지에서 오셨네요. 기존 상담을 이어갈까요, 이 차량으로 새 상담을 시작할까요?`);
+        const actions=createElement("div","quick-replies");
+        const keep=createElement("button","quick-reply","기존 상담 이어가기");
+        const change=createElement("button","quick-reply","이 차량으로 새 상담");
+        for (const button of [keep,change]) button.type="button";
+        const finish=()=>{row.remove(); chatInput.disabled=false; busy=false; sendButton.disabled=false; chatInput.focus();};
+        keep.addEventListener("click",finish);
+        change.addEventListener("click",()=>{startEntry(entry); finish();});
+        actions.append(keep,change); row.appendChild(actions);
+        chatInput.disabled=true;
+        busy=true; sendButton.disabled=true;
+        return;
+      }
     } else {
       resetChat(false);
       if (entry) {
-        entryId=entry.id; state=entryState(entry);
-        chatLog.replaceChildren();
-        const text=copy.entry(vehicleLabel(state));
-        addMessage(text); transcript=[{role:"bot",text,actions:[],chips:[]}];
-        renderSummary(); saveSession();
+        startEntry(entry);
       }
     }
   } catch {
     if (activeSession===session) { resetChat(false); addActions(addMessage(copy.error),["phone"]); }
   } finally {
-    if (activeSession===session) { busy=false; sendButton.disabled=false; }
+    if (activeSession===session && !chatInput.disabled) { busy=false; sendButton.disabled=false; }
   }
+}
+function startEntry(entry) {
+  forgetSession();
+  entryId=entry.id; state=entryState(entry);
+  chatLog.replaceChildren();
+  const text=copy.entry(vehicleLabel(state));
+  addMessage(text); transcript=[{role:"bot",text,actions:[],chips:[]}];
+  renderSummary(); saveSession();
 }
 initialize();

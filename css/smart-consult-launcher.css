@@ -1,0 +1,30 @@
+.smart-consult-launcher {
+  position: fixed;
+  right: max(24px, env(safe-area-inset-right));
+  bottom: calc(24px + env(safe-area-inset-bottom));
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  padding: 12px 18px;
+  border: 1px solid #1e40af;
+  border-radius: 999px;
+  background: #1d4ed8;
+  color: #fff;
+  font: 700 14px/1.4 system-ui, sans-serif;
+  text-decoration: none;
+  box-shadow: 0 4px 16px #0f172a26;
+}
+.smart-consult-launcher:hover { background: #1e40af; color: #fff; }
+.smart-consult-launcher:focus-visible { outline: 3px solid #0f172a; outline-offset: 4px; }
+.smart-consult-launcher[hidden] { display: none; }
+/* Leave footer content reachable above the persistent control. */
+body:has(.smart-consult-launcher) { padding-bottom: calc(88px + env(safe-area-inset-bottom)); }
+body:has(.select-dropdown-backdrop:not([hidden]), .detail-dropdown-backdrop:not([hidden])) .smart-consult-launcher { visibility: hidden; }
+@media (max-width: 600px) {
+  .smart-consult-launcher { right: max(16px, env(safe-area-inset-right)); bottom: calc(16px + env(safe-area-inset-bottom)); padding: 12px 16px; }
+}

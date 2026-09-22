@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { launcherMarkup } from "./lib/smart-consult-launcher.js";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
@@ -55,7 +56,7 @@ function gitShow(filePath) {
 }
 
 function gitChangedFiles(paths) {
-  const output = gitOutput(["diff", "--name-only", "--", ...paths], { allowFailure: true });
+  const output = gitOutput(["diff", "HEAD", "--name-only", "--", ...paths], { allowFailure: true });
   return output ? output.split(/\r?\n/).filter(Boolean) : [];
 }
 
@@ -435,7 +436,13 @@ function main() {
     protectedUrlSetChanged: protectedUrls.PROTECTED_EXISTING_URL_SET_REGRESSION,
     ...protectedUrls,
     assetsSeoChanged: gitChangedFiles(["assets/seo"]).length,
-    protectedSearchChanged: gitChangedFiles(["search.html", "js/search.js"]).length,
+    protectedSearchChanged: gitChangedFiles(["search.html", "js/search.js"]).filter(file => {
+      if (file !== "search.html") return true;
+      const before=gitShow(file).replace(/\r\n/g,"\n");
+      const after=readText(file).replace(/\r\n/g,"\n").trim();
+      // Owner-authorized shell addition only; no search/body/metadata exclusions.
+      return !(after.split(launcherMarkup).length===2 && !before.includes(launcherMarkup) && after.replace(launcherMarkup,"")===before);
+    }).length,
     protectedDbChanged: gitChangedFiles(["master-db", "data"]).length,
     directAnswerPages: directAnswers.directAnswerPages,
     directAnswerMissing: directAnswers.directAnswerMissing,

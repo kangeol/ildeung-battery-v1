@@ -66,8 +66,8 @@ for(const entry of index.vehicles) {
   ok(rows.length>0,entry.id);ok(entry.details.every(d=>rows.some(r=>r.detailModel===d)));
   eq(state.year,null);eq(state.fuel,"");eq(state.model,"");
   const page=`car-battery/${entry.id}.html`,html=read(page);
-  eq((html.match(/이 차량 스마트 상담하기/g)||[]).length,1,page);
-  ok(html.includes(`/smart-consult/?vehicleId=${encodeURIComponent(entry.id)}`));
+  eq((html.match(/이 차량 스마트 상담하기/g)||[]).length,0,page);
+  ok(html.includes('href="/smart-consult/"'));
   // Includes the latest owner-authorized blog content; only the exact CTA line differs.
   assertConsultPage(html,pageBaseline(page),entry.id); assertions++;
 }
