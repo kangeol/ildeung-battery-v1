@@ -24,7 +24,8 @@ for(const p of files) {
     assert.equal(html.includes("이 차량 스마트 상담하기"),false,p);
     const oldLine=/^              <a class="btn secondary smart-consult-link" href="\/smart-consult\/\?vehicleId=[^"]+">이 차량 스마트 상담하기<\/a>\n/m;
     if(oldLine.test(before)) vehiclePages++;
-    assert.equal(html.replace(launcherMarkup,""),before.replace(oldLine,""),`${p}: full HTML SEO/body/blog freeze`);
+    const expected = p === 'index.html' ? before.replaceAll('스마트 배터리 상담','AI 배터리 상담') : before;
+    assert.equal(html.replace(launcherMarkup,""),expected.replace(oldLine,""),`${p}: full HTML SEO/body/blog freeze`);
     assert.equal(/href="\/smart-consult\/\?/.test(html),false,p);
   } else {
     excluded++;

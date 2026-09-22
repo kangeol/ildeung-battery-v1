@@ -39,5 +39,7 @@ win.visualViewport.scale=2;win.visualViewport.height=200;events['vv:resize']();q
 win.visualViewport.scale=1;win.visualViewport.height=780;win.visualViewport.offsetTop=0;events.pageshow();queue.shift()();assert.equal(styles['--app-height'],'780px');
 const changed=execFileSync('git',['diff','7117e98b785e8dfa61a8d0b5d4dc2cdc1537dff2','--name-only'],{encoding:'utf8'}).trim().split('\n').filter(Boolean);
 const allowed=new Set(['smart-consult/index.html','css/smart-consult.css','js/smart-consult.js','js/smart-consult-viewport.js','js/conversation-copy.js','tools/test-smart-consult.js','tools/test-smart-consult-launcher.js','tools/test-smart-consult-viewport.js','docs/smart-consult-mobile-focus-v1-qa.md']);
-for(const file of changed) assert.ok(allowed.has(file),`page-only scope: ${file}`);
+// Branding-only HTML changes are independently checked against the pre-branding baseline.
+execFileSync(process.execPath,['tools/test-smart-consult-branding.js'],{stdio:'pipe'});
+for(const file of changed) assert.ok(allowed.has(file)||file.endsWith('.html')||['tools/lib/smart-consult-launcher.js','tools/test-smart-consult-branding.js','tools/audit-blog-sync-regression.js'].includes(file),`page-only or verified branding scope: ${file}`);
 console.log({status:'PASS',naming:'exact',viewport:'resize/orientation/offset/fallback/zoom/throttle',scroll:'bottom anchor and reading position',scope:changed});

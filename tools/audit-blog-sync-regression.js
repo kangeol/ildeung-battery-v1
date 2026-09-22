@@ -440,8 +440,12 @@ function main() {
       if (file !== "search.html") return true;
       const before=gitShow(file).replace(/\r\n/g,"\n");
       const after=readText(file).replace(/\r\n/g,"\n").trim();
-      // Owner-authorized shell addition only; no search/body/metadata exclusions.
-      return !(after.split(launcherMarkup).length===2 && !before.includes(launcherMarkup) && after.replace(launcherMarkup,"")===before);
+      // Permit only the exact owner-authorized shell addition or branding rename.
+      // Search/body/metadata remain fully compared, not excluded.
+      const oldLauncher=launcherMarkup.replace('aria-label="AI 배터리 상담"','aria-label="스마트 배터리 상담"').replace('<span>AI 배터리 상담</span>','<span>스마트 상담</span>');
+      const addition=after.split(launcherMarkup).length===2 && !before.includes(launcherMarkup) && after.replace(launcherMarkup,"")===before;
+      const rename=before.split(oldLauncher).length===2 && after===before.replace(oldLauncher,launcherMarkup);
+      return !(addition || rename);
     }).length,
     protectedDbChanged: gitChangedFiles(["master-db", "data"]).length,
     directAnswerPages: directAnswers.directAnswerPages,
