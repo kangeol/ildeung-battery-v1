@@ -26,7 +26,13 @@ for(const p of files) {
     if(oldLine.test(before)) vehiclePages++;
     assert.equal(html.replace(launcherMarkup,""),before.replace(oldLine,""),`${p}: full HTML SEO/body/blog freeze`);
     assert.equal(/href="\/smart-consult\/\?/.test(html),false,p);
-  } else { excluded++; assert.equal(html,before,`${p}: excluded unchanged`); }
+  } else {
+    excluded++;
+    if (p === 'smart-consult/index.html') {
+      assert.equal(html.includes('class="smart-consult-launcher"'),false,'consultation remains launcher-free');
+      assert.ok(html.includes('<link rel="canonical" href="https://battery1.co.kr/smart-consult/">'));
+    } else assert.equal(html,before,`${p}: excluded unchanged`);
+  }
 }
 for(const entry of index.vehicles) {
   assert.equal(vehicleIdFromCanonical(`https://battery1.co.kr/car-battery/${entry.id}.html`),entry.id);

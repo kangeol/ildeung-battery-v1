@@ -10,7 +10,7 @@ export const copy = {
   summaryTitle: "상담 내용",
   restart: "처음부터 다시",
   privateMessage: "문의 내용 (개인정보 보호를 위해 원문은 저장하지 않아요)",
-  greeting: "안녕하세요, 일등밧데리입니다.\n차량명만 알려주시면 맞는 배터리를 찾아드릴게요.\n예) BMW 520d, 벤츠 E300, 카니발",
+  greeting: "안녕하세요. 일등밧데리 AI 배터리 상담입니다.\n차량명이나 궁금한 내용을 편하게 입력해 주세요.",
   placeholder: "차량명이나 궁금한 내용을 입력해 주세요",
   year: "몇 년식 차량인가요?",
   yearAmbiguous: "연식을 정확히 확인하고 싶어요. 네 자리로 알려주시겠어요? 예) 2019년식",
@@ -51,7 +51,7 @@ export const copy = {
 
 // Reviewed static choices only. Facts and safety wording are never rotated.
 export const variants = {
-  greeting: [copy.greeting, "안녕하세요, 일등밧데리입니다. 차량명이나 배터리 관련 문의를 말씀해 주세요."],
+  greeting: [copy.greeting, "안녕하세요. 일등밧데리 AI 배터리 상담입니다. 차량명이나 배터리 관련 문의를 말씀해 주세요."],
   vehicle: [copy.recognized, name => `네, ${name}군요.`],
   clarification: [copy.year, "차량 연식도 알려주시겠어요?"],
   area: [copy.service, name => `${name} 지역은 출장 교체 가능 지역입니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.`],

@@ -178,6 +178,9 @@ input { overflow-wrap: anywhere; }
 
 .advisor-copy { min-width: 0; }
 
+#chatHeaderTitle { font-size: 18px; font-weight: 850; letter-spacing: -0.025em; }
+#chatHeaderTitle h1 { display: inline; font-size: inherit; white-space: normal; }
+
 .advisor-copy h1 {
   overflow: hidden;
   font-size: 18px;
@@ -613,13 +616,13 @@ a:focus-visible {
 
   .consult-main {
     width: 100%;
-    min-height: calc(100svh - 64px);
+    min-height: 0;
     padding: 0;
   }
 
   .chat-shell {
-    height: calc(100svh - 64px);
-    min-height: 610px;
+    height: 100%;
+    min-height: 0;
     max-height: none;
     border: 0;
     border-radius: 0;
@@ -743,4 +746,38 @@ a:focus-visible {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Only this page loads these styles; the commercial-site footer is untouched. */
+@media (max-width: 699px), (max-width: 1000px) and (max-height: 600px) {
+  html.consult-page { height: 100%; overflow: hidden; overscroll-behavior: none; }
+  .consult-page body {
+    position: fixed;
+    top: var(--app-top, 0px);
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: var(--app-height, 100dvh);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+  .consult-page .site-header { position: relative; flex: 0 0 auto; }
+  .consult-page .header-inner { min-height: 56px; }
+  .consult-page .consult-main { flex: 1; min-height: 0; width: 100%; margin: 0; padding: 0; overflow: hidden; }
+  .consult-page .chat-shell { height: 100%; min-height: 0; max-height: none; border: 0; border-radius: 0; box-shadow: none; }
+  .consult-page .chat-heading { min-height: 64px; padding: 8px 12px; gap: 8px; }
+  .consult-page #chatHeaderTitle { font-size: 14px; }
+  .consult-page .advisor-copy p { font-size: 10px; line-height: 1.4; }
+  .consult-page .advisor-profile { gap: 8px; }
+  .consult-page .advisor-avatar { width: 32px; height: 32px; flex-basis: 32px; border-radius: 11px; }
+  .consult-page .chat-log { min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+  .consult-page .chat-form { min-width: 0; padding: 8px 12px 6px; }
+  .consult-page .chat-form input, .consult-page .chat-form button { min-height: 48px; }
+  .consult-page .input-help { padding-bottom: calc(8px + env(safe-area-inset-bottom)); }
+  .consult-page .site-footer { display: none; }
+}
+@media (max-width: 359px) {
+  .consult-page .advisor-avatar { display: none; }
 }

@@ -136,7 +136,7 @@ const homepage = read("index.html");
 const legacyFinder = read("search.html");
 const sitemap = read("sitemap.xml");
 
-check(page.includes("<h1 id=\"chatTitle\">스마트 배터리 상담</h1>"), "chat page H1 missing");
+check(page.includes("<h1 id=\"chatTitle\">AI 배터리 상담</h1>"), "chat page H1 missing");
 equal(/consult-hero|static-guide|faq-section/.test(page), false, "chat page must not include removed intro/guide/FAQ sections");
 check(page.includes("<footer class=\"site-footer\""), "site footer must remain");
 check(page.includes("/js/smart-consult.js"), "chat module missing");
@@ -148,7 +148,7 @@ check(customerCopy.includes("일반 · DIN 배터리 가격 보기") && customer
 equal(/localStorage|indexedDB/.test(browserScript + coreScript), false, "persistent browser storage must not be used (V5 allows sessionStorage)");
 check(style.includes("min-height: 44px"), "minimum touch target rule missing");
 check(style.includes("font-size: 16px"), "mobile input font size rule missing");
-check(style.includes("height: calc(100svh - 64px)"), "mobile chat must fill the screen below the header");
+check(style.includes("height: var(--app-height, 100dvh)"), "mobile chat must follow the visible viewport");
 check(style.includes("prefers-reduced-motion"), "reduced-motion support missing");
 
 check(homepage.includes('href="/smart-consult/"'), "homepage smart consultation CTA missing");
