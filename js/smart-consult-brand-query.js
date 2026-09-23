@@ -6,18 +6,22 @@ export function authoritativeBrands(code,catalog) {
   if(!Object.hasOwn(catalog?.prices||{},code))return [];
   return Object.keys(catalog.brands||{}).filter(id=>batteryPrice(code,catalog,id).supported);
 }
+export function productOriginQuestion(text) {
+  return /어느나라|원산지|어디서(?:생산|제조|만들)|국산|독일산|중국산/.test(String(text).normalize('NFKC').replace(/\s/g,''));
+}
 export function brandQueryPlan(text,catalog) {
   const s=String(text).normalize('NFKC').replace(/\s/g,'');
-  if(/차이|비교|더좋|더낫|오래|수명|왜|맞아|맞나요|호환|넣어|대신|달려|장착|쓰고있|써있|국산|독일산|중국산|제조일|정품|실버|silver|블랙|black|어디서만들|어디제품/i.test(s))return null;
+  if(productOriginQuestion(text)||/차이|비교|더좋|더낫|오래|수명|왜|맞아|맞나요|호환|넣어|대신|달려|장착|쓰고있|써있|제조일|정품|실버|silver|블랙|black|어디제품/i.test(s))return null;
   const brands=Object.entries(catalog?.brands||{}).filter(([,b])=>b.aliases.some(a=>s.toLowerCase().includes(a.toLowerCase()))).map(([id])=>id);
-  if(!(/브랜드|제조사|어디(?:꺼|거|회사)|(?:어느|무슨|어떤)회사/.test(s)||(brands.length&&/있나요|있어요|쓰나요|써요|취급|인가요/.test(s))))return null;
+  const manufacturerWording=/제조회사|제조사|제조업체|메이커|(?:어느|어디|무슨|어떤)회사|회사(?:는|가|인가|예요|에요|제품|어디|뭐|[?!.]|$)|누가만(?:든|드는)제품/.test(s);
+  if(!(/브랜드|어디(?:꺼|거)/.test(s)||manufacturerWording||(brands.length&&/있나요|있어요|쓰나요|써요|취급|인가요/.test(s))))return null;
   // Extend only the query's lexical boundary, not global shorthand/vehicle rules.
-  let bounded=String(text).replace(/(?<=[A-Za-z0-9])(?=(?:은|는|이|가|의)?(?:어디|무슨|어느|어떤|제조사|브랜드))/g,' ');
+  let bounded=String(text).replace(/(?<=[A-Za-z0-9])(?=(?:은|는|이|가|의)?(?:어디|무슨|어느|어떤|제조\s*(?:회사|사|업체)|메이커|회사|누가|브랜드))/g,' ');
   for(const b of Object.values(catalog.brands||{}))for(const alias of b.aliases)bounded=bounded.replace(new RegExp(alias,'gi'),alias+' ');
   const mention=catalogSpecMention(bounded,catalog);
   const explicit=[...bounded.matchAll(/(?:AGM|DIN|DF)\s*\d+(?:HL|AL|L|R)?/gi)].map(m=>m[0].replace(/\s/g,'').toUpperCase());
   const unknown=!mention&&explicit.find(code=>!Object.hasOwn(catalog.prices,code));
-  return {mention,unknown,explicit,brands,price:/가격|얼마|비용/.test(s),generalConventional:/일반.*배터리/.test(s)&&!mention,generalAgm:/^AGM(?:은|배터리|브랜드|어떤|무슨)/i.test(s)&&!mention};
+  return {mention,unknown,explicit,brands,manufacturerWording,price:/가격|얼마|비용/.test(s),generalConventional:/일반.*배터리/.test(s)&&!mention,generalAgm:/^AGM(?:은|배터리|브랜드|어떤|무슨)/i.test(s)&&!mention};
 }
 export function brandQueryReply(plan,previous,catalog) {
   const state={...previous},messages=[],actions=[],chips=[];

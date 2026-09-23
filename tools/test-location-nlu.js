@@ -1,3 +1,5 @@
+import {assertHomepageFreeze} from './lib/homepage-approved-freeze.js';
+assertHomepageFreeze();
 import fs from 'node:fs';
 import {assertNonAgmOwnerPolicy} from './lib/assert-non-agm-owner-policy.js';
 import assert from 'node:assert/strict';
@@ -46,7 +48,7 @@ out=flow(['시흥입니다']);assert.ok(out.chips.length>1);assert.equal(out.sta
 for(const text of ['구월동물원','구월동화책','강남스타일','인천공항주차','마포입니다요'])assert.equal(resolveLocation(text,areas).region,null,text);
 assert.equal(records.length,917);assert.equal(areas.length,665);
 const changed=execFileSync('git',['diff','--name-only','de199b25'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
-const html=changed.filter(p=>p.endsWith('.html'));assert.ok(html.every(p=>p==='smart-consult/index.html'));
+const html=changed.filter(p=>p.endsWith('.html')&&p!=='index.html');assert.ok(html.every(p=>p==='smart-consult/index.html'));
 assertNonAgmOwnerPolicy();
 assert.equal(changed.filter(p=>/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&p!=='data/battery-prices.json'&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
 const evidence={canonicalCases,aliasCases,totalCases:cases,areas:areas.length,rows:records.length,gates,failures,transcripts,changedHTML:html};

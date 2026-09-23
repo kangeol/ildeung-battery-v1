@@ -13,6 +13,7 @@ assert.equal(before[40].detailModel,'더 뉴 싼타페 하이브리드 TM');
 assert.deepEqual(after,expected,'only reviewed GN7 and AG60 canonical corrections');
 const paths=git(['diff',baseline,'--name-only']).trim().split('\n').filter(Boolean);
 const allowed=new Set(['data/hyundai.json','js/smart-consult-core.js','js/smart-consult-conversation.js','js/smart-consult-session.js','js/smart-consult-entry.js','js/smart-consult.js','smart-consult/index.html','car-battery/hyundai/grandeur.html','car-battery/hyundai/grandeur/gn7.html']);
+for(const p of ['index.html','css/home-hero-intro.css','docs/homepage-hero-intro-audit.md','docs/homepage-hero-intro-v2-audit.md','docs/manufacturer-wording-audit.md','tools/lib/homepage-approved-freeze.js'])allowed.add(p);
 for(const p of ['docs/spec-brand-query-audit.md','js/smart-consult-brand-query.js','docs/non-agm-owner-policy-audit.md','tools/lib/assert-non-agm-owner-policy.js'])allowed.add(p);
 for(const p of ['docs/spec-schedule-audit.md','docs/spec-vehicle-collision-audit.md'])allowed.add(p);
 allowed.add('js/smart-consult-brand-comparison.js');

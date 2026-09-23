@@ -1,7 +1,7 @@
 import { MANUFACTURER_ALIASES, batteryStoreType, buildVehicleGroups, normalizeText, parseYearRange, resolveConsultation, yearMatches, batteryCertainty, nextBatteryDiscriminator } from "./smart-consult-core.js?v=certainty-v1";
 import { copy, variant, symptomLabels } from "./conversation-copy.js";
 import { resolveLocation } from "./smart-consult-location.js?v=location-v1";
-import { resolveVehicleText } from "./vehicle-aliases.js";
+import { resolveVehicleText, buildAliasIndex } from "./vehicle-aliases.js";
 import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand, normalizeBatteryCode, catalogSpecMention } from "./smart-consult-prices.js?v=owner-delkor-v1";
 import { servicePolicyIntent } from "./smart-consult-policy.js?v=faq-v1";
 import { extendedPolicyReply, assuranceReply } from "./smart-consult-product-policy.js?v=owner-delkor-v1";
@@ -10,7 +10,7 @@ import { operationalPlan } from "./smart-consult-operational.js?v=spec-schedule-
 import { PHONE_LABEL } from "./smart-consult-core.js?v=certainty-v1";
 import { comparisonIntent, comparisonReply } from './smart-consult-brand-comparison.js?v=owner-delkor-v1';
 import {purchaseKnowledgePlan,purchaseKnowledgeReply} from './smart-consult-purchase.js?v=owner-delkor-v1';
-import {brandQueryPlan,brandQueryReply} from './smart-consult-brand-query.js?v=owner-delkor-v1';
+import {brandQueryPlan,brandQueryReply,productOriginQuestion} from './smart-consult-brand-query.js?v=owner-delkor-v1';
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -178,11 +178,26 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  // Route explicit origin wording to existing product authority, never to brand identity.
+  const originMention=selection===null&&priceCatalog&&productOriginQuestion(text)?catalogSpecMention(text,priceCatalog):null;
+  const originSpec=originMention?.candidates.length===1?originMention.candidates[0]:previous.quotedSpec||previous.confirmedBattery||'';
+  const conventionalOrigin=originSpec&&splitBatterySpec(originSpec).some(code=>!/^AGM/.test(code));
+  if(selection===null&&priceCatalog&&servicePolicy&&productOriginQuestion(text)&&!comparisonIntent(text,previous,priceCatalog)&&(conventionalOrigin||/어느\s*나라|원산지|어디서\s*(?:생산|제조)/.test(text))){
+    const spec=originSpec;
+    const state={...previous,...(spec?{quotedSpec:spec}:{}),lastIntent:'ORIGIN'};
+    const reply=spec&&!splitBatterySpec(spec).every(code=>/^AGM/.test(code))
+      ?{messages:['해당 규격의 원산지는 정확한 제품 확인이 필요합니다. 고객센터 1644-9141로 확인해 주세요.'],actions:['phone']}
+      :extendedPolicyReply(text+' 어디 제품',state,priceCatalog,servicePolicy);
+    if(reply)return {state,...reply,chips:[],result:null,region:state.region};
+  }
   const brandQuery=selection===null&&priceCatalog&&brandQueryPlan(text,priceCatalog);
   if(brandQuery){
     const entities=extractEntities(text,records,previous,localities);
     let context=previous,vehicleOutput=null;
     const explicit=entities.matches.filter(m=>normalizeText(text).includes(normalizeText(m.vehicle)));
+    const makerSubject=normalizeText(String(text).split(/제조\s*(?:회사|사|업체)|메이커|(?:어느|어디|무슨|어떤)?\s*회사|누가\s*만(?:든|드는)/)[0]);
+    const namedVehicle=explicit.length||buildAliasIndex(records).map.has(makerSubject)||records.some(row=>normalizeText(row.vehicle)&&normalizeText(text).includes(normalizeText(row.vehicle)));
+    if(brandQuery.manufacturerWording&&namedVehicle&&!/배터리/.test(text))return {state:{...previous},messages:['차량 자체의 제조사를 말씀하시는 건가요, 교체할 배터리 제품의 브랜드를 말씀하시는 건가요?'],actions:[],chips:[],result:null,region:previous.region};
     if(!brandQuery.mention&&explicit.length){
       const query=[...explicit.map(m=>`${m.manufacturerName} ${m.vehicle}`),entities.year?`${entities.year}년식`:'',entities.detailModel,entities.fuel,entities.engine?`${entities.engine}cc`:''].filter(Boolean).join(' ');
       vehicleOutput=conversationWithoutPurchase(previous,query,records,localities,priceCatalog,servicePolicy);

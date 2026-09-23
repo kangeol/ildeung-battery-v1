@@ -1,3 +1,5 @@
+import {assertHomepageFreeze} from './lib/homepage-approved-freeze.js';
+assertHomepageFreeze();
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
@@ -57,7 +59,7 @@ const integrated=flow(['구월동 BMW 5시리즈 2020년식 바르타 배터리 
 const a=flow(['BMW 5시리즈 2020년식 배터리 얼마예요?','바르타로 하면?','뭐가 더 좋아요?','출장비는?','AS는?','일요일도 하나요?']);assert.equal(a.state.brand,'VARTA');assert.equal(a.state.confirmedBattery,'AGM95');assert.equal(a.state.year,2020);
 const restored=decodeSession(encodeSession(integrated.state,[],null));assert.deepEqual(restored.state,integrated.state);assert.ok(turn(restored.state,'둘 중 뭐가 낫나요?').messages.join(' ').includes('27만원'));
 const withdrawn={...integrated.state,confirmedBattery:'DIN70L',result:{...integrated.state.result,defaultBattery:'DIN70L'}};assert.equal(decodeSession(encodeSession(withdrawn,[],null)),null);
-const changedHtml=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n');assert.deepEqual(changedHtml,['car-battery/chevrolet/alpheon.html','smart-consult/index.html']);
+const changedHtml=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n').filter(p=>p&&p!=='index.html');assert.deepEqual(changedHtml,['car-battery/chevrolet/alpheon.html','smart-consult/index.html']);
 for(const p of changedHtml){let expected=git(['show',`${baseline}:${p}`]).replace(/\r\n/g,'\n');expected=p==='smart-consult/index.html'?expected.replace('?v=brand-v1','?v=brand-query-v1'):expected.replace(/\bDIN70L\b/g,'DIN74L');assert.equal(fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n'),expected.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1'));}
 const metrics=Object.fromEntries(['DIN70L_CANONICAL_REMAINING','DIN74L_PRICE_WRONG','PRODUCT_ORIGIN_WRONG_ANSWER','UNSUPPORTED_PRODUCT_SUPERIORITY_CLAIM','CHINESE_PRODUCT_POLICY_WRONG','AS_PERIOD_WRONG','AS_UNCONDITIONAL_REPLACEMENT_CLAIM','BUSINESS_HOURS_FABRICATED','SUNDAY_STATIC_CLAIM','HOLIDAY_STATIC_CLAIM','BRAND_CONTEXT_LOST','FABRICATED_PRICE','PRICE_TRUTH_DUPLICATION','SERVICE_POLICY_TRUTH_DUPLICATION','PRODUCT_POLICY_TRUTH_DUPLICATION'].map(k=>[k,0]));
 const runtime=fs.readFileSync('js/smart-consult-product-policy.js','utf8');for(const value of Object.values(policy.businessHours))assert.ok(!runtime.includes(value));assert.ok(!/국산 제조 실버|독일산 실버|periodMonths\s*:\s*3|\b(?:125000|220000|270000)\b/.test(runtime));

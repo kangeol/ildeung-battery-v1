@@ -1,5 +1,7 @@
 // Exact owner-authorized factual delta; no global SEO/body exclusions.
 export function gn7FactualDelta(html, path) {
+  // Exact subsequently authorized homepage addition; no body/metadata exclusions.
+  if(path==='index.html')return html.replace('  <link rel="stylesheet" href="css/work-cases.css">','  <link rel="stylesheet" href="css/work-cases.css">\n  <link rel="stylesheet" href="css/home-hero-intro.css?v=h1-intro-v1">').replace('  <main>','  <main>\n    <div class="homepage-hero-intro">\n      <h1><span>서울·경기·인천</span> <span>출장 자동차 배터리 교체</span></h1>\n      <p>국산차·수입차 전 차종 배터리 출장 교체</p>\n    </div>');
   const page=path.replace(/^car-battery\//,'').replace(/\.html$/,'');
   if(page==='chevrolet/alpheon')return html.replace(/\bDIN70L\b/g,'DIN74L');
   if(page==='hyundai/santafe')return html.replace('AGM70, AGM60, AGM80, AG60 등','AGM70, AGM60, AGM80, AGM95 등').replace('<strong>AG60</strong>','<strong>AGM60</strong>');
