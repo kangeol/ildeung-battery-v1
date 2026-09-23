@@ -1,5 +1,5 @@
 import { copy, symptomLabels } from "./conversation-copy.js";
-import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=spec-schedule-v1";
+import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=purchase-v1";
 
 export const SESSION_KEY = "ildeung.smart-consult.v5";
 // Version 1 GN7 transcripts remain rejected; version 2 gains safe empty brand fields.
@@ -42,6 +42,8 @@ export function decodeSession(raw, now = Date.now()) {
     if (![2,VERSION].includes(envelope.version) || !Number.isFinite(envelope.savedAt) || envelope.savedAt > now || now - envelope.savedAt > MAX_AGE || typeof envelope.body !== "string" || checksum(envelope.body) !== envelope.checksum) return null;
     const data = JSON.parse(envelope.body);
     const s = data.state;
+    if(s && !Object.hasOwn(s,'customerReportedSpec'))s.customerReportedSpec='';
+    if(s?.customerReportedSpec && !/^(?:AGM\d+R?|DIN\d+(?:HL|L|R)?|DF\d+(?:AL|L|R)|65-900)$/.test(s.customerReportedSpec))return null;
     // Never replay a vehicle fitment withdrawn by the canonical DIN74L correction.
     if(s?.confirmedBattery==='DIN70L' || s?.result?.defaultBattery==='DIN70L')return null;
     if(envelope.version===2 && s){

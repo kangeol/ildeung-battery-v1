@@ -12,6 +12,24 @@
     "SHORT_CLARIFY": "어떤 내용이 가능한지 말씀해 주시겠어요? 출장 지역, 예약 일정, 결제 방법 중 궁금한 내용을 알려주세요."
   },
   "authority": "Owner-authorized quoted replacement conditions",
+  "purchaseKnowledge": {
+    "sources": ["https://www.varta-automotive.com/knowledge/articles/article-details/battery-technologies", "https://www.varta-automotive.com/en/knowledge/articles/article-details/efb-and-agm-differences"],
+    "sourceScope": "General construction/type distinctions only; no vehicle fitment, lifetime multipliers, sales prices or company cost inference.",
+    "application": "실제 접수는 고객센터 {phone}로 연락해 주세요. 이 채팅에서는 주문이나 예약을 확정하지 않습니다.",
+    "contact": "고객센터 전화번호는 {phone}입니다.",
+    "change": "예약·방문 시간 변경은 고객센터 {phone}로 확인해 주세요. 이 채팅에서는 예약을 변경하지 않습니다.",
+    "cancel": "예약 취소는 고객센터 {phone}로 확인해 주세요. 이 채팅에서는 예약을 취소하지 않습니다.",
+    "guidance": "위 상담 내용과 알고 계신 차량 정보, 원하시는 서비스·지역·일정을 고객센터 {phone}에 말씀해 주세요. 접수 조건은 상담원과 확인하실 수 있습니다.",
+    "empty": "아직 확정된 차량·배터리 상담 정보가 없습니다. 알고 계신 차량명이나 궁금한 규격을 알려주세요.",
+    "agm": "AGM은 유리섬유 매트에 전해액을 흡수시킨 납산 배터리입니다. 반복 시동과 전력 요구가 큰 차량 등에 사용되지만, 내 차에 필요한지는 차량별 지정 규격을 확인해야 합니다.",
+    "efb": "EFB는 Enhanced Flooded Battery의 약자로, 반복 충·방전에 대응하도록 개선한 액식 납산 배터리입니다. 일반 액식 배터리와 구조·설계에 차이가 있으며, 적용 여부는 차량별 지정 규격으로 확인해야 합니다.",
+    "compare": "일반 액식과 EFB는 액체 전해액을 사용하는 방식이며, EFB는 반복 충·방전에 대응하도록 개선한 설계입니다. AGM은 전해액을 유리섬유 매트에 흡수시킨 방식입니다. 타입 설명만으로 서로 바꿔 장착할 수 있다고 판단하지 않습니다.",
+    "cost": "AGM은 전해액을 유리섬유 매트에 흡수시키는 등 일반 액식 배터리와 구조·설계가 다릅니다. 이런 제품 차이와 현재 판매가격은 구분해야 하며, 회사의 원가나 마진을 임의로 설명하지 않습니다. 정확한 판매가격은 해당 규격의 가격표로 안내합니다.",
+    "fit": "용량 숫자나 현재 장착된 배터리만으로 호환성을 확정할 수 없습니다. 차량 지정 규격, 장착 크기, 단자 방향과 전기적 요구 조건 확인이 필요합니다. 차량명·연식·세부 모델을 알려주시거나 고객센터 {phone}로 확인해 주세요.",
+    "reported": "고객님이 알려주신 현재 장착 규격은 {spec}입니다. 고객님 말씀으로 기록하며, 이 정보만으로 차량에 맞는 규격이라고 확정하지 않습니다.",
+    "warning": "배터리 경고등은 배터리뿐 아니라 충전·전기 계통과 관련될 수 있습니다. 증상만으로 원인을 단정하지 말고 차량 상태 확인을 받아주세요.",
+    "isg": "ISG·스탑앤고 미작동은 배터리 상태 외에도 차량의 작동 조건과 관련될 수 있습니다. 배터리 불량으로 단정하지 않고 차량 상태를 확인해야 합니다."
+  },
   "facts": {
     "PRICE_INCLUDES_MOBILE_SERVICE": true,
     "PRICE_INCLUDES_LABOR": true,

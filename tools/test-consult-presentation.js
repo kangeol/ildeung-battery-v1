@@ -20,9 +20,11 @@ for(const p of ['tools/test-battery-pricing.js','tools/test-brand-service.js','t
 // Subsequent authorized NLU remediation; presentation assertions stay unchanged.
 for(const p of ['js/smart-consult-conversation.js','js/smart-consult-prices.js','js/smart-consult-operational.js','js/smart-consult-product-policy.js','js/smart-consult-entry.js','js/smart-consult-session.js','tools/test-spec-schedule.js','tools/test-spec-schedule-browser.js','tools/test-spec-schedule-safety.js','docs/spec-schedule-audit.md'])allowed.add(p);
 for(const p of ['tools/test-spec-vehicle-collision.js','tools/test-spec-vehicle-collision-browser.js','docs/spec-vehicle-collision-audit.md'])allowed.add(p);
+for(const p of ['data/consult-service-policy.json','js/smart-consult-purchase.js','tools/test-purchase-knowledge.js','tools/test-purchase-knowledge-browser.js','docs/purchase-knowledge-audit.md','tools/test-brand-comparison.js','tools/test-operational.js','tools/test-authentic-cash.js'])allowed.add(p);
+allowed.add('tools/test-final-faq.js');
 for(const p of changed)check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
 const html=fs.readFileSync('smart-consult/index.html','utf8').replaceAll('\r\n','\n'),before=git(['show',baseline+':smart-consult/index.html']).replaceAll('\r\n','\n');
-check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=spec-schedule-v1'),'HTML only two cache tokens');
+check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=purchase-v1'),'HTML only two cache tokens');
 check(read('seo-data/blog-cases.json').posts.length===345,'blog345');check((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length===1133,'sitemap1133');
 const source=fs.readFileSync('js/smart-consult.js','utf8');check(!source.includes('innerHTML'),'XSS text-only DOM');check(!source.includes('Math.random')&&!source.includes('setInterval'),'no random/typewriter');
 console.log(JSON.stringify({status:'PASS',checks,canonicalPriceLines:index.prices.size,vehicleRows:rows.length,areas:areas.length,blog:345,sitemap:1133,gates:{TYPEWRITER_EFFECT_PRESENT:0,RANDOM_FAKE_DELAY_PRESENT:0,SIMPLE_FAQ_ARTIFICIAL_DELAY:0,LOOKUP_PRESENTATION_DELAY_OVER_600MS:0},changed}));

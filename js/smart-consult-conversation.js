@@ -9,6 +9,7 @@ import { finalFaqReply, finalFaqIntent } from "./smart-consult-faq.js?v=authenti
 import { operationalPlan } from "./smart-consult-operational.js?v=spec-schedule-v1";
 import { PHONE_LABEL } from "./smart-consult-core.js?v=certainty-v1";
 import { comparisonIntent, comparisonReply } from './smart-consult-brand-comparison.js?v=brand-compare-v1';
+import {purchaseKnowledgePlan,purchaseKnowledgeReply} from './smart-consult-purchase.js?v=purchase-v1';
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -17,7 +18,7 @@ const pricePattern = /가격|얼마|비용|견적|배터리값|밧데리값/;
 const knownBattery = result => result?.defaultBattery && !/문의|확인/.test(result.defaultBattery);
 
 export function createConversationState() {
-  return { brand: "", quotedSpec: "", priceSummaryShown: false, originalIntent: "", priceIntent: false, serviceIntent: false, engine: "", drivetrain: "", yearRange: "", symptom: null, customerGoal: "UNKNOWN", turnIndex: 0, manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
+  return { customerReportedSpec: "", brand: "", quotedSpec: "", priceSummaryShown: false, originalIntent: "", priceIntent: false, serviceIntent: false, engine: "", drivetrain: "", yearRange: "", symptom: null, customerGoal: "UNKNOWN", turnIndex: 0, manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
 }
 
 export function symptomIntent(text) {
@@ -176,6 +177,44 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  if(selection===null&&previous.customerReportedSpec&&/^(?:가격은?|얼마(?:예요)?|비용은?)[?!.\s]*$/.test(text))return conversationWithoutPurchase(previous,`${previous.brand||''} ${previous.customerReportedSpec} 가격`,records,localities,priceCatalog,servicePolicy);
+  const plan=selection===null&&servicePolicy?.purchaseKnowledge?purchaseKnowledgePlan(text,previous,priceCatalog):null;
+    if(!plan){
+      const out=conversationWithoutPurchase(previous,text,records,localities,priceCatalog,servicePolicy,selection);
+      // An explicit replacement vehicle/product supersedes a previously reported label.
+      if(out.state.confirmedBattery||out.state.selectedVehicleKey!==previous.selectedVehicleKey||out.state.quotedSpec!==previous.quotedSpec)out.state.customerReportedSpec='';
+      return out;
+    }
+  let state={...previous},messages=[],actions=[],chips=[];
+  const e=extractEntities(text,records,previous,localities);
+  // Only explicit vehicle facts re-enter the existing fitment resolver; product
+  // knowledge and customer-reported labels cannot establish vehicle compatibility.
+  const explicit=e.matches.filter(m=>normalizeText(text).includes(normalizeText(m.vehicle)));
+  if(!plan.report&&explicit.length){
+    const q=[...explicit.map(m=>`${m.manufacturerName} ${m.vehicle}`),e.year?`${e.year}년식`:'',e.detailModel,e.fuel,e.engine?`${e.engine}cc`:''].filter(Boolean).join(' ');
+    const out=conversationWithoutPurchase(state,q,records,localities,priceCatalog,servicePolicy);
+    state=out.state;state.customerReportedSpec='';chips=out.chips;
+    if(!plan.fit){messages.push(...out.messages);actions.push(...out.actions);}
+  }
+  if(e.region){state.region=e.region;state.location=e.region;state.city=e.region.city;state.district=e.region.district;}
+  if(plan.brand)state.brand=plan.brand;
+  if(plan.report){state.customerReportedSpec=plan.reportedCode;state.quotedSpec=plan.reportedCode;state.confirmedBattery=null;state.result=null;state.priceIntent=true;state.originalIntent='PRICE';}
+  const reply=purchaseKnowledgeReply(plan,state,priceCatalog,servicePolicy);
+  messages.push(...reply.messages);actions.push(...reply.actions);
+  if(!plan.fit&&!plan.summary&&!plan.purchase&&/가격|얼마|비용/.test(text)){
+    const spec=plan.codes.length===1?plan.codes[0]:state.quotedSpec||state.confirmedBattery;
+    if(spec)messages.push(priceDescription(spec,priceCatalog,state.brand));
+  }
+  const faq=finalFaqReply(text,servicePolicy),included=servicePolicyIntent(text),assurance=assuranceReply(text,servicePolicy);
+  for(const r of [faq,assurance])if(r){messages.push(...r.messages);actions.push(...r.actions);}
+  if(included)messages.push(servicePolicy.answers[included]);
+  const operation=operationalPlan(text,state);
+  if(operation?.realtime){messages.push(servicePolicy.operational.REALTIME.replaceAll('{phone}',PHONE_LABEL));actions.push('phone');}
+  state.lastIntent=plan.report?'CUSTOMER_REPORTED_SPEC':plan.fit?'FITMENT_CONFIRMATION':plan.purchase?'PURCHASE_COMMITMENT':plan.summary?'CONSULTATION_SUMMARY':previous.lastIntent;
+  return {state,messages:unique(messages),actions:unique(actions),chips,result:null,region:state.region};
+}
+
+function conversationWithoutPurchase(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
   if(selection===null&&text==='차량 모델 상담')return {state:{...previous},messages:['차량 제조사와 모델명을 알려주세요.'],chips:[],actions:[],result:null,region:null};
   // Catalog recognition establishes a product quote, never vehicle compatibility.
   if(selection===null && !/맞아|맞나요|맞는|들어가|호환|장착.*가능/.test(text)) {

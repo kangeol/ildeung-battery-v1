@@ -15,6 +15,7 @@ const paths=git(['diff',baseline,'--name-only']).trim().split('\n').filter(Boole
 const allowed=new Set(['data/hyundai.json','js/smart-consult-core.js','js/smart-consult-conversation.js','js/smart-consult-session.js','js/smart-consult-entry.js','js/smart-consult.js','smart-consult/index.html','car-battery/hyundai/grandeur.html','car-battery/hyundai/grandeur/gn7.html']);
 for(const p of ['docs/spec-schedule-audit.md','docs/spec-vehicle-collision-audit.md'])allowed.add(p);
 allowed.add('js/smart-consult-brand-comparison.js');
+for(const p of ['js/smart-consult-purchase.js','docs/purchase-knowledge-audit.md'])allowed.add(p);
 for(const p of ['js/smart-consult-presentation.js','css/smart-consult.css',...paths.filter(p=>p.startsWith('docs/evidence/consult-ui/'))])allowed.add(p);
 for(const p of paths.filter(p=>p.startsWith('docs/evidence/brand-comparison/')))allowed.add(p);
 for(const p of ['data/battery-prices.json','js/smart-consult-prices.js','car-battery/hyundai/santafe.html','car-battery/hyundai/santafe/tm.html'])allowed.add(p);
@@ -30,7 +31,7 @@ for(const p of paths){
  assert.ok(allowed.has(p)||p==='js/smart-consult-location.js'||p.startsWith('tools/test-')||p.startsWith('tools/audit-battery-')||['tools/lib/gn7-factual-regression.js','tools/lib/smart-consult-page-regression.js','tools/audit-blog-sync-regression.js'].includes(p)||p.startsWith('docs/evidence/battery-certainty/')||p.startsWith('docs/evidence/battery-pricing/')||p.startsWith('docs/evidence/db-driven-flow/'),`out of scope: ${p}`);
  if(p.endsWith('.html')){
   let expected=gn7FactualDelta(git(['show',`${baseline}:${p}`]).replace(/\r\n/g,'\n'),p);
-  if(p==='smart-consult/index.html')expected=expected.replace('/js/smart-consult.js?v=ai-mobile-v1','/js/smart-consult.js?v=spec-schedule-v1').replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1');
+  if(p==='smart-consult/index.html')expected=expected.replace('/js/smart-consult.js?v=ai-mobile-v1','/js/smart-consult.js?v=purchase-v1').replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1');
   assert.equal(fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n'),expected,`${p}: exact factual delta only`);
  }
 }
