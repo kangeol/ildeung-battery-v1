@@ -1,5 +1,5 @@
 import { copy, symptomLabels } from "./conversation-copy.js";
-import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=operational-v1";
+import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=brand-compare-v1";
 
 export const SESSION_KEY = "ildeung.smart-consult.v5";
 // Version 1 GN7 transcripts remain rejected; version 2 gains safe empty brand fields.

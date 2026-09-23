@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "preAudit": {
+    "total": 48,
+    "totals": {
+      "PASS_EXISTING": 6,
+      "MISUNDERSTOOD": 4,
+      "WRONG_INTENT": 20,
+      "CONTEXT_LOST": 8,
+      "UNSUPPORTED_SUPERIORITY_CLAIM": 0,
+      "PRICE_REASON_FABRICATED": 0,
+      "UNSUPPORTED_BRAND_PRICE": 0,
+      "OTHER": 10
+    }
+  },
+  "postAudit": 48,
+  "focusedTurns": 625,
+  "gates": {
+    "BRAND_COMPARISON_WRONG_INTENT": 0,
+    "BRAND_COMPARISON_CONTEXT_LOST": 0,
+    "BRAND_PRICE_WRONG": 0,
+    "BRAND_PRICE_DIFFERENCE_WRONG": 0,
+    "VARTA_UNSUPPORTED_PRICE_FABRICATED": 0,
+    "PRICE_CAUSAL_REASON_FABRICATED": 0,
+    "UNSUPPORTED_BRAND_WINNER_CLAIM": 0,
+    "UNSUPPORTED_LIFESPAN_SUPERIORITY": 0,
+    "UNSUPPORTED_PERFORMANCE_SUPERIORITY": 0,
+    "MINI_COMPOSITE_AUTOCONFIRM": 0,
+    "BRAND_MULTI_INTENT_LOST": 0,
+    "BRAND_SHORT_CONTEXT_HALLUCINATION": 0
+  },
+  "fullRegression": 20,
+  "massGroups": 499,
+  "massButtons": 1277,
+  "massTotals": {
+    "RESOLVES_EXACT_ROW": 1273,
+    "RESOLVES_GOVERNED_NO_MATCH": 4,
+    "REPEATS_SAME_AMBIGUITY": 0,
+    "RESOLVES_WRONG_ROW": 0,
+    "LOSES_YEAR_OR_GENERATION": 0,
+    "RETURNS_UNSUPPORTED": 0,
+    "OTHER_FAILURE": 0
+  },
+  "operationalTurns": 1602,
+  "authenticTurns": 581,
+  "standaloneTurns": 178,
+  "browser": [
+    {
+      "width": 1440,
+      "records": 78,
+      "clicks": 6,
+      "ui": {
+        "focus": "chatInput",
+        "bodyScroll": 224,
+        "overflow": false,
+        "composerVisible": true
+      }
+    },
+    {
+      "width": 390,
+      "records": 78,
+      "clicks": 6,
+      "ui": {
+        "focus": "chatInput",
+        "bodyScroll": 0,
+        "overflow": false,
+        "composerVisible": true
+      }
+    }
+  ],
+  "blog": 345,
+  "sitemap": 1133,
+  "blockers": 0
+}

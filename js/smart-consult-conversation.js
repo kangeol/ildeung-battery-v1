@@ -8,6 +8,7 @@ import { extendedPolicyReply, assuranceReply } from "./smart-consult-product-pol
 import { finalFaqReply, finalFaqIntent } from "./smart-consult-faq.js?v=authentic-v1";
 import { operationalPlan } from "./smart-consult-operational.js?v=operational-v1";
 import { PHONE_LABEL } from "./smart-consult-core.js?v=certainty-v1";
+import { comparisonIntent, comparisonReply } from './smart-consult-brand-comparison.js?v=brand-compare-v1';
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -175,6 +176,26 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  const intent=selection===null&&servicePolicy?.product?.comparisonContext?comparisonIntent(text,previous,priceCatalog):null;
+  if(!intent)return conversationWithoutComparison(previous,text,records,localities,priceCatalog,servicePolicy,selection);
+  if(intent.clarify)return {state:{...previous},messages:[servicePolicy.product.comparisonContext.clarify],chips:[],actions:[],result:null,region:null};
+  const entities=extractEntities(text,records,previous,localities),context=[];
+  if(entities.region)context.push(entities.region.fullLabel);
+  if(entities.matches.length){context.push(...entities.matches.map(m=>`${m.manufacturerName} ${m.vehicle}`));if(entities.detailModel)context.push(entities.detailModel);if(entities.year)context.push(`${entities.year}년식`);if(entities.fuel)context.push(entities.fuel);if(entities.engine)context.push(`${entities.engine}cc`);}
+  const token=String(text).match(/(?<![a-z0-9])(?:AGM\s*\d+R?|DIN\s*\d+(?:HL|L|R)?|DF\s*\d+(?:AL|L|R)|65\s*-\s*900)(?![a-z0-9])/i)?.[0];
+  let out=context.length?conversationWithoutComparison(previous,context.join(' '),records,localities,priceCatalog,servicePolicy):{state:{...previous},messages:[],chips:[],actions:[],result:null,region:null};
+  if(token&&!entities.matches.length){const code=normalizeBatteryCode(token,priceCatalog);if(Object.hasOwn(priceCatalog.prices,code))out.state.quotedSpec=code;}
+  // An unknown explicit product must not inherit a previous product's price.
+  const comparisonState=token&&!entities.matches.length?{...out.state,quotedSpec:normalizeBatteryCode(token,priceCatalog)}:out.state;
+  out.messages.push(...comparisonReply(comparisonState,priceCatalog,servicePolicy,intent.causal));
+  // Preserve independent policy components without re-entering the comparison path.
+  const operational=operationalPlan(text,out.state);
+  if(operational)for(const key of operational.keys){if(['PRICE_REASON','LIFE'].includes(key))continue;const message=servicePolicy.operational[key];if(message){out.messages.push(message.replaceAll('{phone}',PHONE_LABEL));if(message.includes('{phone}'))out.actions=unique([...out.actions,'phone']);}}
+  for(const reply of [assuranceReply(text,servicePolicy),finalFaqReply(text,servicePolicy)])if(reply){out.messages.push(...reply.messages);out.actions=unique([...out.actions,...reply.actions]);}
+  out.state.lastIntent='BRAND_COMPARE';out.messages=unique(out.messages);return out;
+}
+
+function conversationWithoutComparison(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
   const plan=selection===null&&servicePolicy?.operational?operationalPlan(text,previous):null;
   if(!plan){
     const out=conversationEstablished(previous,text,records,localities,priceCatalog,servicePolicy,selection);

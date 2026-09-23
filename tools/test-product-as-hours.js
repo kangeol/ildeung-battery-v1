@@ -17,7 +17,7 @@ assert.equal(rows.filter(r=>r.defaultBattery==='DIN70L'||r.upgradeBattery==='DIN
 for(const m of manufacturers){const expected=old(`data/${m.file}`);if(m.file==='chevrolet.json'){assert.deepEqual(expected[30],{manufacturer:'쉐보레',vehicle:'알페온',year:'10~15년',fuel:'가솔린',detailModel:'알페온',defaultBattery:'DIN70L',upgradeBattery:'',status:'완료'});expected[30].defaultBattery='DIN74L';}assert.deepEqual(read(`data/${m.file}`),expected);}
 const beforePrices=old('data/battery-prices.json');assert.deepEqual(catalog,{...beforePrices,version:catalog.version,unpriced:[]});assert.equal(catalog.prices.DIN74L,125000);assert.ok(!JSON.stringify(catalog).includes('DIN70L'));
 const beforePolicy=old('data/consult-service-policy.json');for(const key of ['authority','facts','answers','summary'])assert.deepEqual(policy[key],beforePolicy[key]);
-assert.deepEqual(Object.fromEntries(Object.entries(policy.product).filter(([key])=>key!=='assurance')),{
+assert.deepEqual(Object.fromEntries(Object.entries(policy.product).filter(([key])=>!['assurance','comparisonContext'].includes(key))),{
  scope:'저희가 취급하는 AGM 제품 기준으로',brands:{DELKOR:'국산 제조 실버',VARTA:'독일산 실버'},chinese:'중국산 제품은 취급하지 않습니다.',black:'저희는 중국산 블랙 제품은 취급하지 않습니다.',comparison:'차량에 맞는 규격을 먼저 확인해야 합니다. 가격을 우선하시면 델코, 바르타 브랜드를 선호하시면 바르타를 선택하실 수 있습니다.',lifespan:'배터리 수명은 주행패턴·방전 이력·차량 충전상태 등 사용환경에 따라 달라 한쪽이 무조건 더 오래간다고 단정하지 않습니다.'
 });
 assert.deepEqual(policy.afterSales,{periodMonths:3,basis:'설치일',scope:'일등밧데리에서 설치한 배터리',detail:'세부 A/S 가능 여부는 증상과 차량 상태를 확인한 뒤 안내해드립니다. {phone}로 문의해 주세요.'});
@@ -40,7 +40,7 @@ for(const input of productInputs)for(const state of [createConversationState(),b
 }
 for(const input of compares)for(const state of [createConversationState(),bmw.state,mini.state]){
  if(input==='추천해주세요'&&!state.quotedSpec&&!state.confirmedBattery){const o=turn(state,input);assert.equal(o.state.previousQuestion.field,'vehicle');assert.match(o.messages.join(' '),/어떤 차량/);assert.doesNotMatch(o.messages.join(' '),/5만원|국산 제조 실버/);continue;}
- const o=turn(state,input),text=o.messages.join(' ');assert.deepEqual(o.state,state);for(const fragment of ['국산 제조 실버','독일산 실버','5만원','단정하지 않습니다'])assert.ok(text.includes(fragment),input);
+ const o=turn(state,input),text=o.messages.join(' ');assert.deepEqual(o.state,{...state,lastIntent:text.includes(policy.product.comparisonContext.performance)?'BRAND_COMPARE':state.lastIntent});if(text.includes('어떤 제품이나 브랜드를 비교')){assert.ok(!/델코|바르타/.test(input));assert.notEqual(state.brand,'VARTA');continue;}for(const fragment of ['국산 제조 실버','독일산 실버','5만원','단정하지 않습니다'])assert.ok(text.includes(fragment),input);
  if(state===bmw.state)for(const fragment of ['AGM95','22만원','27만원'])assert.ok(text.includes(fragment));
  if(state===mini.state){for(const fragment of ['17만원','19만원','22만원','24만원','현장에서 확인'])assert.ok(text.includes(fragment));assert.equal(o.state.confirmedBattery,null);}
 }
@@ -57,7 +57,7 @@ const a=flow(['BMW 5시리즈 2020년식 배터리 얼마예요?','바르타로 
 const restored=decodeSession(encodeSession(integrated.state,[],null));assert.deepEqual(restored.state,integrated.state);assert.ok(turn(restored.state,'둘 중 뭐가 낫나요?').messages.join(' ').includes('27만원'));
 const withdrawn={...integrated.state,confirmedBattery:'DIN70L',result:{...integrated.state.result,defaultBattery:'DIN70L'}};assert.equal(decodeSession(encodeSession(withdrawn,[],null)),null);
 const changedHtml=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n');assert.deepEqual(changedHtml,['car-battery/chevrolet/alpheon.html','smart-consult/index.html']);
-for(const p of changedHtml){let expected=git(['show',`${baseline}:${p}`]).replace(/\r\n/g,'\n');expected=p==='smart-consult/index.html'?expected.replace('?v=brand-v1','?v=operational-v1'):expected.replace(/\bDIN70L\b/g,'DIN74L');assert.equal(fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n'),expected);}
+for(const p of changedHtml){let expected=git(['show',`${baseline}:${p}`]).replace(/\r\n/g,'\n');expected=p==='smart-consult/index.html'?expected.replace('?v=brand-v1','?v=brand-compare-v1'):expected.replace(/\bDIN70L\b/g,'DIN74L');assert.equal(fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n'),expected);}
 const metrics=Object.fromEntries(['DIN70L_CANONICAL_REMAINING','DIN74L_PRICE_WRONG','PRODUCT_ORIGIN_WRONG_ANSWER','UNSUPPORTED_PRODUCT_SUPERIORITY_CLAIM','CHINESE_PRODUCT_POLICY_WRONG','AS_PERIOD_WRONG','AS_UNCONDITIONAL_REPLACEMENT_CLAIM','BUSINESS_HOURS_FABRICATED','SUNDAY_STATIC_CLAIM','HOLIDAY_STATIC_CLAIM','BRAND_CONTEXT_LOST','FABRICATED_PRICE','PRICE_TRUTH_DUPLICATION','SERVICE_POLICY_TRUTH_DUPLICATION','PRODUCT_POLICY_TRUTH_DUPLICATION'].map(k=>[k,0]));
 const runtime=fs.readFileSync('js/smart-consult-product-policy.js','utf8');for(const value of Object.values(policy.businessHours))assert.ok(!runtime.includes(value));assert.ok(!/국산 제조 실버|독일산 실버|periodMonths\s*:\s*3|\b(?:125000|220000|270000)\b/.test(runtime));
 const evidenceDir=process.argv.includes('--faq')?'docs/evidence/final-faq/regression':process.argv.includes('--location')?'docs/evidence/location-nlu/regression':'docs/evidence/product-as-hours';

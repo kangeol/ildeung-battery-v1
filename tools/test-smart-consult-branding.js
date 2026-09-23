@@ -17,7 +17,7 @@ for(const p of files){
   let expected=before.replace(/(<a class="smart-consult-launcher"[^>]*aria-label=")스마트 배터리 상담("[^>]*>[\s\S]*?<span>)스마트 상담(<\/span><\/a>)/g,'$1AI 배터리 상담$2AI 배터리 상담$3');
   if(p==='index.html')expected=expected.replaceAll('스마트 배터리 상담','AI 배터리 상담');
   expected=gn7FactualDelta(expected,p);
-  if(p==='smart-consult/index.html')expected=expected.replace('/js/smart-consult.js?v=ai-mobile-v1','/js/smart-consult.js?v=operational-v1');
+  if(p==='smart-consult/index.html')expected=expected.replace('/js/smart-consult.js?v=ai-mobile-v1','/js/smart-consult.js?v=brand-compare-v1');
   assert.equal(actual,expected,`${p}: only exact authorized labels may change; all SEO/body/blog/hrefs frozen`);
   assert.equal(/스마트 상담|스마트 배터리 상담/.test(actual),false,`${p}: old customer label`);
   if(actual.includes('class="smart-consult-launcher"')){
