@@ -11,8 +11,9 @@ assert.ok(html.includes('<div id="chatHeaderTitle"><span>일등밧데리 </span>
 assert.equal(copy.greeting,'안녕하세요. 일등밧데리 AI 배터리 상담입니다.\n차량명이나 궁금한 내용을 편하게 입력해 주세요.');
 assert.equal(/스마트 배터리 상담|AI AI|AI 진단|AI 상담원 연결/.test(html+copy.greeting),false);
 assert.ok(html.includes('일등밧데리 차량 정보를 바탕으로 안내합니다.'));
-for(const asset of ['/css/smart-consult.css','/js/smart-consult-viewport.js']) assert.ok(html.includes(`${asset}?v=ai-mobile-v1`),'returning-browser cache safety');
-assert.ok(html.includes('/js/smart-consult.js?v=brand-compare-v1'));
+assert.ok(html.includes('/css/smart-consult.css?v=consult-ui-v1'),'returning-browser CSS cache safety');
+assert.ok(html.includes('/js/smart-consult-viewport.js?v=ai-mobile-v1'));
+assert.ok(html.includes('/js/smart-consult.js?v=consult-ui-v1'));
 assert.ok(read('js/smart-consult.js').includes('./conversation-copy.js?v=ai-mobile-v1'));
 assert.ok(css.includes('.consult-page .site-footer { display: none; }'));
 assert.ok(css.includes('height: var(--app-height, 100dvh)'));

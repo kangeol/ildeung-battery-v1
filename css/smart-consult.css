@@ -5,7 +5,7 @@
   --blue-soft: #edf3ff;
   --navy: #101828;
   --text: #263244;
-  --muted: #697586;
+  --muted: #536174;
   --line: #e4e9f0;
   --surface: #ffffff;
   --app-bg: #edf1f6;
@@ -781,3 +781,56 @@ a:focus-visible {
 @media (max-width: 359px) {
   .consult-page .advisor-avatar { display: none; }
 }
+
+/* Consultation-only presentation. The canonical answer text is never rewritten. */
+.chat-log { background: #f3f6fa; gap: 20px; }
+.message-row { width: min(100%, 740px); }
+.message-row.bot::before { box-shadow: none; background-color: var(--blue); }
+.message-bubble { font-size: 16px; line-height: 1.6; box-shadow: none; }
+.user .message-bubble { padding: 10px 14px; font-size: 15px; background: #2455d6; box-shadow: none; }
+.answer-card { width: 100%; min-width: 0; padding: 18px 20px; border: 1px solid #dce4ee; border-radius: 6px 18px 18px 18px; background: #fff; }
+.answer-context { color: var(--blue-dark); font-size: 16px; font-weight: 650; line-height: 1.6; padding-bottom: 12px; margin-bottom: 12px; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.answer-text { color: var(--text); font-size: 16px; line-height: 1.6; white-space: pre-line; overflow-wrap: anywhere; }
+.answer-text + .answer-text { margin-top: 12px; }
+.answer-text strong { font-weight: 650; }
+.answer-secondary { font-size: 14px; line-height: 1.6; color: var(--muted); }
+.answer-price-line { display: block; padding: 12px 14px; border-left: 3px solid var(--blue); border-radius: 4px 10px 10px 4px; background: #f0f5ff; line-height: 1.65; }
+.answer-price-line .price-emphasis { font-size: 17px; font-weight: 650; }
+.answer-price-line .price-amount { font-size: 20px; font-weight: 750; color: #153ea2; white-space: nowrap; }
+.answer-row > .quick-replies { width: 100%; }
+.quick-reply { min-height: 48px; font-size: 15px; line-height: 1.5; font-weight: 650; box-shadow: none; }
+button.quick-reply { text-align: left; justify-content: flex-start; }
+button.quick-reply[data-candidate-id] { width: 100%; padding: 12px 16px; }
+.quick-reply:active, .quick-reply.is-selected { background: #dfeaff; border-color: var(--blue-dark); }
+.quick-reply.is-selected:disabled { color: #173b93; opacity: 1; }
+.answer-row > .result-actions { width: 100%; padding: 0; }
+.result-action { font-size: 14px; box-shadow: none; }
+.result-action.neutral { color: #46566d; background: transparent; border-color: #cad5e3; }
+.consult-summary-row { padding-left: 42px; }
+.consult-summary-row::before { display: none; }
+.consult-summary { box-shadow: none; border-radius: 14px; }
+.consult-summary .result-card-head { color: var(--muted); background: #f8fafc; cursor: pointer; min-height: 48px; }
+.consult-summary .result-card-head strong { display: inline; font-size: 14px; font-weight: 600; }
+.consult-summary .result-card-head::after { display: none; }
+.consult-summary summary:focus-visible { outline: 3px solid #1746d1; outline-offset: -3px; }
+.result-note { font-size: 13px; }
+.typing-message .message-bubble { font-size: 14px; background: transparent; border: 0; padding: 6px 0; color: var(--muted); }
+.chat-form input::placeholder { color: #64748b; }
+.input-help { color: #536174; }
+.quick-reply:focus-visible, .result-action:focus-visible, .text-button:focus-visible,
+.chat-form input:focus-visible, .chat-form button:focus-visible, a:focus-visible { outline-color: #1746d1; }
+@keyframes answer-appear { from { transform: translateY(3px); } to { transform: translateY(0); } }
+.answer-enter { animation: answer-appear 180ms ease-out; }
+@media (max-width: 699px) {
+  .chat-log { padding: 16px 12px 22px; }
+  .message-row.bot { width: 100%; padding-left: 0; padding-top: 26px; }
+  .message-row.bot::before { top: 0; width: 20px; height: 20px; border-radius: 6px; background-size: 13px; }
+  .message-row.user { width: 88%; }
+  .answer-card { padding: 16px; border-radius: 14px; }
+  .answer-text { font-size: 16px; }
+  .answer-secondary { font-size: 14px; }
+  .consult-summary-row { width: 100%; padding-left: 0; }
+  .answer-context { font-size: 16px; }
+  .chat-form input { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { .answer-enter { animation: none; } }

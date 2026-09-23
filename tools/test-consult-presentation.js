@@ -1,0 +1,25 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
+import {presentationIndex,messagePresentation,lookupStatus,lookupDelay,phoneProminence,literalParts} from '../js/smart-consult-presentation.js';
+import {conversationTurn,createConversationState} from '../js/smart-consult-conversation.js';
+import {priceDescription} from '../js/smart-consult-prices.js';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),catalog=read('data/battery-prices.json'),policy=read('data/consult-service-policy.json'),index=presentationIndex(catalog,policy),rows=read('data/manufacturers.json').flatMap(m=>read('data/'+m.file).map(r=>({...r,manufacturerId:m.id,manufacturerName:m.name}))),areas=read('seo-data/smart-consult-location-index.json').localities;
+let checks=0;const check=(condition,label)=>{checks++;assert.ok(condition,label);};
+for(const [text,price]of index.prices){const model=messagePresentation(text,index);check(model.lines[0].price===price,'canonical metadata');check(literalParts(text,[price.code,price.brand,price.amount]).map(p=>p.text).join('')===text,'verbatim canonical price');}
+for(const text of ['<img src=x onerror=alert(1)>','AGM999 1원','AGM105는 BMW에 장착됩니다','',priceDescription('AGM70 또는 AGM80',catalog),'현재 바르타 AGM60은 확인 필요']){
+ check(messagePresentation(text,index).lines.map(l=>l.text).join('\n')===text,'lossless paragraph model');check(literalParts(text,['AGM105','바르타']).map(p=>p.text).join('')===text,'lossless tokens');}
+const turn=(state,q)=>conversationTurn(state,q,rows,areas,catalog,policy);
+const fresh=createConversationState(),priced=turn(fresh,'BMW 5시리즈 2020년식').state;
+for(const state of [fresh,priced,turn(fresh,'구월동').state,turn(priced,'바르타는?').state,turn(fresh,'G90').state])for(const q of ['현금되나요?','정품인가요?','예약되나요?','오늘 되나요?','카드','작업시간','몇 월 생산이에요?']){const r=turn(state,q),status=lookupStatus(r,state,null,index);check(status===null,q+' no lookup feedback');check(lookupDelay(status,0,false)===0,q+' no artificial FAQ delay');}
+for(const q of ['BMW 5시리즈 2020년식','AGM105','G90','구월동']){const r=turn(fresh,q),status=lookupStatus(r,fresh,null,index);check(Boolean(status),q+' lookup');for(const elapsed of [0,100,299,300,1000]){check(lookupDelay(status,elapsed,false)<=300,'bounded deterministic delay');check(lookupDelay(status,elapsed,true)===0,'reduced motion no delay');}}
+check(lookupStatus(turn(fresh,'G90'),fresh,{type:'vehicle-candidate'},index)==='선택하신 차량을 확인하고 있어요…','candidate-specific feedback');
+for(const q of ['예약되나요?','오늘 되나요?','몇 월 생산이에요?'])check(phoneProminence(turn(fresh,q),index),q+' phone emphasis');
+for(const q of ['현금되나요?','정품인가요?','AGM105','BMW 5시리즈 2020년식','델코랑 바르타 차이'])check(!phoneProminence(turn(fresh,q),index),q+' answer primary');
+const baseline='eb10f9f516ee85e384cd8b01e0e53f7098382034',git=args=>execFileSync('git',args,{encoding:'utf8',maxBuffer:30e6});
+const changed=git(['diff',baseline,'--name-only']).trim().split('\n').filter(Boolean),allowed=new Set(['js/smart-consult.js','js/smart-consult-presentation.js','css/smart-consult.css','smart-consult/index.html','tools/test-smart-consult-viewport.js','tools/test-smart-consult-branding.js','tools/test-battery-certainty-scope.js']);
+for(const p of ['tools/test-battery-pricing.js','tools/test-brand-service.js','tools/test-product-as-hours.js'])allowed.add(p);
+for(const p of changed)check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
+const html=fs.readFileSync('smart-consult/index.html','utf8').replaceAll('\r\n','\n'),before=git(['show',baseline+':smart-consult/index.html']).replaceAll('\r\n','\n');
+check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=consult-ui-v1'),'HTML only two cache tokens');
+check(read('seo-data/blog-cases.json').posts.length===345,'blog345');check((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length===1133,'sitemap1133');
+const source=fs.readFileSync('js/smart-consult.js','utf8');check(!source.includes('innerHTML'),'XSS text-only DOM');check(!source.includes('Math.random')&&!source.includes('setInterval'),'no random/typewriter');
+console.log(JSON.stringify({status:'PASS',checks,canonicalPriceLines:index.prices.size,vehicleRows:rows.length,areas:areas.length,blog:345,sitemap:1133,gates:{TYPEWRITER_EFFECT_PRESENT:0,RANDOM_FAKE_DELAY_PRESENT:0,SIMPLE_FAQ_ARTIFICIAL_DELAY:0,LOOKUP_PRESENTATION_DELAY_OVER_600MS:0},changed}));
