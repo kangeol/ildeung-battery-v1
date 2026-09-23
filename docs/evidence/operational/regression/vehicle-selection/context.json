@@ -1,0 +1,2690 @@
+{
+  "turns": 33,
+  "rejected": 19,
+  "gates": {
+    "DISAMBIGUATION_SELECTION_LOOP": 0,
+    "DISAMBIGUATION_WRONG_ROW": 0,
+    "DISAMBIGUATION_SELECTION_LOST": 0,
+    "DISAMBIGUATION_YEAR_GENERATION_LOST": 0,
+    "DISAMBIGUATION_FALSE_UNSUPPORTED": 0,
+    "DISAMBIGUATION_UNAUTHORIZED_BATTERY_INFERENCE": 0
+  },
+  "transcripts": [
+    {
+      "text": "구월동",
+      "messages": [
+        "인천 남동구 구월동 지역은 출장 교체 가능 지역입니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 1,
+        "manufacturer": "",
+        "manufacturerName": "",
+        "vehicleFamily": "",
+        "model": "",
+        "generation": "",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [],
+        "exactFuel": "",
+        "selectedVehicleKey": "",
+        "batteryCandidates": [],
+        "confirmedBattery": null,
+        "result": null,
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "SERVICE_AREA_AVAILABILITY",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "G90",
+      "messages": [
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?"
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 2,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [
+          "G90 (RS4)",
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "고객센터문의",
+          "AGM105"
+        ],
+        "confirmedBattery": null,
+        "result": null,
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "VEHICLE_IDENTIFICATION",
+        "previousQuestion": {
+          "field": "detailModel",
+          "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?",
+          "choices": [
+            {
+              "value": "G90 (RS4)",
+              "label": "2021~현재년형 · G90 (RS4)",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90 (RS4)\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"21년~현재\\\",\\\"가솔린\\\",\\\"G90 (RS4)\\\"]\"]]"
+              }
+            },
+            {
+              "value": "G90",
+              "label": "2018~2021년형 · G90",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+              }
+            }
+          ]
+        },
+        "ambiguity": "detailModel",
+        "failures": 0
+      }
+    },
+    {
+      "text": "2018~2021년형 · G90",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+      },
+      "messages": [
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+        "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 3,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "MODEL_INFO",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "바르타로 하면?",
+      "messages": [
+        "AGM105 바르타 기준 교체 가격은 33만원입니다."
+      ],
+      "state": {
+        "brand": "VARTA",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "PRICE",
+        "priceIntent": true,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 4,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "UNKNOWN",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "카드",
+      "messages": [
+        "네. 카드결제 가능합니다."
+      ],
+      "state": {
+        "brand": "VARTA",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "PRICE",
+        "priceIntent": true,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 4,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "UNKNOWN",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "작업시간",
+      "messages": [
+        "배터리 교체 작업은 보통 10~20분 정도 소요됩니다. 차량과 작업 상황에 따라 시간은 약간 달라질 수 있습니다."
+      ],
+      "state": {
+        "brand": "VARTA",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "PRICE",
+        "priceIntent": true,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 4,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "UNKNOWN",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "가격",
+      "messages": [
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+        "AGM105 바르타 기준 교체 가격은 33만원입니다."
+      ],
+      "state": {
+        "brand": "VARTA",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "PRICE",
+        "priceIntent": true,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "PRICE",
+        "turnIndex": 5,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "PRICE_QUESTION",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "출장배터리되나요?",
+      "messages": [
+        "네, 인천 남동구 구월동에서 출장 교체 가능합니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요."
+      ],
+      "state": {
+        "brand": "VARTA",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "PRICE",
+        "priceIntent": true,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 6,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "SERVICE_AREA_AVAILABILITY",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "바르타로 하면?",
+      "messages": [
+        "AGM105 바르타 기준 교체 가격은 33만원입니다."
+      ],
+      "state": {
+        "brand": "VARTA",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "PRICE",
+        "priceIntent": true,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 4,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "UNKNOWN",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "아니 2024년식이야",
+      "messages": [
+        "네, 2024년식으로 바꿔서 확인할게요.",
+        "이 차량은 배터리 규격을 전화로 확인해야 해요. 1644-9141로 문의해 주세요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": true,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 4,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "",
+        "year": 2024,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "고객센터문의"
+        ],
+        "confirmedBattery": null,
+        "result": null,
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "CORRECTION",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "BMW 5시리즈 2020년식",
+      "messages": [
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+        "같은 차량에 AGM105 업그레이드도 가능합니다.",
+        "AGM95 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "AGM95",
+        "priceSummaryShown": true,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 4,
+        "manufacturer": "bmw",
+        "manufacturerName": "BMW",
+        "vehicleFamily": "5시리즈",
+        "model": "",
+        "generation": "G30",
+        "year": 2020,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [],
+        "exactFuel": "",
+        "selectedVehicleKey": "bmw|5시리즈",
+        "batteryCandidates": [
+          "AGM95"
+        ],
+        "confirmedBattery": "AGM95",
+        "result": {
+          "manufacturerId": "bmw",
+          "manufacturerName": "BMW",
+          "vehicle": "5시리즈",
+          "detailModel": "5시리즈 (G30)",
+          "year": "17~23년",
+          "fuel": "",
+          "defaultBattery": "AGM95",
+          "upgradeBattery": "AGM105",
+          "matchedRows": 5
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "VEHICLE_IDENTIFICATION",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "처음부터",
+      "messages": [
+        "안녕하세요. 일등밧데리 AI 배터리 상담입니다.\n차량명이나 궁금한 내용을 편하게 입력해 주세요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": false,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "UNKNOWN",
+        "turnIndex": 0,
+        "manufacturer": "",
+        "manufacturerName": "",
+        "vehicleFamily": "",
+        "model": "",
+        "generation": "",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [],
+        "exactFuel": "",
+        "selectedVehicleKey": "",
+        "batteryCandidates": [],
+        "confirmedBattery": null,
+        "result": null,
+        "region": null,
+        "location": null,
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "",
+        "lastIntent": "UNKNOWN",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "G80",
+      "messages": [
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2020~현재년형 · G80 (RG3) / 2016~2020년형 · G80 중 어떤 차량인가요?"
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": false,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "UNKNOWN",
+        "turnIndex": 1,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G80",
+        "model": "",
+        "generation": "G80",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [
+          "G80 (RG3)",
+          "G80"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G80",
+        "batteryCandidates": [
+          "AGM95R",
+          "AGM105"
+        ],
+        "confirmedBattery": null,
+        "result": null,
+        "region": null,
+        "location": null,
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "",
+        "lastIntent": "VEHICLE_IDENTIFICATION",
+        "previousQuestion": {
+          "field": "detailModel",
+          "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2020~현재년형 · G80 (RG3) / 2016~2020년형 · G80 중 어떤 차량인가요?",
+          "choices": [
+            {
+              "value": "G80 (RG3)",
+              "label": "2020~현재년형 · G80 (RG3)",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G80\",\"G80 (RG3)\",[\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"가솔린 2WD\\\",\\\"G80 (RG3)\\\"]\",\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"디젤 2WD\\\",\\\"G80 (RG3)\\\"]\"]]"
+              }
+            },
+            {
+              "value": "G80",
+              "label": "2016~2020년형 · G80",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G80\",\"G80\",[\"[\\\"genesis\\\",\\\"G80\\\",\\\"16~20년\\\",\\\"가솔린\\\",\\\"G80\\\"]\",\"[\\\"genesis\\\",\\\"G80\\\",\\\"16~20년\\\",\\\"디젤\\\",\\\"G80\\\"]\"]]"
+              }
+            }
+          ]
+        },
+        "ambiguity": "detailModel",
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {},
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": false,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "UNKNOWN",
+        "turnIndex": 0,
+        "manufacturer": "",
+        "manufacturerName": "",
+        "vehicleFamily": "",
+        "model": "",
+        "generation": "",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [],
+        "exactFuel": "",
+        "selectedVehicleKey": "",
+        "batteryCandidates": [],
+        "confirmedBattery": null,
+        "result": null,
+        "region": null,
+        "location": null,
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "",
+        "lastIntent": "UNKNOWN",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "<script>alert(1)</script>"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": false,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "UNKNOWN",
+        "turnIndex": 0,
+        "manufacturer": "",
+        "manufacturerName": "",
+        "vehicleFamily": "",
+        "model": "",
+        "generation": "",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [],
+        "exactFuel": "",
+        "selectedVehicleKey": "",
+        "batteryCandidates": [],
+        "confirmedBattery": null,
+        "result": null,
+        "region": null,
+        "location": null,
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "",
+        "lastIntent": "UNKNOWN",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "__proto__"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": false,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "UNKNOWN",
+        "turnIndex": 0,
+        "manufacturer": "",
+        "manufacturerName": "",
+        "vehicleFamily": "",
+        "model": "",
+        "generation": "",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [],
+        "exactFuel": "",
+        "selectedVehicleKey": "",
+        "batteryCandidates": [],
+        "confirmedBattery": null,
+        "result": null,
+        "region": null,
+        "location": null,
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "",
+        "lastIntent": "UNKNOWN",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": []
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": false,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "UNKNOWN",
+        "turnIndex": 0,
+        "manufacturer": "",
+        "manufacturerName": "",
+        "vehicleFamily": "",
+        "model": "",
+        "generation": "",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [],
+        "exactFuel": "",
+        "selectedVehicleKey": "",
+        "batteryCandidates": [],
+        "confirmedBattery": null,
+        "result": null,
+        "region": null,
+        "location": null,
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "",
+        "lastIntent": "UNKNOWN",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]x"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": false,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "UNKNOWN",
+        "turnIndex": 0,
+        "manufacturer": "",
+        "manufacturerName": "",
+        "vehicleFamily": "",
+        "model": "",
+        "generation": "",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [],
+        "exactFuel": "",
+        "selectedVehicleKey": "",
+        "batteryCandidates": [],
+        "confirmedBattery": null,
+        "result": null,
+        "region": null,
+        "location": null,
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "",
+        "lastIntent": "UNKNOWN",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "[\"detailModel\",\"genesis|G80\",\"G80 (RG3)\",[\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"가솔린 2WD\\\",\\\"G80 (RG3)\\\"]\",\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"디젤 2WD\\\",\\\"G80 (RG3)\\\"]\"]]"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": false,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "UNKNOWN",
+        "turnIndex": 0,
+        "manufacturer": "",
+        "manufacturerName": "",
+        "vehicleFamily": "",
+        "model": "",
+        "generation": "",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [],
+        "exactFuel": "",
+        "selectedVehicleKey": "",
+        "batteryCandidates": [],
+        "confirmedBattery": null,
+        "result": null,
+        "region": null,
+        "location": null,
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "",
+        "lastIntent": "UNKNOWN",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {},
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 2,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [
+          "G90 (RS4)",
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "고객센터문의",
+          "AGM105"
+        ],
+        "confirmedBattery": null,
+        "result": null,
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "VEHICLE_IDENTIFICATION",
+        "previousQuestion": {
+          "field": "detailModel",
+          "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?",
+          "choices": [
+            {
+              "value": "G90 (RS4)",
+              "label": "2021~현재년형 · G90 (RS4)",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90 (RS4)\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"21년~현재\\\",\\\"가솔린\\\",\\\"G90 (RS4)\\\"]\"]]"
+              }
+            },
+            {
+              "value": "G90",
+              "label": "2018~2021년형 · G90",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+              }
+            }
+          ]
+        },
+        "ambiguity": "detailModel",
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "<script>alert(1)</script>"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 2,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [
+          "G90 (RS4)",
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "고객센터문의",
+          "AGM105"
+        ],
+        "confirmedBattery": null,
+        "result": null,
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "VEHICLE_IDENTIFICATION",
+        "previousQuestion": {
+          "field": "detailModel",
+          "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?",
+          "choices": [
+            {
+              "value": "G90 (RS4)",
+              "label": "2021~현재년형 · G90 (RS4)",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90 (RS4)\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"21년~현재\\\",\\\"가솔린\\\",\\\"G90 (RS4)\\\"]\"]]"
+              }
+            },
+            {
+              "value": "G90",
+              "label": "2018~2021년형 · G90",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+              }
+            }
+          ]
+        },
+        "ambiguity": "detailModel",
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "__proto__"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 2,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [
+          "G90 (RS4)",
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "고객센터문의",
+          "AGM105"
+        ],
+        "confirmedBattery": null,
+        "result": null,
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "VEHICLE_IDENTIFICATION",
+        "previousQuestion": {
+          "field": "detailModel",
+          "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?",
+          "choices": [
+            {
+              "value": "G90 (RS4)",
+              "label": "2021~현재년형 · G90 (RS4)",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90 (RS4)\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"21년~현재\\\",\\\"가솔린\\\",\\\"G90 (RS4)\\\"]\"]]"
+              }
+            },
+            {
+              "value": "G90",
+              "label": "2018~2021년형 · G90",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+              }
+            }
+          ]
+        },
+        "ambiguity": "detailModel",
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": []
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 2,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [
+          "G90 (RS4)",
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "고객센터문의",
+          "AGM105"
+        ],
+        "confirmedBattery": null,
+        "result": null,
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "VEHICLE_IDENTIFICATION",
+        "previousQuestion": {
+          "field": "detailModel",
+          "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?",
+          "choices": [
+            {
+              "value": "G90 (RS4)",
+              "label": "2021~현재년형 · G90 (RS4)",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90 (RS4)\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"21년~현재\\\",\\\"가솔린\\\",\\\"G90 (RS4)\\\"]\"]]"
+              }
+            },
+            {
+              "value": "G90",
+              "label": "2018~2021년형 · G90",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+              }
+            }
+          ]
+        },
+        "ambiguity": "detailModel",
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]x"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 2,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [
+          "G90 (RS4)",
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "고객센터문의",
+          "AGM105"
+        ],
+        "confirmedBattery": null,
+        "result": null,
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "VEHICLE_IDENTIFICATION",
+        "previousQuestion": {
+          "field": "detailModel",
+          "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?",
+          "choices": [
+            {
+              "value": "G90 (RS4)",
+              "label": "2021~현재년형 · G90 (RS4)",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90 (RS4)\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"21년~현재\\\",\\\"가솔린\\\",\\\"G90 (RS4)\\\"]\"]]"
+              }
+            },
+            {
+              "value": "G90",
+              "label": "2018~2021년형 · G90",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+              }
+            }
+          ]
+        },
+        "ambiguity": "detailModel",
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "[\"detailModel\",\"genesis|G80\",\"G80 (RG3)\",[\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"가솔린 2WD\\\",\\\"G80 (RG3)\\\"]\",\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"디젤 2WD\\\",\\\"G80 (RG3)\\\"]\"]]"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "",
+        "priceSummaryShown": false,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 2,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "",
+        "detailModels": [
+          "G90 (RS4)",
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "고객센터문의",
+          "AGM105"
+        ],
+        "confirmedBattery": null,
+        "result": null,
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "VEHICLE_IDENTIFICATION",
+        "previousQuestion": {
+          "field": "detailModel",
+          "prompt": "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2021~현재년형 · G90 (RS4) / 2018~2021년형 · G90 중 어떤 차량인가요?",
+          "choices": [
+            {
+              "value": "G90 (RS4)",
+              "label": "2021~현재년형 · G90 (RS4)",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90 (RS4)\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"21년~현재\\\",\\\"가솔린\\\",\\\"G90 (RS4)\\\"]\"]]"
+              }
+            },
+            {
+              "value": "G90",
+              "label": "2018~2021년형 · G90",
+              "selection": {
+                "type": "vehicle-candidate",
+                "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+              }
+            }
+          ]
+        },
+        "ambiguity": "detailModel",
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {},
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 3,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "MODEL_INFO",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "<script>alert(1)</script>"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 3,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "MODEL_INFO",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "__proto__"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 3,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "MODEL_INFO",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": []
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 3,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "MODEL_INFO",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]x"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 3,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "MODEL_INFO",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "AGM105 가격",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "[\"detailModel\",\"genesis|G80\",\"G80 (RG3)\",[\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"가솔린 2WD\\\",\\\"G80 (RG3)\\\"]\",\"[\\\"genesis\\\",\\\"G80\\\",\\\"20년~현재\\\",\\\"디젤 2WD\\\",\\\"G80 (RG3)\\\"]\"]]"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 3,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "MODEL_INFO",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "2018~2021년형 · G90",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+      },
+      "messages": [
+        "아직 배터리를 확정하기 어려워요. 앞서 여쭤본 차량 정보를 알려주시면 이어서 확인할게요."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 3,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "MODEL_INFO",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    },
+    {
+      "text": "<img src=x onerror=alert(1)>",
+      "selection": {
+        "type": "vehicle-candidate",
+        "id": "[\"detailModel\",\"genesis|G90\",\"G90\",[\"[\\\"genesis\\\",\\\"G90\\\",\\\"18~21년\\\",\\\"가솔린\\\",\\\"G90\\\"]\"]]"
+      },
+      "messages": [
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM105입니다.",
+        "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "state": {
+        "brand": "",
+        "quotedSpec": "AGM105",
+        "priceSummaryShown": true,
+        "originalIntent": "",
+        "priceIntent": false,
+        "serviceIntent": true,
+        "engine": "",
+        "drivetrain": "",
+        "yearRange": "18~21년",
+        "symptom": null,
+        "customerGoal": "AREA",
+        "turnIndex": 3,
+        "manufacturer": "genesis",
+        "manufacturerName": "제네시스",
+        "vehicleFamily": "G90",
+        "model": "",
+        "generation": "G90",
+        "year": null,
+        "fuel": "",
+        "detailModel": "G90",
+        "detailModels": [
+          "G90"
+        ],
+        "exactFuel": "",
+        "selectedVehicleKey": "genesis|G90",
+        "batteryCandidates": [
+          "AGM105"
+        ],
+        "confirmedBattery": "AGM105",
+        "result": {
+          "manufacturerId": "genesis",
+          "manufacturerName": "제네시스",
+          "vehicle": "G90",
+          "detailModel": "G90",
+          "year": "18~21년",
+          "fuel": "가솔린",
+          "defaultBattery": "AGM105",
+          "upgradeBattery": "",
+          "matchedRows": 1
+        },
+        "region": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "location": {
+          "name": "구월동",
+          "fullName": "인천광역시 남동구 구월동",
+          "area": "incheon",
+          "region": "남동구",
+          "slug": "incheon",
+          "province": "인천광역시",
+          "city": "",
+          "district": "남동구",
+          "locality": "구월동",
+          "level": "locality",
+          "canonicalId": "2820010100",
+          "fullLabel": "인천 남동구 구월동",
+          "confidence": "canonical"
+        },
+        "pendingLocationDisambiguation": null,
+        "pendingVehicleConfirmation": null,
+        "city": "",
+        "district": "남동구",
+        "lastIntent": "MODEL_INFO",
+        "previousQuestion": null,
+        "ambiguity": null,
+        "failures": 0
+      }
+    }
+  ]
+}

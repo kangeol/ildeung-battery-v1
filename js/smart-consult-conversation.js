@@ -5,7 +5,9 @@ import { resolveVehicleText } from "./vehicle-aliases.js";
 import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand, normalizeBatteryCode } from "./smart-consult-prices.js?v=product-v1";
 import { servicePolicyIntent } from "./smart-consult-policy.js?v=faq-v1";
 import { extendedPolicyReply, assuranceReply } from "./smart-consult-product-policy.js?v=authentic-v1";
-import { finalFaqReply } from "./smart-consult-faq.js?v=authentic-v1";
+import { finalFaqReply, finalFaqIntent } from "./smart-consult-faq.js?v=authentic-v1";
+import { operationalPlan } from "./smart-consult-operational.js?v=operational-v1";
+import { PHONE_LABEL } from "./smart-consult-core.js?v=certainty-v1";
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -173,6 +175,42 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  const plan=selection===null&&servicePolicy?.operational?operationalPlan(text,previous):null;
+  if(!plan){
+    const out=conversationEstablished(previous,text,records,localities,priceCatalog,servicePolicy,selection);
+    if(selection===null&&finalFaqIntent(text)==='WORK_TIME'&&/얼마나|몇\s*분/.test(text))out.state.lastIntent='OP_WORK_TIME';
+    return out;
+  }
+  if(plan.keys.length===1&&plan.keys[0]==='REALTIME'&&!plan.queries.length&&!assuranceReply(text,servicePolicy)&&!/현금|카드|영수증|세금|이체/.test(text)){
+    const intent=recognizeIntent(text,extractEntities(text,records,previous,localities));
+    if(liveIntents.includes(intent)||/^VISIT/.test(finalFaqIntent(text)||''))return conversationEstablished(previous,text,records,localities,priceCatalog,servicePolicy);
+  }
+  // Compose operational facts with the existing canonical vehicle/area/price flow.
+  // Manufacture dates and battery age never become model years.
+  let out={state:{...previous},messages:[],chips:[],actions:[],result:null,region:null};
+  const merge=reply=>{if(!reply)return;out.messages.push(...reply.messages);out.actions=unique([...out.actions,...reply.actions]);};
+  const entities=extractEntities(text,records,previous,localities),context=[];
+  if(entities.region)context.push(entities.region.fullLabel);
+  if(entities.matches.length){context.push(...entities.matches.map(m=>`${m.manufacturerName} ${m.vehicle}`));if(entities.detailModel)context.push(entities.detailModel);if(entities.year&&/년식/.test(text))context.push(`${entities.year}년식`);if(entities.fuel)context.push(entities.fuel);if(entities.engine)context.push(`${entities.engine}cc`);}
+  const explicitPrice=/가격|비용|견적|얼마(?:예요|야|요)?[?!.\s]*$/.test(text)&&!plan.life&&!plan.bareDuration&&!plan.realtime&&!plan.keys.includes('PRICE_REASON')&&!/추가|코딩|공임|출장비|끝/.test(text);
+  if(entities.ambiguousRegion||entities.unsupportedLocation||/지역(?:은|이)\s*/.test(text))out=conversationCore(previous,text,records,localities,priceCatalog,servicePolicy);
+  else if(context.length)out=conversationEstablished(previous,context.join(' ')+(explicitPrice?' 가격':''),records,localities,priceCatalog,servicePolicy);
+  const brand=brandIntent(text,priceCatalog);if(brand)out.state.brand=brand;
+  const spec=String(text).match(/(?<![a-z0-9])(?:AGM\s*\d+R?|DIN\s*\d+(?:HL|L|R)?|DF\s*\d+(?:AL|L|R)|65\s*-\s*900)(?![a-z0-9])/i)?.[0];
+  if(spec&&!entities.matches.length){const code=normalizeBatteryCode(spec,priceCatalog);if(Object.hasOwn(priceCatalog?.prices||{},code))out.state.quotedSpec=code;}
+  if(explicitPrice){const priced=conversationEstablished(out.state,spec?`${brand||''} ${spec} 가격`:'배터리 가격',records,localities,priceCatalog,servicePolicy);merge(priced);out.state=priced.state;out.result=priced.result;out.chips=priced.chips;}
+  for(const query of plan.queries){const reply=conversationEstablished(out.state,query,records,localities,priceCatalog,servicePolicy);merge(reply);out.state=reply.state;out.result=reply.result||out.result;out.region=reply.region||out.region;if(reply.chips.length)out.chips=reply.chips;}
+  for(const key of plan.keys){const message=servicePolicy.operational[key];if(message){out.messages.push(message.replaceAll('{phone}',PHONE_LABEL));if(message.includes('{phone}'))out.actions=unique([...out.actions,'phone']);}}
+  merge(assuranceReply(text,servicePolicy));
+  if(!plan.entry)merge(extendedPolicyReply(text,out.state,priceCatalog,servicePolicy));
+  // Collect payment and included-service facts independently of operational timing.
+  if(/현금|현찰|카드|계좌|이체|세금계산서|영수증|부가세|할인|수수료|vat/i.test(text))merge(finalFaqReply(text.replace(/(?:폐|헌|기존)\s*배터리|배터리\s*반납|도착|언제.*(?:와|오)/g,''),servicePolicy));
+  const included=servicePolicyIntent(text);if(included&&servicePolicy.answers[included]){out.messages.push(servicePolicy.answers[included]);if(included==='KEEP_OLD_BATTERY')out.actions=unique([...out.actions,'phone']);}
+  if(['RESERVATION','REALTIME','SITE','NON_FACE_TO_FACE'].includes(plan.topic))out.state.lastIntent='OP_'+plan.topic;
+  out.messages=unique(out.messages);return out;
+}
+
+function conversationEstablished(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
   const assurance=selection===null?assuranceReply(text,servicePolicy):null;
   const cash=/현금|현찰/.test(String(text).replace(/현금\s*영수증/g,''));
   if(selection!==null||(!assurance&&!cash))return conversationCore(previous,text,records,localities,priceCatalog,servicePolicy,selection);

@@ -9,7 +9,7 @@ const policy=read('data/consult-service-policy.json'),catalog=read('data/battery
 const rows=read('data/manufacturers.json').flatMap(m=>read(`data/${m.file}`).map(r=>({...r,manufacturerId:m.id,manufacturerName:m.name})));
 const areas=read('seo-data/smart-consult-location-index.json').localities;
 const old=JSON.parse(execFileSync('git',['show','d43217e:data/consult-service-policy.json'],{encoding:'utf8'}));
-assert.deepEqual({...policy,product:{...policy.product,assurance:undefined},version:old.version,finalFaq:undefined},{...old,product:{...old.product,assurance:undefined},finalFaq:undefined},'existing policy unchanged except authorized assurance addition');
+assert.deepEqual({...policy,operational:undefined,product:{...policy.product,assurance:undefined},version:old.version,finalFaq:undefined},{...old,operational:undefined,product:{...old.product,assurance:undefined},finalFaq:undefined},'existing policy unchanged except authorized assurance addition');
 assert.deepEqual(policy.finalFaq.facts,{CARD_PAYMENT_AVAILABLE:true,CASH_PAYMENT_AVAILABLE:true,CASH_RECEIPT_AVAILABLE:true,TAX_INVOICE_AVAILABLE:true,BANK_TRANSFER_AVAILABLE:true,DIRECT_VISIT_AVAILABLE:true,VISIT_REQUIRES_PRECONFIRMATION:true,BATTERY_REPLACEMENT_TYPICAL_MINUTES_MIN:10,BATTERY_REPLACEMENT_TYPICAL_MINUTES_MAX:20,WORK_TIME_CAN_VARY:true});
 const groups={
  CARD:['카드 되나요?','카드결제 가능해요?','신용카드 돼요?','체크카드 돼요?','카드로 계산할 수 있나요?','카드돼요?','카드 가능해요?'],
@@ -30,7 +30,7 @@ function turn(state,text){const out=conversationTurn(state,text,rows,areas,catal
 const contexts=[createConversationState(),turn(createConversationState(),'BMW 5시리즈 2020년식 배터리 얼마예요?').state,turn(createConversationState(),'구월동 BMW 5시리즈 2020년식 바르타 배터리 얼마예요?').state,turn(createConversationState(),'바르타 AGM95 얼마예요?').state];
 for(const state of contexts)for(const [kind,inputs]of Object.entries(groups))for(const input of inputs){
  assert.equal(finalFaqIntent(input),kind,input);const out=turn(state,input);
- assert.deepEqual(out.state,state,`context ${input}`);
+ assert.deepEqual(out.state,kind==='WORK_TIME'&&/얼마나|몇\s*분/.test(input)?{...state,lastIntent:'OP_WORK_TIME'}:state,`context ${input}`);
  assert.deepEqual(out.messages,[policy.finalFaq.answers[kind].replaceAll('{phone}','1644-9141').replace('{min}','10').replace('{max}','20')]);
  if(kind==='WORK_TIME'){assert.match(out.messages[0],/보통 10~20분/);assert.match(out.messages[0],/차량과 작업 상황.*달라질/);assert.doesNotMatch(out.messages[0],/무조건|보장/);}
  if(/^VISIT|CONFIRM|CLARIFY/.test(kind))assert.ok(out.actions.includes('phone'));

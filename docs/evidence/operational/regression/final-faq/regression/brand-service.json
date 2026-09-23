@@ -1,0 +1,1740 @@
+{
+  "status": "PASS",
+  "massCases": 2751,
+  "metrics": {
+    "DELKOR_PRICE_WRONG": 0,
+    "VARTA_PRICE_WRONG": 0,
+    "VARTA_UNSUPPORTED_FABRICATED_PRICE": 0,
+    "BRAND_CONTEXT_LOST": 0,
+    "COMPOSITE_BRAND_SINGLE_AUTOCONFIRM": 0,
+    "SERVICE_POLICY_WRONG_ANSWER": 0,
+    "SERVICE_POLICY_UNSUPPORTED_CLAIM": 0,
+    "FABRICATED_SURCHARGE": 0,
+    "FABRICATED_PRICE": 0,
+    "PRICE_TRUTH_DUPLICATION": 0,
+    "POLICY_TRUTH_DUPLICATION": 0,
+    "WRONG_BATTERY_RECOMMENDATION": 0,
+    "AMBIGUOUS_BATTERY_AUTOCONFIRM": 0
+  },
+  "intentCases": {
+    "MOBILE_SERVICE_FEE": [
+      "출장비 있나요?",
+      "출장 무료인가요?",
+      "출장비 따로예요?",
+      "출장교체비용 포함인가요?",
+      "출장비 별도인가요?",
+      "출장비는?"
+    ],
+    "LABOR_FEE": [
+      "공임비 있나요?",
+      "공임 별도예요?",
+      "장착비 있나요?",
+      "교체 공임 포함인가요?",
+      "공임비 따로예요?"
+    ],
+    "OLD_BATTERY": [
+      "폐배터리 수거하나요?",
+      "헌배터리 가져가나요?",
+      "기존 배터리 가져가요?",
+      "폐배터리 회수하나요?",
+      "배터리 반납해야 하나요?"
+    ],
+    "KEEP_OLD_BATTERY": [
+      "폐배터리 보관하고 싶어요",
+      "폐배터리 수거 안 하면 얼마예요?"
+    ],
+    "CODING": [
+      "코딩비 얼마예요?",
+      "코딩비용 포함인가요?",
+      "코딩 무료인가요?",
+      "BMW 코딩비 따로예요?",
+      "배터리 코딩도 해주나요?",
+      "코딩비는?",
+      "코딩은?"
+    ],
+    "BASIC_INSPECTION": [
+      "점검도 해주나요?",
+      "기본점검 무료인가요?",
+      "점검비 있나요?"
+    ],
+    "ONSITE_SURCHARGE": [
+      "현장에서 추가비용 있나요?",
+      "추가금 있나요?",
+      "현장 추가금 있나요?",
+      "가서 더 받는 거 아니죠?",
+      "안내 가격이 최종인가요?",
+      "현장에서 더 받는 거 없어요?"
+    ],
+    "COMBINED": [
+      "가격에 뭐가 포함돼요?",
+      "교체비용에 포함된 게 뭐예요?",
+      "22만원이면 다 포함이에요?",
+      "별도 비용 있나요?",
+      "22만원이면 공임이랑 출장비 다 포함이에요?"
+    ]
+  },
+  "transcripts": [
+    {
+      "text": "바르타 AGM70 얼마예요?",
+      "messages": [
+        "AGM70 바르타 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM70"
+    },
+    {
+      "text": "VARTA AGM70 얼마예요?",
+      "messages": [
+        "AGM70 바르타 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM70"
+    },
+    {
+      "text": "varta AGM70 얼마예요?",
+      "messages": [
+        "AGM70 바르타 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM70"
+    },
+    {
+      "text": "바 르 타 AGM70 얼마예요?",
+      "messages": [
+        "AGM70 바르타 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM70"
+    },
+    {
+      "text": "바르타배터리 AGM70 얼마예요?",
+      "messages": [
+        "AGM70 바르타 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM70"
+    },
+    {
+      "text": "바르타 AGM80 얼마예요?",
+      "messages": [
+        "AGM80 바르타 기준 교체 가격은 24만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM80"
+    },
+    {
+      "text": "VARTA AGM80 얼마예요?",
+      "messages": [
+        "AGM80 바르타 기준 교체 가격은 24만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM80"
+    },
+    {
+      "text": "varta AGM80 얼마예요?",
+      "messages": [
+        "AGM80 바르타 기준 교체 가격은 24만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM80"
+    },
+    {
+      "text": "바 르 타 AGM80 얼마예요?",
+      "messages": [
+        "AGM80 바르타 기준 교체 가격은 24만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM80"
+    },
+    {
+      "text": "바르타배터리 AGM80 얼마예요?",
+      "messages": [
+        "AGM80 바르타 기준 교체 가격은 24만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM80"
+    },
+    {
+      "text": "바르타 AGM95 얼마예요?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "VARTA AGM95 얼마예요?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "varta AGM95 얼마예요?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "바 르 타 AGM95 얼마예요?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "바르타배터리 AGM95 얼마예요?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "바르타 AGM105 얼마예요?",
+      "messages": [
+        "AGM105 바르타 기준 교체 가격은 33만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM105"
+    },
+    {
+      "text": "VARTA AGM105 얼마예요?",
+      "messages": [
+        "AGM105 바르타 기준 교체 가격은 33만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM105"
+    },
+    {
+      "text": "varta AGM105 얼마예요?",
+      "messages": [
+        "AGM105 바르타 기준 교체 가격은 33만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM105"
+    },
+    {
+      "text": "바 르 타 AGM105 얼마예요?",
+      "messages": [
+        "AGM105 바르타 기준 교체 가격은 33만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM105"
+    },
+    {
+      "text": "바르타배터리 AGM105 얼마예요?",
+      "messages": [
+        "AGM105 바르타 기준 교체 가격은 33만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM105"
+    },
+    {
+      "text": "델코 AGM60 가격",
+      "messages": [
+        "AGM60 델코 기준 교체 가격은 15만5천원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM60"
+    },
+    {
+      "text": "DELKOR AGM60 가격",
+      "messages": [
+        "AGM60 델코 기준 교체 가격은 15만5천원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM60"
+    },
+    {
+      "text": "delkor AGM60 가격",
+      "messages": [
+        "AGM60 델코 기준 교체 가격은 15만5천원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM60"
+    },
+    {
+      "text": "델코배터리 AGM60 가격",
+      "messages": [
+        "AGM60 델코 기준 교체 가격은 15만5천원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM60"
+    },
+    {
+      "text": "델코 AGM70 가격",
+      "messages": [
+        "AGM70 델코 기준 교체 가격은 17만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM70"
+    },
+    {
+      "text": "DELKOR AGM70 가격",
+      "messages": [
+        "AGM70 델코 기준 교체 가격은 17만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM70"
+    },
+    {
+      "text": "delkor AGM70 가격",
+      "messages": [
+        "AGM70 델코 기준 교체 가격은 17만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM70"
+    },
+    {
+      "text": "델코배터리 AGM70 가격",
+      "messages": [
+        "AGM70 델코 기준 교체 가격은 17만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM70"
+    },
+    {
+      "text": "델코 AGM80 가격",
+      "messages": [
+        "AGM80 델코 기준 교체 가격은 19만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM80"
+    },
+    {
+      "text": "DELKOR AGM80 가격",
+      "messages": [
+        "AGM80 델코 기준 교체 가격은 19만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM80"
+    },
+    {
+      "text": "delkor AGM80 가격",
+      "messages": [
+        "AGM80 델코 기준 교체 가격은 19만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM80"
+    },
+    {
+      "text": "델코배터리 AGM80 가격",
+      "messages": [
+        "AGM80 델코 기준 교체 가격은 19만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM80"
+    },
+    {
+      "text": "델코 AGM80R 가격",
+      "messages": [
+        "AGM80R 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM80R"
+    },
+    {
+      "text": "DELKOR AGM80R 가격",
+      "messages": [
+        "AGM80R 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM80R"
+    },
+    {
+      "text": "delkor AGM80R 가격",
+      "messages": [
+        "AGM80R 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM80R"
+    },
+    {
+      "text": "델코배터리 AGM80R 가격",
+      "messages": [
+        "AGM80R 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM80R"
+    },
+    {
+      "text": "델코 AGM95 가격",
+      "messages": [
+        "AGM95 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "DELKOR AGM95 가격",
+      "messages": [
+        "AGM95 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "delkor AGM95 가격",
+      "messages": [
+        "AGM95 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "델코배터리 AGM95 가격",
+      "messages": [
+        "AGM95 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "델코 AGM95R 가격",
+      "messages": [
+        "AGM95R 델코 기준 교체 가격은 24만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM95R"
+    },
+    {
+      "text": "DELKOR AGM95R 가격",
+      "messages": [
+        "AGM95R 델코 기준 교체 가격은 24만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM95R"
+    },
+    {
+      "text": "delkor AGM95R 가격",
+      "messages": [
+        "AGM95R 델코 기준 교체 가격은 24만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM95R"
+    },
+    {
+      "text": "델코배터리 AGM95R 가격",
+      "messages": [
+        "AGM95R 델코 기준 교체 가격은 24만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM95R"
+    },
+    {
+      "text": "델코 AGM105 가격",
+      "messages": [
+        "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM105"
+    },
+    {
+      "text": "DELKOR AGM105 가격",
+      "messages": [
+        "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM105"
+    },
+    {
+      "text": "delkor AGM105 가격",
+      "messages": [
+        "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM105"
+    },
+    {
+      "text": "델코배터리 AGM105 가격",
+      "messages": [
+        "AGM105 델코 기준 교체 가격은 28만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "DELKOR",
+      "battery": null,
+      "quotedSpec": "AGM105"
+    },
+    {
+      "text": "바르타 AGM60 얼마예요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. AGM60는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM60"
+    },
+    {
+      "text": "AGM60 바르타 있어요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. AGM60는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM60"
+    },
+    {
+      "text": "바르타 AGM80R 얼마예요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. AGM80R는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM80R"
+    },
+    {
+      "text": "AGM80R 바르타 있어요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. AGM80R는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM80R"
+    },
+    {
+      "text": "바르타 AGM95R 얼마예요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. AGM95R는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM95R"
+    },
+    {
+      "text": "AGM95R 바르타 있어요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. AGM95R는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM95R"
+    },
+    {
+      "text": "바르타 DIN60 얼마예요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. DIN60L는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "DIN60"
+    },
+    {
+      "text": "DIN60 바르타 있어요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. DIN60L는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "DIN60"
+    },
+    {
+      "text": "바르타 DF80L 얼마예요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. DF80L는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "DF80L"
+    },
+    {
+      "text": "DF80L 바르타 있어요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. DF80L는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "DF80L"
+    },
+    {
+      "text": "바르타 AGM999 얼마예요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. AGM999는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM999"
+    },
+    {
+      "text": "AGM999 바르타 있어요?",
+      "messages": [
+        "현재 바르타 AGM은 AGM70·AGM80·AGM95·AGM105 규격을 안내하고 있습니다. AGM999는 바르타 판매 지원 규격이 아닙니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM999"
+    },
+    {
+      "text": "BMW 5시리즈 2020년식 배터리 얼마예요?",
+      "messages": [
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+        "AGM95 델코 기준 교체 가격은 22만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "바르타로 하면?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "바르타는 얼마예요?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "바르타 AGM은?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "델코 말고 바르타",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "VARTA 가격은?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "바르타 제품으로 하면 얼마?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "미니 쿠퍼 배터리 얼마예요?",
+      "messages": [
+        "차량에 따라 AGM70 또는 AGM80 중 하나가 장착될 수 있습니다.\nAGM70 델코 기준 교체 가격은 17만원입니다.\nAGM80 델코 기준 교체 가격은 19만원입니다.\n정확한 규격은 현재 장착된 배터리를 현장에서 확인해야 합니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": "AGM70 또는 AGM80"
+    },
+    {
+      "text": "바르타로 하면?",
+      "messages": [
+        "차량에 따라 AGM70 또는 AGM80 중 하나가 장착될 수 있습니다.\nAGM70 바르타 기준 교체 가격은 22만원입니다.\nAGM80 바르타 기준 교체 가격은 24만원입니다.\n정확한 규격은 현재 장착된 배터리를 현장에서 확인해야 합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM70 또는 AGM80"
+    },
+    {
+      "text": "구월동 BMW 5시리즈 2020년식 바르타 배터리 얼마예요?",
+      "messages": [
+        "인천 남동구 구월동 지역은 출장 교체 가능 지역입니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+        "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "출장비 있나요?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "출장비 있나요?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "출장 무료인가요?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "출장 무료인가요?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "출장비 따로예요?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "출장비 따로예요?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "출장교체비용 포함인가요?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "출장교체비용 포함인가요?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "출장비 별도인가요?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "출장비 별도인가요?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "출장비는?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "출장비는?",
+      "messages": [
+        "별도 출장비는 없습니다. 안내드린 가격에 출장교체비용이 포함되어 있습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "공임비 있나요?",
+      "messages": [
+        "교체 공임이 포함된 가격이라 별도 공임비는 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "공임비 있나요?",
+      "messages": [
+        "교체 공임이 포함된 가격이라 별도 공임비는 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "공임 별도예요?",
+      "messages": [
+        "교체 공임이 포함된 가격이라 별도 공임비는 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "공임 별도예요?",
+      "messages": [
+        "교체 공임이 포함된 가격이라 별도 공임비는 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "장착비 있나요?",
+      "messages": [
+        "교체 공임이 포함된 가격이라 별도 공임비는 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "장착비 있나요?",
+      "messages": [
+        "교체 공임이 포함된 가격이라 별도 공임비는 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "교체 공임 포함인가요?",
+      "messages": [
+        "교체 공임이 포함된 가격이라 별도 공임비는 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "교체 공임 포함인가요?",
+      "messages": [
+        "교체 공임이 포함된 가격이라 별도 공임비는 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "공임비 따로예요?",
+      "messages": [
+        "교체 공임이 포함된 가격이라 별도 공임비는 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "공임비 따로예요?",
+      "messages": [
+        "교체 공임이 포함된 가격이라 별도 공임비는 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "폐배터리 수거하나요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 교체 후 기존 배터리는 수거합니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "폐배터리 수거하나요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 교체 후 기존 배터리는 수거합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "헌배터리 가져가나요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 교체 후 기존 배터리는 수거합니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "헌배터리 가져가나요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 교체 후 기존 배터리는 수거합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "기존 배터리 가져가요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 교체 후 기존 배터리는 수거합니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "기존 배터리 가져가요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 교체 후 기존 배터리는 수거합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "폐배터리 회수하나요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 교체 후 기존 배터리는 수거합니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "폐배터리 회수하나요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 교체 후 기존 배터리는 수거합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "배터리 반납해야 하나요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 교체 후 기존 배터리는 수거합니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "배터리 반납해야 하나요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 교체 후 기존 배터리는 수거합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "폐배터리 보관하고 싶어요",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "폐배터리 보관하고 싶어요",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "폐배터리 수거 안 하면 얼마예요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "폐배터리 수거 안 하면 얼마예요?",
+      "messages": [
+        "안내드린 가격은 기존 폐배터리 수거 조건입니다. 기존 배터리를 보관하시려면 전화로 정확한 조건을 확인해 주세요."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "코딩비 얼마예요?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "코딩비 얼마예요?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "코딩비용 포함인가요?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "코딩비용 포함인가요?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "코딩 무료인가요?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "코딩 무료인가요?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "BMW 코딩비 따로예요?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "BMW 코딩비 따로예요?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "배터리 코딩도 해주나요?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "배터리 코딩도 해주나요?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "코딩비는?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "코딩비는?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "코딩은?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "코딩은?",
+      "messages": [
+        "코딩이 필요한 차량은 필요한 코딩 작업까지 포함하며 별도 코딩비를 추가하지 않습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "점검도 해주나요?",
+      "messages": [
+        "배터리 교체 시 기본점검도 무료로 진행합니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "점검도 해주나요?",
+      "messages": [
+        "배터리 교체 시 기본점검도 무료로 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "기본점검 무료인가요?",
+      "messages": [
+        "배터리 교체 시 기본점검도 무료로 진행합니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "기본점검 무료인가요?",
+      "messages": [
+        "배터리 교체 시 기본점검도 무료로 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "점검비 있나요?",
+      "messages": [
+        "배터리 교체 시 기본점검도 무료로 진행합니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "점검비 있나요?",
+      "messages": [
+        "배터리 교체 시 기본점검도 무료로 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "현장에서 추가비용 있나요?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "현장에서 추가비용 있나요?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "추가금 있나요?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "추가금 있나요?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "현장 추가금 있나요?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "현장 추가금 있나요?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "가서 더 받는 거 아니죠?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "가서 더 받는 거 아니죠?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "안내 가격이 최종인가요?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "안내 가격이 최종인가요?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "현장에서 더 받는 거 없어요?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "현장에서 더 받는 거 없어요?",
+      "messages": [
+        "안내드린 차량·규격·조건 그대로 교체하는 경우 현장에서 별도 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "가격에 뭐가 포함돼요?",
+      "messages": [
+        "안내드린 교체 가격에는 출장교체비용과 공임이 포함되어 있고, 코딩이 필요한 차량은 코딩비도 별도로 받지 않습니다. 기본점검은 무료이며, 기존 폐배터리 수거 조건입니다. 안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "가격에 뭐가 포함돼요?",
+      "messages": [
+        "안내드린 교체 가격에는 출장교체비용과 공임이 포함되어 있고, 코딩이 필요한 차량은 코딩비도 별도로 받지 않습니다. 기본점검은 무료이며, 기존 폐배터리 수거 조건입니다. 안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "교체비용에 포함된 게 뭐예요?",
+      "messages": [
+        "안내드린 교체 가격에는 출장교체비용과 공임이 포함되어 있고, 코딩이 필요한 차량은 코딩비도 별도로 받지 않습니다. 기본점검은 무료이며, 기존 폐배터리 수거 조건입니다. 안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "교체비용에 포함된 게 뭐예요?",
+      "messages": [
+        "안내드린 교체 가격에는 출장교체비용과 공임이 포함되어 있고, 코딩이 필요한 차량은 코딩비도 별도로 받지 않습니다. 기본점검은 무료이며, 기존 폐배터리 수거 조건입니다. 안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "22만원이면 다 포함이에요?",
+      "messages": [
+        "안내드린 교체 가격에는 출장교체비용과 공임이 포함되어 있고, 코딩이 필요한 차량은 코딩비도 별도로 받지 않습니다. 기본점검은 무료이며, 기존 폐배터리 수거 조건입니다. 안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "22만원이면 다 포함이에요?",
+      "messages": [
+        "안내드린 교체 가격에는 출장교체비용과 공임이 포함되어 있고, 코딩이 필요한 차량은 코딩비도 별도로 받지 않습니다. 기본점검은 무료이며, 기존 폐배터리 수거 조건입니다. 안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "별도 비용 있나요?",
+      "messages": [
+        "안내드린 교체 가격에는 출장교체비용과 공임이 포함되어 있고, 코딩이 필요한 차량은 코딩비도 별도로 받지 않습니다. 기본점검은 무료이며, 기존 폐배터리 수거 조건입니다. 안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "별도 비용 있나요?",
+      "messages": [
+        "안내드린 교체 가격에는 출장교체비용과 공임이 포함되어 있고, 코딩이 필요한 차량은 코딩비도 별도로 받지 않습니다. 기본점검은 무료이며, 기존 폐배터리 수거 조건입니다. 안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "22만원이면 공임이랑 출장비 다 포함이에요?",
+      "messages": [
+        "안내드린 교체 가격에는 출장교체비용과 공임이 포함되어 있고, 코딩이 필요한 차량은 코딩비도 별도로 받지 않습니다. 기본점검은 무료이며, 기존 폐배터리 수거 조건입니다. 안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "",
+      "battery": null,
+      "quotedSpec": ""
+    },
+    {
+      "text": "22만원이면 공임이랑 출장비 다 포함이에요?",
+      "messages": [
+        "안내드린 교체 가격에는 출장교체비용과 공임이 포함되어 있고, 코딩이 필요한 차량은 코딩비도 별도로 받지 않습니다. 기본점검은 무료이며, 기존 폐배터리 수거 조건입니다. 안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "바르타로 하면?",
+      "messages": [
+        "차량에 따라 AGM70 또는 AGM80 중 하나가 장착될 수 있습니다.\nAGM70 바르타 기준 교체 가격은 22만원입니다.\nAGM80 바르타 기준 교체 가격은 24만원입니다.\n정확한 규격은 현재 장착된 배터리를 현장에서 확인해야 합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "AGM70 또는 AGM80"
+    },
+    {
+      "text": "바르타로 하면?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다.",
+        "출장·공임 포함, 폐배터리 수거 조건이며 필요한 차량의 코딩과 기본점검도 별도 비용 없이 진행합니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "바르타 AGM은?",
+      "messages": [
+        "AGM95 바르타 기준 교체 가격은 27만원입니다."
+      ],
+      "chips": [],
+      "brand": "VARTA",
+      "battery": "AGM95",
+      "quotedSpec": "AGM95"
+    },
+    {
+      "text": "아니 2023년식이야",
+      "messages": [
+        "네, 2023년식으로 바꿔서 확인할게요.",
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2023~현재년형 · 5시리즈 (G60) / 2017~2023년형 · 5시리즈 (G30) 중 어떤 차량인가요?"
+      ],
+      "chips": [
+        {
+          "label": "2023~현재년형 · 5시리즈 (G60)",
+          "value": "5시리즈 (G60)",
+          "selection": {
+            "type": "vehicle-candidate",
+            "id": "[\"detailModel\",\"bmw|5시리즈\",\"5시리즈 (G60)\",[\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린 2WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린 4WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린+전기 2WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린+전기 4WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"디젤 2WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"디젤 4WD\\\",\\\"5시리즈 (G60)\\\"]\"]]"
+          }
+        },
+        {
+          "label": "2017~2023년형 · 5시리즈 (G30)",
+          "value": "5시리즈 (G30)",
+          "selection": {
+            "type": "vehicle-candidate",
+            "id": "[\"detailModel\",\"bmw|5시리즈\",\"5시리즈 (G30)\",[\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"가솔린 2WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"가솔린 4WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"가솔린+전기 2WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"디젤 2WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"디젤 4WD\\\",\\\"5시리즈 (G30)\\\"]\"]]"
+          }
+        }
+      ],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "",
+      "area": "인천 남동구 구월동"
+    },
+    {
+      "text": "바르타로 하면?",
+      "messages": [
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2023~현재년형 · 5시리즈 (G60) / 2017~2023년형 · 5시리즈 (G30) 중 어떤 차량인가요?"
+      ],
+      "chips": [
+        {
+          "label": "2023~현재년형 · 5시리즈 (G60)",
+          "value": "5시리즈 (G60)",
+          "selection": {
+            "type": "vehicle-candidate",
+            "id": "[\"detailModel\",\"bmw|5시리즈\",\"5시리즈 (G60)\",[\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린 2WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린 4WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린+전기 2WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린+전기 4WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"디젤 2WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"디젤 4WD\\\",\\\"5시리즈 (G60)\\\"]\"]]"
+          }
+        },
+        {
+          "label": "2017~2023년형 · 5시리즈 (G30)",
+          "value": "5시리즈 (G30)",
+          "selection": {
+            "type": "vehicle-candidate",
+            "id": "[\"detailModel\",\"bmw|5시리즈\",\"5시리즈 (G30)\",[\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"가솔린 2WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"가솔린 4WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"가솔린+전기 2WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"디젤 2WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"디젤 4WD\\\",\\\"5시리즈 (G30)\\\"]\"]]"
+          }
+        }
+      ],
+      "brand": "VARTA",
+      "battery": null,
+      "quotedSpec": "",
+      "area": "인천 남동구 구월동"
+    }
+  ]
+}

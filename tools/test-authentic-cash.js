@@ -5,7 +5,7 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),policy=read('data/consult-se
 const rows=read('data/manufacturers.json').flatMap(m=>read('data/'+m.file).map(r=>({...r,manufacturerId:m.id,manufacturerName:m.name}))),areas=read('seo-data/smart-consult-location-index.json').localities;
 assert.equal(rows.length,917);assert.equal(areas.length,665);
 const old=JSON.parse(execFileSync('git',['show','6ea87f5c:data/consult-service-policy.json'],{encoding:'utf8'}));
-const stripped=structuredClone(policy);stripped.version=old.version;delete stripped.product.assurance;delete stripped.finalFaq.facts.CASH_PAYMENT_AVAILABLE;delete stripped.finalFaq.answers.CASH;stripped.finalFaq.answers.PAYMENT_COMBINED=old.finalFaq.answers.PAYMENT_COMBINED;assert.deepEqual(stripped,old);
+const stripped=structuredClone(policy);stripped.version=old.version;delete stripped.operational;delete stripped.product.assurance;delete stripped.finalFaq.facts.CASH_PAYMENT_AVAILABLE;delete stripped.finalFaq.answers.CASH;stripped.finalFaq.answers.PAYMENT_COMBINED=old.finalFaq.answers.PAYMENT_COMBINED;assert.deepEqual(stripped,old);
 assert.equal(policy.finalFaq.facts.CASH_PAYMENT_AVAILABLE,true);
 assert.equal(policy.finalFaq.answers.CASH,'네. 현금결제 가능합니다.');
 assert.deepEqual(policy.product.assurance,{AUTHENTIC:'네. 일등밧데리는 최신 정품만 사용합니다.',RECENT:'네. 항상 최신 제조일자 제품만 사용합니다.',COMBINED:'네. 일등밧데리는 최신 정품과 최신 제조일자 제품만 사용합니다.',EXACT_DATE:'항상 최신 제조일자 제품만 사용합니다. 정확한 현재 제품의 제조일자·출고일·입고일은 제품 확인이 필요하므로 고객센터 {phone}로 확인해 주세요.'});

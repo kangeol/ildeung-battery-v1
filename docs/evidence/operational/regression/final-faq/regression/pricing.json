@@ -1,0 +1,2401 @@
+{
+  "status": "PASS",
+  "cases": 3668,
+  "metrics": {
+    "PRICE_MAP_WRONG_VALUE": 0,
+    "AGM105_OLD_270000_REMAINING": 0,
+    "AG60_STANDALONE_REMAINING": 0,
+    "FABRICATED_PRICE": 0,
+    "COMPOSITE_SINGLE_AUTOCONFIRM": 0,
+    "UNPRICED_NUMERIC_PRICE": 0,
+    "UNHANDLED_BATTERY_STRING": 0,
+    "WRONG_BATTERY_RECOMMENDATION": 0,
+    "AMBIGUOUS_BATTERY_AUTOCONFIRM": 0
+  },
+  "coverage": [
+    {
+      "spec": "AGM70",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "AGM70",
+          "brand": "DELKOR",
+          "supported": true,
+          "amount": 170000
+        }
+      ],
+      "rows": [
+        "audi.json[0]",
+        "audi.json[1]",
+        "audi.json[2]",
+        "audi.json[3]",
+        "audi.json[4]",
+        "audi.json[43]",
+        "audi.json[44]",
+        "audi.json[45]",
+        "audi.json[46]",
+        "audi.json[47]",
+        "audi.json[58]",
+        "audi.json[59]",
+        "audi.json[60]",
+        "audi.json[61]",
+        "benz.json[6]",
+        "benz.json[8]",
+        "benz.json[17]",
+        "benz.json[18]",
+        "benz.json[19]",
+        "benz.json[36]",
+        "benz.json[37]",
+        "benz.json[38]",
+        "bmw.json[77]",
+        "bmw.json[78]",
+        "bmw.json[79]",
+        "chevrolet.json[5]",
+        "chevrolet.json[7]",
+        "chevrolet.json[9]",
+        "chevrolet.json[10]",
+        "chevrolet.json[11]",
+        "chevrolet.json[12]",
+        "chevrolet.json[16]",
+        "chevrolet.json[17]",
+        "chevrolet.json[33]",
+        "chevrolet.json[34]",
+        "chevrolet.json[35]",
+        "ford.json[13]",
+        "ford.json[14]",
+        "ford.json[17]",
+        "ford.json[18]",
+        "ford.json[19]",
+        "hyundai.json[1]",
+        "hyundai.json[2]",
+        "hyundai.json[3]",
+        "hyundai.json[6]",
+        "hyundai.json[21]",
+        "hyundai.json[22]",
+        "hyundai.json[24]",
+        "hyundai.json[27]",
+        "hyundai.json[30]",
+        "hyundai.json[33]",
+        "hyundai.json[37]",
+        "hyundai.json[52]",
+        "hyundai.json[54]",
+        "hyundai.json[56]",
+        "hyundai.json[57]",
+        "hyundai.json[58]",
+        "hyundai.json[78]",
+        "hyundai.json[81]",
+        "hyundai.json[91]",
+        "hyundai.json[101]",
+        "hyundai.json[113]",
+        "hyundai.json[114]",
+        "hyundai.json[133]",
+        "hyundai.json[140]",
+        "hyundai.json[141]",
+        "hyundai.json[142]",
+        "jeep.json[6]",
+        "jeep.json[7]",
+        "jeep.json[8]",
+        "jeep.json[9]",
+        "kgm.json[10]",
+        "kgm.json[11]",
+        "kgm.json[12]",
+        "kgm.json[20]",
+        "kgm.json[21]",
+        "kgm.json[29]",
+        "kgm.json[30]",
+        "kgm.json[31]",
+        "kgm.json[32]",
+        "kgm.json[33]",
+        "kgm.json[34]",
+        "kia.json[15]",
+        "kia.json[18]",
+        "kia.json[32]",
+        "kia.json[34]",
+        "kia.json[36]",
+        "kia.json[40]",
+        "kia.json[56]",
+        "kia.json[57]",
+        "kia.json[59]",
+        "kia.json[80]",
+        "kia.json[83]",
+        "kia.json[89]",
+        "kia.json[97]",
+        "kia.json[98]",
+        "kia.json[100]",
+        "kia.json[102]",
+        "kia.json[117]",
+        "kia.json[118]",
+        "kia.json[119]",
+        "kia.json[120]",
+        "kia.json[121]",
+        "kia.json[122]",
+        "kia.json[123]",
+        "kia.json[131]",
+        "kia.json[133]",
+        "renault.json[2]",
+        "renault.json[4]",
+        "renault.json[6]",
+        "renault.json[8]",
+        "renault.json[9]",
+        "renault.json[10]",
+        "renault.json[11]",
+        "renault.json[14]",
+        "renault.json[17]",
+        "renault.json[22]",
+        "renault.json[26]",
+        "renault.json[28]",
+        "renault.json[30]",
+        "renault.json[37]",
+        "renault.json[40]",
+        "renault.json[41]",
+        "renault.json[43]",
+        "renault.json[44]",
+        "renault.json[45]",
+        "volkswagen.json[0]",
+        "volkswagen.json[1]",
+        "volkswagen.json[2]",
+        "volkswagen.json[3]",
+        "volkswagen.json[4]",
+        "volkswagen.json[5]",
+        "volkswagen.json[6]",
+        "volkswagen.json[7]",
+        "volkswagen.json[8]",
+        "volkswagen.json[9]",
+        "volkswagen.json[10]",
+        "volkswagen.json[11]",
+        "volkswagen.json[12]",
+        "volkswagen.json[13]",
+        "volkswagen.json[14]",
+        "volkswagen.json[15]",
+        "volkswagen.json[16]",
+        "volkswagen.json[17]",
+        "volkswagen.json[18]",
+        "volkswagen.json[25]",
+        "volkswagen.json[26]",
+        "volkswagen.json[27]",
+        "volkswagen.json[28]",
+        "volkswagen.json[29]",
+        "volkswagen.json[30]",
+        "volkswagen.json[31]",
+        "volkswagen.json[32]",
+        "volkswagen.json[33]",
+        "volkswagen.json[34]",
+        "volkswagen.json[35]",
+        "volkswagen.json[36]",
+        "volkswagen.json[37]",
+        "volkswagen.json[38]",
+        "volkswagen.json[39]",
+        "volkswagen.json[40]",
+        "volkswagen.json[41]",
+        "volkswagen.json[42]",
+        "volkswagen.json[43]",
+        "volkswagen.json[44]",
+        "volkswagen.json[45]",
+        "volkswagen.json[46]",
+        "volkswagen.json[47]",
+        "volkswagen.json[48]",
+        "volkswagen.json[49]",
+        "volkswagen.json[50]",
+        "volkswagen.json[51]",
+        "volkswagen.json[52]",
+        "volkswagen.json[53]",
+        "volkswagen.json[54]",
+        "volkswagen.json[55]",
+        "volkswagen.json[56]",
+        "volkswagen.json[57]",
+        "volkswagen.json[58]",
+        "volkswagen.json[59]",
+        "volkswagen.json[60]",
+        "volkswagen.json[61]",
+        "volkswagen.json[62]",
+        "volkswagen.json[63]",
+        "volkswagen.json[64]",
+        "volkswagen.json[65]",
+        "volkswagen.json[66]",
+        "volkswagen.json[67]",
+        "volvo.json[0]",
+        "volvo.json[1]",
+        "volvo.json[24]",
+        "volvo.json[25]",
+        "volvo.json[26]",
+        "volvo.json[27]",
+        "volvo.json[28]",
+        "volvo.json[29]",
+        "volvo.json[30]",
+        "volvo.json[31]"
+      ]
+    },
+    {
+      "spec": "AGM95",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "AGM95",
+          "brand": "DELKOR",
+          "supported": true,
+          "amount": 220000
+        }
+      ],
+      "rows": [
+        "audi.json[5]",
+        "audi.json[6]",
+        "audi.json[7]",
+        "audi.json[8]",
+        "audi.json[9]",
+        "audi.json[10]",
+        "audi.json[11]",
+        "audi.json[12]",
+        "audi.json[13]",
+        "audi.json[14]",
+        "audi.json[15]",
+        "audi.json[16]",
+        "audi.json[17]",
+        "audi.json[18]",
+        "audi.json[19]",
+        "audi.json[27]",
+        "audi.json[28]",
+        "audi.json[29]",
+        "audi.json[30]",
+        "audi.json[31]",
+        "audi.json[32]",
+        "audi.json[48]",
+        "audi.json[49]",
+        "audi.json[50]",
+        "audi.json[51]",
+        "audi.json[52]",
+        "audi.json[53]",
+        "benz.json[28]",
+        "benz.json[29]",
+        "benz.json[30]",
+        "benz.json[31]",
+        "benz.json[32]",
+        "benz.json[33]",
+        "benz.json[34]",
+        "benz.json[35]",
+        "benz.json[41]",
+        "benz.json[42]",
+        "benz.json[45]",
+        "benz.json[46]",
+        "benz.json[47]",
+        "benz.json[64]",
+        "benz.json[65]",
+        "benz.json[66]",
+        "benz.json[67]",
+        "benz.json[68]",
+        "benz.json[80]",
+        "benz.json[81]",
+        "benz.json[82]",
+        "benz.json[83]",
+        "bmw.json[14]",
+        "bmw.json[15]",
+        "bmw.json[16]",
+        "bmw.json[17]",
+        "bmw.json[18]",
+        "bmw.json[19]",
+        "bmw.json[20]",
+        "bmw.json[21]",
+        "bmw.json[22]",
+        "bmw.json[23]",
+        "bmw.json[24]",
+        "bmw.json[25]",
+        "bmw.json[26]",
+        "bmw.json[27]",
+        "bmw.json[28]",
+        "bmw.json[29]",
+        "bmw.json[30]",
+        "bmw.json[37]",
+        "bmw.json[38]",
+        "bmw.json[39]",
+        "bmw.json[40]",
+        "bmw.json[41]",
+        "bmw.json[42]",
+        "bmw.json[43]",
+        "bmw.json[44]",
+        "bmw.json[45]",
+        "bmw.json[46]",
+        "bmw.json[47]",
+        "bmw.json[48]",
+        "bmw.json[53]",
+        "bmw.json[54]",
+        "bmw.json[55]",
+        "bmw.json[56]",
+        "bmw.json[57]",
+        "bmw.json[58]",
+        "bmw.json[59]",
+        "bmw.json[60]",
+        "bmw.json[61]",
+        "bmw.json[62]",
+        "bmw.json[63]",
+        "bmw.json[64]",
+        "bmw.json[65]",
+        "bmw.json[66]",
+        "bmw.json[67]",
+        "bmw.json[68]",
+        "bmw.json[69]",
+        "bmw.json[70]",
+        "bmw.json[80]",
+        "bmw.json[81]",
+        "bmw.json[82]",
+        "bmw.json[83]",
+        "bmw.json[84]",
+        "bmw.json[85]",
+        "bmw.json[86]",
+        "bmw.json[87]",
+        "bmw.json[88]",
+        "bmw.json[89]",
+        "bmw.json[90]",
+        "bmw.json[91]",
+        "bmw.json[92]",
+        "bmw.json[93]",
+        "bmw.json[94]",
+        "bmw.json[95]",
+        "bmw.json[96]",
+        "bmw.json[97]",
+        "bmw.json[98]",
+        "bmw.json[99]",
+        "bmw.json[100]",
+        "bmw.json[101]",
+        "bmw.json[102]",
+        "bmw.json[103]",
+        "bmw.json[104]",
+        "bmw.json[105]",
+        "bmw.json[106]",
+        "bmw.json[107]",
+        "bmw.json[108]",
+        "bmw.json[109]",
+        "bmw.json[110]",
+        "bmw.json[111]",
+        "bmw.json[112]",
+        "chevrolet.json[38]",
+        "chevrolet.json[39]",
+        "chevrolet.json[40]",
+        "chevrolet.json[44]",
+        "chevrolet.json[45]",
+        "ford.json[0]",
+        "ford.json[1]",
+        "ford.json[2]",
+        "genesis.json[3]",
+        "genesis.json[6]",
+        "hyundai.json[42]",
+        "hyundai.json[43]",
+        "hyundai.json[44]",
+        "hyundai.json[45]",
+        "hyundai.json[71]",
+        "hyundai.json[72]",
+        "hyundai.json[73]",
+        "hyundai.json[74]",
+        "hyundai.json[75]",
+        "hyundai.json[76]",
+        "hyundai.json[77]",
+        "hyundai.json[105]",
+        "kia.json[21]",
+        "kia.json[22]",
+        "kia.json[23]",
+        "kia.json[24]",
+        "kia.json[106]",
+        "kia.json[124]",
+        "kia.json[125]",
+        "kia.json[126]",
+        "landrover.json[5]",
+        "landrover.json[6]",
+        "landrover.json[7]",
+        "landrover.json[8]",
+        "landrover.json[9]",
+        "landrover.json[10]",
+        "landrover.json[11]",
+        "landrover.json[12]",
+        "landrover.json[13]",
+        "landrover.json[14]",
+        "landrover.json[15]",
+        "landrover.json[16]",
+        "landrover.json[17]",
+        "landrover.json[18]",
+        "landrover.json[19]",
+        "landrover.json[20]",
+        "landrover.json[21]",
+        "landrover.json[22]",
+        "landrover.json[28]",
+        "landrover.json[29]",
+        "landrover.json[30]",
+        "landrover.json[31]",
+        "landrover.json[32]",
+        "landrover.json[33]",
+        "landrover.json[34]",
+        "renault.json[34]",
+        "renault.json[39]"
+      ]
+    },
+    {
+      "spec": "AGM105",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "AGM105",
+          "brand": "DELKOR",
+          "supported": true,
+          "amount": 280000
+        }
+      ],
+      "rows": [
+        "audi.json[5]",
+        "audi.json[6]",
+        "audi.json[7]",
+        "audi.json[8]",
+        "audi.json[9]",
+        "audi.json[10]",
+        "audi.json[11]",
+        "audi.json[12]",
+        "audi.json[13]",
+        "audi.json[14]",
+        "audi.json[15]",
+        "audi.json[16]",
+        "audi.json[17]",
+        "audi.json[18]",
+        "audi.json[19]",
+        "audi.json[27]",
+        "audi.json[28]",
+        "audi.json[29]",
+        "audi.json[30]",
+        "audi.json[31]",
+        "audi.json[32]",
+        "audi.json[36]",
+        "audi.json[37]",
+        "audi.json[38]",
+        "audi.json[39]",
+        "audi.json[40]",
+        "audi.json[41]",
+        "audi.json[42]",
+        "audi.json[48]",
+        "audi.json[49]",
+        "audi.json[50]",
+        "audi.json[51]",
+        "audi.json[52]",
+        "audi.json[53]",
+        "benz.json[71]",
+        "benz.json[72]",
+        "benz.json[73]",
+        "benz.json[74]",
+        "benz.json[75]",
+        "benz.json[76]",
+        "benz.json[77]",
+        "benz.json[78]",
+        "benz.json[79]",
+        "bmw.json[37]",
+        "bmw.json[38]",
+        "bmw.json[39]",
+        "bmw.json[40]",
+        "bmw.json[41]",
+        "bmw.json[42]",
+        "bmw.json[43]",
+        "bmw.json[44]",
+        "bmw.json[45]",
+        "bmw.json[46]",
+        "bmw.json[47]",
+        "bmw.json[48]",
+        "bmw.json[49]",
+        "bmw.json[50]",
+        "bmw.json[51]",
+        "bmw.json[52]",
+        "bmw.json[53]",
+        "bmw.json[54]",
+        "bmw.json[55]",
+        "bmw.json[56]",
+        "bmw.json[57]",
+        "bmw.json[58]",
+        "bmw.json[59]",
+        "bmw.json[60]",
+        "bmw.json[61]",
+        "bmw.json[62]",
+        "bmw.json[63]",
+        "bmw.json[64]",
+        "bmw.json[65]",
+        "bmw.json[66]",
+        "bmw.json[67]",
+        "bmw.json[68]",
+        "bmw.json[69]",
+        "bmw.json[70]",
+        "bmw.json[80]",
+        "bmw.json[81]",
+        "bmw.json[82]",
+        "bmw.json[83]",
+        "bmw.json[84]",
+        "bmw.json[85]",
+        "bmw.json[86]",
+        "bmw.json[87]",
+        "bmw.json[88]",
+        "bmw.json[89]",
+        "bmw.json[90]",
+        "bmw.json[91]",
+        "bmw.json[92]",
+        "bmw.json[93]",
+        "bmw.json[94]",
+        "bmw.json[95]",
+        "bmw.json[96]",
+        "bmw.json[97]",
+        "bmw.json[98]",
+        "bmw.json[99]",
+        "bmw.json[100]",
+        "bmw.json[101]",
+        "bmw.json[102]",
+        "bmw.json[103]",
+        "bmw.json[104]",
+        "bmw.json[105]",
+        "bmw.json[106]",
+        "bmw.json[107]",
+        "bmw.json[108]",
+        "bmw.json[109]",
+        "bmw.json[110]",
+        "bmw.json[111]",
+        "bmw.json[112]",
+        "genesis.json[0]",
+        "genesis.json[1]",
+        "genesis.json[9]",
+        "genesis.json[10]",
+        "genesis.json[12]",
+        "hyundai.json[134]",
+        "kia.json[104]",
+        "kia.json[105]"
+      ]
+    },
+    {
+      "spec": "고객센터문의",
+      "category": "CUSTOMER_CENTER",
+      "prices": [
+        {
+          "code": "고객센터문의",
+          "brand": "",
+          "supported": true,
+          "amount": null
+        }
+      ],
+      "rows": [
+        "audi.json[20]",
+        "audi.json[21]",
+        "audi.json[22]",
+        "audi.json[23]",
+        "audi.json[24]",
+        "audi.json[25]",
+        "audi.json[26]",
+        "audi.json[33]",
+        "audi.json[34]",
+        "audi.json[35]",
+        "audi.json[54]",
+        "audi.json[55]",
+        "audi.json[56]",
+        "audi.json[57]",
+        "bmw.json[0]",
+        "bmw.json[1]",
+        "bmw.json[31]",
+        "bmw.json[32]",
+        "bmw.json[33]",
+        "bmw.json[34]",
+        "bmw.json[35]",
+        "bmw.json[36]",
+        "bmw.json[49]",
+        "bmw.json[50]",
+        "bmw.json[51]",
+        "bmw.json[52]",
+        "genesis.json[11]",
+        "genesis.json[13]",
+        "genesis.json[14]",
+        "genesis.json[15]",
+        "genesis.json[16]",
+        "genesis.json[17]",
+        "hyundai.json[0]",
+        "hyundai.json[4]",
+        "hyundai.json[51]",
+        "hyundai.json[119]",
+        "hyundai.json[120]",
+        "hyundai.json[121]",
+        "hyundai.json[122]",
+        "hyundai.json[123]",
+        "hyundai.json[124]",
+        "kgm.json[8]",
+        "kgm.json[9]",
+        "kgm.json[22]",
+        "kia.json[1]",
+        "kia.json[51]",
+        "kia.json[52]",
+        "kia.json[99]",
+        "kia.json[103]"
+      ]
+    },
+    {
+      "spec": "AGM80",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "AGM80",
+          "brand": "DELKOR",
+          "supported": true,
+          "amount": 190000
+        }
+      ],
+      "rows": [
+        "benz.json[0]",
+        "benz.json[1]",
+        "benz.json[2]",
+        "benz.json[3]",
+        "benz.json[4]",
+        "benz.json[5]",
+        "benz.json[7]",
+        "benz.json[9]",
+        "benz.json[10]",
+        "benz.json[11]",
+        "benz.json[12]",
+        "benz.json[13]",
+        "benz.json[14]",
+        "benz.json[15]",
+        "benz.json[16]",
+        "benz.json[20]",
+        "benz.json[21]",
+        "benz.json[22]",
+        "benz.json[23]",
+        "benz.json[24]",
+        "benz.json[25]",
+        "benz.json[26]",
+        "benz.json[27]",
+        "benz.json[39]",
+        "benz.json[40]",
+        "benz.json[43]",
+        "benz.json[44]",
+        "benz.json[48]",
+        "benz.json[49]",
+        "benz.json[50]",
+        "benz.json[51]",
+        "benz.json[52]",
+        "benz.json[53]",
+        "benz.json[54]",
+        "benz.json[55]",
+        "benz.json[56]",
+        "benz.json[57]",
+        "benz.json[58]",
+        "benz.json[59]",
+        "benz.json[60]",
+        "benz.json[61]",
+        "benz.json[62]",
+        "benz.json[63]",
+        "benz.json[69]",
+        "benz.json[70]",
+        "benz.json[84]",
+        "benz.json[85]",
+        "benz.json[86]",
+        "benz.json[87]",
+        "benz.json[88]",
+        "benz.json[89]",
+        "bmw.json[2]",
+        "bmw.json[3]",
+        "bmw.json[4]",
+        "bmw.json[5]",
+        "bmw.json[6]",
+        "bmw.json[7]",
+        "bmw.json[8]",
+        "bmw.json[9]",
+        "bmw.json[10]",
+        "bmw.json[11]",
+        "bmw.json[12]",
+        "bmw.json[13]",
+        "bmw.json[113]",
+        "bmw.json[114]",
+        "chevrolet.json[11]",
+        "chevrolet.json[20]",
+        "chevrolet.json[21]",
+        "chevrolet.json[32]",
+        "ford.json[3]",
+        "ford.json[4]",
+        "ford.json[5]",
+        "ford.json[6]",
+        "ford.json[7]",
+        "ford.json[8]",
+        "ford.json[9]",
+        "ford.json[10]",
+        "ford.json[11]",
+        "ford.json[12]",
+        "ford.json[13]",
+        "ford.json[14]",
+        "genesis.json[2]",
+        "genesis.json[4]",
+        "genesis.json[5]",
+        "hyundai.json[7]",
+        "hyundai.json[10]",
+        "hyundai.json[11]",
+        "hyundai.json[39]",
+        "hyundai.json[41]",
+        "hyundai.json[42]",
+        "hyundai.json[44]",
+        "hyundai.json[61]",
+        "hyundai.json[62]",
+        "hyundai.json[71]",
+        "hyundai.json[72]",
+        "hyundai.json[73]",
+        "hyundai.json[74]",
+        "hyundai.json[75]",
+        "hyundai.json[76]",
+        "hyundai.json[77]",
+        "hyundai.json[78]",
+        "hyundai.json[79]",
+        "hyundai.json[82]",
+        "hyundai.json[84]",
+        "hyundai.json[85]",
+        "jeep.json[0]",
+        "jeep.json[1]",
+        "jeep.json[2]",
+        "jeep.json[3]",
+        "jeep.json[4]",
+        "jeep.json[5]",
+        "jeep.json[10]",
+        "jeep.json[11]",
+        "jeep.json[12]",
+        "jeep.json[13]",
+        "jeep.json[14]",
+        "jeep.json[15]",
+        "jeep.json[16]",
+        "kgm.json[1]",
+        "kgm.json[2]",
+        "kia.json[0]",
+        "kia.json[2]",
+        "kia.json[3]",
+        "kia.json[4]",
+        "kia.json[5]",
+        "kia.json[17]",
+        "kia.json[20]",
+        "kia.json[37]",
+        "kia.json[41]",
+        "kia.json[60]",
+        "kia.json[62]",
+        "kia.json[64]",
+        "kia.json[85]",
+        "kia.json[86]",
+        "kia.json[89]",
+        "kia.json[90]",
+        "kia.json[101]",
+        "kia.json[124]",
+        "kia.json[125]",
+        "kia.json[143]",
+        "landrover.json[0]",
+        "landrover.json[1]",
+        "landrover.json[2]",
+        "landrover.json[3]",
+        "landrover.json[4]",
+        "landrover.json[23]",
+        "landrover.json[24]",
+        "landrover.json[25]",
+        "landrover.json[26]",
+        "landrover.json[27]",
+        "landrover.json[35]",
+        "landrover.json[36]",
+        "landrover.json[37]",
+        "renault.json[14]",
+        "renault.json[17]",
+        "volvo.json[5]",
+        "volvo.json[6]",
+        "volvo.json[7]",
+        "volvo.json[8]",
+        "volvo.json[9]",
+        "volvo.json[13]",
+        "volvo.json[14]",
+        "volvo.json[15]",
+        "volvo.json[16]",
+        "volvo.json[17]",
+        "volvo.json[18]",
+        "volvo.json[19]",
+        "volvo.json[20]",
+        "volvo.json[21]",
+        "volvo.json[22]",
+        "volvo.json[23]",
+        "volvo.json[24]",
+        "volvo.json[25]",
+        "volvo.json[26]",
+        "volvo.json[27]",
+        "volvo.json[28]",
+        "volvo.json[29]",
+        "volvo.json[30]",
+        "volvo.json[31]",
+        "volvo.json[32]",
+        "volvo.json[33]"
+      ]
+    },
+    {
+      "spec": "DIN74",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DIN74",
+          "brand": "",
+          "supported": true,
+          "amount": 125000
+        }
+      ],
+      "rows": [
+        "benz.json[8]",
+        "benz.json[17]",
+        "benz.json[18]",
+        "benz.json[19]",
+        "volvo.json[2]",
+        "volvo.json[3]",
+        "volvo.json[4]",
+        "volvo.json[10]",
+        "volvo.json[11]",
+        "volvo.json[12]"
+      ]
+    },
+    {
+      "spec": "AGM70 / AGM80",
+      "category": "COMPOSITE_ALL_COMPONENTS_PRICED",
+      "prices": [
+        {
+          "code": "AGM70",
+          "brand": "DELKOR",
+          "supported": true,
+          "amount": 170000
+        },
+        {
+          "code": "AGM80",
+          "brand": "DELKOR",
+          "supported": true,
+          "amount": 190000
+        }
+      ],
+      "rows": [
+        "bmw.json[71]",
+        "bmw.json[72]",
+        "bmw.json[73]",
+        "bmw.json[74]",
+        "bmw.json[75]",
+        "bmw.json[76]"
+      ]
+    },
+    {
+      "spec": "DIN50L",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DIN50L",
+          "brand": "",
+          "supported": true,
+          "amount": 90000
+        }
+      ],
+      "rows": [
+        "chevrolet.json[0]",
+        "chevrolet.json[1]",
+        "chevrolet.json[2]",
+        "chevrolet.json[3]",
+        "chevrolet.json[4]",
+        "chevrolet.json[26]",
+        "chevrolet.json[27]",
+        "hyundai.json[108]",
+        "hyundai.json[138]",
+        "hyundai.json[143]",
+        "hyundai.json[144]",
+        "kia.json[71]",
+        "kia.json[72]",
+        "kia.json[73]",
+        "kia.json[74]",
+        "kia.json[129]"
+      ]
+    },
+    {
+      "spec": "AGM60",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "AGM60",
+          "brand": "DELKOR",
+          "supported": true,
+          "amount": 155000
+        }
+      ],
+      "rows": [
+        "chevrolet.json[1]",
+        "hyundai.json[21]",
+        "hyundai.json[22]",
+        "hyundai.json[24]",
+        "hyundai.json[38]",
+        "hyundai.json[40]",
+        "hyundai.json[80]",
+        "hyundai.json[83]",
+        "hyundai.json[126]",
+        "hyundai.json[127]",
+        "hyundai.json[128]",
+        "hyundai.json[129]",
+        "hyundai.json[130]",
+        "hyundai.json[140]",
+        "hyundai.json[141]",
+        "hyundai.json[142]",
+        "jeep.json[17]",
+        "jeep.json[18]",
+        "kia.json[16]",
+        "kia.json[19]",
+        "kia.json[108]",
+        "kia.json[109]",
+        "kia.json[110]",
+        "kia.json[111]",
+        "kia.json[117]",
+        "kia.json[118]",
+        "kia.json[119]",
+        "kia.json[120]",
+        "kia.json[122]",
+        "kia.json[128]",
+        "kia.json[136]",
+        "renault.json[38]",
+        "renault.json[42]",
+        "volkswagen.json[19]",
+        "volkswagen.json[20]",
+        "volkswagen.json[21]",
+        "volkswagen.json[22]",
+        "volkswagen.json[23]",
+        "volkswagen.json[24]"
+      ]
+    },
+    {
+      "spec": "DIN60L",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DIN60L",
+          "brand": "",
+          "supported": true,
+          "amount": 105000
+        }
+      ],
+      "rows": [
+        "chevrolet.json[6]",
+        "chevrolet.json[8]",
+        "volkswagen.json[19]",
+        "volkswagen.json[20]",
+        "volkswagen.json[21]",
+        "volkswagen.json[22]",
+        "volkswagen.json[23]",
+        "volkswagen.json[24]"
+      ]
+    },
+    {
+      "spec": "DIN74L",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DIN74L",
+          "brand": "",
+          "supported": true,
+          "amount": 125000
+        }
+      ],
+      "rows": [
+        "chevrolet.json[7]",
+        "chevrolet.json[9]",
+        "chevrolet.json[13]",
+        "chevrolet.json[14]",
+        "chevrolet.json[22]",
+        "chevrolet.json[24]",
+        "chevrolet.json[30]",
+        "chevrolet.json[31]",
+        "hyundai.json[23]",
+        "hyundai.json[25]",
+        "hyundai.json[26]",
+        "hyundai.json[28]",
+        "hyundai.json[29]",
+        "hyundai.json[31]",
+        "hyundai.json[32]",
+        "hyundai.json[34]",
+        "hyundai.json[55]",
+        "hyundai.json[90]",
+        "hyundai.json[92]",
+        "hyundai.json[93]",
+        "hyundai.json[94]",
+        "hyundai.json[95]",
+        "hyundai.json[132]",
+        "hyundai.json[133]",
+        "kia.json[31]",
+        "kia.json[33]",
+        "kia.json[35]",
+        "kia.json[58]",
+        "kia.json[61]",
+        "kia.json[63]",
+        "kia.json[77]",
+        "kia.json[78]",
+        "kia.json[79]",
+        "kia.json[81]",
+        "kia.json[82]",
+        "renault.json[0]",
+        "renault.json[1]",
+        "renault.json[3]",
+        "renault.json[5]",
+        "renault.json[7]",
+        "renault.json[12]",
+        "renault.json[13]",
+        "renault.json[16]",
+        "renault.json[18]",
+        "renault.json[19]",
+        "renault.json[21]",
+        "renault.json[23]",
+        "renault.json[27]",
+        "renault.json[29]",
+        "volkswagen.json[12]",
+        "volkswagen.json[13]",
+        "volkswagen.json[14]",
+        "volkswagen.json[15]",
+        "volkswagen.json[16]",
+        "volkswagen.json[17]",
+        "volkswagen.json[18]"
+      ]
+    },
+    {
+      "spec": "DIN100L",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DIN100L",
+          "brand": "",
+          "supported": true,
+          "amount": 150000
+        }
+      ],
+      "rows": [
+        "chevrolet.json[15]",
+        "chevrolet.json[36]",
+        "chevrolet.json[37]",
+        "hyundai.json[131]",
+        "hyundai.json[135]",
+        "kgm.json[14]",
+        "kgm.json[15]",
+        "kgm.json[16]",
+        "kgm.json[17]",
+        "kia.json[107]",
+        "renault.json[35]"
+      ]
+    },
+    {
+      "spec": "DIN90L",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DIN90L",
+          "brand": "",
+          "supported": true,
+          "amount": 140000
+        }
+      ],
+      "rows": [
+        "chevrolet.json[18]",
+        "chevrolet.json[19]",
+        "chevrolet.json[23]",
+        "chevrolet.json[25]",
+        "hyundai.json[5]",
+        "hyundai.json[9]",
+        "kia.json[39]",
+        "kia.json[84]",
+        "kia.json[88]",
+        "renault.json[15]",
+        "renault.json[16]",
+        "renault.json[33]"
+      ]
+    },
+    {
+      "spec": "DIN60HL",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DIN60HL",
+          "brand": "",
+          "supported": true,
+          "amount": 105000
+        }
+      ],
+      "rows": [
+        "chevrolet.json[22]",
+        "chevrolet.json[24]",
+        "chevrolet.json[28]",
+        "chevrolet.json[29]",
+        "hyundai.json[23]",
+        "hyundai.json[25]",
+        "hyundai.json[26]",
+        "hyundai.json[28]",
+        "hyundai.json[29]",
+        "hyundai.json[31]",
+        "hyundai.json[32]",
+        "hyundai.json[34]",
+        "hyundai.json[90]",
+        "hyundai.json[92]",
+        "hyundai.json[94]",
+        "hyundai.json[108]",
+        "hyundai.json[113]",
+        "hyundai.json[114]",
+        "hyundai.json[132]",
+        "hyundai.json[139]",
+        "kgm.json[35]",
+        "kgm.json[37]",
+        "kia.json[31]",
+        "kia.json[33]",
+        "kia.json[35]",
+        "kia.json[58]",
+        "kia.json[61]",
+        "kia.json[63]",
+        "kia.json[77]",
+        "kia.json[78]",
+        "kia.json[79]",
+        "kia.json[81]",
+        "kia.json[82]",
+        "renault.json[1]",
+        "renault.json[3]",
+        "renault.json[12]",
+        "renault.json[21]",
+        "renault.json[24]"
+      ]
+    },
+    {
+      "spec": "DF60L",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DF60L",
+          "brand": "",
+          "supported": true,
+          "amount": 95000
+        }
+      ],
+      "rows": [
+        "chevrolet.json[26]",
+        "chevrolet.json[27]",
+        "hyundai.json[35]",
+        "hyundai.json[96]",
+        "hyundai.json[98]",
+        "hyundai.json[111]",
+        "kia.json[53]",
+        "kia.json[54]",
+        "kia.json[130]",
+        "kia.json[132]",
+        "kia.json[134]",
+        "kia.json[148]",
+        "kia.json[150]",
+        "renault.json[25]"
+      ]
+    },
+    {
+      "spec": "DF60R",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DF60R",
+          "brand": "",
+          "supported": true,
+          "amount": 100000
+        }
+      ],
+      "rows": [
+        "chevrolet.json[41]",
+        "chevrolet.json[42]",
+        "kia.json[127]"
+      ]
+    },
+    {
+      "spec": "DF80R",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DF80R",
+          "brand": "",
+          "supported": true,
+          "amount": 110000
+        }
+      ],
+      "rows": [
+        "chevrolet.json[43]",
+        "hyundai.json[115]",
+        "hyundai.json[117]"
+      ]
+    },
+    {
+      "spec": "65-900",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "65-900",
+          "brand": "",
+          "supported": true,
+          "amount": 155000
+        }
+      ],
+      "rows": [
+        "ford.json[15]",
+        "ford.json[16]"
+      ]
+    },
+    {
+      "spec": "AGM95R",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "AGM95R",
+          "brand": "DELKOR",
+          "supported": true,
+          "amount": 240000
+        }
+      ],
+      "rows": [
+        "genesis.json[7]",
+        "genesis.json[8]"
+      ]
+    },
+    {
+      "spec": "DIN74R",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DIN74R",
+          "brand": "",
+          "supported": true,
+          "amount": 130000
+        }
+      ],
+      "rows": [
+        "hyundai.json[8]",
+        "hyundai.json[12]",
+        "hyundai.json[16]",
+        "hyundai.json[59]",
+        "hyundai.json[67]",
+        "kia.json[38]",
+        "kia.json[42]",
+        "kia.json[50]",
+        "kia.json[87]",
+        "kia.json[91]",
+        "kia.json[94]"
+      ]
+    },
+    {
+      "spec": "DF80L",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DF80L",
+          "brand": "",
+          "supported": true,
+          "amount": 100000
+        }
+      ],
+      "rows": [
+        "hyundai.json[13]",
+        "hyundai.json[17]",
+        "hyundai.json[18]",
+        "hyundai.json[19]",
+        "hyundai.json[20]",
+        "hyundai.json[35]",
+        "hyundai.json[36]",
+        "hyundai.json[46]",
+        "hyundai.json[53]",
+        "hyundai.json[60]",
+        "hyundai.json[63]",
+        "hyundai.json[64]",
+        "hyundai.json[65]",
+        "hyundai.json[66]",
+        "hyundai.json[68]",
+        "hyundai.json[69]",
+        "hyundai.json[70]",
+        "hyundai.json[97]",
+        "hyundai.json[99]",
+        "hyundai.json[100]",
+        "hyundai.json[102]",
+        "hyundai.json[103]",
+        "hyundai.json[104]",
+        "hyundai.json[106]",
+        "hyundai.json[109]",
+        "hyundai.json[112]",
+        "hyundai.json[125]",
+        "hyundai.json[136]",
+        "hyundai.json[137]",
+        "kgm.json[36]",
+        "kgm.json[38]",
+        "kia.json[8]",
+        "kia.json[10]",
+        "kia.json[43]",
+        "kia.json[44]",
+        "kia.json[45]",
+        "kia.json[46]",
+        "kia.json[47]",
+        "kia.json[48]",
+        "kia.json[49]",
+        "kia.json[65]",
+        "kia.json[67]",
+        "kia.json[69]",
+        "kia.json[92]",
+        "kia.json[93]",
+        "kia.json[95]",
+        "kia.json[96]",
+        "kia.json[112]",
+        "kia.json[113]",
+        "kia.json[114]",
+        "kia.json[115]",
+        "kia.json[116]",
+        "kia.json[135]",
+        "kia.json[137]",
+        "kia.json[138]",
+        "kia.json[139]",
+        "kia.json[140]",
+        "kia.json[141]",
+        "kia.json[142]",
+        "kia.json[144]",
+        "kia.json[145]",
+        "kia.json[146]",
+        "kia.json[147]",
+        "kia.json[148]",
+        "kia.json[149]",
+        "kia.json[150]",
+        "kia.json[151]",
+        "renault.json[20]",
+        "renault.json[25]",
+        "renault.json[31]",
+        "renault.json[32]",
+        "renault.json[36]"
+      ]
+    },
+    {
+      "spec": "DF80L 또는 AGM70",
+      "category": "COMPOSITE_ALL_COMPONENTS_PRICED",
+      "prices": [
+        {
+          "code": "DF80L",
+          "brand": "",
+          "supported": true,
+          "amount": 100000
+        },
+        {
+          "code": "AGM70",
+          "brand": "DELKOR",
+          "supported": true,
+          "amount": 170000
+        }
+      ],
+      "rows": [
+        "hyundai.json[14]"
+      ]
+    },
+    {
+      "spec": "DF90L",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DF90L",
+          "brand": "",
+          "supported": true,
+          "amount": 110000
+        }
+      ],
+      "rows": [
+        "hyundai.json[15]",
+        "hyundai.json[47]",
+        "hyundai.json[48]",
+        "hyundai.json[49]",
+        "hyundai.json[50]",
+        "hyundai.json[107]",
+        "kia.json[6]",
+        "kia.json[7]",
+        "kia.json[8]",
+        "kia.json[9]",
+        "kia.json[25]",
+        "kia.json[26]",
+        "kia.json[27]",
+        "kia.json[28]",
+        "kia.json[70]",
+        "kia.json[137]",
+        "kia.json[138]"
+      ]
+    },
+    {
+      "spec": "DF90R",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DF90R",
+          "brand": "",
+          "supported": true,
+          "amount": 110000
+        }
+      ],
+      "rows": [
+        "hyundai.json[86]",
+        "hyundai.json[87]",
+        "hyundai.json[88]",
+        "hyundai.json[89]",
+        "hyundai.json[116]",
+        "hyundai.json[118]",
+        "kgm.json[0]",
+        "kgm.json[3]",
+        "kgm.json[4]",
+        "kgm.json[5]",
+        "kgm.json[6]",
+        "kgm.json[7]",
+        "kgm.json[13]",
+        "kgm.json[18]",
+        "kgm.json[19]",
+        "kgm.json[23]",
+        "kgm.json[24]",
+        "kgm.json[25]",
+        "kgm.json[26]",
+        "kgm.json[27]",
+        "kgm.json[28]",
+        "kia.json[66]",
+        "kia.json[68]"
+      ]
+    },
+    {
+      "spec": "DF100L",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DF100L",
+          "brand": "",
+          "supported": true,
+          "amount": 120000
+        }
+      ],
+      "rows": [
+        "hyundai.json[110]",
+        "hyundai.json[145]",
+        "hyundai.json[146]",
+        "kia.json[11]",
+        "kia.json[12]",
+        "kia.json[13]",
+        "kia.json[14]"
+      ]
+    },
+    {
+      "spec": "DF100R",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DF100R",
+          "brand": "",
+          "supported": true,
+          "amount": 125000
+        }
+      ],
+      "rows": [
+        "hyundai.json[116]",
+        "hyundai.json[118]",
+        "kia.json[29]",
+        "kia.json[30]"
+      ]
+    },
+    {
+      "spec": "DF40AL",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DF40AL",
+          "brand": "",
+          "supported": true,
+          "amount": 75000
+        }
+      ],
+      "rows": [
+        "kia.json[55]",
+        "kia.json[75]",
+        "kia.json[76]"
+      ]
+    },
+    {
+      "spec": "AGM70 또는 AGM80",
+      "category": "COMPOSITE_ALL_COMPONENTS_PRICED",
+      "prices": [
+        {
+          "code": "AGM70",
+          "brand": "DELKOR",
+          "supported": true,
+          "amount": 170000
+        },
+        {
+          "code": "AGM80",
+          "brand": "DELKOR",
+          "supported": true,
+          "amount": 190000
+        }
+      ],
+      "rows": [
+        "mini.json[0]",
+        "mini.json[1]",
+        "mini.json[2]",
+        "mini.json[3]",
+        "mini.json[4]",
+        "mini.json[5]",
+        "mini.json[6]",
+        "mini.json[7]",
+        "mini.json[8]",
+        "mini.json[9]",
+        "mini.json[10]",
+        "mini.json[11]",
+        "mini.json[12]",
+        "mini.json[13]",
+        "mini.json[14]",
+        "mini.json[15]",
+        "mini.json[16]",
+        "mini.json[17]",
+        "mini.json[18]",
+        "mini.json[19]",
+        "mini.json[20]",
+        "mini.json[21]",
+        "mini.json[22]"
+      ]
+    },
+    {
+      "spec": "DIN90",
+      "category": "EXACT_PRICED_SINGLE",
+      "prices": [
+        {
+          "code": "DIN90",
+          "brand": "",
+          "supported": true,
+          "amount": 140000
+        }
+      ],
+      "rows": [
+        "volvo.json[2]",
+        "volvo.json[3]",
+        "volvo.json[4]",
+        "volvo.json[10]",
+        "volvo.json[11]",
+        "volvo.json[12]"
+      ]
+    }
+  ],
+  "transcripts": [
+    {
+      "text": "DF40AL 얼마예요?",
+      "messages": [
+        "DF40AL 교체 가격은 7만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "df40al 얼마예요?",
+      "messages": [
+        "DF40AL 교체 가격은 7만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF 40AL 얼마예요?",
+      "messages": [
+        "DF40AL 교체 가격은 7만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF60L 얼마예요?",
+      "messages": [
+        "DF60L 교체 가격은 9만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "df60l 얼마예요?",
+      "messages": [
+        "DF60L 교체 가격은 9만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF 60L 얼마예요?",
+      "messages": [
+        "DF60L 교체 가격은 9만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF60R 얼마예요?",
+      "messages": [
+        "DF60R 교체 가격은 10만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "df60r 얼마예요?",
+      "messages": [
+        "DF60R 교체 가격은 10만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF 60R 얼마예요?",
+      "messages": [
+        "DF60R 교체 가격은 10만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF80L 얼마예요?",
+      "messages": [
+        "DF80L 교체 가격은 10만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "df80l 얼마예요?",
+      "messages": [
+        "DF80L 교체 가격은 10만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF 80L 얼마예요?",
+      "messages": [
+        "DF80L 교체 가격은 10만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF80R 얼마예요?",
+      "messages": [
+        "DF80R 교체 가격은 11만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "df80r 얼마예요?",
+      "messages": [
+        "DF80R 교체 가격은 11만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF 80R 얼마예요?",
+      "messages": [
+        "DF80R 교체 가격은 11만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF90L 얼마예요?",
+      "messages": [
+        "DF90L 교체 가격은 11만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "df90l 얼마예요?",
+      "messages": [
+        "DF90L 교체 가격은 11만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF 90L 얼마예요?",
+      "messages": [
+        "DF90L 교체 가격은 11만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF90R 얼마예요?",
+      "messages": [
+        "DF90R 교체 가격은 11만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "df90r 얼마예요?",
+      "messages": [
+        "DF90R 교체 가격은 11만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF 90R 얼마예요?",
+      "messages": [
+        "DF90R 교체 가격은 11만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF100L 얼마예요?",
+      "messages": [
+        "DF100L 교체 가격은 12만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "df100l 얼마예요?",
+      "messages": [
+        "DF100L 교체 가격은 12만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF 100L 얼마예요?",
+      "messages": [
+        "DF100L 교체 가격은 12만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF100R 얼마예요?",
+      "messages": [
+        "DF100R 교체 가격은 12만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "df100r 얼마예요?",
+      "messages": [
+        "DF100R 교체 가격은 12만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DF 100R 얼마예요?",
+      "messages": [
+        "DF100R 교체 가격은 12만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN50L 얼마예요?",
+      "messages": [
+        "DIN50L 교체 가격은 9만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "din50l 얼마예요?",
+      "messages": [
+        "DIN50L 교체 가격은 9만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN 50L 얼마예요?",
+      "messages": [
+        "DIN50L 교체 가격은 9만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN60L 얼마예요?",
+      "messages": [
+        "DIN60L 교체 가격은 10만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "din60l 얼마예요?",
+      "messages": [
+        "DIN60L 교체 가격은 10만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN 60L 얼마예요?",
+      "messages": [
+        "DIN60L 교체 가격은 10만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN60HL 얼마예요?",
+      "messages": [
+        "DIN60HL 교체 가격은 10만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "din60hl 얼마예요?",
+      "messages": [
+        "DIN60HL 교체 가격은 10만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN 60HL 얼마예요?",
+      "messages": [
+        "DIN60HL 교체 가격은 10만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN74 얼마예요?",
+      "messages": [
+        "DIN74 교체 가격은 12만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "din74 얼마예요?",
+      "messages": [
+        "DIN74 교체 가격은 12만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN 74 얼마예요?",
+      "messages": [
+        "DIN74 교체 가격은 12만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN74L 얼마예요?",
+      "messages": [
+        "DIN74L 교체 가격은 12만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "din74l 얼마예요?",
+      "messages": [
+        "DIN74L 교체 가격은 12만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN 74L 얼마예요?",
+      "messages": [
+        "DIN74L 교체 가격은 12만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN74R 얼마예요?",
+      "messages": [
+        "DIN74R 교체 가격은 13만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "din74r 얼마예요?",
+      "messages": [
+        "DIN74R 교체 가격은 13만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN 74R 얼마예요?",
+      "messages": [
+        "DIN74R 교체 가격은 13만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN90 얼마예요?",
+      "messages": [
+        "DIN90 교체 가격은 14만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "din90 얼마예요?",
+      "messages": [
+        "DIN90 교체 가격은 14만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN 90 얼마예요?",
+      "messages": [
+        "DIN90 교체 가격은 14만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN90L 얼마예요?",
+      "messages": [
+        "DIN90L 교체 가격은 14만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "din90l 얼마예요?",
+      "messages": [
+        "DIN90L 교체 가격은 14만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN 90L 얼마예요?",
+      "messages": [
+        "DIN90L 교체 가격은 14만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN100L 얼마예요?",
+      "messages": [
+        "DIN100L 교체 가격은 15만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "din100l 얼마예요?",
+      "messages": [
+        "DIN100L 교체 가격은 15만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN 100L 얼마예요?",
+      "messages": [
+        "DIN100L 교체 가격은 15만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "65-900 얼마예요?",
+      "messages": [
+        "65-900 교체 가격은 15만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "65-900 얼마예요?",
+      "messages": [
+        "65-900 교체 가격은 15만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "65-900 얼마예요?",
+      "messages": [
+        "65-900 교체 가격은 15만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM60 얼마예요?",
+      "messages": [
+        "AGM60 델코 기준 교체 가격은 15만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "agm60 얼마예요?",
+      "messages": [
+        "AGM60 델코 기준 교체 가격은 15만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM 60 얼마예요?",
+      "messages": [
+        "AGM60 델코 기준 교체 가격은 15만5천원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM70 얼마예요?",
+      "messages": [
+        "AGM70 델코 기준 교체 가격은 17만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "agm70 얼마예요?",
+      "messages": [
+        "AGM70 델코 기준 교체 가격은 17만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM 70 얼마예요?",
+      "messages": [
+        "AGM70 델코 기준 교체 가격은 17만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM80 얼마예요?",
+      "messages": [
+        "AGM80 델코 기준 교체 가격은 19만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "agm80 얼마예요?",
+      "messages": [
+        "AGM80 델코 기준 교체 가격은 19만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM 80 얼마예요?",
+      "messages": [
+        "AGM80 델코 기준 교체 가격은 19만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM80R 얼마예요?",
+      "messages": [
+        "AGM80R 델코 기준 교체 가격은 22만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "agm80r 얼마예요?",
+      "messages": [
+        "AGM80R 델코 기준 교체 가격은 22만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM 80R 얼마예요?",
+      "messages": [
+        "AGM80R 델코 기준 교체 가격은 22만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM95 얼마예요?",
+      "messages": [
+        "AGM95 델코 기준 교체 가격은 22만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "agm95 얼마예요?",
+      "messages": [
+        "AGM95 델코 기준 교체 가격은 22만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM 95 얼마예요?",
+      "messages": [
+        "AGM95 델코 기준 교체 가격은 22만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM95R 얼마예요?",
+      "messages": [
+        "AGM95R 델코 기준 교체 가격은 24만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "agm95r 얼마예요?",
+      "messages": [
+        "AGM95R 델코 기준 교체 가격은 24만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM 95R 얼마예요?",
+      "messages": [
+        "AGM95R 델코 기준 교체 가격은 24만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM105 얼마예요?",
+      "messages": [
+        "AGM105 델코 기준 교체 가격은 28만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "agm105 얼마예요?",
+      "messages": [
+        "AGM105 델코 기준 교체 가격은 28만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM 105 얼마예요?",
+      "messages": [
+        "AGM105 델코 기준 교체 가격은 28만원입니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "DIN70L 얼마예요?",
+      "messages": [
+        "DIN70L는 현재 등록된 규격이 아닙니다. 정확한 규격과 가격 확인이 필요합니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "AGM999 가격",
+      "messages": [
+        "AGM999는 현재 등록된 규격이 아닙니다. 정확한 규격과 가격 확인이 필요합니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "그랜저 GN7 2023년식 가솔린 2.5 배터리 얼마예요?",
+      "messages": [
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM70입니다.",
+        "AGM70 델코 기준 교체 가격은 17만원입니다."
+      ],
+      "chips": [],
+      "battery": "AGM70",
+      "priceIntent": true
+    },
+    {
+      "text": "그랜저 GN7 2023년식 LPG 배터리 얼마예요?",
+      "messages": [
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM70입니다.",
+        "AGM70 델코 기준 교체 가격은 17만원입니다."
+      ],
+      "chips": [],
+      "battery": "AGM70",
+      "priceIntent": true
+    },
+    {
+      "text": "그랜저 GN7 2023년식 가솔린 3.5 배터리 얼마예요?",
+      "messages": [
+        "이 차량은 배터리 규격을 전화로 확인해야 해요. 1644-9141로 문의해 주세요."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    },
+    {
+      "text": "구월동 BMW 배터리 얼마예요?",
+      "messages": [
+        "인천 남동구 구월동 지역은 출장 교체 가능 지역입니다.\n정확한 방문 시간은 1644-9141로 확인해드릴게요.",
+        "BMW 어떤 차종이세요? 1시리즈, 2시리즈, 3시리즈처럼 알려주세요."
+      ],
+      "chips": [
+        {
+          "label": "1시리즈",
+          "value": "1시리즈"
+        },
+        {
+          "label": "2시리즈",
+          "value": "2시리즈"
+        },
+        {
+          "label": "3시리즈",
+          "value": "3시리즈"
+        },
+        {
+          "label": "4시리즈",
+          "value": "4시리즈"
+        }
+      ],
+      "battery": null,
+      "area": "인천 남동구 구월동",
+      "priceIntent": true
+    },
+    {
+      "text": "5시리즈",
+      "messages": [
+        "같은 연식에도 배터리가 달라 차량을 조금 더 확인할게요.\n2023~현재년형 · 5시리즈 (G60) / 2017~2023년형 · 5시리즈 (G30) / 2010~2016년형 · 5시리즈 (F10) 중 어떤 차량인가요?"
+      ],
+      "chips": [
+        {
+          "label": "2023~현재년형 · 5시리즈 (G60)",
+          "value": "5시리즈 (G60)",
+          "selection": {
+            "type": "vehicle-candidate",
+            "id": "[\"detailModel\",\"bmw|5시리즈\",\"5시리즈 (G60)\",[\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린 2WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린 4WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린+전기 2WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"가솔린+전기 4WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"디젤 2WD\\\",\\\"5시리즈 (G60)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"23년~현재\\\",\\\"디젤 4WD\\\",\\\"5시리즈 (G60)\\\"]\"]]"
+          }
+        },
+        {
+          "label": "2017~2023년형 · 5시리즈 (G30)",
+          "value": "5시리즈 (G30)",
+          "selection": {
+            "type": "vehicle-candidate",
+            "id": "[\"detailModel\",\"bmw|5시리즈\",\"5시리즈 (G30)\",[\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"가솔린 2WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"가솔린 4WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"가솔린+전기 2WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"디젤 2WD\\\",\\\"5시리즈 (G30)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"17~23년\\\",\\\"디젤 4WD\\\",\\\"5시리즈 (G30)\\\"]\"]]"
+          }
+        },
+        {
+          "label": "2010~2016년형 · 5시리즈 (F10)",
+          "value": "5시리즈 (F10)",
+          "selection": {
+            "type": "vehicle-candidate",
+            "id": "[\"detailModel\",\"bmw|5시리즈\",\"5시리즈 (F10)\",[\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"10~16년\\\",\\\"가솔린 2WD\\\",\\\"5시리즈 (F10)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"10~16년\\\",\\\"가솔린 4WD\\\",\\\"5시리즈 (F10)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"10~16년\\\",\\\"디젤 2WD\\\",\\\"5시리즈 (F10)\\\"]\",\"[\\\"bmw\\\",\\\"5시리즈\\\",\\\"10~16년\\\",\\\"디젤 4WD\\\",\\\"5시리즈 (F10)\\\"]\"]]"
+          }
+        }
+      ],
+      "battery": null,
+      "area": "인천 남동구 구월동",
+      "priceIntent": true
+    },
+    {
+      "text": "2020년식",
+      "messages": [
+        "네, 확인됐어요.\n고객님 차량의 기본 배터리는 AGM95입니다.",
+        "같은 차량에 AGM105 업그레이드도 가능합니다.",
+        "AGM95 델코 기준 교체 가격은 22만원입니다."
+      ],
+      "chips": [],
+      "battery": "AGM95",
+      "area": "인천 남동구 구월동",
+      "priceIntent": true
+    },
+    {
+      "text": "미니 쿠퍼 배터리 얼마예요?",
+      "messages": [
+        "차량에 따라 AGM70 또는 AGM80 중 하나가 장착될 수 있습니다.\nAGM70 델코 기준 교체 가격은 17만원입니다.\nAGM80 델코 기준 교체 가격은 19만원입니다.\n정확한 규격은 현재 장착된 배터리를 현장에서 확인해야 합니다."
+      ],
+      "chips": [],
+      "battery": null,
+      "priceIntent": true
+    }
+  ],
+  "htmlChanges": [
+    "car-battery/chevrolet/alpheon.html",
+    "car-battery/hyundai/santafe.html",
+    "car-battery/hyundai/santafe/tm.html",
+    "smart-consult/index.html"
+  ]
+}
