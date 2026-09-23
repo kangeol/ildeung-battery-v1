@@ -1,4 +1,4 @@
-import { batteryPrice, formatWon, priceDescription, splitBatterySpec } from './smart-consult-prices.js?v=product-v1';
+import { batteryPrice, formatWon, priceDescription, splitBatterySpec } from './smart-consult-prices.js?v=owner-delkor-v1';
 
 // Exact canonical output matching is decoration only. Unknown text stays verbatim.
 // Never parse an arbitrary sentence into a vehicle fitment or a monetary value.

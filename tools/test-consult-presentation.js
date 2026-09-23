@@ -22,6 +22,8 @@ for(const p of ['js/smart-consult-conversation.js','js/smart-consult-prices.js',
 for(const p of ['tools/test-spec-vehicle-collision.js','tools/test-spec-vehicle-collision-browser.js','docs/spec-vehicle-collision-audit.md'])allowed.add(p);
 for(const p of ['data/consult-service-policy.json','js/smart-consult-purchase.js','tools/test-purchase-knowledge.js','tools/test-purchase-knowledge-browser.js','docs/purchase-knowledge-audit.md','tools/test-brand-comparison.js','tools/test-operational.js','tools/test-authentic-cash.js'])allowed.add(p);
 allowed.add('tools/test-final-faq.js');
+for(const p of ['tools/test-location-nlu.js','tools/lib/assert-non-agm-owner-policy.js'])allowed.add(p);
+for(const p of ['data/battery-prices.json','js/smart-consult-brand-comparison.js','tools/test-non-agm-owner-policy.js','tools/test-non-agm-owner-browser.js','docs/non-agm-owner-policy-audit.md'])allowed.add(p);
 for(const p of ['js/smart-consult-brand-query.js','tools/test-spec-brand-query.js','tools/test-spec-brand-query-browser.js','docs/spec-brand-query-audit.md','tools/test-battery-pricing.js','tools/test-battery-certainty-scope.js','tools/test-brand-service.js','tools/test-product-as-hours.js','tools/test-smart-consult-branding.js','tools/test-smart-consult-viewport.js'])allowed.add(p);
 for(const p of changed)check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
 const html=fs.readFileSync('smart-consult/index.html','utf8').replaceAll('\r\n','\n'),before=git(['show',baseline+':smart-consult/index.html']).replaceAll('\r\n','\n');

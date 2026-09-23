@@ -1,4 +1,4 @@
-import { batteryPrice, formatWon, priceDescription, splitBatterySpec } from './smart-consult-prices.js?v=product-v1';
+import { batteryPrice, formatWon, priceDescription, splitBatterySpec } from './smart-consult-prices.js?v=owner-delkor-v1';
 
 // Intent recognition only; policy assertions and prices are injected canonical data.
 export function comparisonIntent(text,state,catalog) {

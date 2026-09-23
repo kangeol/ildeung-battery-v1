@@ -2,15 +2,15 @@ import { MANUFACTURER_ALIASES, batteryStoreType, buildVehicleGroups, normalizeTe
 import { copy, variant, symptomLabels } from "./conversation-copy.js";
 import { resolveLocation } from "./smart-consult-location.js?v=location-v1";
 import { resolveVehicleText } from "./vehicle-aliases.js";
-import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand, normalizeBatteryCode, catalogSpecMention } from "./smart-consult-prices.js?v=spec-schedule-v1";
+import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand, normalizeBatteryCode, catalogSpecMention } from "./smart-consult-prices.js?v=owner-delkor-v1";
 import { servicePolicyIntent } from "./smart-consult-policy.js?v=faq-v1";
-import { extendedPolicyReply, assuranceReply } from "./smart-consult-product-policy.js?v=spec-schedule-v1";
+import { extendedPolicyReply, assuranceReply } from "./smart-consult-product-policy.js?v=owner-delkor-v1";
 import { finalFaqReply, finalFaqIntent } from "./smart-consult-faq.js?v=authentic-v1";
 import { operationalPlan } from "./smart-consult-operational.js?v=spec-schedule-v1";
 import { PHONE_LABEL } from "./smart-consult-core.js?v=certainty-v1";
-import { comparisonIntent, comparisonReply } from './smart-consult-brand-comparison.js?v=brand-compare-v1';
-import {purchaseKnowledgePlan,purchaseKnowledgeReply} from './smart-consult-purchase.js?v=purchase-v1';
-import {brandQueryPlan,brandQueryReply} from './smart-consult-brand-query.js?v=brand-query-v1';
+import { comparisonIntent, comparisonReply } from './smart-consult-brand-comparison.js?v=owner-delkor-v1';
+import {purchaseKnowledgePlan,purchaseKnowledgeReply} from './smart-consult-purchase.js?v=owner-delkor-v1';
+import {brandQueryPlan,brandQueryReply} from './smart-consult-brand-query.js?v=owner-delkor-v1';
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;

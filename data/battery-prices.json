@@ -23,6 +23,11 @@
   },
   "unpriced": [],
   "defaultAgmBrand": "DELKOR",
+  "nonAgmBrandPolicy": {
+    "brand": "DELKOR",
+    "scope": "canonical_non_agm",
+    "authority": "Owner: ILDEUNG_AI_CONSULT_OWNER_NON_AGM_DELKOR_BRAND_POLICY_V1"
+  },
   "brands": {
     "DELKOR": {"label": "델코", "aliases": ["델코", "DELKOR"], "baseFamily": "AGM"},
     "VARTA": {"label": "바르타", "aliases": ["바르타", "VARTA"], "prices": {"AGM70": 220000, "AGM80": 240000, "AGM95": 270000, "AGM105": 330000}}

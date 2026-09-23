@@ -1,10 +1,10 @@
-import {catalogSpecMention,splitBatterySpec,priceDescription} from './smart-consult-prices.js?v=spec-schedule-v1';
+import {catalogSpecMention,splitBatterySpec,priceDescription,batteryPrice} from './smart-consult-prices.js?v=owner-delkor-v1';
 
 // Brand availability is derived from the same governed catalog as pricing.
-// A priced conventional battery is not evidence of its manufacturer/brand.
+// Only catalog-backed products can inherit the explicit Owner non-AGM policy.
 export function authoritativeBrands(code,catalog) {
   if(!Object.hasOwn(catalog?.prices||{},code))return [];
-  return Object.entries(catalog.brands||{}).filter(([,b])=>(b.baseFamily&&code.startsWith(b.baseFamily))||Object.hasOwn(b.prices||{},code)).map(([id])=>id);
+  return Object.keys(catalog.brands||{}).filter(id=>batteryPrice(code,catalog,id).supported);
 }
 export function brandQueryPlan(text,catalog) {
   const s=String(text).normalize('NFKC').replace(/\s/g,'');
@@ -17,20 +17,20 @@ export function brandQueryPlan(text,catalog) {
   const mention=catalogSpecMention(bounded,catalog);
   const explicit=[...bounded.matchAll(/(?:AGM|DIN|DF)\s*\d+(?:HL|AL|L|R)?/gi)].map(m=>m[0].replace(/\s/g,'').toUpperCase());
   const unknown=!mention&&explicit.find(code=>!Object.hasOwn(catalog.prices,code));
-  return {mention,unknown,explicit,brands,price:/가격|얼마|비용/.test(s),generalAgm:/^AGM(?:은|배터리|브랜드|어떤|무슨)/i.test(s)&&!mention};
+  return {mention,unknown,explicit,brands,price:/가격|얼마|비용/.test(s),generalConventional:/일반.*배터리/.test(s)&&!mention,generalAgm:/^AGM(?:은|배터리|브랜드|어떤|무슨)/i.test(s)&&!mention};
 }
 export function brandQueryReply(plan,previous,catalog) {
   const state={...previous},messages=[],actions=[],chips=[];
   if(plan.unknown)return {state,messages:[`${plan.unknown}는 현재 등록된 규격이 아닙니다. 정확한 규격과 취급 브랜드 확인이 필요합니다.`,...plan.brands.filter(id=>catalog.brands[id].prices&&!Object.hasOwn(catalog.brands[id].prices,plan.unknown)).map(id=>`${plan.unknown}는 ${catalog.brands[id].label} 판매 지원 규격이 아닙니다.`)],actions:['phone'],chips,result:null,region:state.region};
   if(plan.mention?.candidates.length>1)return {state,messages:[`어떤 배터리 규격 말씀하시는 건가요? ${plan.mention.candidates.join(' / ')} 중 선택해 주세요.`],actions,chips:plan.mention.candidates.map(code=>({label:code,value:code+' 브랜드'+(plan.price?' 가격':'')})),result:null,region:state.region};
-  const spec=plan.mention?.candidates[0]||plan.explicit.join(' 또는 ')||(!plan.generalAgm&&(state.quotedSpec||state.confirmedBattery||state.customerReportedSpec))||'';
+  const spec=plan.mention?.candidates[0]||plan.explicit.join(' 또는 ')||(!plan.generalAgm&&!plan.generalConventional&&(state.quotedSpec||state.confirmedBattery||state.customerReportedSpec))||'';
   if(plan.mention||plan.explicit.length){state.quotedSpec=spec;if(state.customerReportedSpec!==spec)state.customerReportedSpec='';}
   if(plan.brands.length===1)state.brand=plan.brands[0];
   if(!spec){
     const base=catalog.brands[catalog.defaultAgmBrand]?.label;
     const alternatives=Object.entries(catalog.brands).filter(([,b])=>b.prices).map(([,b])=>`${Object.keys(b.prices).join('·')} 규격은 ${b.label}도 선택 가능합니다.`);
-    messages.push(`AGM은 기본적으로 ${base} 제품을 취급하고 있으며, ${alternatives.join(' ')} 규격에 따라 취급 브랜드가 다릅니다.`);
-    if(!plan.generalAgm)messages.push('일반 배터리는 정확한 규격별 취급 브랜드 확인이 필요합니다.');
+    if(!plan.generalConventional)messages.push(`AGM은 기본적으로 ${base} 제품을 취급하고 있으며, ${alternatives.join(' ')} 규격에 따라 취급 브랜드가 다릅니다.`);
+    if(!plan.generalAgm){const brand=catalog.nonAgmBrandPolicy?.scope==='canonical_non_agm'&&catalog.brands[catalog.nonAgmBrandPolicy.brand]?.label;messages.push(brand?`저희가 취급하는 일반 배터리(등록된 비AGM 규격)는 모두 ${brand} 제품입니다.`:'일반 배터리는 정확한 규격별 취급 브랜드 확인이 필요합니다.');}
   }else{
     for(const code of splitBatterySpec(spec)){
       const brands=authoritativeBrands(code,catalog);

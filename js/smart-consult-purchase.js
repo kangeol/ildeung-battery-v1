@@ -1,5 +1,5 @@
 // Intent detection and composition only. Facts/copy come from the injected policy.
-import {brandIntent,priceDescription,normalizeBatteryCode} from './smart-consult-prices.js?v=spec-schedule-v1';
+import {brandIntent,priceDescription,normalizeBatteryCode} from './smart-consult-prices.js?v=owner-delkor-v1';
 import {PHONE_LABEL} from './smart-consult-core.js?v=certainty-v1';
 export function purchaseKnowledgePlan(text,state,catalog){
  const s=String(text).normalize('NFKC').replace(/\s/g,'').toLowerCase();

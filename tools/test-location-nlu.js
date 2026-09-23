@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {assertNonAgmOwnerPolicy} from './lib/assert-non-agm-owner-policy.js';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {resolveLocation,classifyLocationAliases} from '../js/smart-consult-location.js';
@@ -46,7 +47,8 @@ for(const text of ['구월동물원','구월동화책','강남스타일','인천
 assert.equal(records.length,917);assert.equal(areas.length,665);
 const changed=execFileSync('git',['diff','--name-only','de199b25'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
 const html=changed.filter(p=>p.endsWith('.html'));assert.ok(html.every(p=>p==='smart-consult/index.html'));
-assert.equal(changed.filter(p=>/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
+assertNonAgmOwnerPolicy();
+assert.equal(changed.filter(p=>/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&p!=='data/battery-prices.json'&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
 const evidence={canonicalCases,aliasCases,totalCases:cases,areas:areas.length,rows:records.length,gates,failures,transcripts,changedHTML:html};
 const evidenceDir=process.argv.includes('--faq')?'docs/evidence/final-faq/location':'docs/evidence/location-nlu';
 fs.mkdirSync(evidenceDir,{recursive:true});fs.writeFileSync(`${evidenceDir}/matrix.json`,JSON.stringify(evidence,null,2)+'\n');

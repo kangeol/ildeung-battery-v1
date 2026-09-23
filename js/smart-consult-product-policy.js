@@ -1,4 +1,4 @@
-import {brandIntent,batteryPrice,priceDescription,splitBatterySpec,formatWon} from './smart-consult-prices.js?v=product-v1';
+import {brandIntent,batteryPrice,priceDescription,splitBatterySpec,formatWon} from './smart-consult-prices.js?v=owner-delkor-v1';
 import {PHONE_LABEL} from './smart-consult-core.js?v=certainty-v1';
 
 // Recognition only; all Owner-authorized assertions remain in the policy JSON.

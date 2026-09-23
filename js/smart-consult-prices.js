@@ -34,7 +34,9 @@ export function batteryPrice(value, catalog, brand = "") {
   const code = normalizeBatteryCode(value, catalog);
   const selected = brand || (/^AGM/.test(code) ? catalog?.defaultAgmBrand : "");
   const definition = catalog?.brands?.[selected];
-  const supported = !selected || (definition?.baseFamily === 'AGM' && /^AGM/.test(code)) || Object.hasOwn(definition?.prices || {},code);
+  const conventional = Object.hasOwn(catalog?.prices || {},code) && !/^AGM/.test(code)
+    && catalog?.nonAgmBrandPolicy?.scope === 'canonical_non_agm' && selected === catalog.nonAgmBrandPolicy.brand;
+  const supported = !selected || conventional || (definition?.baseFamily === 'AGM' && /^AGM/.test(code)) || Object.hasOwn(definition?.prices || {},code);
   const amount = catalog?.currency === "KRW" && supported ? (definition?.prices ? definition.prices[code] : catalog.prices?.[code]) : null;
   return { code, brand:selected || "", supported:Boolean(supported), amount: Number.isSafeInteger(amount) && amount > 0 ? amount : null };
 }

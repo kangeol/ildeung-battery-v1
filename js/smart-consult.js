@@ -4,7 +4,7 @@ import { conversationTurn, createConversationState, vehicleLabel, vehicleCandida
 import { findEntry, entryState } from "./smart-consult-entry.js?v=purchase-v1";
 import { LAUNCHER_KEY, decodeLauncherContext, hasEntryConflict } from "./smart-consult-launcher-context.js";
 import { SESSION_KEY, encodeSession, decodeSession, clearSession, safeUserMessage, summaryFields } from "./smart-consult-session.js?v=purchase-v1";
-import { presentationIndex, messagePresentation, lookupStatus, lookupDelay, phoneProminence, literalParts, resultTokens } from "./smart-consult-presentation.js?v=consult-ui-v1";
+import { presentationIndex, messagePresentation, lookupStatus, lookupDelay, phoneProminence, literalParts, resultTokens } from "./smart-consult-presentation.js?v=owner-delkor-v1";
 
 const chatLog = document.querySelector("#chatLog");
 const chatForm = document.querySelector("#chatForm");
