@@ -176,12 +176,24 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  if(selection===null&&text==='차량 모델 상담')return {state:{...previous},messages:['차량 제조사와 모델명을 알려주세요.'],chips:[],actions:[],result:null,region:null};
   // Catalog recognition establishes a product quote, never vehicle compatibility.
   if(selection===null && !/맞아|맞나요|맞는|들어가|호환|장착.*가능/.test(text)) {
     const mention=catalogSpecMention(text,priceCatalog);
-    if(mention && (pricePattern.test(text)||mention.particle||String(text).trim()===mention.token)) {
+    if(mention && (pricePattern.test(text)||mention.particle||normalizeText(text)===normalizeText(mention.token))) {
       const entities=extractEntities(text,records,previous,localities);
-      if(!entities.matches.length&&!entities.manufacturer) {
+      const canonical=Object.hasOwn(priceCatalog.prices,mention.token);
+      const bare=normalizeText(text)===normalizeText(mention.token);
+      const batteryContext=Boolean(previous.quotedSpec&&(!previous.selectedVehicleKey||previous.quotedSpec!==previous.confirmedBattery));
+      if(bare&&!canonical&&mention.candidates.length>1&&entities.matches.length&&!batteryContext){
+        const contextual=previous.manufacturer&&!previous.selectedVehicleKey&&!previous.quotedSpec?entities.matches.filter(m=>m.manufacturerId===previous.manufacturer):[];
+        if(contextual.length)return {state:{...previous},messages:['어떤 차량 모델인지 한 번 더 확인할게요. 정확한 모델명을 알려주세요.'],chips:contextual.slice(0,4).map(m=>({label:`${m.manufacturerName} ${m.vehicle}`,value:`${m.manufacturerName} ${m.vehicle}`})),actions:[],result:null,region:null};
+        return {state:{...previous},messages:[`배터리 규격 ${mention.token}을 말씀하시는 건가요, 차량 모델을 말씀하시는 건가요?`],chips:[{label:'배터리 규격 확인',value:`${mention.token} 가격`},{label:'차량 모델 확인',value:'차량 모델 상담'}],actions:[],result:null,region:null};
+      }
+      // Complete vehicle names/manufacturers remain vehicle evidence. Incidental
+      // numeric substring matches must not defeat explicit product-price language.
+      const explicitVehicle=Boolean(entities.manufacturer)||entities.matches.some(m=>normalizeText(m.vehicle)!==normalizeText(mention.token)&&normalizeText(text).includes(normalizeText(m.vehicle)));
+      if(!explicitVehicle&&(canonical||bare||!entities.matches.length||batteryContext||pricePattern.test(text))) {
         if(mention.candidates.length>1)return {state:{...previous},messages:[`어떤 배터리 규격 말씀하시는 건가요? ${mention.candidates.join(' / ')} 중 선택해 주세요.`],chips:mention.candidates.map(code=>({label:code,value:code+' 가격'})),actions:[],result:null,region:null};
         const code=mention.candidates[0],source=String(text).normalize('NFKC');
         text=source.slice(0,mention.start)+code+' '+source.slice(mention.end);

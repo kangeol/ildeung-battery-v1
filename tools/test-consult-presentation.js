@@ -19,6 +19,7 @@ const changed=git(['diff',baseline,'--name-only']).trim().split('\n').filter(Boo
 for(const p of ['tools/test-battery-pricing.js','tools/test-brand-service.js','tools/test-product-as-hours.js'])allowed.add(p);
 // Subsequent authorized NLU remediation; presentation assertions stay unchanged.
 for(const p of ['js/smart-consult-conversation.js','js/smart-consult-prices.js','js/smart-consult-operational.js','js/smart-consult-product-policy.js','js/smart-consult-entry.js','js/smart-consult-session.js','tools/test-spec-schedule.js','tools/test-spec-schedule-browser.js','tools/test-spec-schedule-safety.js','docs/spec-schedule-audit.md'])allowed.add(p);
+for(const p of ['tools/test-spec-vehicle-collision.js','tools/test-spec-vehicle-collision-browser.js','docs/spec-vehicle-collision-audit.md'])allowed.add(p);
 for(const p of changed)check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
 const html=fs.readFileSync('smart-consult/index.html','utf8').replaceAll('\r\n','\n'),before=git(['show',baseline+':smart-consult/index.html']).replaceAll('\r\n','\n');
 check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=spec-schedule-v1'),'HTML only two cache tokens');
