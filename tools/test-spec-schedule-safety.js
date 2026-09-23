@@ -1,0 +1,36 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync}from'node:child_process';
+import {conversationTurn,createConversationState}from'../js/smart-consult-conversation.js';
+import {catalogSpecMention,batteryAliasLedger,formatWon}from'../js/smart-consult-prices.js';
+import {encodeSession,decodeSession}from'../js/smart-consult-session.js';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),catalog=read('data/battery-prices.json'),policy=read('data/consult-service-policy.json'),areas=read('seo-data/smart-consult-location-index.json').localities,rows=read('data/manufacturers.json').flatMap(m=>read('data/'+m.file).map(r=>({...r,manufacturerId:m.id,manufacturerName:m.name})));
+const names=['CANONICAL_SPEC_PARTICLE_PARSE_FAILURE','CANONICAL_SPEC_PARTICLE_WRONG_SPEC','CANONICAL_SPEC_PRICE_WRONG','SHORTHAND_AMBIGUOUS_AUTOCONFIRM','SHORTHAND_WRONG_CANONICAL_RESOLUTION','UNKNOWN_SPEC_PRICE_FABRICATED','VARTA_UNSUPPORTED_PRICE_FABRICATED','SPEC_PARTICLE_MULTI_INTENT_LOST','DAYPART_AVAILABILITY_FABRICATED','SPECIFIC_TIME_AVAILABILITY_FABRICATED','RELATIVE_DATE_AVAILABILITY_FABRICATED','WEEKEND_SCHEDULE_FABRICATED','BUSINESS_HOURS_FABRICATED','SCHEDULE_WORKTIME_MULTI_INTENT_LOST','WORKTIME_SCHEDULE_CONFUSION','SCHEDULE_SHORT_CONTEXT_WRONG_INTENT','SCHEDULE_SHORT_CONTEXT_HALLUCINATION'];
+const gates=Object.fromEntries(names.map(n=>[n,0])),checks=Object.fromEntries(names.map(n=>[n,0])),evidence=[];let turns=0;
+const check=(n,ok,input)=>{checks[n]++;if(!ok){gates[n]++;console.error(n,input);}};
+const run=(input,state=createConversationState())=>{turns++;const o=conversationTurn(state,input,rows,areas,catalog,policy);evidence.push({input,messages:o.messages,state:o.state});assert.deepEqual(decodeSession(encodeSession(o.state,[])).state,o.state);return o;};
+for(const code of Object.keys(catalog.prices))for(const particle of ['','은','는','이','가','도','만','의','은요','는요','이요','가요','도요','만요'])for(const variant of [code,code.toLowerCase(),code.replace(/(\d)/,' $1')]){
+ const input=variant+particle+'얼마예요?',m=catalogSpecMention(input,catalog);
+ check('CANONICAL_SPEC_PARTICLE_PARSE_FAILURE',!!m,input);check('CANONICAL_SPEC_PARTICLE_WRONG_SPEC',m?.candidates.length===1&&m.candidates[0]===code,input);
+}
+for(const [code,amount]of Object.entries(catalog.prices)){const o=run(code+'은요 가격은?');check('CANONICAL_SPEC_PRICE_WRONG',o.state.quotedSpec===code&&o.messages.join(' ').includes(formatWon(amount)),code);}
+for(const [alias,candidates]of batteryAliasLedger(catalog)){const o=run(alias+'은 얼마인가요?'),s=o.messages.join(' ');if(candidates.length>1)check('SHORTHAND_AMBIGUOUS_AUTOCONFIRM',!o.state.quotedSpec&&o.chips.length===candidates.length&&!/\d+만/.test(s),alias);else check('SHORTHAND_WRONG_CANONICAL_RESOLUTION',o.state.quotedSpec===candidates[0],alias);}
+// Current collisions have explicit approved aliases. Inject a test-only future
+// collision to prove that a newly overlapping family cannot silently win.
+const collisionCatalog={...catalog,prices:{...catalog.prices,DIN105:catalog.prices.AGM105}};
+const collision=conversationTurn(createConversationState(),'105은 얼마예요?',rows,areas,collisionCatalog,policy);
+check('SHORTHAND_AMBIGUOUS_AUTOCONFIRM',!collision.state.quotedSpec&&collision.chips.length===2&&!/\d+만/.test(collision.messages.join(' ')),'synthetic DIN105/AGM105 collision; not production truth');
+for(const q of ['AGM999는 얼마예요?','DIN70L은 얼마예요?','AGM80RX는 얼마예요?','AGM105이상은 얼마예요?','DIN74LX 얼마예요?','DF80LR은 얼마예요?']){const o=run(q);check('UNKNOWN_SPEC_PRICE_FABRICATED',!/\d+만/.test(o.messages.join(' ')),q);}
+for(const code of ['AGM60','AGM80R','AGM95R']){const o=run(code+'은 바르타 얼마예요?');check('VARTA_UNSUPPORTED_PRICE_FABRICATED',/지원 규격이 아닙니다/.test(o.messages.join(' '))&&!/바르타 기준 교체 가격은/.test(o.messages.join(' ')),code);}
+for(const [q,re]of [['AGM70은 얼마고 현금돼요?',/17만원.*현금/s],['DIN74L은 얼마고 출장비 포함인가요?',/12만5천원.*출장/s],['AGM105는 정품인가요?',/정품/],['AGM80은 최신 제조인가요?',/최신 제조/],['AGM80은 델코랑 바르타 얼마예요?',/19만원.*24만원/s]])check('SPEC_PARTICLE_MULTI_INTENT_LOST',re.test(run(q).messages.join(' ')),q);
+const families={DAYPART_AVAILABILITY_FABRICATED:['아침에 가능한가요?','점심때 되나요?','오후 가능해요?','저녁에도 되나요?','밤에도 되나요?','퇴근하고 가능해요?'],SPECIFIC_TIME_AVAILABILITY_FABRICATED:['7시에 가능해요?','오전 10시에 돼요?','3시쯤 가능해요?','6시 반 가능해요?'],RELATIVE_DATE_AVAILABILITY_FABRICATED:['오늘 아침 되나요?','내일 저녁 가능해요?'],WEEKEND_SCHEDULE_FABRICATED:['주말 오후 가능해요?','토요일 아침 가능해요?','일요일 저녁 되나요?'],BUSINESS_HOURS_FABRICATED:['저녁에도 영업해요?','아침부터 해요?','몇 시까지 해요?','영업시간?','밤에도 영업하나요?']};
+for(const [gate,qs]of Object.entries(families))for(const q of qs){const o=run(q),s=o.messages.join(' ');check(gate,/1644-9141/.test(s)&&!/예약.*완료|\d+시.*(?:방문합니다|영업합니다)|방문 가능합니다|배차.*완료/.test(s),q);check('WORKTIME_SCHEDULE_CONFUSION',!/10~20/.test(s),q);}
+for(const q of ['저녁 7시에 교체하는 데 얼마나 걸려요?','내일 아침에 교체하면 작업시간은?','오늘 저녁 가능해요? 교체는 얼마나 걸려요?','오전에 방문 가능해요? 작업은 몇 분 걸려요?']){const s=run(q).messages.join(' ');check('SCHEDULE_WORKTIME_MULTI_INTENT_LOST',/1644-9141/.test(s)&&/10~20/.test(s)&&/상황|달라/.test(s),q);}
+const scheduled=run('아침에 가능한가요?').state;
+for(const q of ['오전에 가능해요?','오전 10시에 가능해요? AGM105는 얼마인가요?']){const o=run(q);assert.equal(o.state.region,null,'daypart must not become 오전동');assert.ok(!/어떤 차량/.test(o.messages.join(' ')));}
+assert.match(run('오전동에서 오전 10시에 가능해요?').state.region.fullLabel,/오전동/);
+for(const q of ['오늘은?','내일은?','아침은?','점심은?','오후는?','저녁은?','7시는?','주말은?']){check('SCHEDULE_SHORT_CONTEXT_WRONG_INTENT',/1644-9141/.test(run(q,scheduled).messages.join(' ')),q);const o=run(q);check('SCHEDULE_SHORT_CONTEXT_HALLUCINATION',/어떤|말씀/.test(o.messages.join(' '))&&!/10~20/.test(o.messages.join(' ')),q);}
+for(const q of ['내 차에 AGM105 맞아?','BMW 5시리즈에 AGM105 들어가?']){const o=run(q);assert.ok(!/AGM105.*(?:적용|장착됩니다)/.test(o.messages.join(' ')));assert.notEqual(o.state.confirmedBattery,'AGM105');}
+let state=run('구월동 BMW 5시리즈 2020년식').state;const vehicle=state.selectedVehicleKey,region=state.region;
+for(const q of ['AGM105는 얼마인가요?','아침에 가능해요?','저녁은?','현금돼요?']){state=run(q,state).state;assert.equal(state.selectedVehicleKey,vehicle);assert.deepEqual(state.region,region);}
+for(const [q,re]of [['AGM70는 얼마예요?',/17만원/],['AGM80R은 얼마예요?',/22만원/]])assert.match(run(q).messages.join(' '),re);
+const baseline='6baaf054f841af5bcf47b673dbf4d919312f0649';const protectedDiff=execFileSync('git',['diff',baseline,'--name-only','--','data','seo-data','car-battery','area','battery','index.html','sitemap.xml','css'],{encoding:'utf8'});assert.equal(protectedDiff.trim(),'');assert.equal(rows.length,917);assert.equal(areas.length,665);assert.equal(read('seo-data/blog-cases.json').posts.length,345);assert.equal((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length,1133);
+for(const n of names)assert.ok(checks[n]>0,n);const dir=process.env.SPEC_SCHEDULE_EVIDENCE||'C:/Users/kang1/AppData/Local/Temp/ildeung-spec-schedule';fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(dir+'/safety.json',JSON.stringify({turns,gates,checks,evidence,freeze:true},null,2));console.log({turns,gates,checks});assert.equal(Object.values(gates).reduce((a,b)=>a+b,0),0);

@@ -17,9 +17,11 @@ for(const q of ['현금되나요?','정품인가요?','AGM105','BMW 5시리즈 2
 const baseline='eb10f9f516ee85e384cd8b01e0e53f7098382034',git=args=>execFileSync('git',args,{encoding:'utf8',maxBuffer:30e6});
 const changed=git(['diff',baseline,'--name-only']).trim().split('\n').filter(Boolean),allowed=new Set(['js/smart-consult.js','js/smart-consult-presentation.js','css/smart-consult.css','smart-consult/index.html','tools/test-smart-consult-viewport.js','tools/test-smart-consult-branding.js','tools/test-battery-certainty-scope.js']);
 for(const p of ['tools/test-battery-pricing.js','tools/test-brand-service.js','tools/test-product-as-hours.js'])allowed.add(p);
+// Subsequent authorized NLU remediation; presentation assertions stay unchanged.
+for(const p of ['js/smart-consult-conversation.js','js/smart-consult-prices.js','js/smart-consult-operational.js','js/smart-consult-product-policy.js','js/smart-consult-entry.js','js/smart-consult-session.js','tools/test-spec-schedule.js','tools/test-spec-schedule-browser.js','tools/test-spec-schedule-safety.js','docs/spec-schedule-audit.md'])allowed.add(p);
 for(const p of changed)check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
 const html=fs.readFileSync('smart-consult/index.html','utf8').replaceAll('\r\n','\n'),before=git(['show',baseline+':smart-consult/index.html']).replaceAll('\r\n','\n');
-check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=consult-ui-v1'),'HTML only two cache tokens');
+check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=spec-schedule-v1'),'HTML only two cache tokens');
 check(read('seo-data/blog-cases.json').posts.length===345,'blog345');check((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length===1133,'sitemap1133');
 const source=fs.readFileSync('js/smart-consult.js','utf8');check(!source.includes('innerHTML'),'XSS text-only DOM');check(!source.includes('Math.random')&&!source.includes('setInterval'),'no random/typewriter');
 console.log(JSON.stringify({status:'PASS',checks,canonicalPriceLines:index.prices.size,vehicleRows:rows.length,areas:areas.length,blog:345,sitemap:1133,gates:{TYPEWRITER_EFFECT_PRESENT:0,RANDOM_FAKE_DELAY_PRESENT:0,SIMPLE_FAQ_ARTIFICIAL_DELAY:0,LOOKUP_PRESENTATION_DELAY_OVER_600MS:0},changed}));

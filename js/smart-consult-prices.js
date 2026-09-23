@@ -1,5 +1,31 @@
 // Price truth is injected from data/battery-prices.json, never copied into code.
 const compact = value => String(value || "").normalize("NFKC").toUpperCase().replace(/\s/g, "");
+// Explicit Owner aliases win over derived family-free candidates. Derived
+// collisions stay plural, even when the prices happen to be equal.
+export function batteryAliasLedger(catalog) {
+  const aliases=new Map();
+  const names=[...Object.keys(catalog?.prices||{}).map(code=>[code,code]),...Object.entries(catalog?.aliases||{})];
+  for(const [name,code]of names) {
+    const stem=name.replace(/^(?:DF|DIN|AGM)/,'');
+    if(stem!==name&&Object.hasOwn(catalog.prices,code))aliases.set(stem,[...new Set([...(aliases.get(stem)||[]),code])]);
+  }
+  for(const [alias,code]of Object.entries(catalog?.aliases||{}))if(Object.hasOwn(catalog.prices,code))aliases.set(alias,[code]);
+  return aliases;
+}
+export function catalogSpecMention(text,catalog) {
+  const source=String(text).normalize('NFKC');
+  const tokens=new Map(batteryAliasLedger(catalog));
+  for(const code of Object.keys(catalog?.prices||{}))tokens.set(code,[code]);
+  const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  const alternatives=[...tokens.keys()].sort((a,b)=>b.length-a.length).map(s=>[...s].map(escape).join('\\s*')).join('|');
+  if(!alternatives)return null;
+  // A complete code precedes a bounded Korean particle. Never truncate R/L/HL.
+  const re=new RegExp(`(?<![a-z0-9가-힣])(${alternatives})(은요|는요|이요|가요|도요|만요|은|는|이|가|도|만|의)?(?=$|[\\s?!.,/]|(?:얼마|가격|비용|교체|배터리|바르타|델코))`,'gi');
+  const matches=[...source.matchAll(re)];
+  if(matches.length!==1)return null; // Composite/multiple explicit products use the existing path.
+  const m=matches[0],token=compact(m[1]);
+  return {token,candidates:tokens.get(token),start:m.index,end:m.index+m[0].length,particle:m[2]||''};
+}
 export function normalizeBatteryCode(value, catalog) {
   const code = compact(value);
   return catalog?.aliases?.[code] || code;
@@ -45,6 +71,8 @@ export function withoutBrand(text,catalog) {
   return result.trim();
 }
 export function directPriceSpec(text, catalog = null, brandRequested = false) {
+  const mention=catalogSpecMention(text,catalog);
+  if(mention?.candidates.length===1)text=String(text).normalize('NFKC').slice(0,mention.start)+mention.candidates[0]+' '+String(text).normalize('NFKC').slice(mention.end);
   // A whole catalog-backed product code is a price lookup, never vehicle fitment.
   // Brand removal happens in the caller; accept its remaining follow-up suffix only
   // when the customer explicitly named a brand in this same turn.

@@ -4,8 +4,13 @@ export function operationalPlan(text,state) {
   const keys=[],queries=[];let topic='';
   const add=k=>{keys.push(k);topic=k;};
   const reservation=/예약|신청|접수/.test(s);
+  const scheduleShort=/^(?:오늘|내일|아침|점심|오전|오후|저녁|밤|야간|주말|\d{1,2}시)(?:은|는)(?:요)?[?!.]*$/.test(s);
+  const scheduleContext=['OP_REALTIME','OP_RESERVATION','ARRIVAL_TIME','TODAY_SERVICE','LIVE_DISPATCH_AVAILABILITY','URGENT_SERVICE'].includes(state.lastIntent);
+  const scheduleMarker=/아침|오전|점심|오후|저녁|야간|밤(?:에|도|은)|퇴근(?:후|하고)|\d{1,2}시(?:반|쯤|에|가능|돼|되)|내일|주말|토요일|일요일/.test(s);
+  const businessOnly=/영업|운영|근무|(?:주말|토요일|일요일).*하(?:나요|세요|시나요)|아침부터해/.test(s)&&!/방문|교체|작업|예약/.test(s);
+  const schedule=!businessOnly&&(!scheduleShort&&scheduleMarker&&/가능|되|돼|방문|교체|작업|예약|해요|하나요/.test(s)||scheduleShort&&scheduleContext);
   const arrival=/배차|도착|기사(?:님)?.*(?:언제|얼마나|몇분|몇시)|언제와|얼마나.*와|제일빠른|가장빠른/.test(s);
-  const realtime=arrival||/(?:오늘|지금|바로|당일).*(?:가능|되|돼|올수|와|교체)|^(?:오늘|지금)(?:은|은요)?[?!.]*$|언제가능|몇시가능/.test(s);
+  const realtime=schedule||arrival||/(?:오늘|지금|바로|당일).*(?:가능|되|돼|올수|와|교체)|^(?:오늘|지금)(?:은|은요)?[?!.]*$|언제가능|몇시가능/.test(s);
   const asDetail=/문제생기면|교체하고방전|불량.*바꿔|as어디|a\/s어디/.test(s);
   const symptom=!asDetail&&/딸깍|시동.*안걸|불은들어|배터리문제|방전|점프/.test(s)&&!/방전(?:은|이)?아니/.test(s);
   const life=/수명(?:이|은)?얼마|배터리몇년|\d+년(?:됐|됬|썼|사용)|(?:시동걸리는데|언제).*바꿔|언제바꾸|교체해야|더써도/.test(s);
@@ -19,6 +24,8 @@ export function operationalPlan(text,state) {
   if(/^(?:가격은|비용은|얼마|그래서얼마예요)[?!.]*$/.test(s)&&state.quotedSpec&&!state.result)queries.push(`${state.brand||''} ${state.quotedSpec} 가격`);
   if(reservation)add('RESERVATION');
   if(realtime)add('REALTIME');
+  if(scheduleShort&&!scheduleContext)add('SHORT_CLARIFY');
+  if(schedule&&/(?:교체|작업|장착).*(?:얼마나|몇분|시간)|작업시간/.test(s))queries.push('작업시간');
   if(life)add('LIFE');
   if(site)add('SITE');
   if(absent)add('NON_FACE_TO_FACE');
@@ -43,5 +50,5 @@ export function operationalPlan(text,state) {
   // the existing symptom path and its recovery/session semantics remain intact.
   if(symptom&&(keys.length||queries.length||/딸깍|배터리문제/.test(s)))add('SYMPTOM');
   if(!keys.length&&!queries.length)return null;
-  return {keys:[...new Set(keys)],queries:[...new Set(queries)],topic,life,symptom,entry,realtime,bareDuration};
+  return {keys:[...new Set(keys)],queries:[...new Set(queries)],topic,life,symptom,entry,realtime,bareDuration,schedule};
 }

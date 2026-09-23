@@ -2,11 +2,11 @@ import { MANUFACTURER_ALIASES, batteryStoreType, buildVehicleGroups, normalizeTe
 import { copy, variant, symptomLabels } from "./conversation-copy.js";
 import { resolveLocation } from "./smart-consult-location.js?v=location-v1";
 import { resolveVehicleText } from "./vehicle-aliases.js";
-import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand, normalizeBatteryCode } from "./smart-consult-prices.js?v=product-v1";
+import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand, normalizeBatteryCode, catalogSpecMention } from "./smart-consult-prices.js?v=spec-schedule-v1";
 import { servicePolicyIntent } from "./smart-consult-policy.js?v=faq-v1";
-import { extendedPolicyReply, assuranceReply } from "./smart-consult-product-policy.js?v=authentic-v1";
+import { extendedPolicyReply, assuranceReply } from "./smart-consult-product-policy.js?v=spec-schedule-v1";
 import { finalFaqReply, finalFaqIntent } from "./smart-consult-faq.js?v=authentic-v1";
-import { operationalPlan } from "./smart-consult-operational.js?v=operational-v1";
+import { operationalPlan } from "./smart-consult-operational.js?v=spec-schedule-v1";
 import { PHONE_LABEL } from "./smart-consult-core.js?v=certainty-v1";
 import { comparisonIntent, comparisonReply } from './smart-consult-brand-comparison.js?v=brand-compare-v1';
 
@@ -176,6 +176,27 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  // Catalog recognition establishes a product quote, never vehicle compatibility.
+  if(selection===null && !/맞아|맞나요|맞는|들어가|호환|장착.*가능/.test(text)) {
+    const mention=catalogSpecMention(text,priceCatalog);
+    if(mention && (pricePattern.test(text)||mention.particle||String(text).trim()===mention.token)) {
+      const entities=extractEntities(text,records,previous,localities);
+      if(!entities.matches.length&&!entities.manufacturer) {
+        if(mention.candidates.length>1)return {state:{...previous},messages:[`어떤 배터리 규격 말씀하시는 건가요? ${mention.candidates.join(' / ')} 중 선택해 주세요.`],chips:mention.candidates.map(code=>({label:code,value:code+' 가격'})),actions:[],result:null,region:null};
+        const code=mention.candidates[0],source=String(text).normalize('NFKC');
+        text=source.slice(0,mention.start)+code+' '+source.slice(mention.end);
+        const brands=Object.values(priceCatalog.brands||{}).filter(b=>b.aliases.some(a=>text.toLowerCase().includes(a.toLowerCase())));
+        if(brands.length>1&&pricePattern.test(text)&&!comparisonIntent(text,previous,priceCatalog))text+=' 비교';
+        const included=servicePolicyIntent(text),faq=finalFaqReply(text,servicePolicy);
+        if(pricePattern.test(text)&&(included||faq)&&!assuranceReply(text,servicePolicy)&&!entities.region&&!entities.ambiguousRegion&&!operationalPlan(text,previous)&&brands.length<2){
+          const out=conversationWithoutComparison(previous,`${brandIntent(text,priceCatalog)||''} ${code} 가격`,records,localities,priceCatalog,servicePolicy);
+          if(faq){out.messages.push(...faq.messages);out.actions=unique([...out.actions,...faq.actions]);}
+          if(included&&servicePolicy?.answers[included])out.messages.push(servicePolicy.answers[included]);
+          out.messages=unique(out.messages);return out;
+        }
+      }
+    }
+  }
   const intent=selection===null&&servicePolicy?.product?.comparisonContext?comparisonIntent(text,previous,priceCatalog):null;
   if(!intent)return conversationWithoutComparison(previous,text,records,localities,priceCatalog,servicePolicy,selection);
   if(intent.clarify)return {state:{...previous},messages:[servicePolicy.product.comparisonContext.clarify],chips:[],actions:[],result:null,region:null};
@@ -202,7 +223,7 @@ function conversationWithoutComparison(previous, text, records, localities = [],
     if(selection===null&&finalFaqIntent(text)==='WORK_TIME'&&/얼마나|몇\s*분/.test(text))out.state.lastIntent='OP_WORK_TIME';
     return out;
   }
-  if(plan.keys.length===1&&plan.keys[0]==='REALTIME'&&!plan.queries.length&&!assuranceReply(text,servicePolicy)&&!/현금|카드|영수증|세금|이체/.test(text)){
+  if(!plan.schedule&&plan.keys.length===1&&plan.keys[0]==='REALTIME'&&!plan.queries.length&&!assuranceReply(text,servicePolicy)&&!/현금|카드|영수증|세금|이체/.test(text)){
     const intent=recognizeIntent(text,extractEntities(text,records,previous,localities));
     if(liveIntents.includes(intent)||/^VISIT/.test(finalFaqIntent(text)||''))return conversationEstablished(previous,text,records,localities,priceCatalog,servicePolicy);
   }
@@ -210,10 +231,13 @@ function conversationWithoutComparison(previous, text, records, localities = [],
   // Manufacture dates and battery age never become model years.
   let out={state:{...previous},messages:[],chips:[],actions:[],result:null,region:null};
   const merge=reply=>{if(!reply)return;out.messages.push(...reply.messages);out.actions=unique([...out.actions,...reply.actions]);};
-  const entities=extractEntities(text,records,previous,localities),context=[];
+  // Temporal spans are not suffixless locality aliases (e.g. 오전 vs 오전동).
+  // Mask only in an established schedule utterance; explicit locality names stay.
+  const entityText=plan.schedule?String(text).replace(/(?:오늘|내일)?\s*(?:아침|오전|점심|오후|저녁|밤|야간)(?=\s*(?:\d|에|때|시간|가능|되|돼|방문|교체|작업|[?!.,]|$))/g,' '):text;
+  const entities=extractEntities(entityText,records,previous,localities),context=[];
   if(entities.region)context.push(entities.region.fullLabel);
   if(entities.matches.length){context.push(...entities.matches.map(m=>`${m.manufacturerName} ${m.vehicle}`));if(entities.detailModel)context.push(entities.detailModel);if(entities.year&&/년식/.test(text))context.push(`${entities.year}년식`);if(entities.fuel)context.push(entities.fuel);if(entities.engine)context.push(`${entities.engine}cc`);}
-  const explicitPrice=/가격|비용|견적|얼마(?:예요|야|요)?[?!.\s]*$/.test(text)&&!plan.life&&!plan.bareDuration&&!plan.realtime&&!plan.keys.includes('PRICE_REASON')&&!/추가|코딩|공임|출장비|끝/.test(text);
+  const explicitPrice=/가격|비용|견적|얼마(?:인가요|예요|야|요)?[?!.\s]*$/.test(text)&&!plan.life&&!plan.bareDuration&&(!plan.realtime||plan.schedule)&&!plan.keys.includes('PRICE_REASON')&&!/추가|코딩|공임|출장비|끝/.test(text);
   if(entities.ambiguousRegion||entities.unsupportedLocation||/지역(?:은|이)\s*/.test(text))out=conversationCore(previous,text,records,localities,priceCatalog,servicePolicy);
   else if(context.length)out=conversationEstablished(previous,context.join(' ')+(explicitPrice?' 가격':''),records,localities,priceCatalog,servicePolicy);
   const brand=brandIntent(text,priceCatalog);if(brand)out.state.brand=brand;

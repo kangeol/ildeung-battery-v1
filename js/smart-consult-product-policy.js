@@ -20,7 +20,7 @@ export function extendedPolicyIntent(text) {
   if(/공휴일|연휴|추석|설날/.test(s))return 'HOLIDAY';
   if(/일요일/.test(s))return 'SUNDAY';
   if(/(?:오늘|지금).*(?:영업|운영|하나요)/.test(s))return 'TODAY';
-  if(/영업시간|운영시간|몇시(?:부터|까지)|몇시에문닫|주말.*하|토요일.*하/.test(s))return 'HOURS';
+  if(/영업시간|운영시간|몇시(?:부터|까지)|몇시에문닫|주말.*하|토요일.*하|(?:저녁|아침|밤|야간).*영업|아침부터해/.test(s))return 'HOURS';
   if(/뭐가.*(?:좋|낫)|더좋|더오래|수명차이|둘.*(?:차이|낫|좋)|할만|사장님이면|추천해/.test(s))return 'COMPARE';
   if(/블랙|black/.test(s))return 'BLACK';
   if(/국산|독일산|중국산|실버|silver|어디서만들|어디제품|어떤브랜드/.test(s))return 'ORIGIN';
