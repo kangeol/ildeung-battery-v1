@@ -13,7 +13,7 @@ assert.equal(/스마트 배터리 상담|AI AI|AI 진단|AI 상담원 연결/.te
 assert.ok(html.includes('일등밧데리 차량 정보를 바탕으로 안내합니다.'));
 assert.ok(html.includes('/css/smart-consult.css?v=consult-ui-v1'),'returning-browser CSS cache safety');
 assert.ok(html.includes('/js/smart-consult-viewport.js?v=ai-mobile-v1'));
-assert.ok(html.includes('/js/smart-consult.js?v=purchase-v1'));
+assert.ok(html.includes('/js/smart-consult.js?v=brand-query-v1'));
 assert.ok(read('js/smart-consult.js').includes('./conversation-copy.js?v=ai-mobile-v1'));
 assert.ok(css.includes('.consult-page .site-footer { display: none; }'));
 assert.ok(css.includes('height: var(--app-height, 100dvh)'));

@@ -10,6 +10,7 @@ import { operationalPlan } from "./smart-consult-operational.js?v=spec-schedule-
 import { PHONE_LABEL } from "./smart-consult-core.js?v=certainty-v1";
 import { comparisonIntent, comparisonReply } from './smart-consult-brand-comparison.js?v=brand-compare-v1';
 import {purchaseKnowledgePlan,purchaseKnowledgeReply} from './smart-consult-purchase.js?v=purchase-v1';
+import {brandQueryPlan,brandQueryReply} from './smart-consult-brand-query.js?v=brand-query-v1';
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -177,6 +178,22 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  const brandQuery=selection===null&&priceCatalog&&brandQueryPlan(text,priceCatalog);
+  if(brandQuery){
+    const entities=extractEntities(text,records,previous,localities);
+    let context=previous,vehicleOutput=null;
+    const explicit=entities.matches.filter(m=>normalizeText(text).includes(normalizeText(m.vehicle)));
+    if(!brandQuery.mention&&explicit.length){
+      const query=[...explicit.map(m=>`${m.manufacturerName} ${m.vehicle}`),entities.year?`${entities.year}년식`:'',entities.detailModel,entities.fuel,entities.engine?`${entities.engine}cc`:''].filter(Boolean).join(' ');
+      vehicleOutput=conversationWithoutPurchase(previous,query,records,localities,priceCatalog,servicePolicy);
+      context=vehicleOutput.state;
+    }
+    const out=brandQueryReply(brandQuery,context,priceCatalog);
+    if(vehicleOutput?.chips.length)out.chips=vehicleOutput.chips;
+    if(entities.region){out.state.region=entities.region;out.state.location=entities.region;out.state.city=entities.region.city;out.state.district=entities.region.district;out.region=entities.region;}
+    for(const reply of [finalFaqReply(text,servicePolicy),assuranceReply(text,servicePolicy)])if(reply){out.messages.push(...reply.messages);out.actions=unique([...out.actions,...reply.actions]);}
+    return out;
+  }
   if(selection===null&&previous.customerReportedSpec&&/^(?:가격은?|얼마(?:예요)?|비용은?)[?!.\s]*$/.test(text))return conversationWithoutPurchase(previous,`${previous.brand||''} ${previous.customerReportedSpec} 가격`,records,localities,priceCatalog,servicePolicy);
   const plan=selection===null&&servicePolicy?.purchaseKnowledge?purchaseKnowledgePlan(text,previous,priceCatalog):null;
     if(!plan){
