@@ -38,6 +38,8 @@ for(const p of ['tools/test-manufacturer-wording.js','tools/test-manufacturer-br
 // Authorized token-boundary remediation changes matching only; all presentation
 // byte comparisons below remain mandatory and unchanged.
 for(const p of ['js/smart-consult-core.js','js/vehicle-aliases.js','tools/test-vehicle-token-boundary.js'])allowed.add(p);
+// Narrow amount-word routing only; the UI and protected-page assertions stay intact.
+for(const p of ['js/smart-consult-nonmonetary.js','tools/test-nonmonetary-eolma.js'])allowed.add(p);
 for(const p of changed.filter(p=>!approvedSyncFiles.has(p)))check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
 const html=fs.readFileSync('smart-consult/index.html','utf8').replaceAll('\r\n','\n'),before=git(['show',baseline+':smart-consult/index.html']).replaceAll('\r\n','\n');
 check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=brand-query-v1'),'HTML only two cache tokens');

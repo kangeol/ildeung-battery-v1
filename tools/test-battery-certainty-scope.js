@@ -16,6 +16,8 @@ const paths=git(['diff',baseline,'--name-only']).trim().split('\n').filter(Boole
 const allowed=new Set(['data/hyundai.json','js/smart-consult-core.js','js/smart-consult-conversation.js','js/smart-consult-session.js','js/smart-consult-entry.js','js/smart-consult.js','smart-consult/index.html','car-battery/hyundai/grandeur.html','car-battery/hyundai/grandeur/gn7.html']);
 // Token-boundary matching is authorized; canonical row/fact assertions stay intact.
 allowed.add('js/vehicle-aliases.js');
+// Non-monetary amount-word routing adds no vehicle facts or protected page changes.
+allowed.add('js/smart-consult-nonmonetary.js');
 for(const p of ['js/smart-consult-purchase-stage.js','tools/lib/purchase-stage-fixtures.js','tools/audit-purchase-stage.js','docs/purchase-stage-audit.md','docs/waste-noncollection-audit.md'])allowed.add(p);
 for(const p of ['index.html','css/home-hero-intro.css','docs/homepage-hero-intro-audit.md','docs/homepage-hero-intro-v2-audit.md','docs/manufacturer-wording-audit.md','tools/lib/homepage-approved-freeze.js'])allowed.add(p);
 for(const p of ['docs/spec-brand-query-audit.md','js/smart-consult-brand-query.js','docs/non-agm-owner-policy-audit.md','tools/lib/assert-non-agm-owner-policy.js'])allowed.add(p);

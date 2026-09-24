@@ -13,11 +13,12 @@ import {purchaseKnowledgePlan,purchaseKnowledgeReply} from './smart-consult-purc
 import {brandQueryPlan,brandQueryReply,productOriginQuestion} from './smart-consult-brand-query.js?v=owner-delkor-v1';
 import {batteryKnowledgePlan,batteryKnowledgeCopy,coldScheduleFollowup,withoutColdPricePreface} from './smart-consult-battery-knowledge.js';
 import {purchaseStagePlan} from './smart-consult-purchase-stage.js';
+import {nonmonetaryPlan, nonmonetaryEolma, monetaryQuestion, nonmonetaryCopy} from './smart-consult-nonmonetary.js';
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
 const negative = /^(아니|아니요|아냐|아니야)[.!\s]*$/;
-const pricePattern = /가격|얼마|비용|견적|배터리값|밧데리값/;
+const pricePattern = {test:text=>monetaryQuestion(text)||/배터리값|밧데리값/.test(text)};
 const knownBattery = result => result?.defaultBattery && !/문의|확인/.test(result.defaultBattery);
 
 export function createConversationState() {
@@ -75,6 +76,7 @@ export function recognizeIntent(text, entities) {
   if (/(?:오늘|내일).*?(?:와|오|돼|되|가능|방문)/.test(text)) return "TODAY_SERVICE";
   if (/아니|정정|수정|잘못|바꿔/.test(text) && (entities.year || entities.fuel || entities.matches.length)) return "CORRECTION";
   if (pricePattern.test(text)) return "PRICE_QUESTION";
+  if (nonmonetaryEolma(text)) return "NONMONETARY_QUESTION";
   if (/전화|통화/.test(text)) return "CALL_REQUEST";
   if (/구매|살래|주문|상품/.test(text)) return "BUY_REQUEST";
   if (symptomIntent(text)) return "SYMPTOM";
@@ -180,6 +182,39 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  const plan=selection===null&&servicePolicy&&nonmonetaryPlan(text,previous);
+  if(!plan)return conversationWithoutNonmonetary(previous,text,records,localities,priceCatalog,servicePolicy,selection);
+  let state={...previous},messages=[],actions=[],chips=[];
+  const say=s=>{if(s)messages.push(s.replaceAll('{phone}',PHONE_LABEL));};
+  for(const query of plan.priceQueries){
+    const out=conversationWithoutNonmonetary(state,query,records,localities,priceCatalog,servicePolicy);
+    state=out.state;messages.push(...out.messages);actions.push(...out.actions);chips=out.chips;
+  }
+  if(['WORK','MULTIPLE_WORK'].includes(plan.kind)){
+    messages.push(...finalFaqReply('작업시간',servicePolicy).messages);state.lastIntent='OP_WORK_TIME';
+  }
+  if(plan.kind==='DURATION'){
+    const reply=finalFaqReply('지금 가면 얼마나 걸려요?',servicePolicy);messages.push(...reply.messages);actions.push(...reply.actions);
+  }
+  if(plan.kind==='POST_INSTALL')say(servicePolicy.purchaseStage.POST_INSTALL);
+  if(plan.kind==='AS_PERIOD'){
+    const out=conversationWithoutNonmonetary(state,'A/S 기간이 얼마예요?',records,localities,priceCatalog,servicePolicy);state=out.state;messages.push(...out.messages);actions.push(...out.actions);
+  }
+  if(plan.kind==='AS_RESPONSE'){say(servicePolicy.purchaseStage.CASE_CONFIRM);say(servicePolicy.operational.REALTIME);actions.push('phone');}
+  if(nonmonetaryCopy[plan.kind]){say(nonmonetaryCopy[plan.kind]);state.lastIntent='NONMONETARY_'+plan.kind;}
+  const op=operationalPlan(text,previous);
+  if(plan.kind==='ARRIVAL'||op?.realtime||op?.keys.includes('RESERVATION')){
+    say(servicePolicy.operational.REALTIME);actions.push('phone');state.lastIntent='OP_REALTIME';
+    const location=resolveLocation(text,localities,previous.location||previous.region,previous.pendingLocationDisambiguation);
+    if(location.region){state.region=location.region;state.location=location.region;state.city=location.region.city;state.district=location.region.district;}
+  }
+  if(plan.kind==='MULTIPLE_WORK')actions.push('phone');
+  const payment=(text.match(/현금영수증|세금계산서|현금|현찰|카드|계좌이체/gi)||[]).join(' ');
+  const faq=payment&&finalFaqReply(payment,servicePolicy);if(faq){messages.push(...faq.messages);actions.push(...faq.actions);}
+  return {state,messages:unique(messages),actions:unique(actions),chips,result:null,region:state.region};
+}
+
+function conversationWithoutNonmonetary(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
   const stage=selection===null&&servicePolicy?.purchaseStage&&purchaseStagePlan(text,previous);
   if(!stage)return conversationWithoutPurchaseStage(previous,text,records,localities,priceCatalog,servicePolicy,selection);
   let state={...previous},messages=[],actions=[],chips=[];
