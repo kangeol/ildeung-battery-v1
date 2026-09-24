@@ -21,18 +21,31 @@ const negative = /^(아니|아니요|아냐|아니야)[.!\s]*$/;
 const pricePattern = {test:text=>monetaryQuestion(text)||/배터리값|밧데리값/.test(text)};
 const knownBattery = result => result?.defaultBattery && !/문의|확인/.test(result.defaultBattery);
 
+const compactStartText = text => String(text).toLowerCase().replace(/\s+/g, '');
+const unattemptedStart = text => /(?:아직|오늘은?|여태)(?:.{0,12})시동(?:을)?안걸(?:어봤|었|어|았습니다|었습니다)|시동(?:을)?안걸고(?:.{0,8})(?:세워|두었|뒀)/.test(compactStartText(text));
+const hypotheticalStart = text => /(?:만약)?시동(?:이)?(?:안걸리면|안걸면|안걸릴경우|걸리지않으면|안걸릴때)/.test(compactStartText(text));
+const actualStartEvidenceAfterCondition = text => /(?:지금|현재|오늘도|실제로).{0,12}(?:시동.{0,6}(?:안걸|못걸)|차.{0,6}(?:안켜|먹통))/.test(compactStartText(text).replace(/(?:만약)?시동(?:이)?(?:안걸리면|안걸면|안걸릴경우|걸리지않으면|안걸릴때)/g, ''));
+const nonActualStart = text => unattemptedStart(text) || (hypotheticalStart(text) && !actualStartEvidenceAfterCondition(text));
+const blockedTurnaround = text => /(?:회차|차량회전)(?:가|는|를|도|할|하기)?(?:안됩|안되|안돼|못|불가)/.test(compactStartText(text));
+const possibleFutureStart = text => /(?:시동|차|차량).{0,18}(?:안걸릴까|안걸릴거라|안걸릴수|안켜질수|못걸까)|(?:다시|또)안걸릴까/.test(compactStartText(text));
+const floodContext = text => /침수|(?:주차장|차량|차).{0,12}(?:물|잠겼|잠긴)|물.{0,12}(?:주차장|차량|차)/.test(compactStartText(text));
+const servicePlaceAfterTravel = text => /서울(?:에|로)?(?:왔|와)|경기(?:에|로)?(?:왔|와)|인천(?:에|로)?(?:왔|와)/.test(compactStartText(text));
+const siteCondition = text => /(?:회차|팔레트|기계식|작업구역|작업공간|본넷앞공간|보닛앞공간|주차장바닥|경사|진입로|차량접근).*(?:안|못|불가|넓|좁|있|없|됩니다|돼요|지정)/.test(compactStartText(text)) || /(?:외부정비|외부작업).*(?:허락|가능|괜찮)|(?:차|차량).{0,8}(?:옮겨야|이동해야)/.test(compactStartText(text));
+const vehicleScopeBoundary = '배터리 교체 상담만으로 해당 차량 증상의 원인이나 작업 방법을 판단할 수 없습니다. 배터리 상태·방전·교체 상담은 도와드릴 수 있으며, 다른 차량 문제나 안전 확인은 현장 전문가에게 확인해 주세요.';
+
 // A clear report that the customer's vehicle will not start needs useful symptom
 // guidance before the fitment flow asks for a model/year. This is deliberately
 // separate from weak/intermittent starts, READY interpretation and vague "안돼요".
 export function explicitVehicleNoStart(text, previous = createConversationState()) {
-  const compact = String(text).toLowerCase().replace(/\s+/g, '');
+  const compact = compactStartText(text);
+  if (nonActualStart(text) || blockedTurnaround(text) || possibleFutureStart(text)) return false;
   if (/(?:휴대폰|핸드폰|컴퓨터|노트북|블랙박스|에어컨|라디오|집전등|집의전등)(?:이|가|은|는)?(?:안(?:켜|되)|먹통)/.test(compact) && !/(?:시동|차(?:가|는|량|안|못|먹통|죽|전원)|자동차|\bcar\b)/i.test(text)) return false;
   if (/ready|레디|예열/i.test(text)) return false;
   if (/가끔|아침만|아침에.*안걸|두세번|여러번|덜덜|약하게|시동이약|시동약/.test(compact)) return false;
   if (/\b(?:my\s+)?car\b.*\b(?:will\s+not\s+start|won't\s+start|no\s+start|doesn't\s+start)\b/i.test(text)) return true;
   if (/시동.{0,8}(?:안걸|못걸|걸리지않|걸리지못|안켜)/.test(compact)) return true;
   if (/(?:배터리|밧데리|교체).{0,30}다시안걸/.test(compact)) return true;
-  const car = /(?:차량|자동차|(?<!주)차(?:가|는|를|도|두대|안|못|먹통|죽|전원|하나|를하루)|빌린차|친구차)/.test(compact);
+  const car = /(?:차량|자동차|(?<![주회])차(?:가|는|를|도|두대|안|못|먹통|죽|전원|하나|를하루)|빌린차|친구차)/.test(compact);
   if (car && /(?:안켜|안걸|못켜|못걸|먹통|차죽|차안돼|차가안돼|차가안됩|차가안되|차안됨)/.test(compact)) return true;
   if (car && /(?:차|차량|자동차).{0,12}(?:켜지지않|걸리지않|완전히먹통)/.test(compact)) return true;
   // A stranded customer can omit "차" in this automotive consultation, but
@@ -44,7 +57,7 @@ export function explicitVehicleNoStart(text, previous = createConversationState(
 
 function explicitNoStartReply(previous, text, records, localities, priceCatalog, servicePolicy) {
   const fitment = pricePattern.test(text) || /(?:어떤|무슨|뭘|뭐).{0,8}배터리|배터리.{0,8}(?:어떤|뭐|규격)|교체\s*(?:해\s*주세요|해줘|할게)|바꿀게/.test(text);
-  const other = /(?:오늘|내일|지금|언제|몇\s*시|출장|방문|가능|와\s*줄|올\s*수|현금|카드|계좌이체|현금영수증|주차장|가격|비용|얼마)/.test(text);
+  const other = /(?:(?:오늘|내일|지금).{0,12}(?:교체|출장|방문|와\s*줄|올\s*수|가능|되나요|돼요)|언제|몇\s*시|출장|방문|가능|와\s*줄|올\s*수|현금|카드|계좌이체|현금영수증|주차장|가격|비용|얼마)/.test(text);
   const base = conversationWithoutNonmonetary(previous, text, records, localities, priceCatalog, servicePolicy);
   const state = { ...base.state, symptom: { intent: 'NO_START', rawSafeText: symptomLabels.NO_START, confirmedAt: base.state.turnIndex || previous.turnIndex + 1 }, lastIntent: 'N1_EXPLICIT_NO_START', failures: previous.failures };
   const introduction = '차량 시동이나 전원이 켜지지 않는 상황이군요.';
@@ -61,7 +74,57 @@ function explicitNoStartReply(previous, text, records, localities, priceCatalog,
   }
   if ((fitment || other) && !['UNKNOWN', 'FUEL_INFO', 'BATTERY_QUESTION'].includes(base.state.lastIntent)) state.lastIntent = base.state.lastIntent;
   messages = unique([introduction, guidance, ...messages]);
-  return { ...base, state, messages, actions: fitment || other ? base.actions : [], chips: fitment ? base.chips : [], result: fitment ? base.result : null };
+  if (floodContext(text)) messages = unique([...messages, '침수 후 차량 상태와 안전 여부는 이 상담에서 판단할 수 없으므로 현장 전문가에게 점검·확인해 주세요.']);
+  if (servicePlaceAfterTravel(text) && !messages.some(message => /출장 가능 지역|가능 권역/.test(message)))
+    messages = unique([...messages, '서울·경기·인천은 출장 배터리 교체 가능 권역입니다. 정확한 현장 위치와 방문 일정은 고객센터 1644-9141로 확인해 주세요.']);
+  if (/같은\s*문제|같은\s*원인/.test(text)) messages = unique([...messages, '말씀하신 증상들이 같은 원인인지는 이 상담에서 판단할 수 없습니다.']);
+  return { ...base, state, messages, actions: servicePlaceAfterTravel(text) ? unique([...base.actions, 'phone']) : fitment || other ? base.actions : [], chips: fitment ? base.chips : [], result: fitment ? base.result : null };
+}
+
+function scopeAndServiceFollowup(previous, text, servicePolicy) {
+  const compact = compactStartText(text);
+  const messages = [], actions = [];
+  const add = message => { if (message) messages.push(message.replaceAll('{phone}', PHONE_LABEL)); };
+  let intent = '';
+  // Future concern and a question about an unattempted start are not a report of failure.
+  if (possibleFutureStart(text) && !actualStartEvidenceAfterCondition(text)) {
+    if (/v2l/i.test(text)) { add(vehicleScopeBoundary); intent = 'SCOPE_BOUNDARY'; }
+    else { add(previous.symptom?.intent === 'NO_START' ? '앞서 말씀하신 시동 문제를 고려해도, 다시 시동이 걸리지 않을지는 단정할 수 없습니다.' : '앞으로 시동이 걸리지 않을까 걱정되시는군요. 지금 시동 실패나 배터리 원인이 확인된 것은 아닙니다.'); add(servicePolicy.operational.SYMPTOM); intent = 'START_FUTURE_CONCERN'; }
+  } else if (hypotheticalStart(text) && !actualStartEvidenceAfterCondition(text) && !/가격|비용|얼마|교체비/.test(text)) {
+    if (siteCondition(text) || /팔레트|기계식/.test(text)) { add(servicePolicy.operational.SITE); actions.push('phone'); intent = 'OP_SITE'; }
+    else { add('시동이 걸리지 않는 경우를 가정하신 질문이군요. 실제 차량 상태와 원인은 그때 확인이 필요합니다.'); if (/방문|출장|와주시|가능/.test(text)) { add(servicePolicy.operational.REALTIME); actions.push('phone'); } intent = 'START_HYPOTHETICAL'; }
+  } else if (siteCondition(text)) {
+    add(servicePolicy.operational.SITE); actions.push('phone'); intent = 'OP_SITE';
+  } else if (/(?:진료|업무|근무)\s*중.{0,12}(?:못\s*내려|내려갈\s*수\s*없)|(?:차에|차로)\s*못\s*내려/.test(text)) {
+    add(servicePolicy.operational.NON_FACE_TO_FACE); actions.push('phone'); intent = 'OP_NON_FACE_TO_FACE';
+  } else if (/(?:\d{1,2}|아홉|열한)\s*시\s*전.{0,12}(?:출발|귀가|가야|될까)|(?:급히|급하게|퇴실|체크아웃|오늘\s*안에).{0,18}(?:출발|귀가|집에\s*가|가야|기다|가능|될까|갈\s*수)|(?:출발|귀가).{0,18}(?:\d{1,2}\s*시\s*전|급히|급하게)/.test(text)) {
+    add(servicePolicy.operational.REALTIME); actions.push('phone'); intent = 'OP_REALTIME';
+  } else if (/(?:휴게실|푸드코트|대기실).{0,14}(?:기다|있어도|돼요|가능)/.test(text)) {
+    add('대기 장소의 이용 가능 여부는 해당 시설에 확인해 주세요. 방문 가능 시간은 실시간 확인이 필요합니다.'); add(servicePolicy.operational.REALTIME); actions.push('phone'); intent = 'OP_REALTIME';
+  } else if (/(?:부모님|아이|애\s*둘|가족).{0,24}(?:기다|앉아\s*계시|집에\s*올려)|(?:기다|앉아\s*계시).{0,24}(?:부모님|아이|가족)/.test(text)) {
+    add('대기하시는 분들의 상황도 고려해야겠네요. 방문 가능 시간은 실시간 확인이 필요합니다.'); add(servicePolicy.operational.REALTIME); actions.push('phone'); intent = 'OP_REALTIME';
+  } else if (/고객\s*물건|짐을\s*(?:다|모두)\s*내렸/.test(text) && previous.symptom) {
+    add('작업 전 상황을 알려주셔서 감사합니다. 출장 배터리 교체를 원하시면 현재 차량 위치와 가능한 일정을 고객센터에서 확인해 주세요.'); actions.push('phone'); intent = 'OP_INTAKE';
+  } else if (/(?:센터\s*대신|이쪽으로|여기로).{0,12}(?:출동|방문|와\s*주)/.test(text)) {
+    add('차량이 있는 정확한 위치와 방문 가능 일정은 실시간 확인이 필요합니다.'); add(servicePolicy.operational.REALTIME); actions.push('phone'); intent = 'OP_REALTIME';
+  } else if (/(?:비\s*오면|날씨).{0,14}(?:장소|위치).{0,8}(?:바꿔|변경)|(?:차|차량).{0,8}(?:아래층|다른\s*층).{0,8}(?:내려|옮겨)|(?:차량\s*위치|작업\s*공간).{0,12}사진|현장\s*상황.{0,12}(?:방법|작업)/.test(text)) {
+    if (/사진/.test(text)) add('사진만으로 작업 가능 여부를 확정할 수는 없습니다.');
+    add(servicePolicy.operational.SITE); actions.push('phone'); intent = 'OP_SITE';
+  } else if (/제품.{0,14}(?:고르|선택)|(?:고르|선택).{0,14}제품/.test(text) && /친구\s*차|빌린\s*차|차주/.test(text)) {
+    add('차주와 제품 선택을 먼저 확인하시는 게 좋겠습니다. 차량에 맞는 배터리 규격과 가격은 차량 정보가 확인되면 안내할 수 있고, 이 채팅에서 교체를 확정하지 않습니다.'); intent = 'PRODUCT_CHOICE_CONTEXT';
+  } else if (/(?:충전|운행|운전).{0,20}(?:다시\s*안\s*타|오래\s*안\s*타|똑같겠)|(?:안\s*타|주행이\s*적).{0,20}(?:방전|충전)/.test(text)) {
+    add(batteryKnowledgeCopy.prevention); intent = 'KNOWLEDGE_DISCHARGE';
+  } else if (/시동.{0,12}(?:안\s*걸|못\s*걸).{0,12}(?:순서|어떻게\s*할)/.test(text) && /작업|옮겨|이동|주차|구역/.test(previous.lastIntent + ' ' + text)) {
+    add('차량 이동이나 현장 작업 순서를 이 상담에서 안전하게 정할 수 없습니다.'); add(servicePolicy.operational.SITE); actions.push('phone'); intent = 'OP_SITE';
+  } else if (/(?:전기차|하이브리드).{0,20}(?:화면|표시|디스플레이).{0,10}(?:안\s*켜|안\s*나|먹통)|(?:리모컨|스마트키).{0,16}(?:문|잠겼|안\s*돼)|(?:직접\s*해도|연결을\s*잘못|연결\s*상태부터)/.test(text)) {
+    add(vehicleScopeBoundary); intent = 'SCOPE_BOUNDARY';
+  } else if (previous.lastIntent === 'SCOPE_BOUNDARY' && /(?:스마트키|리모컨|열쇠|문\s*열|보닛|본넷)/.test(text)) {
+    add(vehicleScopeBoundary); intent = 'SCOPE_BOUNDARY';
+  } else if (previous.lastIntent === 'OP_SITE' && /(?:팔레트|작업|접근|공간|주차|밀어|옮겨)/.test(text)) {
+    add(servicePolicy.operational.SITE); actions.push('phone'); intent = 'OP_SITE';
+  }
+  if (!messages.length) return null;
+  return { state: { ...previous, turnIndex: previous.turnIndex + 1, lastIntent: intent, failures: previous.failures }, messages: unique(messages), actions: unique(actions), chips: [], result: null, region: previous.region };
 }
 
 export function createConversationState() {
@@ -70,7 +133,7 @@ export function createConversationState() {
 
 export function symptomIntent(text) {
   if (/시동.*약/.test(text)) return "WEAK_START";
-  if (/시동.*(?:안\s*걸|못\s*걸)/.test(text)) return "NO_START";
+  if (!nonActualStart(text) && /시동.*(?:안\s*걸|못\s*걸)/.test(text)) return "NO_START";
   // Negated discharge must not overwrite a symptom with an invented positive one.
   const positive = text.replace(/방전(?:은|이)?\s*아니(?:고|라|야|에요|요)?/g, "");
   if (/점프/.test(positive) && /방전/.test(positive)) return "JUMP_REDISCHARGE";
@@ -225,8 +288,27 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  // In a hypothetical no-start question, "교체비" is a price noun, not
+  // evidence that this customer's vehicle currently failed to start.
+  if (selection === null && servicePolicy && hypotheticalStart(text) && !actualStartEvidenceAfterCondition(text) && /교체비/.test(text))
+    return conversationWithoutNonmonetary(previous, text.replace(/교체비/g, '교체 비용'), records, localities, priceCatalog, servicePolicy);
+  if (selection === null && servicePolicy && blockedTurnaround(text))
+    return { state: { ...previous, turnIndex: previous.turnIndex + 1, lastIntent: 'OP_SITE' }, messages: [servicePolicy.operational.SITE.replaceAll('{phone}', PHONE_LABEL)], actions: ['phone'], chips: [], result: null, region: previous.region };
+  if (selection === null && servicePolicy && unattemptedStart(text)) {
+    const flooded = /(?:물|침수|잠겼|잠긴)/.test(text);
+    const messages = [/아직|여태/.test(text) ? '아직 시동을 걸어보지 않으신 상태군요. 현재 배터리 상태나 교체 필요 여부는 이 말씀만으로 판단할 수 없습니다.' : '말씀하신 내용만으로는 시동 실패나 배터리 교체 필요 여부가 확인되지 않습니다.'];
+    if (flooded) messages.push('침수 후 차량 상태와 안전 여부는 이 상담에서 판단할 수 없으므로 현장 전문가에게 점검·확인해 주세요.');
+    else messages.push('어떤 점이 걱정되시는지 알려주시면 배터리 상담 범위에서 안내하겠습니다.');
+    return { state: { ...previous, turnIndex: previous.turnIndex + 1, lastIntent: flooded ? 'SAFETY_FLOOD_SCOPE' : 'START_NOT_ATTEMPTED' }, messages, actions: [], chips: [], result: null, region: previous.region };
+  }
+  if (selection === null && servicePolicy) {
+    const scoped = scopeAndServiceFollowup(previous, text, servicePolicy);
+    if (scoped) return scoped;
+  }
   if (selection === null && servicePolicy && previous.lastIntent === 'N1_EXPLICIT_NO_START' && /(?:휴대폰|핸드폰).*말고.*차|차.*말씀/.test(text))
     return { state: { ...previous, lastIntent: 'N1_EXPLICIT_NO_START' }, messages: ['네, 차량 시동·전원 문제로 이해했습니다.', servicePolicy.operational.SYMPTOM], actions: [], chips: [], result: null, region: previous.region };
+  if (selection === null && servicePolicy && /시동.{0,12}(?:안\s*걸|못\s*걸).{0,12}(?:순서|어떻게\s*할)/.test(text))
+    return { state: { ...previous, turnIndex: previous.turnIndex + 1, lastIntent: 'OP_SITE' }, messages: ['시동이 걸리지 않는 상황에서 차량 이동이나 현장 작업 순서를 이 상담에서 안전하게 정할 수 없습니다.', servicePolicy.operational.SITE.replaceAll('{phone}', PHONE_LABEL)], actions: ['phone'], chips: [], result: null, region: previous.region };
   if (selection === null && servicePolicy && !batteryKnowledgePlan(text, previous) && explicitVehicleNoStart(text, previous))
     return explicitNoStartReply(previous, text, records, localities, priceCatalog, servicePolicy);
   const plan=selection===null&&servicePolicy&&nonmonetaryPlan(text,previous);
