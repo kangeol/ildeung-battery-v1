@@ -37,11 +37,15 @@ for(const p of ['tools/standalone-spec-evidence-route.js',...paths.filter(p=>p.s
 for(const p of paths.filter(p=>p.startsWith('docs/evidence/vehicle-selection/')))allowed.add(p);
 for(const p of paths.filter(p=>p.startsWith('docs/evidence/authentic-cash/')))allowed.add(p);
 for(const p of ['js/smart-consult-operational.js','tools/operational-fixtures.js',...paths.filter(p=>p.startsWith('docs/evidence/operational/'))])allowed.add(p);
+// Exact evaluator artifacts approved with the frozen semantic validation commit.
+for(const p of ['tools/frozen-corpus-change-registry.json','tools/frozen-corpus-unapproved-review.json','tools/lib/frozen-corpus-semantic-evaluator.js'])allowed.add(p);
+const isAllowedScopePath=p=>allowed.has(p)||p==='js/smart-consult-location.js'||p.startsWith('tools/test-')||p.startsWith('tools/audit-battery-')||['tools/lib/gn7-factual-regression.js','tools/lib/smart-consult-page-regression.js','tools/audit-blog-sync-regression.js'].includes(p)||p.startsWith('docs/evidence/battery-certainty/')||p.startsWith('docs/evidence/battery-pricing/')||p.startsWith('docs/evidence/db-driven-flow/');
+for(const p of ['css/unrelated-shared.css','js/unrelated-runtime.js','tools/unapproved-arbitrary.json'])assert.equal(isAllowedScopePath(p),false,`${p}: unauthorized scope probe must remain rejected`);
 for(const p of paths){
  if(['tools/lib/cold-weather-fixtures.js','tools/audit-cold-weather.js','docs/cold-weather-audit.md'].includes(p))continue;
  if(approvedSyncFiles.has(p))continue;
  if(['js/smart-consult-battery-knowledge.js','tools/lib/battery-knowledge-fixtures.js','tools/lib/blog-sync-approved-freeze.js','docs/battery-knowledge-audit.md'].includes(p))continue;
- assert.ok(allowed.has(p)||p==='js/smart-consult-location.js'||p.startsWith('tools/test-')||p.startsWith('tools/audit-battery-')||['tools/lib/gn7-factual-regression.js','tools/lib/smart-consult-page-regression.js','tools/audit-blog-sync-regression.js'].includes(p)||p.startsWith('docs/evidence/battery-certainty/')||p.startsWith('docs/evidence/battery-pricing/')||p.startsWith('docs/evidence/db-driven-flow/'),`out of scope: ${p}`);
+ assert.ok(isAllowedScopePath(p),`out of scope: ${p}`);
  if(p.endsWith('.html')){
   let expected=gn7FactualDelta(git(['show',`${baseline}:${p}`]).replace(/\r\n/g,'\n'),p);
   if(p==='smart-consult/index.html')expected=expected.replace('/js/smart-consult.js?v=ai-mobile-v1','/js/smart-consult.js?v=brand-query-v1').replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1');
