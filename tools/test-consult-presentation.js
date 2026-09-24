@@ -23,6 +23,7 @@ for(const p of ['js/smart-consult-conversation.js','js/smart-consult-prices.js',
 for(const p of ['tools/test-spec-vehicle-collision.js','tools/test-spec-vehicle-collision-browser.js','docs/spec-vehicle-collision-audit.md'])allowed.add(p);
 for(const p of ['data/consult-service-policy.json','js/smart-consult-purchase.js','tools/test-purchase-knowledge.js','tools/test-purchase-knowledge-browser.js','docs/purchase-knowledge-audit.md','tools/test-brand-comparison.js','tools/test-operational.js','tools/test-authentic-cash.js'])allowed.add(p);
 allowed.add('tools/test-final-faq.js');
+for(const p of ['tools/lib/cold-weather-fixtures.js','tools/audit-cold-weather.js','tools/test-cold-weather.js','tools/test-cold-weather-browser.js','docs/cold-weather-audit.md'])allowed.add(p);
 allowed.add('tools/test-smart-consult-launcher.js'); // Exact audited blog-sync snapshot update only.
 for(const p of ['js/smart-consult-battery-knowledge.js','tools/lib/battery-knowledge-fixtures.js','tools/lib/blog-sync-approved-freeze.js','tools/audit-battery-knowledge.js','tools/test-battery-knowledge.js','tools/test-battery-knowledge-browser.js','docs/battery-knowledge-audit.md'])allowed.add(p);
 allowed.add('tools/lib/gn7-factual-regression.js');allowed.add('tools/lib/homepage-approved-freeze.js');
