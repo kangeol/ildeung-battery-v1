@@ -1,4 +1,4 @@
-import { FAMILY_ALIASES, MANUFACTURER_ALIASES, buildVehicleGroups, normalizeText, searchVehicles } from "./smart-consult-core.js";
+import { FAMILY_ALIASES, MANUFACTURER_ALIASES, buildVehicleGroups, normalizeText, searchVehicles, vehicleAliasOccurs } from "./smart-consult-core.js";
 
 export const SAFE_ALIAS_MAP = Object.freeze({소나타:"쏘나타",아반테:"아반떼",그랜져:"그랜저",산타페:"싼타페",소렌토:"쏘렌토",투산:"투싼"});
 export const REJECTED_ALIASES = Object.freeze(["5","4","e"]);
@@ -57,9 +57,12 @@ export function resolveVehicleText(text, records, state = {}) {
     source=source.replace(alias,normalizeText(SAFE_ALIAS_MAP[alias]));
   }
   // Existing specific aliases such as 520d are resolved before any family shorthand.
-  let search=searchVehicles(source,records);
+  // Keep original token separators for Latin model boundaries; approved Korean
+  // spelling corrections remain the same, without compacting the whole sentence.
+  const searchText=approved.length ? text.replace(new RegExp(approved[0].alias,"i"),SAFE_ALIAS_MAP[approved[0].alias]) : text;
+  let search=searchVehicles(searchText,records);
   const hasSpecificModel=FAMILY_ALIASES.some(entry=>search.matches.some(group=>group.manufacturerId===entry.manufacturerId && group.vehicle===entry.vehicle) && entry.aliases.filter(alias=>/^(?:\d{3}[a-z]|[a-z]\d{3}[a-z]?)$/.test(alias)).some(alias=>new RegExp(`(?:^|[^a-z0-9]|bmw|벤츠)${escapePattern(alias)}(?![a-z0-9])`,"i").test(text.normalize("NFKC"))));
-  const specific=index.specificEntries.filter(entry=>completeToken(source,entry.alias) && /^(?:아니|차는|차량은|차가|타는)?$/.test(source.slice(0,source.indexOf(entry.alias)))).sort((a,b)=>b.alias.length-a.alias.length);
+  const specific=index.specificEntries.filter(entry=>completeToken(source,entry.alias) && vehicleAliasOccurs(searchText,entry.alias,entry.group.manufacturerId) && /^(?:아니|차는|차량은|차가|타는)?$/.test(source.slice(0,source.indexOf(entry.alias)))).sort((a,b)=>b.alias.length-a.alias.length);
   if(specific.length) {
     const best=specific.filter(entry=>entry.alias.length===specific[0].alias.length);
     const matches=[...new Map(best.map(entry=>[entry.group.key,entry.group])).values()];
@@ -69,7 +72,7 @@ export function resolveVehicleText(text, records, state = {}) {
     const family=normalizeText(group.vehicle),stem=familyStem(group.vehicle);
     if(stem===family) return false;
     const brands=MANUFACTURER_ALIASES[group.manufacturerId] || [group.manufacturerName];
-    const branded=brands.some(brand=>[family,stem].some(part=>completeToken(source,normalizeText(brand)+part)));
+    const branded=brands.some(brand=>[family,stem].some(part=>completeToken(source,normalizeText(brand)+part) && vehicleAliasOccurs(searchText,normalizeText(brand)+part,group.manufacturerId)));
     const contextual=state.manufacturer===group.manufacturerId && new RegExp(`^(?:아니)?(?:${escapePattern(stem)}|${escapePattern(family)})(?:야|이야|맞아)?$`).test(source);
     return branded || contextual;
   });
@@ -80,7 +83,7 @@ export function resolveVehicleText(text, records, state = {}) {
   const exactFamilies=index.groups.filter(group=>{
     const family=normalizeText(group.vehicle);
     const aliases=[family,...(MANUFACTURER_ALIASES[group.manufacturerId] || [group.manufacturerName]).map(brand=>normalizeText(brand)+family)];
-    return aliases.some(alias=>completeToken(source,alias) && /^(?:아니|차는|차량은|차가|타는)?$/.test(source.slice(0,source.indexOf(alias))));
+    return aliases.some(alias=>completeToken(source,alias) && vehicleAliasOccurs(searchText,alias,group.manufacturerId) && /^(?:아니|차는|차량은|차가|타는)?$/.test(source.slice(0,source.indexOf(alias))));
   });
   if(!hasSpecificModel && exactFamilies.length) search={matches:exactFamilies};
   // Explicit generation tokens are accepted only when actually present in this family.

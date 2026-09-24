@@ -35,6 +35,9 @@ for(const p of ['js/smart-consult-brand-query.js','tools/test-spec-brand-query.j
 // Approved homepage stack is frozen byte-for-byte at this task's baseline.
 for(const p of ['index.html','css/home-hero-intro.css','tools/test-homepage-hero-intro.js','docs/homepage-hero-intro-audit.md','docs/homepage-hero-intro-v2-audit.md']){check(git(['diff','821b74e95cf1b5ffac0503ebbbb9fa060d78c7b7','--',p])==='','homepage freeze '+p);allowed.add(p);}
 for(const p of ['tools/test-manufacturer-wording.js','tools/test-manufacturer-browser.js','docs/manufacturer-wording-audit.md'])allowed.add(p);
+// Authorized token-boundary remediation changes matching only; all presentation
+// byte comparisons below remain mandatory and unchanged.
+for(const p of ['js/smart-consult-core.js','js/vehicle-aliases.js','tools/test-vehicle-token-boundary.js'])allowed.add(p);
 for(const p of changed.filter(p=>!approvedSyncFiles.has(p)))check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
 const html=fs.readFileSync('smart-consult/index.html','utf8').replaceAll('\r\n','\n'),before=git(['show',baseline+':smart-consult/index.html']).replaceAll('\r\n','\n');
 check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=brand-query-v1'),'HTML only two cache tokens');

@@ -79,12 +79,50 @@ export function yearMatches(rangeText, year) {
   return start !== null || end !== null;
 }
 
-function detectManufacturer(normalizedQuery) {
+// Retain source boundaries while comparing canonical compact spellings. Normalizing
+// the entire sentence first would turn ordinary words (e.g. battery) into models.
+const vehicleSourceCache = new Map();
+export function vehicleAliasOccurs(value, alias, manufacturerId = "") {
+  const source = String(value).normalize("NFKC").toLocaleLowerCase("ko-KR");
+  const needle = normalizeText(alias);
+  if (!needle) return false;
+  if (!/[a-z]/.test(needle)) return normalizeText(source).includes(needle);
+  let mapped = vehicleSourceCache.get(source);
+  if (!mapped) {
+    const positions = []; let compact = "";
+    for (let i = 0; i < source.length; i++) if (/[0-9a-z가-힣]/.test(source[i])) { compact += source[i]; positions.push(i); }
+    mapped = { compact, positions };
+    if (vehicleSourceCache.size >= 2048) vehicleSourceCache.clear();
+    vehicleSourceCache.set(source, mapped);
+  }
+  const { compact, positions } = mapped;
+  const brands = MANUFACTURER_ALIASES[manufacturerId] || [];
+  for (let at = compact.indexOf(needle); at >= 0; at = compact.indexOf(needle, at + 1)) {
+    const start = positions[at], end = positions[at + needle.length - 1] + 1;
+    const before = source.slice(0, start), after = source.slice(end);
+    const left = !before || /[^a-z0-9가-힣]$/.test(before)
+      || /(?:^|[^a-z0-9가-힣])(?:아니|차는|차량은|차가|타는)$/.test(before)
+      || brands.some(brand => {
+        const brandKey = normalizeText(brand), brandAt = at - brandKey.length;
+        if (brandAt < 0 || !normalizeText(before).endsWith(brandKey)) return false;
+        const lead = source.slice(0, positions[brandAt]);
+        return !lead || /[^a-z0-9가-힣]$/.test(lead) || /(?:^|[^a-z0-9가-힣])(?:아니|차는|차량은|차가|타는)$/.test(lead);
+      });
+    const right = !after || /^[^a-z0-9가-힣]/.test(after)
+      || /^(?:이야|인데|이고|입니다|예요|이에요|이라고|라고|라는|이라|은|는|에|이요|요|을|를|의|가|도|만|랑|하고|으로|로|부터|까지|구형|신형|디젤|가솔린|하이브리드|전기|배터리|밧데리|야|가격|얼마)/.test(after)
+      || /^(?:19|20)\d{2}(?:년|$|[^a-z0-9가-힣])/.test(after);
+    if (left && right) return true;
+  }
+  return false;
+}
+
+function detectManufacturer(query) {
+  const normalizedQuery = normalizeText(query);
   let best = null;
   Object.entries(MANUFACTURER_ALIASES).forEach(([manufacturerId, aliases]) => {
     aliases.forEach((alias) => {
       const normalizedAlias = normalizeText(alias);
-      if (normalizedAlias && normalizedQuery.includes(normalizedAlias) && (!best || normalizedAlias.length > best.alias.length)) {
+      if (normalizedAlias && normalizedQuery.includes(normalizedAlias) && vehicleAliasOccurs(query, alias) && (!best || normalizedAlias.length > best.alias.length)) {
         best = { manufacturerId, alias: normalizedAlias };
       }
     });
@@ -92,10 +130,11 @@ function detectManufacturer(normalizedQuery) {
   return best;
 }
 
-function detectFamilyAlias(normalizedQuery, manufacturerId) {
+function detectFamilyAlias(query, manufacturerId) {
+  const normalizedQuery = normalizeText(query);
   const candidates = FAMILY_ALIASES.filter((entry) => !manufacturerId || entry.manufacturerId === manufacturerId);
   for (const entry of candidates) {
-    const found = entry.aliases.find((alias) => normalizedQuery.includes(normalizeText(alias)));
+    const found = entry.aliases.find((alias) => normalizedQuery.includes(normalizeText(alias)) && vehicleAliasOccurs(query, alias, entry.manufacturerId));
     if (found) return entry;
   }
   return null;
@@ -137,8 +176,8 @@ export function searchVehicles(query, records = []) {
 
   const year = extractYear(query);
   const fuel = detectFuel(query);
-  const manufacturer = detectManufacturer(normalizedQuery);
-  const aliasMatch = detectFamilyAlias(normalizedQuery, manufacturer?.manufacturerId);
+  const manufacturer = detectManufacturer(query);
+  const aliasMatch = detectFamilyAlias(query, manufacturer?.manufacturerId);
   const withoutManufacturer = manufacturer ? normalizedQuery.replace(manufacturer.alias, "") : normalizedQuery;
   const queryVehicle = withoutManufacturer.replace(/(?:19|20)\d{2}(?:년식?)?/g, "").replace(/\d{2}년식?/g, "");
   const groups = buildVehicleGroups(records);
@@ -167,13 +206,17 @@ export function searchVehicles(query, records = []) {
           detailScore = Math.min(detailScore, 0);
           matchedDetails.add(record.detailModel);
           exactMatchedDetails.add(record.detailModel);
-        } else if (queryVehicle.length >= 2 && detail.includes(queryVehicle)) {
+        } else if (queryVehicle.length >= 2 && detail.includes(queryVehicle) && vehicleAliasOccurs(record.detailModel, queryVehicle, group.manufacturerId)) {
           detailScore = Math.min(detailScore, 1);
           matchedDetails.add(record.detailModel);
         }
       });
 
-      const vehicleScore = queryVehicle.length >= 2 && (vehicle.includes(queryVehicle) || queryVehicle.includes(vehicle)) ? 2 : Number.POSITIVE_INFINITY;
+      // An explicit shared alphabetic family stem (e.g. XC -> XC40/XC60)
+      // remains a candidate query, never a substring inside customer prose.
+      const familyPrefix = /^[a-z]{2,}$/.test(queryVehicle) && vehicle.startsWith(queryVehicle)
+        && /^\d/.test(vehicle.slice(queryVehicle.length)) && vehicleAliasOccurs(query, queryVehicle, group.manufacturerId);
+      const vehicleScore = queryVehicle.length >= 2 && (familyPrefix || (vehicle.includes(queryVehicle) && vehicleAliasOccurs(group.vehicle, queryVehicle, group.manufacturerId)) || (queryVehicle.includes(vehicle) && vehicleAliasOccurs(query, group.vehicle, group.manufacturerId))) ? 2 : Number.POSITIVE_INFINITY;
       score = Math.min(detailScore, vehicleScore);
       if (detailScore < vehicleScore && exactMatchedDetails.size === 1) matchedDetail = [...exactMatchedDetails][0];
       else if (detailScore < vehicleScore && matchedDetails.size === 1) matchedDetail = [...matchedDetails][0];
