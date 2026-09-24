@@ -303,7 +303,11 @@ function conversationWithoutPurchaseStage(previous, text, records, localities = 
   if(spec?.candidates.length===1&&!knowledge.fit)state.quotedSpec=spec.candidates[0];
   const brand=brandIntent(text,priceCatalog);if(brand)state.brand=brand;
   messages.push(...knowledge.keys.map(k=>batteryKnowledgeCopy[k]));
-  if(knowledge.load?.duration&&!knowledge.load.clarify)messages.push(nonmonetaryCopy.USE);
+  if(knowledge.load?.duration&&(!knowledge.load.clarify||knowledge.load.omittedObject))messages.push(nonmonetaryCopy.USE);
+  if(knowledge.load?.omittedObject&&/a\s*\/?\s*s|보증/i.test(text)){
+    const afterSales=extendedPolicyReply('A/S 되나요?',state,priceCatalog,servicePolicy);
+    if(afterSales){messages.push(...afterSales.messages);actions.push(...afterSales.actions);}
+  }
   if(knowledge.fit){messages.push(servicePolicy.purchaseKnowledge.fit.replaceAll('{phone}',PHONE_LABEL));actions.push('phone');}
   if(knowledge.topic==='CODING')messages.push(servicePolicy.answers.CODING);
   const faq=finalFaqReply(text,servicePolicy);if(faq){messages.push(...faq.messages);actions.push(...faq.actions);}

@@ -2,6 +2,16 @@
 const compact=text=>String(text).normalize('NFKC').replace(/\s/g,'').toLowerCase();
 export function electricalLoadPlan(text,state={}) {
  const s=compact(text),context=state.lastIntent==='KNOWLEDGE_ELECTRICAL_LOAD';
+ // Resolve only the immediate load topic. A quoted battery/vehicle alone is not a referent.
+ const objectReply=state.lastIntent==='KNOWLEDGE_LOAD_OBJECT'&&/^(?:실내등|블랙박스|주차녹화|상시녹화|차량전기기기)(?:이요|요|입니다|예요|에요)?[?？.!]*$/.test(s);
+ const keepOn=/(?:켜|켜어)(?:두|둬|둔|놓|놔|놨)|틀어(?:두|놓)|계속(?:쓰|사용)/.test(s);
+ const shortLoad=/^(?:그럼|그러면|그거|그걸|그것|이거)?(?:하루종일|하루|밤새|밤새도록|계속|종일|몇시간|얼마나)?(?:은요|는요|요|켜두면요|켜놓고자면요|틀어두면요)[?？.!]*$/.test(s);
+ const omittedOpening=/^(?:(?:혹시|그럼|그러면|그거|그걸|그것|이거|하루종일|하루|밤새도록|밤새|계속|종일|몇시간|얼마나|오래|전기를|전기|좀|그냥))*(?:켜(?:두|둬|놓|놔)|틀어(?:두|놓)|사용|쓰)/.test(s);
+ const unrelated=/시동|엔진|휴대폰|핸드폰|스마트폰|컴퓨터|노트북|집|가정|거실|전기세|요금|고장|설치|수리|교체해/.test(s);
+ const knownObject=/실내등|전조등|라이트|블랙박스|녹화|에어컨|라디오|냉장고|냉동기|장판|인버터|충전기|전기기기|전기장비|모니터|tv|조명|공기청정기/.test(s);
+ const elliptical=!unrelated&&!knownObject&&((omittedOpening&&keepOn&&/방전|배터리|밧데리|전기|전력/.test(s))||(context&&omittedOpening&&keepOn)||shortLoad&&/하루|밤새|계속|종일|몇시간|얼마나|켜|틀어/.test(s));
+ if(objectReply)return {clarify:false,duration:false,deviceService:false};
+ if(elliptical)return {clarify:!context,omittedObject:true,duration:true,deviceService:false};
  // Damage/fault observations and expressly denied usage are not parked-load history.
  if(/침수|충돌|사고후|누액|부풀|불꽃|연기|타는냄새|쓴적.*없|사용한적.*없|혼자.*(?:껏켯|꺼|켜)/.test(s))return null;
  const vehicle=/차량|차안|차에서|차에|차를|차가|차문|차앱|시동|정차|택시|배터리|밧데리|시거잭|화물칸|전조등|주차녹화|상시녹화|원격냉방/.test(s);

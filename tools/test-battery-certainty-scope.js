@@ -18,6 +18,8 @@ const allowed=new Set(['data/hyundai.json','js/smart-consult-core.js','js/smart-
 allowed.add('js/vehicle-aliases.js');
 // Non-monetary amount-word routing adds no vehicle facts or protected page changes.
 allowed.add('js/smart-consult-nonmonetary.js');
+// Owner-authorized electrical-load recognition; no vehicle facts or HTML changes.
+allowed.add('js/smart-consult-electrical-load.js');
 for(const p of ['js/smart-consult-purchase-stage.js','tools/lib/purchase-stage-fixtures.js','tools/audit-purchase-stage.js','docs/purchase-stage-audit.md','docs/waste-noncollection-audit.md'])allowed.add(p);
 for(const p of ['index.html','css/home-hero-intro.css','docs/homepage-hero-intro-audit.md','docs/homepage-hero-intro-v2-audit.md','docs/manufacturer-wording-audit.md','tools/lib/homepage-approved-freeze.js'])allowed.add(p);
 for(const p of ['docs/spec-brand-query-audit.md','js/smart-consult-brand-query.js','docs/non-agm-owner-policy-audit.md','tools/lib/assert-non-agm-owner-policy.js'])allowed.add(p);
