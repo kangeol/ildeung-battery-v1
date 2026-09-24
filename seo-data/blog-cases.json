@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-24T08:18:33.306Z",
+  "syncedAt": "2026-09-24T14:22:33.373Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 1,
     "preservedPreviousPosts": 347,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 347,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 348,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 300,
-    "vehicleMatches": 279,
-    "detailMatches": 56,
-    "regionMatches": 231,
-    "neighborhoodMatches": 193,
-    "batteryMatches": 230,
+    "manufacturerMatches": 301,
+    "vehicleMatches": 280,
+    "detailMatches": 57,
+    "regionMatches": 232,
+    "neighborhoodMatches": 194,
+    "batteryMatches": 231,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,181 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 231,
-    "actualRegionMatches": 231,
-    "actualNeighborhoodMatches": 193,
+    "actualAreaMatches": 232,
+    "actualRegionMatches": 232,
+    "actualNeighborhoodMatches": 194,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224416797461",
+      "title": "서울 금천구(가산동) 2018년식 그랜저IG 델코 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224416797461",
+      "publishedAt": "2026-09-24",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224416797461.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTlfNTEg/MDAxNzg5NzgwMzMwMDM0.j8STKJ6jguh2H6tihP8Rmz51EKPl3BM4pRVmO4Dd5DMg.WmFMkiq7hVFXaDDnEyu5I6NIDlQh5wYYib9PUJye2hUg.JPEG/image-ig-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 금천구 가산동에서 2018년식 그랜저IG 배터리 교체 작업을 진행했습니다. 이번 차량은 시동이 아예 안 걸리거나 방전된 상태는 아니었습니다. 대신 시동을 걸기 전 전동창문을 움직여 보면 예전보다 천천히 올라가고 내려가는 느낌이 있었다고 하는데요. 이런 작은 변화는 그냥 모터가 오래돼서 그렇다고 생각하기 쉽지만, 시동 전에는 차량의 여러 전기 기능이 배터리에 저장된 전력을 사용하기 때문에 배터리 상태도 함께 확인해 볼 수 있습니다. 차량에 맞는 규격을 확인한 뒤 델코 AGM.......",
+      "tags": [
+        "금천구배터리",
+        "금천구출장배터리",
+        "가산동배터리",
+        "가산동출장배터리",
+        "그랜저ig배터리",
+        "그랜저ig배터리가격",
+        "그랜저ig배터리교체비용",
+        "그랜저ig배터리교체",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "출장배터리교체비용",
+        "자동차배터리가격",
+        "자동차배터리교체비용",
+        "출장배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "그랜저",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayName": "그랜저",
+            "urlPath": "/car-battery/hyundai/grandeur.html",
+            "matchedAlias": "그랜저",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayVehicleName": "그랜저",
+            "label": "IG",
+            "slug": "ig",
+            "urlPath": "/car-battery/hyundai/grandeur/ig.html",
+            "vehicleUrlPath": "/car-battery/hyundai/grandeur.html",
+            "matchedAlias": "IG"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayName": "그랜저",
+            "urlPath": "/car-battery/hyundai/grandeur.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "geumcheon-gu",
+          "regionName": "금천구",
+          "neighborhoodName": "가산동",
+          "label": "서울 금천구 가산동",
+          "urlPath": "/area/seoul/geumcheon-gu/gasan-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "geumcheon-gu",
+            "regionName": "금천구",
+            "label": "서울 금천구",
+            "urlPath": "/area/seoul/geumcheon-gu.html",
+            "matchedAlias": "금천구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "geumcheon-gu",
+            "regionName": "금천구",
+            "name": "가산동",
+            "legalName": "서울특별시 금천구 가산동",
+            "label": "서울 금천구 가산동",
+            "urlPath": "/area/seoul/geumcheon-gu/gasan-dong.html",
+            "matchedAlias": "가산동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/grandeur.html"
+          ],
+          "details": [
+            "/car-battery/hyundai/grandeur/ig.html"
+          ],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/geumcheon-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/geumcheon-gu/gasan-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "금천구 가산동에서 그랜저 IG AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224416793214",
       "title": "인천 남동구(서창동) 2020년식 BMW 320I G20 바르타 AGM95 출장배터리교체 가격 및 비용 안내｜시동 순간 계기판이 꺼질 때",
