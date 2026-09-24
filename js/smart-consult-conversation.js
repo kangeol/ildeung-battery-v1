@@ -12,6 +12,7 @@ import { comparisonIntent, comparisonReply } from './smart-consult-brand-compari
 import {purchaseKnowledgePlan,purchaseKnowledgeReply} from './smart-consult-purchase.js?v=owner-delkor-v1';
 import {brandQueryPlan,brandQueryReply,productOriginQuestion} from './smart-consult-brand-query.js?v=owner-delkor-v1';
 import {batteryKnowledgePlan,batteryKnowledgeCopy,coldScheduleFollowup,withoutColdPricePreface} from './smart-consult-battery-knowledge.js';
+import {purchaseStagePlan} from './smart-consult-purchase-stage.js';
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -179,6 +180,61 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  const stage=selection===null&&servicePolicy?.purchaseStage&&purchaseStagePlan(text,previous);
+  if(!stage)return conversationWithoutPurchaseStage(previous,text,records,localities,priceCatalog,servicePolicy,selection);
+  let state={...previous},messages=[],actions=[],chips=[];
+  const say=s=>{if(s)messages.push(s.replaceAll('{phone}',PHONE_LABEL));};
+  // Generic work-site nouns are not canonical geographic entities (e.g. airport vs 공항동).
+  const entityText=text.replace(/공항\s*주차장|회사\s*주차장|기계식\s*주차장|갓길/g,'');
+  const entities=extractEntities(entityText,records,previous,localities),spec=catalogSpecMention(entityText.replace(/(?<=[a-z0-9])(?:으로|로)(?=\s*할게)/gi,' '),priceCatalog);
+  const namedVehicle=entities.matches.some(m=>normalizeText(entityText).includes(normalizeText(m.vehicle)))||entities.pendingVehicleConfirmation;
+  if(!stage.total&&!stage.composite){
+    if(spec?.candidates.length===1)state.quotedSpec=spec.candidates[0];
+    const brand=brandIntent(text,priceCatalog);if(brand)state.brand=brand;
+  }
+  if((stage.total||stage.composite)&&!stage.keep&&!stage.unknownFee){
+    const explicitCodes=unique([...entityText.matchAll(/(?<![a-z0-9])(?:AGM|DIN|DF)\s*\d+[A-Z]*/gi)].map(m=>normalizeBatteryCode(m[0],priceCatalog)));
+    const explicitCode=explicitCodes.join(' 또는 ');
+    const code=spec?spec.candidates.length===1?spec.candidates[0]:spec.token:explicitCode||(!namedVehicle&&(state.quotedSpec||state.confirmedBattery));
+    const query=spec?.candidates.length>1?`${spec.token} 가격`:code?`${brandIntent(text,priceCatalog)||state.brand||''} ${code} 가격`:text.replace(/출장비.*|공임.*|총(?:금액|얼마|가격|비용).*|코딩비.*/g,'')+' 가격';
+    const out=code&&splitBatterySpec(code).length>1
+      ?{state:{...previous,quotedSpec:code,priceIntent:true,originalIntent:'PRICE'},messages:[priceDescription(code,priceCatalog,brandIntent(text,priceCatalog)||state.brand)],actions:['phone'],chips:[]}
+      :conversationWithoutPurchaseStage(previous,query,records,localities,priceCatalog,servicePolicy);
+    if(code||namedVehicle||entities.manufacturer){state=out.state;messages.push(...out.messages.filter(m=>m!==servicePolicy.summary));actions.push(...out.actions);chips=out.chips;}
+    else if(stage.total)say(servicePolicy.purchaseStage.TOTAL_UNKNOWN);
+    if(code&&/(?:으로|로)\s*할게/.test(text)){say(servicePolicy.purchaseKnowledge.application);actions.push('phone');}
+  }
+  if(entities.region){state.region=entities.region;state.location=entities.region;state.city=entities.region.city;state.district=entities.region.district;}
+  for(const k of ['PROCESS','SETTINGS','POST_INSTALL'])if(stage.keys.includes(k))say(servicePolicy.purchaseStage[k]);
+  if(stage.keys.includes('WASTE')){
+    if(stage.keep&&!stage.waste&&previous.lastIntent!=='STAGE_WASTE')say(servicePolicy.purchaseStage.UNCLEAR_OLD);
+    else {say(servicePolicy.answers[stage.keep?'KEEP_OLD_BATTERY':'OLD_BATTERY']);if(stage.keep)say(servicePolicy.purchaseKnowledge.contact);}
+    if(stage.keep||stage.wasteFee)actions.push('phone');state.lastIntent='STAGE_WASTE';
+  }
+  if(stage.detail){
+    const knowledge=batteryKnowledgePlan(text,previous);
+    if(knowledge)knowledge.keys.forEach(k=>say(batteryKnowledgeCopy[k]));
+    if(!knowledge)say(servicePolicy.operational.SYMPTOM);
+    const a=extendedPolicyReply('무조건 교환되나요?',state,priceCatalog,servicePolicy);messages.push(...a.messages);actions.push(...a.actions);
+    say(servicePolicy.purchaseStage.CASE_CONFIRM);
+  }
+  if(stage.site)say(servicePolicy.operational.SITE);
+  const operation=operationalPlan(text,state);
+  if(operation?.keys.includes('NON_FACE_TO_FACE'))say(servicePolicy.operational.NON_FACE_TO_FACE);
+  if(operation?.realtime){say(servicePolicy.operational.REALTIME);state.lastIntent='OP_REALTIME';actions.push('phone');}
+  if(stage.site){actions.push('phone');if(!operation?.realtime)state.lastIntent='OP_SITE';}
+  if(stage.total||stage.composite)say(servicePolicy.answers.COMBINED);
+  if(stage.keys.includes('EXTRA')){say(servicePolicy.answers.ONSITE_SURCHARGE);say(servicePolicy.purchaseStage.FEE_CONFIRM);actions.push('phone');}
+  if(stage.unknownFee){say(servicePolicy.purchaseStage.FEE_CONFIRM);actions.push('phone');}
+  if(/코딩/.test(text)){
+    const k=batteryKnowledgePlan(text,previous);if(k&&!k.fee)k.keys.forEach(key=>say(batteryKnowledgeCopy[key]));
+    if(!stage.total&&!stage.composite)say(servicePolicy.answers.CODING);if(stage.settings)state.lastIntent='KNOWLEDGE_CODING';
+  }
+  const faq=finalFaqReply(text,servicePolicy);if(faq){messages.push(...faq.messages);actions.push(...faq.actions);}
+  return {state,messages:unique(messages),actions:unique(actions),chips,result:null,region:state.region};
+}
+
+function conversationWithoutPurchaseStage(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
   if(selection===null&&coldScheduleFollowup(text,previous))return conversationWithoutBatteryKnowledge(previous,'오늘 가능해요?',records,localities,priceCatalog,servicePolicy);
   const knowledge=selection===null&&servicePolicy&&batteryKnowledgePlan(text,previous);
   if(!knowledge)return conversationWithoutBatteryKnowledge(previous,selection===null&&pricePattern.test(text)?withoutColdPricePreface(text):text,records,localities,priceCatalog,servicePolicy,selection);

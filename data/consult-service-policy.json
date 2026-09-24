@@ -12,6 +12,16 @@
     "SHORT_CLARIFY": "어떤 내용이 가능한지 말씀해 주시겠어요? 출장 지역, 예약 일정, 결제 방법 중 궁금한 내용을 알려주세요."
   },
   "authority": "Owner-authorized quoted replacement conditions",
+  "purchaseStage": {
+    "authority": "Owner-authorized purchase-stage clarification; no added procedure, coverage, fee or access guarantee",
+    "PROCESS": "차량·배터리 규격과 현장 조건을 확인해 교체 작업을 안내합니다. 시동 상태를 포함한 실제 작업 방법은 차량과 장비에 따라 확인이 필요하며, 여기서 직접 작업 방법을 단정해 안내하지 않습니다.",
+    "SETTINGS": "설정·메모리 유지 여부는 차량과 장비에 따라 달라 모든 설정이 보존된다고 보장할 수 없습니다. 라디오·블랙박스 등 설정 관련 사항은 작업 전 차량별로 확인해 주세요.",
+    "POST_INSTALL": "교체 후 운전 가능 여부나 추가로 필요한 조치는 차량 상태와 작업 결과에 따라 확인해야 합니다. 모든 차량에 같은 조치가 필요하거나 바로 운전해도 된다고 단정하지 않고, 작업 담당자에게 확인해 주세요.",
+    "UNCLEAR_OLD": "기존 폐배터리를 보관하시려는 말씀인가요? 안내 가격은 기존 폐배터리 수거 조건이며, 보관을 원하시면 고객센터 {phone}로 정확한 조건을 확인해 주세요.",
+    "FEE_CONFIRM": "말씀하신 별도 비용이나 조건은 임의로 정하지 않습니다. 정확한 적용 조건은 고객센터 {phone}로 확인해 주세요.",
+    "CASE_CONFIRM": "교환·환불이나 출장 A/S 가능 여부를 미리 보장하지 않습니다. 개별 증상과 차량·현장 조건은 고객센터 {phone}로 확인해 주세요.",
+    "TOTAL_UNKNOWN": "총 교체 금액은 차량에 맞는 배터리 규격과 적용 조건 확인이 필요합니다. 차량명·연식이나 궁금한 배터리 규격을 알려주세요."
+  },
   "purchaseKnowledge": {
     "sources": ["https://www.varta-automotive.com/knowledge/articles/article-details/battery-technologies", "https://www.varta-automotive.com/en/knowledge/articles/article-details/efb-and-agm-differences"],
     "sourceScope": "General construction/type distinctions only; no vehicle fitment, lifetime multipliers, sales prices or company cost inference.",
