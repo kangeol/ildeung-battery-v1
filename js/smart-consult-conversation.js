@@ -303,6 +303,7 @@ function conversationWithoutPurchaseStage(previous, text, records, localities = 
   if(spec?.candidates.length===1&&!knowledge.fit)state.quotedSpec=spec.candidates[0];
   const brand=brandIntent(text,priceCatalog);if(brand)state.brand=brand;
   messages.push(...knowledge.keys.map(k=>batteryKnowledgeCopy[k]));
+  if(knowledge.load?.duration&&!knowledge.load.clarify)messages.push(nonmonetaryCopy.USE);
   if(knowledge.fit){messages.push(servicePolicy.purchaseKnowledge.fit.replaceAll('{phone}',PHONE_LABEL));actions.push('phone');}
   if(knowledge.topic==='CODING')messages.push(servicePolicy.answers.CODING);
   const faq=finalFaqReply(text,servicePolicy);if(faq){messages.push(...faq.messages);actions.push(...faq.actions);}
@@ -310,7 +311,7 @@ function conversationWithoutPurchaseStage(previous, text, records, localities = 
   if((/가격/.test(text)||knowledge.cold&&pricePattern.test(text))&&!/코딩/.test(text)&&!knowledge.fit&&state.quotedSpec){messages.push(priceDescription(state.quotedSpec,priceCatalog,state.brand));state.priceIntent=true;state.originalIntent='PRICE';}
   const symptom=symptomIntent(text);if(symptom)state.symptom={intent:symptom,rawSafeText:symptomLabels[symptom],confirmedAt:state.turnIndex};
   state.lastIntent='KNOWLEDGE_'+knowledge.topic;
-  if(knowledge.cold&&operationalPlan(text,state)?.realtime){messages.push(servicePolicy.operational.REALTIME.replaceAll('{phone}',PHONE_LABEL));actions.push('phone');state.lastIntent='OP_REALTIME';}
+  if((knowledge.cold||knowledge.load&&/교체|출장|방문|기사|올\s*수|와\s*주/.test(text))&&operationalPlan(text,state)?.realtime){messages.push(servicePolicy.operational.REALTIME.replaceAll('{phone}',PHONE_LABEL));actions.push('phone');state.lastIntent='OP_REALTIME';}
   if(knowledge.keys.includes('standaloneCoding'))actions.push('phone');
   return {state,messages:unique(messages),actions:unique(actions),chips,result:null,region:state.region};
 }

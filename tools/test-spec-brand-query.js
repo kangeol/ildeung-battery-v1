@@ -1,3 +1,4 @@
+import {postSyncBaseline,approvedBlogCount} from './lib/blog-sync-approved-freeze.js';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -32,10 +33,10 @@ const gates=Object.fromEntries(['BRAND_QUERY_WRONG_INTENT','BRAND_QUERY_SPEC_LOS
 for(const e of evidence){const s=e.messages.join(' ');assert.doesNotMatch(s,/공장|제조법인|중국산 델코/);if(e.state.lastIntent==='BRAND_QUERY'&&/^AGM\d+R?$/.test(e.state.quotedSpec)&&!Object.hasOwn(catalog.brands.VARTA.prices,e.state.quotedSpec))assert.doesNotMatch(s,/바르타 기준 교체 가격/);}
 const ledger=Object.keys(catalog.prices).map(code=>({canonicalSpec:code,authoritativeBrands:authoritativeBrands(code,catalog),brandSource:'data/battery-prices.json brands.baseFamily / brands.*.prices',priceSource:'data/battery-prices.json prices',vartaSupported:Object.hasOwn(catalog.brands.VARTA.prices,code),direct:turn(code+' 브랜드는?').messages,particle:turn(code+'은 어디 브랜드예요?').messages,brandPrice:turn(code+' 브랜드랑 가격 알려줘').messages,unresolvedAuthority:authoritativeBrands(code,catalog).length===0}));
 const baseline='0d22a762363e3e77686e4ab3ff0f74e31f6e6752',git=(...args)=>execFileSync('git',args,{encoding:'utf8',maxBuffer:4e6}).trim();
-assert.equal(git('diff','--name-only','821b74e95cf1b5ffac0503ebbbb9fa060d78c7b7','--','data','seo-data','css','car-battery','area','battery','index.html','sitemap.xml','js/smart-consult-viewport.js','js/smart-consult-launcher.js',':(exclude)data/consult-service-policy.json'),'');
+assert.equal(git('diff','--name-only',postSyncBaseline,'--','data','seo-data','css','car-battery','area','battery','index.html','sitemap.xml','js/smart-consult-viewport.js','js/smart-consult-launcher.js',':(exclude)data/consult-service-policy.json'),'');
 const priorPolicy=JSON.parse(git('show','40d4bf70605982727a5dfe8d5a89887999d86e69:data/consult-service-policy.json')),preservedPolicy=structuredClone(policy);delete preservedPolicy.purchaseStage;assert.deepEqual(preservedPolicy,priorPolicy);
 const originalCatalog=JSON.parse(git('show',baseline+':data/battery-prices.json'));assert.deepEqual(catalog,{...originalCatalog,nonAgmBrandPolicy:{brand:'DELKOR',scope:'canonical_non_agm',authority:'Owner: ILDEUNG_AI_CONSULT_OWNER_NON_AGM_DELKOR_BRAND_POLICY_V1'}});
 for(const file of ['smart-consult/index.html','js/smart-consult.js','js/smart-consult-presentation.js']){let actual=fs.readFileSync(file,'utf8').replaceAll('\r\n','\n').replaceAll('?v=brand-query-v1','?v=purchase-v1').trim();actual=actual.replace('smart-consult-presentation.js?v=owner-delkor-v1','smart-consult-presentation.js?v=consult-ui-v1').replace('smart-consult-prices.js?v=owner-delkor-v1','smart-consult-prices.js?v=product-v1');assert.equal(actual,git('show',baseline+':'+file).replaceAll('\r\n','\n'));}
-assert.equal(read('seo-data/blog-cases.json').posts.length,346);assert.equal((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length,1133);
+assert.equal(read('seo-data/blog-cases.json').posts.length,approvedBlogCount);assert.equal((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length,1133);
 const dir=path.join(os.tmpdir(),'spec-brand-query');fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'after.json'),JSON.stringify({count:evidence.length,gates,ledger,evidence},null,2));console.log({status:'PASS',count:evidence.length,gates,ledgerRows:ledger.length,unresolvedAuthority:ledger.filter(r=>r.unresolvedAuthority).length});
 }

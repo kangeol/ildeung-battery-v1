@@ -2,13 +2,22 @@ import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { launcherMarkup } from "./smart-consult-launcher.js";
 import { gn7FactualDelta } from './gn7-factual-regression.js';
+import {approvedSyncFiles,postSyncBaseline} from './blog-sync-approved-freeze.js';
 
 // Audited, owner-authorized merge parent; never follow a moving remote implicitly.
 export const AUTHORIZED_MERGE = "e71c422ea433dcbbaeeb3dbc68fcc4c748ed3e6b";
 export const AUTHORIZED_PAGE_BASELINE = "b98f98bbc1c062a0985419670e513ddef0abc23c";
 const git = args => execFileSync("git", args, {encoding:"utf8",maxBuffer:5e6});
 const lf = text => text.replace(/\r\n/g,"\n");
-export function pageBaseline(page) { return lf(git(["show",`${AUTHORIZED_PAGE_BASELINE}:${page}`])); }
+export function pageBaseline(page) {
+  if(approvedSyncFiles.has(page)){
+    // Reconstruct only the historical CTA delta; retain all audited blog bytes.
+    const id=page.replace(/^car-battery\//,'').replace(/\.html$/,'');
+    const line=`              <a class="btn secondary smart-consult-link" href="/smart-consult/?vehicleId=${encodeURIComponent(id)}">이 차량 스마트 상담하기</a>\n`;
+    return lf(git(['show',`${postSyncBaseline}:${page}`])).replace(launcherMarkup,'').replace('</main>',line+'</main>');
+  }
+  return lf(git(["show",`${AUTHORIZED_PAGE_BASELINE}:${page}`]));
+}
 export function assertConsultPage(actual, before, id) {
   const line = `              <a class="btn secondary smart-consult-link" href="/smart-consult/?vehicleId=${encodeURIComponent(id)}">이 차량 스마트 상담하기</a>\n`;
   const html = lf(actual);

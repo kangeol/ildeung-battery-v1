@@ -1,3 +1,4 @@
+import {postSyncBaseline,approvedBlogCount} from './lib/blog-sync-approved-freeze.js';
 import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';import {pathToFileURL} from 'node:url';
 import {conversationTurn,createConversationState} from '../js/smart-consult-conversation.js';import {encodeSession,decodeSession} from '../js/smart-consult-session.js';
 import {priceDescription} from '../js/smart-consult-prices.js';
@@ -36,8 +37,8 @@ if(process.argv.includes('--browser')){
  let vehicle=run('구월동 BMW 5시리즈 2020년식 배터리 가격').state;for(const q of ['헌 배터리 제가 가지면?','얼마 달라져요?']){const o=turn(q,vehicle);check(names[2],o.state.confirmedBattery===vehicle.confirmedBattery&&o.state.selectedVehicleKey===vehicle.selectedVehicleKey&&JSON.stringify(o.state.region)===JSON.stringify(vehicle.region),q);vehicle=o.state;}
  for(const code of Object.keys(catalog.prices))for(const brand of ['DELKOR','VARTA']){const q=`폐배터리 반납 안 하고 ${brand} ${code} 총 얼마예요?`,o=turn(q);check(names[11],o.state.quotedSpec===code&&o.state.brand===brand,q);assert.ok(o.messages.includes(priceDescription(code,catalog,brand)),q);}
  const reset=run('처음부터',run('폐배터리 안 주면?').state);assert.equal(reset.state.lastIntent,createConversationState().lastIntent);
- assert.equal(rows.length,917);assert.equal(areas.length,665);assert.equal(j('seo-data/blog-cases.json').posts.length,346);assert.equal((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length,1133);
- assert.equal(execFileSync('git',['diff',baseline,'--','*.html','*.css','data','seo-data','sitemap.xml','js/smart-consult-brand-comparison.js'],{encoding:'utf8'}),'');
+ assert.equal(rows.length,917);assert.equal(areas.length,665);assert.equal(j('seo-data/blog-cases.json').posts.length,approvedBlogCount);assert.equal((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length,1133);
+ assert.equal(execFileSync('git',['diff',postSyncBaseline,'--','*.html','*.css','data','seo-data','sitemap.xml','js/smart-consult-brand-comparison.js'],{encoding:'utf8'}),'');
  fs.writeFileSync(path.join(os.tmpdir(),'waste-noncollection-focused.json'),JSON.stringify({count:evidence.length,gates,checks,before,evidence},null,2));
  console.log({count:evidence.length,gates,checks});for(const k of names){assert.ok(checks[k]>0,k);assert.equal(gates[k],0,k);}
 }

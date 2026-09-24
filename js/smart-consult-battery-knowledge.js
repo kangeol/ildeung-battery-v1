@@ -1,5 +1,8 @@
+import {electricalLoadPlan,electricalLoadClarification} from './smart-consult-electrical-load.js';
 // Customer education only. No measurements, fitment or vehicle coding authority.
 export const batteryKnowledgeCopy = Object.freeze({
+ loadClarify:electricalLoadClarification,
+ loadServiceScope:'블랙박스 설치·수리·가격은 배터리 교체 가격과 구분해 확인해야 합니다. 문의하신 기기 서비스의 취급 여부와 조건은 별도 확인이 필요합니다.',
  condition:'증상만으로 교체가 필요한지 단정할 수 없습니다. 실제 배터리 상태, 시동 상태, 방전 이력, 충전 계통과 사용패턴을 함께 확인한 뒤 교체 여부를 판단해야 합니다.',
  jump:'점프로 시동이 걸렸다고 배터리가 정상이라고 확정하거나 반드시 교체해야 한다고 판단할 수는 없습니다. 한 번의 방전만으로 교체를 결정하지 말고, 반복되면 배터리 상태와 방전·충전 원인을 함께 점검해 주세요.',
  discharge:'방전은 배터리 상태·노후, 장기주차나 주행 부족, 블랙박스 등 전기 사용, 충전·전기 계통 문제 등 여러 요인과 관련될 수 있습니다. 한 가지 원인으로 단정하지 말고 사용환경과 차량 상태를 함께 점검해 주세요.',
@@ -35,7 +38,9 @@ export function withoutColdPricePreface(text) {
  return String(text).replace(/^(?:겨울(?:철)?(?:에도|에)|추운\s*날(?:에도|에)|한파(?:에도|에)|영하인데)\s*/,'');
 }
 export function batteryKnowledgePlan(text,state){
- const s=compactKnowledge(text),topic=state.lastIntent||'',keys=[],cold=coldWeatherQuestion(s,state);
+ const s=compactKnowledge(text),topic=state.lastIntent||'',keys=[],cold=coldWeatherQuestion(s,state),load=electricalLoadPlan(text,state);
+ if(load?.clarify)return {keys:['loadClarify'],fit:false,fee:false,cold:false,load,topic:'LOAD_SCOPE'};
+ if(load)keys.push('discharge','prevention');
  const coding=/코딩|배터리등록|배터리리셋|배터리초기화|(?:등록|리셋).*(?:뭐|왜|필요)/.test(s)||topic==='KNOWLEDGE_CODING'&&/^(?:제차도|내차도|벤츠는|아우디는|bmw는)[?？.!]*$/.test(s);
  const fee=coding&&/비용|코딩비|얼마|별도|따로|무료|포함/.test(s);
  if(coding&&(!fee||/뭐|왜|필요|꼭|해야/.test(s))){keys.push('coding');if(/필요|꼭|해야|모든|bmw|벤츠|아우디|제차|내차/.test(s)||s==='코딩?')keys.push('codingRequired');}
@@ -47,11 +52,13 @@ export function batteryKnowledgePlan(text,state){
  const fit=/(?:agm|din|df)\d+.*대신.*(?:agm|din|df)\d+|용량.*(?:넣어도|바꿔도|낮춰도)/.test(s);
  const condition=/(?:갈아야|바꿔야|교체해야|교체시기|아직.*(?:쓸|써도)|시동만.*괜찮)/.test(s)||/^KNOWLEDGE_(?:CONDITION|DISCHARGE)$/.test(topic)&&/^교체[?？.!]*$/.test(s);
  if(condition)keys.push(/점프|방전/.test(s)?'jump':'condition');
- const discharge=/방전.*(?:왜|원인|예방|안되게)|(?:왜|자꾸|다시|또|한번|두번|1번|2번).*방전|블랙박스|장기주차|세워두면|재방전|(?:새배터리|교체했|점프).*방전/.test(s);
+ const deviceService=/블랙박스.*(?:설치(?:해|하|비|가능)|가격|추천|고장)/.test(s)&&!/방전|소모|원인|때문/.test(s);
+ if(deviceService&&!keys.length&&!fit)return {keys:['loadServiceScope'],fit:false,fee:false,cold:false,load:null,topic:'LOAD_SCOPE'};
+ const discharge=!deviceService&&/방전.*(?:왜|원인|예방|안되게)|(?:왜|자꾸|다시|또|한번|두번|1번|2번).*방전|블랙박스|장기주차|세워두면|재방전|(?:새배터리|교체했|점프).*방전/.test(s);
  if(discharge&&(!condition||/왜|블랙박스|원인/.test(s)))keys.push(/새배터리|교체했|점프했/.test(s)?'fresh':/(?:한번|두번|1번|2번).*방전/.test(s)?'jump':'discharge');
  if(/방전.*(?:예방|안되게)|방전예방/.test(s)||topic==='KNOWLEDGE_DISCHARGE'&&/^예방[?？.!]*$/.test(s))keys.push('prevention');
  if(cold){keys.push('cold');if(/(?:영하|기온|온도)|(?<![a-z0-9-])\d+(?:\.\d+)?(?:도|°c)/.test(s))keys.push('coldThreshold');}
  if(/점프.*(?:그냥|써도|괜찮)/.test(s))keys.push('jump');
  if(!keys.length&&!fit)return null;
- return {keys:[...new Set(keys)],fit,fee,cold,topic:coding?'CODING':cca?'CCA':capacity||fit?'CAPACITY':discharge||cold?'DISCHARGE':'CONDITION'};
+ return {keys:[...new Set(keys)],fit,fee,cold,load,topic:coding?'CODING':cca?'CCA':capacity||fit?'CAPACITY':load?'ELECTRICAL_LOAD':discharge||cold?'DISCHARGE':'CONDITION'};
 }

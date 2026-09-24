@@ -1,4 +1,4 @@
-import {approvedSyncFiles} from './lib/blog-sync-approved-freeze.js';
+import {approvedSyncFiles,postSyncBaseline,approvedBlogCount} from './lib/blog-sync-approved-freeze.js';
 import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 import {presentationIndex,messagePresentation,lookupStatus,lookupDelay,phoneProminence,literalParts} from '../js/smart-consult-presentation.js';
 import {conversationTurn,createConversationState} from '../js/smart-consult-conversation.js';
@@ -33,16 +33,17 @@ for(const p of ['tools/test-location-nlu.js','tools/lib/assert-non-agm-owner-pol
 for(const p of ['data/battery-prices.json','js/smart-consult-brand-comparison.js','tools/test-non-agm-owner-policy.js','tools/test-non-agm-owner-browser.js','docs/non-agm-owner-policy-audit.md'])allowed.add(p);
 for(const p of ['js/smart-consult-brand-query.js','tools/test-spec-brand-query.js','tools/test-spec-brand-query-browser.js','docs/spec-brand-query-audit.md','tools/test-battery-pricing.js','tools/test-battery-certainty-scope.js','tools/test-brand-service.js','tools/test-product-as-hours.js','tools/test-smart-consult-branding.js','tools/test-smart-consult-viewport.js'])allowed.add(p);
 // Approved homepage stack is frozen byte-for-byte at this task's baseline.
-for(const p of ['index.html','css/home-hero-intro.css','tools/test-homepage-hero-intro.js','docs/homepage-hero-intro-audit.md','docs/homepage-hero-intro-v2-audit.md']){check(git(['diff','821b74e95cf1b5ffac0503ebbbb9fa060d78c7b7','--',p])==='','homepage freeze '+p);allowed.add(p);}
+for(const p of ['index.html','css/home-hero-intro.css','tools/test-homepage-hero-intro.js','docs/homepage-hero-intro-audit.md','docs/homepage-hero-intro-v2-audit.md']){check(git(['diff',postSyncBaseline,'--',p])==='','homepage freeze '+p);allowed.add(p);}
 for(const p of ['tools/test-manufacturer-wording.js','tools/test-manufacturer-browser.js','docs/manufacturer-wording-audit.md'])allowed.add(p);
 // Authorized token-boundary remediation changes matching only; all presentation
 // byte comparisons below remain mandatory and unchanged.
 for(const p of ['js/smart-consult-core.js','js/vehicle-aliases.js','tools/test-vehicle-token-boundary.js'])allowed.add(p);
 // Narrow amount-word routing only; the UI and protected-page assertions stay intact.
 for(const p of ['js/smart-consult-nonmonetary.js','tools/test-nonmonetary-eolma.js'])allowed.add(p);
+for(const p of ['js/smart-consult-electrical-load.js','tools/test-electrical-load.js','tools/lib/smart-consult-page-regression.js'])allowed.add(p);
 for(const p of changed.filter(p=>!approvedSyncFiles.has(p)))check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
 const html=fs.readFileSync('smart-consult/index.html','utf8').replaceAll('\r\n','\n'),before=git(['show',baseline+':smart-consult/index.html']).replaceAll('\r\n','\n');
 check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=brand-query-v1'),'HTML only two cache tokens');
-check(read('seo-data/blog-cases.json').posts.length===346,'blog346');check((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length===1133,'sitemap1133');
+check(read('seo-data/blog-cases.json').posts.length===approvedBlogCount,'approved blog count');check((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length===1133,'sitemap1133');
 const source=fs.readFileSync('js/smart-consult.js','utf8');check(!source.includes('innerHTML'),'XSS text-only DOM');check(!source.includes('Math.random')&&!source.includes('setInterval'),'no random/typewriter');
-console.log(JSON.stringify({status:'PASS',checks,canonicalPriceLines:index.prices.size,vehicleRows:rows.length,areas:areas.length,blog:346,sitemap:1133,gates:{TYPEWRITER_EFFECT_PRESENT:0,RANDOM_FAKE_DELAY_PRESENT:0,SIMPLE_FAQ_ARTIFICIAL_DELAY:0,LOOKUP_PRESENTATION_DELAY_OVER_600MS:0},changed}));
+console.log(JSON.stringify({status:'PASS',checks,canonicalPriceLines:index.prices.size,vehicleRows:rows.length,areas:areas.length,blog:approvedBlogCount,sitemap:1133,gates:{TYPEWRITER_EFFECT_PRESENT:0,RANDOM_FAKE_DELAY_PRESENT:0,SIMPLE_FAQ_ARTIFICIAL_DELAY:0,LOOKUP_PRESENTATION_DELAY_OVER_600MS:0},changed}));

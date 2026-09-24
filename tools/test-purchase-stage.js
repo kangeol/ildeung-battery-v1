@@ -1,3 +1,4 @@
+import {postSyncBaseline,approvedBlogCount} from './lib/blog-sync-approved-freeze.js';
 import fs from 'node:fs';import os from 'node:os';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 import {conversationTurn,createConversationState} from '../js/smart-consult-conversation.js';import {encodeSession,decodeSession} from '../js/smart-consult-session.js';import {stageQuestions,stageCombined,stageFlows} from './lib/purchase-stage-fixtures.js';
 const j=p=>JSON.parse(fs.readFileSync(p)),rows=j('data/manufacturers.json').flatMap(m=>j('data/'+m.file).map(r=>({...r,manufacturerId:m.id,manufacturerName:m.name}))),areas=j('seo-data/smart-consult-location-index.json').localities,catalog=j('data/battery-prices.json'),policy=j('data/consult-service-policy.json');
@@ -28,7 +29,7 @@ for(const state of contexts){
 const changed=structuredClone(policy);changed.afterSales.periodMonths=7;assert.match(conversationTurn(createConversationState(),'출장 A/S?',rows,areas,catalog,changed).messages.join(' '),/7개월/);
 for(const code of Object.keys(catalog.prices)){const o=turn(code+' 설정 초기화?');assert.equal(o.state.quotedSpec,code);assert.equal(o.state.confirmedBattery,null);assert.equal(o.state.selectedVehicleKey,'');}
 const old=JSON.parse(execFileSync('git',['show','40d4bf70605982727a5dfe8d5a89887999d86e69:data/consult-service-policy.json'],{encoding:'utf8'})),stripped=structuredClone(policy);delete stripped.purchaseStage;assert.deepEqual(stripped,old,'all prior canonical policy truth unchanged');
-assert.equal(rows.length,917);assert.equal(areas.length,665);assert.equal(j('seo-data/blog-cases.json').posts.length,346);assert.equal((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length,1133);
-assert.equal(execFileSync('git',['diff','40d4bf70605982727a5dfe8d5a89887999d86e69','--','*.html','*.css','data/battery-prices.json','data/manufacturers.json','data/hyundai.json','seo-data','sitemap.xml'],{encoding:'utf8'}),'');
+assert.equal(rows.length,917);assert.equal(areas.length,665);assert.equal(j('seo-data/blog-cases.json').posts.length,approvedBlogCount);assert.equal((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length,1133);
+assert.equal(execFileSync('git',['diff',postSyncBaseline,'--','*.html','*.css','data/battery-prices.json','data/manufacturers.json','data/hyundai.json','seo-data','sitemap.xml'],{encoding:'utf8'}),'');
 for(const k of names){assert.ok(checks[k]>0,k+' unchecked');assert.equal(gates[k],0,k);}
 fs.writeFileSync(os.tmpdir()+'/purchase-stage-focused.json',JSON.stringify({count:evidence.length,gates,checks,evidence},null,2));console.log({count:evidence.length,gates});
