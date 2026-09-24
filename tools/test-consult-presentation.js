@@ -46,9 +46,12 @@ for(const p of ['js/smart-consult-electrical-load.js','tools/test-electrical-loa
 // Exact P1A follow-up paths; shared UI and unrelated runtime paths remain forbidden.
 for(const p of ['js/smart-consult-battery-knowledge.js','tools/test-elliptical-load.js'])allowed.add(p);
 allowed.add('tools/test-no-start-n1.js'); // Focused N1 routing regression; no presentation asset is permitted.
+for(const p of ['tools/frozen-corpus-change-registry.json','tools/frozen-corpus-unapproved-review.json','tools/lib/frozen-corpus-semantic-evaluator.js','tools/test-frozen-corpus-semantic.js','tools/test-frozen-corpus-semantic-self.js','tools/test-no-start-n1-boundaries.js'])allowed.add(p);
+for(const p of ['tools/test-scope-governance.js','docs/evidence/authentic-cash/focused.json','docs/evidence/battery-certainty/simulation.json','docs/evidence/brand-comparison/focused.json','docs/evidence/final-faq/faq.json','docs/evidence/final-faq/location/matrix.json','docs/evidence/final-faq/regression-results.json','docs/evidence/final-faq/regression/brand-service.json','docs/evidence/final-faq/regression/matrix.json','docs/evidence/final-faq/regression/pricing.json','docs/evidence/final-faq/regression/product-as-hours.json','docs/evidence/final-faq/regression/simulation.json','docs/evidence/product-as-hours/product-as-hours.json','docs/evidence/vehicle-selection/mass-after.json'])allowed.add(p);
 check(allowed.has('js/smart-consult-battery-knowledge.js'),'authorized P1A knowledge runtime');
 check(allowed.has('tools/test-elliptical-load.js'),'authorized P1A focused test');
 check(!allowed.has('css/index.css'),'unrelated shared UI remains forbidden');
+check(!allowed.has('js/unapproved-presentation-runtime.js'),'unrelated runtime remains forbidden');
 for(const p of changed.filter(p=>!approvedSyncFiles.has(p)))check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
 const html=fs.readFileSync('smart-consult/index.html','utf8').replaceAll('\r\n','\n'),before=git(['show',baseline+':smart-consult/index.html']).replaceAll('\r\n','\n');
 check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=brand-query-v1'),'HTML only two cache tokens');

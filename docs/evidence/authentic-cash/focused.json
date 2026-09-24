@@ -30,6 +30,7 @@
         "stores"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -93,6 +94,7 @@
         "stores"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -181,6 +183,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -226,6 +229,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -271,6 +275,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -328,6 +333,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -413,6 +419,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -458,6 +465,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -503,6 +511,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -560,6 +569,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -645,6 +655,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -690,6 +701,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -735,6 +747,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -792,6 +805,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -877,6 +891,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -922,6 +937,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -967,6 +983,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -1024,6 +1041,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -1109,6 +1127,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -1154,6 +1173,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -1199,6 +1219,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -1256,6 +1277,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -1341,6 +1363,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -1386,6 +1409,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -1431,6 +1455,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -1488,6 +1513,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -1573,6 +1599,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -1618,6 +1645,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -1663,6 +1691,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -1720,6 +1749,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -1805,6 +1835,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -1850,6 +1881,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -1895,6 +1927,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -1952,6 +1985,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -2037,6 +2071,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -2082,6 +2117,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -2127,6 +2163,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -2184,6 +2221,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -2269,6 +2307,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -2314,6 +2353,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -2359,6 +2399,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -2416,6 +2457,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -2501,6 +2543,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -2546,6 +2589,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -2591,6 +2635,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -2648,6 +2693,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -2733,6 +2779,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -2778,6 +2825,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -2823,6 +2871,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -2880,6 +2929,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -2965,6 +3015,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -3010,6 +3061,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -3055,6 +3107,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -3112,6 +3165,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -3197,6 +3251,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -3242,6 +3297,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -3287,6 +3343,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -3344,6 +3401,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -3429,6 +3487,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -3474,6 +3533,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -3519,6 +3579,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -3576,6 +3637,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -3661,6 +3723,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -3706,6 +3769,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -3751,6 +3815,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -3808,6 +3873,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -3893,6 +3959,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -3938,6 +4005,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -3983,6 +4051,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -4040,6 +4109,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -4125,6 +4195,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -4170,6 +4241,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -4215,6 +4287,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -4272,6 +4345,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -4357,6 +4431,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -4402,6 +4477,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -4447,6 +4523,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -4504,6 +4581,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -4589,6 +4667,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -4634,6 +4713,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -4679,6 +4759,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -4736,6 +4817,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -4821,6 +4903,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -4866,6 +4949,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -4911,6 +4995,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -4968,6 +5053,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -5053,6 +5139,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -5098,6 +5185,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -5143,6 +5231,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -5200,6 +5289,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -5285,6 +5375,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -5330,6 +5421,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -5375,6 +5467,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -5432,6 +5525,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -5517,6 +5611,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -5562,6 +5657,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -5607,6 +5703,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -5664,6 +5761,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -5749,6 +5847,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -5794,6 +5893,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -5839,6 +5939,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -5896,6 +5997,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -5981,6 +6083,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -6026,6 +6129,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -6071,6 +6175,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -6128,6 +6233,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -6213,6 +6319,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -6258,6 +6365,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -6303,6 +6411,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -6360,6 +6469,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -6445,6 +6555,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -6490,6 +6601,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -6535,6 +6647,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -6592,6 +6705,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -6677,6 +6791,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -6722,6 +6837,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -6767,6 +6883,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -6824,6 +6941,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -6909,6 +7027,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -6954,6 +7073,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -6999,6 +7119,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -7056,6 +7177,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -7141,6 +7263,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -7186,6 +7309,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -7231,6 +7355,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -7288,6 +7413,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -7373,6 +7499,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -7418,6 +7545,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -7463,6 +7591,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -7520,6 +7649,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -7605,6 +7735,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -7650,6 +7781,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -7695,6 +7827,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -7752,6 +7885,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -7837,6 +7971,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -7882,6 +8017,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -7927,6 +8063,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -7984,6 +8121,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -8069,6 +8207,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -8114,6 +8253,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -8159,6 +8299,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -8216,6 +8357,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -8301,6 +8443,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -8346,6 +8489,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -8391,6 +8535,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -8448,6 +8593,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -8533,6 +8679,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -8578,6 +8725,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -8623,6 +8771,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -8680,6 +8829,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -8765,6 +8915,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -8810,6 +8961,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -8855,6 +9007,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -8912,6 +9065,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -8997,6 +9151,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -9042,6 +9197,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -9087,6 +9243,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -9144,6 +9301,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -9229,6 +9387,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -9274,6 +9433,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -9319,6 +9479,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -9376,6 +9537,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -9461,6 +9623,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -9506,6 +9669,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -9551,6 +9715,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -9608,6 +9773,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -9693,6 +9859,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -9738,6 +9905,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -9783,6 +9951,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -9840,6 +10009,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -9925,6 +10095,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -9970,6 +10141,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -10015,6 +10187,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -10072,6 +10245,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -10157,6 +10331,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -10202,6 +10377,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -10247,6 +10423,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -10304,6 +10481,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -10389,6 +10567,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -10434,6 +10613,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -10479,6 +10659,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -10536,6 +10717,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -10621,6 +10803,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -10662,10 +10845,12 @@
     {
       "text": "새 배터리인가요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -10707,10 +10892,12 @@
     {
       "text": "새 배터리인가요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -10764,10 +10951,12 @@
     {
       "text": "새 배터리인가요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -10849,10 +11038,12 @@
     {
       "text": "새 배터리인가요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -10894,10 +11085,12 @@
     {
       "text": "새배터리인가요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -10939,10 +11132,12 @@
     {
       "text": "새배터리인가요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -10996,10 +11191,12 @@
     {
       "text": "새배터리인가요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -11081,10 +11278,12 @@
     {
       "text": "새배터리인가요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -11126,10 +11325,12 @@
     {
       "text": "혹시 새 배터리인가요요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -11171,10 +11372,12 @@
     {
       "text": "혹시 새 배터리인가요요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -11228,10 +11431,12 @@
     {
       "text": "혹시 새 배터리인가요요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -11313,10 +11518,12 @@
     {
       "text": "혹시 새 배터리인가요요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -11358,10 +11565,12 @@
     {
       "text": "새제품 맞나요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -11403,10 +11612,12 @@
     {
       "text": "새제품 맞나요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -11460,10 +11671,12 @@
     {
       "text": "새제품 맞나요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -11545,10 +11758,12 @@
     {
       "text": "새제품 맞나요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -11590,10 +11805,12 @@
     {
       "text": "새제품맞나요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -11635,10 +11852,12 @@
     {
       "text": "새제품맞나요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -11692,10 +11911,12 @@
     {
       "text": "새제품맞나요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -11777,10 +11998,12 @@
     {
       "text": "새제품맞나요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -11822,10 +12045,12 @@
     {
       "text": "혹시 새제품 맞나요요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -11867,10 +12092,12 @@
     {
       "text": "혹시 새제품 맞나요요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -11924,10 +12151,12 @@
     {
       "text": "혹시 새제품 맞나요요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -12009,10 +12238,12 @@
     {
       "text": "혹시 새제품 맞나요요?",
       "messages": [
+        "새 정품 배터리만 사용하며 중고·재생·리퍼 제품은 사용하지 않습니다.",
         "네. 항상 최신 제조일자 제품만 사용합니다."
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -12060,6 +12291,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -12107,6 +12339,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -12166,6 +12399,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -12253,6 +12487,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -12300,6 +12535,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -12347,6 +12583,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -12406,6 +12643,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -12493,6 +12731,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -12540,6 +12779,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -12587,6 +12827,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -12646,6 +12887,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -12733,6 +12975,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -12780,6 +13023,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -12827,6 +13071,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -12886,6 +13131,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -12973,6 +13219,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -13020,6 +13267,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -13067,6 +13315,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -13126,6 +13375,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -13213,6 +13463,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -13260,6 +13511,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -13307,6 +13559,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -13366,6 +13619,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -13453,6 +13707,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -13500,6 +13755,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -13547,6 +13803,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -13606,6 +13863,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -13693,6 +13951,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -13740,6 +13999,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -13787,6 +14047,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -13846,6 +14107,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -13933,6 +14195,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -13980,6 +14243,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -14027,6 +14291,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -14086,6 +14351,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -14173,6 +14439,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -14220,6 +14487,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -14267,6 +14535,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -14326,6 +14595,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -14413,6 +14683,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -14460,6 +14731,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -14507,6 +14779,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -14566,6 +14839,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -14653,6 +14927,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -14700,6 +14975,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -14747,6 +15023,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -14806,6 +15083,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -14893,6 +15171,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -14940,6 +15219,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -14987,6 +15267,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -15046,6 +15327,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -15133,6 +15415,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -15180,6 +15463,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -15227,6 +15511,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -15286,6 +15571,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -15373,6 +15659,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -15420,6 +15707,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -15467,6 +15755,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -15526,6 +15815,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -15613,6 +15903,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -15660,6 +15951,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -15707,6 +15999,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -15766,6 +16059,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -15853,6 +16147,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -15900,6 +16195,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -15947,6 +16243,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -16006,6 +16303,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -16093,6 +16391,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -16140,6 +16439,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -16187,6 +16487,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -16246,6 +16547,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -16333,6 +16635,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -16380,6 +16683,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -16427,6 +16731,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -16486,6 +16791,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -16573,6 +16879,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -16620,6 +16927,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -16667,6 +16975,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -16726,6 +17035,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -16813,6 +17123,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -16860,6 +17171,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -16907,6 +17219,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -16966,6 +17279,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -17053,6 +17367,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -17100,6 +17415,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -17147,6 +17463,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -17206,6 +17523,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -17293,6 +17611,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -17340,6 +17659,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -17387,6 +17707,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -17446,6 +17767,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -17533,6 +17855,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -17580,6 +17903,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -17627,6 +17951,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -17686,6 +18011,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -17773,6 +18099,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -17820,6 +18147,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -17867,6 +18195,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -17926,6 +18255,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -18013,6 +18343,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -18060,6 +18391,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -18107,6 +18439,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -18166,6 +18499,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -18253,6 +18587,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -18300,6 +18635,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -18347,6 +18683,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -18406,6 +18743,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -18493,6 +18831,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -18540,6 +18879,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -18587,6 +18927,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -18646,6 +18987,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -18733,6 +19075,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -18780,6 +19123,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -18827,6 +19171,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -18886,6 +19231,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -18973,6 +19319,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -19020,6 +19367,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -19067,6 +19415,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -19126,6 +19475,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -19213,6 +19563,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -19260,6 +19611,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -19307,6 +19659,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -19366,6 +19719,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -19453,6 +19807,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -19500,6 +19855,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -19547,6 +19903,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -19606,6 +19963,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -19693,6 +20051,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -19740,6 +20099,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -19787,6 +20147,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -19846,6 +20207,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -19933,6 +20295,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -19980,6 +20343,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -20027,6 +20391,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -20086,6 +20451,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -20173,6 +20539,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -20220,6 +20587,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -20267,6 +20635,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -20326,6 +20695,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -20413,6 +20783,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -20460,6 +20831,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -20507,6 +20879,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -20566,6 +20939,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -20653,6 +21027,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -20700,6 +21075,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -20747,6 +21123,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -20806,6 +21183,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -20893,6 +21271,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -20940,6 +21319,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -20987,6 +21367,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -21046,6 +21427,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -21133,6 +21515,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -21180,6 +21563,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -21227,6 +21611,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -21286,6 +21671,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -21373,6 +21759,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -21420,6 +21807,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -21467,6 +21855,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -21526,6 +21915,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -21613,6 +22003,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -21660,6 +22051,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -21707,6 +22099,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -21766,6 +22159,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -21853,6 +22247,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -21900,6 +22295,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -21947,6 +22343,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -22006,6 +22403,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -22093,6 +22491,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -22140,6 +22539,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -22187,6 +22587,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -22246,6 +22647,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -22333,6 +22735,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -22380,6 +22783,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -22427,6 +22831,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -22486,6 +22891,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -22573,6 +22979,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -22620,6 +23027,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -22667,6 +23075,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -22726,6 +23135,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -22813,6 +23223,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -22860,6 +23271,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -22907,6 +23319,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -22966,6 +23379,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -23053,6 +23467,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -23100,6 +23515,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -23147,6 +23563,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -23206,6 +23623,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -23293,6 +23711,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -23340,6 +23759,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -23387,6 +23807,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -23446,6 +23867,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -23533,6 +23955,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -23580,6 +24003,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -23627,6 +24051,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -23686,6 +24111,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -23773,6 +24199,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -23820,6 +24247,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -23867,6 +24295,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -23926,6 +24355,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -24013,6 +24443,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -24058,6 +24489,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -24103,6 +24535,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -24160,6 +24593,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -24245,6 +24679,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -24290,6 +24725,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -24335,6 +24771,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -24392,6 +24829,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -24477,6 +24915,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -24522,6 +24961,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -24567,6 +25007,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -24624,6 +25065,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -24709,6 +25151,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -24754,6 +25197,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -24799,6 +25243,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -24856,6 +25301,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -24941,6 +25387,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -24986,6 +25433,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -25031,6 +25479,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -25088,6 +25537,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -25173,6 +25623,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -25218,6 +25669,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -25263,6 +25715,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -25320,6 +25773,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -25405,6 +25859,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -25450,6 +25905,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -25495,6 +25951,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -25552,6 +26009,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -25637,6 +26095,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -25682,6 +26141,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -25727,6 +26187,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -25784,6 +26245,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -25869,6 +26331,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -25914,6 +26377,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -25959,6 +26423,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -26016,6 +26481,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -26101,6 +26567,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -26146,6 +26613,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -26191,6 +26659,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -26248,6 +26717,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -26333,6 +26803,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -26378,6 +26849,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -26423,6 +26895,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -26480,6 +26953,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -26565,6 +27039,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -26610,6 +27085,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -26655,6 +27131,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -26712,6 +27189,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -26797,6 +27275,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -26842,6 +27321,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -26887,6 +27367,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -26944,6 +27425,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -27029,6 +27511,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -27074,6 +27557,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -27119,6 +27603,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -27176,6 +27661,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -27261,6 +27747,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -27306,6 +27793,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -27351,6 +27839,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -27408,6 +27897,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -27493,6 +27983,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -27538,6 +28029,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -27583,6 +28075,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -27640,6 +28133,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -27725,6 +28219,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -27770,6 +28265,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -27815,6 +28311,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -27872,6 +28369,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -27957,6 +28455,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -28002,6 +28501,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -28047,6 +28547,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -28104,6 +28605,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -28189,6 +28691,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -28234,6 +28737,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -28279,6 +28783,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -28336,6 +28841,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -28421,6 +28927,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -28466,6 +28973,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -28511,6 +29019,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -28568,6 +29077,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -28653,6 +29163,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -28698,6 +29209,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -28743,6 +29255,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -28800,6 +29313,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -28885,6 +29399,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -28930,6 +29445,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -28975,6 +29491,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -29032,6 +29549,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -29117,6 +29635,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -29162,6 +29681,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -29207,6 +29727,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -29264,6 +29785,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -29349,6 +29871,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -29396,6 +29919,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -29443,6 +29967,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -29502,6 +30027,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -29589,6 +30115,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -29636,6 +30163,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -29683,6 +30211,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -29742,6 +30271,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -29829,6 +30359,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -29876,6 +30407,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -29923,6 +30455,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -29982,6 +30515,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -30069,6 +30603,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -30116,6 +30651,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -30163,6 +30699,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -30222,6 +30759,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -30309,6 +30847,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -30356,6 +30895,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -30403,6 +30943,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -30462,6 +31003,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -30549,6 +31091,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -30596,6 +31139,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -30643,6 +31187,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -30702,6 +31247,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -30789,6 +31335,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -30836,6 +31383,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -30883,6 +31431,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -30942,6 +31491,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -31029,6 +31579,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -31076,6 +31627,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -31123,6 +31675,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -31182,6 +31735,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -31269,6 +31823,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -31316,6 +31871,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -31363,6 +31919,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -31422,6 +31979,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -31509,6 +32067,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -31556,6 +32115,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -31603,6 +32163,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -31662,6 +32223,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -31749,6 +32311,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -31796,6 +32359,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -31843,6 +32407,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -31902,6 +32467,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -31989,6 +32555,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -32036,6 +32603,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -32083,6 +32651,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -32142,6 +32711,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -32229,6 +32799,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -32274,6 +32845,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -32319,6 +32891,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -32365,6 +32938,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -32411,6 +32985,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -32457,6 +33032,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -32502,6 +33078,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -32547,6 +33124,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -32592,6 +33170,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": false,
@@ -32637,6 +33216,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": false,
@@ -32686,6 +33266,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -32731,6 +33312,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM105",
         "priceSummaryShown": false,
@@ -32783,6 +33365,7 @@
         "stores"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -32845,6 +33428,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -32896,6 +33480,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -32973,6 +33558,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -33021,6 +33607,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM999",
         "priceSummaryShown": false,
@@ -33072,6 +33659,7 @@
         "stores"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -33131,6 +33719,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -33188,6 +33777,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -33245,6 +33835,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -33302,6 +33893,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -33359,6 +33951,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "VARTA",
         "quotedSpec": "AGM95",
         "priceSummaryShown": true,
@@ -33418,6 +34011,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -33491,6 +34085,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "",
         "priceSummaryShown": false,
@@ -33596,6 +34191,7 @@
         "stores"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -33683,6 +34279,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -33772,6 +34369,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -33859,6 +34457,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -33946,6 +34545,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -34036,6 +34636,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -34081,6 +34682,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -34128,6 +34730,7 @@
         "phone"
       ],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -34173,6 +34776,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,
@@ -34218,6 +34822,7 @@
       ],
       "actions": [],
       "state": {
+        "customerReportedSpec": "",
         "brand": "",
         "quotedSpec": "AGM105",
         "priceSummaryShown": true,

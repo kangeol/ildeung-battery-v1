@@ -1,0 +1,141 @@
+{
+  "policyVersion": "frozen-semantic-v1",
+  "frozenCorpusSha256": "9a292e59c5ccb32ff4a118729a8b72ba37e53f445e202759bc4e6cec3778dca1",
+  "reference": {
+    "commit": "eeebe36f0ab793478ff5faf99f9709a03c09472c",
+    "artifact": "p1a-ellipse-20260924/corpus-adjudicated.jsonl",
+    "sha256": "e3d9b22aab23e6e2eda63d32bdb2edf8aac48371c64e83c5a1b9c8441752fb97",
+    "approvedPriorChanges": [
+      "P0 vehicle token boundary",
+      "P1 nonmonetary 얼마 routing",
+      "P1A electrical load usage",
+      "P1A elliptical load followup"
+    ]
+  },
+  "contracts": [
+    {
+      "id": "N1_EXPLICIT_VEHICLE_NO_START",
+      "implementationCommit": "83b8fe7496f2c6e078b4ca764afab329418446a8",
+      "changeAuthority": "ILDEUNG_AI_CONSULT_P1B_N1_EXPLICIT_NO_START_ROUTING_REMEDIATION_V1",
+      "reason": "Replace unnecessary vehicle-first clarification with safe no-start guidance for the exact approved N1 source cases.",
+      "priorClassification": "Read per case from the SHA-256-pinned P1A reference artifact above.",
+      "semanticContract": "Acknowledge a vehicle start/power failure, keep battery causation and replacement uncertain, request no vehicle/year before useful guidance, and do not invent price, spec, availability, or a diagnosis.",
+      "caseIds": [
+        "S0061", "S0391", "S0454", "S0694", "S0732", "S0931", "S1361",
+        "N0011", "N0081", "N0160", "N0181", "N0231", "N0249", "N0351",
+        "N0361", "N0395", "C002-T1", "C047-T1", "C138-T1", "C205-T1",
+        "C265-T1", "C270-T1", "C308-T1", "C314-T1", "C337-T1"
+      ]
+    },
+    {
+      "id": "N1_DERIVED_GUIDANCE",
+      "kind": "N1_GUIDANCE",
+      "implementationCommit": "83b8fe7496f2c6e078b4ca764afab329418446a8",
+      "changeAuthority": "ILDEUNG_AI_CONSULT_P1B_N1_EXPLICIT_NO_START_ROUTING_REMEDIATION_V1",
+      "reason": "Individually reviewed B changes: explicit current no-start receives the approved uncertainty answer, without fitment invention.",
+      "priorClassification": "Per-case SHA-pinned approved reference",
+      "semanticContract": "Current vehicle start failure acknowledged; no diagnosis, vehicle-first demand, invented spec, price or availability.",
+      "caseIds": ["S0001", "S0241", "S0433", "S0760", "S0793", "S1205", "S1501", "S1651", "N0001", "C018-T1", "C052-T3", "C161-T3", "C191-T3", "C278-T2", "C301-T1", "C325-T2", "C340-T1", "C349-T3"]
+    },
+    {
+      "id": "N1_WITH_SERVICE_AREA",
+      "kind": "N1_LOCATION",
+      "implementationCommit": "83b8fe7496f2c6e078b4ca764afab329418446a8 + SHA-pinned scope20 runtime candidate",
+      "changeAuthority": "Owner scope Tier2 location must survive Tier3 triage",
+      "reason": "Individually reviewed B/C changes preserve supported area and no-start uncertainty without live arrival promise.",
+      "priorClassification": "Per-case SHA-pinned approved reference",
+      "semanticContract": "No-start uncertainty plus supported service-area boundary; no specific arrival claim.",
+      "caseIds": ["S0541", "S1051", "C036-T1"]
+    },
+    {
+      "id": "SCOPE20_SITE_CONDITION",
+      "kind": "SITE",
+      "implementationCommit": "SHA-pinned scope20 runtime candidate",
+      "changeAuthority": "ILDEUNG_SCOPE_GOVERNED_20_DEFECT_READJUDICATION_AND_RELEASE_REMEDIATION_V1",
+      "reason": "Exact reviewed site/access/turnaround cases use existing owner-authorized worksite policy, not vehicle fitment or site permission fabrication.",
+      "priorClassification": "Per-case SHA-pinned approved reference",
+      "semanticContract": "State site safety/access dependency and live confirmation; no unconditional work or parking-access promise.",
+      "caseIds": ["S0489", "S1535", "C337-T3", "C259-T4", "S1146", "S1547", "S1672", "C052-T2", "C052-T4", "C077-T3", "C137-T4", "C165-T4", "C172-T2", "C172-T3", "C232-T3", "C259-T1", "C259-T2", "C259-T3", "C314-T5", "C337-T4", "C347-T3", "C347-T6"]
+    },
+    {
+      "id": "SCOPE20_LIVE_SCHEDULE",
+      "kind": "SCHEDULE",
+      "implementationCommit": "SHA-pinned scope20 runtime candidate",
+      "changeAuthority": "ILDEUNG_SCOPE_GOVERNED_20_DEFECT_READJUDICATION_AND_RELEASE_REMEDIATION_V1",
+      "reason": "Exact reviewed urgency, waiting and arrival cases retain real-time confirmation without fake reservation or vehicle interrogation.",
+      "priorClassification": "Per-case SHA-pinned approved reference",
+      "semanticContract": "State live timing boundary and useful handoff; no availability or site waiting permission guarantee.",
+      "caseIds": ["C002-T2", "C270-T2", "S0549", "S1103", "N0370", "C002-T4", "C030-T2", "C037-T3", "C037-T4", "C138-T4", "C270-T3", "C302-T5", "C314-T3", "C337-T5"]
+    },
+    {
+      "id": "SCOPE20_NON_BATTERY_BOUNDARY",
+      "kind": "SCOPE",
+      "implementationCommit": "SHA-pinned scope20 runtime candidate",
+      "changeAuthority": "Owner Tier4 scope-to-battery conversion policy",
+      "reason": "Exact reviewed non-battery diagnosis/procedure cases receive one common boundary, without vehicle interrogation or invented repair service.",
+      "priorClassification": "Per-case SHA-pinned approved reference",
+      "semanticContract": "No automotive diagnosis or procedure; offer battery/discharge/replacement consultation instead.",
+      "caseIds": ["S1724", "C118-T1", "C205-T4", "C278-T3", "C308-T3", "S0380", "C278-T4", "C308-T4", "C308-T5"]
+    },
+    {
+      "id": "SCOPE20_FUTURE_START_CONCERN",
+      "kind": "FUTURE_START",
+      "implementationCommit": "SHA-pinned scope20 runtime candidate",
+      "changeAuthority": "Owner Tier3 uncertainty without present-symptom fabrication",
+      "reason": "Exact reviewed future-risk statements are not current no-start diagnoses.",
+      "priorClassification": "Per-case SHA-pinned approved reference",
+      "semanticContract": "Acknowledge uncertainty about future starting; do not assert current failure or battery cause.",
+      "caseIds": ["S0520", "S1419", "C096-T3"]
+    },
+    {
+      "id": "SCOPE20_FLOOD_SAFETY",
+      "kind": "FLOOD",
+      "implementationCommit": "SHA-pinned scope20 runtime candidate",
+      "changeAuthority": "Owner flood/water safety boundary",
+      "reason": "Exact reviewed flood turns avoid safe-to-start claims and direct to professional inspection.",
+      "priorClassification": "Per-case SHA-pinned approved reference",
+      "semanticContract": "Explicit flood safety uncertainty and professional check; no procedure or battery diagnosis.",
+      "caseIds": ["C057-T3", "S1681"]
+    },
+    {
+      "id": "SCOPE20_HYPOTHETICAL_PRICE",
+      "kind": "HYPOTHETICAL_PRICE",
+      "implementationCommit": "SHA-pinned N1 boundary runtime candidate",
+      "changeAuthority": "ILDEUNG_N1_S3_BOUNDARY_REMEDIATION_AND_VALIDATION_RECONCILIATION_V1",
+      "reason": "Reviewed B case preserves hypothetical condition and asks minimum vehicle/spec for exact price.",
+      "priorClassification": "Per-case SHA-pinned approved reference",
+      "semanticContract": "No present no-start claim; no invented canonical price; fitment facts required for exact price.",
+      "caseIds": ["S1020"]
+    },
+    {
+      "id": "SCOPE20_BATTERY_GUIDANCE",
+      "kind": "BATTERY_GUIDANCE",
+      "implementationCommit": "SHA-pinned scope20 runtime candidate",
+      "changeAuthority": "Owner Tier1/Tier3 existing battery knowledge",
+      "reason": "Exact reviewed battery-use and symptom-correlation cases reach existing safe guidance.",
+      "priorClassification": "Per-case SHA-pinned approved reference",
+      "semanticContract": "Provide useful non-diagnostic battery guidance without a vehicle-first restart or causal guarantee.",
+      "caseIds": ["C022-T3", "C265-T3"]
+    },
+    {
+      "id": "SCOPE20_PURCHASE_CONTEXT",
+      "kind": "PURCHASE_CONTEXT",
+      "implementationCommit": "SHA-pinned scope20 runtime candidate",
+      "changeAuthority": "Owner Tier2 purchase intake and product choice",
+      "reason": "Exact reviewed customer-supplied purchase context is retained without confirming an order.",
+      "priorClassification": "Per-case SHA-pinned approved reference",
+      "semanticContract": "Acknowledge the purchase/choice context and do not claim an order was placed.",
+      "caseIds": ["C047-T2", "C138-T2", "C227-T3"]
+    },
+    {
+      "id": "SCOPE20_NON_FACE_TO_FACE",
+      "kind": "NON_FACE_TO_FACE",
+      "implementationCommit": "SHA-pinned scope20 runtime candidate",
+      "changeAuthority": "Owner non-face-to-face policy",
+      "reason": "Exact reviewed customer absence receives existing key-handoff boundary, not vehicle re-identification.",
+      "priorClassification": "Per-case SHA-pinned approved reference",
+      "semanticContract": "State non-face-to-face possibility and exact key/site/schedule confirmation, without guarantee.",
+      "caseIds": ["C314-T2"]
+    }
+  ]
+}
