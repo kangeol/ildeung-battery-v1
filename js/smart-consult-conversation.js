@@ -21,6 +21,49 @@ const negative = /^(아니|아니요|아냐|아니야)[.!\s]*$/;
 const pricePattern = {test:text=>monetaryQuestion(text)||/배터리값|밧데리값/.test(text)};
 const knownBattery = result => result?.defaultBattery && !/문의|확인/.test(result.defaultBattery);
 
+// A clear report that the customer's vehicle will not start needs useful symptom
+// guidance before the fitment flow asks for a model/year. This is deliberately
+// separate from weak/intermittent starts, READY interpretation and vague "안돼요".
+export function explicitVehicleNoStart(text, previous = createConversationState()) {
+  const compact = String(text).toLowerCase().replace(/\s+/g, '');
+  if (/(?:휴대폰|핸드폰|컴퓨터|노트북|블랙박스|에어컨|라디오|집전등|집의전등)(?:이|가|은|는)?(?:안(?:켜|되)|먹통)/.test(compact) && !/(?:시동|차(?:가|는|량|안|못|먹통|죽|전원)|자동차|\bcar\b)/i.test(text)) return false;
+  if (/ready|레디|예열/i.test(text)) return false;
+  if (/가끔|아침만|아침에.*안걸|두세번|여러번|덜덜|약하게|시동이약|시동약/.test(compact)) return false;
+  if (/\b(?:my\s+)?car\b.*\b(?:will\s+not\s+start|won't\s+start|no\s+start|doesn't\s+start)\b/i.test(text)) return true;
+  if (/시동.{0,8}(?:안걸|못걸|걸리지않|걸리지못|안켜)/.test(compact)) return true;
+  if (/(?:배터리|밧데리|교체).{0,30}다시안걸/.test(compact)) return true;
+  const car = /(?:차량|자동차|(?<!주)차(?:가|는|를|도|두대|안|못|먹통|죽|전원|하나|를하루)|빌린차|친구차)/.test(compact);
+  if (car && /(?:안켜|안걸|못켜|못걸|먹통|차죽|차안돼|차가안돼|차가안됩|차가안되|차안됨)/.test(compact)) return true;
+  if (car && /(?:차|차량|자동차).{0,12}(?:켜지지않|걸리지않|완전히먹통)/.test(compact)) return true;
+  // A stranded customer can omit "차" in this automotive consultation, but
+  // only when the trip/parking context and total power loss are both explicit.
+  if (/(?:장날|장보러|몰지하|지하에서|주차장|캠핑장|숙소|펜션).*(?:먹통|안켜|안걸)/.test(compact)) return true;
+  if (previous?.selectedVehicleKey && /(?:안켜|안걸|못걸|먹통)/.test(compact)) return true;
+  return false;
+}
+
+function explicitNoStartReply(previous, text, records, localities, priceCatalog, servicePolicy) {
+  const fitment = pricePattern.test(text) || /(?:어떤|무슨|뭘|뭐).{0,8}배터리|배터리.{0,8}(?:어떤|뭐|규격)|교체\s*(?:해\s*주세요|해줘|할게)|바꿀게/.test(text);
+  const other = /(?:오늘|내일|지금|언제|몇\s*시|출장|방문|가능|와\s*줄|올\s*수|현금|카드|계좌이체|현금영수증|주차장|가격|비용|얼마)/.test(text);
+  const base = conversationWithoutNonmonetary(previous, text, records, localities, priceCatalog, servicePolicy);
+  const state = { ...base.state, symptom: { intent: 'NO_START', rawSafeText: symptomLabels.NO_START, confirmedAt: base.state.turnIndex || previous.turnIndex + 1 }, lastIntent: 'N1_EXPLICIT_NO_START', failures: previous.failures };
+  const introduction = '차량 시동이나 전원이 켜지지 않는 상황이군요.';
+  const guidance = servicePolicy.operational.SYMPTOM;
+  const vehiclePrompt = /차량명|연식|차종|어떤 차량|차량마다 배터리|차량을 정확하게 찾지 못/;
+  let messages = fitment ? base.messages : other ? base.messages.filter(message => !vehiclePrompt.test(message)) : [];
+  if (!fitment) {
+    state.quotedSpec = previous.quotedSpec;
+    state.priceSummaryShown = previous.priceSummaryShown;
+    state.priceIntent = previous.priceIntent;
+    state.customerGoal = previous.customerGoal;
+    state.previousQuestion = null;
+    state.ambiguity = null;
+  }
+  if ((fitment || other) && !['UNKNOWN', 'FUEL_INFO', 'BATTERY_QUESTION'].includes(base.state.lastIntent)) state.lastIntent = base.state.lastIntent;
+  messages = unique([introduction, guidance, ...messages]);
+  return { ...base, state, messages, actions: fitment || other ? base.actions : [], chips: fitment ? base.chips : [], result: fitment ? base.result : null };
+}
+
 export function createConversationState() {
   return { customerReportedSpec: "", brand: "", quotedSpec: "", priceSummaryShown: false, originalIntent: "", priceIntent: false, serviceIntent: false, engine: "", drivetrain: "", yearRange: "", symptom: null, customerGoal: "UNKNOWN", turnIndex: 0, manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
 }
@@ -182,6 +225,10 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  if (selection === null && servicePolicy && previous.lastIntent === 'N1_EXPLICIT_NO_START' && /(?:휴대폰|핸드폰).*말고.*차|차.*말씀/.test(text))
+    return { state: { ...previous, lastIntent: 'N1_EXPLICIT_NO_START' }, messages: ['네, 차량 시동·전원 문제로 이해했습니다.', servicePolicy.operational.SYMPTOM], actions: [], chips: [], result: null, region: previous.region };
+  if (selection === null && servicePolicy && !batteryKnowledgePlan(text, previous) && explicitVehicleNoStart(text, previous))
+    return explicitNoStartReply(previous, text, records, localities, priceCatalog, servicePolicy);
   const plan=selection===null&&servicePolicy&&nonmonetaryPlan(text,previous);
   if(!plan)return conversationWithoutNonmonetary(previous,text,records,localities,priceCatalog,servicePolicy,selection);
   let state={...previous},messages=[],actions=[],chips=[];
@@ -752,6 +799,10 @@ function conversationCore(previous, text, records, localities = [], priceCatalog
     if(entities.region) areaAnswer();
     say(copy.result(state.result.defaultBattery)); if(priceCatalog)quote(state.result.defaultBattery);else say(variant("price",state.turnIndex));
     output.result=state.result; output.actions=["phone","stores"]; return output;
+  }
+  if (intent === 'PRICE_QUESTION' && state.pendingVehicleConfirmation && previous.lastIntent === 'N1_EXPLICIT_NO_START' && !answered) {
+    say(copy.vehicleConfirm(state.pendingVehicleConfirmation.label));
+    return output;
   }
   if (intent === "BUY_REQUEST") { say(knownBattery(state.result) ? copy.buy : copy.needDetails); output.actions = knownBattery(state.result) ? ["phone", "stores"] : ["phone"]; return output; }
   if (["AGM_DIN_QUESTION", "BATTERY_QUESTION"].includes(intent) && knownBattery(state.result)) {

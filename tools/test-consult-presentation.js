@@ -45,6 +45,7 @@ for(const p of ['js/smart-consult-nonmonetary.js','tools/test-nonmonetary-eolma.
 for(const p of ['js/smart-consult-electrical-load.js','tools/test-electrical-load.js','tools/lib/smart-consult-page-regression.js'])allowed.add(p);
 // Exact P1A follow-up paths; shared UI and unrelated runtime paths remain forbidden.
 for(const p of ['js/smart-consult-battery-knowledge.js','tools/test-elliptical-load.js'])allowed.add(p);
+allowed.add('tools/test-no-start-n1.js'); // Focused N1 routing regression; no presentation asset is permitted.
 check(allowed.has('js/smart-consult-battery-knowledge.js'),'authorized P1A knowledge runtime');
 check(allowed.has('tools/test-elliptical-load.js'),'authorized P1A focused test');
 check(!allowed.has('css/index.css'),'unrelated shared UI remains forbidden');
