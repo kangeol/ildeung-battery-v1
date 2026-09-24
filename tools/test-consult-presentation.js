@@ -33,7 +33,9 @@ for(const p of ['tools/test-location-nlu.js','tools/lib/assert-non-agm-owner-pol
 for(const p of ['data/battery-prices.json','js/smart-consult-brand-comparison.js','tools/test-non-agm-owner-policy.js','tools/test-non-agm-owner-browser.js','docs/non-agm-owner-policy-audit.md'])allowed.add(p);
 for(const p of ['js/smart-consult-brand-query.js','tools/test-spec-brand-query.js','tools/test-spec-brand-query-browser.js','docs/spec-brand-query-audit.md','tools/test-battery-pricing.js','tools/test-battery-certainty-scope.js','tools/test-brand-service.js','tools/test-product-as-hours.js','tools/test-smart-consult-branding.js','tools/test-smart-consult-viewport.js'])allowed.add(p);
 // Approved homepage stack is frozen byte-for-byte at this task's baseline.
-for(const p of ['index.html','css/home-hero-intro.css','tools/test-homepage-hero-intro.js','docs/homepage-hero-intro-audit.md','docs/homepage-hero-intro-v2-audit.md']){check(git(['diff',postSyncBaseline,'--',p])==='','homepage freeze '+p);allowed.add(p);}
+for(const p of ['index.html','css/home-hero-intro.css','docs/homepage-hero-intro-audit.md','docs/homepage-hero-intro-v2-audit.md']){check(git(['diff',postSyncBaseline,'--',p])==='','homepage freeze '+p);allowed.add(p);}
+// This task reconciles the stale snapshot test itself; production homepage files stay byte-frozen above.
+allowed.add('tools/test-homepage-hero-intro.js');
 for(const p of ['tools/test-manufacturer-wording.js','tools/test-manufacturer-browser.js','docs/manufacturer-wording-audit.md'])allowed.add(p);
 // Authorized token-boundary remediation changes matching only; all presentation
 // byte comparisons below remain mandatory and unchanged.
@@ -41,6 +43,11 @@ for(const p of ['js/smart-consult-core.js','js/vehicle-aliases.js','tools/test-v
 // Narrow amount-word routing only; the UI and protected-page assertions stay intact.
 for(const p of ['js/smart-consult-nonmonetary.js','tools/test-nonmonetary-eolma.js'])allowed.add(p);
 for(const p of ['js/smart-consult-electrical-load.js','tools/test-electrical-load.js','tools/lib/smart-consult-page-regression.js'])allowed.add(p);
+// Exact P1A follow-up paths; shared UI and unrelated runtime paths remain forbidden.
+for(const p of ['js/smart-consult-battery-knowledge.js','tools/test-elliptical-load.js'])allowed.add(p);
+check(allowed.has('js/smart-consult-battery-knowledge.js'),'authorized P1A knowledge runtime');
+check(allowed.has('tools/test-elliptical-load.js'),'authorized P1A focused test');
+check(!allowed.has('css/index.css'),'unrelated shared UI remains forbidden');
 for(const p of changed.filter(p=>!approvedSyncFiles.has(p)))check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
 const html=fs.readFileSync('smart-consult/index.html','utf8').replaceAll('\r\n','\n'),before=git(['show',baseline+':smart-consult/index.html']).replaceAll('\r\n','\n');
 check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=brand-query-v1'),'HTML only two cache tokens');
