@@ -1,5 +1,6 @@
 import { copy, symptomLabels } from "./conversation-copy.js";
 import { createConversationState, extractEntities, recognizeIntent, symptomIntent } from "./smart-consult-conversation.js?v=purchase-v1";
+import {batteryKnowledgePlan} from './smart-consult-battery-knowledge.js';
 
 export const SESSION_KEY = "ildeung.smart-consult.v5";
 // Version 1 GN7 transcripts remain rejected; version 2 gains safe empty brand fields.
@@ -9,6 +10,7 @@ const intentLabels = {CORRECTION:"정보 수정",PRICE_QUESTION:"가격 문의",
 
 // Never save arbitrary customer text. Only canonical facts and approved intent labels.
 export function safeUserMessage(text, previous, records, localities) {
+  if(batteryKnowledgePlan(text,previous))return '배터리 상태·규격·코딩 정보 문의';
   if (/^(응|네|예|맞아|맞아요|맞습니다|ㅇㅇ|아니|아니요|아냐|아니야)[.!\s]*$/.test(text)) return text.replace(/[.!\s]/g, "");
   const e = extractEntities(text, records, previous, localities);
   const pieces = [];

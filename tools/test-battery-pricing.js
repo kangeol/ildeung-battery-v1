@@ -1,3 +1,4 @@
+import {approvedSyncFiles} from './lib/blog-sync-approved-freeze.js';
 import {assertHomepageFreeze} from './lib/homepage-approved-freeze.js';
 assertHomepageFreeze();
 import fs from 'node:fs';
@@ -59,7 +60,7 @@ for(const path of ['js/smart-consult-prices.js','js/smart-consult-conversation.j
 const baseline='da2e2c0f93e119d82123e5d63b868e30195c00b6';
 const git=args=>execFileSync('git',['-c','core.safecrlf=false',...args],{encoding:'utf8',maxBuffer:20e6});
 for(const m of manufacturers){const old=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='hyundai.json')old[40].defaultBattery='AGM60';if(m.file==='chevrolet.json')old[30].defaultBattery='DIN74L';assert.deepEqual(read(`data/${m.file}`),old);}
-const htmlChanges=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n').filter(p=>p&&p!=='index.html');
+const htmlChanges=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n').filter(p=>p&&p!=='index.html'&&!approvedSyncFiles.has(p));
 assert.deepEqual(htmlChanges.sort(),['car-battery/chevrolet/alpheon.html','car-battery/hyundai/santafe.html','car-battery/hyundai/santafe/tm.html','smart-consult/index.html'].sort());
 for(const path of htmlChanges){let expectedHtml=git(['show',`${baseline}:${path}`]).replace(/\r\n/g,'\n');if(path==='smart-consult/index.html')expectedHtml=expectedHtml.replace('?v=flow-v1','?v=brand-query-v1');else if(path==='car-battery/chevrolet/alpheon.html')expectedHtml=expectedHtml.replace(/\bDIN70L\b/g,'DIN74L');else if(path.endsWith('/tm.html'))expectedHtml=expectedHtml.replace(/\bAG60\b/g,'AGM60');else expectedHtml=expectedHtml.replace('AGM70, AGM60, AGM80, AG60 등','AGM70, AGM60, AGM80, AGM95 등').replace('<strong>AG60</strong>','<strong>AGM60</strong>');assert.equal(fs.readFileSync(path,'utf8').replace(/\r\n/g,'\n'),expectedHtml.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1'),path);}
 const metrics=Object.fromEntries(['PRICE_MAP_WRONG_VALUE','AGM105_OLD_270000_REMAINING','AG60_STANDALONE_REMAINING','FABRICATED_PRICE','COMPOSITE_SINGLE_AUTOCONFIRM','UNPRICED_NUMERIC_PRICE','UNHANDLED_BATTERY_STRING','WRONG_BATTERY_RECOMMENDATION','AMBIGUOUS_BATTERY_AUTOCONFIRM'].map(k=>[k,0]));

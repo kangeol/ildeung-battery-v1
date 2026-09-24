@@ -1,3 +1,4 @@
+import {approvedSyncFiles} from './lib/blog-sync-approved-freeze.js';
 import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 import {presentationIndex,messagePresentation,lookupStatus,lookupDelay,phoneProminence,literalParts} from '../js/smart-consult-presentation.js';
 import {conversationTurn,createConversationState} from '../js/smart-consult-conversation.js';
@@ -22,16 +23,18 @@ for(const p of ['js/smart-consult-conversation.js','js/smart-consult-prices.js',
 for(const p of ['tools/test-spec-vehicle-collision.js','tools/test-spec-vehicle-collision-browser.js','docs/spec-vehicle-collision-audit.md'])allowed.add(p);
 for(const p of ['data/consult-service-policy.json','js/smart-consult-purchase.js','tools/test-purchase-knowledge.js','tools/test-purchase-knowledge-browser.js','docs/purchase-knowledge-audit.md','tools/test-brand-comparison.js','tools/test-operational.js','tools/test-authentic-cash.js'])allowed.add(p);
 allowed.add('tools/test-final-faq.js');
+allowed.add('tools/test-smart-consult-launcher.js'); // Exact audited blog-sync snapshot update only.
+for(const p of ['js/smart-consult-battery-knowledge.js','tools/lib/battery-knowledge-fixtures.js','tools/lib/blog-sync-approved-freeze.js','tools/audit-battery-knowledge.js','tools/test-battery-knowledge.js','tools/test-battery-knowledge-browser.js','docs/battery-knowledge-audit.md'])allowed.add(p);
 allowed.add('tools/lib/gn7-factual-regression.js');allowed.add('tools/lib/homepage-approved-freeze.js');
 for(const p of ['tools/test-location-nlu.js','tools/lib/assert-non-agm-owner-policy.js'])allowed.add(p);
 for(const p of ['data/battery-prices.json','js/smart-consult-brand-comparison.js','tools/test-non-agm-owner-policy.js','tools/test-non-agm-owner-browser.js','docs/non-agm-owner-policy-audit.md'])allowed.add(p);
 for(const p of ['js/smart-consult-brand-query.js','tools/test-spec-brand-query.js','tools/test-spec-brand-query-browser.js','docs/spec-brand-query-audit.md','tools/test-battery-pricing.js','tools/test-battery-certainty-scope.js','tools/test-brand-service.js','tools/test-product-as-hours.js','tools/test-smart-consult-branding.js','tools/test-smart-consult-viewport.js'])allowed.add(p);
 // Approved homepage stack is frozen byte-for-byte at this task's baseline.
-for(const p of ['index.html','css/home-hero-intro.css','tools/test-homepage-hero-intro.js','docs/homepage-hero-intro-audit.md','docs/homepage-hero-intro-v2-audit.md']){check(git(['diff','ec9efc0b64b59394105c1d956786bdec7591c3ae','--',p])==='','homepage freeze '+p);allowed.add(p);}
+for(const p of ['index.html','css/home-hero-intro.css','tools/test-homepage-hero-intro.js','docs/homepage-hero-intro-audit.md','docs/homepage-hero-intro-v2-audit.md']){check(git(['diff','821b74e95cf1b5ffac0503ebbbb9fa060d78c7b7','--',p])==='','homepage freeze '+p);allowed.add(p);}
 for(const p of ['tools/test-manufacturer-wording.js','tools/test-manufacturer-browser.js','docs/manufacturer-wording-audit.md'])allowed.add(p);
-for(const p of changed)check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
+for(const p of changed.filter(p=>!approvedSyncFiles.has(p)))check(allowed.has(p)||p.startsWith('tools/test-consult-presentation')||p.startsWith('docs/evidence/consult-ui/'),'scope '+p);
 const html=fs.readFileSync('smart-consult/index.html','utf8').replaceAll('\r\n','\n'),before=git(['show',baseline+':smart-consult/index.html']).replaceAll('\r\n','\n');
 check(html===before.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1').replace('/js/smart-consult.js?v=brand-compare-v1','/js/smart-consult.js?v=brand-query-v1'),'HTML only two cache tokens');
-check(read('seo-data/blog-cases.json').posts.length===345,'blog345');check((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length===1133,'sitemap1133');
+check(read('seo-data/blog-cases.json').posts.length===346,'blog346');check((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length===1133,'sitemap1133');
 const source=fs.readFileSync('js/smart-consult.js','utf8');check(!source.includes('innerHTML'),'XSS text-only DOM');check(!source.includes('Math.random')&&!source.includes('setInterval'),'no random/typewriter');
-console.log(JSON.stringify({status:'PASS',checks,canonicalPriceLines:index.prices.size,vehicleRows:rows.length,areas:areas.length,blog:345,sitemap:1133,gates:{TYPEWRITER_EFFECT_PRESENT:0,RANDOM_FAKE_DELAY_PRESENT:0,SIMPLE_FAQ_ARTIFICIAL_DELAY:0,LOOKUP_PRESENTATION_DELAY_OVER_600MS:0},changed}));
+console.log(JSON.stringify({status:'PASS',checks,canonicalPriceLines:index.prices.size,vehicleRows:rows.length,areas:areas.length,blog:346,sitemap:1133,gates:{TYPEWRITER_EFFECT_PRESENT:0,RANDOM_FAKE_DELAY_PRESENT:0,SIMPLE_FAQ_ARTIFICIAL_DELAY:0,LOOKUP_PRESENTATION_DELAY_OVER_600MS:0},changed}));

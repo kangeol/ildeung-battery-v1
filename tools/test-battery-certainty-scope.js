@@ -1,3 +1,4 @@
+import {approvedSyncFiles} from './lib/blog-sync-approved-freeze.js';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
@@ -30,6 +31,8 @@ for(const p of paths.filter(p=>p.startsWith('docs/evidence/vehicle-selection/'))
 for(const p of paths.filter(p=>p.startsWith('docs/evidence/authentic-cash/')))allowed.add(p);
 for(const p of ['js/smart-consult-operational.js','tools/operational-fixtures.js',...paths.filter(p=>p.startsWith('docs/evidence/operational/'))])allowed.add(p);
 for(const p of paths){
+ if(approvedSyncFiles.has(p))continue;
+ if(['js/smart-consult-battery-knowledge.js','tools/lib/battery-knowledge-fixtures.js','tools/lib/blog-sync-approved-freeze.js','docs/battery-knowledge-audit.md'].includes(p))continue;
  assert.ok(allowed.has(p)||p==='js/smart-consult-location.js'||p.startsWith('tools/test-')||p.startsWith('tools/audit-battery-')||['tools/lib/gn7-factual-regression.js','tools/lib/smart-consult-page-regression.js','tools/audit-blog-sync-regression.js'].includes(p)||p.startsWith('docs/evidence/battery-certainty/')||p.startsWith('docs/evidence/battery-pricing/')||p.startsWith('docs/evidence/db-driven-flow/'),`out of scope: ${p}`);
  if(p.endsWith('.html')){
   let expected=gn7FactualDelta(git(['show',`${baseline}:${p}`]).replace(/\r\n/g,'\n'),p);

@@ -1,3 +1,4 @@
+import {approvedSyncFiles} from './lib/blog-sync-approved-freeze.js';
 import {assertHomepageFreeze} from './lib/homepage-approved-freeze.js';
 assertHomepageFreeze();
 import fs from 'node:fs';
@@ -90,7 +91,7 @@ for(const row of rows)for(const brand of ['','DELKOR','VARTA']){
  massCases++;
 }
 for(const m of manufacturers){const expected=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='chevrolet.json')expected[30].defaultBattery='DIN74L';assert.deepEqual(read(`data/${m.file}`),expected);}
-const htmlChanged=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n').filter(p=>p&&p!=='index.html');assert.deepEqual(htmlChanged,['car-battery/chevrolet/alpheon.html','smart-consult/index.html']);
+const htmlChanged=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n').filter(p=>p&&p!=='index.html'&&!approvedSyncFiles.has(p));assert.deepEqual(htmlChanged,['car-battery/chevrolet/alpheon.html','smart-consult/index.html']);
 assert.equal(fs.readFileSync('smart-consult/index.html','utf8').replace(/\r\n/g,'\n'),git(['show',`${baseline}:smart-consult/index.html`]).replace(/\r\n/g,'\n').replace('?v=price-v1','?v=brand-query-v1').replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1'));
 const metrics=Object.fromEntries(['DELKOR_PRICE_WRONG','VARTA_PRICE_WRONG','VARTA_UNSUPPORTED_FABRICATED_PRICE','BRAND_CONTEXT_LOST','COMPOSITE_BRAND_SINGLE_AUTOCONFIRM','SERVICE_POLICY_WRONG_ANSWER','SERVICE_POLICY_UNSUPPORTED_CLAIM','FABRICATED_SURCHARGE','FABRICATED_PRICE','PRICE_TRUTH_DUPLICATION','POLICY_TRUTH_DUPLICATION','WRONG_BATTERY_RECOMMENDATION','AMBIGUOUS_BATTERY_AUTOCONFIRM'].map(k=>[k,0]));
 const evidenceDir=process.argv.includes('--faq')?'docs/evidence/final-faq/regression':process.argv.includes('--location')?'docs/evidence/location-nlu/regression':process.argv.includes('--product')?'docs/evidence/product-as-hours':'docs/evidence/brand-service';

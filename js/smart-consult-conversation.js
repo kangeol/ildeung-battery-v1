@@ -11,6 +11,7 @@ import { PHONE_LABEL } from "./smart-consult-core.js?v=certainty-v1";
 import { comparisonIntent, comparisonReply } from './smart-consult-brand-comparison.js?v=owner-delkor-v1';
 import {purchaseKnowledgePlan,purchaseKnowledgeReply} from './smart-consult-purchase.js?v=owner-delkor-v1';
 import {brandQueryPlan,brandQueryReply,productOriginQuestion} from './smart-consult-brand-query.js?v=owner-delkor-v1';
+import {batteryKnowledgePlan,batteryKnowledgeCopy} from './smart-consult-battery-knowledge.js';
 
 const unique = values => [...new Set(values.filter(Boolean))];
 const affirmative = /^(응|네|예|맞아|맞아요|맞습니다|응맞아|네맞아요|ㅇㅇ)[.!\s]*$/;
@@ -178,6 +179,36 @@ export function vehicleCandidateOptions(records, state) {
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  const knowledge=selection===null&&servicePolicy&&batteryKnowledgePlan(text,previous);
+  if(!knowledge)return conversationWithoutBatteryKnowledge(previous,text,records,localities,priceCatalog,servicePolicy,selection);
+  let state={...previous},chips=[],messages=[],actions=[];
+  // Strip educational vocabulary before vehicle matching (CCA is not a vehicle alias).
+  const vehicleText=text.replace(/CCA|씨씨에이|\d*Ah|암페어아워/gi,'');
+  const e=extractEntities(vehicleText,records,previous,localities);
+  const explicit=e.matches.filter(m=>normalizeText(vehicleText).includes(normalizeText(m.vehicle)));
+  if(explicit.length){
+    const query=[...explicit.map(m=>`${m.manufacturerName} ${m.vehicle}`),e.year?`${e.year}년식`:'',e.detailModel,e.fuel].filter(Boolean).join(' ');
+    const out=conversationWithoutBatteryKnowledge(previous,query,records,localities,priceCatalog,servicePolicy);
+    state=out.state;chips=out.chips;
+    if(/가격|얼마/.test(text)&&!/코딩/.test(text)){messages.push(...out.messages);actions.push(...out.actions);}
+  }
+  if(e.region){state.region=e.region;state.location=e.region;state.city=e.region.city;state.district=e.region.district;}
+  const spec=catalogSpecMention(text,priceCatalog);
+  if(spec?.candidates.length===1&&!knowledge.fit)state.quotedSpec=spec.candidates[0];
+  const brand=brandIntent(text,priceCatalog);if(brand)state.brand=brand;
+  messages.push(...knowledge.keys.map(k=>batteryKnowledgeCopy[k]));
+  if(knowledge.fit){messages.push(servicePolicy.purchaseKnowledge.fit.replaceAll('{phone}',PHONE_LABEL));actions.push('phone');}
+  if(knowledge.topic==='CODING')messages.push(servicePolicy.answers.CODING);
+  const faq=finalFaqReply(text,servicePolicy);if(faq){messages.push(...faq.messages);actions.push(...faq.actions);}
+  const inclusion=servicePolicyIntent(text);if(inclusion&&inclusion!=='CODING')messages.push(servicePolicy.answers[inclusion]);
+  if(/가격/.test(text)&&!/코딩/.test(text)&&!knowledge.fit&&state.quotedSpec){messages.push(priceDescription(state.quotedSpec,priceCatalog,state.brand));state.priceIntent=true;state.originalIntent='PRICE';}
+  const symptom=symptomIntent(text);if(symptom)state.symptom={intent:symptom,rawSafeText:symptomLabels[symptom],confirmedAt:state.turnIndex};
+  state.lastIntent='KNOWLEDGE_'+knowledge.topic;
+  if(knowledge.keys.includes('standaloneCoding'))actions.push('phone');
+  return {state,messages:unique(messages),actions:unique(actions),chips,result:null,region:state.region};
+}
+
+function conversationWithoutBatteryKnowledge(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
   // Route explicit origin wording to existing product authority, never to brand identity.
   const originMention=selection===null&&priceCatalog&&productOriginQuestion(text)?catalogSpecMention(text,priceCatalog):null;
   const originSpec=originMention?.candidates.length===1?originMention.candidates[0]:previous.quotedSpec||previous.confirmedBattery||'';

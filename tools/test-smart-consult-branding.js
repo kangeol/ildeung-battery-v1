@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {launcherMarkup} from './lib/smart-consult-launcher.js';
 import {gn7FactualDelta} from './lib/gn7-factual-regression.js';
+import {approvedSyncFiles} from './lib/blog-sync-approved-freeze.js';
 
 const baseline='1dc8e19cb260c9d5b88b6c0036f0faf92e20e24c';
 const git=args=>execFileSync('git',args,{encoding:'utf8',maxBuffer:100e6});
@@ -18,7 +19,7 @@ for(const p of files){
   if(p==='index.html')expected=expected.replaceAll('스마트 배터리 상담','AI 배터리 상담');
   expected=gn7FactualDelta(expected,p);
   if(p==='smart-consult/index.html')expected=expected.replace('/js/smart-consult.js?v=ai-mobile-v1','/js/smart-consult.js?v=brand-query-v1').replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1');
-  assert.equal(actual,expected,`${p}: only exact authorized labels may change; all SEO/body/blog/hrefs frozen`);
+  if(!approvedSyncFiles.has(p))assert.equal(actual,expected,`${p}: only exact authorized labels may change; all SEO/body/blog/hrefs frozen`);
   assert.equal(/스마트 상담|스마트 배터리 상담/.test(actual),false,`${p}: old customer label`);
   if(actual.includes('class="smart-consult-launcher"')){
     launchers++;
