@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-23T14:49:59.789Z",
+  "syncedAt": "2026-09-24T07:46:05.094Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 1,
     "preservedPreviousPosts": 346,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 346,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 347,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 299,
-    "vehicleMatches": 278,
-    "detailMatches": 55,
-    "regionMatches": 230,
-    "neighborhoodMatches": 192,
-    "batteryMatches": 229,
+    "manufacturerMatches": 300,
+    "vehicleMatches": 279,
+    "detailMatches": 56,
+    "regionMatches": 231,
+    "neighborhoodMatches": 193,
+    "batteryMatches": 230,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,182 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 230,
-    "actualRegionMatches": 230,
-    "actualNeighborhoodMatches": 192,
+    "actualAreaMatches": 231,
+    "actualRegionMatches": 231,
+    "actualNeighborhoodMatches": 193,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224416793214",
+      "title": "인천 남동구(서창동) 2020년식 BMW 320I G20 바르타 AGM95 출장배터리교체 가격 및 비용 안내｜시동 순간 계기판이 꺼질 때",
+      "url": "https://blog.naver.com/kang10107/224416793214",
+      "publishedAt": "2026-09-24",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224416793214.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTlfMTA3/MDAxNzg5Nzc5OTk2OTU1.zoFupyOv9qOifTCfAh2HNy9Ez5cYTTQw67hrRw1k0U4g.vwI2ox9jc5wBxgnRl4NM7gKODoIaFlBvUHNKhWRB0T8g.JPEG/bmw-bmw-320i-g20-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 남동구 서창동에서 2020년식 BMW 320I G20 배터리 교체 작업을 진행했습니다. 이번 차량은 시동이 아예 걸리지 않는 상태는 아니었는데요. 시동 버튼을 누르는 순간 계기판 화면이 잠깐 꺼졌다가 시동이 걸린 뒤 다시 켜지는 모습이 반복됐습니다. 이런 증상은 계기판 자체 문제처럼 느껴질 수도 있지만, 시동 순간 배터리에서 많은 전력을 사용하면서 전압이 크게 떨어질 때도 나타날 수 있습니다. 현재 장착된 배터리와 차량 규격을 확인한 뒤 바르타 AGM95로 교체하고 배터리 등록 코딩.......",
+      "tags": [
+        "인천출장배터리",
+        "인천자동차배터리",
+        "인천배터리",
+        "서창동배터리",
+        "서창동출장배터리",
+        "bmw320i배터리",
+        "bmw320i배터리가격",
+        "bmwg20배터리",
+        "바르타배터리",
+        "바르타agm95",
+        "바르타agm95가격",
+        "바르타agm95교체",
+        "바르타agm95출장교체",
+        "자동차배터리",
+        "출장배터리",
+        "일등밧데리",
+        "자동차배터리가격",
+        "출장배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 3시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "3시리즈",
+            "displayName": "BMW 3시리즈",
+            "urlPath": "/car-battery/bmw/3-series.html",
+            "matchedAlias": "BMW3",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "3시리즈",
+            "displayVehicleName": "BMW 3시리즈",
+            "label": "G20",
+            "slug": "g20",
+            "urlPath": "/car-battery/bmw/3-series/g20.html",
+            "vehicleUrlPath": "/car-battery/bmw/3-series.html",
+            "matchedAlias": "G20"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "3시리즈",
+            "displayName": "BMW 3시리즈",
+            "urlPath": "/car-battery/bmw/3-series.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "namdong-gu",
+          "regionName": "남동구",
+          "neighborhoodName": "서창동",
+          "label": "인천 남동구 서창동",
+          "urlPath": "/area/incheon/namdong-gu/seochang-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "namdong-gu",
+            "regionName": "남동구",
+            "label": "인천 남동구",
+            "urlPath": "/area/incheon/namdong-gu.html",
+            "matchedAlias": "남동구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "namdong-gu",
+            "regionName": "남동구",
+            "name": "서창동",
+            "legalName": "인천광역시 남동구 서창동",
+            "label": "인천 남동구 서창동",
+            "urlPath": "/area/incheon/namdong-gu/seochang-dong.html",
+            "matchedAlias": "서창동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/3-series.html"
+          ],
+          "details": [
+            "/car-battery/bmw/3-series/g20.html"
+          ],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/namdong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/namdong-gu/seochang-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "남동구 서창동에서 BMW 3시리즈 G20 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224416789571",
       "title": "경기 성남시 수정구(태평동) 2018년식 벤츠 A200 델코 AGM80 출장배터리교체 가격 및 비용 안내｜시동 때 내비게이션이 꺼졌다 켜질 때",
