@@ -23,6 +23,7 @@ for(const p of ['js/smart-consult-conversation.js','js/smart-consult-prices.js',
 for(const p of ['tools/test-spec-vehicle-collision.js','tools/test-spec-vehicle-collision-browser.js','docs/spec-vehicle-collision-audit.md'])allowed.add(p);
 for(const p of ['data/consult-service-policy.json','js/smart-consult-purchase.js','tools/test-purchase-knowledge.js','tools/test-purchase-knowledge-browser.js','docs/purchase-knowledge-audit.md','tools/test-brand-comparison.js','tools/test-operational.js','tools/test-authentic-cash.js'])allowed.add(p);
 allowed.add('tools/test-final-faq.js');
+for(const p of ['tools/test-waste-noncollection.js','docs/waste-noncollection-audit.md'])allowed.add(p);
 for(const p of ['js/smart-consult-purchase-stage.js','tools/lib/purchase-stage-fixtures.js','tools/audit-purchase-stage.js','tools/test-purchase-stage.js','tools/test-purchase-stage-browser.js','docs/purchase-stage-audit.md'])allowed.add(p);
 for(const p of ['tools/lib/cold-weather-fixtures.js','tools/audit-cold-weather.js','tools/test-cold-weather.js','tools/test-cold-weather-browser.js','docs/cold-weather-audit.md'])allowed.add(p);
 allowed.add('tools/test-smart-consult-launcher.js'); // Exact audited blog-sync snapshot update only.

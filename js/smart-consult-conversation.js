@@ -192,6 +192,17 @@ export function conversationTurn(previous, text, records, localities = [], price
     if(spec?.candidates.length===1)state.quotedSpec=spec.candidates[0];
     const brand=brandIntent(text,priceCatalog);if(brand)state.brand=brand;
   }
+  if(stage.noncollection){
+    // Quote only the existing collection-conditioned catalog price, never a non-return amount.
+    const requestedBrand=brandIntent(text,priceCatalog);if(requestedBrand)state.brand=requestedBrand;
+    const code=spec?.candidates.length===1?spec.candidates[0]:null;
+    if(code){state.quotedSpec=code;say(priceDescription(code,priceCatalog,state.brand));}
+    else if(namedVehicle||entities.manufacturer||spec){
+      const vehicleQuery=spec?`${spec.token} 가격`:text.split(/폐\s*배터리|헌\s*배터리|기존\s*배터리|쓰던\s*배터리/)[0].replace(/(?:으로|로)\s*할게요[.!]?/g,'')+' 가격';
+      const out=conversationWithoutPurchaseStage(previous,vehicleQuery,records,localities,priceCatalog,servicePolicy);
+      state=out.state;messages.push(...out.messages.filter(m=>m!==servicePolicy.summary));actions.push(...out.actions);chips=out.chips;
+    }
+  }
   if((stage.total||stage.composite)&&!stage.keep&&!stage.unknownFee){
     const explicitCodes=unique([...entityText.matchAll(/(?<![a-z0-9])(?:AGM|DIN|DF)\s*\d+[A-Z]*/gi)].map(m=>normalizeBatteryCode(m[0],priceCatalog)));
     const explicitCode=explicitCodes.join(' 또는 ');
@@ -207,9 +218,9 @@ export function conversationTurn(previous, text, records, localities = [], price
   if(entities.region){state.region=entities.region;state.location=entities.region;state.city=entities.region.city;state.district=entities.region.district;}
   for(const k of ['PROCESS','SETTINGS','POST_INSTALL'])if(stage.keys.includes(k))say(servicePolicy.purchaseStage[k]);
   if(stage.keys.includes('WASTE')){
-    if(stage.keep&&!stage.waste&&previous.lastIntent!=='STAGE_WASTE')say(servicePolicy.purchaseStage.UNCLEAR_OLD);
-    else {say(servicePolicy.answers[stage.keep?'KEEP_OLD_BATTERY':'OLD_BATTERY']);if(stage.keep)say(servicePolicy.purchaseKnowledge.contact);}
-    if(stage.keep||stage.wasteFee)actions.push('phone');state.lastIntent='STAGE_WASTE';
+    if(stage.keep&&!stage.waste&&!/^STAGE_WASTE/.test(previous.lastIntent))say(servicePolicy.purchaseStage.UNCLEAR_OLD);
+    else {say(servicePolicy.answers[stage.keep?'KEEP_OLD_BATTERY':'OLD_BATTERY']);if(stage.keep&&!stage.noncollection)say(servicePolicy.purchaseKnowledge.contact);}
+    if(stage.keep||stage.wasteFee)actions.push('phone');state.lastIntent=stage.keep?'STAGE_WASTE_KEEP':'STAGE_WASTE';
   }
   if(stage.detail){
     const knowledge=batteryKnowledgePlan(text,previous);
@@ -220,17 +231,19 @@ export function conversationTurn(previous, text, records, localities = [], price
   }
   if(stage.site)say(servicePolicy.operational.SITE);
   const operation=operationalPlan(text,state);
+  if(stage.noncollection&&operation?.keys.includes('SITE')&&!stage.site)say(servicePolicy.operational.SITE);
   if(operation?.keys.includes('NON_FACE_TO_FACE'))say(servicePolicy.operational.NON_FACE_TO_FACE);
   if(operation?.realtime){say(servicePolicy.operational.REALTIME);state.lastIntent='OP_REALTIME';actions.push('phone');}
   if(stage.site){actions.push('phone');if(!operation?.realtime)state.lastIntent='OP_SITE';}
-  if(stage.total||stage.composite)say(servicePolicy.answers.COMBINED);
-  if(stage.keys.includes('EXTRA')){say(servicePolicy.answers.ONSITE_SURCHARGE);say(servicePolicy.purchaseStage.FEE_CONFIRM);actions.push('phone');}
+  if((stage.total||stage.composite)&&!stage.noncollection)say(servicePolicy.answers.COMBINED);
+  if(stage.keys.includes('EXTRA')&&!stage.noncollection){say(servicePolicy.answers.ONSITE_SURCHARGE);say(servicePolicy.purchaseStage.FEE_CONFIRM);actions.push('phone');}
   if(stage.unknownFee){say(servicePolicy.purchaseStage.FEE_CONFIRM);actions.push('phone');}
   if(/코딩/.test(text)){
     const k=batteryKnowledgePlan(text,previous);if(k&&!k.fee)k.keys.forEach(key=>say(batteryKnowledgeCopy[key]));
     if(!stage.total&&!stage.composite)say(servicePolicy.answers.CODING);if(stage.settings)state.lastIntent='KNOWLEDGE_CODING';
   }
-  const faq=finalFaqReply(text,servicePolicy);if(faq){messages.push(...faq.messages);actions.push(...faq.actions);}
+  const paymentText=stage.noncollection?(text.match(/현금영수증|현금|현찰|카드|계좌이체|세금계산서|수수료|할인|부가세|VAT|계좌번호/gi)||[]).join(' '):text;
+  const faq=finalFaqReply(paymentText,servicePolicy);if(faq){messages.push(...faq.messages);actions.push(...faq.actions);}
   return {state,messages:unique(messages),actions:unique(actions),chips,result:null,region:state.region};
 }
 
