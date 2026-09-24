@@ -58,9 +58,12 @@ export function resolveLocation(text, localities, previous = null, pending = nul
   const politeEnd = /^(?:입니다만|이에요만|예요만|입니다|이에요|예요|에요|인데요|이구요|이고요|이고|인데)/;
   const safeEnd = end => {
     const rest=normalized.slice(end), ending=rest.match(politeEnd)?.[0];
-    return !rest || boundaries.has(end) || (ending && (rest===ending || boundaries.has(end+ending.length) || /^(?:이고|인데)$/.test(ending))) || /^(?:배터리|밧데리|지역|교체|에서|에서도|은|는|에|도|인데|이야|쪽|근처|출장|방문|가능|와|이요|요|으로|맞|야|지금|오늘|내일|몇시|언제|급해|긴급|\d+분)/.test(rest);
+    return !rest || boundaries.has(end) || (ending && (rest===ending || boundaries.has(end+ending.length) || /^(?:이고|인데)$/.test(ending))) || /^(?:배터리|밧데리|지역|교체|에서|에서도|은|는|에|도|인데|이야|쪽|근처|출장|방문|가능|와|이요|요|으로|로|맞|야|지금|오늘|내일|몇시|언제|급해|긴급|\d+분)/.test(rest);
   };
   let tokens = hits.filter(hit => {
+    // Suffixless district aliases can also be ordinary grammar. "동안" is a
+    // temporal noun unless an explicit geographic cue establishes 동안구.
+    if (hit.item.level === "district" && hit.alias === normalizeText("동안") && !/(?:안양(?:시)?동안|동안구|^동안(?:가능|출장|방문|지역|도와)[가-힣]{0,6}\??$|^(?:지역)?동안\??$|^동안(?:입니다|이에요|예요|에요|인데요|이구요|이고요|이고)$)/.test(text.replace(/\s/g,''))) return false;
     const before = normalized.slice(0,hit.start);
     const after = normalized.slice(hit.end);
     const left = !before || /(?:아니|지역은|지역|서울|경기|인천|이고|인데|년식|년식인데|년식이고)$/.test(before) || hits.some(other=>other.end===hit.start) || /\d$/.test(before);
@@ -69,7 +72,9 @@ export function resolveLocation(text, localities, previous = null, pending = nul
     const words = text.normalize("NFKC").toLowerCase().split(/\s+/).map(normalizeText);
     return (left || words.some(word=>word.startsWith(hit.alias))) && right;
   });
-  tokens = tokens.filter(hit => !tokens.some(other => other.start <= hit.start && other.end >= hit.end && other.alias.length > hit.alias.length));
+  // A following particle can itself begin with another locality name
+  // (동안구로 contains 구로). Prefer the longer overlapping place token.
+  tokens = tokens.filter(hit => !tokens.some(other => other.alias.length > hit.alias.length && other.start < hit.end && hit.start < other.end));
   if (!tokens.length) return {region:null,locationState:"MISSING_AREA"};
   const provinceHit = tokens.find(hit=>hit.item.level==="province");
   const lastStart = Math.max(...tokens.map(hit=>hit.start));
