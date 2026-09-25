@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-24T14:49:02.263Z",
+  "syncedAt": "2026-09-25T08:41:14.927Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
-    "preservedPreviousPosts": 348,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 348,
+    "newPosts": 1,
+    "preservedPreviousPosts": 349,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 350,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 301,
-    "vehicleMatches": 280,
-    "detailMatches": 57,
-    "regionMatches": 232,
-    "neighborhoodMatches": 194,
-    "batteryMatches": 231,
+    "manufacturerMatches": 303,
+    "vehicleMatches": 282,
+    "detailMatches": 58,
+    "regionMatches": 234,
+    "neighborhoodMatches": 195,
+    "batteryMatches": 233,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,325 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 232,
-    "actualRegionMatches": 232,
-    "actualNeighborhoodMatches": 194,
+    "actualAreaMatches": 234,
+    "actualRegionMatches": 234,
+    "actualNeighborhoodMatches": 195,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224416807190",
+      "title": "인천 계양구(계산동) 2023년식 BMW X1 U11 델코 AGM70 출장배터리교체 가격 및 비용 안내｜아침 시동만 유독 약할 때",
+      "url": "https://blog.naver.com/kang10107/224416807190",
+      "publishedAt": "2026-09-25",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224416807190.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTlfMTMy/MDAxNzg5NzgxMTQxNTI2.KpR4RU9oyjcd_tx1swOFYuLSgADxepNTqWm0Yxg4JUwg.O7-vSvMjnQwXUEDigl8ZQdF4YDuBQHUg_k2PoBxESOgg.JPEG/bmw-bmw-x1-u11-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 계양구 계산동에서 2023년식 BMW X1 U11 배터리 교체 작업을 진행했습니다. 이번 차량은 하루 종일 시동 상태가 나쁜 것은 아니었습니다. 밤새 주차한 뒤 아침에 처음 시동을 걸 때는 힘이 부족하게 느껴지는데, 한번 운행하고 나면 그날은 다시 시동을 걸어도 비교적 괜찮았던 경우입니다. 이런 증상은 그냥 지나치기 쉽습니다. 운행 후에는 멀쩡해 보이기 때문에 배터리가 괜찮다고 생각할 수 있기 때문인데요. 이번에는 아침 첫 시동과 운행 후 시동의 차이를 중심으로 확인한 뒤 차량.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "계양구배터리",
+        "계양구출장배터리",
+        "계산동배터리",
+        "계산동출장배터리",
+        "bmw배터리",
+        "bmw배터리교체",
+        "bmw배터리교체비용",
+        "x1배터리",
+        "x1배터리가격",
+        "x1u11배터리",
+        "u11배터리가격",
+        "x1배터리교체비용",
+        "델코agm70",
+        "델코agm70가격",
+        "델코agm70교체비용",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리교체",
+        "출장배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW X1",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X1",
+            "displayName": "BMW X1",
+            "urlPath": "/car-battery/bmw/x1.html",
+            "matchedAlias": "BMW X1",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X1",
+            "displayVehicleName": "BMW X1",
+            "label": "U11",
+            "slug": "u11",
+            "urlPath": "/car-battery/bmw/x1/u11.html",
+            "vehicleUrlPath": "/car-battery/bmw/x1.html",
+            "matchedAlias": "U11"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X1",
+            "displayName": "BMW X1",
+            "urlPath": "/car-battery/bmw/x1.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "gyeyang-gu",
+          "regionName": "계양구",
+          "neighborhoodName": "계산동",
+          "label": "인천 계양구 계산동",
+          "urlPath": "/area/incheon/gyeyang-gu/gyesan-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "label": "인천 계양구",
+            "urlPath": "/area/incheon/gyeyang-gu.html",
+            "matchedAlias": "계양구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "name": "계산동",
+            "legalName": "인천광역시 계양구 계산동",
+            "label": "인천 계양구 계산동",
+            "urlPath": "/area/incheon/gyeyang-gu/gyesan-dong.html",
+            "matchedAlias": "계산동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/x1.html"
+          ],
+          "details": [
+            "/car-battery/bmw/x1/u11.html"
+          ],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/gyeyang-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/gyeyang-gu/gyesan-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "계양구 계산동에서 BMW X1 U11 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224416803646",
+      "title": "시흥시(은계) 2022년식 KGM 베리뉴티볼리 델코 AGM70 출장배터리교체 가격 및 비용 안내｜시동 전 전원이 약하게 느껴질 때",
+      "url": "https://blog.naver.com/kang10107/224416803646",
+      "publishedAt": "2026-09-25",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224416803646.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTlfMTQw/MDAxNzg5NzgwODUxNDA2.1DzGp1HojhwhA2ubmFHx8GNZY_-2_G7InrV51EGfuYMg.eTFiGgiaesdyGccuVUAE5aBBCGsH3W6wSp5DGntaNhwg.JPEG/image-kgm-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 시흥시 은계에서 2022년식 KGM 베리뉴티볼리 배터리 교체 작업을 진행했습니다. 이번 차량은 완전히 방전돼 아무 반응이 없는 상태는 아니었습니다. 다만 시동을 걸기 전 실내등이나 계기판처럼 차량 안의 전기 반응이 예전보다 약하게 느껴졌다고 하는데요. 이런 변화는 대수롭지 않게 지나치기 쉽지만, 배터리를 어느 정도 사용한 차량이라면 현재 전력 상태를 한번 확인해 볼 만한 신호가 될 수 있습니다. 차량에 맞는 배터리 타입과 규격을 확인한 뒤 델코 AGM70으로 교체했습니다. --.......",
+      "tags": [
+        "시흥배터리",
+        "시흥출장배터리",
+        "시흥자동차배터리",
+        "은계배터리",
+        "은계출장배터리",
+        "kgm배터리",
+        "kgm배터리가격",
+        "베리뉴티볼리배터리",
+        "베리뉴티볼리배터리가격",
+        "베리뉴티볼리배터리교체",
+        "베리뉴티볼리배터리교체비용",
+        "티볼리배터리",
+        "자동차배터리",
+        "출장배터리",
+        "자동차배터리교체",
+        "출장배터리교체비용",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "KG모빌리티",
+        "manufacturers": [
+          {
+            "id": "kgm",
+            "name": "KG모빌리티"
+          }
+        ],
+        "vehicle": "티볼리",
+        "vehicles": [
+          {
+            "manufacturerId": "kgm",
+            "manufacturerName": "KG모빌리티",
+            "vehicleName": "티볼리",
+            "displayName": "티볼리",
+            "urlPath": "/car-battery/kgm/tivoli.html",
+            "matchedAlias": "티볼리",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kgm",
+            "manufacturerName": "KG모빌리티",
+            "vehicleName": "티볼리",
+            "displayName": "티볼리",
+            "urlPath": "/car-battery/kgm/tivoli.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "siheung-si",
+          "regionName": "시흥시",
+          "label": "경기 시흥시",
+          "urlPath": "/area/gyeonggi/siheung-si.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "siheung-si",
+            "regionName": "시흥시",
+            "label": "경기 시흥시",
+            "urlPath": "/area/gyeonggi/siheung-si.html",
+            "matchedAlias": "시흥시"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kgm/tivoli.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/kgm.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/siheung-si.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "경기 시흥시에서 티볼리 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224416797461",
       "title": "서울 금천구(가산동) 2018년식 그랜저IG 델코 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
