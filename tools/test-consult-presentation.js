@@ -50,6 +50,8 @@ for(const p of ['tools/frozen-corpus-change-registry.json','tools/frozen-corpus-
 for(const p of ['tools/test-scope-governance.js','docs/evidence/authentic-cash/focused.json','docs/evidence/battery-certainty/simulation.json','docs/evidence/brand-comparison/focused.json','docs/evidence/final-faq/faq.json','docs/evidence/final-faq/location/matrix.json','docs/evidence/final-faq/regression-results.json','docs/evidence/final-faq/regression/brand-service.json','docs/evidence/final-faq/regression/matrix.json','docs/evidence/final-faq/regression/pricing.json','docs/evidence/final-faq/regression/product-as-hours.json','docs/evidence/final-faq/regression/simulation.json','docs/evidence/product-as-hours/product-as-hours.json','docs/evidence/vehicle-selection/mass-after.json'])allowed.add(p);
 // Exact Tier2 routing paths; shared CSS and unrelated presentation runtime stay forbidden.
 for(const p of ['js/smart-consult-location.js','js/smart-consult-brand-comparison.js','tools/test-smart-consult-nlu-v4.js'])allowed.add(p);
+// Exact Tier2 policy-routing and focused-test paths; no presentation assets.
+for(const p of ['js/smart-consult-purchase.js','tools/test-tier2-remaining-scope.js','tools/test-tier2-u4-service-followup.js','tools/test-db-driven-flow.js','tools/test-smart-consult-v5.js','tools/test-smart-consult-v7.js'])allowed.add(p);
 check(allowed.has('js/smart-consult-battery-knowledge.js'),'authorized P1A knowledge runtime');
 check(allowed.has('tools/test-elliptical-load.js'),'authorized P1A focused test');
 check(!allowed.has('css/index.css'),'unrelated shared UI remains forbidden');

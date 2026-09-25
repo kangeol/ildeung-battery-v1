@@ -136,6 +136,86 @@
       "priorClassification": "Per-case SHA-pinned approved reference",
       "semanticContract": "State non-face-to-face possibility and exact key/site/schedule confirmation, without guarantee.",
       "caseIds": ["C314-T2"]
+    },
+    {
+      "id": "TIER2_WORKSITE_ACCESS_REVIEW",
+      "kind": "SERVICE_SITE",
+      "implementationCommit": "776e02555a19b5da2586f57f6f89278270b60460",
+      "changeAuthority": "ILDEUNG_TIER2_REMAINING30_AND_BATTERY17_SCOPE_REMEDIATION_V1",
+      "reason": "Exact reviewed worksite cases reach the existing access/safety policy before fitment questions.",
+      "priorClassification": "Per-case SHA-pinned U4 partition artifact",
+      "semanticContract": "No access, parking, turnaround or live visit guarantee; provide site-condition confirmation or minimum location information without vehicle-first fallback.",
+      "caseIds": ["S1186", "S1536", "N0051", "C086-T2"]
+    },
+    {
+      "id": "TIER2_SCHEDULE_AND_CANCEL_REVIEW",
+      "kind": "CHANGE_CANCEL",
+      "implementationCommit": "776e02555a19b5da2586f57f6f89278270b60460",
+      "changeAuthority": "ILDEUNG_TIER2_REMAINING30_AND_BATTERY17_SCOPE_REMEDIATION_V1",
+      "reason": "Exact reviewed schedule and transaction-change cases preserve modification intent without asserting an existing booking.",
+      "priorClassification": "Per-case SHA-pinned U4 partition artifact",
+      "semanticContract": "Direct live modification to the customer center, do not claim chat completion, and do not invent cancellation fees or post-cancellation use rights.",
+      "caseIds": ["S0577", "S0891", "N0194", "S1050"]
+    },
+    {
+      "id": "TIER2_PAYMENT_AND_INCLUDED_COST_REVIEW",
+      "kind": "PAYMENT_COST",
+      "implementationCommit": "776e02555a19b5da2586f57f6f89278270b60460",
+      "changeAuthority": "ILDEUNG_TIER2_REMAINING30_AND_BATTERY17_SCOPE_REMEDIATION_V1",
+      "reason": "Exact reviewed method and multi-vehicle/toll questions distinguish authorized standard price components from unlisted conditions.",
+      "priorClassification": "Per-case SHA-pinned U4 partition artifact",
+      "semanticContract": "Preserve listed cash/card/transfer facts; do not invent payer-name eligibility, payment discounts, toll or second-vehicle charges; explain the confirmation boundary.",
+      "caseIds": ["S1492", "C185-T2", "C287-T3", "S0750", "S1670"]
+    },
+    {
+      "id": "TIER2_AFTERSALES_DOCUMENT_REVIEW",
+      "kind": "AS_DOCUMENT",
+      "implementationCommit": "776e02555a19b5da2586f57f6f89278270b60460",
+      "changeAuthority": "ILDEUNG_TIER2_REMAINING30_AND_BATTERY17_SCOPE_REMEDIATION_V1",
+      "reason": "Exact reviewed A/S and document questions use the approved installer warranty period and a boundary for undocumented administrative details.",
+      "priorClassification": "Per-case SHA-pinned U4 partition artifact",
+      "semanticContract": "Installer A/S is three months from installation; manufacturer coverage, ownership, receipt name, document masking, photos and data deletion are not promised without confirmation. No vehicle-first or brand diversion.",
+      "caseIds": ["S1056", "S1365", "S1394", "S1447", "S1457", "C106-T3", "C109-T1", "C109-T2", "C109-T3", "C230-T1", "C238-T4", "C275-T4", "C299-T3"]
+    },
+    {
+      "id": "TIER2_PURCHASE_FOLLOWUP_REVIEW",
+      "kind": "PURCHASE_FOLLOWUP",
+      "implementationCommit": "776e02555a19b5da2586f57f6f89278270b60460",
+      "changeAuthority": "ILDEUNG_TIER2_REMAINING30_AND_BATTERY17_SCOPE_REMEDIATION_V1",
+      "reason": "Exact reviewed short intake turns retain known request context and seek only missing product or handoff information.",
+      "priorClassification": "Per-case SHA-pinned U4 partition artifact",
+      "semanticContract": "No invented product referent, document issuance, vehicle fitment, or completed order; preserve correction context and give minimum clarification or authorized handoff.",
+      "caseIds": ["C107-T2", "C201-T3", "C238-T2", "C327-T4"]
+    },
+    {
+      "id": "BATTERY_GENERAL_FITMENT_USAGE_REVIEW",
+      "kind": "CORE_BATTERY",
+      "implementationCommit": "776e02555a19b5da2586f57f6f89278270b60460",
+      "changeAuthority": "ILDEUNG_TIER2_REMAINING30_AND_BATTERY17_SCOPE_REMEDIATION_V1",
+      "reason": "Exact reviewed general fitment and use-duration questions reach existing battery knowledge without a fabricated vehicle-specific result.",
+      "priorClassification": "Per-case SHA-pinned U4 partition artifact",
+      "semanticContract": "Explain that vehicle-specific fitment and actual use duration vary; give no exact runtime, spec or guarantee, and ask vehicle details only for an exact fitment request.",
+      "caseIds": ["S0024", "S0221", "S0260", "S0323", "S1248"]
+    },
+    {
+      "id": "BATTERY_LONG_PARKING_REVIEW",
+      "kind": "BATTERY_TRIAGE",
+      "implementationCommit": "776e02555a19b5da2586f57f6f89278270b60460",
+      "changeAuthority": "ILDEUNG_TIER2_REMAINING30_AND_BATTERY17_SCOPE_REMEDIATION_V1",
+      "reason": "Exact reviewed long-parking and low-use turns reach previously approved discharge/prevention guidance.",
+      "priorClassification": "Per-case SHA-pinned U4 partition artifact",
+      "semanticContract": "Give general non-diagnostic battery-use guidance; do not assert discharge, replacement necessity or a guaranteed safe parking duration.",
+      "caseIds": ["S0377", "S1140", "S1264", "C141-T1", "C178-T2", "C265-T2"]
+    },
+    {
+      "id": "BATTERY_MINIMUM_SCOPE_CLARIFICATION_REVIEW",
+      "kind": "BATTERY_CLARIFICATION",
+      "implementationCommit": "776e02555a19b5da2586f57f6f89278270b60460",
+      "changeAuthority": "ILDEUNG_TIER2_REMAINING30_AND_BATTERY17_SCOPE_REMEDIATION_V1",
+      "reason": "Exact reviewed safety/process, jump-only, and ambiguous use-history questions receive a minimum battery or service-scope clarification.",
+      "priorClassification": "Per-case SHA-pinned U4 partition artifact",
+      "semanticContract": "No vehicle movement safety promise, jump-only service promise, or diagnosis; clarify the battery concern or send unknown service conditions to the correct confirmation path.",
+      "caseIds": ["S0168", "S1294", "S1413", "S1510"]
     }
   ]
 }
