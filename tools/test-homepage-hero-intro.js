@@ -38,6 +38,8 @@ for(const path of ['js/smart-consult-brand-comparison.js','js/smart-consult-loca
 for(const path of ['docs/evidence/location-nlu/regression-results.json','docs/evidence/location-nlu/regression/brand-service.json','docs/evidence/location-nlu/regression/matrix.json','docs/evidence/location-nlu/regression/pricing.json','docs/evidence/location-nlu/regression/product-as-hours.json','docs/evidence/location-nlu/regression/simulation.json'])currentValidationPaths.add(path); // Existing reviewed location-NLU evidence, not a directory allowance.
 // Exact previously approved Tier2 state-test baselines; no directory allowance.
 for(const file of ['tools/test-db-driven-flow.js','tools/test-smart-consult-v5.js','tools/test-smart-consult-v7.js','tools/test-tier2-u4-service-followup.js'])currentValidationPaths.add(file);
+// Reviewed, exact core-workstream regression paths; keep arbitrary tests barred.
+for(const file of ['tools/test-minimal-core-ws1-ws2.js','tools/test-minimal-core-ws3-ws4.js','tools/test-store-visit-schedule-boundary.js','js/smart-consult-faq.js'])currentValidationPaths.add(file);
 const allowedScopePath=file=>allowed.has(file)||approvedPaths.has(file)||auditedBlogPaths.has(file)||file===approvedN1TestPath||currentValidationPaths.has(file);
 assert.equal(allowedScopePath('js/unapproved-homepage-runtime.js'),false,'unrelated runtime path must remain forbidden');
 assert.equal(allowedScopePath('tools/test-unapproved-feature.js'),false,'unrelated test path must remain forbidden');

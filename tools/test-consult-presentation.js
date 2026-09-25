@@ -56,6 +56,7 @@ for(const p of ['js/smart-consult-location.js','js/smart-consult-brand-compariso
 // Exact Tier2 policy-routing and focused-test paths; no presentation assets.
 for(const p of ['js/smart-consult-purchase.js','tools/test-tier2-remaining-scope.js','tools/test-tier2-u4-service-followup.js','tools/test-db-driven-flow.js','tools/test-smart-consult-v5.js','tools/test-smart-consult-v7.js'])allowed.add(p);
 allowed.add('tools/test-minimal-core-ws1-ws2.js'); // Exact focused candidate test, not a tools directory exemption.
+for(const p of ['js/smart-consult-faq.js','tools/test-minimal-core-ws3-ws4.js','tools/test-store-visit-schedule-boundary.js'])allowed.add(p); // Exact governed core closeout paths only.
 check(allowed.has('js/smart-consult-battery-knowledge.js'),'authorized P1A knowledge runtime');
 check(allowed.has('tools/test-elliptical-load.js'),'authorized P1A focused test');
 check(!allowed.has('css/index.css'),'unrelated shared UI remains forbidden');

@@ -27,11 +27,63 @@ const groups={
 const transcripts=[];
 const keys=['selectedVehicleKey','manufacturer','vehicleFamily','year','brand','quotedSpec','confirmedBattery','region','priceIntent','originalIntent'];
 function turn(state,text){const out=conversationTurn(state,text,rows,areas,catalog,policy);transcripts.push({input:text,messages:out.messages,actions:out.actions,context:Object.fromEntries(keys.map(k=>[k,out.state[k]]))});return out;}
+function assertCashReceiptReply(messages){
+ const receipt=policy.finalFaq.answers.CASH_RECEIPT;
+ const cash=policy.finalFaq.answers.CASH;
+ assert.ok(Array.isArray(messages));
+ assert.ok(messages.length===1||messages.length===2);
+ assert.equal(messages[0],receipt);
+ if(messages.length===2)assert.equal(messages[1],cash);
+}
+function assertTaxInvoiceReply(input,messages){
+ const base=policy.finalFaq.answers.TAX_INVOICE;
+ const condition='발행 명의와 세부 증빙 조건은 고객센터 1644-9141로 확인해 주세요.';
+ const expected=/사업자/.test(input)?[base,condition]:[base];
+ assert.deepEqual(messages,expected,input);
+}
+function assertCombinedPaymentReply(input,messages){
+ const base=policy.finalFaq.answers.PAYMENT_COMBINED;
+ const expected=/카드나계좌이체/.test(input.replaceAll(' ',''))
+  ?[base,policy.finalFaq.answers.CARD,policy.finalFaq.answers.BANK_TRANSFER]
+  :/영수증이나세금계산서/.test(input.replaceAll(' ',''))
+   ?[base,policy.finalFaq.answers.CASH_RECEIPT,policy.finalFaq.answers.TAX_INVOICE]
+   :[base];
+ assert.deepEqual(messages,expected,input);
+}
+function assertPaymentConditionReply(input,messages){
+ const base=policy.finalFaq.answers.PAYMENT_CONFIRM.replaceAll('{phone}','1644-9141');
+ const extra=/^카드 수수료/.test(input)?policy.finalFaq.answers.CARD
+  :/^현금 할인/.test(input)?policy.finalFaq.answers.CASH
+   :/^세금계산서 부가세/.test(input)?policy.finalFaq.answers.TAX_INVOICE:null;
+ assert.deepEqual(messages,extra?[base,extra]:[base],input);
+}
+assertCashReceiptReply([policy.finalFaq.answers.CASH_RECEIPT]);
+assertCashReceiptReply([policy.finalFaq.answers.CASH_RECEIPT,policy.finalFaq.answers.CASH]);
+assertTaxInvoiceReply('세금계산서 되나요?',[policy.finalFaq.answers.TAX_INVOICE]);
+assertTaxInvoiceReply('사업자인데 세금계산서 돼요?',[policy.finalFaq.answers.TAX_INVOICE,'발행 명의와 세부 증빙 조건은 고객센터 1644-9141로 확인해 주세요.']);
+assertCombinedPaymentReply('카드나 계좌이체 돼요?',[policy.finalFaq.answers.PAYMENT_COMBINED,policy.finalFaq.answers.CARD,policy.finalFaq.answers.BANK_TRANSFER]);
+assertCombinedPaymentReply('영수증이나 세금계산서 돼요?',[policy.finalFaq.answers.PAYMENT_COMBINED,policy.finalFaq.answers.CASH_RECEIPT,policy.finalFaq.answers.TAX_INVOICE]);
+assertPaymentConditionReply('카드 수수료 있나요?',[policy.finalFaq.answers.PAYMENT_CONFIRM.replaceAll('{phone}','1644-9141'),policy.finalFaq.answers.CARD]);
+assertPaymentConditionReply('계좌번호 알려주세요',[policy.finalFaq.answers.PAYMENT_CONFIRM.replaceAll('{phone}','1644-9141')]);
+for(const invalid of [
+ [],['현금영수증 발행은 불가능합니다.'],['현금영수증은 카드 결제 시에만 발행됩니다.'],
+ [policy.finalFaq.answers.CASH_RECEIPT,'현금 할인됩니다.'],
+ [policy.finalFaq.answers.CASH_RECEIPT,'수수료가 추가됩니다.'],
+ [policy.finalFaq.answers.CASH_RECEIPT,'암호화폐로 결제 가능합니다.'],
+ ['정확한 내용은 1644-9141로 문의해 주세요.'],['차종과 연식을 알려주세요.']
+])assert.throws(()=>assertCashReceiptReply(invalid));
+for(const invalid of [[],['세금계산서 발행은 불가능합니다.'],[policy.finalFaq.answers.TAX_INVOICE,'부가세가 면제됩니다.'],['1644-9141로 문의해 주세요.']])assert.throws(()=>assertTaxInvoiceReply('세금계산서 되나요?',invalid));
+for(const invalid of [[],[policy.finalFaq.answers.PAYMENT_COMBINED,'현금 할인됩니다.'],[policy.finalFaq.answers.PAYMENT_COMBINED,'카드 수수료가 없습니다.']])assert.throws(()=>assertCombinedPaymentReply('결제수단 뭐 있어요?',invalid));
+for(const invalid of [[],['카드 수수료는 없습니다.'],[policy.finalFaq.answers.PAYMENT_CONFIRM.replaceAll('{phone}','1644-9141'),'카드 수수료는 없습니다.']])assert.throws(()=>assertPaymentConditionReply('카드 수수료 있나요?',invalid));
 const contexts=[createConversationState(),turn(createConversationState(),'BMW 5시리즈 2020년식 배터리 얼마예요?').state,turn(createConversationState(),'구월동 BMW 5시리즈 2020년식 바르타 배터리 얼마예요?').state,turn(createConversationState(),'바르타 AGM95 얼마예요?').state];
 for(const state of contexts)for(const [kind,inputs]of Object.entries(groups))for(const input of inputs){
  assert.equal(finalFaqIntent(input),kind,input);const out=turn(state,input);
  assert.deepEqual(out.state,kind==='WORK_TIME'&&/얼마나|몇\s*분/.test(input)?{...state,lastIntent:'OP_WORK_TIME'}:state,`context ${input}`);
- assert.deepEqual(out.messages,[policy.finalFaq.answers[kind].replaceAll('{phone}','1644-9141').replace('{min}','10').replace('{max}','20')]);
+ if(kind==='CASH_RECEIPT')assertCashReceiptReply(out.messages);
+ else if(kind==='TAX_INVOICE')assertTaxInvoiceReply(input,out.messages);
+ else if(kind==='PAYMENT_COMBINED')assertCombinedPaymentReply(input,out.messages);
+ else if(kind==='PAYMENT_CONFIRM')assertPaymentConditionReply(input,out.messages);
+ else assert.deepEqual(out.messages,[policy.finalFaq.answers[kind].replaceAll('{phone}','1644-9141').replace('{min}','10').replace('{max}','20')],input);
  if(kind==='WORK_TIME'){assert.match(out.messages[0],/보통 10~20분/);assert.match(out.messages[0],/차량과 작업 상황.*달라질/);assert.doesNotMatch(out.messages[0],/무조건|보장/);}
  if(/^VISIT|CONFIRM|CLARIFY/.test(kind))assert.ok(out.actions.includes('phone'));
  assert.doesNotMatch(out.messages.join(' '),/만원|수수료.*없|할인.*가능|부가세.*(?:포함|별도)/);
