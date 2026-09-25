@@ -7,7 +7,7 @@
   },
   "areaCases": 6650,
   "qualifiedAreaCases": 6650,
-  "collisionCases": 219,
+  "collisionCases": 216,
   "questionLoopCases": 917,
   "metrics": {
     "UNIQUE_AREA_FALSE_NEGATIVE": 0,
@@ -768,7 +768,6 @@
         "phone"
       ],
       "battery": null,
-      "area": "서울 송파구",
       "priceIntent": false,
       "pending": "exactFuel"
     },
@@ -827,7 +826,6 @@
         "phone"
       ],
       "battery": null,
-      "area": "인천 남동구 구월동",
       "priceIntent": false
     },
     {
@@ -840,7 +838,6 @@
         "phone"
       ],
       "battery": null,
-      "area": "인천 남동구 구월동",
       "priceIntent": false
     },
     {
@@ -853,7 +850,6 @@
         "phone"
       ],
       "battery": null,
-      "area": "인천 남동구 구월동",
       "priceIntent": false
     },
     {
@@ -866,7 +862,6 @@
         "phone"
       ],
       "battery": null,
-      "area": "인천 남동구 구월동",
       "priceIntent": false
     },
     {
@@ -879,7 +874,6 @@
         "phone"
       ],
       "battery": null,
-      "area": "인천 남동구 구월동",
       "priceIntent": false
     },
     {
@@ -892,7 +886,6 @@
         "phone"
       ],
       "battery": null,
-      "area": "인천 남동구 구월동",
       "priceIntent": false
     },
     {
@@ -905,7 +898,6 @@
         "phone"
       ],
       "battery": null,
-      "area": "인천 남동구 구월동",
       "priceIntent": false
     },
     {
@@ -919,7 +911,6 @@
         "phone"
       ],
       "battery": null,
-      "area": "인천 남동구 구월동",
       "priceIntent": false
     },
     {
@@ -933,7 +924,6 @@
         "phone"
       ],
       "battery": null,
-      "area": "인천 남동구 구월동",
       "priceIntent": false
     },
     {
@@ -947,7 +937,6 @@
         "phone"
       ],
       "battery": null,
-      "area": "인천 남동구 구월동",
       "priceIntent": false
     },
     {

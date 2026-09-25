@@ -20,17 +20,42 @@ export function scopeDomain(input) {
   return 'OUT_OF_SCOPE';
 }
 
-function factFailures({ input, current, reference, catalog, policy }) {
+const compactRegionText = value => String(value ?? '').normalize('NFKC').replace(/\s/g, '').toLowerCase();
+export function regionStateContract(input, currentRegion, previousRegion = null, localities = []) {
+  if (!currentRegion) return [];
+  const failures = [];
+  if (localities.length && !localities.some(item => item.canonicalId === currentRegion.canonicalId))
+    failures.push({ code: 'FACT_UNSUPPORTED_REGION', basis: 'seo-data/smart-consult-location-index.json' });
+  if (previousRegion?.canonicalId === currentRegion.canonicalId) return failures;
+  const s = compactRegionText(input);
+  const full = compactRegionText(currentRegion.fullLabel || currentRegion.fullName);
+  const canonical = compactRegionText(currentRegion.name);
+  const stem = canonical.replace(/[시구동읍면]$/, '');
+  const explicit = (canonical && s.includes(canonical)) || (full && s.includes(full))
+    || (stem.length >= 2 && stem !== '장기' && s.includes(stem));
+  const travelOnly = /(?:로(?:다시)?(?:가|오|올라|내려)|에살|에서살|쪽(?:입니다|이에요))/.test(s)
+    && !/(?:차량|차|현장|주차|집|회사|아파트|주소|위치).{0,20}(?:있|세워|에|에서)/.test(s);
+  const queryOnly = /(?:도|까지|지역|동네).{0,10}(?:출장|방문|와요|오나요|가능|되나요|돼요)[?？]?$/.test(s)
+    && !/(?:차량|차|현장|주차|집|회사|아파트|주소|위치).{0,20}(?:있|세워|에|에서)/.test(s);
+  if (!explicit || travelOnly || queryOnly)
+    failures.push({ code: 'FACT_FALSE_REGION_STATE', basis: 'explicit customer service-location evidence' });
+  return failures;
+}
+
+function factFailures({ input, current, reference, catalog, policy, previousCurrentState, localities = [] }) {
   const response = current.response ?? '';
   const state = current.output?.state ?? {};
   const oldState = reference.output?.state ?? {};
   const failures = [];
-  const strictFields = ['selectedVehicleKey', 'quotedSpec', 'brand', 'region'];
+  const strictFields = ['selectedVehicleKey', 'quotedSpec', 'brand'];
   for (const field of strictFields) {
     const oldValue = JSON.stringify(oldState[field] ?? null);
     const newValue = JSON.stringify(state[field] ?? null);
     if (oldValue !== newValue) failures.push({ code: `FACT_${field.toUpperCase()}_CHANGED`, basis: `approved reference state.${field}` });
   }
+  failures.push(...regionStateContract(input, state.region, previousCurrentState?.region, localities));
+  if (previousCurrentState?.region && !state.region && !/(?:주소|위치|장소|지역).{0,16}(?:달라|변경|바뀌|수정)|(?:달라|변경|바뀌).{0,16}(?:주소|위치|장소|지역)/.test(input))
+    failures.push({ code: 'FACT_CONFIRMED_REGION_LOST', basis: 'prior confirmed service location without correction' });
   if (JSON.stringify(oldState.confirmedBattery ?? null) !== JSON.stringify(state.confirmedBattery ?? null))
     failures.push({ code: 'FACT_CONFIRMED_BATTERY_CHANGED', basis: 'approved reference confirmedBattery' });
   const spec = state.quotedSpec || state.confirmedBattery?.spec || '';
@@ -79,10 +104,10 @@ export function evaluateSemanticContract(current, contract, extras = {}) {
   return failures;
 }
 
-export function evaluateCase({ current, reference, contract, review, catalog, policy, requiredAnswerSignals }) {
+export function evaluateCase({ current, reference, contract, review, catalog, policy, requiredAnswerSignals, previousCurrentState, localities }) {
   if (!reference || current.case_id !== reference.case_id || current.input !== reference.input) throw Error(`Frozen input/reference mismatch ${current.case_id}`);
   const responseChanged = current.response !== reference.response;
-  const deterministicFailures = factFailures({ input: current.input, current, reference, catalog, policy });
+  const deterministicFailures = factFailures({ input: current.input, current, reference, catalog, policy, previousCurrentState, localities });
   const semanticFailures = contract ? evaluateSemanticContract(current, contract, { requiredAnswerSignals }) : [];
   const unapprovedResponseChange = responseChanged && !contract;
   let category = reference.category, severity = reference.severity;

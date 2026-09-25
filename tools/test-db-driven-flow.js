@@ -68,10 +68,10 @@ for(const input of ['구월동 BMW 배터리 얼마예요?','BMW 배터리 얼�
  const corrected=conversationTurn(restored.state,'아니 2019년식이야',records,localities);assert.equal(corrected.state.year,2019);assert.equal(corrected.state.priceIntent,true);assert.equal(corrected.state.confirmedBattery,'AGM95');
 }
 for(const text of ['구월동 BMW 520d 2020년식 배터리 얼마예요?','구월동 BMW 5시리즈 2020년식 배터리 얼마예요?']){let f=flow([text]);if(f.state.pendingVehicleConfirmation)f=flow([text,'네']);assert.equal(f.state.confirmedBattery,'AGM95');assert.equal(f.state.region.fullLabel,'인천 남동구 구월동');assert.equal(f.state.priceIntent,true);assert.equal(f.state.previousQuestion,null);}
-const integrated=flow(['송파 그랜저 2024년식 교체돼요?']);assert.equal(integrated.state.region.name,'송파구');assert.equal(integrated.state.vehicleFamily,'그랜저');assert.equal(integrated.state.year,2024);assert.equal(integrated.state.serviceIntent,true);
+const integrated=flow(['송파 그랜저 2024년식 교체돼요?']);assert.equal(integrated.state.region,null);assert.ok(integrated.outputs[0].messages.join(' ').includes('서울 송파구'));assert.equal(integrated.state.vehicleFamily,'그랜저');assert.equal(integrated.state.year,2024);assert.equal(integrated.state.serviceIntent,true);
 assert.equal(flow(['인천인데','논현동']).state.region.fullLabel,'인천 남동구 논현동');
 assert.ok(flow(['논현동']).state.pendingLocationDisambiguation.length>1);
-for(const text of ['구월동교체되나요?','구월동배터리교체되나요?','구월동출장되나요?','구월동배터리돼요?','구월동도 와요?','인천 구월동 교체 가능?','남동구 구월동 출장돼요?'])assert.equal(flow([text]).state.region.fullLabel,'인천 남동구 구월동');
+for(const text of ['구월동교체되나요?','구월동배터리교체되나요?','구월동출장되나요?','구월동배터리돼요?','구월동도 와요?','인천 구월동 교체 가능?','남동구 구월동 출장돼요?']){const f=flow([text]);assert.equal(f.state.region,null);assert.ok(f.outputs[0].messages.join(' ').includes('인천 남동구 구월동'));}
 for(const text of ['구월동 지금 와요?','구월동 오늘 가능?','구월동 몇 시에 와요?'])assert.ok(flow([text]).outputs[0].messages.some(m=>m.includes('실시간 확인')));
 for(const text of ['BMW 5시리즈 2023','E클래스 2024','G70 2024','아반떼 2023','싼타페 2023']){const f=flow([text]);assert.equal(f.state.confirmedBattery,null);assert.ok(f.state.previousQuestion||f.state.pendingVehicleConfirmation);}
 assert.equal(PHONE_HREF,'tel:1644-9141');assert.equal(DIN_STORE_URL,'https://smartstore.naver.com/battery1/products/414050800');assert.equal(AGM_STORE_URL,'https://smartstore.naver.com/battery1/products/575288571');

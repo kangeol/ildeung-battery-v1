@@ -49,7 +49,7 @@ allowed.add('tools/test-no-start-n1.js'); // Focused N1 routing regression; no p
 for(const p of ['tools/frozen-corpus-change-registry.json','tools/frozen-corpus-unapproved-review.json','tools/lib/frozen-corpus-semantic-evaluator.js','tools/test-frozen-corpus-semantic.js','tools/test-frozen-corpus-semantic-self.js','tools/test-no-start-n1-boundaries.js'])allowed.add(p);
 for(const p of ['tools/test-scope-governance.js','docs/evidence/authentic-cash/focused.json','docs/evidence/battery-certainty/simulation.json','docs/evidence/brand-comparison/focused.json','docs/evidence/final-faq/faq.json','docs/evidence/final-faq/location/matrix.json','docs/evidence/final-faq/regression-results.json','docs/evidence/final-faq/regression/brand-service.json','docs/evidence/final-faq/regression/matrix.json','docs/evidence/final-faq/regression/pricing.json','docs/evidence/final-faq/regression/product-as-hours.json','docs/evidence/final-faq/regression/simulation.json','docs/evidence/product-as-hours/product-as-hours.json','docs/evidence/vehicle-selection/mass-after.json'])allowed.add(p);
 // Exact Tier2 routing paths; shared CSS and unrelated presentation runtime stay forbidden.
-for(const p of ['js/smart-consult-location.js','js/smart-consult-brand-comparison.js'])allowed.add(p);
+for(const p of ['js/smart-consult-location.js','js/smart-consult-brand-comparison.js','tools/test-smart-consult-nlu-v4.js'])allowed.add(p);
 check(allowed.has('js/smart-consult-battery-knowledge.js'),'authorized P1A knowledge runtime');
 check(allowed.has('tools/test-elliptical-load.js'),'authorized P1A focused test');
 check(!allowed.has('css/index.css'),'unrelated shared UI remains forbidden');

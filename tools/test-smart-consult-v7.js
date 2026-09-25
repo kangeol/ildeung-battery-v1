@@ -47,15 +47,15 @@ for(const entry of aliases) {
 }
 const forbidden=/DB|조회 결과|매칭 결과|데이터 기준|선택 조건|후보군|alias|정규화|프로세스/i;
 function flow(inputs) {let state=createConversationState();const outputs=[];for(const input of inputs){const output=conversationTurn(state,input,records,localities);state=output.state;outputs.push(output);ok(!forbidden.test(output.messages.join(" ")+output.chips.map(c=>c.label).join(" ")),input);ok(output.chips.length<=4,input);if(state.confirmedBattery)ok(records.some(row=>row.manufacturerId===state.manufacturer&&row.vehicle===state.vehicleFamily&&row.defaultBattery===state.confirmedBattery),"canonical battery only");}return{state,outputs};}
-for(const alias of safe) {const result=flow([`${alias.alias} 가능?`]);eq(result.state.location?.canonicalId,(alias.broadParent||alias.candidates[0]).canonicalId,alias.alias);ok(!result.outputs[0].messages.join(" ").includes("확인되지"),alias.alias);}
+for(const alias of safe) {const result=flow([`${alias.alias} 가능?`]);eq(result.state.location,null,`Area query must not confirm a service site: ${alias.alias}`);ok(!result.outputs[0].messages.join(" ").includes("확인되지"),alias.alias);}
 for(const input of ["부산 출장돼?","대전 출장돼?","대구 가능?","제주도 와요?","서울 부산 출장돼?","가짜송파지역 출장돼?","없는동 출장돼?"]) {const result=flow([input]);ok(!result.outputs[0].region,input);ok(!result.outputs[0].messages.join(" ").includes("교체 가능 지역"),input);}
-for(const input of ["송파 가능한가요?","지역 송파?","송파지역 출장가능?","지역은 송파 쪽 교체 가능?","송파 근처 방문 가능?"]) {const result=flow([input]);eq(result.state.location.fullLabel,"서울 송파구",input);ok(result.outputs[0].messages.join(" ").includes("말씀하시는 거죠?"),input);eq(result.state.pendingLocationDisambiguation,null,input);}
-eq(flow(["송파동 가능?"]).state.location.fullLabel,"서울 송파구 송파동");
+for(const input of ["송파 가능한가요?","지역 송파?","송파지역 출장가능?","지역은 송파 쪽 교체 가능?","송파 근처 방문 가능?"]) {const result=flow([input]);eq(result.state.location,null,input);ok(result.outputs[0].messages.join(" ").includes("서울 송파구"),input);eq(result.state.pendingLocationDisambiguation,null,input);}
+{const result=flow(["송파동 가능?"]);eq(result.state.location,null);ok(result.outputs[0].messages.join(" ").includes("서울 송파구 송파동"));}
 const siheung=["경기 성남시 수정구 시흥동","경기 시흥시","서울 금천구 시흥동"];
 eq(flow(["시흥 출장돼?"]).state.pendingLocationDisambiguation.map(x=>x.fullLabel).sort(),siheung);
 eq(flow(["경기도","시흥은?"]).state.pendingLocationDisambiguation.map(x=>x.fullLabel).sort(),siheung.slice(0,2));
 eq(flow(["경기도","시흥시","아니 서울 시흥동이야"]).state.location.fullLabel,siheung[2]);
-eq(flow(["인천 송도 가능해?"]).state.location.fullLabel,"인천 연수구 송도동");
+{const result=flow(["인천 송도 가능해?"]);eq(result.state.location,null);ok(result.outputs[0].messages.join(" ").includes("인천 연수구 송도동"));}
 
 const groups=buildVehicleGroups(records),familyMap=new Map();
 for(const group of groups) {const alias=normalizeText(group.vehicle);if(!familyMap.has(alias))familyMap.set(alias,[]);familyMap.get(alias).push(group.key);}
@@ -92,8 +92,8 @@ eq(flow(["트랙스 2018년식"]).state.previousQuestion.field,"fuel");
 eq(flow(["트랙스 2018년식","가솔린"]).state.confirmedBattery,"DIN60L");
 eq(flow(["트랙스 2018년식","디젤"]).state.confirmedBattery,"DIN74L");
 for(const detail of new Set(traxRows.map(row=>row.detailModel))) {const result=flow([detail]);eq(result.state.vehicleFamily,"트랙스");if(detail!=="트랙스")eq(result.state.detailModel,detail);}
-const corrected=flow(["송파 가능?","시동이 안 걸려","트랙스","아니 트랙스 크로스오버"]);eq(corrected.state.detailModel,"트랙스 크로스오버");eq(corrected.state.location.fullLabel,"서울 송파구");eq(corrected.state.symptom.intent,"NO_START");
-for(const [input,key,year,label] of [["벤츠C 2020년식인데 송파 가능?","benz|C-클래스",2020,"서울 송파구"],["트랙스 2018년식 영등포구 출장돼?","chevrolet|트랙스",2018,"서울 영등포구"],["소나타 2020년식 동작지역 가능?","hyundai|쏘나타",2020,"서울 동작구"]]) {const result=flow([input]);eq(result.state.selectedVehicleKey||result.state.pendingVehicleConfirmation?.key,key);eq(result.state.year,year);eq(result.state.location.fullLabel,label);ok(!/몇 년식|차량 연식/.test(result.outputs[0].messages.join(" ")));}
+const corrected=flow(["송파 가능?","시동이 안 걸려","트랙스","아니 트랙스 크로스오버"]);eq(corrected.state.detailModel,"트랙스 크로스오버");eq(corrected.state.location,null);ok(corrected.outputs[0].messages.join(" ").includes("서울 송파구"));eq(corrected.state.symptom.intent,"NO_START");
+for(const [input,key,year,label] of [["벤츠C 2020년식인데 송파 가능?","benz|C-클래스",2020,"서울 송파구"],["트랙스 2018년식 영등포구 출장돼?","chevrolet|트랙스",2018,"서울 영등포구"],["소나타 2020년식 동작지역 가능?","hyundai|쏘나타",2020,"서울 동작구"]]) {const result=flow([input]);eq(result.state.selectedVehicleKey||result.state.pendingVehicleConfirmation?.key,key);eq(result.state.year,year);eq(result.state.location,null);ok(result.outputs[0].messages.join(" ").includes(label));ok(!/몇 년식|차량 연식/.test(result.outputs[0].messages.join(" ")));}
 const mixed=flow(["BMW5 2019년식인데 경기도 시흥이야","응","시흥시"]);eq(mixed.state.vehicleFamily,"5시리즈");eq(mixed.state.year,2019);eq(mixed.state.location.city,"시흥시");ok(mixed.outputs[0].messages.join(" ").includes(siheung[0]));
 // Synthetic collisions prove candidates are not silently collapsed or invented.
 const synthetic=[...records,{...records.find(row=>row.vehicle==="트랙스"),manufacturerId:"other",manufacturerName:"다른제조사"}];

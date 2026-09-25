@@ -84,6 +84,7 @@ for (const [file, type] of [['single_turn.jsonl', 'single'], ['noisy.jsonl', 'no
     for (let turn = 0; turn < turns.length; turn++) {
       const caseId = type === 'multi' ? `${caseRecord.id}-T${turn + 1}` : caseRecord.id;
       const input = turns[turn];
+      const previousCurrentState = state;
       let current;
       try {
         const output = conversationTurn(state, input, records, areas, catalog, policy);
@@ -93,7 +94,7 @@ for (const [file, type] of [['single_turn.jsonl', 'single'], ['noisy.jsonl', 'no
         executionErrors++;
         current = { case_id: caseId, input, output: null, response: '', executionError: String(error) };
       }
-      const evaluated = evaluateCase({ current, reference: baseline.get(caseId), contract: contracts.get(caseId), review: reviews.get(caseId), catalog, policy });
+      const evaluated = evaluateCase({ current, reference: baseline.get(caseId), contract: contracts.get(caseId), review: reviews.get(caseId), catalog, policy, previousCurrentState, localities: areas });
       if (adjudication.has(caseId)) evaluated.batchAdjudication = adjudication.get(caseId);
       if (current.executionError) {
         evaluated.category = 'EXECUTION_ERROR'; evaluated.severity = 'S4'; evaluated.executionError = current.executionError;

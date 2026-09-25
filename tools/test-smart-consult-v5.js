@@ -33,12 +33,13 @@ const symptom=flow(["점프했는데 또 방전됐어요","BMW 520d 2019년식",
 eq(symptom.state.symptom.intent,"WEAK_START");eq(symptom.state.confirmedBattery,"AGM95");eq(symptom.state.year,2019);
 for(const text of ["영등포구 지금 와?","오늘 가능해?","몇 시에 올 수 있어?","30분 안에 와?","지금 출발 가능?"]) {
   const f=flow(["영등포구 가능?",text]);
-  eq(f.state.location.fullLabel,"서울 영등포구");ok(f.outputs.at(-1).messages.includes(copy.dispatch));eq(f.outputs.at(-1).actions,["phone"]);
+  // An area-coverage question does not establish the customer's service site.
+  eq(f.state.location,null,`Area query must not persist as service site: ${text}`);ok(f.outputs.at(-1).messages.includes(copy.dispatch));eq(f.outputs.at(-1).actions,["phone"]);
   ok(!/네.*지금 가능합니다|오늘 방문 가능합니다/.test(f.outputs.at(-1).messages.join(" ")));
 }
 eq(flow(["영등포구 가능?"]).state.lastIntent,"SERVICE_AREA_AVAILABILITY");
 const mixed=flow(["BMW 520d 2019년식","영등포구 지금 와?"]);
-eq(mixed.state.location.fullLabel,"서울 영등포구");ok(mixed.outputs[1].messages.join(" ").includes("출장 교체 가능"));
+eq(mixed.state.location,null);ok(mixed.outputs[1].messages.join(" ").includes("출장 교체 가능"));
 for(const input of ["몰라요","잘 모르겠어요","모르겠는데","기억 안 나요","잘 몰라","어디서 봐요?","그건 모르겠어요"]) {
   const f=flow(["BMW 520d",input]);ok(f.outputs.at(-1).messages.includes(/연식|몇\s*년/.test(input)?copy.recoveryYear:copy.recoveryModel));eq(f.state.previousQuestion.field,"detailModel");eq(f.outputs.at(-1).actions,["phone"]);
 }

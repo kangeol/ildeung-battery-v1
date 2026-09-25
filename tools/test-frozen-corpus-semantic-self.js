@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import { evaluateCase, evaluateSemanticContract, releaseBlockers } from './lib/frozen-corpus-semantic-evaluator.js';
+import { evaluateCase, evaluateSemanticContract, regionStateContract, releaseBlockers } from './lib/frozen-corpus-semantic-evaluator.js';
 
 const catalog = JSON.parse(fs.readFileSync('data/battery-prices.json', 'utf8'));
 const policy = JSON.parse(fs.readFileSync('data/consult-service-policy.json', 'utf8'));
@@ -25,6 +25,14 @@ assert.ok(unsafeDiagnosis.deterministicFailures.some(x => x.code === 'FACT_UNSAF
 const unapproved = check('AGM105 델코 교체 가격은 28만 원입니다.');
 assert.equal(unapproved.unapprovedResponseChange, true);
 assert.equal(unapproved.needsAdjudication, true);
+
+const seoul={canonicalId:'seoul-test',name:'서울',fullLabel:'서울',area:'seoul'};
+const songdo={canonicalId:'songdo-test',name:'송도동',fullLabel:'인천 연수구 송도동',area:'incheon'};
+assert.ok(regionStateContract('장기 보관 방법을 알고 싶습니다',{canonicalId:'janggi-test',name:'장기동',fullLabel:'인천 계양구 장기동'},null).some(x=>x.code==='FACT_FALSE_REGION_STATE'));
+assert.ok(regionStateContract('저는 서울로 올라가는 쪽입니다',seoul,null).some(x=>x.code==='FACT_FALSE_REGION_STATE'));
+assert.ok(regionStateContract('서울도 와요?',seoul,null).some(x=>x.code==='FACT_FALSE_REGION_STATE'));
+assert.deepEqual(regionStateContract('인천 송도 아파트에 차가 있어요',songdo,null),[]);
+assert.deepEqual(regionStateContract('서울 마포구예요',{canonicalId:'mapo-test',name:'마포구',fullLabel:'서울 마포구'},seoul),[]);
 
 const n1Reference = { case_id: 'N1-SYNTHETIC', input: '차 시동이 안 걸려요', response: '차량명과 연식을 알려주세요.', output: { state: { selectedVehicleKey: '', quotedSpec: '', brand: '', region: null, confirmedBattery: null } }, category: 'UNNECESSARY_CLARIFICATION', severity: 'S2' };
 const contract = { id: 'N1_EXPLICIT_VEHICLE_NO_START' };
