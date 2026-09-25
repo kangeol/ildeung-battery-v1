@@ -18,7 +18,7 @@ export function finalFaqIntent(text) {
   if(payments.length>1 || /결제(?:수단|는뭐|방법)|영수증이나세금계산서/.test(s))return 'PAYMENT_COMBINED';
   if(payments.length)return payments[0];
   // Customer visiting the shop is different from a technician visiting the vehicle.
-  const visit=/직접.*(?:가|방문)|제가.*가도|매장.*방문|방문(?:해도|해서|구매|하려)|사러가도|주소/.test(s);
+  const visit=/직접.*(?:가|방문)|제가.*가도|매장.*(?:방문|가면)|방문(?:해도|해서|구매|하려)|사러가도|주소/.test(s);
   if(visit){
     if(/지금|오늘/.test(s))return 'VISIT_NOW';
     if(/주소/.test(s))return 'VISIT_ADDRESS';

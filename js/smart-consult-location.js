@@ -2,7 +2,7 @@ import { normalizeText } from "./smart-consult-core.js";
 
 // These suffixless locality stems are ordinary temporal/landmark nouns in
 // frozen customer language. Require the actual administrative locality token.
-const ambiguousLocalityStems = new Set(["공항", "오전", "장기"]);
+const ambiguousLocalityStems = new Set(["공항", "오전", "장기", "금이"]);
 
 export function locationAliases(item) {
   const base = item.name.replace(/[시구동읍면]$/, "");

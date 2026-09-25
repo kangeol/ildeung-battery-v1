@@ -86,7 +86,22 @@ export function vehicleAliasOccurs(value, alias, manufacturerId = "") {
   const source = String(value).normalize("NFKC").toLocaleLowerCase("ko-KR");
   const needle = normalizeText(alias);
   if (!needle) return false;
-  if (!/[a-z]/.test(needle)) return normalizeText(source).includes(needle);
+  if (!/[a-z가-힣]/.test(needle)) return normalizeText(source).includes(needle);
+  if (!/[a-z]/.test(needle)) {
+    // Short Korean family names must be complete entities, not syllables inside
+    // an unrelated word (for example a mechanical-part name).
+    if (needle.length > 2) return normalizeText(source).includes(needle);
+    for (let at = source.indexOf(needle); at >= 0; at = source.indexOf(needle, at + 1)) {
+      const before = source.slice(0, at), after = source.slice(at + needle.length);
+      const brands = MANUFACTURER_ALIASES[manufacturerId] || [];
+      const left = !before || /[^가-힣a-z0-9]$/.test(before)
+        || brands.some(brand => normalizeText(before).endsWith(normalizeText(brand)));
+      const right = !after || /^[^가-힣a-z0-9]/.test(after)
+        || /^(?:배터리|밧데리|차|차량|는|은|가|이|를|을|도|랑|로|으로|인데|입니다|예요|이에요|가격|연식|모델|전기차|ev)/i.test(after);
+      if (left && right) return true;
+    }
+    return false;
+  }
   let mapped = vehicleSourceCache.get(source);
   if (!mapped) {
     const positions = []; let compact = "";
