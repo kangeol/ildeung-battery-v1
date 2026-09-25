@@ -1,10 +1,13 @@
 import { normalizeText } from "./smart-consult-core.js";
 
+// These suffixless locality stems are ordinary temporal/landmark nouns in
+// frozen customer language. Require the actual administrative locality token.
+const ambiguousLocalityStems = new Set(["공항", "오전", "장기"]);
+
 export function locationAliases(item) {
   const base = item.name.replace(/[시구동읍면]$/, "");
   // A bare common noun is not evidence of the locality sharing its stem.
-  // 장기동 remains available by its canonical name and full address.
-  const suffixless = base.length >= 2 && !(item.level === "locality" && base === "장기") ? [base] : [];
+  const suffixless = base.length >= 2 && !(item.level === "locality" && ambiguousLocalityStems.has(base)) ? [base] : [];
   // City-name station references can establish a broad service city, not a
   // precise dispatch address. Never infer a district or a station's access.
   const station = item.level === "city" && base.length >= 2 ? [`${base}역`] : [];
@@ -61,15 +64,18 @@ export function resolveLocation(text, localities, previous = null, pending = nul
   // Match the place's own name, never all descendants whose full path contains it.
   // Copular endings follow any canonical alias, including suffixless parents.
   // Require an end or a new clause after a polite ending (not arbitrary substrings).
-  const politeEnd = /^(?:입니다만|이에요만|예요만|입니다|이에요|예요|에요|인데요|이구요|이고요|이고|인데)/;
+  const politeEnd = /^(?:입니다만|이에요만|예요만|입니다|이에요|예요|에요|인데요|이구요|이고요|이고|이구|인데)/;
   const safeEnd = end => {
     const rest=normalized.slice(end), ending=rest.match(politeEnd)?.[0];
-    return !rest || boundaries.has(end) || (ending && (rest===ending || boundaries.has(end+ending.length) || /^(?:이고|인데)$/.test(ending))) || /^(?:배터리|밧데리|지역|교체|에서|에서도|은|는|에|도|인데|이야|쪽|근처|출장|방문|가능|와|이요|요|으로|로|맞|야|지금|오늘|내일|몇시|언제|급해|긴급|\d+분)/.test(rest);
+    return !rest || boundaries.has(end) || (ending && (rest===ending || boundaries.has(end+ending.length) || /^(?:이고|인데)$/.test(ending) || /^(?:이구|이고)(?:결제|교체|방문|가격|출장)/.test(rest))) || /^(?:배터리|밧데리|지역|교체|에서|에서도|은|는|에|도|인데|이야|쪽|근처|출장|방문|가능|와|이요|요|으로|로|맞|야|지금|오늘|내일|몇시|언제|급해|긴급|\d+분)/.test(rest);
   };
   let tokens = hits.filter(hit => {
     // Suffixless district aliases can also be ordinary grammar. "동안" is a
     // temporal noun unless an explicit geographic cue establishes 동안구.
     if (hit.item.level === "district" && hit.alias === normalizeText("동안") && !/(?:안양(?:시)?동안|동안구|^동안(?:가능|출장|방문|지역|도와)[가-힣]{0,6}\??$|^(?:지역)?동안\??$|^동안(?:입니다|이에요|예요|에요|인데요|이구요|이고요|이고)$)/.test(text.replace(/\s/g,''))) return false;
+    // A bare administrative name may also be the ordinary verb "to move".
+    // Its grammatical particles are not evidence of a service address.
+    if (hit.item.name === "이동" && /^(?:도|을|은|이|에대해|하는|할|해서|해|시켜|시키|을도와)/.test(normalized.slice(hit.end)) && !/(?:안산|의왕|상록구|이동\s*(?:주소|지역|주차|으로|에서|동네))/.test(text)) return false;
     const before = normalized.slice(0,hit.start);
     const after = normalized.slice(hit.end);
     const left = !before || /(?:아니|지역은|지역|서울|경기|인천|이고|인데|년식|년식인데|년식이고)$/.test(before) || hits.some(other=>other.end===hit.start) || /\d$/.test(before);
