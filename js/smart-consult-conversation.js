@@ -358,33 +358,63 @@ function composeConversion(previous, text, out, localities, priceCatalog, policy
     if(message && !has(marker))messages.push(message.replaceAll('{phone}',PHONE_LABEL));
     if(phone)actions.push('phone');
   };
-  const locationChange=/(?:주소|위치|장소|주차|차량위치).{0,16}(?:달라|변경|바뀌|옮기)|(?:달라|변경|바뀌|옮기).{0,16}(?:주소|위치|장소|주차|자리)|(?:차를|차량을).{0,12}(?:자리로|곳으로|장소로).{0,6}옮기/.test(s);
+  const locationChange=/(?:주소|위치|장소|주차|차량위치|현장).{0,16}(?:달라|변경|바뀌|옮기)|(?:달라|변경|바뀌|옮기).{0,16}(?:주소|위치|장소|주차|현장|자리)|(?:차를|차량을).{0,12}(?:자리로|곳으로|장소로).{0,6}옮기/.test(s);
+  const conditionalLocationChange=locationChange&&/(?:변경|바꾸|옮기).{0,5}(?:하면|한다면|할경우)/.test(s);
+  const temporalSiteShift=/(?:오늘|지금).{0,30}(?:현장|차량위치|주차장).{0,30}(?:내일|다음날)/.test(s);
   const timeChange=/(?:방문시간|도착시간|예약시간|접수시간|일정|시간|시각).{0,14}(?:달라|변경|바뀌|바꿔|바꾸)|(?:달라|변경|바뀌|바꿔|바꾸).{0,14}(?:방문시간|도착시간|예약시간|접수시간|일정|시간|시각)/.test(s);
-  const cancel=/(?:예약|접수|방문|일정)?.{0,8}취소|취소.{0,8}(?:예약|접수|방문|일정)/.test(s);
+  const cancel=/(?:예약|접수|방문|일정)?.{0,8}취소|취소.{0,8}(?:예약|접수|방문|일정)/.test(s)
+    && !/취소(?:는|가|를)?(?:말고|아니|않|안하)/.test(s);
   const localityText=String(text).replace(/공항\s*주차장|회사\s*주차장|기계식\s*주차장|갓길/g,'');
   const located=resolveLocation(localityText,localities,previous.location||previous.region,previous.pendingLocationDisambiguation);
   const directVisit=/(?:직접|제가|내가|제가직접|매장).{0,12}(?:방문|가도|갈게|가려고|찾아가)|출장말고.{0,12}(?:방문|가도|갈게)/.test(s);
   const areaQuestion=!directVisit&&!has(/직접 방문(?:도|은) 가능|매장 방문도 가능/)&&(/(?:출장(?!비)|방문).{0,20}(?:가능|요청|되|돼|와주|와요|오실|올수|지역)|(?:지역|동네|주소|차량위치).{0,20}(?:출장|가능|와|오)|(?:여기|거기|이곳|그곳).{0,15}(?:와|와요|오실|올수|출장)/.test(s)||Boolean(located.region && /와주|와주세요|오실|올수/.test(s)));
+  const areaInquiry=areaQuestion&&/(?:가능(?:한가요|해요|합니까)?|되(?:나요|습니까)?|돼요|와(?:주시나요|요|주실수)?|오(?:나요|실수)?|올수)[?？！.!]*$/.test(s);
   const worksite=/(?:지하\s*\d*층|지하주차장|기계식주차|주차타워|막다른|회차|출입등록|경비실|높이제한|차량접근|회사주차장|아파트주차장|오피스텔지하)/.test(s);
   const nonface=/비대면|차주.{0,8}(?:없|부재)|(?:제가|저는|사람이?).{0,8}(?:없|자리.{0,4}비우|못내려)|키.{0,12}(?:맡|전달|인계|경비실)|대리인/.test(s);
-  if(locationChange&&!located.region&&!located.ambiguousRegion){
+  const temporalService=/동안/.test(s)&&/(?:작업|교체|기사|방문|차(?:를)?맡|차량(?:을)?맡|(?:차|차량).{0,12}(?:옮겨|이동|싣))/.test(s);
+  const temporalSchedule=temporalService&&/(?:방문시간|시간잡|예약|접수|기사.{0,8}먼저|기사.{0,8}가실)/.test(s);
+  const temporalHandoff=temporalService&&/(?:맡기|맡겨|맡길|없|부재|집안|옆에|자리.{0,4}비우|수속)/.test(s);
+  if((locationChange&&!located.region&&!located.ambiguousRegion)||conditionalLocationChange){
     state.region=null;state.location=null;state.city='';state.district='';
     messages.splice(0,messages.length,...messages.filter(message=>!/예약·신청·접수는 고객센터|차량명과 연식을|차량명과 연식을 조금|어떤 차량이세요/.test(message)));
     add('변경된 차량 위치의 동이나 구를 알려주세요. 방문 장소의 실제 변경은 고객센터 {phone}에서 확인해야 하며, 이 채팅에서 변경을 확정하지 않습니다.',/변경된 차량 위치의 동이나 구/,true);
   } else if(!explicitUnsupported&&located.region&&(areaQuestion||locationChange||out.state.region)){
-    state.region=located.region;state.location=located.region;state.city=located.region.city;state.district=located.region.district;
+    if(!areaInquiry){state.region=located.region;state.location=located.region;state.city=located.region.city;state.district=located.region.district;}
     if(areaQuestion&&!/(?:가격|얼마|규격|배터리.+(?:뭐|어떤))/.test(s))messages.splice(0,messages.length,...messages.filter(message=>!/차량명과 연식을|어떤 차량이세요/.test(message)));
     if(areaQuestion)add(`${located.region.fullLabel} 지역은 출장 배터리 교체 가능 지역입니다. 정확한 현장 접근 조건과 방문 일정은 확인이 필요합니다.`,/출장 배터리 교체 가능 지역|출장 교체 가능 지역|출장 가능 지역/);
   } else if(areaQuestion&&!explicitUnsupported&&!state.region&&!located.ambiguousRegion&&!has(/출장 가능 지역으로 확인되지 않|지역을 알려|동이나 구|정확한 위치/)){
     add('차량이 있는 동이나 구를 알려주시면 출장 가능 지역인지 확인해드릴게요.',/동이나 구/);
   }
+  if(temporalSiteShift){
+    state.region=previous.region;state.location=previous.location;state.city=previous.city;state.district=previous.district;
+    messages.splice(0,messages.length,...messages.filter(message=>!/차량 확인 후 바로 안내|차량명과 연식을|어떤 차량이세요/.test(message)));
+    add('날짜에 따라 현장이 다르군요. 방문을 원하시는 차량의 현재 동이나 구와 희망 일정을 알려주세요. 실제 방문 가능 시간은 고객센터 {phone}로 확인이 필요합니다.',/날짜에 따라 현장이 다르군요/,true);
+  }
+  if(areaInquiry||conditionalLocationChange){
+    state.region=previous.region;state.location=previous.location;state.city=previous.city;state.district=previous.district;
+    out.region=previous.region;
+  }
+  if(locationChange&&/(?:비용|가격|금액|얼마|더비싸)/.test(s))
+    add('장소 변경에 따른 최종 금액은 새 차량 위치와 기존 견적 조건을 확인해야 합니다. 고객센터 {phone}로 확인해 주세요.',/장소 변경에 따른 최종 금액/,true);
   if(worksite && (nonface||areaQuestion||/(?:지하|주차|기계식|회차|출입|경비실|높이제한).{0,25}(?:가능|되|돼|작업|교체|접근|출입|회차)/.test(s)))
     add(policy.operational.SITE,/안전성과 차량 접근 가능 조건|주차·출입 허가/,true);
   if(/(?:접수|예약).{0,50}(?:정확히어디|위치|주소|장소).{0,20}(?:전달|알려|말씀)|(?:위치|주소|장소).{0,25}(?:어떻게전달|어디로전달)/.test(s))
     add('차량이 있는 정확한 위치와 현장 접근 조건을 고객센터 {phone}에 알려주세요. 이 채팅에서는 접수를 확정하지 않습니다.',/정확한 위치와 현장 접근 조건을 고객센터/,true);
   if(nonface)add(policy.operational.NON_FACE_TO_FACE,/키를 맡기거나 가족·대리인|비대면 교체가 가능/,true);
+  if(temporalHandoff&&!nonface)add(policy.operational.NON_FACE_TO_FACE,/키를 맡기거나 가족·대리인|비대면 교체가 가능/,true);
+  if(temporalHandoff&&!/(?:오늘|지금|당일|내일|예약|방문시간|도착시간)/.test(s))
+    messages.splice(0,messages.length,...messages.filter(message=>!/오늘·지금·당일 가능 여부와 배차·도착 시간/.test(message)));
+  if(temporalSchedule){
+    add(policy.operational.REALTIME,/실시간 확인이 필요/,true);
+    if(/시간잡|예약|접수/.test(s))add(policy.purchaseKnowledge.application,/이 채팅에서는 주문이나 예약을 확정하지 않/,true);
+  } else if(temporalService&&!nonface&&!temporalHandoff) add(policy.operational.SITE,/안전성과 차량 접근 가능 조건|주차·출입 허가/,true);
+  if((nonface||temporalService)&&!/(?:배터리|규격|가격|견적|얼마|어떤차량|차종|년식)/.test(s)){
+    messages.splice(0,messages.length,...messages.filter(message=>!/차량명과 연식을|차량마다 배터리가 달라요|차량을 정확하게 찾지 못했어요|어떤 차량이세요/.test(message)));
+  }
+  if(nonface&&/서명|인수확인/.test(s))add('대리인의 서명·확인 가능 여부는 고객센터 {phone}로 현장 조건을 확인해 주세요.',/대리인의 서명·확인 가능 여부/,true);
   const operation=operationalPlan(text,previous);
-  if(operation?.realtime)add(policy.operational.REALTIME,/실시간 확인이 필요|실시간 확인이 필요합니다/,true);
+  if(operation?.realtime&&(!temporalHandoff||/(?:오늘|지금|당일|내일|예약|방문시간|도착시간)/.test(s)))
+    add(policy.operational.REALTIME,/실시간 확인이 필요|실시간 확인이 필요합니다/,true);
   if(/(?:^|[^a-z])a\/?s(?:[^a-z]|$)|보증|사후\s*관리|교체\s*후.{0,10}문제/i.test(text)){
     const reply=extendedPolicyReply('A/S 되나요?',state,priceCatalog,policy);
     if(reply)for(const message of reply.messages)add(message,/설치일 기준 3개월 이내 A\/S/);
@@ -401,20 +431,56 @@ function composeConversion(previous, text, out, localities, priceCatalog, policy
   if(/(?:폐|헌|기존)\s*배터리/.test(text)&&/(?:안\s*(?:주|반납|수거)|제가\s*(?:갖|가져)|보관)/.test(text))
     add(policy.answers.KEEP_OLD_BATTERY,/보관하시려면 전화로 정확한 조건/,true);
   if(cancel)add(policy.purchaseKnowledge.cancel,/이 채팅에서는 예약을 취소하지 않/,true);
+  if(cancel&&/(?:비용|얼마|가격|비싸)/.test(s)&&!/(?:배터리|제품|브랜드|규격)/.test(s)){
+    messages.splice(0,messages.length,...messages.filter(message=>!/어떤 제품이나 브랜드를 비교|차량마다 배터리 규격이 달라요|차량명과 연식을|어떤 차량이세요/.test(message)));
+    add('취소 비용이나 현장 조건에 따른 금액은 이 상담에서 확정할 수 없습니다. 고객센터 {phone}로 확인해 주세요.',/취소 비용이나 현장 조건에 따른 금액/,true);
+  }
   if(timeChange)add(policy.purchaseKnowledge.change,/이 채팅에서는 예약을 변경하지 않/,true);
   const purchase=purchaseKnowledgePlan(text,previous,priceCatalog);
+  const intakeRequest=/(?:교체|방문|출장).{0,16}(?:접수|예약|신청)(?:을|를)?(?:하고싶|해주세요|해줘|하려|할게)|(?:접수|예약|신청)(?:을|를)?(?:하고싶|해주세요|해줘|하려|할게)|(?:교체|방문)(?:해주세요|해줘|할게|하고싶|원해요)|(?:와주세요|와주실수)/.test(s);
   const explicitChoice=Boolean(brandIntent(text,priceCatalog))&&/(?:델코|바르타).{0,6}(?:로|으로).{0,8}(?:해주세요|해줘|할게|교체|진행)/.test(s);
-  if(purchase?.purchase||explicitChoice){
+  if(purchase?.purchase||explicitChoice||intakeRequest){
     const selected=brandIntent(text,priceCatalog)||previous.brand;
     if(selected)state.brand=selected;
+    state.customerGoal='REPLACE';
     add(policy.purchaseKnowledge.application,/이 채팅에서는 주문이나 예약을 확정하지 않/,true);
   }
   return {...out,state,messages:unique(messages),actions:unique(actions),region:out.region};
 }
 
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  if(selection===null && previous.lastIntent==='SERVICE_LOCATION_CLARIFICATION'
+    && /(?:집|주유소|주차|현장|구역|반대편|지역별)/.test(text)
+    && !resolveLocation(text,localities).region){
+    const state={...previous,turnIndex:previous.turnIndex+1};
+    const messages=[];
+    if(/문제|도움|보증|A\/S/i.test(text))messages.push('일등밧데리에서 설치한 배터리는 설치일 기준 3개월 이내 A/S가 가능합니다.');
+    messages.push('출장 가능 여부는 차량이 있는 실제 작업 위치를 기준으로 확인합니다. 차량의 현재 동이나 구와 현장 접근 조건을 알려주세요.');
+    return {state,messages,actions:[],chips:[],result:null,region:previous.region};
+  }
+  if(selection===null && /장기\s*(?:보관|주차|방치).{0,12}(?:방법|관리|예방)/.test(text)
+    && !/(?:동|읍|면|구)(?:으로|에서|에|까지)\s*(?:와|오|출장|방문)/.test(text)){
+    const state={...previous,turnIndex:previous.turnIndex+1,lastIntent:'KNOWLEDGE_DISCHARGE'};
+    return {state,messages:[batteryKnowledgeCopy.prevention],actions:[],chips:[],result:null,region:previous.region};
+  }
+  // Travel direction and residence are not the vehicle's requested service site.
+  if(selection===null && /(?:로\s*(?:다시\s*)?(?:가|오|올라|내려)|에\s*살|에서\s*살|쪽(?:입니다|이에요))/.test(text)
+    && !/(?:출장|교체|방문|와주세요|와주실|오시는|오는데|걸려|도착|서비스|가능해|가능한|요청)/.test(text)
+    && resolveLocation(text,localities).region){
+    const state={...previous,turnIndex:previous.turnIndex+1,lastIntent:'SERVICE_LOCATION_CLARIFICATION'};
+    return {state,messages:['출장 가능 여부는 차량이 있는 실제 작업 위치를 기준으로 확인합니다. 교체를 원하시는 차량의 현재 동이나 구를 알려주세요.'],actions:[],chips:[],result:null,region:previous.region};
+  }
   const out=conversationTurnBase(previous,text,records,localities,priceCatalog,servicePolicy,selection);
-  return selection===null?composeConversion(previous,text,out,localities,priceCatalog,servicePolicy):out;
+  const composed=selection===null?composeConversion(previous,text,out,localities,priceCatalog,servicePolicy):out;
+  // Asking whether a region is covered does not establish a dispatch address.
+  if(selection===null && (/(?:출장|방문|와(?:요|주|줄|실)?|오(?:나요|실)?|가능|되나요|돼요|돼|되나)[^?？]{0,6}[?？]\s*$/.test(text)
+      || (/(?:지역|동네)/.test(text)&&/[?？]\s*$/.test(text)&&resolveLocation(text,localities).region))
+    && !/(?:차량|차|현장|주차|지하|집|회사|아파트|오피스텔|주소|위치).{0,20}(?:있|세워|에|에서|교체)/.test(text)){
+    composed.state.region=previous.region;composed.state.location=previous.location;
+    composed.state.city=previous.city;composed.state.district=previous.district;
+    composed.region=previous.region;
+  }
+  return composed;
 }
 
 function conversationWithoutNonmonetary(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
@@ -907,7 +973,7 @@ function conversationCore(previous, text, records, localities = [], priceCatalog
     const placeBeforeService = (text.match(/(?:^|\s)([가-힣]{2,}?)(?=\s*(?:출장|방문|도\s*와))/)?.[1]
       || text.match(/지역(?:은|이)?\s*([가-힣]{2,}?)(?:입니다만|입니다|이에요|예요|인데요|인데|이구요|이고요|이고|$)/)?.[1])?.replace(/(?:인데요|인데|이고요|이고|입니다|이에요|예요)$/,'');
     const noun=placeBeforeService?.replace(/(?:으로|이요|은|는|도|로)$/,'');
-    const explicitPlace = placeBeforeService && !["여기", "거기", "오늘", "내일", "지금", "배터리", "밧데리", "근처", "쪽", "지역", "방문", "출장", "교체", "무료", "유료", "차량", "자동차", "가능", "혹시", "정말", "타이어", "장착", "서비스", "아파트", "오피스텔", "회사", "공장", "상가", "지하", "주차장", "현장", "집"].includes(noun);
+    const explicitPlace = placeBeforeService && !["여기", "거기", "오늘", "내일", "지금", "배터리", "밧데리", "근처", "쪽", "지역", "방문", "출장", "교체", "무료", "유료", "차량", "자동차", "가능", "혹시", "정말", "타이어", "장착", "서비스", "아파트", "오피스텔", "회사", "공장", "상가", "지하", "주차장", "현장", "집", "장기"].includes(noun);
     const placeResult=explicitPlace ? resolveLocation(placeBeforeService,localities) : null;
     // The full utterance has already resolved a canonical supported area.
     // A later broad worksite phrase must not override that evidence.

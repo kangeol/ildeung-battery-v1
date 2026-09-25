@@ -2,7 +2,13 @@ import { normalizeText } from "./smart-consult-core.js";
 
 export function locationAliases(item) {
   const base = item.name.replace(/[시구동읍면]$/, "");
-  return [...new Set([item.name, item.fullName, item.fullLabel, ...(base.length >= 2 ? [base] : []), ...(item.level === "province" ? [item.province, ...(/특별시|광역시/.test(item.province) ? [`${item.name}시`] : [])] : [])].map(normalizeText))];
+  // A bare common noun is not evidence of the locality sharing its stem.
+  // 장기동 remains available by its canonical name and full address.
+  const suffixless = base.length >= 2 && !(item.level === "locality" && base === "장기") ? [base] : [];
+  // City-name station references can establish a broad service city, not a
+  // precise dispatch address. Never infer a district or a station's access.
+  const station = item.level === "city" && base.length >= 2 ? [`${base}역`] : [];
+  return [...new Set([item.name, item.fullName, item.fullLabel, ...suffixless, ...station, ...(item.level === "province" ? [item.province, ...(/특별시|광역시/.test(item.province) ? [`${item.name}시`] : [])] : [])].map(normalizeText))];
 }
 
 const stem = item => normalizeText(item.name.replace(/[시구동읍면]$/, ""));

@@ -9,6 +9,9 @@ export function comparisonIntent(text,state,catalog) {
   // even when an earlier turn selected a brand.
   const changedServiceFact=/(?:주소|위치|장소|시간|시각|일정|예약|접수|주차|현장|작업지|도착).{0,16}(?:달라|변경|바뀌)|(?:달라|변경|바뀌).{0,16}(?:주소|위치|장소|시간|시각|일정|예약|접수|주차|현장|도착)/.test(s);
   if(changedServiceFact&&!brands.length)return null;
+  // Cancellation and its possible charge are service terms, not a product
+  // comparison merely because the customer says "비교" or "비싸".
+  if(!brands.length && /취소/.test(s) && !/배터리|제품|브랜드|규격/.test(s))return null;
   // Payment, calendar, location and vehicle-to-vehicle price differences are
   // not DELKOR/VARTA comparisons. Nor are two different battery capacities.
   if(!brands.length&&/(?:현금|카드|지역|주소|위치|시간|오늘|내일|bmw|벤츠|기아|현대|agm\d+.*agm\d+)/.test(s)&&/달라/.test(s))return null;

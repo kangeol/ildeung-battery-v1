@@ -148,6 +148,51 @@ const unknownPrice=tier2Turn('BMW 5시리즈 2020년식 총 얼마예요?');
 verify('TOTAL_PRICE_WRONG',!/예약 완료|임의의 총액/.test(unknownPrice.answer),'BMW 5시리즈 2020년식 총 얼마예요?');
 verify('UNNECESSARY_VEHICLE_RESTART',!/차량명과 연식/.test(tier2Turn('출장비랑 공임 폐배터리까지 포함인가요?').answer),'출장비랑 공임 폐배터리까지 포함인가요?');
 
-console.log(JSON.stringify({ status: failures.length||tier2Failures.length ? 'FAIL' : 'PASS', focusedTurns: turns, counters, failures, tier2Turns, tier2Counters, tier2Failures }));
+const regionIntakeNames='GENERIC_JANGGI_FALSE_LOCATION JANGGIDONG_TRUE_LOCATION_MISSED AREA_QUERY_WRITTEN_AS_CONFIRMED_LOCATION CONVERSATIONAL_LOCATION_FALSE_STATE LOCATION_CHANGE_LOST INTAKE_INTENT_LOST PURCHASE_CHOICE_LOST KNOWN_CONTEXT_REASKED SYMPTOM_DISPLACES_INTAKE FALSE_RESERVATION_COMPLETION LIVE_AVAILABILITY_FABRICATED FALSE_SERVICE_AREA FALSE_REGION_STATE MULTI_INTENT_LOST STALE_LOCATION_CONTEXT DOWNSTREAM_FALSE_REGION_PROPAGATION'.split(' ');
+const regionIntakeCounters=Object.fromEntries(regionIntakeNames.map(name=>[name,0]));
+const regionIntakeFailures=[];
+let regionIntakeTurns=0;
+const regionCheck=(name,good,input)=>{if(!good){regionIntakeCounters[name]++;regionIntakeFailures.push({name,input});}};
+const regionTurn=(input,state=createConversationState())=>{regionIntakeTurns++;const out=conversationTurn(state,input,records,areas,prices,policy);return {out,answer:out.messages.join(' ')};};
+for(const input of ['장기 주차','장기 보관','장기간','장기적으로','장기 이용','장기 출장','장기 방치','장기 보관 방법을 알고 싶습니다']){
+  const {out,answer}=regionTurn(input);
+  regionCheck('GENERIC_JANGGI_FALSE_LOCATION',!out.state.region?.name.includes('장기동')&&!/장기동/.test(answer),input);
+  regionCheck('FALSE_SERVICE_AREA',!/출장 가능 지역으로 확인되지/.test(answer),input);
+}
+for(const input of ['인천 계양구 장기동','김포 장기동','장기동으로 와주세요','장기동 지하주차장']){
+  const {out,answer}=regionTurn(input);
+  regionCheck('JANGGIDONG_TRUE_LOCATION_MISSED',Boolean(out.state.region?.name==='장기동'||out.state.pendingLocationDisambiguation?.some(x=>x.name==='장기동'))&&/장기동/.test(answer),input);
+}
+for(const input of ['서울도 와요?','송파구도 와요?']){
+  const {out,answer}=regionTurn(input);
+  regionCheck('AREA_QUERY_WRITTEN_AS_CONFIRMED_LOCATION',!out.state.region&&/출장/.test(answer),input);
+}
+for(const input of ['저는 연천에 살아 서울로 다시 오기 어렵습니다','저는 서울로 올라가는 쪽입니다']){
+  const {out,answer}=regionTurn(input);
+  regionCheck('CONVERSATIONAL_LOCATION_FALSE_STATE',!out.state.region&&!/서울 지역은 출장|서울에서 출장/.test(answer),input);
+}
+for(const input of ['인천 송도 아파트에 장기 주차한 차가 한 달 만에 시동이 안 걸려요 이곳으로 출장 배터리 교체를 요청할 수 있을까요?']){
+  const {out,answer}=regionTurn(input);
+  regionCheck('FALSE_REGION_STATE',out.state.region?.locality==='송도동'&&!/장기동/.test(answer),input);
+}
+for(const input of ['인천 송도 아파트에 장기 주차한 차가 한 달 만에 시동이 안 걸려요 배터리 교체 상담과 방문 접수를 하고 싶어요.','점프 서비스를 받은 뒤 이틀 만에 또 방전됐어요 배터리 교체 상담과 방문 접수를 하고 싶어요.']){
+  const {out,answer}=regionTurn(input);
+  regionCheck('INTAKE_INTENT_LOST',out.state.customerGoal==='REPLACE'&&/실제 접수는 고객센터/.test(answer),input);
+  regionCheck('SYMPTOM_DISPLACES_INTAKE',/실제 접수는 고객센터/.test(answer),input);
+  regionCheck('FALSE_RESERVATION_COMPLETION',!/예약이 완료|접수가 완료/.test(answer),input);
+  regionCheck('LIVE_AVAILABILITY_FABRICATED',!/오늘 방문 확정|지금 출동/.test(answer),input);
+}
+const regionFlow=tier2Session(['송파구 가능해요?','주소가 달라졌어요','서울 마포구예요']);
+regionCheck('LOCATION_CHANGE_LOST',regionFlow[1].out.state.region===null&&regionFlow[2].out.state.region?.district==='마포구','송파구 → 주소 변경 → 마포구');
+const directionFlow=tier2Session(['휴게소 이름이 두 방향에 같네요','저는 서울로 올라가는 쪽입니다','주유소 옆 승용차 구역에 있어요']);
+regionCheck('DOWNSTREAM_FALSE_REGION_PROPAGATION',directionFlow.every(x=>!x.out.state.region),'휴게소 방향 → 서울로 올라가는 쪽 → 주유소');
+regionCheck('STALE_LOCATION_CONTEXT',!/서울에서 출장/.test(directionFlow.at(-1).answer),'휴게소 방향 → 서울로 올라가는 쪽 → 주유소');
+const intakeFlow=tier2Session(['AGM105 얼마예요?','델코로 할게요','배터리 교체 방문 접수를 하고 싶어요.']);
+regionCheck('PURCHASE_CHOICE_LOST',intakeFlow.at(-1).out.state.brand==='DELKOR'&&/실제 접수는 고객센터/.test(intakeFlow.at(-1).answer),'AGM105 → 델코 선택 → 방문 접수');
+regionCheck('KNOWN_CONTEXT_REASKED',!/차량명과 연식을/.test(intakeFlow.at(-1).answer),'AGM105 → 델코 선택 → 방문 접수');
+regionCheck('MULTI_INTENT_LOST',/실제 접수는 고객센터/.test(intakeFlow.at(-1).answer),'AGM105 → 델코 선택 → 방문 접수');
+
+console.log(JSON.stringify({ status: failures.length||tier2Failures.length||regionIntakeFailures.length ? 'FAIL' : 'PASS', focusedTurns: turns, counters, failures, tier2Turns, tier2Counters, tier2Failures, regionIntakeTurns, regionIntakeCounters, regionIntakeFailures }));
 assert.deepEqual(failures, []);
 assert.deepEqual(tier2Failures, []);
+assert.deepEqual(regionIntakeFailures, []);

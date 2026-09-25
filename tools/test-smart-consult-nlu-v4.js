@@ -14,7 +14,9 @@ const forbidden=/DB|조회 결과|매칭 결과|데이터 기준|선택 조건|�
 function flow(inputs){let state=createConversationState();const outputs=[];for(const input of inputs){const output=conversationTurn(state,input,records,localities);state=output.state;outputs.push(output);ok(!forbidden.test(output.messages.join(" ")+output.chips.map(c=>c.label).join(" ")),input);ok(output.chips.length<=4,input);}return{state,outputs};}
 
 eq(records.length,917);
-eq(flow(["동작구 출장돼?"]).state.location.fullLabel,"서울 동작구");
+const districtQuery=flow(["동작구 출장돼?"]);
+eq(districtQuery.state.region,null,"area inquiry is not a confirmed service location");
+ok(districtQuery.outputs[0].messages.join(" ").includes("서울 동작구"));
 const collision=flow(["시흥 출장돼?"]);
 eq(collision.state.pendingLocationDisambiguation.length,3);
 ok(collision.outputs[0].messages.join(" ").includes("서울 금천구 시흥동"));
@@ -29,8 +31,11 @@ eq(scoped.state.pendingLocationDisambiguation.length,2,"real same-province colli
 const corrected=flow(["경기도","시흥시","아니 서울 시흥동이야"]);
 eq(corrected.state.location.fullLabel,"서울 금천구 시흥동");
 eq(corrected.state.pendingLocationDisambiguation,null);
-eq(flow(["인천 송도 출장돼?"]).state.location.fullLabel,"인천 연수구 송도동");
-for(const text of ["시흥시 가능?","시흥시에서 출장돼?","경기도 시흥시 근처인데요"]) eq(flow([text]).state.location.fullLabel,"경기 시흥시",text);
+const songdoQuery=flow(["인천 송도 출장돼?"]);
+eq(songdoQuery.state.region,null,"area inquiry must not set a dispatch region");
+ok(songdoQuery.outputs[0].messages.join(" ").includes("인천 연수구 송도동"));
+for(const text of ["시흥시 가능?","시흥시에서 출장돼?"]){const query=flow([text]);eq(query.state.region,null,text);ok(query.outputs[0].messages.join(" ").includes("경기 시흥시"),text);}
+eq(flow(["경기도 시흥시 근처인데요"]).state.location.fullLabel,"경기 시흥시");
 for(const text of ["서울","서울시","서울특별시"]) eq(flow([text]).state.location.province,"서울특별시",text);
 for(const text of ["인천","인천시","인천광역시"]) eq(flow([text]).state.location.province,"인천광역시",text);
 eq(flow(["수원시","정자동"]).state.location.fullLabel,"경기 수원시 장안구 정자동");
@@ -58,7 +63,7 @@ for(const [alias,canonical] of [["소나타dn8","쏘나타 dn8"],["그랜져ig",
 }
 const sonata=flow(["소나타 2020년식","아니 2019년식"]);eq(sonata.state.vehicleFamily,"쏘나타");eq(sonata.state.year,2019);
 const vehicleCorrection=flow(["소나타 2020년식 인천인데","아니 그랜저야"]);eq(vehicleCorrection.state.vehicleFamily,"그랜저");eq(vehicleCorrection.state.location.province,"인천광역시");
-const mixed=flow(["소나타 2020년식인데 동작구 출장돼?"]);eq(mixed.state.year,2020);eq(mixed.state.vehicleFamily,"쏘나타");eq(mixed.state.location.district,"동작구");
+const mixed=flow(["소나타 2020년식인데 동작구 출장돼?"]);eq(mixed.state.year,2020);eq(mixed.state.vehicleFamily,"쏘나타");eq(mixed.state.region,null);ok(mixed.outputs[0].messages.join(" ").includes("서울 동작구"));
 const mixedBmw=flow(["BMW5 2019년식인데 경기도 시흥이야","응","시흥시"]);eq(mixedBmw.state.year,2019);eq(mixedBmw.state.vehicleFamily,"5시리즈");eq(mixedBmw.state.location.city,"시흥시");eq(mixedBmw.state.confirmedBattery,"AGM95");
 const mixedIg=flow(["그랜져 ig 2019년식 인천인데"]);eq(mixedIg.state.detailModel,"그랜저 IG");eq(mixedIg.state.year,2019);eq(mixedIg.state.location.province,"인천광역시");
 const fake=[{...records.find(r=>r.vehicle==="쏘나타"),manufacturerId:"other",manufacturerName:"다른제조사"},...records];

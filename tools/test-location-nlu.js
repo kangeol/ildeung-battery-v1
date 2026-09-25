@@ -37,11 +37,13 @@ function flow(inputs){let state=createConversationState(),out;for(const text of 
 const missing=['출장배터리되나요?','출장배터리 되나요?','출장 배터리 되나요?','출장교체되나요?','출장교체 가능해요?','출장 가능해요?','방문교체되나요?','방문 가능해요?','배터리 출장돼요?','배터리 출장 가능한가요?','출장 와주시나요?','출장도 되나요?'];
 missing.push('무료 출장 가능해요?','델코 출장 가능해요?','배터리는 출장되나요?','배터리도 출장돼요?');
 for(const text of missing){const out=flow([text]);if(!out.messages.join(' ').includes('지역을 알려주세요')||out.messages.join(' ').includes('확인되지'))gates.MISSING_AREA_FALSE_UNSUPPORTED++;}
-for(const [text,name] of [['지역은 인천입니다','인천'],['인천입니다','인천'],['지역은 마포입니다','마포구'],['마포입니다','마포구'],['마포동입니다','마포동'],['지역은 송파예요','송파구'],['송파동입니다','송파동'],['구월동입니다','구월동'],['구월동인데 출장되나요?','구월동']])assert.equal(flow([text]).state.region?.name,name,text);
+for(const [text,name] of [['지역은 인천입니다','인천'],['인천입니다','인천'],['지역은 마포입니다','마포구'],['마포입니다','마포구'],['마포동입니다','마포동'],['지역은 송파예요','송파구'],['송파동입니다','송파동'],['구월동입니다','구월동']])assert.equal(flow([text]).state.region?.name,name,text);
+const guwolQuery=flow(['구월동인데 출장되나요?']);assert.equal(guwolQuery.state.region,null);assert.ok(guwolQuery.messages.join(' ').includes('구월동'));
 let out=flow(['지역은 인천이고 차량은 그랜저예요']);assert.equal(out.state.region?.name,'인천');assert.equal(out.state.vehicleFamily,'그랜저');
 out=flow(['차량은 BMW고 지역은 마포입니다']);assert.equal(out.state.manufacturer,'bmw');assert.equal(out.state.region?.name,'마포구');
 assert.ok(!flow(['그랜저인데 출장 가능해요?']).messages.join(' ').includes('확인되지'));
-for(const text of ['제 지역은 인천입니다','저는 구월동인데 배터리 교체되나요?','BMW 5시리즈이고 지역은 송파예요','마포인데 출장되나요?','서울인데 BMW 배터리 얼마예요?'])assert.ok(flow([text]).state.region,text);
+for(const text of ['제 지역은 인천입니다','BMW 5시리즈이고 지역은 송파예요','서울인데 BMW 배터리 얼마예요?'])assert.ok(flow([text]).state.region,text);
+for(const text of ['저는 구월동인데 배터리 교체되나요?','마포인데 출장되나요?']){const inquiry=flow([text]);assert.equal(inquiry.state.region,null,text);assert.ok(inquiry.messages.join(' ').includes('출장 교체 가능 지역'),text);}
 out=flow(['구월동 BMW 배터리 얼마예요?','출장배터리되나요?']);if(!out.messages.join(' ').includes('구월동')||out.state.manufacturer!=='bmw'||!out.state.priceIntent)gates.AREA_CONTEXT_LOST++;
 out=flow(['인천입니다','구월동이요','아니 지역은 마포입니다']);assert.equal(out.state.region?.name,'마포구');
 for(const text of ['부산 출장돼요?','부산도 와?','서울 부산 출장돼?','지역은 부산입니다']){out=flow(['구월동입니다',text]);if(!out.messages.join(' ').includes('확인되지')||!out.actions.includes('phone'))gates.EXPLICIT_UNSUPPORTED_FALSE_SUPPORTED++;}
