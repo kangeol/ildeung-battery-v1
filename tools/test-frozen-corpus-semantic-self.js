@@ -1,6 +1,22 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import { evaluateCase, evaluateSemanticContract, regionStateContract, releaseBlockers } from './lib/frozen-corpus-semantic-evaluator.js';
+import { assertExpectedRuntimeSourceCommit, CANONICAL_RELEASE_RUNTIME_COMMIT, canonicalRuntimeAggregate, isCanonicalRuntimePath } from './lib/canonical-release-runtime.js';
+
+const identityFixture = [
+  { path: 'data/battery-prices.json', sha256: 'a'.repeat(64) },
+  { path: 'js/smart-consult.js', sha256: 'b'.repeat(64) },
+];
+const identityHash = canonicalRuntimeAggregate(identityFixture);
+assert.notEqual(canonicalRuntimeAggregate([{ ...identityFixture[0], sha256: 'c'.repeat(64) }, identityFixture[1]]), identityHash, 'runtime byte change must alter identity');
+assert.notEqual(canonicalRuntimeAggregate(identityFixture.slice(1)), identityHash, 'missing runtime file must alter identity');
+assert.equal(isCanonicalRuntimePath('js/smart-consult-unexpected.js'), true, 'new matching runtime module must enter the file set');
+assert.notEqual(canonicalRuntimeAggregate([...identityFixture, { path: 'js/smart-consult-unexpected.js', sha256: 'd'.repeat(64) }]), identityHash, 'added runtime module must alter identity');
+assert.equal(isCanonicalRuntimePath('css/smart-consult-extra.css'), true, 'new consultation CSS must enter the file set');
+assert.notEqual(canonicalRuntimeAggregate([...identityFixture, { path: 'css/smart-consult-extra.css', sha256: 'e'.repeat(64) }]), identityHash, 'added consultation CSS must alter identity');
+assert.throws(() => assertExpectedRuntimeSourceCommit('891d6a130e880ad55c80570082140941a7ce3729'), /source commit mismatch/, 'wrong source commit must be rejected');
+assert.equal(CANONICAL_RELEASE_RUNTIME_COMMIT, 'f007017fa7106cb21737f8ee7189f552441fdaa7');
+assert.equal(canonicalRuntimeAggregate(identityFixture.map(entry => ({ ...entry, workingCopyBytes: Buffer.from('CRLF\r\n') }))), identityHash, 'working-copy EOL must not affect Git-blob identity');
 
 const catalog = JSON.parse(fs.readFileSync('data/battery-prices.json', 'utf8'));
 const policy = JSON.parse(fs.readFileSync('data/consult-service-policy.json', 'utf8'));
@@ -55,4 +71,4 @@ for (const [kind, input, response] of [
   ['BATTERY_GUIDANCE', '충전돼도 다시 안 타면요?', '차량명과 연식을 알려주세요.'],
 ]) assert.ok(contractProbe(kind, input, response).length, `${kind} contract must reject the unsafe or lost-intent mutation`);
 assert.deepEqual(releaseBlockers({ all: { unapprovedResponseChanges: 1, deterministicFactFailures: 0, semanticContractFailures: 0, executionErrors: 0 }, newS3: 0, newS4: 0, unreviewedResponseChanges: 0 }), [{ name: 'UNAPPROVED_RESPONSE_CHANGE', count: 1 }]);
-console.log(JSON.stringify({ status: 'PASS', syntheticCases: 18, detected: ['wrong AGM105 price', 'wrong brand', 'wrong spec', 'false vehicle', 'false booking/availability', 'unsafe diagnosis', 'unapproved response change', 'lost second intent', 'nine scope-governed contract mutations'], allowed: ['authorized N1 harmless wording variation'] }));
+console.log(JSON.stringify({ status: 'PASS', syntheticCases: 24, identityProbes: 6, detected: ['runtime byte change', 'missing runtime file', 'added matching runtime module', 'added consultation CSS', 'wrong source commit', 'working-copy EOL variation invariant', 'wrong AGM105 price', 'wrong brand', 'wrong spec', 'false vehicle', 'false booking/availability', 'unsafe diagnosis', 'unapproved response change', 'lost second intent', 'nine scope-governed contract mutations'], allowed: ['authorized N1 harmless wording variation'] }));

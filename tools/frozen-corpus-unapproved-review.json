@@ -1,6 +1,7 @@
 {
   "status": "OWNER_SCOPE_READJUDICATED_WITH_EXACT_SEMANTIC_CONTRACTS",
-  "runtimeAggregateSha256": "da03925a78d1ce8da7bb9722d375783c8bf542617e2feb20e4261aa703945084",
+  "runtimeHead": "f007017fa7106cb21737f8ee7189f552441fdaa7",
+  "runtimeAggregateSha256": "8b7afb880b2fa0483e7c10a47bdd99c1a41e4a8d3cefe2824723491471fee46c",
   "basis": "Frozen input, approved P1A reference, N1 implementation commit 83b8fe7496f2c6e078b4ca764afab329418446a8, narrow boundary remediation authorized by ILDEUNG_N1_S3_BOUNDARY_REMEDIATION_AND_VALIDATION_RECONCILIATION_V1, and data/consult-service-policy.json. Classification alone does not authorize product behavior.",
   "batchAdjudication": {
     "A_PREVIOUSLY_AUTHORIZED_CHANGE_MISSING_REGISTRY": [],

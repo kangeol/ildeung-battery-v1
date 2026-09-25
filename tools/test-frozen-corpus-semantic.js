@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
 import { conversationTurn, createConversationState } from '../js/smart-consult-conversation.js';
 import { evaluateCase, releaseBlockers, sha256 } from './lib/frozen-corpus-semantic-evaluator.js';
+import { getCanonicalReleaseRuntime } from './lib/canonical-release-runtime.js';
 
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const temp = os.tmpdir();
@@ -15,12 +16,11 @@ const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const lines = file => fs.readFileSync(file, 'utf8').trim().split(/\r?\n/).map(JSON.parse);
 const registry = read(path.join(repo, 'tools/frozen-corpus-change-registry.json'));
 const reviewFile = read(path.join(repo, 'tools/frozen-corpus-unapproved-review.json'));
-const runtimePaths = name => /^(js\/|data\/|seo-data\/|css\/|assets\/|area\/|battery\/|car-battery\/|work-cases\/|smart-consult\/)/.test(name) || /^(index\.html|sitemap\.xml)$/.test(name);
-const trackedRuntime = execFileSync('git', ['ls-files'], { cwd: repo, encoding: 'utf8' }).trim().split(/\r?\n/).filter(Boolean).filter(runtimePaths).filter(name => /\.(?:js|json|html|css|xml)$/.test(name)).sort();
-const runtimeAggregateSha256 = sha256(trackedRuntime.map(name => `${name}:${sha256(fs.readFileSync(path.join(repo, name)))}\n`).join(''));
-const untrackedRuntime = execFileSync('git', ['ls-files', '--others', '--exclude-standard'], { cwd: repo, encoding: 'utf8' }).trim().split(/\r?\n/).filter(Boolean).filter(runtimePaths);
+const runtimeIdentity = getCanonicalReleaseRuntime(repo, reviewFile.runtimeHead);
+const runtimeAggregateSha256 = runtimeIdentity.sha256;
+const untrackedRuntime = runtimeIdentity.untrackedRuntime;
 if (runtimeAggregateSha256 !== reviewFile.runtimeAggregateSha256 || untrackedRuntime.length)
-  throw Error(`Runtime does not match adjudicated hash: ${runtimeAggregateSha256}; untracked: ${untrackedRuntime.join(', ')}`);
+  throw Error(`Runtime does not match adjudicated Git-blob hash: ${runtimeAggregateSha256}; untracked: ${untrackedRuntime.join(', ')}`);
 const reviews = new Map();
 for (const item of reviewFile.entries) {
   if (reviews.has(item.caseId)) throw Error(`Duplicate unapproved review ${item.caseId}`);
@@ -138,9 +138,10 @@ const summary = {
   evaluatorPolicyVersion: registry.policyVersion,
   frozenCorpusSha256: combined,
   referenceSha256: registry.reference.sha256,
-  runtimeHead: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: repo, encoding: 'utf8' }).trim(),
+  runtimeHead: runtimeIdentity.head,
+  runtimeAlgorithmVersion: runtimeIdentity.algorithmVersion,
+  runtimeFileCount: runtimeIdentity.fileCount,
   runtimeAggregateSha256,
-  runtimeFileCount: trackedRuntime.length,
   all: tally(results),
   subsets: Object.fromEntries(Object.entries(subsets).map(([name, rows]) => [name, tally(rows)])),
   domains: domainMetrics,
