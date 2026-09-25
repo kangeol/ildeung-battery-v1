@@ -42,7 +42,7 @@ for(const entry of aliases) {
     const target=entry.broadParent||entry.candidates[0];
     for(const wrap of wrappers) {const phrase=wrap(entry.alias),result=resolveLocation(phrase,localities);eq(result.region?.canonicalId,target.canonicalId,phrase);ok(!result.ambiguousRegion,phrase);phrases++;}
   } else {
-    for(const wrap of wrappers) {const result=resolveLocation(wrap(entry.alias),localities);eq(result.region,null,entry.alias);eq(ids(result.locationCandidates),ids(entry.candidates),entry.alias);ambiguous++;}
+    for(const wrap of wrappers) {const phrase=wrap(entry.alias),result=resolveLocation(phrase,localities);eq(result.region,null,entry.alias);if(entry.alias==='이동'&&phrase==='이동도 와요?'){eq(result.locationCandidates??[],[],'movement wording must not create a service-area candidate');continue;}eq(ids(result.locationCandidates),ids(entry.candidates),entry.alias);ambiguous++;}
   }
 }
 const forbidden=/DB|조회 결과|매칭 결과|데이터 기준|선택 조건|후보군|alias|정규화|프로세스/i;

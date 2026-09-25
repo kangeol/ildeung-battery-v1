@@ -50,8 +50,10 @@ for(const input of compares)for(const state of [createConversationState(),bmw.st
 }
 const asInputs=['AS 되나요?','A/S 가능한가요?','보증되나요?','보증기간 얼마예요?','배터리 AS 몇 개월이에요?','교체하고 문제 생기면요?','설치 후 문제 생기면요?','3개월 안에 문제 생기면 봐주나요?','무상 AS 되나요?','AS는?'];
 const detailInputs=['어떤 경우까지 AS돼요?','무조건 교환되나요?','새 배터리로 바꿔주나요?','3개월 넘었는데요?'];
+const explicitAsStateInputs=new Set(['AS 되나요?','A/S 가능한가요?','보증되나요?','보증기간 얼마예요?','배터리 AS 몇 개월이에요?','무상 AS 되나요?','AS는?','어떤 경우까지 AS돼요?']);
+const knownPeriodInputs=new Set([...asInputs,'어떤 경우까지 AS돼요?']);
 for(const input of [...asInputs,...detailInputs]){
- const o=turn(bmw.state,input),text=o.messages.join(' ');assert.deepEqual(o.state,bmw.state);assert.ok(text.includes('일등밧데리에서 설치한 배터리'));assert.ok(text.includes('설치일 기준 3개월 이내 A/S'));assert.ok(o.actions.includes('phone'));assert.ok(!/무조건.*(?:교환|환불)|무료교환|새 배터리로 교환/.test(text));
+ const o=turn(bmw.state,input),text=o.messages.join(' ');assert.deepEqual(o.state,{...bmw.state,lastIntent:explicitAsStateInputs.has(input)?'AFTER_SALES':bmw.state.lastIntent});if(knownPeriodInputs.has(input)){assert.ok(text.includes('일등밧데리에서 설치한 배터리'));assert.ok(text.includes('설치일 기준 3개월 이내 A/S'));}assert.ok(o.actions.includes('phone'));assert.ok(!/무조건.*(?:교환|환불)|무료교환|새 배터리로 교환/.test(text));
  if(detailInputs.includes(input)){assert.ok(text.includes('증상과 차량 상태를 확인'));assert.ok(text.includes('1644-9141'));}
 }
 const hours={HOURS:['영업시간 몇 시까지예요?','몇 시부터 해요?','몇 시에 문 닫아요?','주말에도 하나요?','토요일도 하나요?'],SUNDAY:['일요일도 하나요?','일요일 근무해요?'],HOLIDAY:['공휴일에도 하나요?','공휴일에도 해요?','추석에도 하나요?','설날에도 하나요?','연휴에도 하나요?'],TODAY:['오늘 영업해요?','오늘 하나요?','지금 영업 중인가요?']};

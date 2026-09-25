@@ -19,6 +19,9 @@ const failures=[];let cases=0,aliasCases=0;
 function check(text,alias){
  const out=resolveLocation(text,areas),expected=alias.candidates.length===1?alias.candidates[0]:alias.broadParent;
  cases++;
+ // Bare movement wording is not an affirmative service locality, even when
+ // a same-spelled administrative dong exists in the source index.
+ if(alias.alias==='이동'&&/^이동(?:이에요|이구요|이고요|이고|이에요만)$/.test(text)){assert.equal(out.region,null,text);return;}
  if(out.unsupportedLocation)gates.SUPPORTED_AREA_FALSE_UNSUPPORTED++;
  if(expected){
   if(!out.region){gates.POLITE_ENDING_FALSE_NEGATIVE++;if(!text.includes(' '))gates.NO_SPACE_AREA_FALSE_NEGATIVE++;}
@@ -49,11 +52,22 @@ out=flow(['인천입니다','구월동이요','아니 지역은 마포입니다'
 for(const text of ['부산 출장돼요?','부산도 와?','서울 부산 출장돼?','지역은 부산입니다']){out=flow(['구월동입니다',text]);if(!out.messages.join(' ').includes('확인되지')||!out.actions.includes('phone'))gates.EXPLICIT_UNSUPPORTED_FALSE_SUPPORTED++;}
 out=flow(['시흥입니다']);assert.ok(out.chips.length>1);assert.equal(out.state.region,null);
 for(const text of ['구월동물원','구월동화책','강남스타일','인천공항주차','마포입니다요'])assert.equal(resolveLocation(text,areas).region,null,text);
+for(const text of ['서울 강서구 공항동','강서구 공항동','공항동으로 와주세요','공항동 지하주차장','공항동도 출장돼요?'])assert.equal(resolveLocation(text,areas).region?.name,'공항동',text);
+for(const text of ['공항 호텔','공항 주차장','공항 근처','공항 가는 길','공항에서 기다리는 동안','공항 호텔 주차장으로 장소 바꿔도 돼요','평일 오전으로 잡으면 빠를까요','화요일 오전으로 변경해 주세요','장기 주차','장기 보관','장기간 방치'])assert.equal(resolveLocation(text,areas).region,null,text);
+const airportChange=flow(['공항 호텔 주차장으로 장소 바꿔도 돼요']);
+assert.equal(airportChange.state.region,null,'an unresolved landmark must not be stored as a service region');
+assert.ok(airportChange.messages.join(' ').includes('변경된 차량 위치'),'location-change intent must survive an unresolved landmark');
+assert.ok(!airportChange.messages.join(' ').includes('차량명·연식·세부 모델'),'location change must not restart generic fitment');
 assert.equal(records.length,917);assert.equal(areas.length,665);
-const changed=execFileSync('git',['diff','--name-only','de199b25'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
+const approvedAreaBaseline='458ab46419f62584c81eef7c7d4570b95c85e6c7';
+const approvedGroupsPath='seo-data/vehicle-detail-groups.json';
+const approvedGroups=execFileSync('git',['show',`${approvedAreaBaseline}:${approvedGroupsPath}`],{encoding:'utf8'}).replace(/\r\n/g,'\n');
+assert.equal(fs.readFileSync(approvedGroupsPath,'utf8').replace(/\r\n/g,'\n'),approvedGroups,'generated vehicle groups must exactly match the audited approved snapshot');
+const changed=execFileSync('git',['diff','--name-only',approvedAreaBaseline],{encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
 const html=changed.filter(p=>p.endsWith('.html')&&p!=='index.html'&&!approvedSyncFiles.has(p));assert.ok(html.every(p=>p==='smart-consult/index.html'));
 assertNonAgmOwnerPolicy();
-assert.equal(changed.filter(p=>!approvedSyncFiles.has(p)&&/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&p!=='data/battery-prices.json'&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
+const exactApprovedGeneratedSnapshot=changed.filter(p=>p===approvedGroupsPath&&approvedGroups.length>0);
+assert.equal(changed.filter(p=>!approvedSyncFiles.has(p)&&!exactApprovedGeneratedSnapshot.includes(p)&&/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&p!=='data/battery-prices.json'&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
 const evidence={canonicalCases,aliasCases,totalCases:cases,areas:areas.length,rows:records.length,gates,failures,transcripts,changedHTML:html};
 const evidenceDir=process.argv.includes('--faq')?'docs/evidence/final-faq/location':'docs/evidence/location-nlu';
 fs.mkdirSync(evidenceDir,{recursive:true});fs.writeFileSync(`${evidenceDir}/matrix.json`,JSON.stringify(evidence,null,2)+'\n');

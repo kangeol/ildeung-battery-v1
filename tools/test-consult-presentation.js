@@ -30,6 +30,9 @@ allowed.add('tools/test-smart-consult-launcher.js'); // Exact audited blog-sync 
 for(const p of ['js/smart-consult-battery-knowledge.js','tools/lib/battery-knowledge-fixtures.js','tools/lib/blog-sync-approved-freeze.js','tools/audit-battery-knowledge.js','tools/test-battery-knowledge.js','tools/test-battery-knowledge-browser.js','docs/battery-knowledge-audit.md'])allowed.add(p);
 allowed.add('tools/lib/gn7-factual-regression.js');allowed.add('tools/lib/homepage-approved-freeze.js');
 for(const p of ['tools/test-location-nlu.js','tools/lib/assert-non-agm-owner-policy.js'])allowed.add(p);
+allowed.add('docs/evidence/location-nlu/matrix.json');
+for(const p of ['docs/evidence/location-nlu/regression-results.json','docs/evidence/location-nlu/regression/brand-service.json','docs/evidence/location-nlu/regression/matrix.json','docs/evidence/location-nlu/regression/pricing.json','docs/evidence/location-nlu/regression/product-as-hours.json','docs/evidence/location-nlu/regression/simulation.json'])allowed.add(p); // Exact existing reviewed NLU evidence.
+allowed.add('docs/evidence/location-nlu/matrix.json');
 for(const p of ['data/battery-prices.json','js/smart-consult-brand-comparison.js','tools/test-non-agm-owner-policy.js','tools/test-non-agm-owner-browser.js','docs/non-agm-owner-policy-audit.md'])allowed.add(p);
 for(const p of ['js/smart-consult-brand-query.js','tools/test-spec-brand-query.js','tools/test-spec-brand-query-browser.js','docs/spec-brand-query-audit.md','tools/test-battery-pricing.js','tools/test-battery-certainty-scope.js','tools/test-brand-service.js','tools/test-product-as-hours.js','tools/test-smart-consult-branding.js','tools/test-smart-consult-viewport.js'])allowed.add(p);
 // Approved homepage stack is frozen byte-for-byte at this task's baseline.
@@ -52,6 +55,7 @@ for(const p of ['tools/test-scope-governance.js','docs/evidence/authentic-cash/f
 for(const p of ['js/smart-consult-location.js','js/smart-consult-brand-comparison.js','tools/test-smart-consult-nlu-v4.js'])allowed.add(p);
 // Exact Tier2 policy-routing and focused-test paths; no presentation assets.
 for(const p of ['js/smart-consult-purchase.js','tools/test-tier2-remaining-scope.js','tools/test-tier2-u4-service-followup.js','tools/test-db-driven-flow.js','tools/test-smart-consult-v5.js','tools/test-smart-consult-v7.js'])allowed.add(p);
+allowed.add('tools/test-minimal-core-ws1-ws2.js'); // Exact focused candidate test, not a tools directory exemption.
 check(allowed.has('js/smart-consult-battery-knowledge.js'),'authorized P1A knowledge runtime');
 check(allowed.has('tools/test-elliptical-load.js'),'authorized P1A focused test');
 check(!allowed.has('css/index.css'),'unrelated shared UI remains forbidden');
