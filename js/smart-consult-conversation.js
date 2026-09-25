@@ -361,7 +361,8 @@ function composeConversion(previous, text, out, localities, priceCatalog, policy
   const locationChange=/(?:주소|위치|장소|주차|차량위치|현장).{0,16}(?:달라|변경|바뀌|옮기)|(?:달라|변경|바뀌|옮기).{0,16}(?:주소|위치|장소|주차|현장|자리)|(?:차를|차량을).{0,12}(?:자리로|곳으로|장소로).{0,6}옮기/.test(s);
   const conditionalLocationChange=locationChange&&/(?:변경|바꾸|옮기).{0,5}(?:하면|한다면|할경우)/.test(s);
   const temporalSiteShift=/(?:오늘|지금).{0,30}(?:현장|차량위치|주차장).{0,30}(?:내일|다음날)/.test(s);
-  const timeChange=/(?:방문시간|도착시간|예약시간|접수시간|일정|시간|시각).{0,14}(?:달라|변경|바뀌|바꿔|바꾸)|(?:달라|변경|바뀌|바꿔|바꾸).{0,14}(?:방문시간|도착시간|예약시간|접수시간|일정|시간|시각)/.test(s);
+  const timeChange=/(?:방문시간|도착시간|예약시간|접수시간|일정|시간|시각).{0,14}(?:달라|변경|바뀌|바꿔|바꾸)|(?:달라|변경|바뀌|바꿔|바꾸).{0,14}(?:방문시간|도착시간|예약시간|접수시간|일정|시간|시각)/.test(s)
+    && !/(?:배터리|차량|제품).{0,5}바꾸면/.test(s);
   const cancel=/(?:예약|접수|방문|일정)?.{0,8}취소|취소.{0,8}(?:예약|접수|방문|일정)/.test(s)
     && !/취소(?:는|가|를)?(?:말고|아니|않|안하)/.test(s);
   const localityText=String(text).replace(/공항\s*주차장|회사\s*주차장|기계식\s*주차장|갓길/g,'');
@@ -444,6 +445,93 @@ function composeConversion(previous, text, out, localities, priceCatalog, policy
     if(selected)state.brand=selected;
     state.customerGoal='REPLACE';
     add(policy.purchaseKnowledge.application,/이 채팅에서는 주문이나 예약을 확정하지 않/,true);
+  }
+  // Service-policy questions must not be answered as an unknown battery fitment.
+  // The policy supplies the known fact; unlisted administrative terms need live confirmation.
+  const afterSales=/(?:보증|a\/?s|사후관리)/i.test(s);
+  const makerWarranty=afterSales&&/(?:제조사|다른곳|외부|업체와별개)/.test(s);
+  const document=/(?:영수증|견적서|등록증|주민번호|비밀번호|서류|사진|명의|주소.{0,6}(?:지우|지울|삭제))/.test(s)
+    || previous.lastIntent==='DOC_POLICY'&&/(?:차종|연식).{0,12}남기/.test(s);
+  const documentDetail=document&&/(?:이름|명의|가리|가려|보내|받|제공|요청|달라|지우|지울|삭제|가능|필요|남기|서명)/.test(s);
+  const access=/(?:주차타워|기계식주차|지하\d+층|방문차량등록|정비소.{0,12}(?:문을?닫|휴무))/.test(s);
+  const scheduleChange=/(?:시간|일정|방문|예약|도착).{0,18}(?:바꿔|바꾸|변경|미뤄|늦춰|당겨)|(?:바꿔|바꾸|변경).{0,12}(?:시간|일정|방문|예약)|(?:딜레이|지연).{0,12}(?:시간|일정).{0,8}(?:변경|바꿔)/.test(s)
+    && !/(?:배터리|차량|제품).{0,5}바꾸면/.test(s);
+  const paymentDetail=/(?:현금|현찰|카드|입금자|예약자|결제|이체|계좌)/.test(s);
+  const nonCash=/(?:현금이?없|현금없이|현금못)/.test(s);
+  const feeCondition=/(?:현금|카드|입금자).{0,16}(?:가격|금액|비용|달라|차이)|(?:가격|금액|비용).{0,16}(?:현금|카드)/.test(s);
+  const unknownCost=/(?:통행료|톨비|추가\s*차량|다른\s*차|같이\s*보|취소.{0,12}(?:비용|금액|얼마)|(?:비용|금액|얼마).{0,12}취소|(?:거래|결제).{0,8}취소)/.test(s);
+  const purchaseFollowup=/(?:같은걸로|동일한걸로).{0,12}(?:달|해|교체|장착)|(?:차종|동네|규격|모델).{0,12}(?:맞|확인)|(?:견적서|차량사진|등록증정보).{0,12}(?:보내|드릴|요청|먼저)/.test(s);
+  const reservationCorrection=/(?:예약|접수).{0,16}(?:차번호|차량번호|차량정보|연락처|주소).{0,12}(?:틀|다르|정정|수정)|(?:차번호|차량번호).{0,8}(?:틀|다르|정정|수정)/.test(s)
+    || previous.lastIntent==='RESERVATION_CORRECTION'&&/(?:끝자리|번호|숫자|정정).{0,12}(?:아니라|맞|틀|바꿔|수정|정정)/.test(s);
+  const batteryContext=/(?:배터리|방전|시동|장기\s*주차|오래\s*(?:세워|안\s*타)|(?:한달|일주일|한달|\d+일).{0,12}(?:서있|안타|운전하지))/.test(s);
+  const generalFit=/(?:차종|모델|연식|가솔린|디젤).{0,14}배터리.{0,8}(?:달라|다른)|배터리.{0,10}(?:차종|모델|연식|가솔린|디젤).{0,8}(?:달라|다른)/.test(s);
+  const parkedUse=/(?:장기|오래|한달|일주일|장마|\d+일|\d+주).{0,22}(?:주차|방치|세워|서있|서있었|안타|안탈|안탔|운전하지|운전.*안할)|(?:주차|방치|세워|서있|서있었|안타|안탈|안탔|운전하지).{0,18}(?:장기|오래|한달|일주일|장마|\d+일|\d+주)/.test(s);
+  const batteryClarify=/(?:배터리.{0,8}(?:빼는동안|교체중).{0,12}굴러|배터리.{0,12}예열.{0,8}달라|점프만.{0,12}(?:출장|업체)|시동.{0,12}반복.{0,12}걸)/.test(s);
+  const batteryUsage=/(?:배터리|전기).{0,10}(?:바꾸면|교체하면).{0,14}(?:차박|사용시간|상시녹화)|(?:차박|상시녹화).{0,14}(?:시간|오래|늘릴|바로|써도)/.test(s);
+  const governed=afterSales||documentDetail||access||scheduleChange||paymentDetail||unknownCost||purchaseFollowup||reservationCorrection||generalFit||parkedUse||batteryClarify||batteryUsage||cancel;
+  if(governed&&!/(?:정확한|제|내|우리)차.{0,12}(?:배터리|가격|규격)|(?:배터리|교체).{0,8}(?:얼마예요|가격은요|규격은요)/.test(s))
+    messages.splice(0,messages.length,...messages.filter(message=>!/차량명과 연식을|차량마다 배터리가 달라요|어떤 차량이세요|차량을 정확하게 찾지 못했어요|등록된 정보만으로는 정확한 확인|같은 연식에도 배터리가 달라/.test(message)));
+  if(afterSales){
+    if(makerWarranty)messages.splice(0,messages.length,...messages.filter(message=>!/AGM은 기본적으로|일반 배터리\(등록된 비AGM/.test(message)));
+    if(!makerWarranty)add(`일등밧데리에서 설치한 배터리는 설치일 기준 ${policy.afterSales.periodMonths}개월 이내 A/S가 가능합니다.`,/설치일 기준 3개월 이내 A\/S/);
+    if(makerWarranty)add('제조사 보증의 적용 범위나 다른 업체 작업과의 관계는 현재 상담 자료만으로 확정할 수 없습니다. 제품·설치 조건을 고객센터 {phone}로 확인해 주세요.',/제조사 보증의 적용 범위/,true);
+    else if(/(?:어디서|어떻게|명의|이름)/.test(s))add(policy.afterSales.detail,/세부 A\/S 가능 여부/,true);
+  }
+  if(documentDetail){
+    const subject=/비밀번호|주민번호|등록증/.test(s)||previous.lastIntent==='DOC_POLICY'&&/(?:차종|연식).{0,12}남기/.test(s)?'민감한 등록·신원 정보의 제출·가림 방법':/주소.{0,6}(?:지우|지울|삭제)/.test(s)?'접수 후 주소 정보의 삭제 방법':/사진/.test(s)?'작업 사진 제공 여부':/견적서/.test(s)?'견적서 발송 여부':'영수증·서류의 발행 명의와 증빙 조건';
+    messages.splice(0,messages.length,...messages.filter(message=>!/네, 출장 배터리 교체 가능합니다. 차량이 있는 지역|차량이 있는 동이나 구|방문 주소와 가능한 일정은/.test(message)));
+    add(`${subject}에 대해서는 현재 상담 자료만으로 확정할 수 없습니다. 필요한 정보와 전달 방법은 고객센터 {phone}로 확인해 주세요.`,/현재 상담 자료만으로 확정할 수 없습니다/,true);
+    state.lastIntent='DOC_POLICY';
+  }
+  if(access){
+    messages.splice(0,messages.length,...messages.filter(message=>!/네, 출장 배터리 교체 가능합니다. 차량이 있는 지역|차량이 있는 동이나 구를 알려주시면/.test(message)));
+    if(/정비소.{0,12}(?:문을?닫|휴무)/.test(s))add('출장 배터리 교체를 원하시면 차량이 있는 동이나 구와 현장 조건을 알려주세요. 방문 가능 일정은 실시간 확인이 필요합니다.',/출장 배터리 교체를 원하시면/);
+    else add(policy.operational.SITE,/안전성과 차량 접근 가능 조건/,true);
+  }
+  if(scheduleChange){
+    messages.splice(0,messages.length,...messages.filter(message=>!/증상만으로 교체가 필요한지|같은 연식에도 배터리가 달라/.test(message)));
+    add(policy.purchaseKnowledge.change,/이 채팅에서는 예약을 변경하지 않/,true);
+  }
+  if(paymentDetail){
+    if(nonCash){add(policy.finalFaq.answers.CARD,/카드결제 가능/);add(policy.finalFaq.answers.BANK_TRANSFER,/계좌이체 가능/);}
+    if(/입금자|예약자/.test(s)||feeCondition)add('결제자 명의나 결제수단에 따른 개별 가격 조건은 현재 상담 자료만으로 확정할 수 없습니다. 고객센터 {phone}로 확인해 주세요.',/결제자 명의나 결제수단에 따른 개별 가격 조건/,true);
+  }
+  if(unknownCost){
+    const costSubject=/통행료|톨비/.test(s)?'통행료 포함 여부':/같이보|추가차량|다른차/.test(s)?'여러 차량을 같은 방문에 작업할 때의 금액':/취소/.test(s)?'취소 이후 사용·환불 조건이나 비용':'요청하신 별도 비용';
+    add(`${costSubject}에 대해서는 안내된 표준 교체 가격만으로 확정할 수 없습니다. 적용 여부와 금액은 고객센터 {phone}로 확인해 주세요.`,/표준 교체 가격만으로 확정할 수 없습니다/,true);
+    messages.splice(0,messages.length,...messages.filter(message=>!/안내된 조건으로 정상 교체 시 현장 추가비용은 없습니다|차량이 있는 동이나 구를 알려주시면/.test(message)
+      && !(/같이보|추가차량|다른차/.test(s)&&/별도 출장비는 없습니다/.test(message))));
+  }
+  if(reservationCorrection||previous.lastIntent==='RESERVATION_CORRECTION'&&/(?:번호|차종|동네|차량정보|주소).{0,12}(?:맞|틀|다르|정정|수정)/.test(s)){
+    messages.splice(0,messages.length,...messages.filter(message=>!/차량이 있는 동이나 구를 알려주시면|차량명과 연식을|등록된 정보만으로는/.test(message)));
+    add('접수·예약 정보의 정정은 고객센터 {phone}에서 확인해야 합니다. 이 채팅에서 변경을 확정하지 않습니다.',/접수·예약 정보의 정정/,true);
+    state.lastIntent='RESERVATION_CORRECTION';
+  }
+  if(purchaseFollowup&&!reservationCorrection&&previous.lastIntent!=='RESERVATION_CORRECTION'){
+    if(/같은걸로|동일한걸로/.test(s)&&!previous.quotedSpec&&!previous.confirmedBattery&&!previous.brand)
+      add('원하시는 제품의 규격이나 제품명을 알려주세요. 사진만으로 차량 적합성을 확정하지 않고 확인 후 안내합니다.',/원하시는 제품의 규격이나 제품명/);
+    else if(/차종|동네/.test(s)&&!previous.selectedVehicleKey&&!previous.region)
+      add('확인하신 차량명·연식과 차량이 있는 동이나 구를 알려주세요. 접수 여부는 고객센터 {phone}에서 확인합니다.',/확인하신 차량명·연식/,true);
+    else add(policy.purchaseKnowledge.application,/이 채팅에서는 주문이나 예약을 확정하지 않/,true);
+    if(/견적서|사진|등록증/.test(s))add('자료 수신·견적서 발송 방법은 고객센터 {phone}로 확인해 주세요.',/자료 수신·견적서 발송 방법/,true);
+  }
+  if(generalFit)add('같은 차종이라도 연식·세부 모델·연료 방식과 차량 지정 규격에 따라 적용 배터리가 다를 수 있습니다. 정확한 적합성은 차량별 확인이 필요합니다.',/같은 차종이라도 연식·세부 모델/);
+  if(parkedUse){
+    if(batteryContext)add(batteryKnowledgeCopy.discharge,/방전은 배터리 상태·노후/);
+    add(batteryKnowledgeCopy.prevention,/장기주차와 짧은 주행/);
+  }
+  if(batteryClarify){
+    if(/빼는동안|교체중|굴러/.test(s))add('배터리 교체 중 차량 이동·고정 상태를 이 상담에서 보장할 수 없습니다. 실제 작업 방법과 안전 조건은 작업 담당자에게 확인해 주세요.',/교체 중 차량 이동·고정 상태/);
+    else if(/점프만/.test(s)){
+      messages.splice(0,messages.length,...messages.filter(message=>!/차량이 있는 동이나 구를 알려주시면/.test(message)));
+      add('점프만 별도로 하는 출장 서비스의 가능 여부는 현재 상담 자료로 확정할 수 없습니다. 배터리 교체 상담이 필요하시면 고객센터 {phone}로 확인해 주세요.',/점프만 별도로 하는 출장 서비스/,true);
+    }
+    else add('말씀하신 상황만으로 배터리 원인이나 교체 필요 여부를 판단할 수 없습니다. 배터리 관련해 어떤 점이 궁금하신지 알려주시면 확인 가능한 범위부터 안내하겠습니다.',/배터리 관련해 어떤 점이 궁금하신지/);
+  }
+  if(batteryUsage&&/배터리/.test(s)){
+    if(/차박|사용시간/.test(s))add(batteryKnowledgeCopy.capacity,/실제 사용시간이나 수명/);
+    add(batteryKnowledgeCopy.prevention,/장기주차와 짧은 주행/);
+    if(!/(?:오늘|내일|방문|출장|예약|도착)/.test(s))messages.splice(0,messages.length,...messages.filter(message=>!/오늘·지금·당일 가능 여부와 배차·도착 시간/.test(message)));
   }
   return {...out,state,messages:unique(messages),actions:unique(actions),region:out.region};
 }

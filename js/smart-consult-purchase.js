@@ -5,7 +5,10 @@ export function purchaseKnowledgePlan(text,state,catalog){
  const s=String(text).normalize('NFKC').replace(/\s/g,'').toLowerCase();
  const codes=[...String(text).matchAll(/(?<![a-z0-9])(?:AGM\s*\d+R?|DIN\s*\d+(?:HL|L|R)?|DF\s*\d+(?:AL|L|R)|65\s*-\s*900)(?![a-z0-9])/gi)].map(m=>normalizeBatteryCode(m[0],catalog));
  const report=/달려있|장착되어|쓰고있|라고써있|현재배터리가/.test(s)&&codes.length===1;
- const fit=/(?:넣어도|바꿔도|바꾸면|낮춰도|대신.*가능|꼭써야|제차에맞|내차에맞|큰거.*(?:돼|되))/.test(s);
+ const fit=/(?:넣어도|바꿔도|낮춰도|대신.*가능|꼭써야|제차에맞|내차에맞|큰거.*(?:돼|되))/.test(s)
+  || /바꾸면/.test(s)&&/(?:배터리|규격|용량|agm|din|df\d|장착)/.test(s)
+    && /(?:대신|호환|맞나요|맞아요|넣어도|장착해도)/.test(s)
+    && !/(?:보증|a\/?s|환불|취소|영수증)/.test(s);
  const cancel=/취소(?:할|하려|하고|가능|해|되)/.test(s),change=/예약.*변경|시간바꾸|오기로.*변경/.test(s);
  const guidance=/전화.*뭐(?:라고|라).*말|전화할때뭐|접수할때뭐|뭐준비/.test(s);
  const summary=guidance||/지금까지뭐|상담내용정리|내차배터리랑가격다시|지금선택한거|내가뭐로/.test(s);
