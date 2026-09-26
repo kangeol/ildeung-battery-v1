@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-25T09:04:29.139Z",
+  "syncedAt": "2026-09-26T07:57:28.350Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 1,
     "preservedPreviousPosts": 350,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 350,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 351,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 303,
-    "vehicleMatches": 282,
+    "manufacturerMatches": 304,
+    "vehicleMatches": 283,
     "detailMatches": 58,
-    "regionMatches": 234,
+    "regionMatches": 235,
     "neighborhoodMatches": 195,
-    "batteryMatches": 233,
+    "batteryMatches": 234,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,154 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 234,
-    "actualRegionMatches": 234,
+    "actualAreaMatches": 235,
+    "actualRegionMatches": 235,
     "actualNeighborhoodMatches": 195,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224416813963",
+      "title": "영등포구(여의동) 2018년식 미니클럽맨 델코 AGM70 출장배터리교체 가격 및 비용 안내｜시동 힘이 약해졌을 때",
+      "url": "https://blog.naver.com/kang10107/224416813963",
+      "publishedAt": "2026-09-26",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224416813963.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTlfMjUx/MDAxNzg5NzgxNzM1NDU5.ESU056xvmKYi8AQjtdzKicj8rwbX9CtaIrWxBBm7SVgg.TMI54enX3y22oXv34cfAXPQnvowZH50icwIqTdF73hkg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 영등포구 여의동에서 2018년식 미니클럽맨 배터리 교체 작업을 진행했습니다. 이번 차량은 시동이 아예 안 걸리는 상태는 아니었습니다. 버튼을 누르면 시동은 걸리는데 예전처럼 힘 있게 바로 걸리는 느낌이 아니라 조금 버거워진 듯한 차이가 계속 느껴졌던 경우입니다. 이럴 때는 아직 운행이 된다는 이유로 그냥 지나치기 쉬운데요. 배터리는 완전히 방전되기 전부터 시동 순간의 힘이 조금씩 떨어지는 모습을 보일 수 있습니다. 차량에 맞는 규격을 확인한 뒤 델코 AGM70으로 교체하.......",
+      "tags": [
+        "영등포배터리",
+        "영등포출장배터리",
+        "여의도배터리",
+        "여의도출장배터리",
+        "미니클럽맨배터리",
+        "미니클럽맨배터리교체",
+        "미니클럽맨배터리교체비용",
+        "미니배터리",
+        "미니배터리교체비용",
+        "클럽맨배터리",
+        "델코agm70",
+        "델코agm70가격",
+        "델코agm70교체비용",
+        "출장배터리교체",
+        "출장배터리",
+        "자동차배터리",
+        "자동차배터리교체비용",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "미니",
+        "manufacturers": [
+          {
+            "id": "mini",
+            "name": "미니"
+          }
+        ],
+        "vehicle": "미니 클럽맨",
+        "vehicles": [
+          {
+            "manufacturerId": "mini",
+            "manufacturerName": "미니",
+            "vehicleName": "클럽맨",
+            "displayName": "미니 클럽맨",
+            "urlPath": "/car-battery/mini/clubman.html",
+            "matchedAlias": "미니 클럽맨",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "mini",
+            "manufacturerName": "미니",
+            "vehicleName": "클럽맨",
+            "displayName": "미니 클럽맨",
+            "urlPath": "/car-battery/mini/clubman.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "yeongdeungpo-gu",
+          "regionName": "영등포구",
+          "label": "서울 영등포구",
+          "urlPath": "/area/seoul/yeongdeungpo-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yeongdeungpo-gu",
+            "regionName": "영등포구",
+            "label": "서울 영등포구",
+            "urlPath": "/area/seoul/yeongdeungpo-gu.html",
+            "matchedAlias": "영등포구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/mini/clubman.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/mini.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/yeongdeungpo-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "서울 영등포구에서 미니 클럽맨 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224416807190",
       "title": "인천 계양구(계산동) 2023년식 BMW X1 U11 델코 AGM70 출장배터리교체 가격 및 비용 안내｜아침 시동만 유독 약할 때",
