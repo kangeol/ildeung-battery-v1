@@ -27,6 +27,12 @@ export function naverInAppBrowserUrl(destination) {
   return `naversearchapp://inappbrowser?url=${encodeURIComponent(approved)}&target=new&version=6`;
 }
 
+export function naverAndroidInAppBrowserIntent(destination) {
+  const approved = approvedSmartStoreUrl(destination);
+  if (!approved) return null;
+  return `intent://inappbrowser?url=${encodeURIComponent(approved)}&target=new&version=6#Intent;scheme=naversearchapp;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.nhn.android.search;S.browser_fallback_url=${encodeURIComponent(approved)};end`;
+}
+
 export function isNaverHandoffContext(userAgent = "") {
   return MOBILE_AGENT.test(userAgent) && !NAVER_APP_AGENT.test(userAgent);
 }
@@ -74,8 +80,11 @@ export function openSmartStoreFromClick(destination, environment = {}) {
     if (!handedOff && elapsed < 2500 && !doc.hidden) location.assign(approved);
   }, 1500);
 
+  const handoffUrl = /Android/i.test(userAgent)
+    ? naverAndroidInAppBrowserIntent(approved)
+    : naverInAppBrowserUrl(approved);
   try {
-    location.assign(naverInAppBrowserUrl(approved));
+    location.assign(handoffUrl);
   } catch {
     cleanup();
     location.assign(approved);

@@ -7,6 +7,7 @@ import {
   approvedSmartStoreUrl,
   bindSmartStoreLinks,
   isNaverHandoffContext,
+  naverAndroidInAppBrowserIntent,
   naverInAppBrowserUrl,
   openSmartStoreFromClick
 } from "../js/smart-consult-store-open.js";
@@ -50,10 +51,21 @@ for (const invalid of [
   "https://smartstore.naver.com.evil.test/battery1", "https://user@smartstore.naver.com/battery1",
   `${din}?redirect=https://example.com`, `${din}#fragment`, "https://smartstore.naver.com/battery1/products/999"
 ]) assert.equal(approvedSmartStoreUrl(invalid), null, invalid);
+for (const invalid of ["javascript:alert(1)", "data:text/html,hello", "https://example.com/"]) {
+  assert.equal(naverAndroidInAppBrowserIntent(invalid), null, `unsafe Android intent target: ${invalid}`);
+}
 
 const invocation = naverInAppBrowserUrl(din);
 assert.equal(invocation, `naversearchapp://inappbrowser?url=${encodeURIComponent(din)}&target=new&version=6`);
 assert.equal(decodeURIComponent(new URL(invocation).searchParams.get("url")), din);
+const androidInvocation = naverAndroidInAppBrowserIntent(din);
+assert.equal(androidInvocation, `intent://inappbrowser?url=${encodeURIComponent(din)}&target=new&version=6#Intent;scheme=naversearchapp;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.nhn.android.search;S.browser_fallback_url=${encodeURIComponent(din)};end`);
+assert.ok(androidInvocation.includes("package=com.nhn.android.search;"));
+assert.ok(androidInvocation.endsWith(`S.browser_fallback_url=${encodeURIComponent(din)};end`));
+const agm70 = expectedUrls[2];
+const agm70Intent = naverAndroidInAppBrowserIntent(agm70);
+assert.ok(agm70Intent.includes(`url=${encodeURIComponent(agm70)}&target=new`));
+assert.ok(agm70Intent.endsWith(`S.browser_fallback_url=${encodeURIComponent(agm70)};end`));
 assert.equal(isNaverHandoffContext("Mozilla/5.0 (Linux; Android 14)"), true);
 assert.equal(isNaverHandoffContext("Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)"), true);
 assert.equal(isNaverHandoffContext("Mozilla/5.0 (Windows NT 10.0; Win64; x64)"), false);
@@ -87,9 +99,9 @@ assert.deepEqual(desktop.calls, []);
 
 const mobile = harness();
 assert.equal(openSmartStoreFromClick(din, mobile.env), true);
-assert.deepEqual(mobile.calls, [invocation], "one top-level Naver app invocation, no popup/tab");
+assert.deepEqual(mobile.calls, [androidInvocation], "Android invokes only the package-targeted Naver app");
 mobile.timer();
-assert.deepEqual(mobile.calls, [invocation, din], "unsupported/unavailable app falls back to exact HTTPS in same tab");
+assert.deepEqual(mobile.calls, [androidInvocation, din], "unavailable app falls back to exact HTTPS in same tab");
 assert.equal(mobile.cleared(), true);
 
 const handedOff = harness();
@@ -97,15 +109,20 @@ openSmartStoreFromClick(din, handedOff.env);
 handedOff.env.document.hidden = true;
 handedOff.docListeners.get("visibilitychange")();
 handedOff.timer();
-assert.deepEqual(handedOff.calls, [invocation], "successful app handoff does not perform a second navigation");
+assert.deepEqual(handedOff.calls, [androidInvocation], "successful Android app handoff does not perform a second navigation");
+
+const ios = harness();
+ios.env.userAgent = "iPhone";
+assert.equal(openSmartStoreFromClick(din, ios.env), true);
+assert.deepEqual(ios.calls, [invocation], "unsupported iOS context retains the existing Naver URL scheme");
 
 const failedLaunch = harness();
 failedLaunch.env.location.assign = value => {
   failedLaunch.calls.push(value);
-  if (value.startsWith("naversearchapp:")) throw new Error("unsupported custom scheme");
+  if (value.startsWith("intent:")) throw new Error("unsupported Android intent");
 };
 assert.equal(openSmartStoreFromClick(din, failedLaunch.env), true);
-assert.deepEqual(failedLaunch.calls, [invocation, din], "synchronous scheme failure falls back to the exact HTTPS destination");
+assert.deepEqual(failedLaunch.calls, [androidInvocation, din], "synchronous intent failure falls back to the exact HTTPS destination");
 
 const unsupported = harness({ hidden: true });
 unsupported.env.document.hidden = false;
@@ -126,4 +143,4 @@ bindSmartStoreLinks(mobileDocument, { ...mobile.env, document: mobileDocument })
 mobileClick({ defaultPrevented: false, button: 0, target: { closest: () => anchor }, preventDefault: () => { mobilePrevented = true; } });
 assert.equal(mobilePrevented, true, "mobile browser click is intercepted once for app handoff");
 
-console.log(JSON.stringify({ status: "PASS", mappedUrls: [...urlCounts], mappedUrlReferences: htmlLinkCount, ledgerSha256, mobileScheme: invocation, fallback: din, securityCases: 9, scenarios: 10 }, null, 2));
+console.log(JSON.stringify({ status: "PASS", mappedUrls: [...urlCounts], mappedUrlReferences: htmlLinkCount, ledgerSha256, androidIntent: androidInvocation, iosScheme: invocation, fallback: din, securityCases: 9, scenarios: 10 }, null, 2));
