@@ -1,5 +1,6 @@
 import { LAUNCHER_KEY, vehicleIdFromCanonical, encodeLauncherContext } from "./smart-consult-launcher-context.js";
 import { bindSmartStoreLinks } from "./smart-consult-store-open.js";
+import "./analytics-logger.js";
 
 bindSmartStoreLinks();
 

@@ -225,6 +225,7 @@ ${renderBreadcrumb(breadcrumbs)}
 ${content}
   </main>
 ${renderFooter()}
+  <script type="module" src="/js/analytics-logger.js"></script>
 </body>
 </html>
 `;

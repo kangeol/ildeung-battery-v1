@@ -5,6 +5,7 @@ import { findEntry, entryState } from "./smart-consult-entry.js?v=purchase-v1";
 import { LAUNCHER_KEY, decodeLauncherContext, hasEntryConflict } from "./smart-consult-launcher-context.js";
 import { SESSION_KEY, encodeSession, decodeSession, clearSession, safeUserMessage, summaryFields } from "./smart-consult-session.js?v=purchase-v1";
 import { presentationIndex, messagePresentation, lookupStatus, lookupDelay, phoneProminence, literalParts, resultTokens } from "./smart-consult-presentation.js?v=owner-delkor-v1";
+import { trackAssistantMessage, trackCustomerMessage } from "./analytics-logger.js";
 
 const chatLog = document.querySelector("#chatLog");
 const chatForm = document.querySelector("#chatForm");
@@ -169,6 +170,7 @@ async function handleMessage(text, selection = null) {
   const activeSession = session;
   chatLog.querySelectorAll("button.quick-reply").forEach(button => { button.disabled = true; });
   addMessage(text, "user");
+  try { trackCustomerMessage(text); } catch {}
   chatInput.placeholder = copy.placeholder;
   sendButton.disabled = true;
   // Keep the composer editable while loading. Reset cancels stale responses.
@@ -191,6 +193,7 @@ async function handleMessage(text, selection = null) {
     state = response.state;
     typing?.remove();
     const last = response.messages.length ? addAnswer(response.messages) : null;
+    try { for (const message of response.messages) trackAssistantMessage(message); } catch {}
     for (const message of response.messages) {
       transcript.push({role:"bot",text:message,actions:[],chips:[]});
     }
