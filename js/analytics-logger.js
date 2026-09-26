@@ -50,6 +50,23 @@ function safeReferrer() {
   }
 }
 
+function actualSearchKeyword() {
+  try {
+    const raw = globalThis.document?.referrer;
+    if (!raw) return undefined;
+    const referrer = new URL(raw);
+    const host = referrer.hostname.toLowerCase();
+    const naver = host === "naver.com" || host.endsWith(".naver.com");
+    const google = host === "google.com" || host.endsWith(".google.com")
+      || host === "google.co.kr" || host.endsWith(".google.co.kr");
+    const value = naver ? referrer.searchParams.get("query") : google ? referrer.searchParams.get("q") : null;
+    const keyword = typeof value === "string" ? value.trim().slice(0, 200) : "";
+    return keyword || undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 function saveState(state) {
   memoryState = state;
   try { globalThis.sessionStorage?.setItem(STORAGE_KEY, JSON.stringify(state)); } catch {}
@@ -72,6 +89,7 @@ function getState() {
     landing_page: currentPath(),
     utm: actualUtm(),
     referrer_url: safeReferrer(),
+    search_keyword: actualSearchKeyword(),
     sessionStarted: false,
     consultStarted: false
   };
@@ -91,6 +109,7 @@ function send(eventType, payload) {
       landing_page: state.landing_page
     };
     if (state.referrer_url) event.referrer_url = state.referrer_url;
+    if (state.search_keyword) event.search_keyword = state.search_keyword;
     for (const key of ["utm_source", "utm_medium", "utm_campaign"]) {
       if (state.utm?.[key]) event[key] = state.utm[key];
     }

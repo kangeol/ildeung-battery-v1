@@ -40,7 +40,7 @@ function makeDocument(referrer = "") {
   };
 }
 
-function installEnvironment({ pathname = "/region/songdo/", search = "?utm_source=naver&utm_medium=search&utm_campaign=spring&private=do-not-send", referrer = "https://google.com/search?q=private-term", storage = new Map(), storageAvailable = true, cryptoAvailable = true, fetchImpl }) {
+function installEnvironment({ pathname = "/region/songdo/", search = "?utm_source=naver&utm_medium=search&utm_campaign=spring&private=do-not-send", referrer = "https://example.com/search?q=private-term", storage = new Map(), storageAvailable = true, cryptoAvailable = true, fetchImpl }) {
   const requests = [];
   const document = makeDocument(referrer);
   setGlobal("document", document);
@@ -82,7 +82,7 @@ try {
   assert.equal(events[0].utm_source, "naver");
   assert.equal(events[0].utm_medium, "search");
   assert.equal(events[0].utm_campaign, "spring");
-  assert.equal(events[0].referrer_url, "https://google.com/search");
+  assert.equal(events[0].referrer_url, "https://example.com/search");
   assert.doesNotMatch(JSON.stringify(events), /private=do-not-send|private-term|[?&]q=/);
   assert.equal(first.requests[0].options.credentials, "omit");
   assert.equal(first.requests[0].options.keepalive, true);
@@ -114,6 +114,27 @@ try {
   assert.equal(nextPageEvents[0].landing_page, "/region/songdo/");
   assert.equal(nextPageEvents[0].utm_campaign, "spring");
   assert.equal(Object.hasOwn(nextPageEvents[0], "unapproved"), false);
+
+  const searchReferrers = [
+    { referrer: "https://search.naver.com/search.naver?query=%20배터리%20교체%20&where=blog", expected: "배터리 교체" },
+    { referrer: "https://www.google.com/search?q=%20자동차%20배터리%20&tbm=web", expected: "자동차 배터리" },
+    { referrer: "https://search.naver.com/search.naver?where=blog", expected: undefined },
+    { referrer: "https://www.google.com/search?tbm=web", expected: undefined },
+    { referrer: "https://example.com/search?q=not-a-search-term", expected: undefined },
+    { referrer: `https://www.google.com/search?q=${"긴검색어".repeat(80)}`, expected: "긴검색어".repeat(66).slice(0, 200) }
+  ];
+  for (const item of searchReferrers) {
+    const env = installEnvironment({ storage: new Map(), referrer: item.referrer, search: "?utm_source=naver&utm_medium=search&utm_campaign=spring&private=ignored" });
+    await import(`${loggerUrl}?test=${++moduleSequence}`);
+    const event = bodies(env.requests)[0];
+    assert.equal(event.search_keyword, item.expected);
+    assert.equal(event.utm_source, "naver", "search-term capture leaves UTM behavior unchanged");
+    assert.equal(event.utm_campaign, "spring");
+    assert.equal(event.referrer_url.includes("?"), false, "arbitrary referrer query parameters are never sent");
+    assert.equal(Object.hasOwn(event, "where"), false);
+    assert.equal(Object.hasOwn(event, "tbm"), false);
+    if (event.search_keyword) assert.ok(event.search_keyword.length <= 200);
+  }
 
   const failures = installEnvironment({
     pathname: "/smart-consult/",
