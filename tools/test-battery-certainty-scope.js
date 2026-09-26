@@ -14,6 +14,10 @@ assert.equal(before[40].detailModel,'더 뉴 싼타페 하이브리드 TM');
 assert.deepEqual(after,expected,'only reviewed GN7 and AG60 canonical corrections');
 const paths=git(['diff',baseline,'--name-only']).trim().split('\n').filter(Boolean);
 const allowed=new Set(['data/hyundai.json','js/smart-consult-core.js','js/smart-consult-conversation.js','js/smart-consult-session.js','js/smart-consult-entry.js','js/smart-consult.js','smart-consult/index.html','car-battery/hyundai/grandeur.html','car-battery/hyundai/grandeur/gn7.html']);
+// Exact shared purchase-link opener required by the approved Naver app handoff.
+allowed.add('js/smart-consult-launcher.js');allowed.add('js/smart-consult-store-open.js');
+// Current canonical release identity verifier is already committed at HEAD.
+allowed.add('tools/lib/canonical-release-runtime.js');
 // Token-boundary matching is authorized; canonical row/fact assertions stay intact.
 allowed.add('js/vehicle-aliases.js');
 // Non-monetary amount-word routing adds no vehicle facts or protected page changes.

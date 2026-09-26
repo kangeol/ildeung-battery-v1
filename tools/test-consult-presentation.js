@@ -17,7 +17,10 @@ for(const q of ['예약되나요?','오늘 되나요?','몇 월 생산이에요?
 for(const q of ['현금되나요?','정품인가요?','AGM105','BMW 5시리즈 2020년식','델코랑 바르타 차이'])check(!phoneProminence(turn(fresh,q),index),q+' answer primary');
 const baseline='eb10f9f516ee85e384cd8b01e0e53f7098382034',git=args=>execFileSync('git',args,{encoding:'utf8',maxBuffer:30e6});
 const changed=git(['diff',baseline,'--name-only']).trim().split('\n').filter(Boolean),allowed=new Set(['js/smart-consult.js','js/smart-consult-presentation.js','css/smart-consult.css','smart-consult/index.html','tools/test-smart-consult-viewport.js','tools/test-smart-consult-branding.js','tools/test-battery-certainty-scope.js']);
+// Exact SmartStore click-handler paths; no general navigation or generated-page allowance.
+for(const p of ['js/smart-consult-launcher.js','js/smart-consult-store-open.js','tools/test-smartstore-open.js'])allowed.add(p);
 for(const p of ['tools/test-battery-pricing.js','tools/test-brand-service.js','tools/test-product-as-hours.js'])allowed.add(p);
+allowed.add('tools/lib/canonical-release-runtime.js'); // Current committed validation utility; unrelated runtime remains rejected.
 // Subsequent authorized NLU remediation; presentation assertions stay unchanged.
 for(const p of ['js/smart-consult-conversation.js','js/smart-consult-prices.js','js/smart-consult-operational.js','js/smart-consult-product-policy.js','js/smart-consult-entry.js','js/smart-consult-session.js','tools/test-spec-schedule.js','tools/test-spec-schedule-browser.js','tools/test-spec-schedule-safety.js','docs/spec-schedule-audit.md'])allowed.add(p);
 for(const p of ['tools/test-spec-vehicle-collision.js','tools/test-spec-vehicle-collision-browser.js','docs/spec-vehicle-collision-audit.md'])allowed.add(p);
