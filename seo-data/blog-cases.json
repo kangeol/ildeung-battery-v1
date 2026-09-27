@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-26T14:42:20.805Z",
+  "syncedAt": "2026-09-27T08:29:47.735Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 1,
     "preservedPreviousPosts": 352,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 352,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 353,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 305,
-    "vehicleMatches": 284,
-    "detailMatches": 58,
-    "regionMatches": 236,
-    "neighborhoodMatches": 196,
-    "batteryMatches": 235,
+    "manufacturerMatches": 306,
+    "vehicleMatches": 285,
+    "detailMatches": 59,
+    "regionMatches": 237,
+    "neighborhoodMatches": 197,
+    "batteryMatches": 236,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,186 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 236,
-    "actualRegionMatches": 236,
-    "actualNeighborhoodMatches": 196,
+    "actualAreaMatches": 237,
+    "actualRegionMatches": 237,
+    "actualNeighborhoodMatches": 197,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224416821101",
+      "title": "인천 검단구(당하동) 2016년식 르노삼성 SM7 노바 델코 AGM95 출장배터리교체 가격 및 비용 안내｜갑자기 시동이 안 걸릴 때",
+      "url": "https://blog.naver.com/kang10107/224416821101",
+      "publishedAt": "2026-09-27",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224416821101.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTlfNzIg/MDAxNzg5NzgyMzA2MzU3.Cvdi6bHF0cJ2mYbyTogFjqaSad3EtmCzrnIpvADEWUQg.mtq1YaA7fRuKbvMznK1jswXCUT5Fcfyx1XoOAQJaidUg.JPEG/image-sm7-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 검단구 당하동에서 2016년식 르노삼성 SM7 노바 배터리 교체 작업을 진행했습니다. 이번 차량은 며칠 전부터 시동이 느려졌다거나 방전을 반복했던 경우가 아니었습니다. 평소처럼 차량을 사용하다가 어느 날 갑자기 시동이 걸리지 않아 배터리를 확인하게 된 경우였는데요. 자동차배터리는 미리 증상을 보여주는 경우도 있지만 별다른 불편 없이 사용하다가 한순간에 시동이 어려워지는 경우도 있습니다. 현재 차량에 장착된 배터리 타입과 규격을 확인한 뒤 델코 AGM95로 교체했습니다. .......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "검단배터리",
+        "검단출장배터리",
+        "당하동배터리",
+        "당하동출장배터리",
+        "당하동배터리교체",
+        "르노배터리",
+        "르노삼성배터리",
+        "sm7노바배터리",
+        "sm7배터리",
+        "sm7배터리가격",
+        "sm7배터리교체비용",
+        "델코agm95",
+        "델코agm95가격",
+        "델코agm95교체비용",
+        "델코agm95배터리",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리",
+        "인천배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "르노",
+        "manufacturers": [
+          {
+            "id": "renault",
+            "name": "르노"
+          }
+        ],
+        "vehicle": "SM7",
+        "vehicles": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "SM7",
+            "displayName": "SM7",
+            "urlPath": "/car-battery/renault/sm7.html",
+            "matchedAlias": "SM7",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "SM7",
+            "displayVehicleName": "SM7",
+            "label": "SM7 노바",
+            "slug": "sm7-nova",
+            "urlPath": "/car-battery/renault/sm7/sm7-nova.html",
+            "vehicleUrlPath": "/car-battery/renault/sm7.html",
+            "matchedAlias": "SM7 노바"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "SM7",
+            "displayName": "SM7",
+            "urlPath": "/car-battery/renault/sm7.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "geomdan-gu",
+          "regionName": "검단구",
+          "neighborhoodName": "당하동",
+          "label": "인천 검단구 당하동",
+          "urlPath": "/area/incheon/geomdan-gu/dangha-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "geomdan-gu",
+            "regionName": "검단구",
+            "label": "인천 검단구",
+            "urlPath": "/area/incheon/geomdan-gu.html",
+            "matchedAlias": "검단구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "geomdan-gu",
+            "regionName": "검단구",
+            "name": "당하동",
+            "legalName": "인천광역시 검단구 당하동",
+            "label": "인천 검단구 당하동",
+            "urlPath": "/area/incheon/geomdan-gu/dangha-dong.html",
+            "matchedAlias": "당하동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/renault/sm7.html"
+          ],
+          "details": [
+            "/car-battery/renault/sm7/sm7-nova.html"
+          ],
+          "manufacturers": [
+            "/car-battery/renault.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/geomdan-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/geomdan-gu/dangha-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "검단구 당하동에서 SM7 SM7 노바 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224416817410",
       "title": "부천 원미구(소사동) 2019년식 벤츠 E300 델코 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
