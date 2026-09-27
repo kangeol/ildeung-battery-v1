@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-27T08:29:47.735Z",
+  "syncedAt": "2026-09-27T09:06:33.871Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 1,
-    "preservedPreviousPosts": 352,
+    "preservedPreviousPosts": 353,
     "duplicateRemoved": 49,
-    "thumbnailSuccess": 353,
+    "thumbnailSuccess": 354,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 306,
-    "vehicleMatches": 285,
-    "detailMatches": 59,
-    "regionMatches": 237,
-    "neighborhoodMatches": 197,
-    "batteryMatches": 236,
+    "manufacturerMatches": 307,
+    "vehicleMatches": 286,
+    "detailMatches": 60,
+    "regionMatches": 238,
+    "neighborhoodMatches": 198,
+    "batteryMatches": 237,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,183 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 237,
-    "actualRegionMatches": 237,
-    "actualNeighborhoodMatches": 197,
+    "actualAreaMatches": 238,
+    "actualRegionMatches": 238,
+    "actualNeighborhoodMatches": 198,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224416824321",
+      "title": "강남구(논현동) 2020년식 BMW 520I G30 바르타 AGM95 출장배터리교체 가격 및 비용 안내｜전날 멀쩡했는데 아침에 방전됐을 때",
+      "url": "https://blog.naver.com/kang10107/224416824321",
+      "publishedAt": "2026-09-27",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224416824321.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MTlfMjU3/MDAxNzg5NzgyNTYyOTM3.bI738owOS-JNvJcLrtwHw4B92xTQZeQlNqtlIEx6YiYg.OQ0uejgrvIK1m-2FSSUe5OkqssGUa567scBTEbLoNuIg.JPEG/bmw-bmw-520i-g30-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 강남구 논현동에서 2020년식 BMW 520I G30 배터리 교체 작업을 진행했습니다. 이번 차량은 전날까지만 해도 별다른 이상 없이 운행했는데, 다음날 아침 차량을 사용하려고 하니 갑자기 시동이 걸리지 않았던 경우입니다. 이런 상황을 겪으면 “어제까지 잘 탔는데 배터리가 하루 만에 갑자기 나갈 수 있나?” 싶으실 수 있는데요. 배터리는 성능이 떨어지는 과정에서도 한동안 정상적으로 시동을 걸 수 있습니다. 그러다 장시간 주차나 기온 변화처럼 조건이 달라지면서 어느 날 처음으로.......",
+      "tags": [
+        "강남구배터리",
+        "강남구출장배터리",
+        "강남배터리",
+        "논현동배터리",
+        "논현동출장배터리",
+        "논현동자동차배터리",
+        "bmw520i배터리",
+        "bmw520i배터리가격",
+        "바르타배터리",
+        "바르타출장배터리",
+        "바르타배터리가격",
+        "바르타agm95",
+        "바르타agm95가격",
+        "출장배터리교체",
+        "자동차배터리",
+        "일등밧데리",
+        "출장배터리교체비용",
+        "자동차배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 5시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "BMW5",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayVehicleName": "BMW 5시리즈",
+            "label": "G30",
+            "slug": "g30",
+            "urlPath": "/car-battery/bmw/5-series/g30.html",
+            "vehicleUrlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "G30"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangnam-gu",
+          "regionName": "강남구",
+          "neighborhoodName": "논현동",
+          "label": "서울 강남구 논현동",
+          "urlPath": "/area/seoul/gangnam-gu/nonhyeon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangnam-gu",
+            "regionName": "강남구",
+            "label": "서울 강남구",
+            "urlPath": "/area/seoul/gangnam-gu.html",
+            "matchedAlias": "강남구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangnam-gu",
+            "regionName": "강남구",
+            "name": "논현동",
+            "legalName": "서울특별시 강남구 논현동",
+            "label": "서울 강남구 논현동",
+            "urlPath": "/area/seoul/gangnam-gu/nonhyeon-dong.html",
+            "matchedAlias": "논현동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/5-series.html"
+          ],
+          "details": [
+            "/car-battery/bmw/5-series/g30.html"
+          ],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangnam-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gangnam-gu/nonhyeon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "강남구 논현동에서 BMW 5시리즈 G30 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224416821101",
       "title": "인천 검단구(당하동) 2016년식 르노삼성 SM7 노바 델코 AGM95 출장배터리교체 가격 및 비용 안내｜갑자기 시동이 안 걸릴 때",
