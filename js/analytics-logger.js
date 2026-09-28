@@ -172,4 +172,9 @@ function initialize() {
 
 initialize();
 
+// Work-case pages share this entrypoint but do not include the legacy launcher.
+if (globalThis.location?.pathname?.startsWith("/work-cases/") && globalThis.document?.createElement) {
+  import("./smart-consult-launcher.js").catch(() => {});
+}
+
 export { trackAssistantMessage, trackCustomerMessage };

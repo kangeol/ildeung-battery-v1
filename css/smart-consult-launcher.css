@@ -1,30 +1,56 @@
-.smart-consult-launcher {
+.global-bottom-cta {
   position: fixed;
-  right: max(24px, env(safe-area-inset-right));
+  left: 50%;
   bottom: calc(24px + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
   z-index: 30;
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  width: 440px;
+  max-width: calc(100% - 32px);
+}
+.global-bottom-cta > a {
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  min-height: 48px;
-  min-width: 48px;
   box-sizing: border-box;
-  padding: 12px 18px;
-  border: 1px solid #1e40af;
-  border-radius: 999px;
-  background: #1d4ed8;
+  min-width: 0;
+  height: 58px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 8px;
   color: #fff;
-  font: 700 14px/1.4 system-ui, sans-serif;
+  font: 800 16px/1.4 system-ui, sans-serif;
+  letter-spacing: 0;
+  white-space: nowrap;
   text-decoration: none;
-  box-shadow: 0 4px 16px #0f172a26;
+  box-shadow: 0 2px 10px #0f172a1a;
 }
-.smart-consult-launcher:hover { background: #1e40af; color: #fff; }
-.smart-consult-launcher:focus-visible { outline: 3px solid #0f172a; outline-offset: 4px; }
+.global-bottom-cta-phone { background: #0f172a; }
+.global-bottom-cta > .smart-consult-launcher { background: #2563eb; }
+.global-bottom-cta > a:hover { color: #fff; text-decoration: none; }
+.global-bottom-cta > a:focus-visible { outline: 3px solid #fff; outline-offset: -5px; }
 .smart-consult-launcher[hidden] { display: none; }
-/* Leave footer content reachable above the persistent control. */
-body:has(.smart-consult-launcher) { padding-bottom: calc(88px + env(safe-area-inset-bottom)); }
-body:has(.select-dropdown-backdrop:not([hidden]), .detail-dropdown-backdrop:not([hidden])) .smart-consult-launcher { visibility: hidden; }
-@media (max-width: 600px) {
-  .smart-consult-launcher { right: max(16px, env(safe-area-inset-right)); bottom: calc(16px + env(safe-area-inset-bottom)); padding: 12px 16px; }
+/* Reserve space only where the shared launcher has been replaced. */
+body:has(.global-bottom-cta) { padding-bottom: calc(106px + env(safe-area-inset-bottom)); }
+body:has(.select-dropdown-backdrop:not([hidden]), .detail-dropdown-backdrop:not([hidden])) .global-bottom-cta { visibility: hidden; }
+@media (max-width: 640px) {
+  .global-bottom-cta {
+    left: 0;
+    bottom: 0;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    gap: 0;
+    box-shadow: 0 -2px 10px #0f172a1a;
+  }
+  .global-bottom-cta > a {
+    height: calc(64px + env(safe-area-inset-bottom));
+    padding-bottom: env(safe-area-inset-bottom);
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .global-bottom-cta > .smart-consult-launcher { border-left: 1px solid #ffffff33; }
+  body:has(.global-bottom-cta) { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
 }
