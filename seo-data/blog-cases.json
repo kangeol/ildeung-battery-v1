@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-28T08:54:27.671Z",
+  "syncedAt": "2026-09-28T09:34:54.877Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 354,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 356,
+    "newPosts": 1,
+    "preservedPreviousPosts": 356,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 357,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 309,
-    "vehicleMatches": 288,
+    "manufacturerMatches": 310,
+    "vehicleMatches": 289,
     "detailMatches": 60,
-    "regionMatches": 240,
-    "neighborhoodMatches": 200,
-    "batteryMatches": 239,
+    "regionMatches": 241,
+    "neighborhoodMatches": 201,
+    "batteryMatches": 240,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,163 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 240,
-    "actualRegionMatches": 240,
-    "actualNeighborhoodMatches": 200,
+    "actualAreaMatches": 241,
+    "actualRegionMatches": 241,
+    "actualNeighborhoodMatches": 201,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224418433356",
+      "title": "서울 강서구(등촌동) 2016년식 르노삼성 SM6 델코 AGM70 출장배터리교체 가격 및 비용 안내｜주차장에서 갑자스럽게 시동 안걸림",
+      "url": "https://blog.naver.com/kang10107/224418433356",
+      "publishedAt": "2026-09-28",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224418433356.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MjFfMTIy/MDAxNzg5OTUzNDAzMzM2.wupCsWsJl4ndXA9tMYgJ23FOaGGcwnAOnnr2iPJ7Of8g.vmf2ooaMv5uBitnSMw1KywQm0_Tq0s7MiJCn2tvXbmUg.JPEG/image-sm6-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 강서구 등촌동에서 2016년식 르노삼성 SM6 배터리 교체 작업을 진행했습니다. 이번 차량은 마트에 들어갈 때까지만 해도 별다른 이상이 없었는데, 장을 보고 다시 차량으로 돌아와 시동을 걸어보니 갑자기 반응이 없었던 경우입니다. 집이나 회사처럼 익숙한 곳도 아니고 마트 주차장에서 이런 일이 생기면 더 당황스러울 수밖에 없는데요. 배터리는 항상 며칠 전부터 확실한 증상을 보여주는 것은 아닙니다. 어느 정도 약해진 상태에서도 운행하다가 잠시 주차한 뒤 다시 시동을 거는 순.......",
+      "tags": [
+        "강서구배터리",
+        "강서구출장배터리",
+        "강서구자동차배터리",
+        "sm6배터리",
+        "sm6배터리가격",
+        "sm6배터리교체비용",
+        "sm6배터리교체가격",
+        "델코agm70",
+        "델코agm70가격",
+        "델코agm70교체비용",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "르노",
+        "manufacturers": [
+          {
+            "id": "renault",
+            "name": "르노"
+          }
+        ],
+        "vehicle": "SM6",
+        "vehicles": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "SM6",
+            "displayName": "SM6",
+            "urlPath": "/car-battery/renault/sm6.html",
+            "matchedAlias": "SM6",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "SM6",
+            "displayName": "SM6",
+            "urlPath": "/car-battery/renault/sm6.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangseo-gu",
+          "regionName": "강서구",
+          "neighborhoodName": "등촌동",
+          "label": "서울 강서구 등촌동",
+          "urlPath": "/area/seoul/gangseo-gu/deungchon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangseo-gu",
+            "regionName": "강서구",
+            "label": "서울 강서구",
+            "urlPath": "/area/seoul/gangseo-gu.html",
+            "matchedAlias": "강서구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangseo-gu",
+            "regionName": "강서구",
+            "name": "등촌동",
+            "legalName": "서울특별시 강서구 등촌동",
+            "label": "서울 강서구 등촌동",
+            "urlPath": "/area/seoul/gangseo-gu/deungchon-dong.html",
+            "matchedAlias": "등촌동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/renault/sm6.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/renault.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangseo-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gangseo-gu/deungchon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "강서구 등촌동에서 SM6 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224418415339",
       "title": "인천 연수구(연수동) 2020년식 볼보V60크로스컨트리 델코 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
