@@ -12,7 +12,18 @@ for(const r of expected)if(r.vehicle==='그랜저'&&r.detailModel.includes('(GN7
 expected[40].defaultBattery='AGM60';
 assert.equal(before[40].detailModel,'더 뉴 싼타페 하이브리드 TM');
 assert.deepEqual(after,expected,'only reviewed GN7 and AG60 canonical corrections');
-const paths=git(['diff',baseline,'--name-only']).trim().split('\n').filter(Boolean);
+// Keep the historical factual-data oracle above, but measure this task against
+// the fixed owner-approved main. The global CTA in 7f4519f9 predates this task;
+// it is not permission to change CSS again. Never use a moving HEAD as baseline.
+const scopeBaseline='04d1dc4f9f4412b8a680fe4c38efb82589afabee';
+const currentTaskPaths=new Set(['js/smart-consult-conversation.js','js/smart-consult-session.js','tools/test-upgrade-price-context.js','tools/lib/blog-sync-approved-freeze.js','tools/test-battery-certainty-scope.js']);
+// Exact generatedAt-only snapshot reconciliation authorized in the continuation.
+currentTaskPaths.add('tools/test-location-nlu.js');
+const assertCurrentScope=paths=>{for(const p of paths)assert.ok(currentTaskPaths.has(p),`out of current task scope: ${p}`);};
+const paths=[...new Set([...git(['diff',scopeBaseline,'--name-only']).trim().split('\n'),...git(['ls-files','--others','--exclude-standard']).trim().split('\n')].filter(Boolean))];
+assertCurrentScope(paths);
+assert.doesNotThrow(()=>assertCurrentScope([...currentTaskPaths]));
+for(const p of ['js/unrelated-runtime.js','css/smart-consult-launcher.css','data/hyundai.json','data/battery-prices.json','js/analytics-logger.js','admin/config.json','.github/workflows/deploy.yml'])assert.throws(()=>assertCurrentScope([p]),/out of current task scope/);
 const allowed=new Set(['data/hyundai.json','js/smart-consult-core.js','js/smart-consult-conversation.js','js/smart-consult-session.js','js/smart-consult-entry.js','js/smart-consult.js','smart-consult/index.html','car-battery/hyundai/grandeur.html','car-battery/hyundai/grandeur/gn7.html']);
 // Exact shared purchase-link opener required by the approved Naver app handoff.
 allowed.add('js/smart-consult-launcher.js');allowed.add('js/smart-consult-store-open.js');
