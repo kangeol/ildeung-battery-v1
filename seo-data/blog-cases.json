@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-28T10:08:29.528Z",
+  "syncedAt": "2026-09-29T08:56:25.338Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 2,
     "preservedPreviousPosts": 357,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 357,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 359,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 310,
-    "vehicleMatches": 289,
-    "detailMatches": 60,
-    "regionMatches": 241,
-    "neighborhoodMatches": 201,
-    "batteryMatches": 240,
+    "manufacturerMatches": 312,
+    "vehicleMatches": 291,
+    "detailMatches": 61,
+    "regionMatches": 243,
+    "neighborhoodMatches": 203,
+    "batteryMatches": 242,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,337 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 241,
-    "actualRegionMatches": 241,
-    "actualNeighborhoodMatches": 201,
+    "actualAreaMatches": 243,
+    "actualRegionMatches": 243,
+    "actualNeighborhoodMatches": 203,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224419484755",
+      "title": "인천 부평구(삼산동) 2018년식 벤츠E220d 델코 AGM95 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224419484755",
+      "publishedAt": "2026-09-29",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224419484755.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MjJfOSAg/MDAxNzkwMDM2MTA3NDYw.oGIKqNuaGEFl5KnRTjkT__G40brzD29gsvxRsVp4voYg.MxCitEC6Tfqmgqj069vKq0Afg34WuzQahYAo0dYfvpkg.JPEG/image-e220d-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 부평구 삼산동에서 2018년식 벤츠E220d 배터리 교체 작업을 진행했습니다. 이번 차량은 지하주차장에서 출차하려고 시동을 걸었는데 차량이 움직일 수 없는 상태라 현장에서 바로 작업을 진행한 경우입니다. 지하주차장은 차량을 다른 곳으로 옮기기도 쉽지 않아 배터리가 방전되면 더욱 난감할 수 있는데요. 현재 장착된 배터리 타입과 실제 차량에 들어가는 규격을 확인한 뒤 델코 AGM95를 준비했고, 교체 후에는 신품 배터리 등록 코딩까지 함께 진행했습니다. --- 지하주차장에서.......",
+      "tags": [
+        "부평배터리",
+        "부평출장배터리",
+        "부평자동차배터리",
+        "삼산동배터리",
+        "벤츠e220d배터리",
+        "벤츠배터리",
+        "벤츠배터리교체비용",
+        "벤츠e220d배터리가격",
+        "델코agm95",
+        "델코agm95가격",
+        "델코agm95교체",
+        "출장배터리교체",
+        "출장배터리교체비용",
+        "출장배터리교체가격",
+        "자동차배터리가격",
+        "자동차배터리교체비용",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "벤츠",
+        "manufacturers": [
+          {
+            "id": "benz",
+            "name": "벤츠"
+          }
+        ],
+        "vehicle": "벤츠 E클래스",
+        "vehicles": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "E-클래스",
+            "displayName": "벤츠 E클래스",
+            "urlPath": "/car-battery/benz/e-class.html",
+            "matchedAlias": "벤츠E",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "E-클래스",
+            "displayName": "벤츠 E클래스",
+            "urlPath": "/car-battery/benz/e-class.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "bupyeong-gu",
+          "regionName": "부평구",
+          "neighborhoodName": "삼산동",
+          "label": "인천 부평구 삼산동",
+          "urlPath": "/area/incheon/bupyeong-gu/samsan-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "label": "인천 부평구",
+            "urlPath": "/area/incheon/bupyeong-gu.html",
+            "matchedAlias": "부평구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "name": "삼산동",
+            "legalName": "인천광역시 부평구 삼산동",
+            "label": "인천 부평구 삼산동",
+            "urlPath": "/area/incheon/bupyeong-gu/samsan-dong.html",
+            "matchedAlias": "삼산동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/benz/e-class.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/benz.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/bupyeong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/bupyeong-gu/samsan-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "부평구 삼산동에서 벤츠 E클래스 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224419477892",
+      "title": "안양시 동안구(관양동) 2015년식 현대 올뉴투싼 델코 AGM80 출장배터리교체 가격 및 비용 안내｜오래 주차한 뒤 배터리 방전",
+      "url": "https://blog.naver.com/kang10107/224419477892",
+      "publishedAt": "2026-09-29",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224419477892.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MjJfMjk3/MDAxNzkwMDM1Njc5MjM2.hawHuve3tvRzLKtTZmo3BbBLDaV57OJLgauysB2R8ssg.79k-A3MSgSeZ6bBrne2TkJQhczXRteSgkrdZ0xvFTYYg.JPEG/image-image-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 안양시 동안구 관양동에서 2015년식 현대 올뉴투싼 배터리 교체 작업을 진행했습니다. 이번 차량은 병원 주차장에 평소보다 오랜 시간 세워둔 뒤 다시 출발하려고 했을 때 시동이 걸리지 않았던 경우입니다. 주차해 있는 동안에는 차량을 사용하지 않으니 배터리도 쉬고 있을 것 같지만, 블랙박스나 차량의 일부 전자장치는 시동이 꺼진 뒤에도 전기를 사용할 수 있습니다. 기존 배터리 상태와 차량에 적용되는 규격을 확인한 뒤 델코 AGM80으로 교체했습니다. --- 오래 주차한 뒤 갑.......",
+      "tags": [
+        "안양배터리",
+        "안양출장배터리",
+        "안양자동차배터리",
+        "관양동배터리",
+        "올뉴투싼배터리",
+        "올뉴투싼배터리교체",
+        "올뉴투싼배터리교체비용",
+        "올뉴투싼배터리가격",
+        "델코agm80",
+        "델코agm80가격",
+        "델코agm80교체비용",
+        "일등밧데리",
+        "자동차배터리교체",
+        "자동차배터리가격",
+        "출장배터리가격",
+        "출장배터리교체",
+        "출장배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "투싼",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "투싼",
+            "displayName": "투싼",
+            "urlPath": "/car-battery/hyundai/tucson.html",
+            "matchedAlias": "투싼",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "투싼",
+            "displayVehicleName": "투싼",
+            "label": "올 뉴 투싼",
+            "slug": "all-new-tucson",
+            "urlPath": "/car-battery/hyundai/tucson/all-new-tucson.html",
+            "vehicleUrlPath": "/car-battery/hyundai/tucson.html",
+            "matchedAlias": "올 뉴 투싼"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "투싼",
+            "displayName": "투싼",
+            "urlPath": "/car-battery/hyundai/tucson.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "anyang-si",
+          "regionName": "안양시",
+          "neighborhoodName": "관양동",
+          "label": "경기 안양시 관양동",
+          "urlPath": "/area/gyeonggi/anyang-si/gwanyang-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "anyang-si",
+            "regionName": "안양시",
+            "label": "경기 안양시",
+            "urlPath": "/area/gyeonggi/anyang-si.html",
+            "matchedAlias": "안양시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "anyang-si",
+            "regionName": "안양시",
+            "name": "관양동",
+            "legalName": "경기도 안양시 동안구 관양동",
+            "label": "경기 안양시 관양동",
+            "urlPath": "/area/gyeonggi/anyang-si/gwanyang-dong.html",
+            "matchedAlias": "관양동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/tucson.html"
+          ],
+          "details": [
+            "/car-battery/hyundai/tucson/all-new-tucson.html"
+          ],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/anyang-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/anyang-si/gwanyang-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "안양시 관양동에서 투싼 올 뉴 투싼 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224418433356",
       "title": "서울 강서구(등촌동) 2016년식 르노삼성 SM6 델코 AGM70 출장배터리교체 가격 및 비용 안내｜주차장에서 갑자스럽게 시동 안걸림",
