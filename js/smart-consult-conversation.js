@@ -128,7 +128,7 @@ function scopeAndServiceFollowup(previous, text, servicePolicy) {
 }
 
 export function createConversationState() {
-  return { customerReportedSpec: "", brand: "", quotedSpec: "", priceSummaryShown: false, originalIntent: "", priceIntent: false, serviceIntent: false, engine: "", drivetrain: "", yearRange: "", symptom: null, customerGoal: "UNKNOWN", turnIndex: 0, manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
+  return { priceReference: "", customerReportedSpec: "", brand: "", quotedSpec: "", priceSummaryShown: false, originalIntent: "", priceIntent: false, serviceIntent: false, engine: "", drivetrain: "", yearRange: "", symptom: null, customerGoal: "UNKNOWN", turnIndex: 0, manufacturer: "", manufacturerName: "", vehicleFamily: "", model: "", generation: "", year: null, fuel: "", detailModel: "", detailModels: [], exactFuel: "", selectedVehicleKey: "", batteryCandidates: [], confirmedBattery: null, result: null, region: null, location: null, pendingLocationDisambiguation: null, pendingVehicleConfirmation: null, city: "", district: "", lastIntent: "UNKNOWN", previousQuestion: null, ambiguity: null, failures: 0 };
 }
 
 export function symptomIntent(text) {
@@ -711,7 +711,40 @@ function composeCoreBatteryScope(previous, text, out, policy, priceCatalog) {
   return {...out,state,messages:[...new Set(messages)],actions:[...new Set(actions)]};
 }
 
+// Quote references are separate from confirmed vehicle fitment. A default quote
+// printed alongside an upgrade offer is not an explicit product selection.
+function quoteContext(state) {
+  return JSON.stringify([state.selectedVehicleKey,state.year,state.yearRange,state.detailModel,state.detailModels,state.exactFuel,state.fuel,state.engine,state.drivetrain]);
+}
+function priceReferenceKind(text, catalog) {
+  const s=withoutBrand(text,catalog).normalize('NFKC').replace(/\s+/g,'');
+  const price='(?:가격|비용|얼마|견적)(?:은|는|이|가|요|예요|인가요|인가|에요|야|죠|나요|입니까|알려주세요|알려줘|해요|예요)*[?!.]*';
+  if(new RegExp(`^(?:위에말한)?(?:업그레이드|상위배터리|큰배터리|(?:용량)?큰걸로|한단계큰걸로)(?:는|은|로|으로|진행시|하면|교체하면|교체시|진행하면)*${price}$`).test(s))return 'upgrade';
+  if(/^(?:용량)?(?:한단계)?큰걸로(?:교체)?하면[?!.]*$/.test(s))return 'upgrade';
+  if(new RegExp(`^그(?:걸로|제품|배터리)(?:로|으로|하면|는|은)*${price}$`).test(s))return 'product';
+  return null;
+}
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  const mention=catalogSpecMention(text,priceCatalog);
+  const kind=selection===null&&!mention?priceReferenceKind(text,priceCatalog):null;
+  if(kind){
+    // Revalidate against current governed rows, not a stale serialized result.
+    const result=previous.selectedVehicleKey?resolveConsultation(filteredRows(records,previous),{}).result:null;
+    const spec=kind==='upgrade'?result?.upgradeBattery:previous.priceReference;
+    if(spec && (kind==='product'||result?.defaultBattery===previous.confirmedBattery)){
+      const brand=brandIntent(text,priceCatalog)||previous.brand;
+      const state={...previous,brand,quotedSpec:spec,priceReference:spec,priceIntent:true,originalIntent:'PRICE',lastIntent:'PRICE_QUESTION',turnIndex:previous.turnIndex+1};
+      return {state,messages:[priceDescription(spec,priceCatalog,brand)],actions:['phone'],chips:[],result:previous.result,region:null};
+    }
+    return {state:{...previous,turnIndex:previous.turnIndex+1},messages:[kind==='product'?'어떤 배터리 규격의 가격을 말씀하시나요? 기본 배터리인지 업그레이드 배터리인지 알려주세요.':'현재 확인된 차량 정보만으로 업그레이드 배터리 규격을 확정할 수 없습니다. 고객센터 1644-9141로 확인해 주세요.'],actions:kind==='upgrade'?['phone']:[],chips:[],result:null,region:null};
+  }
+  const out=conversationTurnImpl(previous,text,records,localities,priceCatalog,servicePolicy,selection);
+  if(quoteContext(previous)!==quoteContext(out.state))out.state.priceReference='';
+  else if(mention?.candidates.length===1 && out.state.quotedSpec===mention.candidates[0] && out.messages.some(m=>m.includes(mention.candidates[0])))out.state.priceReference=mention.candidates[0];
+  else if(pricePattern.test(text)&&out.state.lastIntent==='PRICE_QUESTION')out.state.priceReference='';
+  return out;
+}
+function conversationTurnImpl(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
   if(selection===null && ['SERVICE_LOCATION_CLARIFICATION','AFTER_SALES'].includes(previous.lastIntent)
     && /(?:집|주유소|주차|현장|구역|반대편|지역별)/.test(text)
     && !resolveLocation(text,localities).region){
@@ -1300,7 +1333,8 @@ function conversationCore(previous, text, records, localities = [], priceCatalog
   // PRICE is a retained goal, not a terminal reply before vehicle narrowing.
   if (intent === "PRICE_QUESTION" && state.result) {
     if(entities.region) areaAnswer();
-    say(copy.result(state.result.defaultBattery)); if(priceCatalog)quote(state.result.defaultBattery);else say(variant("price",state.turnIndex));
+    if(answered || !previous.result)say(copy.result(state.result.defaultBattery));
+    if(priceCatalog)quote(state.result.defaultBattery);else say(variant("price",state.turnIndex));
     output.result=state.result; output.actions=["phone","stores"]; return output;
   }
   if (intent === 'PRICE_QUESTION' && state.pendingVehicleConfirmation && previous.lastIntent === 'N1_EXPLICIT_NO_START' && !answered) {

@@ -44,6 +44,9 @@ export function decodeSession(raw, now = Date.now()) {
     if (![2,VERSION].includes(envelope.version) || !Number.isFinite(envelope.savedAt) || envelope.savedAt > now || now - envelope.savedAt > MAX_AGE || typeof envelope.body !== "string" || checksum(envelope.body) !== envelope.checksum) return null;
     const data = JSON.parse(envelope.body);
     const s = data.state;
+    // Older sessions have no explicit product-reference provenance.
+    if(s && !Object.hasOwn(s,'priceReference'))s.priceReference='';
+    if(s?.priceReference && !/^(?:AGM\d+R?|DIN\d+(?:HL|L|R)?|DF\d+(?:AL|L|R)|65-900)$/.test(s.priceReference))return null;
     if(s && !Object.hasOwn(s,'customerReportedSpec'))s.customerReportedSpec='';
     if(s?.customerReportedSpec && !/^(?:AGM\d+R?|DIN\d+(?:HL|L|R)?|DF\d+(?:AL|L|R)|65-900)$/.test(s.customerReportedSpec))return null;
     // Never replay a vehicle fitment withdrawn by the canonical DIN74L correction.
