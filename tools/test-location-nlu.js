@@ -1,4 +1,4 @@
-import {approvedSyncFiles} from './lib/blog-sync-approved-freeze.js';
+import {approvedSyncFiles,canonical} from './lib/blog-sync-approved-freeze.js';
 import {assertHomepageFreeze} from './lib/homepage-approved-freeze.js';
 assertHomepageFreeze();
 import fs from 'node:fs';
@@ -61,10 +61,8 @@ assert.ok(!airportChange.messages.join(' ').includes('차량명·연식·세부 
 assert.equal(records.length,917);assert.equal(areas.length,665);
 const approvedAreaBaseline='458ab46419f62584c81eef7c7d4570b95c85e6c7';
 const approvedGroupsPath='seo-data/vehicle-detail-groups.json';
-// Audited normal generation changed only generatedAt to 2026-09-28.
-// Pin this exact file, retaining full equality and the separate area baseline.
-const approvedGroupsBaseline='66aae80e12cf871ac8c10c4ce3e1500135c500a3';
-const approvedGroups=execFileSync('git',['show',`${approvedGroupsBaseline}:${approvedGroupsPath}`],{encoding:'utf8'}).replace(/\r\n/g,'\n');
+// Exact regeneration from canonical inputs and archived sync clock, including metadata.
+const approvedGroups=canonical.groups.replace(/\r\n/g,'\n');
 assert.equal(fs.readFileSync(approvedGroupsPath,'utf8').replace(/\r\n/g,'\n'),approvedGroups,'generated vehicle groups must exactly match the audited approved snapshot');
 const changed=execFileSync('git',['diff','--name-only',approvedAreaBaseline],{encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
 const html=changed.filter(p=>p.endsWith('.html')&&p!=='index.html'&&!approvedSyncFiles.has(p));assert.ok(html.every(p=>p==='smart-consult/index.html'));

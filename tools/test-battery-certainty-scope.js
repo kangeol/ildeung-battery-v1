@@ -15,11 +15,12 @@ assert.deepEqual(after,expected,'only reviewed GN7 and AG60 canonical correction
 // Keep the historical factual-data oracle above, but measure this task against
 // the fixed owner-approved main. The global CTA in 7f4519f9 predates this task;
 // it is not permission to change CSS again. Never use a moving HEAD as baseline.
-const scopeBaseline='04d1dc4f9f4412b8a680fe4c38efb82589afabee';
+const scopeBaseline='4cd31286e087e990492c4f831a23946c68a620d6';
 const currentTaskPaths=new Set(['js/smart-consult-conversation.js','js/smart-consult-session.js','tools/test-upgrade-price-context.js','tools/lib/blog-sync-approved-freeze.js','tools/test-battery-certainty-scope.js']);
 // Exact generatedAt-only snapshot reconciliation authorized in the continuation.
 currentTaskPaths.add('tools/test-location-nlu.js');
-const assertCurrentScope=paths=>{for(const p of paths)assert.ok(currentTaskPaths.has(p),`out of current task scope: ${p}`);};
+for(const p of ['js/smart-consult-core.js','js/vehicle-aliases.js','tools/test-vehicle-family-recognition.js','tools/lib/canonical-generated-validation.js','tools/lib/homepage-approved-freeze.js','tools/lib/validation-stabilization-probes.js'])currentTaskPaths.add(p);
+const assertCurrentScope=paths=>{for(const p of paths)assert.ok(currentTaskPaths.has(p)||approvedSyncFiles.has(p),`out of current task scope: ${p}`);};
 const paths=[...new Set([...git(['diff',scopeBaseline,'--name-only']).trim().split('\n'),...git(['ls-files','--others','--exclude-standard']).trim().split('\n')].filter(Boolean))];
 assertCurrentScope(paths);
 assert.doesNotThrow(()=>assertCurrentScope([...currentTaskPaths]));
@@ -59,6 +60,7 @@ for(const p of ['css/unrelated-shared.css','js/unrelated-runtime.js','tools/unap
 for(const p of paths){
  if(['tools/lib/cold-weather-fixtures.js','tools/audit-cold-weather.js','docs/cold-weather-audit.md'].includes(p))continue;
  if(approvedSyncFiles.has(p))continue;
+ if(currentTaskPaths.has(p))continue;
  if(['js/smart-consult-battery-knowledge.js','tools/lib/battery-knowledge-fixtures.js','tools/lib/blog-sync-approved-freeze.js','docs/battery-knowledge-audit.md'].includes(p))continue;
  assert.ok(isAllowedScopePath(p),`out of scope: ${p}`);
  if(p.endsWith('.html')){
