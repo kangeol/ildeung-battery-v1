@@ -1260,6 +1260,7 @@ function conversationCore(previous, text, records, localities = [], priceCatalog
   if (intent === "CORRECTION") say(copy.correction(entities.year));
 
   let rows = filteredRows(records, state);
+  if(!shorthand && rows.length && state.pendingVehicleConfirmation?.key===state.selectedVehicleKey)state.pendingVehicleConfirmation=null;
   // Revalidate even a restored session or a follow-up asking for price/AGM.
   {
     state.result = null; state.confirmedBattery = null;
@@ -1374,7 +1375,27 @@ function conversationCore(previous, text, records, localities = [], priceCatalog
   if (!state.selectedVehicleKey) { say(copy.needVehicle); return output; }
   state.failures = 0;
   if (entities.region) areaAnswer();
-  if (!rows.length) { say(copy.noCombination); output.actions = ["phone"]; return output; }
+  if (!rows.length) {
+    // A recognized family/detail with conflicting year is not an unknown car.
+    // Retain both constraints; never silently discard a generation or shift a year.
+    const namedRows=records.filter(row=>`${row.manufacturerId}|${row.vehicle}`===state.selectedVehicleKey
+      && (!state.detailModel||row.detailModel===state.detailModel)
+      && (!state.detailModels?.length||state.detailModels.includes(row.detailModel))
+      && (!state.generation||row.detailModel.toUpperCase().includes(state.generation.toUpperCase())));
+    if(state.year && namedRows.length && !namedRows.some(row=>yearMatches(row.year,state.year))){
+      const label=[state.manufacturerName,state.detailModel||state.vehicleFamily].filter(Boolean).join(' ');
+      const ranges=unique(namedRows.map(row=>row.year)).map(value=>{
+        const {start,end}=parseYearRange(value);
+        return start&&end?`${start}~${end}년`:start?`${start}년 이후`:end?`${end}년 이전`:value;
+      }).join(' / ');
+      state.pendingVehicleConfirmation={key:state.selectedVehicleKey,label};
+      state.priceReference='';state.quotedSpec='';state.priceSummaryShown=false;
+      const confirmed=previous.pendingVehicleConfirmation?.key===state.selectedVehicleKey&&affirmative.test(text);
+      ask('year',`${confirmed?'차종은 확인했습니다.':`${label} 차량을 말씀하신 게 맞으실까요?`} 현재 확인되는 ${label}의 연식은 ${ranges}입니다. 입력하신 ${state.year}년과 달라 차량명과 연식을 다시 확인해 주세요.`);
+      return output;
+    }
+    say(copy.noCombination); output.actions = ["phone"]; return output;
+  }
   if (state.result) {
     say(knownBattery(state.result) ? copy.result(state.result.defaultBattery) : copy.needsCheck);
     if (state.result.upgradeBattery) say(copy.upgrade(state.result.upgradeBattery));
