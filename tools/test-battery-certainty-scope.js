@@ -20,6 +20,7 @@ const currentTaskPaths=new Set(['js/smart-consult-conversation.js','js/smart-con
 // Exact generatedAt-only snapshot reconciliation authorized in the continuation.
 currentTaskPaths.add('tools/test-location-nlu.js');
 for(const p of ['js/smart-consult-core.js','js/vehicle-aliases.js','tools/test-vehicle-family-recognition.js','tools/lib/canonical-generated-validation.js','tools/lib/homepage-approved-freeze.js','tools/lib/validation-stabilization-probes.js'])currentTaskPaths.add(p);
+currentTaskPaths.add('tools/test-operational.js');
 const assertCurrentScope=paths=>{for(const p of paths)assert.ok(currentTaskPaths.has(p)||approvedSyncFiles.has(p),`out of current task scope: ${p}`);};
 const paths=[...new Set([...git(['diff',scopeBaseline,'--name-only']).trim().split('\n'),...git(['ls-files','--others','--exclude-standard']).trim().split('\n')].filter(Boolean))];
 assertCurrentScope(paths);

@@ -1,5 +1,6 @@
 import fs from 'node:fs';import assert from 'node:assert/strict';import{execFileSync}from'node:child_process';
 import{conversationTurn,createConversationState}from'../js/smart-consult-conversation.js';import{encodeSession,decodeSession}from'../js/smart-consult-session.js';import{families,expected}from'./operational-fixtures.js';
+import {priceDescription} from '../js/smart-consult-prices.js';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),rows=read('data/manufacturers.json').flatMap(m=>read('data/'+m.file).map(r=>({...r,manufacturerId:m.id,manufacturerName:m.name}))),areas=read('seo-data/smart-consult-location-index.json').localities,catalog=read('data/battery-prices.json'),policy=read('data/consult-service-policy.json');assert.equal(rows.length,917);assert.equal(areas.length,665);
 const old=JSON.parse(execFileSync('git',['show','0ae7d753:data/consult-service-policy.json'],{encoding:'utf8'})),stripped=structuredClone(policy);delete stripped.purchaseStage;delete stripped.purchaseKnowledge;delete stripped.operational;delete stripped.product.comparisonContext;stripped.version=old.version;assert.deepEqual(stripped,old,'all existing approved policy truth preserved');
 const names=['FALSE_RESERVATION_COMPLETION','REALTIME_AVAILABILITY_FABRICATED','ARRIVAL_TIME_FABRICATED','DISPATCH_TIME_FABRICATED','WORKTIME_ARRIVAL_CONFUSION','AMBIGUOUS_DURATION_FALSE_ASSUMPTION','BATTERY_DIAGNOSIS_OVERCLAIM','VOLTAGE_FABRICATED','ALTERNATOR_RESULT_FABRICATED','FAULT_CODE_FABRICATED','FIXED_LIFESPAN_OVERCLAIM','REPLACEMENT_DIAGNOSIS_OVERCLAIM','UNSAFE_LOCATION_PROMISE','LOCATION_FEASIBILITY_FALSE_AREA_UNSUPPORTED','ACCESS_PERMISSION_FABRICATED','NON_FACE_TO_FACE_WRONG_ANSWER','KEY_STORAGE_INSTRUCTION_FABRICATED','USED_PRODUCT_FALSE_CLAIM','REBUILT_PRODUCT_FALSE_CLAIM','REFURBISHED_PRODUCT_FALSE_CLAIM','PRICE_REASON_FABRICATED','SHORT_CONTEXT_WRONG_INTENT','SHORT_CONTEXT_HALLUCINATION','SHORT_CONTEXT_CONTEXT_LOST','DEICTIC_AREA_LOCATION_ASSUMED','MISSING_AREA_FALSE_UNSUPPORTED','REAL_CUSTOMER_MULTI_INTENT_LOST'];
@@ -7,9 +8,28 @@ const gates=Object.fromEntries(names.map(n=>[n,0])),checks=Object.fromEntries(na
 let executedTurns=0;
 const turn=(s,text,selection)=>{executedTurns++;return conversationTurn(s,text,rows,areas,catalog,policy,selection);},fresh=()=>createConversationState(),core=s=>Object.fromEntries(['selectedVehicleKey','year','yearRange','detailModel','fuel','engine','confirmedBattery','quotedSpec','brand','region'].map(k=>[k,s[k]]));
 const states=[fresh(),turn(fresh(),'BMW 5시리즈 2020년식').state,turn(fresh(),'구월동 BMW 5시리즈 2020년식 바르타 배터리 얼마예요?').state,turn(fresh(),'AGM105').state];
+// The 79b3744b fixture predates the approved scoped A/S and follow-up pricing
+// behavior. Keep its other expectations; distinguish these two proven cases.
+const adjudication=[];
+function matchesOperationalContract(family,input,state,out){
+ const answer=out.messages.join(' ');
+ if(family==='as'&&['문제 생기면 어떻게 해요?','교체하고 방전되면요?','불량이면 바꿔줘요?'].includes(input))
+  return /세부 A\/S 가능 여부/.test(answer)&&/증상과 차량 상태.*확인/.test(answer)&&/1644-9141/.test(answer)&&out.actions.includes('phone');
+ if(family==='entry'&&input!=='추천해주세요'&&state.selectedVehicleKey&&state.confirmedBattery){
+  // A quoted standalone product is not confirmed vehicle fitment. Only the
+  // current confirmed vehicle can supply this answer instead of a new question.
+  const spec=state.result?.defaultBattery;
+  return Boolean(spec&&spec===state.confirmedBattery)&&answer.includes(priceDescription(spec,catalog,state.brand||'DELKOR'))&&JSON.stringify(core(out.state))===JSON.stringify(core(state));
+ }
+ return family==='deictic'&&state.region?answer.includes(state.region.fullLabel)&&/출장/.test(answer):expected(family,input).every(r=>r.test(answer));
+}
 for(const [family,qs]of Object.entries(families))for(const input of qs)for(const text of [...new Set([input,input.replace(/\s/g,''),'혹시 '+input])])for(const state of states){
  const o=turn(state,text),answer=o.messages.join(' ');evidence.push({family,input:text,messages:o.messages,state:o.state});
- const matched=family==='deictic'&&state.region?answer.includes(state.region.fullLabel)&&/출장/.test(answer):expected(family,input).every(r=>r.test(answer));check('SHORT_CONTEXT_WRONG_INTENT',matched,{family,text,answer});
+ const matched=matchesOperationalContract(family,input,state,o);check('SHORT_CONTEXT_WRONG_INTENT',matched,{family,text,answer});
+ if(!expected(family,input).every(r=>r.test(answer))&&['as','entry'].includes(family)){
+  assert.ok(matched,'every adjudicated legacy failure must satisfy its current contract');
+  adjudication.push({failureId:adjudication.length+1,input:text,stateIndex:states.indexOf(state),expected:expected(family,input).map(String),actual:answer,assertion:'SHORT_CONTEXT_WRONG_INTENT',policyTopic:family,source:family==='as'?'afterSales.detail':'confirmed vehicle defaultBattery + brand price',bucket:family==='as'?'STALE_TEST_EXPECTATION':'TEST_HARNESS_ASSUMPTION_BUG'});
+ }
  check('FALSE_RESERVATION_COMPLETION',!/예약(?:이|을|은)?\s*(?:완료|확정됐|잡았)|접수(?:됐|완료)/.test(answer),text);
  for(const name of ['REALTIME_AVAILABILITY_FABRICATED','ARRIVAL_TIME_FABRICATED','DISPATCH_TIME_FABRICATED'])check(name,!/\d+\s*(?:분|시).*?(?:도착합니다|도착예정|방문합니다)|지금바로갑|오늘.*(?:방문확정|배차완료)/.test(answer),text);
  if(['realtime','clarify'].includes(family))check('WORKTIME_ARRIVAL_CONFUSION',!/10~20/.test(answer),text);
@@ -31,4 +51,27 @@ assert.match(turn(fresh(),'얼마?').messages.join(' '),/차량|차종/);assert.
 for(const [first,re]of [['작업시간 얼마나 걸려요?',/10~20/],['예약해주세요',/실시간/],['언제 와요?',/실시간/]]){const a=turn(fresh(),first),b=turn(decodeSession(encodeSession(a.state,[])).state,'얼마나 걸려요?');assert.match(b.messages.join(' '),re);evidence.push({flow:'duration context',input:first,messages:a.messages,followup:b.messages});}
 const unsupported=turn(states[2],'지역은 부산입니다. 주차장에서 교체되나요?');assert.equal(unsupported.state.region,null);assert.match(unsupported.messages.join(' '),/가능 지역으로 확인되지/);
 const ambiguous=turn(fresh(),'중앙동 주차장인데 제가 없어도 되나요?');assert.ok(ambiguous.state.pendingLocationDisambiguation.length>1);assert.equal(ambiguous.state.region,null);assert.ok(ambiguous.chips.length>1);
-for(const key of names){assert.ok(checks[key]>0,key+' exercised');}const result={status:Object.values(gates).some(Boolean)?'FAIL':'PASS',turns:executedTurns,records:evidence.length,gates,checks,evidence};fs.mkdirSync('docs/evidence/operational',{recursive:true});fs.writeFileSync('docs/evidence/operational/focused.json',JSON.stringify(result,null,2)+'\n');console.log({status:result.status,turns:result.turns,records:result.records,gates});assert.equal(result.status,'PASS');
+// Positive live-engine controls and deliberately bad answers use the same
+// assertions. These are in-memory response probes, never production events.
+const policyProbes=[
+ ['duration','작업시간 얼마나 걸려요?',[/10~20분/,/상황|달라/],'교체 작업은 보통 30분 소요됩니다.'],
+ ['payment','결제 방법 알려주세요',[/카드/,/현금/,/계좌/],'현금결제만 가능합니다.'],
+ ['product','중고 재생 리퍼 제품도 사용하나요?',[/정품/,/중고.*재생.*리퍼.*사용하지 않습니다/],'정품과 중고·재생·리퍼 제품을 사용합니다.'],
+ ['manufacture','정확한 제조일자는 언제인가요?',[/최신 제조일자/,/제품 확인/,/1644-9141/],'정확한 제조일자는 2026년 9월 30일입니다.'],
+ ['realtime','오늘 언제 와요?',[/실시간/,/1644-9141/],'오늘 10분 뒤 도착합니다.'],
+ ['access','아파트 지하주차장에서도 되나요?',[/안전.*접근/,/허가를 보장할 수는 없/,/1644-9141/],'모든 지하주차장에 출입할 수 있습니다.'],
+ ['life','배터리 몇 년 써요?',[/일률|단정/,/상태|환경|패턴/],'배터리 수명은 3년이며 3년마다 교체해야 합니다.'],
+ ['diagnosis','점프했는데 또 방전됐어요',[/곧바로 재교체를 결정하기보다/,/충전·전기 계통/,/확인해야 합니다/],'배터리 고장입니다. 반드시 교체해야 합니다.'],
+ ['reservation','예약해주세요',[/1644-9141/,/예약을 확정하지 않/],'예약이 완료되었습니다.']
+];
+for(const [topic,input,requirements,bad] of policyProbes){
+ const o=turn(fresh(),input),answer=o.messages.join(' '),accepts=s=>requirements.every(r=>r.test(s));
+ assert.ok(accepts(answer),topic+' approved policy positive control: '+answer);
+ assert.equal(accepts(bad),false,topic+' incorrect policy must fail');
+ evidence.push({policyProbe:topic,input,messages:o.messages,negativeRejected:true});
+}
+// Formerly failing contracts must reject loss of the real safety/price facts.
+assert.equal(matchesOperationalContract('as','문제 생기면 어떻게 해요?',fresh(),{messages:['3개월 동안 무조건 교환합니다.'],actions:[]}),false);
+const entry=turn(states[1],'규격을 몰라요');
+assert.equal(matchesOperationalContract('entry','규격을 몰라요',states[1],{...entry,messages:['AGM105 델코 기준 교체 가격은 28만원입니다.']}),false);
+for(const key of names){assert.ok(checks[key]>0,key+' exercised');}const result={status:Object.values(gates).some(Boolean)?'FAIL':'PASS',turns:executedTurns,records:evidence.length,gates,checks,adjudication,negativeProbes:policyProbes.length+2,evidence};fs.mkdirSync('docs/evidence/operational',{recursive:true});fs.writeFileSync('docs/evidence/operational/focused.json',JSON.stringify(result,null,2)+'\n');console.log({status:result.status,turns:result.turns,records:result.records,gates,adjudicationCounts:adjudication.reduce((a,r)=>(a[r.bucket]=(a[r.bucket]||0)+1,a),{}),negativeProbes:result.negativeProbes});assert.equal(result.status,'PASS');
