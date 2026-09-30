@@ -725,6 +725,16 @@ function priceReferenceKind(text, catalog) {
   return null;
 }
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  const recognition=selection===null?resolveVehicleText(text,records,previous):null;
+  if(recognition?.recognitionFailure){
+    const state={...createConversationState(),brand:previous.brand,region:previous.region,location:previous.location,city:previous.city,district:previous.district};
+    state.turnIndex=(previous.turnIndex||0)+1;
+    const prompt=recognition.recognitionFailure==='GENERATION_UNKNOWN'?'입력하신 세대 코드를 현재 차량 자료에서 확인하지 못했습니다. 제조사와 차종명 또는 연식을 알려주세요.'
+      :['GENERATION_CODE_AMBIGUOUS','UNSAFE_AMBIGUITY'].includes(recognition.recognitionFailure)?'차량을 하나로 확인하기 어렵습니다. 제조사와 차종명을 함께 알려주세요.'
+      :'입력하신 제조사·차종과 세대 코드가 서로 맞지 않습니다. 제조사와 차종명, 세대 코드를 다시 확인해 주세요.';
+    state.previousQuestion={field:'vehicle',prompt,choices:[]};
+    return {state,messages:[prompt],actions:[],chips:[],result:null,region:null,vehicleRecognition:{status:'CLARIFICATION',reason:recognition.recognitionFailure,generationCodeDetected:recognition.generationCodeDetected,candidateCount:recognition.matches.length}};
+  }
   const mention=catalogSpecMention(text,priceCatalog);
   const kind=selection===null&&!mention?priceReferenceKind(text,priceCatalog):null;
   if(kind){
@@ -742,6 +752,13 @@ export function conversationTurn(previous, text, records, localities = [], price
   if(quoteContext(previous)!==quoteContext(out.state))out.state.priceReference='';
   else if(mention?.candidates.length===1 && out.state.quotedSpec===mention.candidates[0] && out.messages.some(m=>m.includes(mention.candidates[0])))out.state.priceReference=mention.candidates[0];
   else if(pricePattern.test(text)&&out.state.lastIntent==='PRICE_QUESTION')out.state.priceReference='';
+  const reason=out.state.pendingVehicleConfirmation&&out.state.year&&!filteredRows(records,out.state).length?'YEAR_CONFLICT'
+    :recognition?.generationAmbiguous?'GENERATION_CODE_AMBIGUOUS'
+    :recognition?.matches.length>1?'MULTIPLE_FAMILY_CANDIDATES'
+    :out.state.previousQuestion?.field==='year'&&!out.state.year?'MISSING_YEAR_FOR_MULTIGENERATION'
+    :!out.state.selectedVehicleKey&&out.state.manufacturer?'VEHICLE_FAMILY_UNKNOWN'
+    :!out.state.selectedVehicleKey&&(out.state.previousQuestion?.field==='vehicle'||out.messages.some(m=>/차량명|어떤 차량|차량마다 배터리/.test(m)))?'VEHICLE_FAMILY_UNKNOWN':'';
+  out.vehicleRecognition={status:reason?'CLARIFICATION':out.state.selectedVehicleKey?'RESOLVED':'NOT_APPLICABLE',reason,normalizedManufacturer:out.state.manufacturer,normalizedFamily:out.state.vehicleFamily,generationCodeDetected:recognition?.generationCodeDetected||'',providedYear:out.state.year,candidateCount:recognition?.matches.length||0};
   return out;
 }
 function conversationTurnImpl(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
