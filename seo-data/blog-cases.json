@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-09-30T08:55:21.304Z",
+  "syncedAt": "2026-09-30T09:31:03.617Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 360,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 362,
+    "newPosts": 1,
+    "preservedPreviousPosts": 362,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 363,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 315,
-    "vehicleMatches": 294,
+    "manufacturerMatches": 316,
+    "vehicleMatches": 295,
     "detailMatches": 62,
-    "regionMatches": 246,
-    "neighborhoodMatches": 206,
-    "batteryMatches": 245,
+    "regionMatches": 247,
+    "neighborhoodMatches": 207,
+    "batteryMatches": 246,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,170 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 246,
-    "actualRegionMatches": 246,
-    "actualNeighborhoodMatches": 206,
+    "actualAreaMatches": 247,
+    "actualRegionMatches": 247,
+    "actualNeighborhoodMatches": 207,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224425620681",
+      "title": "강동구(고덕동) 2019년식 트레일블레이저 델코 AGM70 출장배터리교체 가격 및 비용 안내｜방전되는 간격이 점점 짧아질 때",
+      "url": "https://blog.naver.com/kang10107/224425620681",
+      "publishedAt": "2026-09-30",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224425620681.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MjlfMjE1/MDAxNzkwNjQzMjUwNTU4.mltEny7OpFTURdR-yK5a9CgDdgBE7JM64jeytQTDW68g.FX5RfaDXtNS09VmuoM_p0dm5LEyH2jIwUeNkWnOzJ9sg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 강동구 고덕동에서 2019년식 트레일블레이저 배터리 교체 작업을 진행했습니다. 이번 차량은 한 번 방전되고 끝난 것이 아니라 처음에는 한동안 괜찮다가 다시 방전되고, 최근에는 그 간격이 점점 짧아지고 있었던 경우입니다. 이런 상황에서는 점프 후 다시 시동이 걸렸다는 것보다 “얼마 만에 또 방전됐는지”를 보는 것이 더 도움이 됩니다. 예전에는 몇 주 이상 괜찮았는데 최근에는 며칠 사이에 다시 시동이 어려워진다면 배터리가 전기를 유지하는 힘이 떨어진 것은 아닌지 확인해.......",
+      "tags": [
+        "강동구배터리",
+        "강동구출장배터리",
+        "강동구자동차배터리",
+        "고덕동배터리",
+        "트레일블레이저배터리",
+        "트레일블레이저배터리교체비용",
+        "트레일블레이저배터리가격",
+        "트레일블레이저배터리교체",
+        "델코agm70",
+        "델코agm70가격",
+        "델코agm70교체비용",
+        "agm70",
+        "agm70교체",
+        "일등밧데리",
+        "자동차배터리",
+        "차량배터리",
+        "출장배터리",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "쉐보레",
+        "manufacturers": [
+          {
+            "id": "chevrolet",
+            "name": "쉐보레",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "트레일블레이저",
+        "vehicles": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트레일블레이저",
+            "displayName": "트레일블레이저",
+            "urlPath": "/car-battery/chevrolet/trailblazer.html",
+            "matchedAlias": "트레일블레이저",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트레일블레이저",
+            "displayName": "트레일블레이저",
+            "urlPath": "/car-battery/chevrolet/trailblazer.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangdong-gu",
+          "regionName": "강동구",
+          "neighborhoodName": "고덕동",
+          "label": "서울 강동구 고덕동",
+          "urlPath": "/area/seoul/gangdong-gu/godeok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "label": "서울 강동구",
+            "urlPath": "/area/seoul/gangdong-gu.html",
+            "matchedAlias": "강동구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "name": "고덕동",
+            "legalName": "서울특별시 강동구 고덕동",
+            "label": "서울 강동구 고덕동",
+            "urlPath": "/area/seoul/gangdong-gu/godeok-dong.html",
+            "matchedAlias": "고덕동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/chevrolet/trailblazer.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/chevrolet.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangdong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gangdong-gu/godeok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "강동구 고덕동에서 트레일블레이저 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224425614256",
       "title": "인천 미추홀구(숭의동) 2015년식 벤츠 CLA200 델코 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
