@@ -697,17 +697,8 @@
             "name": "벤츠"
           }
         ],
-        "vehicle": "벤츠 C클래스",
+        "vehicle": "벤츠 CLA-클래스",
         "vehicles": [
-          {
-            "manufacturerId": "benz",
-            "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
-            "matchedAlias": "벤츠C",
-            "specificity": "vehicle"
-          },
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
@@ -720,14 +711,6 @@
         ],
         "detailModels": [],
         "vehicleHierarchy": [
-          {
-            "manufacturerId": "benz",
-            "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
-            "specificity": "vehicle"
-          },
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
@@ -791,7 +774,6 @@
         ],
         "matchedPages": {
           "vehicles": [
-            "/car-battery/benz/c-class.html",
             "/car-battery/benz/cla-class.html"
           ],
           "details": [],
@@ -819,10 +801,10 @@
           ]
         }
       },
-      "summary": "미추홀구 숭의동에서 벤츠 C클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "summary": "미추홀구 숭의동에서 벤츠 CLA-클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
-        "vehicle": 2,
+        "vehicle": 1,
         "detail": 0,
         "actualLocation": 1,
         "mentionedServiceArea": 0,
@@ -1822,15 +1804,15 @@
             "name": "벤츠"
           }
         ],
-        "vehicle": "벤츠 C클래스",
+        "vehicle": "벤츠 CLS-클래스",
         "vehicles": [
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
-            "matchedAlias": "벤츠C",
+            "vehicleName": "CLS-클래스",
+            "displayName": "벤츠 CLS-클래스",
+            "urlPath": "/car-battery/benz/cls-class.html",
+            "matchedAlias": "벤츠CLS",
             "specificity": "vehicle"
           }
         ],
@@ -1839,9 +1821,9 @@
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
+            "vehicleName": "CLS-클래스",
+            "displayName": "벤츠 CLS-클래스",
+            "urlPath": "/car-battery/benz/cls-class.html",
             "specificity": "vehicle"
           }
         ],
@@ -1899,7 +1881,7 @@
         ],
         "matchedPages": {
           "vehicles": [
-            "/car-battery/benz/c-class.html"
+            "/car-battery/benz/cls-class.html"
           ],
           "details": [],
           "manufacturers": [
@@ -1926,7 +1908,7 @@
           ]
         }
       },
-      "summary": "안산시 부곡동에서 벤츠 C클래스 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "summary": "안산시 부곡동에서 벤츠 CLS-클래스 AGM95 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -5563,17 +5545,8 @@
             "name": "벤츠"
           }
         ],
-        "vehicle": "벤츠 C클래스",
+        "vehicle": "벤츠 GLC-클래스",
         "vehicles": [
-          {
-            "manufacturerId": "benz",
-            "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
-            "matchedAlias": "C220",
-            "specificity": "vehicle"
-          },
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
@@ -5586,14 +5559,6 @@
         ],
         "detailModels": [],
         "vehicleHierarchy": [
-          {
-            "manufacturerId": "benz",
-            "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
-            "specificity": "vehicle"
-          },
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
@@ -5656,7 +5621,6 @@
         ],
         "matchedPages": {
           "vehicles": [
-            "/car-battery/benz/c-class.html",
             "/car-battery/benz/glc-class.html"
           ],
           "details": [],
@@ -5684,10 +5648,10 @@
           ]
         }
       },
-      "summary": "구로구 가리봉동에서 벤츠 C클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "summary": "구로구 가리봉동에서 벤츠 GLC-클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
-        "vehicle": 2,
+        "vehicle": 1,
         "detail": 0,
         "actualLocation": 1,
         "mentionedServiceArea": 0,
@@ -6195,17 +6159,8 @@
             "name": "벤츠"
           }
         ],
-        "vehicle": "벤츠 C클래스",
+        "vehicle": "벤츠 CLA-클래스",
         "vehicles": [
-          {
-            "manufacturerId": "benz",
-            "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
-            "matchedAlias": "벤츠C",
-            "specificity": "vehicle"
-          },
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
@@ -6218,14 +6173,6 @@
         ],
         "detailModels": [],
         "vehicleHierarchy": [
-          {
-            "manufacturerId": "benz",
-            "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
-            "specificity": "vehicle"
-          },
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
@@ -6288,7 +6235,6 @@
         ],
         "matchedPages": {
           "vehicles": [
-            "/car-battery/benz/c-class.html",
             "/car-battery/benz/cla-class.html"
           ],
           "details": [],
@@ -6316,10 +6262,10 @@
           ]
         }
       },
-      "summary": "남동구 간석동에서 벤츠 C클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "summary": "남동구 간석동에서 벤츠 CLA-클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
-        "vehicle": 2,
+        "vehicle": 1,
         "detail": 0,
         "actualLocation": 1,
         "mentionedServiceArea": 0,
@@ -20139,17 +20085,8 @@
             "name": "벤츠"
           }
         ],
-        "vehicle": "벤츠 C클래스",
+        "vehicle": "벤츠 CLA-클래스",
         "vehicles": [
-          {
-            "manufacturerId": "benz",
-            "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
-            "matchedAlias": "벤츠C",
-            "specificity": "vehicle"
-          },
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
@@ -20162,14 +20099,6 @@
         ],
         "detailModels": [],
         "vehicleHierarchy": [
-          {
-            "manufacturerId": "benz",
-            "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
-            "specificity": "vehicle"
-          },
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
@@ -20230,7 +20159,6 @@
         ],
         "matchedPages": {
           "vehicles": [
-            "/car-battery/benz/c-class.html",
             "/car-battery/benz/cla-class.html"
           ],
           "details": [],
@@ -20258,10 +20186,10 @@
           ]
         }
       },
-      "summary": "서초구 내곡동에서 벤츠 C클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "summary": "서초구 내곡동에서 벤츠 CLA-클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
-        "vehicle": 2,
+        "vehicle": 1,
         "detail": 0,
         "actualLocation": 1,
         "mentionedServiceArea": 0,
@@ -27886,17 +27814,8 @@
             "name": "벤츠"
           }
         ],
-        "vehicle": "벤츠 C클래스",
+        "vehicle": "벤츠 CLA-클래스",
         "vehicles": [
-          {
-            "manufacturerId": "benz",
-            "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
-            "matchedAlias": "벤츠C",
-            "specificity": "vehicle"
-          },
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
@@ -27909,14 +27828,6 @@
         ],
         "detailModels": [],
         "vehicleHierarchy": [
-          {
-            "manufacturerId": "benz",
-            "manufacturerName": "벤츠",
-            "vehicleName": "C-클래스",
-            "displayName": "벤츠 C클래스",
-            "urlPath": "/car-battery/benz/c-class.html",
-            "specificity": "vehicle"
-          },
           {
             "manufacturerId": "benz",
             "manufacturerName": "벤츠",
@@ -27962,7 +27873,6 @@
         "symptoms": [],
         "matchedPages": {
           "vehicles": [
-            "/car-battery/benz/c-class.html",
             "/car-battery/benz/cla-class.html"
           ],
           "details": [],
@@ -27988,10 +27898,10 @@
           ]
         }
       },
-      "summary": "서울 영등포구에서 벤츠 C클래스 AGM80 배터리 관련 실제 작업 사례입니다.",
+      "summary": "서울 영등포구에서 벤츠 CLA-클래스 AGM80 배터리 관련 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
-        "vehicle": 2,
+        "vehicle": 1,
         "detail": 0,
         "actualLocation": 1,
         "mentionedServiceArea": 0,

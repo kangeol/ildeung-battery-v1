@@ -101,6 +101,10 @@ const VEHICLE_ALIAS_RULES = {
     "CLA-클래스": {
       aliases: ["벤츠CLA", "벤츠 CLA"],
       contextual: ["CLA"]
+    },
+    "CLS-클래스": {
+      aliases: ["벤츠CLS", "벤츠 CLS"],
+      contextual: ["CLS"]
     }
   },
   bmw: {
@@ -568,6 +572,18 @@ function vehicleAliasMatches(text, textLoose, aliasRecord, hasManufacturer) {
   }
 
   const looseAlias = normalizeLoose(aliasRecord.value);
+  // C/E/S may precede engine numbers, but must not consume CLA/CLS/SLK/etc.
+  if (/^벤츠[ces]$/.test(looseAlias) && !new RegExp(`${escapeRegex(looseAlias)}(?![a-z])`).test(textLoose)) {
+    return false;
+  }
+  // A-클래스 must not match the tail of CLA-클래스 (likewise S/CLS).
+  if (/^[a-z]+클래스$/.test(looseAlias) && !new RegExp(`(^|[^a-z])${escapeRegex(looseAlias)}`).test(textLoose)) {
+    return false;
+  }
+  if (aliasRecord.exactToken && /^[a-z]/.test(looseAlias)
+    && !new RegExp(`(^|[^a-z])${escapeRegex(looseAlias)}${/[a-z]$/.test(looseAlias) ? "(?![a-z])" : ""}`).test(textLoose)) {
+    return false;
+  }
   if (aliasRecord.exactToken) {
     return hasManufacturer || containsExplicitLooseTerm(text, aliasRecord.value);
   }
