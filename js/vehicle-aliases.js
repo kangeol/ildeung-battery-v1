@@ -37,6 +37,58 @@ export function buildAliasIndex(records) {
 // Codes are governed by source detail names, never guessed from edit distance.
 const generationCache=new WeakMap();
 const resolutionCache=new WeakMap();
+const typoCache=new WeakMap();
+// Deliberately conservative: Korean names of at least three syllables only.
+// Short/Latin models, codes, capacities and manufacturer names are not fuzzy targets.
+export function buildVehicleTypoIndex(records){
+  if(typoCache.has(records))return typoCache.get(records);
+  const targets=new Map(),brands=new Set(Object.values(MANUFACTURER_ALIASES).flat().map(normalizeText));
+  for(const group of buildAliasIndex(records).groups){
+    const add=(name,detailModel='')=>{
+      const token=normalizeText(name);
+      const id=JSON.stringify([token,group.key,detailModel]);
+      targets.set(id,{token,key:group.key,label:detailModel||group.vehicle,manufacturerId:group.manufacturerId,detailModel,
+        eligible:/^[가-힣]{3,}$/.test(token)&&!brands.has(token)});
+    };
+    add(group.vehicle);
+    for(const detail of new Set(group.records.map(r=>r.detailModel)))if(normalizeText(detail)!==normalizeText(group.vehicle))add(detail,detail);
+    for(const [alias,target] of Object.entries(SAFE_ALIAS_MAP))if(target===group.vehicle)add(alias);
+  }
+  const result=[...targets.values()];typoCache.set(records,result);return result;
+}
+export function isOneVehicleEdit(a,b){
+  if(a===b||Math.abs(a.length-b.length)>1)return false;
+  let i=0,j=0,edits=0;
+  while(i<a.length&&j<b.length){
+    if(a[i]===b[j]){i++;j++;continue;}
+    if(++edits>1)return false;
+    if(a.length>=b.length)i++;
+    if(b.length>=a.length)j++;
+  }
+  return edits+(i<a.length||j<b.length?1:0)===1;
+}
+export function proposeVehicleTypo(text,records,state={}){
+  const exact=resolveVehicleText(text,records,state);
+  if(exact.matches.length||exact.recognitionFailure||exact.generationCodeDetected)return null;
+  // Parse a complete vehicle phrase, not arbitrary substrings of a sentence.
+  let phrase=text.normalize('NFKC').trim();
+  phrase=phrase.replace(/(?:^|\s)(?:19|20)\d{2}(?:년식|년)?(?=\s|$)/g,' ')
+    .replace(/(?:19|20)\d{2}(?:년식|년)/g,' ')
+    .replace(/(?:^|\s)\d{2}년식(?=\s|$)/g,' ')
+    .replace(/(?:^|\s)(?:[1-9]\.\d|\d{3,4}\s*cc)\s*(?:터보)?/gi,' ')
+    .replace(/(?:^|\s)(?:가솔린|휘발유|디젤|하이브리드|LPG|터보)(?=\s|$)/gi,' ')
+    .replace(/\s*(?:(?:배터리|밧데리)\s*)?(?:교체\s*)?(?:가격|비용|얼마)?[?!.]*\s*$/,'').trim();
+  let token=normalizeText(phrase),manufacturer=state.manufacturer||'';
+  const brands=Object.entries(MANUFACTURER_ALIASES).flatMap(([id,names])=>names.map(name=>({id,token:normalizeText(name)}))).sort((a,b)=>b.token.length-a.token.length);
+  const brand=brands.find(b=>token.startsWith(b.token));
+  if(brand){manufacturer=brand.id;token=token.slice(brand.token.length);}
+  if(!/^[가-힣]{3,}$/.test(token)||brands.some(b=>token===b.token||isOneVehicleEdit(token,b.token)))return null;
+  const candidates=buildVehicleTypoIndex(records).filter(t=>(!manufacturer||t.manufacturerId===manufacturer)&&isOneVehicleEdit(token,t.token));
+  const unique=[...new Map(candidates.map(t=>[JSON.stringify([t.key,t.detailModel]),t])).values()];
+  // Do not use year proximity to hide another plausible name. Invalid years are
+  // retained for the ordinary conflict flow after the customer confirms.
+  return unique.length===1&&unique[0].eligible?{...unique[0],candidateCount:1}:null;
+}
 export function generationCodesForRow(row,knownPureCodes=new Set()){
   const familyTokens=new Set((row.vehicle.toUpperCase().match(/[A-Z0-9]+/g)||[]));
   const detail=String(row.generation||'')+' '+row.detailModel.replace(/([A-Z]+)\d+(?=세대)/g,'$1');

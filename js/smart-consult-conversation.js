@@ -1,7 +1,7 @@
 import { MANUFACTURER_ALIASES, batteryStoreType, buildVehicleGroups, normalizeText, parseYearRange, resolveConsultation, yearMatches, batteryCertainty, nextBatteryDiscriminator } from "./smart-consult-core.js?v=certainty-v1";
 import { copy, variant, symptomLabels } from "./conversation-copy.js";
 import { resolveLocation } from "./smart-consult-location.js?v=location-v1";
-import { resolveVehicleText, buildAliasIndex } from "./vehicle-aliases.js";
+import { resolveVehicleText, buildAliasIndex, buildVehicleTypoIndex, proposeVehicleTypo } from "./vehicle-aliases.js";
 import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand, normalizeBatteryCode, catalogSpecMention } from "./smart-consult-prices.js?v=owner-delkor-v1";
 import { servicePolicyIntent } from "./smart-consult-policy.js?v=faq-v1";
 import { extendedPolicyReply, assuranceReply } from "./smart-consult-product-policy.js?v=owner-delkor-v1";
@@ -725,6 +725,15 @@ function priceReferenceKind(text, catalog) {
   return null;
 }
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  const pending=previous.pendingVehicleConfirmation;
+  if(selection===null&&pending?.typo===true&&(affirmative.test(text)||negative.test(text))){
+    const target=buildVehicleTypoIndex(records).find(t=>t.eligible&&t.key===pending.key&&t.label===pending.label&&t.detailModel===(pending.detailModel||''));
+    const state={...previous,pendingVehicleConfirmation:null};
+    if(negative.test(text)||!target)return {state:{...state,turnIndex:previous.turnIndex+1},messages:[copy.needVehicle],actions:[],chips:[],result:null,region:null};
+    const group=buildAliasIndex(records).groups.find(g=>g.key===target.key);
+    // Only canonical facts are persisted/replayed, never the original typo text.
+    return conversationTurn(state,`${group.manufacturerName} ${target.label}${state.year?' '+state.year+'년식':''}${state.fuel?' '+state.fuel:''}`,records,localities,priceCatalog,servicePolicy);
+  }
   const recognition=selection===null?resolveVehicleText(text,records,previous):null;
   if(recognition?.recognitionFailure){
     const state={...createConversationState(),brand:previous.brand,region:previous.region,location:previous.location,city:previous.city,district:previous.district};
@@ -749,6 +758,16 @@ export function conversationTurn(previous, text, records, localities = [], price
     return {state:{...previous,turnIndex:previous.turnIndex+1},messages:[kind==='product'?'어떤 배터리 규격의 가격을 말씀하시나요? 기본 배터리인지 업그레이드 배터리인지 알려주세요.':'현재 확인된 차량 정보만으로 업그레이드 배터리 규격을 확정할 수 없습니다. 고객센터 1644-9141로 확인해 주세요.'],actions:kind==='upgrade'?['phone']:[],chips:[],result:null,region:null};
   }
   const out=conversationTurnImpl(previous,text,records,localities,priceCatalog,servicePolicy,selection);
+  if(selection===null&&!out.state.selectedVehicleKey&&!out.state.pendingVehicleConfirmation&&!recognition?.matches.length
+    &&out.messages.some(m=>/차량명|어떤 차량|차량마다 배터리/.test(m))){
+    const proposal=proposeVehicleTypo(text,records,previous);
+    if(proposal){
+      const state={...out.state,result:null,confirmedBattery:null,quotedSpec:'',priceReference:'',batteryCandidates:[],previousQuestion:null,
+        pendingVehicleConfirmation:{key:proposal.key,label:proposal.label,typo:true,detailModel:proposal.detailModel}};
+      return {state,messages:[copy.vehicleConfirm(proposal.label)],actions:[],chips:[],result:null,region:null,
+        vehicleRecognition:{status:'CLARIFICATION',reason:'VEHICLE_TYPO_CONFIRMATION',candidateCount:1}};
+    }
+  }
   if(quoteContext(previous)!==quoteContext(out.state))out.state.priceReference='';
   else if(mention?.candidates.length===1 && out.state.quotedSpec===mention.candidates[0] && out.messages.some(m=>m.includes(mention.candidates[0])))out.state.priceReference=mention.candidates[0];
   else if(pricePattern.test(text)&&out.state.lastIntent==='PRICE_QUESTION')out.state.priceReference='';
