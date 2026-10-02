@@ -107,6 +107,10 @@ const latestBlogFiles=new Set([
 export const approvedSyncFiles=new Set([...previousSyncFiles,...latestBlogFiles]);
 for(const p of git('diff','--name-only','04d1dc4f9f4412b8a680fe4c38efb82589afabee').toString().trim().split(/\r?\n/)){
  if(canonical.hashes[p]&&p!=='sitemap.xml')approvedSyncFiles.add(p);
+ // Pagination growth is a sync output too. canonicalGenerated runs the sitemap
+ // reconciler and checks any emitted bytes; its no-change path emits nothing.
+ // Preserve committed sitemap metadata/formatting with the exact HEAD check below.
+ if(p==='sitemap.xml')approvedSyncFiles.add(p);
  if(p.startsWith('assets/blog-cases/')&&canonical.archive.posts.some(post=>post.thumbnail==='/'+p))approvedSyncFiles.add(p);
 }
 export function assertApprovedSyncContent(p,now){

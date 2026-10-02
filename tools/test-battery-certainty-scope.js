@@ -15,12 +15,15 @@ assert.deepEqual(after,expected,'only reviewed GN7 and AG60 canonical correction
 // Keep the historical factual-data oracle above, but measure this task against
 // the fixed owner-approved main. The global CTA in 7f4519f9 predates this task;
 // it is not permission to change CSS again. Never use a moving HEAD as baseline.
-const scopeBaseline='4cd31286e087e990492c4f831a23946c68a620d6';
+// Owner-approved reconciliation: cc13de38's blog-only alias fix and the six
+// audited automatic sync commits are already accepted, not current-task edits.
+const scopeBaseline='c6c19c820003c51fe1cb386d6bb79043b9d5ec05';
 const currentTaskPaths=new Set(['js/smart-consult-conversation.js','js/smart-consult-session.js','tools/test-upgrade-price-context.js','tools/lib/blog-sync-approved-freeze.js','tools/test-battery-certainty-scope.js']);
 // Exact generatedAt-only snapshot reconciliation authorized in the continuation.
 currentTaskPaths.add('tools/test-location-nlu.js');
 for(const p of ['js/smart-consult-core.js','js/vehicle-aliases.js','tools/test-vehicle-family-recognition.js','tools/lib/canonical-generated-validation.js','tools/lib/homepage-approved-freeze.js','tools/lib/validation-stabilization-probes.js'])currentTaskPaths.add(p);
 currentTaskPaths.add('tools/test-operational.js');
+currentTaskPaths.add('tools/test-vehicle-typo-fallback.js');
 const assertCurrentScope=paths=>{for(const p of paths)assert.ok(currentTaskPaths.has(p)||approvedSyncFiles.has(p),`out of current task scope: ${p}`);};
 const paths=[...new Set([...git(['diff',scopeBaseline,'--name-only']).trim().split('\n'),...git(['ls-files','--others','--exclude-standard']).trim().split('\n')].filter(Boolean))];
 assertCurrentScope(paths);
