@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-01T10:26:15.540Z",
+  "syncedAt": "2026-10-02T08:52:29.449Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 2,
     "preservedPreviousPosts": 366,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 366,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 368,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 319,
-    "vehicleMatches": 298,
-    "detailMatches": 63,
-    "regionMatches": 250,
+    "manufacturerMatches": 321,
+    "vehicleMatches": 300,
+    "detailMatches": 64,
+    "regionMatches": 252,
     "neighborhoodMatches": 207,
-    "batteryMatches": 249,
+    "batteryMatches": 251,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,309 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 250,
-    "actualRegionMatches": 250,
+    "actualAreaMatches": 252,
+    "actualRegionMatches": 252,
     "actualNeighborhoodMatches": 207,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224426146933",
+      "title": "인천 남동구(남동공단) 2023년식 토레스 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224426146933",
+      "publishedAt": "2026-10-02",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224426146933.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MjlfMjY3/MDAxNzkwNjcwMjAxOTYz.jgMbH7nQaEP9HDXt_AGG8r7rTa1NhyARE5ybqb9vfv4g.Die_wL8k_uNrXEYO3KP33Mko76SQAOIkpwZSUGtW5vIg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 남동구 남동공단에서 2023년식 토레스 배터리 교체를 진행했습니다. 이번 차량은 최근 한 달 사이 배터리 방전으로 긴급출동을 두 번 이용한 뒤 교체를 결정하신 경우였습니다. 처음 한 번은 점프 후 다시 운행하면서 지켜보셨지만, 얼마 지나지 않아 같은 일이 다시 생기니 계속 긴급출동에 의존하기는 어렵다고 판단하신 상황이었습니다. 차량 정보를 확인해 델코 AGM70을 준비했고, 차량이 세워져 있는 곳으로 방문해 교체했습니다. --- 한 달에 두 번 방전됐다면 그냥 지나치기 어.......",
+      "tags": [
+        "인천배터리",
+        "인천자동차배터리",
+        "토레스배터리",
+        "토레스자동차배터리",
+        "토레스배터리가격",
+        "토레스배터리교체비용",
+        "토레스배터리교체",
+        "델코agm70",
+        "agm70",
+        "agm70가격",
+        "agm70교체비용",
+        "출장배터리",
+        "자동차배터리",
+        "출장배터리교체",
+        "자동차배터리교체",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "KG모빌리티",
+        "manufacturers": [
+          {
+            "id": "kgm",
+            "name": "KG모빌리티",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "토레스",
+        "vehicles": [
+          {
+            "manufacturerId": "kgm",
+            "manufacturerName": "KG모빌리티",
+            "vehicleName": "토레스",
+            "displayName": "토레스",
+            "urlPath": "/car-battery/kgm/torres.html",
+            "matchedAlias": "토레스",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kgm",
+            "manufacturerName": "KG모빌리티",
+            "vehicleName": "토레스",
+            "displayName": "토레스",
+            "urlPath": "/car-battery/kgm/torres.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "namdong-gu",
+          "regionName": "남동구",
+          "label": "인천 남동구",
+          "urlPath": "/area/incheon/namdong-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "namdong-gu",
+            "regionName": "남동구",
+            "label": "인천 남동구",
+            "urlPath": "/area/incheon/namdong-gu.html",
+            "matchedAlias": "남동구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kgm/torres.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/kgm.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/namdong-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "인천 남동구에서 토레스 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224426138679",
+      "title": "군포(재궁동) 2023년식 쉐보레 트랙스 크로스오버 델코 AGM70 출장배터리교체 가격 및 비용 안내｜첫 방전 후 배터리 교체 고민될 때",
+      "url": "https://blog.naver.com/kang10107/224426138679",
+      "publishedAt": "2026-10-02",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224426138679.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MjlfMTU0/MDAxNzkwNjY5ODM0NTQ3.X-3gYJq-zO2vKb3B-Vk63WaWzIbA332X0vUeZ0_FoE8g.o-xPTb5Ij8PTHQCpkDR0y3_DJT87sdIaUA-u_55rBd0g.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 군포시 재궁동에서 2023년식 쉐보레 트랙스 크로스오버 배터리 교체 작업을 진행했습니다. 이번 차량은 처음으로 배터리가 방전돼 점프 도움을 받은 뒤, 바로 교체해야 할지 조금 더 사용해도 될지 고민하셨던 경우입니다. 처음 방전을 겪으면 대부분 비슷한 생각을 하시게 됩니다. “한 번 방전된 건데 벌써 배터리를 바꿔야 하나?” 점프 후 시동이 다시 걸렸다고 바로 교체해야 하는 것은 아니지만, 왜 방전됐는지와 이후 배터리 상태를 같이 보는 것이 좋습니다. 차량에 적용되는 배터.......",
+      "tags": [
+        "군포출장배터리",
+        "군포자동차배터리",
+        "군포배터리",
+        "트랙스배터리",
+        "트랙스배터리교체",
+        "트랙스배터리가격",
+        "트랙스크로스오버배터리",
+        "트랙스크로스오버배터리가격",
+        "델코agm70",
+        "델코agm70교체",
+        "델코agm70가격",
+        "agm70",
+        "agm70교체",
+        "출장배터리",
+        "자동차배터리",
+        "출장배터리비용",
+        "자동차배터리비용",
+        "자동차배터리교체",
+        "배터리방전"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "쉐보레",
+        "manufacturers": [
+          {
+            "id": "chevrolet",
+            "name": "쉐보레"
+          }
+        ],
+        "vehicle": "트랙스",
+        "vehicles": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트랙스",
+            "displayName": "트랙스",
+            "urlPath": "/car-battery/chevrolet/trax.html",
+            "matchedAlias": "트랙스",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트랙스",
+            "displayVehicleName": "트랙스",
+            "label": "트랙스 크로스오버",
+            "slug": "trax-crossover",
+            "urlPath": "/car-battery/chevrolet/trax/trax-crossover.html",
+            "vehicleUrlPath": "/car-battery/chevrolet/trax.html",
+            "matchedAlias": "트랙스 크로스오버"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트랙스",
+            "displayName": "트랙스",
+            "urlPath": "/car-battery/chevrolet/trax.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gunpo-si",
+          "regionName": "군포시",
+          "label": "경기 군포시",
+          "urlPath": "/area/gyeonggi/gunpo-si.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gunpo-si",
+            "regionName": "군포시",
+            "label": "경기 군포시",
+            "urlPath": "/area/gyeonggi/gunpo-si.html",
+            "matchedAlias": "군포"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/chevrolet/trax.html"
+          ],
+          "details": [
+            "/car-battery/chevrolet/trax/trax-crossover.html"
+          ],
+          "manufacturers": [
+            "/car-battery/chevrolet.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gunpo-si.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "경기 군포시에서 트랙스 트랙스 크로스오버 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224426132732",
       "title": "관악구(낙성대동) 2020년식 BMW X6 G06 델코 AGM105 출장배터리교체 가격 및 비용 안내｜차 쓸 때마다 점프해야 할 때",
