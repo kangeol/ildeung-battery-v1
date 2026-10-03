@@ -4,7 +4,17 @@ import { resolveLocation } from "./smart-consult-location.js?v=location-v1";
 import { resolveVehicleText, buildAliasIndex, buildVehicleTypoIndex, proposeVehicleTypo } from "./vehicle-aliases.js";
 import { directPriceSpec, priceDescription, splitBatterySpec, brandIntent, withoutBrand, normalizeBatteryCode, catalogSpecMention } from "./smart-consult-prices.js?v=owner-delkor-v1";
 import { servicePolicyIntent } from "./smart-consult-policy.js?v=faq-v1";
-import { extendedPolicyReply, assuranceReply } from "./smart-consult-product-policy.js?v=owner-delkor-v1";
+import { extendedPolicyReply, assuranceReply as existingAssuranceReply } from "./smart-consult-product-policy.js?v=owner-delkor-v1";
+
+// Product condition is independent of vehicle fitment. Keep the canonical
+// assurance/date responses and reuse the approved no-used-products policy.
+function assuranceReply(text, policy) {
+  const s=String(text).normalize('NFKC').replace(/\s/g,'');
+  const condition=/(?:신품|정품|새거|새제품|중고|재생(?:품)?|리퍼)(?:배터리|밧데리|제품)?(?:은|는|이|가|만|도)?(?:입니까|인가요|고|맞|죠|아니|쓰|사용)|(?:중고|재생|리퍼).*신품/.test(s);
+  const existing=existingAssuranceReply(text,policy);
+  if(!condition||!policy?.operational?.NEW_PRODUCT)return existing;
+  return {messages:[...(existing?.messages||[]),policy.operational.NEW_PRODUCT],actions:existing?.actions||[]};
+}
 import { finalFaqReply, finalFaqIntent } from "./smart-consult-faq.js?v=authentic-v1";
 import { operationalPlan } from "./smart-consult-operational.js?v=spec-schedule-v1";
 import { PHONE_LABEL } from "./smart-consult-core.js?v=certainty-v1";
@@ -1116,7 +1126,7 @@ function conversationEstablished(previous, text, records, localities = [], price
     if(entities.fuel)context.push(entities.fuel);
     if(entities.engine)context.push(`${entities.engine}cc`);
     if(entities.drivetrain)context.push(entities.drivetrain);
-  }else if(entities.manufacturer)context.push(records.find(r=>r.manufacturerId===entities.manufacturer)?.manufacturerName||'');
+  }else if(entities.manufacturer&&(!assurance||pricePattern.test(text)))context.push(records.find(r=>r.manufacturerId===entities.manufacturer)?.manufacturerName||'');
   const pricing=pricePattern.test(text)&&(!assurance?.actions.includes('phone')||/가격|비용|견적|배터리값|밧데리값/.test(text));
   const productOnly=Boolean(token)&&!entities.matches.length&&!entities.manufacturer;
   let out={state,messages:[],chips:[],actions:[],result:null,region:null};
