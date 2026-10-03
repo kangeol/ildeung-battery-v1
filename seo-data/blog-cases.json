@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-03T09:00:38.557Z",
+  "syncedAt": "2026-10-03T09:24:54.206Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 1,
     "preservedPreviousPosts": 371,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 371,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 372,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 324,
-    "vehicleMatches": 303,
-    "detailMatches": 64,
-    "regionMatches": 255,
+    "manufacturerMatches": 325,
+    "vehicleMatches": 304,
+    "detailMatches": 65,
+    "regionMatches": 256,
     "neighborhoodMatches": 210,
-    "batteryMatches": 254,
+    "batteryMatches": 255,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,169 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 255,
-    "actualRegionMatches": 255,
+    "actualAreaMatches": 256,
+    "actualRegionMatches": 256,
     "actualNeighborhoodMatches": 210,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224426192198",
+      "title": "서초구 반포본동 2018년식 BMW 520D G30 델코 AGM105 출장배터리교체 가격 및 비용 안내｜긴급출동 교체",
+      "url": "https://blog.naver.com/kang10107/224426192198",
+      "publishedAt": "2026-10-03",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224426192198.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjA5MjlfMjM0/MDAxNzkwNjcxOTgyNjk2.g--zyJoGAIGSAPBksuI8HGkI9dyKc806ngw7pBjq5cIg.wrChzvqDSywBkGhyXj5WthkRX3m6AH61yNNqneILT98g.JPEG/bmw-bmw-520d-g30-agm105-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 서초구 반포본동에서 2018년식 BMW 520D G30 배터리 교체를 진행했습니다. 이번 고객님은 배터리가 완전히 방전돼 긴급출동을 이용하신 뒤 시동은 다시 살렸지만, 같은 일이 한 번 더 생기기 전에 교체하는 쪽으로 결정하셨습니다. 점프를 받고 나면 당장은 차량을 사용할 수 있기 때문에 “조금 더 타도 되지 않을까?” 고민하시는 분들이 많습니다. 하지만 출근이나 중요한 일정이 있는 날 다시 시동이 안 걸리면 불편이 훨씬 커지기 때문에, 이번에는 첫 방전 이후 미리 교체 일정을 잡.......",
+      "tags": [
+        "서초구배터리",
+        "서초구출장배터리",
+        "서초구자동차배터리",
+        "bmw배터리",
+        "bmw520d배터리",
+        "bmw520d배터리가격",
+        "bmw520d배터리교체비용",
+        "g30배터리",
+        "g30배터리가격",
+        "델코agm105",
+        "델코agm105가격",
+        "델코agm105교체비용",
+        "agm105교체",
+        "agm105",
+        "agm105가격",
+        "출장배터리교체",
+        "자동차배터리교체",
+        "출장배터리가격",
+        "자동차배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 5시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "BMW5",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayVehicleName": "BMW 5시리즈",
+            "label": "G30",
+            "slug": "g30",
+            "urlPath": "/car-battery/bmw/5-series/g30.html",
+            "vehicleUrlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "G30"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "seocho-gu",
+          "regionName": "서초구",
+          "label": "서울 서초구",
+          "urlPath": "/area/seoul/seocho-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "seocho-gu",
+            "regionName": "서초구",
+            "label": "서울 서초구",
+            "urlPath": "/area/seoul/seocho-gu.html",
+            "matchedAlias": "서초구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM105"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/5-series.html"
+          ],
+          "details": [
+            "/car-battery/bmw/5-series/g30.html"
+          ],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/seocho-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm105.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "서울 서초구에서 BMW 5시리즈 G30 AGM105 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224426173219",
       "title": "인천 계양구 효성동 2019년식 레니게이드 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
