@@ -25,6 +25,7 @@ for(const p of ['js/smart-consult-core.js','js/vehicle-aliases.js','tools/test-v
 currentTaskPaths.add('tools/test-operational.js');
 currentTaskPaths.add('tools/test-vehicle-typo-fallback.js');
 currentTaskPaths.add('tools/test-product-condition-policy.js');
+currentTaskPaths.add('tools/test-explicit-battery-price.js');
 const assertCurrentScope=paths=>{for(const p of paths)assert.ok(currentTaskPaths.has(p)||approvedSyncFiles.has(p),`out of current task scope: ${p}`);};
 const paths=[...new Set([...git(['diff',scopeBaseline,'--name-only']).trim().split('\n'),...git(['ls-files','--others','--exclude-standard']).trim().split('\n')].filter(Boolean))];
 assertCurrentScope(paths);

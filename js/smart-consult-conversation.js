@@ -735,6 +735,14 @@ function priceReferenceKind(text, catalog) {
   return null;
 }
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  // Observed price-word typo, not fuzzy spec/vehicle correction. Only a whole
+  // explicit catalog-backed price question may enter this normalization path.
+  if(selection===null&&/갸격/.test(text)){
+    const corrected=String(text).replace(/갸격/g,'가격');
+    const spec=directPriceSpec(withoutBrand(corrected,priceCatalog),priceCatalog,Boolean(brandIntent(corrected,priceCatalog)));
+    const code=spec?normalizeBatteryCode(spec,priceCatalog):'';
+    if(code&&(Object.hasOwn(priceCatalog?.prices||{},code)||priceCatalog?.unpriced?.includes(code)))text=corrected;
+  }
   const pending=previous.pendingVehicleConfirmation;
   if(selection===null&&pending?.typo===true&&(affirmative.test(text)||negative.test(text))){
     const target=buildVehicleTypoIndex(records).find(t=>t.eligible&&t.key===pending.key&&t.label===pending.label&&t.detailModel===(pending.detailModel||''));
