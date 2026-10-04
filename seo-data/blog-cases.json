@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-04T08:41:17.284Z",
+  "syncedAt": "2026-10-04T09:32:25.665Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 1,
-    "preservedPreviousPosts": 372,
+    "preservedPreviousPosts": 373,
     "duplicateRemoved": 49,
-    "thumbnailSuccess": 373,
+    "thumbnailSuccess": 374,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 326,
-    "vehicleMatches": 305,
-    "detailMatches": 66,
-    "regionMatches": 257,
+    "manufacturerMatches": 327,
+    "vehicleMatches": 306,
+    "detailMatches": 67,
+    "regionMatches": 258,
     "neighborhoodMatches": 211,
-    "batteryMatches": 256,
+    "batteryMatches": 257,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,166 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 257,
-    "actualRegionMatches": 257,
+    "actualAreaMatches": 258,
+    "actualRegionMatches": 258,
     "actualNeighborhoodMatches": 211,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224430086630",
+      "title": "인천 검단구 오류왕길동 2023년식 현대 아반떼CN7 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224430086630",
+      "publishedAt": "2026-10-04",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224430086630.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDNfMjkz/MDAxNzkwOTg1MTgwMDE1.2RyOwMcwyV5omY9YE8NtwnyCv_C_b0JWre6rbkSfNlEg.G6Gxl0bqKlugVM7U7SEWiHMXrAVd2omPw4BJmWaKOo8g.JPEG/image-cn7-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 검단구 오류왕길동에서 2023년식 현대 아반떼CN7 배터리 교체를 진행했습니다. 이번 차량은 평소 자주 운행하던 차가 아니라 한동안 세워둔 뒤 다시 사용하려고 시동을 걸었는데 배터리가 방전된 경우였습니다. 차를 오래 세워두면 주행이 없으니 배터리도 그대로 보존된다고 생각하기 쉽지만, 차량은 주차 중에도 일정한 전기를 사용합니다. 특히 장기간 운행하지 않은 뒤 처음 시동을 걸 때 문제가 생겼다면 단순히 점프만 받고 끝낼지, 현재 배터리 상태를 확인해 교체할지 판단해 보는.......",
+      "tags": [
+        "인천출장배터리",
+        "인천배터리",
+        "인천자동차배터리",
+        "검단출장배터리",
+        "오류동배터리",
+        "아반떼cn7배터리",
+        "아반떼cn7배터리가격",
+        "아반떼cn7배터리교체",
+        "아반떼cn7배터리교체비용",
+        "델코agm70",
+        "델코agm70출장",
+        "출장배터리",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리교체",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "아반떼",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "아반떼",
+            "displayName": "아반떼",
+            "urlPath": "/car-battery/hyundai/avante.html",
+            "matchedAlias": "아반떼",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "아반떼",
+            "displayVehicleName": "아반떼",
+            "label": "CN7",
+            "slug": "cn7",
+            "urlPath": "/car-battery/hyundai/avante/cn7.html",
+            "vehicleUrlPath": "/car-battery/hyundai/avante.html",
+            "matchedAlias": "CN7"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "아반떼",
+            "displayName": "아반떼",
+            "urlPath": "/car-battery/hyundai/avante.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "geomdan-gu",
+          "regionName": "검단구",
+          "label": "인천 검단구",
+          "urlPath": "/area/incheon/geomdan-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "geomdan-gu",
+            "regionName": "검단구",
+            "label": "인천 검단구",
+            "urlPath": "/area/incheon/geomdan-gu.html",
+            "matchedAlias": "검단구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/avante.html"
+          ],
+          "details": [
+            "/car-battery/hyundai/avante/cn7.html"
+          ],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/geomdan-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "인천 검단구에서 아반떼 CN7 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224430082079",
       "title": "과천시 부림동 2024년식 스포티지NQ5 델코 AGM80 출장배터리교체 가격 및 비용 안내｜주말 주차 후 월요일 아침 시동 안 걸릴 때",
