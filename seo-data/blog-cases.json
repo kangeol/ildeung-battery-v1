@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-03T14:24:10.728Z",
+  "syncedAt": "2026-10-04T08:41:17.284Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 1,
     "preservedPreviousPosts": 372,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 372,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 373,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 325,
-    "vehicleMatches": 304,
-    "detailMatches": 65,
-    "regionMatches": 256,
-    "neighborhoodMatches": 210,
-    "batteryMatches": 255,
+    "manufacturerMatches": 326,
+    "vehicleMatches": 305,
+    "detailMatches": 66,
+    "regionMatches": 257,
+    "neighborhoodMatches": 211,
+    "batteryMatches": 256,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,183 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 256,
-    "actualRegionMatches": 256,
-    "actualNeighborhoodMatches": 210,
+    "actualAreaMatches": 257,
+    "actualRegionMatches": 257,
+    "actualNeighborhoodMatches": 211,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224430082079",
+      "title": "과천시 부림동 2024년식 스포티지NQ5 델코 AGM80 출장배터리교체 가격 및 비용 안내｜주말 주차 후 월요일 아침 시동 안 걸릴 때",
+      "url": "https://blog.naver.com/kang10107/224430082079",
+      "publishedAt": "2026-10-04",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224430082079.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDNfNTcg/MDAxNzkwOTg0ODA1NjY4.BJeA07m6dD9CZPT0XS4qFu-0YoE_61YY6ItbwaQcLP0g.edDZ_MfUhKa4j_bs81V2zVno808vUyNShZJ4Bj4yjqQg.JPEG/image-nq5-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 과천시 부림동에서 2024년식 스포티지NQ5 배터리 교체를 진행했습니다. 이번 차량은 평일에는 별다른 문제 없이 사용하다가 주말 동안 차량을 세워둔 뒤 월요일 아침 시동이 걸리지 않아 교체를 결정한 경우였습니다. 출근 준비를 마치고 차량에 탔는데 갑자기 시동이 안 걸리면 시간도 급하고 당황하기 쉽습니다. 고객님도 주말 전까지는 특별한 이상을 크게 느끼지 못하셨지만, 이틀 정도 차량을 사용하지 않은 뒤 방전이 발생하면서 배터리 상태를 확인해 보기로 하셨습니다. 차량 정보.......",
+      "tags": [
+        "과천배터리",
+        "과천자동차배터리",
+        "과천출장배터리",
+        "부림동출장배터리",
+        "스포티지nq5배터리",
+        "스포티지배터리",
+        "스포티지배터리교체",
+        "스포티지배터리교체비용",
+        "스포티지nq5배터리교체",
+        "델코agm80",
+        "델코agm80교체",
+        "agm80",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리",
+        "출장배터리교체",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "스포티지",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "스포티지",
+            "displayName": "스포티지",
+            "urlPath": "/car-battery/kia/sportage.html",
+            "matchedAlias": "스포티지",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "스포티지",
+            "displayVehicleName": "스포티지",
+            "label": "NQ5",
+            "slug": "nq5",
+            "urlPath": "/car-battery/kia/sportage/nq5.html",
+            "vehicleUrlPath": "/car-battery/kia/sportage.html",
+            "matchedAlias": "NQ5"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "스포티지",
+            "displayName": "스포티지",
+            "urlPath": "/car-battery/kia/sportage.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gwacheon-si",
+          "regionName": "과천시",
+          "neighborhoodName": "부림동",
+          "label": "경기 과천시 부림동",
+          "urlPath": "/area/gyeonggi/gwacheon-si/burim-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwacheon-si",
+            "regionName": "과천시",
+            "label": "경기 과천시",
+            "urlPath": "/area/gyeonggi/gwacheon-si.html",
+            "matchedAlias": "과천시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwacheon-si",
+            "regionName": "과천시",
+            "name": "부림동",
+            "legalName": "경기도 과천시 부림동",
+            "label": "경기 과천시 부림동",
+            "urlPath": "/area/gyeonggi/gwacheon-si/burim-dong.html",
+            "matchedAlias": "부림동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/sportage.html"
+          ],
+          "details": [
+            "/car-battery/kia/sportage/nq5.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gwacheon-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/gwacheon-si/burim-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "과천시 부림동에서 스포티지 NQ5 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224426192198",
       "title": "서초구 반포본동 2018년식 BMW 520D G30 델코 AGM105 출장배터리교체 가격 및 비용 안내｜긴급출동 교체",
