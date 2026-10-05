@@ -744,6 +744,35 @@ export function conversationTurn(previous, text, records, localities = [], price
     if(code&&(Object.hasOwn(priceCatalog?.prices||{},code)||priceCatalog?.unpriced?.includes(code)))text=corrected;
   }
   const pending=previous.pendingVehicleConfirmation;
+  if(selection===null&&pending?.typo===true&&!/아니|다른\s*차|말고/.test(text)){
+    // Re-use the exact/unique typo resolver, never infer consent from a bare
+    // intent. Split only a supported follow-up, and retain it in the same turn.
+    const followup=text.search(/가격|비용|얼마|견적|교체|배터리|밧데리|규격|연료|출장|방문|브랜드|재고|델코|바르타/);
+    if(followup>0){
+      const reference=text.slice(0,followup).trim(),request=text.slice(followup);
+      const target=buildVehicleTypoIndex(records).find(t=>t.eligible&&t.key===pending.key&&t.label===pending.label&&t.detailModel===(pending.detailModel||''));
+      const exact=resolveVehicleText(reference,records,previous),whole=resolveVehicleText(text,records,previous);
+      const proposal=proposeVehicleTypo(reference,records,previous);
+      const entities=extractEntities(text,records,previous,localities);
+      const sameTypo=proposal?.key===pending.key&&proposal.detailModel===(pending.detailModel||'');
+      const sameCanonical=exact.matches.length===1&&exact.matches[0].key===pending.key
+        &&(!pending.detailModel||normalizeText(reference).includes(normalizeText(pending.detailModel)));
+      const foreignManufacturer=target&&Object.entries(MANUFACTURER_ALIASES).some(([id,aliases])=>id!==target.manufacturerId
+        &&aliases.some(alias=>normalizeText(reference).startsWith(normalizeText(alias))&&!normalizeText(target.label).startsWith(normalizeText(alias))));
+      const competingTypo=proposeVehicleTypo(request.replace(/가격|비용|얼마|견적|교체|배터리|밧데리|규격|연료|출장|방문|브랜드|재고|델코|바르타/g,' '),records);
+      if(target&&(sameTypo||sameCanonical)&&!entities.ambiguousYear&&!whole.recognitionFailure&&!whole.generationCodeDetected
+        &&!resolveVehicleText(request,records,previous).matches.length&&!foreignManufacturer&&!competingTypo){
+        const group=buildAliasIndex(records).groups.find(g=>g.key===target.key);
+        const year=entities.year||previous.year;
+        const rows=group.records.filter(r=>!target.detailModel||r.detailModel===target.detailModel);
+        if(year&&!rows.some(r=>yearMatches(r.year,year))){
+          return {state:{...previous,year,turnIndex:previous.turnIndex+1},messages:[`${target.label}의 입력하신 ${year}년식은 현재 차량 자료와 맞지 않습니다. 차량명과 연식을 다시 확인해 주세요.`],actions:[],chips:[],result:null,region:null};
+        }
+        const query=[group.manufacturerName,target.label,year?`${year}년식`:'',entities.fuel||previous.fuel,entities.engine?`${entities.engine}cc`:'',request].filter(Boolean).join(' ');
+        return conversationTurn({...previous,pendingVehicleConfirmation:null},query,records,localities,priceCatalog,servicePolicy);
+      }
+    }
+  }
   if(selection===null&&pending?.typo===true&&(affirmative.test(text)||negative.test(text))){
     const target=buildVehicleTypoIndex(records).find(t=>t.eligible&&t.key===pending.key&&t.label===pending.label&&t.detailModel===(pending.detailModel||''));
     const state={...previous,pendingVehicleConfirmation:null};
