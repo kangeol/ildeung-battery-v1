@@ -6,6 +6,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
+import {getKstCalendarDate} from './blog-case-selection.js';
 export const root=fileURLToPath(new URL('../../',import.meta.url));
 const lf=value=>value.toString().replace(/\r\n/g,'\n');
 export const contentHash=value=>createHash('sha256').update(lf(value)).digest('hex');
@@ -24,20 +25,29 @@ export function canonicalGenerated(){
  assertArchive(archive);
  const script=`
  import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {syncBuiltinESMExports} from 'node:module';import {createHash} from 'node:crypto';
- const read=fs.readFileSync.bind(fs),out=new Map(),log=console.log;console.log=()=>{};
+ import {observeGeneratedFiles} from './tools/lib/generated-file-writer.js';
+ import {readCanonicalArtifact} from './tools/lib/canonical-generated-artifact.js';
+ const read=fs.readFileSync.bind(fs),out=new Map(),unchanged=new Map(),log=console.log;console.log=()=>{};
  const archive=JSON.parse(read('seo-data/blog-cases.json','utf8')),D=Date;
  globalThis.Date=class extends D{constructor(...a){super(...(a.length?a:[archive.syncedAt]))}};
  const key=p=>path.resolve(p instanceof URL?fileURLToPath(p):p);
+ const authorized=p=>/^(car-battery|area|battery|work-cases)\\//.test(path.relative('.',p).replaceAll('\\\\','/')) && p.endsWith('.html') || ['index.html','sitemap.xml','seo-data/vehicle-detail-groups.json','seo-data/smart-consult-vehicles.json'].some(f=>p===path.resolve(f));
+ const stop=observeGeneratedFiles(event=>{if(!authorized(event.path))throw Error('Unauthorized canonical generated artifact: '+event.path);if(event.unchanged)unchanged.set(event.path,event.expected)});
  fs.writeFileSync=(p,c)=>out.set(key(p),Buffer.from(c));fs.mkdirSync=()=>{};
  fs.rmSync=p=>{if(!['area','battery','work-cases'].some(x=>key(p)===path.resolve(x)))throw Error('unexpected deletion '+p)};
  for(const name of ['unlinkSync','renameSync','copyFileSync','appendFileSync'])fs[name]=()=>{throw Error('unexpected mutation '+name)};
  const open=fs.openSync.bind(fs);fs.openSync=(p,flags,...args)=>{if(!['r','rs',0].includes(flags))throw Error('unexpected write-open '+p);return open(p,flags,...args)};
  fs.readFileSync=(p,o)=>{const v=out.get(key(p));return v?(typeof o==='string'||o?.encoding?v.toString():v):read(p,o)};syncBuiltinESMExports();
  for(const p of ['generate-vehicle-seo-pages','generate-area-seo-pages','generate-battery-seo-pages','generate-work-case-pages'])await import('./tools/'+p+'.js');
- const hashes={};for(const [p,v]of out)hashes[path.relative('.',p).replaceAll('\\\\','/')]=createHash('sha256').update(v.toString().replace(/\\r\\n/g,'\\n')).digest('hex');
- log(JSON.stringify({hashes,groups:out.get(path.resolve('seo-data/vehicle-detail-groups.json')).toString()}));
+ stop();
+ const paths=new Set([...out.keys(),...unchanged.keys()]);
+ const allowed=new Set([...paths].filter(authorized));
+ const artifact=p=>readCanonicalArtifact(p,{outputs:out,unchanged,authorized:allowed,read});
+ const hashes={};for(const p of paths)hashes[path.relative('.',p).replaceAll('\\\\','/')]=createHash('sha256').update(artifact(p).toString().replace(/\\r\\n/g,'\\n')).digest('hex');
+ log(JSON.stringify({hashes,groups:artifact(path.resolve('seo-data/vehicle-detail-groups.json')).toString(),unchangedCount:unchanged.size,emittedCount:out.size}));
  `;
- const result=JSON.parse(execFileSync(process.execPath,['--input-type=module','-e',script],{cwd:root,encoding:'utf8',maxBuffer:8e6}));
+ const result=JSON.parse(execFileSync(process.execPath,['--input-type=module','-e',script],{cwd:root,encoding:'utf8',maxBuffer:8e6,
+  env:{...process.env,BLOG_CASE_AS_OF:getKstCalendarDate(process.env.BLOG_CASE_AS_OF||new Date())}}));
  // Work-case generation leaves the unchanged homepage unwritten. Its non-blog
  // structure remains a separate static contract; a changed blog section is emitted.
  result.hashes['index.html']??=contentHash(fs.readFileSync(path.join(root,'index.html')));

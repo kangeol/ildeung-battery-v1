@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { submitBatches, caseContentFingerprint } from "./lib/indexnow-batches.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -147,7 +148,7 @@ function validateCanonicalUrl(value) {
       return { ok: false, reason: "not_https" };
     }
 
-    if (url.hostname !== INDEXNOW_HOST) {
+    if (url.origin !== `https://${INDEXNOW_HOST}` || url.search || url.hash || url.username || url.password) {
       return { ok: false, reason: "host_mismatch" };
     }
 
@@ -160,10 +161,6 @@ function validateCanonicalUrl(value) {
 function snapshotStatus(urlCount) {
   if (urlCount === 0) {
     return "SKIPPED_NO_CHANGE";
-  }
-
-  if (urlCount > MAX_RUNTIME_URLS) {
-    return "SKIPPED_ABNORMAL_CHANGESET";
   }
 
   return "DRY_RUN_READY";
@@ -196,7 +193,24 @@ function createSnapshot({ source, changes = [], urls = [] }) {
       return;
     }
 
-    const canonical = extractCanonical(fs.readFileSync(absolutePath, "utf8"));
+    const sourceText = fs.readFileSync(absolutePath, "utf8");
+    if (source === "git-diff") {
+      try {
+        const before = execFileSync("git", ["show", `HEAD:${filePath}`], { cwd: ROOT_DIR, encoding: "utf8", maxBuffer: 16 * 1024 * 1024 });
+        if (caseContentFingerprint(before) === caseContentFingerprint(sourceText)) {
+          skippedHtmlFiles.push({ path: filePath, reason: "unchanged-case-content" });
+          return;
+        }
+      } catch (error) {
+        if (status.includes("M")) throw error;
+      }
+    }
+    const canonical = extractCanonical(sourceText);
+    const expectedPath = filePath === "index.html" ? "/" : `/${filePath.replace(/index\.html$/, "")}`;
+    if (canonical !== `https://${INDEXNOW_HOST}${expectedPath}`) {
+      skippedHtmlFiles.push({ path: filePath, reason: "nonself_canonical" });
+      return;
+    }
 
     if (!canonical) {
       skippedHtmlFiles.push({ path: filePath, reason: "missing_canonical" });
@@ -397,7 +411,14 @@ function buildResult(snapshot, overrides = {}) {
     httpStatus: overrides.httpStatus ?? null,
     response: overrides.response ?? "",
     attempts: overrides.attempts ?? 0,
-    skippedHtmlFiles
+    skippedHtmlFiles,
+    batchCount: overrides.batchCount ?? Math.ceil(snapshot.urls.length / MAX_RUNTIME_URLS),
+    batches: overrides.batches || [],
+    totalChanged: changedHtmlFiles.length,
+    totalValidated: snapshot.urls.length,
+    attemptedUrls: overrides.attemptedUrls ?? 0,
+    failedBatches: overrides.failedBatches ?? 0,
+    omitted: overrides.omitted ?? 0
   };
 }
 
@@ -411,6 +432,8 @@ function logResult(result) {
   console.log(`Submitted URLs: ${result.submittedUrls}`);
   console.log(`HTTP status: ${result.httpStatus ?? "n/a"}`);
   console.log(`Status: ${result.status}`);
+  console.log(`Batches: ${result.batchCount}; failed: ${result.failedBatches}; omitted: ${result.omitted}`);
+  for (const batch of result.batches || []) console.log(`Batch ${batch.batch}: ${batch.urlCount} URLs ${batch.status} HTTP ${batch.httpStatus}`);
 
   if (result.skippedHtmlFiles.length) {
     console.log(`Skipped HTML files: ${result.skippedHtmlFiles.length}`);
@@ -458,21 +481,15 @@ async function main() {
     return;
   }
 
-  if (snapshot.urls.length > MAX_RUNTIME_URLS) {
-    const result = buildResult(snapshot, { mode: "submit", status: "SKIPPED_ABNORMAL_CHANGESET" });
-    writeJson(args.result, result);
-    logResult(result);
-    return;
-  }
-
-  const submitResult = await postIndexNow(snapshot.urls);
+  const submitResult = await submitBatches(snapshot.urls, postIndexNow);
   const result = buildResult(snapshot, {
     mode: "submit",
+    ...submitResult,
     status: submitResult.status,
     httpStatus: submitResult.httpStatus,
     response: submitResult.responseBody,
     attempts: submitResult.attempt,
-    submittedUrls: submitResult.status === "FAILED" ? 0 : snapshot.urls.length
+    submittedUrls: submitResult.submittedUrls
   });
 
   writeJson(args.result, result);

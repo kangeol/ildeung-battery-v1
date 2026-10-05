@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { writeGeneratedFile } from "./lib/generated-file-writer.js";
 import { launcherMarkup } from "./lib/smart-consult-launcher.js";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -26,8 +27,7 @@ function readJson(filePath) {
 }
 
 function writeFile(filePath, content) {
-  fs.mkdirSync(path.dirname(filePath), { recursive: true });
-  fs.writeFileSync(filePath, content, "utf8");
+  writeGeneratedFile(filePath, content);
 }
 
 function escapeHtml(value) {

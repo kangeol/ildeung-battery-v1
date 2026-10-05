@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { extractAgmCapacitiesFromText } from "./battery-capacity.js";
+import { getKstCalendarDate, getVehicleCaseSelection, getVehicleDetailCaseSelection, getNeighborhoodCaseSelection } from "./blog-case-selection.js";
 import {
   ROOT_DIR,
   normalizeLoose,
@@ -14,6 +15,7 @@ const DATA_DIR = path.join(ROOT_DIR, "data");
 const MANUFACTURERS_FILE = path.join(DATA_DIR, "manufacturers.json");
 const VEHICLE_DETAIL_GROUPS_FILE = path.join(ROOT_DIR, "seo-data", "vehicle-detail-groups.json");
 const SERVICE_AREAS_FILE = path.join(ROOT_DIR, "seo-data", "service-areas.json");
+const CASE_AS_OF = getKstCalendarDate(process.env.BLOG_CASE_AS_OF || new Date());
 
 const MANUFACTURER_ALIASES = {
   bmw: ["BMW", "비엠더블유"],
@@ -835,7 +837,14 @@ function findNeighborhoodMatches(text, regionMatches, index) {
     }
   });
 
-  return dedupeByPath(matched);
+  // A parent-region shorthand must not override an explicitly named child.
+  return dedupeByPath(matched).filter((item) => !matched.some((other) => (
+    other.urlPath !== item.urlPath && other.areaId === item.areaId && other.regionId === item.regionId &&
+    findLocationAlias(workText, other.name).length > 0 &&
+    !findLocationAlias(workText, item.name).length &&
+    regionMatches.some((region) => region.areaId === item.areaId && region.regionId === item.regionId &&
+      normalizeLoose(region.matchedAlias) === normalizeLoose(item.matchedAlias))
+  )));
 }
 
 function propagateActualAreas(regionMatches, neighborhoodMatches, index) {
@@ -1128,6 +1137,10 @@ function withScore(posts, scoreFn, limit = 50) {
 
 export function getBlogCasesForPage(posts, context, limit = 50) {
   const list = Array.isArray(posts) ? posts : [];
+  const asOf = context.asOf || CASE_AS_OF;
+  if (context.type === "vehicle") return getVehicleCaseSelection(list, context, asOf, limit);
+  if (context.type === "vehicle-detail") return getVehicleDetailCaseSelection(list, context, asOf, limit);
+  if (context.type === "neighborhood") return getNeighborhoodCaseSelection(list, context, asOf, limit);
 
   return withScore(list, (post) => {
     const facts = post.facts || {};
@@ -1198,22 +1211,12 @@ export function getBlogCasesForPage(posts, context, limit = 50) {
 
 export function getBlogCasesForVehicleDetailGroups(posts, context, limit = 50) {
   const list = Array.isArray(posts) ? posts : [];
-  const exact = withScore(list, (post) => {
-    const pages = post.facts?.matchedPages || {};
-    return (pages.details || []).includes(context.canonicalPath) ? 100 : 0;
-  }, limit);
-  const exactIds = new Set(exact.map((post) => post.id));
-  const related = withScore(list.filter((post) => !exactIds.has(post.id)), (post) => {
-    const facts = post.facts || {};
-    const hasVehicle = (facts.vehicles || []).some((vehicle) => (
-      vehicle.urlPath === context.vehiclePath && vehicle.specificity !== "detail"
-    ));
-    const hasDetailForSameVehicle = (facts.detailModels || []).some((detail) => detail.vehicleUrlPath === context.vehiclePath);
-
-    return hasVehicle && !hasDetailForSameVehicle ? 62 : 0;
-  }, limit);
-
-  return { exact, related };
+  const selected = getVehicleDetailCaseSelection(list, context, context.asOf || CASE_AS_OF, limit);
+  return {
+    selected,
+    exact: selected.filter((post) => post.caseSelection.exact),
+    related: selected.filter((post) => !post.caseSelection.exact)
+  };
 }
 
 export function pageExists(urlPath) {

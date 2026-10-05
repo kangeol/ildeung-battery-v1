@@ -10,6 +10,23 @@ const RUNTIME_ALLOWED_FILES = new Set([
 ]);
 
 const IMPLEMENTATION_ALLOWED_FILES = new Set([
+  "tools/lib/generated-file-writer.js",
+  "tools/lib/canonical-generated-artifact.js",
+  "tools/lib/canonical-generated-validation.js",
+  "tools/lib/smart-consult-page-regression.js",
+  "tools/test-canonical-generated-validation.js",
+  "tools/test-battery-pricing.js",
+  "tools/lib/blog-case-selection.js",
+  "tools/lib/blog-case-contexts.js",
+  "tools/lib/blog-case-protection.js",
+  "tools/lib/indexnow-batches.js",
+  "tools/lib/blog-case-matcher.js",
+  "tools/lib/blog-case-renderer.js",
+  "tools/test-blog-case-selection.js",
+  "tools/test-indexnow-batches.js",
+  "tools/test-blog-case-automation.js",
+  "tools/audit-blog-case-selection.js",
+  "tools/audit-blog-case-protection.js",
   "tools/lib/blog-case-utils.js",
   ".github/workflows/naver-blog-sync.yml",
   "css/work-cases.css",

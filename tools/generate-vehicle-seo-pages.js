@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { writeGeneratedFile } from "./lib/generated-file-writer.js";
 import { launcherMarkup } from "./lib/smart-consult-launcher.js";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -245,8 +246,7 @@ function readJson(filePath) {
 }
 
 function writeFile(filePath, content) {
-  fs.mkdirSync(path.dirname(filePath), { recursive: true });
-  fs.writeFileSync(filePath, content, "utf8");
+  writeGeneratedFile(filePath, content);
 }
 
 function writeJson(filePath, content) {
@@ -1173,6 +1173,12 @@ function renderDetailBlogCaseSections({ blogCases, manufacturer, vehicle, pageLa
     title: `${pageLabel} 실제 작업 사례`,
     description: `${pageLabel} 세부모델이 제목에 명확하게 확인된 네이버 블로그 작업 사례입니다.`
   });
+  if (groups.related.length) {
+    return renderBlogCaseSection(groups.selected, {
+      id: `blogCases-${manufacturer.id}-${vehicle.slug}-detail-exact`,
+      title: "실제 작업 사례"
+    });
+  }
   const relatedSection = renderBlogCaseSection(groups.related, {
     id: `blogCases-${manufacturer.id}-${vehicle.slug}-detail-related`,
     title: `${vehicle.name} 관련 작업 사례`,
@@ -1765,6 +1771,10 @@ function generate() {
     detailPages: generatedDetailPages.sort((a, b) => compareText(a.urlPath, b.urlPath)),
     ambiguousGroups: allAmbiguousGroups
   };
+  const previousReport = fs.existsSync(DETAIL_GROUPS_FILE) ? JSON.parse(fs.readFileSync(DETAIL_GROUPS_FILE, "utf8")) : null;
+  if (previousReport && JSON.stringify({ ...previousReport, generatedAt: "" }) === JSON.stringify({ ...detailReport, generatedAt: "" })) {
+    detailReport.generatedAt = previousReport.generatedAt;
+  }
   writeJson(DETAIL_GROUPS_FILE, detailReport);
   writeFile(path.join(SEO_DATA_DIR, "smart-consult-vehicles.json"), `${JSON.stringify({version:1,vehicles:consultEntries})}\n`);
 

@@ -2,7 +2,8 @@ import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { launcherMarkup } from "./smart-consult-launcher.js";
 import { gn7FactualDelta } from './gn7-factual-regression.js';
-import {approvedSyncFiles,postSyncBaseline} from './blog-sync-approved-freeze.js';
+import {approvedSyncFiles,postSyncBaseline,assertApprovedSyncContent} from './blog-sync-approved-freeze.js';
+import {maskCaseBlocks} from './blog-case-protection.js';
 
 // Audited, owner-authorized merge parent; never follow a moving remote implicitly.
 export const AUTHORIZED_MERGE = "e71c422ea433dcbbaeeb3dbc68fcc4c748ed3e6b";
@@ -24,8 +25,13 @@ export function assertConsultPage(actual, before, id) {
   assert.equal(html.split(launcherMarkup).length-1,1,`${id}: exactly one launcher`);
   assert.equal(html.includes("이 차량 스마트 상담하기"),false);
   assert.equal(lf(before).split(line).length-1,1,`${id}: production inline CTA`);
-  // Normalize only the two owner-authorized changes; preserve every other byte.
-  assert.equal(html.replace(launcherMarkup,""),gn7FactualDelta(lf(before).replace(line,""),id),`${id}: protected full page differs from authorized production baseline`);
+  const page=`car-battery/${id}.html`;
+  // Aging need not change the archive commit. Validate every current byte against
+  // canonical generation, then independently protect the historical non-case body.
+  const approved=approvedSyncFiles.has(page);
+  if(approved)assertApprovedSyncContent(page,html);
+  const protectedHtml=value=>approved?maskCaseBlocks(value):value;
+  assert.equal(protectedHtml(html.replace(launcherMarkup,"")),protectedHtml(gn7FactualDelta(lf(before).replace(line,""),id)),`${id}: protected full page differs from authorized production baseline`);
 }
 export function assertNegativeMutations(actual, before, id) {
   const html=lf(actual);

@@ -41,6 +41,8 @@ export function renderBlogCaseSection(posts, {
   }
 
   const totalPages = Math.ceil(cases.length / PAGE_SIZE);
+  const hasFallback = cases.some((post) => post.caseSelection && !post.caseSelection.exact);
+  if (hasFallback) description = "해당 차종·지역 사례와 관련 범주의 작업 사례를 함께 안내합니다. 각 카드의 실제 차량·작업지역·작성일을 확인해 주세요.";
   const filterChips = Array.isArray(filters) && filters.length > 1
     ? `
         <div class="blog-case-filters" role="group" aria-label="작업 사례 필터">
@@ -62,15 +64,19 @@ export function renderBlogCaseSection(posts, {
     const thumbnail = normalizeText(post.thumbnail) || BLOG_CASE_FALLBACK_IMAGE;
     const filterValues = uniqueValues(["all", ...(post.blogCaseFilters || [])]).join(" ");
     const hidden = page > 1 ? " hidden" : "";
+    const selection = post.caseSelection;
+    const selectionAttrs = selection ? ` data-case-id="${escapeHtml(post.id)}" data-case-tier="${selection.tier}" data-case-relation="${selection.relation}"` : "";
+    const relationLabels = { vehicle: "같은 차종의 작업 사례", manufacturer: "같은 브랜드의 최근 작업 사례", region: "같은 구·시의 작업 사례", area: "같은 광역지역의 최근 작업 사례" };
+    const relationLabel = hasFallback && selection && !selection.exact ? relationLabels[selection.relation] : "";
 
     return `
-          <article class="blog-case-card" data-blog-case-item data-blog-case-page="${page}" data-blog-case-filters="${escapeHtml(filterValues)}"${hidden}>
+          <article class="blog-case-card" data-blog-case-item data-blog-case-page="${page}" data-blog-case-filters="${escapeHtml(filterValues)}"${selectionAttrs}${hidden}>
             <a class="blog-case-link" href="${escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer">
               <span class="blog-case-thumb">
                 <img src="${escapeHtml(thumbnail)}" alt="${escapeHtml(titleText)}" loading="lazy" decoding="async" onerror="this.src='${BLOG_CASE_FALLBACK_IMAGE}'">
               </span>
               <span class="blog-case-body">
-                <strong>${escapeHtml(titleText)}</strong>
+                <strong>${escapeHtml(titleText)}</strong>${relationLabel ? `\n                <span class="blog-case-meta">${escapeHtml(relationLabel)}</span>` : ""}
                 <time datetime="${escapeHtml(post.publishedAt || "")}">${escapeHtml(dateLabel)}</time>
                 ${metadata ? `<span class="blog-case-meta">${escapeHtml(metadata)}</span>` : ""}
                 <span class="blog-case-summary">${escapeHtml(summary)}</span>

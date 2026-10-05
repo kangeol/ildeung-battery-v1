@@ -270,7 +270,8 @@ function localThumbnailExists(post) {
 function archiveForComparison(archive) {
   return {
     ...archive,
-    syncedAt: ""
+    syncedAt: "",
+    stats: null
   };
 }
 

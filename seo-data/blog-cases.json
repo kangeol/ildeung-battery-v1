@@ -881,9 +881,9 @@
           "areaName": "서울",
           "regionId": "songpa-gu",
           "regionName": "송파구",
-          "neighborhoodName": "송파동",
-          "label": "서울 송파구 송파동",
-          "urlPath": "/area/seoul/songpa-gu/songpa-dong.html"
+          "neighborhoodName": "거여동",
+          "label": "서울 송파구 거여동",
+          "urlPath": "/area/seoul/songpa-gu/geoyeo-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -906,17 +906,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "seoul",
-            "areaName": "서울",
-            "regionId": "songpa-gu",
-            "regionName": "송파구",
-            "name": "송파동",
-            "legalName": "서울특별시 송파구 송파동",
-            "label": "서울 송파구 송파동",
-            "urlPath": "/area/seoul/songpa-gu/songpa-dong.html",
-            "matchedAlias": "송파"
-          },
           {
             "areaId": "seoul",
             "areaName": "서울",
@@ -953,7 +942,6 @@
             "/area/seoul/songpa-gu.html"
           ],
           "neighborhoods": [
-            "/area/seoul/songpa-gu/songpa-dong.html",
             "/area/seoul/songpa-gu/geoyeo-dong.html"
           ],
           "batteries": [
@@ -968,7 +956,7 @@
           ]
         }
       },
-      "summary": "송파구 송파동에서 벤츠 GLB-클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "summary": "송파구 거여동에서 벤츠 GLB-클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -976,7 +964,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -9799,9 +9787,9 @@
           "areaName": "인천",
           "regionId": "bupyeong-gu",
           "regionName": "부평구",
-          "neighborhoodName": "부평동",
-          "label": "인천 부평구 부평동",
-          "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html"
+          "neighborhoodName": "산곡동",
+          "label": "인천 부평구 산곡동",
+          "urlPath": "/area/incheon/bupyeong-gu/sangok-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -9824,17 +9812,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "incheon",
-            "areaName": "인천",
-            "regionId": "bupyeong-gu",
-            "regionName": "부평구",
-            "name": "부평동",
-            "legalName": "인천광역시 부평구 부평동",
-            "label": "인천 부평구 부평동",
-            "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html",
-            "matchedAlias": "부평"
-          },
           {
             "areaId": "incheon",
             "areaName": "인천",
@@ -9871,7 +9848,6 @@
             "/area/incheon/bupyeong-gu.html"
           ],
           "neighborhoods": [
-            "/area/incheon/bupyeong-gu/bupyeong-dong.html",
             "/area/incheon/bupyeong-gu/sangok-dong.html"
           ],
           "batteries": [
@@ -9886,7 +9862,7 @@
           ]
         }
       },
-      "summary": "부평구 부평동에서 GV80 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "summary": "부평구 산곡동에서 GV80 AGM95 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -9894,7 +9870,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 2
       }
     },
@@ -21618,9 +21594,9 @@
           "areaName": "인천",
           "regionId": "bupyeong-gu",
           "regionName": "부평구",
-          "neighborhoodName": "부평동",
-          "label": "인천 부평구 부평동",
-          "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html"
+          "neighborhoodName": "산곡동",
+          "label": "인천 부평구 산곡동",
+          "urlPath": "/area/incheon/bupyeong-gu/sangok-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -21643,17 +21619,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "incheon",
-            "areaName": "인천",
-            "regionId": "bupyeong-gu",
-            "regionName": "부평구",
-            "name": "부평동",
-            "legalName": "인천광역시 부평구 부평동",
-            "label": "인천 부평구 부평동",
-            "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html",
-            "matchedAlias": "부평"
-          },
           {
             "areaId": "incheon",
             "areaName": "인천",
@@ -21687,7 +21652,6 @@
             "/area/incheon/bupyeong-gu.html"
           ],
           "neighborhoods": [
-            "/area/incheon/bupyeong-gu/bupyeong-dong.html",
             "/area/incheon/bupyeong-gu/sangok-dong.html"
           ],
           "batteries": [
@@ -21702,7 +21666,7 @@
           ]
         }
       },
-      "summary": "부평구 부평동에서 벤츠 GLC-클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "summary": "부평구 산곡동에서 벤츠 GLC-클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -21710,7 +21674,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -22373,9 +22337,9 @@
           "areaName": "인천",
           "regionId": "bupyeong-gu",
           "regionName": "부평구",
-          "neighborhoodName": "부평동",
-          "label": "인천 부평구 부평동",
-          "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html"
+          "neighborhoodName": "청천동",
+          "label": "인천 부평구 청천동",
+          "urlPath": "/area/incheon/bupyeong-gu/cheongcheon-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -22398,17 +22362,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "incheon",
-            "areaName": "인천",
-            "regionId": "bupyeong-gu",
-            "regionName": "부평구",
-            "name": "부평동",
-            "legalName": "인천광역시 부평구 부평동",
-            "label": "인천 부평구 부평동",
-            "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html",
-            "matchedAlias": "부평"
-          },
           {
             "areaId": "incheon",
             "areaName": "인천",
@@ -22438,7 +22391,6 @@
             "/area/incheon/bupyeong-gu.html"
           ],
           "neighborhoods": [
-            "/area/incheon/bupyeong-gu/bupyeong-dong.html",
             "/area/incheon/bupyeong-gu/cheongcheon-dong.html"
           ],
           "batteries": [
@@ -22453,7 +22405,7 @@
           ]
         }
       },
-      "summary": "부평구 부평동에서 AGM105 배터리 교체 실제 작업 사례입니다.",
+      "summary": "부평구 청천동에서 AGM105 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 0,
         "vehicle": 0,
@@ -22461,7 +22413,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -22914,9 +22866,9 @@
           "areaName": "경기",
           "regionId": "gwacheon-si",
           "regionName": "과천시",
-          "neighborhoodName": "과천동",
-          "label": "경기 과천시 과천동",
-          "urlPath": "/area/gyeonggi/gwacheon-si/gwacheon-dong.html"
+          "neighborhoodName": "부림동",
+          "label": "경기 과천시 부림동",
+          "urlPath": "/area/gyeonggi/gwacheon-si/burim-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -22939,17 +22891,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "gyeonggi",
-            "areaName": "경기",
-            "regionId": "gwacheon-si",
-            "regionName": "과천시",
-            "name": "과천동",
-            "legalName": "경기도 과천시 과천동",
-            "label": "경기 과천시 과천동",
-            "urlPath": "/area/gyeonggi/gwacheon-si/gwacheon-dong.html",
-            "matchedAlias": "과천"
-          },
           {
             "areaId": "gyeonggi",
             "areaName": "경기",
@@ -22981,7 +22922,6 @@
             "/area/gyeonggi/gwacheon-si.html"
           ],
           "neighborhoods": [
-            "/area/gyeonggi/gwacheon-si/gwacheon-dong.html",
             "/area/gyeonggi/gwacheon-si/burim-dong.html"
           ],
           "batteries": [
@@ -22996,7 +22936,7 @@
           ]
         }
       },
-      "summary": "과천시 과천동에서 벤츠 E클래스 AGM95 배터리 관련 실제 작업 사례입니다.",
+      "summary": "과천시 부림동에서 벤츠 E클래스 AGM95 배터리 관련 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -23004,7 +22944,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -24063,9 +24003,9 @@
           "areaName": "경기",
           "regionId": "gwangmyeong-si",
           "regionName": "광명시",
-          "neighborhoodName": "광명동",
-          "label": "경기 광명시 광명동",
-          "urlPath": "/area/gyeonggi/gwangmyeong-si/gwangmyeong-dong.html"
+          "neighborhoodName": "하안동",
+          "label": "경기 광명시 하안동",
+          "urlPath": "/area/gyeonggi/gwangmyeong-si/haan-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -24088,17 +24028,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "gyeonggi",
-            "areaName": "경기",
-            "regionId": "gwangmyeong-si",
-            "regionName": "광명시",
-            "name": "광명동",
-            "legalName": "경기도 광명시 광명동",
-            "label": "경기 광명시 광명동",
-            "urlPath": "/area/gyeonggi/gwangmyeong-si/gwangmyeong-dong.html",
-            "matchedAlias": "광명"
-          },
           {
             "areaId": "gyeonggi",
             "areaName": "경기",
@@ -24130,7 +24059,6 @@
             "/area/gyeonggi/gwangmyeong-si.html"
           ],
           "neighborhoods": [
-            "/area/gyeonggi/gwangmyeong-si/gwangmyeong-dong.html",
             "/area/gyeonggi/gwangmyeong-si/haan-dong.html"
           ],
           "batteries": [
@@ -24145,7 +24073,7 @@
           ]
         }
       },
-      "summary": "광명시 광명동에서 G80 AGM105 배터리 관련 실제 작업 사례입니다.",
+      "summary": "광명시 하안동에서 G80 AGM105 배터리 관련 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -24153,7 +24081,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -24614,9 +24542,9 @@
           "areaName": "서울",
           "regionId": "guro-gu",
           "regionName": "구로구",
-          "neighborhoodName": "구로동",
-          "label": "서울 구로구 구로동",
-          "urlPath": "/area/seoul/guro-gu/guro-dong.html"
+          "neighborhoodName": "개봉동",
+          "label": "서울 구로구 개봉동",
+          "urlPath": "/area/seoul/guro-gu/gaebong-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -24639,17 +24567,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "seoul",
-            "areaName": "서울",
-            "regionId": "guro-gu",
-            "regionName": "구로구",
-            "name": "구로동",
-            "legalName": "서울특별시 구로구 구로동",
-            "label": "서울 구로구 구로동",
-            "urlPath": "/area/seoul/guro-gu/guro-dong.html",
-            "matchedAlias": "구로"
-          },
           {
             "areaId": "seoul",
             "areaName": "서울",
@@ -24683,7 +24600,6 @@
             "/area/seoul/guro-gu.html"
           ],
           "neighborhoods": [
-            "/area/seoul/guro-gu/guro-dong.html",
             "/area/seoul/guro-gu/gaebong-dong.html"
           ],
           "batteries": [
@@ -24698,7 +24614,7 @@
           ]
         }
       },
-      "summary": "구로구 구로동에서 K7 올 뉴 K7 AGM70 배터리 관련 실제 작업 사례입니다.",
+      "summary": "구로구 개봉동에서 K7 올 뉴 K7 AGM70 배터리 관련 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -24706,7 +24622,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -24759,9 +24675,9 @@
           "areaName": "인천",
           "regionId": "bupyeong-gu",
           "regionName": "부평구",
-          "neighborhoodName": "부평동",
-          "label": "인천 부평구 부평동",
-          "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html"
+          "neighborhoodName": "부개동",
+          "label": "인천 부평구 부개동",
+          "urlPath": "/area/incheon/bupyeong-gu/bugae-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -24784,17 +24700,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "incheon",
-            "areaName": "인천",
-            "regionId": "bupyeong-gu",
-            "regionName": "부평구",
-            "name": "부평동",
-            "legalName": "인천광역시 부평구 부평동",
-            "label": "인천 부평구 부평동",
-            "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html",
-            "matchedAlias": "부평"
-          },
           {
             "areaId": "incheon",
             "areaName": "인천",
@@ -24828,7 +24733,6 @@
             "/area/incheon/bupyeong-gu.html"
           ],
           "neighborhoods": [
-            "/area/incheon/bupyeong-gu/bupyeong-dong.html",
             "/area/incheon/bupyeong-gu/bugae-dong.html"
           ],
           "batteries": [
@@ -24843,7 +24747,7 @@
           ]
         }
       },
-      "summary": "부평구 부평동에서 벤츠 E클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "summary": "부평구 부개동에서 벤츠 E클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -24851,7 +24755,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -25336,9 +25240,9 @@
           "areaName": "경기",
           "regionId": "anyang-si",
           "regionName": "안양시",
-          "neighborhoodName": "안양동",
-          "label": "경기 안양시 안양동",
-          "urlPath": "/area/gyeonggi/anyang-si/anyang-dong.html"
+          "neighborhoodName": "호계동",
+          "label": "경기 안양시 호계동",
+          "urlPath": "/area/gyeonggi/anyang-si/hogye-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -25361,17 +25265,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "gyeonggi",
-            "areaName": "경기",
-            "regionId": "anyang-si",
-            "regionName": "안양시",
-            "name": "안양동",
-            "legalName": "경기도 안양시 만안구 안양동",
-            "label": "경기 안양시 안양동",
-            "urlPath": "/area/gyeonggi/anyang-si/anyang-dong.html",
-            "matchedAlias": "안양"
-          },
           {
             "areaId": "gyeonggi",
             "areaName": "경기",
@@ -25406,7 +25299,6 @@
             "/area/gyeonggi/anyang-si.html"
           ],
           "neighborhoods": [
-            "/area/gyeonggi/anyang-si/anyang-dong.html",
             "/area/gyeonggi/anyang-si/hogye-dong.html"
           ],
           "batteries": [
@@ -25421,7 +25313,7 @@
           ]
         }
       },
-      "summary": "안양시 안양동에서 랜드로버 디스커버리 스포츠 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "summary": "안양시 호계동에서 랜드로버 디스커버리 스포츠 AGM80 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 2,
@@ -25429,7 +25321,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -25495,9 +25387,9 @@
           "areaName": "서울",
           "regionId": "yeongdeungpo-gu",
           "regionName": "영등포구",
-          "neighborhoodName": "영등포동",
-          "label": "서울 영등포구 영등포동",
-          "urlPath": "/area/seoul/yeongdeungpo-gu/yeongdeungpo-dong.html"
+          "neighborhoodName": "대림동",
+          "label": "서울 영등포구 대림동",
+          "urlPath": "/area/seoul/yeongdeungpo-gu/daerim-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -25520,17 +25412,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "seoul",
-            "areaName": "서울",
-            "regionId": "yeongdeungpo-gu",
-            "regionName": "영등포구",
-            "name": "영등포동",
-            "legalName": "서울특별시 영등포구 영등포동",
-            "label": "서울 영등포구 영등포동",
-            "urlPath": "/area/seoul/yeongdeungpo-gu/yeongdeungpo-dong.html",
-            "matchedAlias": "영등포"
-          },
           {
             "areaId": "seoul",
             "areaName": "서울",
@@ -25566,7 +25447,6 @@
             "/area/seoul/yeongdeungpo-gu.html"
           ],
           "neighborhoods": [
-            "/area/seoul/yeongdeungpo-gu/yeongdeungpo-dong.html",
             "/area/seoul/yeongdeungpo-gu/daerim-dong.html"
           ],
           "batteries": [
@@ -25581,7 +25461,7 @@
           ]
         }
       },
-      "summary": "영등포구 영등포동에서 쏘렌토 올 뉴 쏘렌토 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "summary": "영등포구 대림동에서 쏘렌토 올 뉴 쏘렌토 AGM95 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -25589,7 +25469,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -26663,17 +26543,6 @@
             "label": "서울 서초구 방배동",
             "urlPath": "/area/seoul/seocho-gu/bangbae-dong.html",
             "matchedAlias": "방배동"
-          },
-          {
-            "areaId": "seoul",
-            "areaName": "서울",
-            "regionId": "seocho-gu",
-            "regionName": "서초구",
-            "name": "서초동",
-            "legalName": "서울특별시 서초구 서초동",
-            "label": "서울 서초구 서초동",
-            "urlPath": "/area/seoul/seocho-gu/seocho-dong.html",
-            "matchedAlias": "서초"
           }
         ],
         "batteryModels": [
@@ -26699,8 +26568,7 @@
             "/area/seoul/seocho-gu.html"
           ],
           "neighborhoods": [
-            "/area/seoul/seocho-gu/bangbae-dong.html",
-            "/area/seoul/seocho-gu/seocho-dong.html"
+            "/area/seoul/seocho-gu/bangbae-dong.html"
           ],
           "batteries": [
             "/battery/agm/",
@@ -26722,7 +26590,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -27267,9 +27135,9 @@
           "areaName": "경기",
           "regionId": "gwangmyeong-si",
           "regionName": "광명시",
-          "neighborhoodName": "광명동",
-          "label": "경기 광명시 광명동",
-          "urlPath": "/area/gyeonggi/gwangmyeong-si/gwangmyeong-dong.html"
+          "neighborhoodName": "소하동",
+          "label": "경기 광명시 소하동",
+          "urlPath": "/area/gyeonggi/gwangmyeong-si/soha-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -27292,17 +27160,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "gyeonggi",
-            "areaName": "경기",
-            "regionId": "gwangmyeong-si",
-            "regionName": "광명시",
-            "name": "광명동",
-            "legalName": "경기도 광명시 광명동",
-            "label": "경기 광명시 광명동",
-            "urlPath": "/area/gyeonggi/gwangmyeong-si/gwangmyeong-dong.html",
-            "matchedAlias": "광명"
-          },
           {
             "areaId": "gyeonggi",
             "areaName": "경기",
@@ -27334,7 +27191,6 @@
             "/area/gyeonggi/gwangmyeong-si.html"
           ],
           "neighborhoods": [
-            "/area/gyeonggi/gwangmyeong-si/gwangmyeong-dong.html",
             "/area/gyeonggi/gwangmyeong-si/soha-dong.html"
           ],
           "batteries": [
@@ -27349,7 +27205,7 @@
           ]
         }
       },
-      "summary": "광명시 광명동에서 트레일블레이저 AGM70 배터리 관련 실제 작업 사례입니다.",
+      "summary": "광명시 소하동에서 트레일블레이저 AGM70 배터리 관련 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -27357,7 +27213,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -27900,17 +27756,6 @@
             "label": "서울 마포구 아현동",
             "urlPath": "/area/seoul/mapo-gu/ahyeon-dong.html",
             "matchedAlias": "아현동"
-          },
-          {
-            "areaId": "seoul",
-            "areaName": "서울",
-            "regionId": "mapo-gu",
-            "regionName": "마포구",
-            "name": "마포동",
-            "legalName": "서울특별시 마포구 마포동",
-            "label": "서울 마포구 마포동",
-            "urlPath": "/area/seoul/mapo-gu/mapo-dong.html",
-            "matchedAlias": "마포"
           }
         ],
         "batteryModels": [
@@ -27934,8 +27779,7 @@
             "/area/seoul/mapo-gu.html"
           ],
           "neighborhoods": [
-            "/area/seoul/mapo-gu/ahyeon-dong.html",
-            "/area/seoul/mapo-gu/mapo-dong.html"
+            "/area/seoul/mapo-gu/ahyeon-dong.html"
           ],
           "batteries": [
             "/battery/agm/",
@@ -27957,7 +27801,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -29104,9 +28948,9 @@
           "areaName": "서울",
           "regionId": "guro-gu",
           "regionName": "구로구",
-          "neighborhoodName": "구로동",
-          "label": "서울 구로구 구로동",
-          "urlPath": "/area/seoul/guro-gu/guro-dong.html"
+          "neighborhoodName": "오류동",
+          "label": "서울 구로구 오류동",
+          "urlPath": "/area/seoul/guro-gu/oryu-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -29129,17 +28973,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "seoul",
-            "areaName": "서울",
-            "regionId": "guro-gu",
-            "regionName": "구로구",
-            "name": "구로동",
-            "legalName": "서울특별시 구로구 구로동",
-            "label": "서울 구로구 구로동",
-            "urlPath": "/area/seoul/guro-gu/guro-dong.html",
-            "matchedAlias": "구로"
-          },
           {
             "areaId": "seoul",
             "areaName": "서울",
@@ -29173,7 +29006,6 @@
             "/area/seoul/guro-gu.html"
           ],
           "neighborhoods": [
-            "/area/seoul/guro-gu/guro-dong.html",
             "/area/seoul/guro-gu/oryu-dong.html"
           ],
           "batteries": [
@@ -29188,7 +29020,7 @@
           ]
         }
       },
-      "summary": "구로구 구로동에서 아반떼 CN7 AGM70 배터리 관련 실제 작업 사례입니다.",
+      "summary": "구로구 오류동에서 아반떼 CN7 AGM70 배터리 관련 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -29196,7 +29028,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -29719,9 +29551,9 @@
           "areaName": "경기",
           "regionId": "anyang-si",
           "regionName": "안양시",
-          "neighborhoodName": "안양동",
-          "label": "경기 안양시 안양동",
-          "urlPath": "/area/gyeonggi/anyang-si/anyang-dong.html"
+          "neighborhoodName": "석수동",
+          "label": "경기 안양시 석수동",
+          "urlPath": "/area/gyeonggi/anyang-si/seoksu-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -29744,17 +29576,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "gyeonggi",
-            "areaName": "경기",
-            "regionId": "anyang-si",
-            "regionName": "안양시",
-            "name": "안양동",
-            "legalName": "경기도 안양시 만안구 안양동",
-            "label": "경기 안양시 안양동",
-            "urlPath": "/area/gyeonggi/anyang-si/anyang-dong.html",
-            "matchedAlias": "안양"
-          },
           {
             "areaId": "gyeonggi",
             "areaName": "경기",
@@ -29784,7 +29605,6 @@
             "/area/gyeonggi/anyang-si.html"
           ],
           "neighborhoods": [
-            "/area/gyeonggi/anyang-si/anyang-dong.html",
             "/area/gyeonggi/anyang-si/seoksu-dong.html"
           ],
           "batteries": [
@@ -29799,7 +29619,7 @@
           ]
         }
       },
-      "summary": "안양시 안양동에서 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "summary": "안양시 석수동에서 AGM70 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 0,
         "vehicle": 0,
@@ -29807,7 +29627,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -30823,17 +30643,6 @@
             "label": "서울 서초구 반포동",
             "urlPath": "/area/seoul/seocho-gu/banpo-dong.html",
             "matchedAlias": "반포동"
-          },
-          {
-            "areaId": "seoul",
-            "areaName": "서울",
-            "regionId": "seocho-gu",
-            "regionName": "서초구",
-            "name": "서초동",
-            "legalName": "서울특별시 서초구 서초동",
-            "label": "서울 서초구 서초동",
-            "urlPath": "/area/seoul/seocho-gu/seocho-dong.html",
-            "matchedAlias": "서초"
           }
         ],
         "batteryModels": [
@@ -30857,8 +30666,7 @@
             "/area/seoul/seocho-gu.html"
           ],
           "neighborhoods": [
-            "/area/seoul/seocho-gu/banpo-dong.html",
-            "/area/seoul/seocho-gu/seocho-dong.html"
+            "/area/seoul/seocho-gu/banpo-dong.html"
           ],
           "batteries": [
             "/battery/agm/",
@@ -30880,7 +30688,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -31656,9 +31464,9 @@
           "areaName": "인천",
           "regionId": "bupyeong-gu",
           "regionName": "부평구",
-          "neighborhoodName": "부평동",
-          "label": "인천 부평구 부평동",
-          "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html"
+          "neighborhoodName": "십정동",
+          "label": "인천 부평구 십정동",
+          "urlPath": "/area/incheon/bupyeong-gu/sipjeong-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -31681,17 +31489,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "incheon",
-            "areaName": "인천",
-            "regionId": "bupyeong-gu",
-            "regionName": "부평구",
-            "name": "부평동",
-            "legalName": "인천광역시 부평구 부평동",
-            "label": "인천 부평구 부평동",
-            "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html",
-            "matchedAlias": "부평"
-          },
           {
             "areaId": "incheon",
             "areaName": "인천",
@@ -31723,7 +31520,6 @@
             "/area/incheon/bupyeong-gu.html"
           ],
           "neighborhoods": [
-            "/area/incheon/bupyeong-gu/bupyeong-dong.html",
             "/area/incheon/bupyeong-gu/sipjeong-dong.html"
           ],
           "batteries": [
@@ -31738,7 +31534,7 @@
           ]
         }
       },
-      "summary": "부평구 부평동에서 BMW X5 AGM105 배터리 관련 실제 작업 사례입니다.",
+      "summary": "부평구 십정동에서 BMW X5 AGM105 배터리 관련 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -31746,7 +31542,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },
@@ -32663,9 +32459,9 @@
           "areaName": "서울",
           "regionId": "guro-gu",
           "regionName": "구로구",
-          "neighborhoodName": "구로동",
-          "label": "서울 구로구 구로동",
-          "urlPath": "/area/seoul/guro-gu/guro-dong.html"
+          "neighborhoodName": "항동",
+          "label": "서울 구로구 항동",
+          "urlPath": "/area/seoul/guro-gu/hang-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -32688,17 +32484,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "seoul",
-            "areaName": "서울",
-            "regionId": "guro-gu",
-            "regionName": "구로구",
-            "name": "구로동",
-            "legalName": "서울특별시 구로구 구로동",
-            "label": "서울 구로구 구로동",
-            "urlPath": "/area/seoul/guro-gu/guro-dong.html",
-            "matchedAlias": "구로"
-          },
           {
             "areaId": "seoul",
             "areaName": "서울",
@@ -32730,7 +32515,6 @@
             "/area/seoul/guro-gu.html"
           ],
           "neighborhoods": [
-            "/area/seoul/guro-gu/guro-dong.html",
             "/area/seoul/guro-gu/hang-dong.html"
           ],
           "batteries": [
@@ -32742,7 +32526,7 @@
           ]
         }
       },
-      "summary": "구로구 구로동에서 미니 쿠퍼 배터리 교체 실제 작업 사례입니다.",
+      "summary": "구로구 항동에서 미니 쿠퍼 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -32750,7 +32534,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 0
       }
     },
@@ -33498,9 +33282,9 @@
           "areaName": "인천",
           "regionId": "bupyeong-gu",
           "regionName": "부평구",
-          "neighborhoodName": "부평동",
-          "label": "인천 부평구 부평동",
-          "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html"
+          "neighborhoodName": "삼산동",
+          "label": "인천 부평구 삼산동",
+          "urlPath": "/area/incheon/bupyeong-gu/samsan-dong.html"
         },
         "mentionedServiceAreas": [],
         "areas": [
@@ -33523,17 +33307,6 @@
           }
         ],
         "neighborhoods": [
-          {
-            "areaId": "incheon",
-            "areaName": "인천",
-            "regionId": "bupyeong-gu",
-            "regionName": "부평구",
-            "name": "부평동",
-            "legalName": "인천광역시 부평구 부평동",
-            "label": "인천 부평구 부평동",
-            "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html",
-            "matchedAlias": "부평"
-          },
           {
             "areaId": "incheon",
             "areaName": "인천",
@@ -33569,7 +33342,6 @@
             "/area/incheon/bupyeong-gu.html"
           ],
           "neighborhoods": [
-            "/area/incheon/bupyeong-gu/bupyeong-dong.html",
             "/area/incheon/bupyeong-gu/samsan-dong.html"
           ],
           "batteries": [
@@ -33584,7 +33356,7 @@
           ]
         }
       },
-      "summary": "부평구 부평동에서 쏘나타 LF AGM80 배터리 교체 실제 작업 사례입니다.",
+      "summary": "부평구 삼산동에서 쏘나타 LF AGM80 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,
@@ -33592,7 +33364,7 @@
         "actualLocation": 1,
         "mentionedServiceArea": 0,
         "region": 1,
-        "neighborhood": 2,
+        "neighborhood": 1,
         "battery": 1
       }
     },

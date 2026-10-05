@@ -51,6 +51,7 @@ jobs:
             TRIGGER_SCHEDULE="manual"
           fi
           START_SHA="$(git rev-parse HEAD)"
+          export BLOG_CASE_AS_OF="$(node --input-type=module -e "import {getKstCalendarDate} from './tools/lib/blog-case-selection.js'; console.log(getKstCalendarDate())")"
           BEFORE_POSTS="$(node -e "console.log((JSON.parse(require('fs').readFileSync('seo-data/blog-cases.json', 'utf8')).posts || []).length)")"
           BEFORE_NEWEST="$(node -e "const posts=JSON.parse(require('fs').readFileSync('seo-data/blog-cases.json','utf8')).posts||[]; console.log(posts.map(p=>p.publishedAt).filter(Boolean).sort().at(-1)||'')")"
           RSS_FETCHED="n/a"
@@ -137,6 +138,11 @@ jobs:
           NEW_POSTS="$(grep -E '^New posts:' "$SYNC_OUTPUT" | awk -F': ' '{print $2}' | tail -1 || true)"
           NEW_THUMBNAILS="$(grep -E '^New thumbnails:' "$SYNC_OUTPUT" | awk -F': ' '{print $2}' | tail -1 || true)"
           MATERIAL_CHANGED="$(grep -E '^Material archive changed:' "$SYNC_OUTPUT" | awk -F': ' '{print $2}' | tail -1 || true)"
+          SELECTION_OUTPUT="${RUNNER_TEMP:-/tmp}/blog-case-selection.txt"
+          node tools/audit-blog-case-selection.js --detect | tee "$SELECTION_OUTPUT"
+          SELECTION_CHANGED="$(grep -E '^Selection changed pages:' "$SELECTION_OUTPUT" | awk -F': ' '{print $2}')"
+          [[ "$SELECTION_CHANGED" =~ ^[0-9]+$ ]] || exit 1
+          echo "Selection changes (${BLOG_CASE_AS_OF} KST): ${SELECTION_CHANGED}" >> "$GITHUB_STEP_SUMMARY"
 
           if [[ -z "$AFTER_POSTS" || "$AFTER_POSTS" -lt "$BEFORE_POSTS" ]]; then
             echo "Post count decreased or could not be read: before=${BEFORE_POSTS}, after=${AFTER_POSTS}" >&2
@@ -153,7 +159,7 @@ jobs:
             exit 1
           fi
 
-          if [[ "${NEW_POSTS:-0}" == "0" && "${NEW_THUMBNAILS:-0}" == "0" && "$MATERIAL_CHANGED" != "yes" ]]; then
+          if [[ "${NEW_POSTS:-0}" == "0" && "${NEW_THUMBNAILS:-0}" == "0" && "$MATERIAL_CHANGED" != "yes" && "$SELECTION_CHANGED" == "0" ]]; then
             git restore --source="$START_SHA" -- seo-data/blog-cases.json
             echo "No new posts or thumbnails. Restored sync metadata-only changes before audit."
 
@@ -195,6 +201,8 @@ jobs:
 
           npm run build:blog-cases
           BUILD_STATUS="PASS"
+          npm run audit:blog-case-selection
+          npm run audit:blog-case-protection
 
           npm run audit:blog-cases
           BLOG_AUDIT_STATUS="PASS"
@@ -265,6 +273,7 @@ jobs:
             INDEXNOW_EXIT="$?"
             set -e
             load_indexnow_result "$INDEXNOW_SUBMIT_RESULT"
+            node -e 'const fs=require("fs");const r=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,"\nIndexNow batches: "+JSON.stringify({batchCount:r.batchCount,failedBatches:r.failedBatches,omitted:r.omitted,batches:r.batches})+"\n")' "$INDEXNOW_SUBMIT_RESULT"
 
             if [[ "$INDEXNOW_EXIT" -ne 0 ]]; then
               INDEXNOW_STATUS="FAILED"
