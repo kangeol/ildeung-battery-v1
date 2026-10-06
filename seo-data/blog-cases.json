@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-05T10:13:48.710Z",
+  "syncedAt": "2026-10-06T09:18:14.139Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 0,
+    "newPosts": 2,
     "preservedPreviousPosts": 377,
-    "duplicateRemoved": 50,
-    "thumbnailSuccess": 377,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 379,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 330,
-    "vehicleMatches": 309,
+    "manufacturerMatches": 332,
+    "vehicleMatches": 311,
     "detailMatches": 67,
-    "regionMatches": 261,
-    "neighborhoodMatches": 214,
-    "batteryMatches": 260,
+    "regionMatches": 263,
+    "neighborhoodMatches": 216,
+    "batteryMatches": 262,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,319 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 261,
-    "actualRegionMatches": 261,
-    "actualNeighborhoodMatches": 214,
+    "actualAreaMatches": 263,
+    "actualRegionMatches": 263,
+    "actualNeighborhoodMatches": 216,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224430112538",
+      "title": "수원 장안구 정자동 2016년식 미니쿠퍼 델코 AGM70 출장배터리교체 가격 및 비용 안내｜휴가 후 첫 운행에서 시동 안 걸릴 때",
+      "url": "https://blog.naver.com/kang10107/224430112538",
+      "publishedAt": "2026-10-06",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224430112538.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDNfNTQg/MDAxNzkwOTg3OTQzMjYz.1XGP5wdhcVHigD6MT-ERauXjwFMyS4RzhFWrtlDGovkg.5-7Lgq8zIU5Ct4olF1bA_Q1eom8T6VQpy6BpY7pbpDgg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 수원시 장안구 정자동에서 2016년식 미니쿠퍼 배터리 교체를 진행했습니다. 이번 고객님은 휴가 기간 동안 차량을 며칠 세워두었다가 돌아온 뒤 처음 운행하려는 순간 시동이 걸리지 않아 상담을 주셨습니다. 휴가를 가기 전까지는 크게 불편을 느끼지 못했지만, 일정 기간 차량을 사용하지 않은 뒤 첫 시동에서 바로 문제가 나타난 경우였습니다. 차량을 오래 세워두면 배터리도 그대로 쉬는 것처럼 느껴질 수 있지만, 주차 중에도 차량은 일정한 전기를 사용할 수 있습니다. 차량 정보를.......",
+      "tags": [
+        "수원출장배터리",
+        "수원자동차배터리",
+        "수원배터리",
+        "정자동출장배터리",
+        "미니쿠퍼배터리",
+        "미니쿠퍼출장배터리",
+        "미니쿠퍼배터리교체",
+        "출장배터리",
+        "자동차배터리",
+        "agm70",
+        "출장배터리교체",
+        "출장배터리가격",
+        "자동차배터리교체",
+        "배터리교체",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "미니",
+        "manufacturers": [
+          {
+            "id": "mini",
+            "name": "미니"
+          }
+        ],
+        "vehicle": "미니 쿠퍼",
+        "vehicles": [
+          {
+            "manufacturerId": "mini",
+            "manufacturerName": "미니",
+            "vehicleName": "쿠퍼",
+            "displayName": "미니 쿠퍼",
+            "urlPath": "/car-battery/mini/cooper.html",
+            "matchedAlias": "미니 쿠퍼",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "mini",
+            "manufacturerName": "미니",
+            "vehicleName": "쿠퍼",
+            "displayName": "미니 쿠퍼",
+            "urlPath": "/car-battery/mini/cooper.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "suwon-si",
+          "regionName": "수원시",
+          "neighborhoodName": "정자동",
+          "label": "경기 수원시 정자동",
+          "urlPath": "/area/gyeonggi/suwon-si/jeongja-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "suwon-si",
+            "regionName": "수원시",
+            "label": "경기 수원시",
+            "urlPath": "/area/gyeonggi/suwon-si.html",
+            "matchedAlias": "수원"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "suwon-si",
+            "regionName": "수원시",
+            "name": "정자동",
+            "legalName": "경기도 수원시 장안구 정자동",
+            "label": "경기 수원시 정자동",
+            "urlPath": "/area/gyeonggi/suwon-si/jeongja-dong.html",
+            "matchedAlias": "정자동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/mini/cooper.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/mini.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/suwon-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/suwon-si/jeongja-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "수원시 정자동에서 미니 쿠퍼 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224430108910",
+      "title": "양천구 목동 2011년식 랜드로버 프리랜더2 델코 AGM80 출장배터리교체 가격 및 비용 안내｜재택근무로 운행이 줄고 시동이 약해질 때",
+      "url": "https://blog.naver.com/kang10107/224430108910",
+      "publishedAt": "2026-10-06",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224430108910.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDNfMzgg/MDAxNzkwOTg3NjM0NjI1.ISmZDiAuTWDE1kALzbgI5kdqwqCN3MCvHwS85hZ0QSYg.oaQgGi3DZBbKyoILT1roN-hMSLiVubmeztAtHYveoEUg.JPEG/image-2-agm80-mok-dong-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 양천구 목동에서 2011년식 랜드로버 프리랜더2 배터리 교체를 진행했습니다. 이번 고객님은 재택근무가 늘면서 예전보다 차량을 타는 횟수가 크게 줄었다고 하셨습니다. 평소에는 출퇴근하면서 자연스럽게 운행 시간이 확보됐지만 최근에는 며칠씩 세워두는 일이 많아졌고, 어느 순간부터 시동을 걸 때 예전보다 힘이 약해진 느낌이 들기 시작했습니다. 완전히 방전된 뒤에 연락을 주신 경우가 아니라 “아직 시동은 걸리는데 점점 불안하다”는 상태에서 미리 교체 상담을 주신 사례입니.......",
+      "tags": [
+        "양천구배터리",
+        "양천구출장배터리",
+        "양천구자동차배터리",
+        "목동출장배터리",
+        "프리랜더2배터리",
+        "프리랜더2출장배터리",
+        "프리랜더2자동차배터리",
+        "델코agm80",
+        "델코agm80교체",
+        "델코agm80가격",
+        "agm80교체",
+        "출장배터리",
+        "자동차배터리",
+        "출장배터리교체",
+        "자동차배터리교체",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "랜드로버",
+        "manufacturers": [
+          {
+            "id": "landrover",
+            "name": "랜드로버"
+          }
+        ],
+        "vehicle": "랜드로버 프리랜더",
+        "vehicles": [
+          {
+            "manufacturerId": "landrover",
+            "manufacturerName": "랜드로버",
+            "vehicleName": "프리랜더",
+            "displayName": "랜드로버 프리랜더",
+            "urlPath": "/car-battery/landrover/freelander.html",
+            "matchedAlias": "랜드로버 프리랜더",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "landrover",
+            "manufacturerName": "랜드로버",
+            "vehicleName": "프리랜더",
+            "displayName": "랜드로버 프리랜더",
+            "urlPath": "/car-battery/landrover/freelander.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "yangcheon-gu",
+          "regionName": "양천구",
+          "neighborhoodName": "목동",
+          "label": "서울 양천구 목동",
+          "urlPath": "/area/seoul/yangcheon-gu/mok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yangcheon-gu",
+            "regionName": "양천구",
+            "label": "서울 양천구",
+            "urlPath": "/area/seoul/yangcheon-gu.html",
+            "matchedAlias": "양천구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yangcheon-gu",
+            "regionName": "양천구",
+            "name": "목동",
+            "legalName": "서울특별시 양천구 목동",
+            "label": "서울 양천구 목동",
+            "urlPath": "/area/seoul/yangcheon-gu/mok-dong.html",
+            "matchedAlias": "목동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/landrover/freelander.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/landrover.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/yangcheon-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/yangcheon-gu/mok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "양천구 목동에서 랜드로버 프리랜더 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224430105332",
       "title": "인천 연수구 옥련동 2021년식 기아 셀토스 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
