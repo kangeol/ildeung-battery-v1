@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-06T09:59:01.113Z",
+  "syncedAt": "2026-10-07T13:08:54.018Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 379,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 380,
+    "newPosts": 3,
+    "preservedPreviousPosts": 380,
+    "duplicateRemoved": 47,
+    "thumbnailSuccess": 383,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 333,
-    "vehicleMatches": 312,
+    "manufacturerMatches": 335,
+    "vehicleMatches": 314,
     "detailMatches": 68,
-    "regionMatches": 264,
-    "neighborhoodMatches": 217,
-    "batteryMatches": 263,
+    "regionMatches": 267,
+    "neighborhoodMatches": 220,
+    "batteryMatches": 266,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,450 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 264,
-    "actualRegionMatches": 264,
-    "actualNeighborhoodMatches": 217,
+    "actualAreaMatches": 267,
+    "actualRegionMatches": 267,
+    "actualNeighborhoodMatches": 220,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224432594434",
+      "title": "인천 미추홀구 관교동 2023년식 제네시스 G90 로케트 AGM105R 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224432594434",
+      "publishedAt": "2026-10-07",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224432594434.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDZfMTIg/MDAxNzkxMjQzNzQwNTYw.WNvWbWbyaVSlj2QSTRHowPJBKaP-gW6k1PJElhsnb8gg.3rreP6NcdO9jlXYmS9MEWj6ZQAMO772DITzyBZW-iA4g.JPEG/image-g90-agm105r-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 미추홀구 관교동에서 2023년식 제네시스 G90 배터리 교체를 진행했습니다. 이번 고객님은 차량을 오래 세워둔 경우가 아니라 가까운 거리만 반복해서 이동하고, 도착할 때마다 시동을 끄는 사용 패턴이 많았다고 하셨습니다. 하루에 여러 번 차량을 움직이기는 했지만 실제 주행 시간은 짧았고, 최근에는 시동 반응이 예전과 달라진 뒤 결국 방전까지 이어졌습니다. “차를 자주 탔는데도 왜 방전이 됐을까요?”라고 물어보셨는데요. 차량은 시동을 걸 때 배터리 전력을 사용하고, 운행하.......",
+      "tags": [
+        "인천출장배터리",
+        "인천배터리",
+        "인천자동차배터리",
+        "관교동출장배터리",
+        "제네시스배터리",
+        "제네시스g90배터리",
+        "g90배터리",
+        "g90배터리가격",
+        "제네시스배터리교체",
+        "agm105",
+        "agm105r",
+        "agm105r가격",
+        "일등밧데리",
+        "출장배터리교체",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "제네시스",
+        "manufacturers": [
+          {
+            "id": "genesis",
+            "name": "제네시스"
+          }
+        ],
+        "vehicle": "G90",
+        "vehicles": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "G90",
+            "displayName": "G90",
+            "urlPath": "/car-battery/genesis/g90.html",
+            "matchedAlias": "G90",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "G90",
+            "displayName": "G90",
+            "urlPath": "/car-battery/genesis/g90.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "michuhol-gu",
+          "regionName": "미추홀구",
+          "neighborhoodName": "관교동",
+          "label": "인천 미추홀구 관교동",
+          "urlPath": "/area/incheon/michuhol-gu/gwangyo-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "michuhol-gu",
+            "regionName": "미추홀구",
+            "label": "인천 미추홀구",
+            "urlPath": "/area/incheon/michuhol-gu.html",
+            "matchedAlias": "미추홀구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "michuhol-gu",
+            "regionName": "미추홀구",
+            "name": "관교동",
+            "legalName": "인천광역시 미추홀구 관교동",
+            "label": "인천 미추홀구 관교동",
+            "urlPath": "/area/incheon/michuhol-gu/gwangyo-dong.html",
+            "matchedAlias": "관교동"
+          }
+        ],
+        "batteryModels": [
+          "AGM105"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/genesis/g90.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/genesis.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/michuhol-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/michuhol-gu/gwangyo-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm105.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "미추홀구 관교동에서 G90 AGM105 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224432590723",
+      "title": "하남시 감일동 2015년식 BMW5GT 델코 AGM95 출장배터리교체 가격 및 비용 안내｜짧은 출퇴근만 반복하다 시동이 약해질 때",
+      "url": "https://blog.naver.com/kang10107/224432590723",
+      "publishedAt": "2026-10-07",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224432590723.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDZfMTI4/MDAxNzkxMjQzNDM2OTE4.crVv-vrOPKm6sGy8yjALaFp7IhvgwBdD-BKUb-17K_cg.qtiLzBKxJOAYXOzmHw6ioIrRVyUG98hj67hPTHwZYiog.JPEG/bmw-bmw5gt-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 하남시 감일동에서 2015년식 BMW5GT 배터리 교체를 진행했습니다. 이번 고객님은 매일 차량을 사용하고 계셨지만 운행 거리가 길지는 않았습니다. 집과 회사가 가까워 짧은 출퇴근을 반복하는 패턴이었는데, 최근 들어 아침 첫 시동이 예전보다 힘이 부족하게 느껴지고 한 번에 시원하게 걸리는 느낌도 줄었다고 하셨습니다. “매일 차를 타는데도 배터리가 약해질 수 있나요?”라고 물어보셨는데요. 차량을 얼마나 자주 타는지도 중요하지만, 한 번 운행할 때 얼마나 충분히 주행하느냐도.......",
+      "tags": [
+        "하남출장배터리",
+        "하남자동차배터리",
+        "하남배터리",
+        "감일동출장배터리",
+        "bmw배터리",
+        "bmw5gt배터리",
+        "bmw5gt배터리가격",
+        "5gt배터리",
+        "5gt배터리가격",
+        "델코agm95",
+        "agm95",
+        "델코agm95가격",
+        "agm95가격",
+        "출장배터리",
+        "자동차배터리",
+        "출장배터리교체",
+        "자동차배터리교체",
+        "자동차배터리방전",
+        "출장배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 5시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "BMW5",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "hanam-si",
+          "regionName": "하남시",
+          "neighborhoodName": "감일동",
+          "label": "경기 하남시 감일동",
+          "urlPath": "/area/gyeonggi/hanam-si/gamil-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "hanam-si",
+            "regionName": "하남시",
+            "label": "경기 하남시",
+            "urlPath": "/area/gyeonggi/hanam-si.html",
+            "matchedAlias": "하남시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "hanam-si",
+            "regionName": "하남시",
+            "name": "감일동",
+            "legalName": "경기도 하남시 감일동",
+            "label": "경기 하남시 감일동",
+            "urlPath": "/area/gyeonggi/hanam-si/gamil-dong.html",
+            "matchedAlias": "감일동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/5-series.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/hanam-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/hanam-si/gamil-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "하남시 감일동에서 BMW 5시리즈 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224432586462",
+      "title": "마포구 용강동 2016년식 링컨 MKX 2.7L 델코 AGM80 출장배터리교체 가격 및 비용 안내｜며칠 세워두면 시동이 약해질 때",
+      "url": "https://blog.naver.com/kang10107/224432586462",
+      "publishedAt": "2026-10-07",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224432586462.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDZfMjYx/MDAxNzkxMjQzMDk4MjUw.oRMV-JLm12odLHVEFk-ejsSMwH90NdBWqXO8mgH9QSkg.xp-Nrsoef_SnYnzSb13HUHPiJGSe6JB99Q7KgnTW0Qcg.JPEG/image-mkx-2-7l-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 마포구 용강동에서 2016년식 링컨 MKX 2.7L 배터리 교체를 진행했습니다. 이번 고객님은 차량을 매일 사용하는 편은 아니었고, 며칠 이상 세워둔 뒤 다시 타려고 하면 시동이 평소보다 약하게 느껴지는 일이 반복됐다고 하셨습니다. 완전히 방전돼 움직이지 못하는 상황은 아니었지만, 차량을 오래 세워둘 때마다 비슷한 증상이 나타나다 보니 더 이상 미루기보다는 배터리 상태를 확인하고 교체하는 쪽으로 결정하셨습니다. 차량 정보를 확인해 델코 AGM80을 준비했고, 용강동에서 출장 교.......",
+      "tags": [
+        "마포출장배터리",
+        "마포구자동차배터리",
+        "마포자동차배터리",
+        "용강동출장배터리",
+        "링컨mkz배터리",
+        "링컨배터리",
+        "mkz배터리",
+        "mkz배터리교체",
+        "델코agm80",
+        "agm80",
+        "델코agm80가격",
+        "agm80가격",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "출장배터리교체",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": null,
+        "manufacturers": [],
+        "vehicle": null,
+        "vehicles": [],
+        "detailModels": [],
+        "vehicleHierarchy": [],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "mapo-gu",
+          "regionName": "마포구",
+          "neighborhoodName": "용강동",
+          "label": "서울 마포구 용강동",
+          "urlPath": "/area/seoul/mapo-gu/yonggang-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "mapo-gu",
+            "regionName": "마포구",
+            "label": "서울 마포구",
+            "urlPath": "/area/seoul/mapo-gu.html",
+            "matchedAlias": "마포구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "mapo-gu",
+            "regionName": "마포구",
+            "name": "용강동",
+            "legalName": "서울특별시 마포구 용강동",
+            "label": "서울 마포구 용강동",
+            "urlPath": "/area/seoul/mapo-gu/yonggang-dong.html",
+            "matchedAlias": "용강동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [],
+          "details": [],
+          "manufacturers": [],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/mapo-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/mapo-gu/yonggang-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "마포구 용강동에서 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 0,
+        "vehicle": 0,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224432580366",
       "title": "인천 부평구 부개동 2023년식 현대 그랜저GN7 2.5 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
