@@ -25,6 +25,7 @@ const IMPLEMENTATION_ALLOWED_FILES = new Set([
   "tools/test-blog-case-selection.js",
   "tools/test-indexnow-batches.js",
   "tools/test-blog-case-automation.js",
+  "tools/test-blog-case-protection.js",
   "tools/audit-blog-case-selection.js",
   "tools/audit-blog-case-protection.js",
   "tools/lib/blog-case-utils.js",

@@ -6,6 +6,7 @@
     "test:indexnow-batches": "node tools/test-indexnow-batches.js",
     "audit:blog-case-selection": "node tools/audit-blog-case-selection.js",
     "audit:blog-case-protection": "node tools/audit-blog-case-protection.js",
+    "test:blog-case-protection": "node tools/test-blog-case-protection.js",
     "convert": "node tools/convert-excel-to-json.js",
     "generate:vehicle-seo": "node tools/generate-vehicle-seo-pages.js",
     "generate:vehicle-thumbnails": "node tools/generate-vehicle-thumbnails.js",
