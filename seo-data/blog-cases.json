@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-07T13:08:54.018Z",
+  "syncedAt": "2026-10-08T09:22:29.858Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 3,
-    "preservedPreviousPosts": 380,
+    "preservedPreviousPosts": 383,
     "duplicateRemoved": 47,
-    "thumbnailSuccess": 383,
+    "thumbnailSuccess": 386,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 335,
-    "vehicleMatches": 314,
-    "detailMatches": 68,
-    "regionMatches": 267,
-    "neighborhoodMatches": 220,
-    "batteryMatches": 266,
+    "manufacturerMatches": 338,
+    "vehicleMatches": 317,
+    "detailMatches": 69,
+    "regionMatches": 270,
+    "neighborhoodMatches": 222,
+    "batteryMatches": 269,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,480 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 267,
-    "actualRegionMatches": 267,
-    "actualNeighborhoodMatches": 220,
+    "actualAreaMatches": 270,
+    "actualRegionMatches": 270,
+    "actualNeighborhoodMatches": 222,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224432605787",
+      "title": "인천 서해구 가좌동 2022년식 기아 스포티지NQ5 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224432605787",
+      "publishedAt": "2026-10-08",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224432605787.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDZfMjQ4/MDAxNzkxMjQ0NjQxNzUx.lH-93idalQ2E8y6NhdFM2A4K9nPqIoNWKwNjo9Wgw_Qg.CpAhzgeCnUm2GgIwm6slE7WP1tQddzWIAvMtIUyLx0Qg.JPEG/image-nq5-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 서해구 가좌동에서 2022년식 기아 스포티지NQ5 배터리 교체를 진행했습니다. 이번 고객님은 차량을 아예 세워두는 편은 아니었습니다. 장보기나 아이 픽업, 동네 안에서 볼일을 보는 정도로 거의 매일 차를 사용하셨는데, 한 번에 이동하는 거리가 짧다 보니 시동을 걸었다가 금방 끄는 일이 반복됐다고 합니다. 최근에는 첫 시동이 예전처럼 가볍지 않고 한 박자 힘이 부족한 느낌이 계속돼 배터리를 확인해보기로 하셨습니다. “매일 타는데 배터리가 약해질 수도 있나요?”라고 물어보.......",
+      "tags": [
+        "인천배터리",
+        "서해구배터리",
+        "서해구출장배터리",
+        "가좌동배터리",
+        "가좌동출장배터리",
+        "가좌동자동차배터리",
+        "스포티지nq5배터리",
+        "nq5배터리가격",
+        "스포티지nq5배터리교체",
+        "스포티지nq5배터리비용",
+        "델코agm70",
+        "델코agm70가격",
+        "agm70가격",
+        "agm70교체비용",
+        "출장배터리교체",
+        "자동차배터리",
+        "일등밧데리",
+        "출장배터리교체가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "스포티지",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "스포티지",
+            "displayName": "스포티지",
+            "urlPath": "/car-battery/kia/sportage.html",
+            "matchedAlias": "스포티지",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "스포티지",
+            "displayVehicleName": "스포티지",
+            "label": "NQ5",
+            "slug": "nq5",
+            "urlPath": "/car-battery/kia/sportage/nq5.html",
+            "vehicleUrlPath": "/car-battery/kia/sportage.html",
+            "matchedAlias": "NQ5"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "스포티지",
+            "displayName": "스포티지",
+            "urlPath": "/car-battery/kia/sportage.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "seohae-gu",
+          "regionName": "서해구",
+          "neighborhoodName": "가좌동",
+          "label": "인천 서해구 가좌동",
+          "urlPath": "/area/incheon/seohae-gu/gajwa-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "seohae-gu",
+            "regionName": "서해구",
+            "label": "인천 서해구",
+            "urlPath": "/area/incheon/seohae-gu.html",
+            "matchedAlias": "서해구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "seohae-gu",
+            "regionName": "서해구",
+            "name": "가좌동",
+            "legalName": "인천광역시 서해구 가좌동",
+            "label": "인천 서해구 가좌동",
+            "urlPath": "/area/incheon/seohae-gu/gajwa-dong.html",
+            "matchedAlias": "가좌동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/sportage.html"
+          ],
+          "details": [
+            "/car-battery/kia/sportage/nq5.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/seohae-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/seohae-gu/gajwa-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "서해구 가좌동에서 스포티지 NQ5 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224432602308",
+      "title": "성남시 수정구 수진동 2021년식 현대 더뉴싼타페 델코 AGM80 출장배터리교체 가격 및 비용 안내｜등하원 위주 짧은 거리 운행 후 시동이 약할 때",
+      "url": "https://blog.naver.com/kang10107/224432602308",
+      "publishedAt": "2026-10-08",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224432602308.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDZfMjc2/MDAxNzkxMjQ0Mzc1NTIy.AQpVKvHTNIotwpbkH-XMYrrn7doOnIFcaj-D4lUmJ2gg.-rnEHl_JSOvrd8BydKQTBK33JUzXSQiCIj7VpCQACu4g.JPEG/image-image-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 성남시 수정구 수진동에서 2021년식 현대 더뉴싼타페 배터리 교체를 진행했습니다. 이번 고객님은 아이 등하원이나 가까운 장보기처럼 짧은 거리만 반복해서 차량을 사용하고 계셨습니다. 차를 거의 매일 쓰고 있으니 배터리 문제는 없을 거라고 생각하셨지만, 최근 들어 첫 시동이 예전보다 힘이 부족하게 느껴지는 날이 생겼고 결국 배터리 상태를 확인해보기로 하셨습니다. 차량을 자주 타는 것과 충분히 운행하는 것은 조금 다른 이야기입니다. 짧게 이동하고 시동을 끄는 일이 계속되.......",
+      "tags": [
+        "성남배터리",
+        "성남출장배터리",
+        "성남자동차배터리",
+        "수진동출장배터리",
+        "더뉴싼타페배터리",
+        "더뉴싼타페배터리교체",
+        "더뉴싼타페배터리가격",
+        "델코agm80",
+        "델코agm80가격",
+        "agm80가격",
+        "출장배터리교체",
+        "출장배터리가격",
+        "자동차배터리",
+        "자동차배터리가격",
+        "일등밧데리",
+        "배터리방전"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "싼타페",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "싼타페",
+            "displayName": "싼타페",
+            "urlPath": "/car-battery/hyundai/santafe.html",
+            "matchedAlias": "싼타페",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "싼타페",
+            "displayName": "싼타페",
+            "urlPath": "/car-battery/hyundai/santafe.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "seongnam-si",
+          "regionName": "성남시",
+          "neighborhoodName": "수진동",
+          "label": "경기 성남시 수진동",
+          "urlPath": "/area/gyeonggi/seongnam-si/sujin-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "seongnam-si",
+            "regionName": "성남시",
+            "label": "경기 성남시",
+            "urlPath": "/area/gyeonggi/seongnam-si.html",
+            "matchedAlias": "성남시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "seongnam-si",
+            "regionName": "성남시",
+            "name": "수진동",
+            "legalName": "경기도 성남시 수정구 수진동",
+            "label": "경기 성남시 수진동",
+            "urlPath": "/area/gyeonggi/seongnam-si/sujin-dong.html",
+            "matchedAlias": "수진동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/santafe.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/seongnam-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/seongnam-si/sujin-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "성남시 수진동에서 싼타페 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224432597924",
+      "title": "용산구 청파동 2023년식 폭스바겐 티구안 올스페이스 바르타 AGM70 출장배터리교체 가격 및 비용 안내｜차는 안 타고 시동만 가끔 걸었는데 방전될 때",
+      "url": "https://blog.naver.com/kang10107/224432597924",
+      "publishedAt": "2026-10-08",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224432597924.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDZfMTk3/MDAxNzkxMjQ0MDI5NjU3.XN6UiJjDApyG_rlx220IVLfJNetFS7nujg8As_qQmzUg.IXkc9Ssyuu00e6XH7qwsdRvu1s7XBoZukZTsWi0_qWog.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 용산구 청파동에서 2023년식 폭스바겐 티구안 올스페이스 배터리 교체를 진행했습니다. 이번 고객님은 차량을 한동안 거의 운행하지 않았지만 배터리가 걱정돼 중간중간 시동만 걸어두셨다고 합니다. 그래서 어느 정도는 배터리가 충전되고 있을 거라고 생각하셨는데, 막상 차량을 다시 이용하려는 날 시동이 걸리지 않으면서 상담을 주셨습니다. “가끔 시동은 켜줬는데 왜 방전됐을까요?”라고 궁금해하셨는데요. 시동을 잠깐 걸어두는 것과 실제로 차량을 운행하는 것은 배터리 입장에.......",
+      "tags": [
+        "용산출장배터리",
+        "용산자동차배터리",
+        "용산구배터리",
+        "청파동출장배터리",
+        "폭스바겐배터리",
+        "티구안배터리",
+        "티구안배터리가격",
+        "티구안올스페이스배터리",
+        "티구안올스페이스배터리교체",
+        "바르타배터리",
+        "바르타agm70",
+        "바르타agm70실버",
+        "바르타agm70배터리",
+        "바르타agm70가격",
+        "agm70가격",
+        "출장배터리",
+        "출장배터리교체가격",
+        "출장배터리교체비용",
+        "자동차배터리",
+        "자동차배터리교체비용",
+        "자동차배터리방전"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "폭스바겐",
+        "manufacturers": [
+          {
+            "id": "volkswagen",
+            "name": "폭스바겐"
+          }
+        ],
+        "vehicle": "폭스바겐 티구안",
+        "vehicles": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "티구안",
+            "displayName": "폭스바겐 티구안",
+            "urlPath": "/car-battery/volkswagen/tiguan.html",
+            "matchedAlias": "폭스바겐 티구안",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "티구안",
+            "displayName": "폭스바겐 티구안",
+            "urlPath": "/car-battery/volkswagen/tiguan.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "yongsan-gu",
+          "regionName": "용산구",
+          "label": "서울 용산구",
+          "urlPath": "/area/seoul/yongsan-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yongsan-gu",
+            "regionName": "용산구",
+            "label": "서울 용산구",
+            "urlPath": "/area/seoul/yongsan-gu.html",
+            "matchedAlias": "용산구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/volkswagen/tiguan.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/volkswagen.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/yongsan-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "서울 용산구에서 폭스바겐 티구안 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224432594434",
       "title": "인천 미추홀구 관교동 2023년식 제네시스 G90 로케트 AGM105R 출장배터리교체 가격 및 비용 안내｜일등밧데리",
