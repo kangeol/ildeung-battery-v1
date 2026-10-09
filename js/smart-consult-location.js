@@ -48,6 +48,43 @@ function indexFor(localities) {
   return cache.get(localities);
 }
 
+// An index of supported places is not an index of every address. Keep explicit
+// administrative words that did NOT match it, rather than dropping them and
+// inheriting the coverage of a parent province.
+function unlistedAddress(text, tokens, localities) {
+  const source=text.normalize('NFKC').toLowerCase();
+  const compact=normalizeText(source);
+  const provinces=indexFor(localities).filter(hit=>hit.item.level==='province'
+    && compact.startsWith(hit.alias)).sort((a,b)=>b.alias.length-a.alias.length);
+  const spans=[...tokens.map(hit=>({start:hit.start,end:hit.end}))];
+  if(provinces.length)spans.push({start:0,end:provinces[0].alias.length});
+  let offset=0;
+  const rest=Array.from(source).map(char=>{
+    const length=normalizeText(char).length;
+    const covered=length&&spans.some(span=>offset>=span.start&&offset<span.end);
+    offset+=length;return covered?' ':char;
+  }).join('');
+  const context=spans.length>0||/(?:지역|주소|위치)(?:은|는|이)?\s/.test(source);
+  const words=[...rest.matchAll(/(?:^|\s)([가-힣]{2,}?(?:시|군|구|읍|면|동|리))(?=$|\s|[?.!,]|(?:입니다|이에요|예요|인데|에서|으로|출장|방문))/g)];
+  const compactChild=provinces.length&&!/^(?:입니다|인데|이고|이구|이에요|예요|에요|이야|이요|에서)/.test(rest.trim())
+    && rest.trim().match(/^([가-힣]{2,}?[시군구])(?=[가-힣]{2,6}(?:읍|면|동|리)?(?:$|\s|[?.!]))/);
+  if(compactChild)words.unshift(compactChild);
+  // A complete compact administrative chain is geographic evidence even when
+  // no supported province occurs (e.g. an unlisted city followed by a township).
+  const administrativeChain=rest.trim().match(/^([가-힣]{2,}?[시군구])(?=[가-힣]{2,6}(?:읍|면|동|리)(?:$|\s|[?.!]))/);
+  if(administrativeChain)words.unshift(administrativeChain);
+  // Service/grammar words and car names ending in 리/동 are not addresses.
+  const ordinary=/^(?:배터리|밧데리|방문|출장|교체|예약|구매|정비|수리|관리|처리|거리|소리|미리|빨리|반드시)|(?:하면|라면|다면|으면|는데|인지)$/;
+  const unknown=words.map(match=>match[1]).find(word=>!ordinary.test(word)
+    && (/[시군구]$/.test(word)||context));
+  if(unknown)return {region:null,locationCandidates:[],unsupportedLocation:/[시군구]$/.test(unknown),
+    unresolvedLocation:!/[시군구]$/.test(unknown),locationName:unknown,
+    locationState:/[시군구]$/.test(unknown)?'EXPLICIT_UNSUPPORTED_AREA':'UNRESOLVED_SPECIFIC_AREA'};
+  if(provinces.length&&!tokens.length)return {region:null,locationScope:provinces[0].item,
+    unresolvedLocation:true,locationCandidates:[],locationState:'UNRESOLVED_SPECIFIC_AREA'};
+  return null;
+}
+
 export function resolveLocation(text, localities, previous = null, pending = null) {
   const normalized = normalizeText(text);
   const boundaries = new Set([0]);
@@ -79,7 +116,8 @@ export function resolveLocation(text, localities, previous = null, pending = nul
     const before = normalized.slice(0,hit.start);
     const after = normalized.slice(hit.end);
     const left = !before || /(?:아니|지역은|지역|서울|경기|인천|이고|인데|년식|년식인데|년식이고)$/.test(before) || hits.some(other=>other.end===hit.start) || /\d$/.test(before);
-    const right = safeEnd(hit.end) || hits.some(other=>other.start===hit.end && safeEnd(other.end));
+    const right = safeEnd(hit.end) || hits.some(other=>other.start===hit.end && safeEnd(other.end))
+      || /^[가-힣]{2,}?(?:시|군|구|읍|면|동|리)/.test(after);
     // Spaces around names may have disappeared during normalization.
     const words = text.normalize("NFKC").toLowerCase().split(/\s+/).map(normalizeText);
     return (left || words.some(word=>word.startsWith(hit.alias))) && right;
@@ -87,6 +125,8 @@ export function resolveLocation(text, localities, previous = null, pending = nul
   // A following particle can itself begin with another locality name
   // (동안구로 contains 구로). Prefer the longer overlapping place token.
   tokens = tokens.filter(hit => !tokens.some(other => other.alias.length > hit.alias.length && other.start < hit.end && hit.start < other.end));
+  const unlisted=unlistedAddress(text,tokens,localities);
+  if(unlisted)return unlisted;
   if (!tokens.length) return {region:null,locationState:"MISSING_AREA"};
   const provinceHit = tokens.find(hit=>hit.item.level==="province");
   const lastStart = Math.max(...tokens.map(hit=>hit.start));
@@ -117,6 +157,7 @@ export function resolveLocation(text, localities, previous = null, pending = nul
   if (candidates.length>1 && broad && candidates.some(item=>item.canonicalId===broad.canonicalId)) candidates=[broad];
   if (candidates.length===1) {
     const item=candidates[0];
+    if(item.level==='province')return {region:null,locationScope:item,unresolvedLocation:true,locationCandidates:[],locationState:'UNRESOLVED_SPECIFIC_AREA'};
     const shortLocation=["city","district"].includes(item.level) && matchedAlias===stem(item) && matchedAlias!==normalizeText(item.name);
     return {region:{...item,confidence:"canonical"},shortLocation,locationCandidates:[],locationState:"SUPPORTED_AREA"};
   }

@@ -72,7 +72,7 @@ eq(resolveVehicleText("소나타",fake).matches.length,2,"collision cannot auto-
 eq(resolveVehicleText("소나타",records.filter(row=>row.vehicle!=="쏘나타")).matches.length,0,"missing canonical target");
 for(const text of ["쏘타나","쏘나티","기아 소나타","가짜소나타","투산업","소나타dn888","투산nx44"]){eq(flow([text]).state.selectedVehicleKey,"",text);}
 const xss=flow(["<img src=x onerror=alert(1)>"]);eq(xss.state.selectedVehicleKey,"");
-for(const item of localities){const result=resolveLocation(item.fullName,localities);eq(result.region?.canonicalId,item.canonicalId,item.fullName);}
+for(const item of localities){const result=resolveLocation(item.fullName,localities);if(item.level==='province'){eq(result.region,null,item.fullName);eq(result.locationState,'UNRESOLVED_SPECIFIC_AREA');eq(result.locationScope?.canonicalId,item.canonicalId);}else eq(result.region?.canonicalId,item.canonicalId,item.fullName);}
 const audit=buildAliasIndex(records).audit,locationAudit=auditLocations(localities);
 eq(audit.approved,6);eq(audit.collisions.length,0);eq(new Set(localities.map(item=>item.canonicalId)).size,localities.length);
 console.log(JSON.stringify({assertions,rows:records.length,locationCounts:locationAudit.counts,locationCollisionAliases:locationAudit.collisions.length,vehicle:audit,sonataRows:records.filter(row=>row.vehicle==="쏘나타").length},null,2));

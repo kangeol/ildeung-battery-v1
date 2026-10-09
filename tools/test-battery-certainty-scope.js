@@ -1,8 +1,8 @@
-import {approvedSyncFiles} from './lib/blog-sync-approved-freeze.js';
+import './lib/blog-sync-approved-freeze.js';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
-import {gn7FactualDelta} from './lib/gn7-factual-regression.js';
+import {assertCurrentTaskScope,assertNoCurrentHtml,assertHistoricalFactualHtml,taskBaseline} from './lib/location-task-validation.js';
 const baseline='667b555971603325a4504b6f6e74bd282317c939';
 const git=a=>execFileSync('git',['-c','core.safecrlf=false',...a],{encoding:'utf8',maxBuffer:50e6});
 const before=JSON.parse(git(['show',`${baseline}:data/hyundai.json`]));
@@ -12,68 +12,10 @@ for(const r of expected)if(r.vehicle==='그랜저'&&r.detailModel.includes('(GN7
 expected[40].defaultBattery='AGM60';
 assert.equal(before[40].detailModel,'더 뉴 싼타페 하이브리드 TM');
 assert.deepEqual(after,expected,'only reviewed GN7 and AG60 canonical corrections');
-// Keep the historical factual-data oracle above, but measure this task against
-// the fixed owner-approved main. The global CTA in 7f4519f9 predates this task;
-// it is not permission to change CSS again. Never use a moving HEAD as baseline.
-// Owner-approved reconciliation: cc13de38's blog-only alias fix and the six
-// audited automatic sync commits are already accepted, not current-task edits.
-const scopeBaseline='c6c19c820003c51fe1cb386d6bb79043b9d5ec05';
-const currentTaskPaths=new Set(['js/smart-consult-conversation.js','js/smart-consult-session.js','tools/test-upgrade-price-context.js','tools/lib/blog-sync-approved-freeze.js','tools/test-battery-certainty-scope.js']);
-// Exact generatedAt-only snapshot reconciliation authorized in the continuation.
-currentTaskPaths.add('tools/test-location-nlu.js');
-for(const p of ['js/smart-consult-core.js','js/vehicle-aliases.js','tools/test-vehicle-family-recognition.js','tools/lib/canonical-generated-validation.js','tools/lib/homepage-approved-freeze.js','tools/lib/validation-stabilization-probes.js'])currentTaskPaths.add(p);
-currentTaskPaths.add('tools/test-operational.js');
-currentTaskPaths.add('tools/test-vehicle-typo-fallback.js');
-currentTaskPaths.add('tools/test-product-condition-policy.js');
-currentTaskPaths.add('tools/test-explicit-battery-price.js');
-currentTaskPaths.add('tools/test-typo-confirmation-followup.js');
-const assertCurrentScope=paths=>{for(const p of paths)assert.ok(currentTaskPaths.has(p)||approvedSyncFiles.has(p),`out of current task scope: ${p}`);};
-const paths=[...new Set([...git(['diff',scopeBaseline,'--name-only']).trim().split('\n'),...git(['ls-files','--others','--exclude-standard']).trim().split('\n')].filter(Boolean))];
-assertCurrentScope(paths);
-assert.doesNotThrow(()=>assertCurrentScope([...currentTaskPaths]));
-for(const p of ['js/unrelated-runtime.js','css/smart-consult-launcher.css','data/hyundai.json','data/battery-prices.json','js/analytics-logger.js','admin/config.json','.github/workflows/deploy.yml'])assert.throws(()=>assertCurrentScope([p]),/out of current task scope/);
-const allowed=new Set(['data/hyundai.json','js/smart-consult-core.js','js/smart-consult-conversation.js','js/smart-consult-session.js','js/smart-consult-entry.js','js/smart-consult.js','smart-consult/index.html','car-battery/hyundai/grandeur.html','car-battery/hyundai/grandeur/gn7.html']);
-// Exact shared purchase-link opener required by the approved Naver app handoff.
-allowed.add('js/smart-consult-launcher.js');allowed.add('js/smart-consult-store-open.js');
-// Current canonical release identity verifier is already committed at HEAD.
-allowed.add('tools/lib/canonical-release-runtime.js');
-// Token-boundary matching is authorized; canonical row/fact assertions stay intact.
-allowed.add('js/vehicle-aliases.js');
-// Non-monetary amount-word routing adds no vehicle facts or protected page changes.
-allowed.add('js/smart-consult-nonmonetary.js');
-// Owner-authorized electrical-load recognition; no vehicle facts or HTML changes.
-allowed.add('js/smart-consult-electrical-load.js');
-for(const p of ['js/smart-consult-purchase-stage.js','tools/lib/purchase-stage-fixtures.js','tools/audit-purchase-stage.js','docs/purchase-stage-audit.md','docs/waste-noncollection-audit.md'])allowed.add(p);
-for(const p of ['index.html','css/home-hero-intro.css','docs/homepage-hero-intro-audit.md','docs/homepage-hero-intro-v2-audit.md','docs/manufacturer-wording-audit.md','tools/lib/homepage-approved-freeze.js'])allowed.add(p);
-for(const p of ['docs/spec-brand-query-audit.md','js/smart-consult-brand-query.js','docs/non-agm-owner-policy-audit.md','tools/lib/assert-non-agm-owner-policy.js'])allowed.add(p);
-for(const p of ['docs/spec-schedule-audit.md','docs/spec-vehicle-collision-audit.md'])allowed.add(p);
-allowed.add('js/smart-consult-brand-comparison.js');
-for(const p of ['js/smart-consult-purchase.js','docs/purchase-knowledge-audit.md'])allowed.add(p);
-for(const p of ['js/smart-consult-presentation.js','css/smart-consult.css',...paths.filter(p=>p.startsWith('docs/evidence/consult-ui/'))])allowed.add(p);
-for(const p of paths.filter(p=>p.startsWith('docs/evidence/brand-comparison/')))allowed.add(p);
-for(const p of ['data/battery-prices.json','js/smart-consult-prices.js','car-battery/hyundai/santafe.html','car-battery/hyundai/santafe/tm.html'])allowed.add(p);
-for(const p of ['data/consult-service-policy.json','js/smart-consult-policy.js',...paths.filter(p=>p.startsWith('docs/evidence/brand-service/'))])allowed.add(p);
-for(const p of ['data/chevrolet.json','car-battery/chevrolet/alpheon.html','js/smart-consult-product-policy.js',...paths.filter(p=>p.startsWith('docs/evidence/product-as-hours/'))])allowed.add(p);
-for(const p of paths.filter(p=>p.startsWith('docs/evidence/location-nlu/')))allowed.add(p);
-for(const p of ['js/smart-consult-faq.js',...paths.filter(p=>p.startsWith('docs/evidence/final-faq/'))])allowed.add(p);
-for(const p of ['tools/standalone-spec-evidence-route.js',...paths.filter(p=>p.startsWith('docs/evidence/standalone-spec/'))])allowed.add(p);
-for(const p of paths.filter(p=>p.startsWith('docs/evidence/vehicle-selection/')))allowed.add(p);
-for(const p of paths.filter(p=>p.startsWith('docs/evidence/authentic-cash/')))allowed.add(p);
-for(const p of ['js/smart-consult-operational.js','tools/operational-fixtures.js',...paths.filter(p=>p.startsWith('docs/evidence/operational/'))])allowed.add(p);
-// Exact evaluator artifacts approved with the frozen semantic validation commit.
-for(const p of ['tools/frozen-corpus-change-registry.json','tools/frozen-corpus-unapproved-review.json','tools/lib/frozen-corpus-semantic-evaluator.js'])allowed.add(p);
-const isAllowedScopePath=p=>allowed.has(p)||p==='js/smart-consult-location.js'||p.startsWith('tools/test-')||p.startsWith('tools/audit-battery-')||['tools/lib/gn7-factual-regression.js','tools/lib/smart-consult-page-regression.js','tools/audit-blog-sync-regression.js'].includes(p)||p.startsWith('docs/evidence/battery-certainty/')||p.startsWith('docs/evidence/battery-pricing/')||p.startsWith('docs/evidence/db-driven-flow/');
-for(const p of ['css/unrelated-shared.css','js/unrelated-runtime.js','tools/unapproved-arbitrary.json'])assert.equal(isAllowedScopePath(p),false,`${p}: unauthorized scope probe must remain rejected`);
-for(const p of paths){
- if(['tools/lib/cold-weather-fixtures.js','tools/audit-cold-weather.js','docs/cold-weather-audit.md'].includes(p))continue;
- if(approvedSyncFiles.has(p))continue;
- if(currentTaskPaths.has(p))continue;
- if(['js/smart-consult-battery-knowledge.js','tools/lib/battery-knowledge-fixtures.js','tools/lib/blog-sync-approved-freeze.js','docs/battery-knowledge-audit.md'].includes(p))continue;
- assert.ok(isAllowedScopePath(p),`out of scope: ${p}`);
- if(p.endsWith('.html')){
-  let expected=gn7FactualDelta(git(['show',`${baseline}:${p}`]).replace(/\r\n/g,'\n'),p);
-  if(p==='smart-consult/index.html')expected=expected.replace('/js/smart-consult.js?v=ai-mobile-v1','/js/smart-consult.js?v=brand-query-v1').replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1');
-  assert.equal(fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n'),expected,`${p}: exact factual delta only`);
- }
-}
-console.log({status:'PASS',generatedPages:paths.filter(p=>p.startsWith('car-battery/')),protectedSeoStructure:'unchanged',blog:'unchanged',databaseCorrection:'reviewed GN7 + Owner AG60 and DIN70L typos only'});
+// Historical factual oracles above/below stay fixed; current task permission
+// is the exact location repair list, with no generated-file or workflow bypass.
+const historicalPages=assertHistoricalFactualHtml();
+const paths=assertCurrentTaskScope();
+assertNoCurrentHtml(paths);
+for(const p of ['css/unrelated-shared.css','js/unrelated-runtime.js','data/hyundai.json','data/battery-prices.json','js/analytics-logger.js','.github/workflows/naver-blog-sync.yml','car-battery/chevrolet/alpheon.html'])assert.throws(()=>assertCurrentTaskScope([p]),/out of current task scope/);
+console.log({status:'PASS',taskBaseline,currentTaskPaths:paths,historicalPages,protectedSeoStructure:'unchanged',databaseCorrection:'reviewed GN7 + Owner AG60 and DIN70L typos only'});

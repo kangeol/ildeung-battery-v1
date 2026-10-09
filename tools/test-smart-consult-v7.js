@@ -26,7 +26,11 @@ for(const area of Object.values(read("seo-data/service-areas.json").areas)) {
   }
 }
 eq(localities.map(({canonicalId,fullName,fullLabel,city,district,locality,area})=>({canonicalId,fullName,fullLabel,city,district,locality,area})),canonical,"canonical source/index hierarchy");
-for(const item of canonical) for(const label of [item.fullName,item.fullLabel]) eq(resolveLocation(`${label} 출장가능?`,localities).region?.canonicalId,item.canonicalId,label);
+const assertCoverage=(result,item,label)=>{
+  if(!item.city&&!item.district&&!item.locality){eq(result.region,null,label);eq(result.locationState,'UNRESOLVED_SPECIFIC_AREA',label);eq(result.locationScope?.canonicalId,item.canonicalId,label);}
+  else eq(result.region?.canonicalId,item.canonicalId,label);
+};
+for(const item of canonical) for(const label of [item.fullName,item.fullLabel]) assertCoverage(resolveLocation(`${label} 출장가능?`,localities),item,label);
 const aliases=classifyLocationAliases(localities),safe=aliases.filter(item=>["EXACT_UNIQUE","UNIQUE_SUFFIXLESS","SAME_JURISDICTION_PARENT_CHILD_COLLISION"].includes(item.classification));
 const wrappers=[a=>`${a} 가능?`,a=>`${a} 출장돼?`,a=>`지역 ${a}?`,a=>`${a}지역 출장가능?`,a=>`${a}도 와요?`];
 let phrases=0,ambiguous=0,unsafe=0;
@@ -40,14 +44,14 @@ for(const entry of aliases) {
   if(entry.classification==="UNSAFE_REJECT") {eq(resolveLocation(`${entry.alias} 가능?`,localities).region,null,entry.alias);unsafe++;continue;}
   if(safe.includes(entry)) {
     const target=entry.broadParent||entry.candidates[0];
-    for(const wrap of wrappers) {const phrase=wrap(entry.alias),result=resolveLocation(phrase,localities);eq(result.region?.canonicalId,target.canonicalId,phrase);ok(!result.ambiguousRegion,phrase);phrases++;}
+    for(const wrap of wrappers) {const phrase=wrap(entry.alias),result=resolveLocation(phrase,localities);assertCoverage(result,target,phrase);ok(!result.ambiguousRegion,phrase);phrases++;}
   } else {
     for(const wrap of wrappers) {const phrase=wrap(entry.alias),result=resolveLocation(phrase,localities);eq(result.region,null,entry.alias);if(entry.alias==='이동'&&phrase==='이동도 와요?'){eq(result.locationCandidates??[],[],'movement wording must not create a service-area candidate');continue;}eq(ids(result.locationCandidates),ids(entry.candidates),entry.alias);ambiguous++;}
   }
 }
 const forbidden=/DB|조회 결과|매칭 결과|데이터 기준|선택 조건|후보군|alias|정규화|프로세스/i;
 function flow(inputs) {let state=createConversationState();const outputs=[];for(const input of inputs){const output=conversationTurn(state,input,records,localities);state=output.state;outputs.push(output);ok(!forbidden.test(output.messages.join(" ")+output.chips.map(c=>c.label).join(" ")),input);ok(output.chips.length<=4,input);if(state.confirmedBattery)ok(records.some(row=>row.manufacturerId===state.manufacturer&&row.vehicle===state.vehicleFamily&&row.defaultBattery===state.confirmedBattery),"canonical battery only");}return{state,outputs};}
-for(const alias of safe) {const result=flow([`${alias.alias} 가능?`]);eq(result.state.location,null,`Area query must not confirm a service site: ${alias.alias}`);ok(!result.outputs[0].messages.join(" ").includes("확인되지"),alias.alias);}
+for(const alias of safe) {const result=flow([`${alias.alias} 가능?`]);eq(result.state.location,null,`Area query must not confirm a service site: ${alias.alias}`);if(alias.candidates[0].level==='province')eq(result.outputs[0].locationState,'UNRESOLVED_SPECIFIC_AREA',alias.alias);else ok(!result.outputs[0].messages.join(" ").includes("확인되지"),alias.alias);}
 for(const input of ["부산 출장돼?","대전 출장돼?","대구 가능?","제주도 와요?","서울 부산 출장돼?","가짜송파지역 출장돼?","없는동 출장돼?"]) {const result=flow([input]);ok(!result.outputs[0].region,input);ok(!result.outputs[0].messages.join(" ").includes("교체 가능 지역"),input);}
 for(const input of ["송파 가능한가요?","지역 송파?","송파지역 출장가능?","지역은 송파 쪽 교체 가능?","송파 근처 방문 가능?"]) {const result=flow([input]);eq(result.state.location,null,input);ok(result.outputs[0].messages.join(" ").includes("서울 송파구"),input);eq(result.state.pendingLocationDisambiguation,null,input);}
 {const result=flow(["송파동 가능?"]);eq(result.state.location,null);ok(result.outputs[0].messages.join(" ").includes("서울 송파구 송파동"));}

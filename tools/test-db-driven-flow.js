@@ -26,6 +26,13 @@ for(const row of localities)for(const [patternIndex,pattern]of patterns.entries(
  const text=pattern.replace('{A}',row.name),alias=aliases.find(x=>x.alias===normalizeText(row.name));
  const result=resolveLocation(text,localities);
  const expected=alias.candidates.length===1?alias.candidates[0]:alias.broadParent;
+ if(row.level==='province'){
+  assert.equal(result.region,null,text);assert.equal(result.locationState,'UNRESOLVED_SPECIFIC_AREA',text);
+  assert.equal(result.locationScope?.canonicalId,row.canonicalId,text);
+  const qualified=resolveLocation(pattern.replace('{A}',row.fullName),localities);
+  assert.equal(qualified.region,null,row.fullName);assert.equal(qualified.locationScope?.canonicalId,row.canonicalId);
+  areaMatrix.push({text,expected:null,actual:null,pass:true});continue;
+ }
  let pass;
  if(expected){pass=result.region?.canonicalId===expected.canonicalId;if(!result.region)metrics.UNIQUE_AREA_FALSE_NEGATIVE++;else if(!pass)metrics.UNIQUE_AREA_WRONG_RESOLUTION++;}
  else {pass=!result.region&&result.locationCandidates?.some(r=>r.canonicalId===row.canonicalId);if(result.region)metrics.AMBIGUOUS_AREA_AUTOCONFIRM++;}

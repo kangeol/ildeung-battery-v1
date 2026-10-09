@@ -828,6 +828,20 @@ export function conversationTurn(previous, text, records, localities = [], price
   return out;
 }
 function conversationTurnImpl(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
+  // Coverage is checked before response composers: neither an old session region
+  // nor a generic dispatch/arrival answer may override a new unverified address.
+  const coverage=selection===null&&resolveLocation(text,localities,previous.location||previous.region,previous.pendingLocationDisambiguation);
+  if(coverage&&(coverage.unsupportedLocation||coverage.unresolvedLocation)){
+    const parsed=conversationTurnBase(previous,text,records,localities,priceCatalog,servicePolicy,selection);
+    const scope=coverage.locationScope&&!/(?:출장|방문|가능|지역|와요|돼).*[?？]\s*$/.test(text);
+    const state={...parsed.state,region:null,location:scope?{...coverage.locationScope,confidence:'scope'}:null,city:'',district:'',
+      pendingLocationDisambiguation:null,lastIntent:'SERVICE_LOCATION_CLARIFICATION'};
+    const message=coverage.unsupportedLocation
+      ? `말씀하신 ${coverage.locationName?coverage.locationName+' 지역':'지역'}은 현재 저희 일등밧데리 출장 서비스 지역에 포함되어 있지 않습니다.`
+      : '말씀하신 지역만으로는 출장 가능 여부가 확인되지 않습니다. 차량이 있는 정확한 시·구·동 또는 주소를 알려주세요.';
+    return {state,messages:[message],actions:[],chips:[],result:state.result,region:null,
+      locationState:coverage.unsupportedLocation?'EXPLICIT_UNSUPPORTED_AREA':'UNRESOLVED_SPECIFIC_AREA'};
+  }
   if(selection===null && ['SERVICE_LOCATION_CLARIFICATION','AFTER_SALES'].includes(previous.lastIntent)
     && /(?:집|주유소|주차|현장|구역|반대편|지역별)/.test(text)
     && !resolveLocation(text,localities).region){
@@ -867,13 +881,20 @@ function conversationTurnImpl(previous, text, records, localities = [], priceCat
   const out=conversationTurnBase(previous,text,records,localities,priceCatalog,servicePolicy,selection);
   const composed=selection===null?composeCoreBatteryScope(previous,text,composeConversion(previous,text,out,localities,priceCatalog,servicePolicy),servicePolicy,priceCatalog):out;
   // Asking whether a region is covered does not establish a dispatch address.
-  if(selection===null && (/(?:출장|방문|와(?:요|주|줄|실)?|오(?:나요|실)?|가능|되나요|돼요|돼|되나)[^?？]{0,6}[?？]\s*$/.test(text)
+  if(selection===null && composed.locationState!=='EXPLICIT_UNSUPPORTED_AREA' && (/(?:출장|방문|와(?:요|주|줄|실)?|오(?:나요|실)?|가능|되나요|돼요|돼|되나)[^?？]{0,6}[?？]\s*$/.test(text)
       || (/(?:지역|동네)/.test(text)&&/[?？]\s*$/.test(text)&&resolveLocation(text,localities).region))
     && !/(?:차량|차|현장|주차|지하|집|회사|아파트|오피스텔|주소|위치).{0,20}(?:있|세워|에|에서|교체)/.test(text)){
     composed.state.region=previous.region;composed.state.location=previous.location;
     composed.state.city=previous.city;composed.state.district=previous.district;
     composed.region=previous.region;
   }
+  if(composed.locationState==='EXPLICIT_UNSUPPORTED_AREA'){
+    composed.state.region=null;composed.state.location=null;composed.state.city='';composed.state.district='';
+    composed.state.pendingLocationDisambiguation=null;composed.region=null;
+  }
+  if(!composed.state.region)composed.messages=composed.messages.map(message=>message.replace(
+    '네, 출장 배터리 교체 가능합니다. 차량이 있는 지역을 알려주세요.',
+    '출장 가능 여부를 확인하려면 차량이 있는 지역을 알려주세요.'));
   return composed;
 }
 
@@ -1336,7 +1357,9 @@ function conversationCore(previous, text, records, localities = [], priceCatalog
   }
   if (entities.ambiguousRegion) {
     state.pendingLocationDisambiguation=entities.locationCandidates;
-    if(entities.locationScope) { state.location=entities.locationScope;state.region=entities.locationScope; }
+    state.region=null;
+    const scope=entities.locationScope||(state.location?.confidence==='scope'?state.location:null);
+    state.location=scope?{...scope,confidence:'scope'}:null;
   }
   if (entities.year || entities.fuel || entities.detailModel || entities.exactFuel || entities.engine || entities.drivetrain || entities.yearRange) answered = true;
   if(answered || shorthand)state.quotedSpec="";
