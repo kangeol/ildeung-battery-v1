@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-10T08:51:47.790Z",
+  "syncedAt": "2026-10-10T09:38:17.517Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 389,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 391,
+    "newPosts": 1,
+    "preservedPreviousPosts": 391,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 392,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 343,
-    "vehicleMatches": 322,
+    "manufacturerMatches": 344,
+    "vehicleMatches": 323,
     "detailMatches": 72,
-    "regionMatches": 275,
-    "neighborhoodMatches": 227,
-    "batteryMatches": 274,
+    "regionMatches": 276,
+    "neighborhoodMatches": 228,
+    "batteryMatches": 275,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,171 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 275,
-    "actualRegionMatches": 275,
-    "actualNeighborhoodMatches": 227,
+    "actualAreaMatches": 276,
+    "actualRegionMatches": 276,
+    "actualNeighborhoodMatches": 228,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224434406042",
+      "title": "인천 계양구 계산동 2016년식 아우디A4 델코 AGM95 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224434406042",
+      "publishedAt": "2026-10-10",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224434406042.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDdfMTAg/MDAxNzkxMzY2NzgyOTUy.7Ne3dtq9SHmTonMFzXMCa7NPKQLPZ0pcy9j41q9Y8A4g.tcWZAbSfn7vPB9f-hxNIzzksFZZi0Xm-CkLfuRip61sg.JPEG/image-a4-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 계양구 계산동에서 2016년식 아우디A4 배터리 교체를 진행했습니다. 이번 고객님은 블랙박스 주차녹화를 계속 사용한 뒤 차량을 다시 타려는 순간 배터리가 방전돼 상담을 주셨습니다. 평소에는 주차녹화를 켜둬도 큰 문제 없이 사용하셨지만, 어느 날 시동이 걸리지 않으면서 “블랙박스 때문에 방전된 걸까요?”라고 물어보셨습니다. 주차녹화는 차량이 꺼져 있는 동안에도 전기를 사용하기 때문에 배터리 상태와 주차 시간에 따라 부담이 될 수 있습니다. 다만 블랙박스가 켜져 있었다.......",
+      "tags": [
+        "인천출장배터리",
+        "인천자동차배터리",
+        "배터리교체",
+        "계양출장배터리",
+        "계양자동차배터리",
+        "계산동출장배터리",
+        "아우디배터리",
+        "아우디배터리가격",
+        "a4배터리",
+        "a4배터리교체",
+        "a4배터리교체비용",
+        "델코agm95가격",
+        "델코agm95교체비용",
+        "델코agm95",
+        "agm95",
+        "일등밧데리",
+        "출장배터리교체",
+        "자동차배터리교체",
+        "자동차배터리비용",
+        "출장배터리비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "아우디",
+        "manufacturers": [
+          {
+            "id": "audi",
+            "name": "아우디"
+          }
+        ],
+        "vehicle": "아우디 A4",
+        "vehicles": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A4",
+            "displayName": "아우디 A4",
+            "urlPath": "/car-battery/audi/a4.html",
+            "matchedAlias": "아우디 A4",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A4",
+            "displayName": "아우디 A4",
+            "urlPath": "/car-battery/audi/a4.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "gyeyang-gu",
+          "regionName": "계양구",
+          "neighborhoodName": "계산동",
+          "label": "인천 계양구 계산동",
+          "urlPath": "/area/incheon/gyeyang-gu/gyesan-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "label": "인천 계양구",
+            "urlPath": "/area/incheon/gyeyang-gu.html",
+            "matchedAlias": "계양구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "name": "계산동",
+            "legalName": "인천광역시 계양구 계산동",
+            "label": "인천 계양구 계산동",
+            "urlPath": "/area/incheon/gyeyang-gu/gyesan-dong.html",
+            "matchedAlias": "계산동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/audi/a4.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/audi.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/gyeyang-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/gyeyang-gu/gyesan-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "계양구 계산동에서 아우디 A4 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224434401502",
       "title": "부천 원미구 역곡동 2019년식 기아 더뉴K5 델코 AGM70 출장배터리교체 가격 및 비용 안내｜시내주행만 하다가 처음 시동이 안 걸렸을 때",
