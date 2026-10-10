@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-09T09:29:49.268Z",
+  "syncedAt": "2026-10-10T08:51:47.790Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 3,
-    "preservedPreviousPosts": 386,
-    "duplicateRemoved": 47,
-    "thumbnailSuccess": 389,
+    "newPosts": 2,
+    "preservedPreviousPosts": 389,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 391,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 341,
-    "vehicleMatches": 320,
-    "detailMatches": 70,
-    "regionMatches": 273,
-    "neighborhoodMatches": 225,
-    "batteryMatches": 272,
+    "manufacturerMatches": 343,
+    "vehicleMatches": 322,
+    "detailMatches": 72,
+    "regionMatches": 275,
+    "neighborhoodMatches": 227,
+    "batteryMatches": 274,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,352 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 273,
-    "actualRegionMatches": 273,
-    "actualNeighborhoodMatches": 225,
+    "actualAreaMatches": 275,
+    "actualRegionMatches": 275,
+    "actualNeighborhoodMatches": 227,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224434401502",
+      "title": "부천 원미구 역곡동 2019년식 기아 더뉴K5 델코 AGM70 출장배터리교체 가격 및 비용 안내｜시내주행만 하다가 처음 시동이 안 걸렸을 때",
+      "url": "https://blog.naver.com/kang10107/224434401502",
+      "publishedAt": "2026-10-10",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224434401502.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDdfMjQ5/MDAxNzkxMzY2NDY0NjIw.4WO5rmd-XJscstlbGPsJ2rxwJOCKMIBJCKuqCIY3gg0g.hpaM1ErP8-zKfa0E7WlPBkQ4ftvDte_-WeC2MBRzjl4g.JPEG/image-k5-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 부천시 원미구 역곡동에서 2019년식 기아 더뉴K5 배터리 교체를 진행했습니다. 이번 고객님은 그동안 배터리 방전을 겪어본 적이 없었다고 하셨습니다. 차량도 꾸준히 사용하고 있었지만 운행 대부분이 시내에서 가까운 거리를 오가는 형태였고, 어느 날 평소처럼 차량을 이용하려다가 처음으로 시동이 걸리지 않았습니다. 처음 겪는 방전이다 보니 “배터리를 바로 바꿔야 하는 건지, 점프하고 더 타도 되는 건지”가 가장 궁금하셨습니다. 최근 운행 형태와 현재 상황을 확인한 뒤 델코.......",
+      "tags": [
+        "부천출장배터리",
+        "부천자동차배터리",
+        "부천배터리",
+        "역곡동출장배터리",
+        "더뉴k5배터리",
+        "더뉴k5배터리교체",
+        "k5배터리",
+        "k5배터리가격",
+        "k5배터리교체비용",
+        "델코agm70",
+        "agm70가격",
+        "agm70출장교체",
+        "델코agm70교체비용",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "배터리교체",
+        "배터리교체비용",
+        "출장배터리교체비용",
+        "자동차배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "K5",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K5",
+            "displayName": "K5",
+            "urlPath": "/car-battery/kia/k5.html",
+            "matchedAlias": "K5",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K5",
+            "displayVehicleName": "K5",
+            "label": "더 뉴 K5",
+            "slug": "the-new-k5",
+            "urlPath": "/car-battery/kia/k5/the-new-k5.html",
+            "vehicleUrlPath": "/car-battery/kia/k5.html",
+            "matchedAlias": "더 뉴 K5"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K5",
+            "displayName": "K5",
+            "urlPath": "/car-battery/kia/k5.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "bucheon-si",
+          "regionName": "부천시",
+          "neighborhoodName": "역곡동",
+          "label": "경기 부천시 역곡동",
+          "urlPath": "/area/gyeonggi/bucheon-si/yeokgok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "bucheon-si",
+            "regionName": "부천시",
+            "label": "경기 부천시",
+            "urlPath": "/area/gyeonggi/bucheon-si.html",
+            "matchedAlias": "부천"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "bucheon-si",
+            "regionName": "부천시",
+            "name": "역곡동",
+            "legalName": "경기도 부천시 원미구 역곡동",
+            "label": "경기 부천시 역곡동",
+            "urlPath": "/area/gyeonggi/bucheon-si/yeokgok-dong.html",
+            "matchedAlias": "역곡동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/k5.html"
+          ],
+          "details": [
+            "/car-battery/kia/k5/the-new-k5.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/bucheon-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/bucheon-si/yeokgok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "부천시 역곡동에서 K5 더 뉴 K5 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224434397944",
+      "title": "영등포 문래동 2023년식 현대 그랜저GN7 2.5 델코 AGM70 출장배터리교체 가격 및 비용 안내｜가까운 거리만 타다가 시동 안 걸릴 때",
+      "url": "https://blog.naver.com/kang10107/224434397944",
+      "publishedAt": "2026-10-10",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224434397944.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDdfNzgg/MDAxNzkxMzY2MTg2MjAw.XJ3tCv82kNFIINILCutOIidxDgIB0YOdOGUwJGGXRn4g.03u_tmCZ5Z8ABkeIW9rGPDLf8FtgOiGIKBVPxTZJk6Qg.JPEG/image-gn7-2-5-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 영등포구 문래동에서 2023년식 현대 그랜저GN7 2.5 배터리 교체를 진행했습니다. 이번 고객님은 차량을 매일 이용하는 편이 아니었습니다. 일주일에 한두 번 정도 가까운 곳을 다녀올 때 주로 사용하셨는데, 어느 날 다시 차를 이용하려고 시동을 걸었을 때 배터리가 방전된 상태였습니다. 주행거리가 많지 않으니 배터리도 크게 힘들지 않을 것이라고 생각하기 쉽지만, 실제로는 운행 횟수와 거리가 모두 적으면 배터리가 다시 전기를 보충할 기회도 줄어들 수 있습니다. 차량 정보를 확.......",
+      "tags": [
+        "영등포배터리",
+        "영등포출장배터리",
+        "영등포자동차배터리",
+        "문래동출장배터리",
+        "그랜저gn7배터리",
+        "그랜저gn7배터리교체",
+        "그랜저gn7배터리가격",
+        "그랜저gn7배터리교체비용",
+        "델코agm70",
+        "델코agm70가격",
+        "출장배터리교체",
+        "자동차배터리",
+        "출장배터리가격",
+        "자동차배터리가격",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "그랜저",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayName": "그랜저",
+            "urlPath": "/car-battery/hyundai/grandeur.html",
+            "matchedAlias": "그랜저",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayVehicleName": "그랜저",
+            "label": "GN7",
+            "slug": "gn7",
+            "urlPath": "/car-battery/hyundai/grandeur/gn7.html",
+            "vehicleUrlPath": "/car-battery/hyundai/grandeur.html",
+            "matchedAlias": "GN7"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayName": "그랜저",
+            "urlPath": "/car-battery/hyundai/grandeur.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "yeongdeungpo-gu",
+          "regionName": "영등포구",
+          "neighborhoodName": "영등포동",
+          "label": "서울 영등포구 영등포동",
+          "urlPath": "/area/seoul/yeongdeungpo-gu/yeongdeungpo-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yeongdeungpo-gu",
+            "regionName": "영등포구",
+            "label": "서울 영등포구",
+            "urlPath": "/area/seoul/yeongdeungpo-gu.html",
+            "matchedAlias": "영등포"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yeongdeungpo-gu",
+            "regionName": "영등포구",
+            "name": "영등포동",
+            "legalName": "서울특별시 영등포구 영등포동",
+            "label": "서울 영등포구 영등포동",
+            "urlPath": "/area/seoul/yeongdeungpo-gu/yeongdeungpo-dong.html",
+            "matchedAlias": "영등포"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/grandeur.html"
+          ],
+          "details": [
+            "/car-battery/hyundai/grandeur/gn7.html"
+          ],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/yeongdeungpo-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/yeongdeungpo-gu/yeongdeungpo-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "영등포구 영등포동에서 그랜저 GN7 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224432621789",
       "title": "인천 남동구 논현동 2022년식 아반떼 N라인 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
