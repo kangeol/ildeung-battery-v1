@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-10T09:38:17.517Z",
+  "syncedAt": "2026-10-11T09:12:43.545Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 391,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 392,
+    "newPosts": 2,
+    "preservedPreviousPosts": 392,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 394,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 344,
-    "vehicleMatches": 323,
+    "manufacturerMatches": 346,
+    "vehicleMatches": 325,
     "detailMatches": 72,
-    "regionMatches": 276,
-    "neighborhoodMatches": 228,
-    "batteryMatches": 275,
+    "regionMatches": 278,
+    "neighborhoodMatches": 230,
+    "batteryMatches": 277,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,321 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 276,
-    "actualRegionMatches": 276,
-    "actualNeighborhoodMatches": 228,
+    "actualAreaMatches": 278,
+    "actualRegionMatches": 278,
+    "actualNeighborhoodMatches": 230,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224434414959",
+      "title": "안산 상록구 성포동 2019년식 벤츠 E350 바르타 AGM70 출장배터리교체 가격 및 비용 안내｜며칠 주차 후 블랙박스 때문에 시동이 약할 때",
+      "url": "https://blog.naver.com/kang10107/224434414959",
+      "publishedAt": "2026-10-11",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224434414959.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDdfMTA3/MDAxNzkxMzY3NDgxNTMx.W4WxItX-t6X0rDvyCZCoMlfUKKhD6A_cW_FayknnEi4g.ff7j9x2l4X_1HtbcSk23gvGDvF3SUBH-EvFrLpslp_sg.JPEG/image-e350-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 안산시 상록구 성포동에서 2019년식 벤츠 E350 배터리 교체를 진행했습니다. 이번 차량은 며칠 동안 운행하지 않고 세워두는 동안 블랙박스 주차녹화를 계속 사용한 뒤 시동이 약해져 상담으로 이어진 사례입니다. 평소에는 큰 불편 없이 사용했지만 며칠씩 주차하는 일정이 반복되면서 어느 순간 첫 시동이 예전처럼 가볍지 않게 느껴졌다고 하셨습니다. 고객님께서는 “주차녹화를 계속 켜둔 게 영향을 줬을까요?”라고 물어보셨는데요. 블랙박스 주차녹화는 시동이 꺼진 뒤에도 전기를.......",
+      "tags": [
+        "안산출장배터리",
+        "안산자동차배터리",
+        "안산배터리",
+        "성포동출장배터리",
+        "벤츠e350배터리가격",
+        "벤츠e350배터리",
+        "벤츠배터리",
+        "벤츠출장배터리",
+        "벤츠배터리가격",
+        "바르타배터리",
+        "바르타agm70",
+        "바르타agm70가격",
+        "바르타agm70실버",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "배터리교체",
+        "출장배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "벤츠",
+        "manufacturers": [
+          {
+            "id": "benz",
+            "name": "벤츠"
+          }
+        ],
+        "vehicle": "벤츠 E클래스",
+        "vehicles": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "E-클래스",
+            "displayName": "벤츠 E클래스",
+            "urlPath": "/car-battery/benz/e-class.html",
+            "matchedAlias": "벤츠E",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "E-클래스",
+            "displayName": "벤츠 E클래스",
+            "urlPath": "/car-battery/benz/e-class.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "ansan-si",
+          "regionName": "안산시",
+          "neighborhoodName": "성포동",
+          "label": "경기 안산시 성포동",
+          "urlPath": "/area/gyeonggi/ansan-si/seongpo-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "ansan-si",
+            "regionName": "안산시",
+            "label": "경기 안산시",
+            "urlPath": "/area/gyeonggi/ansan-si.html",
+            "matchedAlias": "안산"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "ansan-si",
+            "regionName": "안산시",
+            "name": "성포동",
+            "legalName": "경기도 안산시 상록구 성포동",
+            "label": "경기 안산시 성포동",
+            "urlPath": "/area/gyeonggi/ansan-si/seongpo-dong.html",
+            "matchedAlias": "성포동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/benz/e-class.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/benz.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/ansan-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/ansan-si/seongpo-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "안산시 성포동에서 벤츠 E클래스 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224434411556",
+      "title": "강남 압구정동 2024년식 팰리세이드 델코 AGM80 출장배터리교체 가격 및 비용 안내｜블랙박스 주차녹화가 빨리 꺼지고 시동이 약할 때",
+      "url": "https://blog.naver.com/kang10107/224434411556",
+      "publishedAt": "2026-10-11",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224434411556.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMDdfMTAw/MDAxNzkxMzY3MTY5NzYx.W9M6o3Da4mU-ayv3mcrRIKYj4y2JFnvLU4jOcrKfVTcg._BEF2nayini81Aqtq5jVtXoB35F8LQYRA8TEp156QeQg.PNG/%C0%DA%B5%BF%C2%F7%B9%E8%C5%CD%B8%AE%B1%B3%C3%BC.png?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 강남구 압구정동에서 2024년식 팰리세이드 배터리 교체를 진행했습니다. 이번 고객님은 완전히 시동이 안 걸린 뒤 연락을 주신 경우가 아니었습니다. 평소 사용하던 블랙박스 주차녹화가 예전보다 일찍 종료되는 일이 생겼고, 비슷한 시기에 아침 첫 시동도 전보다 힘이 부족하게 느껴졌다고 하셨습니다. 블랙박스 문제가 먼저 눈에 띄었지만 차량 시동 반응까지 함께 달라지니 배터리 쪽을 확인해보자는 판단으로 상담이 이어졌습니다. 차량 정보를 확인해 델코 AGM80을 준비했고 압구정.......",
+      "tags": [
+        "강남배터리",
+        "강남출장배터리",
+        "강남자동차배터리",
+        "압구정동출장배터리",
+        "압구정배터리",
+        "팰리세이드배터리",
+        "팰리세이드배터리교체",
+        "팰리세이드배터리가격",
+        "팰리세이드배터리교체비용",
+        "델코agm80",
+        "델코agm80가격",
+        "델코agm80교체비용",
+        "출장배터리교체",
+        "자동차배터리교체",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "팰리세이드",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "팰리세이드",
+            "displayName": "팰리세이드",
+            "urlPath": "/car-battery/hyundai/palisade.html",
+            "matchedAlias": "팰리세이드",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "팰리세이드",
+            "displayName": "팰리세이드",
+            "urlPath": "/car-battery/hyundai/palisade.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangnam-gu",
+          "regionName": "강남구",
+          "neighborhoodName": "압구정동",
+          "label": "서울 강남구 압구정동",
+          "urlPath": "/area/seoul/gangnam-gu/apgujeong-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangnam-gu",
+            "regionName": "강남구",
+            "label": "서울 강남구",
+            "urlPath": "/area/seoul/gangnam-gu.html",
+            "matchedAlias": "강남"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangnam-gu",
+            "regionName": "강남구",
+            "name": "압구정동",
+            "legalName": "서울특별시 강남구 압구정동",
+            "label": "서울 강남구 압구정동",
+            "urlPath": "/area/seoul/gangnam-gu/apgujeong-dong.html",
+            "matchedAlias": "압구정동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/palisade.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangnam-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gangnam-gu/apgujeong-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "강남구 압구정동에서 팰리세이드 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224434406042",
       "title": "인천 계양구 계산동 2016년식 아우디A4 델코 AGM95 출장배터리교체 가격 및 비용 안내｜일등밧데리",
