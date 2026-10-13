@@ -60,10 +60,14 @@ assert.equal(catalog.prices.AGM105,280000); // VARTA AGM95 now legitimately cost
 for(const path of ['js/smart-consult-prices.js','js/smart-consult-conversation.js','js/smart-consult.js'])assert.ok(!/270000|27만원/.test(fs.readFileSync(path,'utf8')),path);
 const baseline='da2e2c0f93e119d82123e5d63b868e30195c00b6';
 const git=args=>execFileSync('git',['-c','core.safecrlf=false',...args],{encoding:'utf8',maxBuffer:20e6});
-for(const m of manufacturers){const old=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='hyundai.json')old[40].defaultBattery='AGM60';if(m.file==='chevrolet.json')old[30].defaultBattery='DIN74L';assert.deepEqual(read(`data/${m.file}`),old);}
+for(const m of manufacturers){const old=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='hyundai.json')old[40].defaultBattery='AGM60';if(m.file==='chevrolet.json'){old[30].defaultBattery='DIN74L';old[44].defaultBattery='AGM80';}assert.deepEqual(read(`data/${m.file}`),old);}
 const htmlChanges=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n').filter(p=>p&&p!=='index.html'&&!approvedSyncFiles.has(p));
+const generatedTraverseSeoPages=['battery/agm/capacity/agm80.html','battery/agm/capacity/agm95.html','battery/agm/index.html','car-battery/chevrolet/traverse.html'];
 const pricingPages=['car-battery/chevrolet/alpheon.html','car-battery/hyundai/santafe.html','car-battery/hyundai/santafe/tm.html','smart-consult/index.html'];
-assert.deepEqual(htmlChanges.sort(),pricingPages.filter(p=>!approvedSyncFiles.has(p)).sort());
+assert.deepEqual(htmlChanges.sort(),[...generatedTraverseSeoPages,...pricingPages].filter(p=>!approvedSyncFiles.has(p)).sort());
+assert.match(fs.readFileSync('car-battery/chevrolet/traverse.html','utf8'),/AGM80/);
+assert.match(fs.readFileSync('battery/agm/capacity/agm80.html','utf8'),/트래버스/);
+assert.doesNotMatch(fs.readFileSync('battery/agm/capacity/agm95.html','utf8'),/트래버스/);
 // Canonical generation validates current case bytes above. Always retain the
 // historical pricing/body assertion, even when a page now has refreshed cases.
 for(const path of pricingPages){let expectedHtml=git(['show',`${baseline}:${path}`]).replace(/\r\n/g,'\n');if(path==='smart-consult/index.html')expectedHtml=expectedHtml.replace('?v=flow-v1','?v=brand-query-v1');else if(path==='car-battery/chevrolet/alpheon.html')expectedHtml=expectedHtml.replace(/\bDIN70L\b/g,'DIN74L');else if(path.endsWith('/tm.html'))expectedHtml=expectedHtml.replace(/\bAG60\b/g,'AGM60');else expectedHtml=expectedHtml.replace('AGM70, AGM60, AGM80, AG60 등','AGM70, AGM60, AGM80, AGM95 등').replace('<strong>AG60</strong>','<strong>AGM60</strong>');const protect=value=>approvedSyncFiles.has(path)?maskCaseBlocks(value):value;assert.equal(protect(fs.readFileSync(path,'utf8').replace(/\r\n/g,'\n')),protect(expectedHtml.replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1')),path);}

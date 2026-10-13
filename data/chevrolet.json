@@ -445,7 +445,7 @@
     "year": "19년~현재",
     "fuel": "가솔린",
     "detailModel": "트래버스",
-    "defaultBattery": "AGM95",
+    "defaultBattery": "AGM80",
     "upgradeBattery": "",
     "status": "완료"
   },
