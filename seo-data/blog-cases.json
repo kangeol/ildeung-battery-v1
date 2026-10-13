@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-12T09:38:14.396Z",
+  "syncedAt": "2026-10-13T09:40:59.740Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 3,
-    "preservedPreviousPosts": 394,
+    "preservedPreviousPosts": 397,
     "duplicateRemoved": 47,
-    "thumbnailSuccess": 397,
+    "thumbnailSuccess": 400,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 349,
-    "vehicleMatches": 328,
-    "detailMatches": 73,
-    "regionMatches": 281,
-    "neighborhoodMatches": 232,
-    "batteryMatches": 280,
+    "manufacturerMatches": 352,
+    "vehicleMatches": 331,
+    "detailMatches": 74,
+    "regionMatches": 284,
+    "neighborhoodMatches": 234,
+    "batteryMatches": 283,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,465 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 281,
-    "actualRegionMatches": 281,
-    "actualNeighborhoodMatches": 232,
+    "actualAreaMatches": 284,
+    "actualRegionMatches": 284,
+    "actualNeighborhoodMatches": 234,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224438713779",
+      "title": "김포 김포본동 2022년식 아우디 A3 델코 AGM70 출장배터리교체 가격 및 비용 안내｜자동차배터리교체요청",
+      "url": "https://blog.naver.com/kang10107/224438713779",
+      "publishedAt": "2026-10-13",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224438713779.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTJfMjM1/MDAxNzkxNzY1OTk2Njg4.TU_PxDjudkyko7HEFxl9KQtSvUf4AiXrDneA7GU2qzwg.aO2bzJLWLYRK2rCLxhRATHopO9GxwYw8XhFiyZ_SLrEg.JPEG/image-a3-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 김포시 김포본동에서 2022년식 아우디 A3 배터리 교체를 진행했습니다. 이번 고객님은 주차 중 차량용 냉장고를 사용한 뒤부터 시동이 예전보다 무겁게 느껴져 상담을 주셨습니다. 차량용 냉장고는 장거리 이동이나 캠핑 때 편리하지만, 시동을 끈 상태에서도 계속 전기를 사용하도록 연결돼 있다면 배터리에 부담이 될 수 있습니다. 특히 사용 시간이 길었거나 최근 운행량이 많지 않았다면 평소에는 느끼지 못했던 배터리 상태가 먼저 드러날 수 있습니다. 차량 정보를 확인해 델코 AGM7.......",
+      "tags": [
+        "김포배터리",
+        "김포출장배터리",
+        "김포자동차배터리",
+        "자동차배터리",
+        "델코agm70",
+        "agm70",
+        "출장배터리",
+        "자동차배터리교체",
+        "출장배터리교체비용",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "아우디",
+        "manufacturers": [
+          {
+            "id": "audi",
+            "name": "아우디"
+          }
+        ],
+        "vehicle": "아우디 A3",
+        "vehicles": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A3",
+            "displayName": "아우디 A3",
+            "urlPath": "/car-battery/audi/a3.html",
+            "matchedAlias": "아우디 A3",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A3",
+            "displayName": "아우디 A3",
+            "urlPath": "/car-battery/audi/a3.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gimpo-si",
+          "regionName": "김포시",
+          "label": "경기 김포시",
+          "urlPath": "/area/gyeonggi/gimpo-si.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gimpo-si",
+            "regionName": "김포시",
+            "label": "경기 김포시",
+            "urlPath": "/area/gyeonggi/gimpo-si.html",
+            "matchedAlias": "김포"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/audi/a3.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/audi.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gimpo-si.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "경기 김포시에서 아우디 A3 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224438708254",
+      "title": "동작구 사당동 2022년식 폭스바겐 티록 델코 AGM70 출장배터리교체 가격 및 비용 안내｜차박 후 시동이 힘없이 걸릴 때",
+      "url": "https://blog.naver.com/kang10107/224438708254",
+      "publishedAt": "2026-10-13",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224438708254.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTJfMTM3/MDAxNzkxNzY1NjUwMzIw._hbmWIj78zI3sfNDC_y4Vi3XPygKrL9oKcdEcT0ybOsg.Pix4ppOBtMntxI8qMoIn2oJUOL3330X0T6OsXvjG_u4g.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 동작구 사당동에서 2022년식 폭스바겐 티록 배터리 교체를 진행했습니다. 이번 차량은 차박을 하면서 여러 전기용품을 사용한 뒤부터 시동이 예전보다 약하게 느껴져 상담을 주신 사례입니다. 차박 중에는 휴대폰 충전이나 조명, 각종 전자기기를 사용하는 일이 많습니다. 문제는 이런 사용이 시동을 끈 상태에서 오래 이어졌을 때입니다. 차량을 다시 출발하려고 했는데 첫 시동이 힘없이 걸리거나 평소와 느낌이 달랐다면 단순히 “전기를 좀 많이 썼나 보다” 하고 넘기기보다 배터리 상.......",
+      "tags": [
+        "동작구배터리",
+        "동작구출장배터리",
+        "사당동출장배터리",
+        "동작구자동차배터리",
+        "폭스바겐배터리",
+        "티록배터리",
+        "티록배터리교체",
+        "티록배터리교체비용",
+        "델코agm70",
+        "agm70가격",
+        "agm70교체비용",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "폭스바겐",
+        "manufacturers": [
+          {
+            "id": "volkswagen",
+            "name": "폭스바겐"
+          }
+        ],
+        "vehicle": "폭스바겐 티록",
+        "vehicles": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "티록",
+            "displayName": "폭스바겐 티록",
+            "urlPath": "/car-battery/volkswagen/t-roc.html",
+            "matchedAlias": "폭스바겐 티록",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "티록",
+            "displayName": "폭스바겐 티록",
+            "urlPath": "/car-battery/volkswagen/t-roc.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "dongjak-gu",
+          "regionName": "동작구",
+          "neighborhoodName": "사당동",
+          "label": "서울 동작구 사당동",
+          "urlPath": "/area/seoul/dongjak-gu/sadang-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "dongjak-gu",
+            "regionName": "동작구",
+            "label": "서울 동작구",
+            "urlPath": "/area/seoul/dongjak-gu.html",
+            "matchedAlias": "동작구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "dongjak-gu",
+            "regionName": "동작구",
+            "name": "사당동",
+            "legalName": "서울특별시 동작구 사당동",
+            "label": "서울 동작구 사당동",
+            "urlPath": "/area/seoul/dongjak-gu/sadang-dong.html",
+            "matchedAlias": "사당동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/volkswagen/t-roc.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/volkswagen.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/dongjak-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/dongjak-gu/sadang-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "동작구 사당동에서 폭스바겐 티록 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224438703997",
+      "title": "인천 연수구 청학동 2022년식 카니발KA4 4세대 델코 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224438703997",
+      "publishedAt": "2026-10-13",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224438703997.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTJfMTMw/MDAxNzkxNzY1Mzc5MTA5.FuVU9KgKjqZD6VCAYiqY2A1NJ27IREvzttg-9yJ3Z94g.Yps0K0rHAMdDuscXshhypJp-Bu3jPlRhdEUflQxukmQg.JPEG/image-ka4-4-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 연수구 청학동에서 2022년식 카니발KA4 4세대 배터리 교체를 진행했습니다. 이번 차량은 시동을 끈 상태에서 휴대폰과 여러 기기를 한동안 충전한 뒤 다시 출발하려고 했을 때 시동이 걸리지 않아 상담을 주신 경우였습니다. 휴대폰 충전 정도는 전기를 많이 쓰지 않을 것처럼 느껴질 수 있지만, 차량이 꺼진 상태에서는 충전기와 각종 전기장치가 결국 배터리에 저장된 전력을 사용하게 됩니다. 특히 여러 기기를 동시에 연결하거나 실내 화면, 조명, 오디오까지 함께 켜져 있었다면 배터.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "인천자동차배터리",
+        "연수구배터리",
+        "연수구자동차배터리",
+        "연수구출장배터리",
+        "청학동배터리",
+        "청학동자동차배터리",
+        "청학동출장배터리",
+        "일등밧데리",
+        "카니발ka4배터리",
+        "카니발ka4배터리교체",
+        "카니발ka4배터리가격",
+        "출장배터리",
+        "출장배터리교체",
+        "자동차배터리",
+        "자동차배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "카니발",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "카니발",
+            "displayName": "카니발",
+            "urlPath": "/car-battery/kia/carnival.html",
+            "matchedAlias": "카니발",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "카니발",
+            "displayVehicleName": "카니발",
+            "label": "KA4",
+            "slug": "ka4",
+            "urlPath": "/car-battery/kia/carnival/ka4.html",
+            "vehicleUrlPath": "/car-battery/kia/carnival.html",
+            "matchedAlias": "KA4"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "카니발",
+            "displayName": "카니발",
+            "urlPath": "/car-battery/kia/carnival.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "yeonsu-gu",
+          "regionName": "연수구",
+          "neighborhoodName": "청학동",
+          "label": "인천 연수구 청학동",
+          "urlPath": "/area/incheon/yeonsu-gu/cheonghak-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "label": "인천 연수구",
+            "urlPath": "/area/incheon/yeonsu-gu.html",
+            "matchedAlias": "연수구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "name": "청학동",
+            "legalName": "인천광역시 연수구 청학동",
+            "label": "인천 연수구 청학동",
+            "urlPath": "/area/incheon/yeonsu-gu/cheonghak-dong.html",
+            "matchedAlias": "청학동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/carnival.html"
+          ],
+          "details": [
+            "/car-battery/kia/carnival/ka4.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/yeonsu-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/yeonsu-gu/cheonghak-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "연수구 청학동에서 카니발 KA4 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224438700010",
       "title": "안양시 동안구 호계동 2016년식 쉐보레 트랙스 디젤 델코 AGM70 출장배터리교체 가격 및 비용 안내｜시동방전 출장요청",
