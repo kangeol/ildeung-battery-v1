@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-13T09:40:59.740Z",
+  "syncedAt": "2026-10-14T07:56:42.826Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 3,
-    "preservedPreviousPosts": 397,
-    "duplicateRemoved": 47,
-    "thumbnailSuccess": 400,
+    "newPosts": 2,
+    "preservedPreviousPosts": 400,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 402,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 352,
-    "vehicleMatches": 331,
-    "detailMatches": 74,
-    "regionMatches": 284,
-    "neighborhoodMatches": 234,
-    "batteryMatches": 283,
+    "manufacturerMatches": 354,
+    "vehicleMatches": 333,
+    "detailMatches": 75,
+    "regionMatches": 286,
+    "neighborhoodMatches": 236,
+    "batteryMatches": 285,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,338 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 284,
-    "actualRegionMatches": 284,
-    "actualNeighborhoodMatches": 234,
+    "actualAreaMatches": 286,
+    "actualRegionMatches": 286,
+    "actualNeighborhoodMatches": 236,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224440503474",
+      "title": "강동구 상일동 2022년식 현대 그랜저GN7 델코 AGM70 출장배터리교체 가격 및 비용 안내｜실내등 켜둔 뒤 아침에 시동 안 걸릴 때",
+      "url": "https://blog.naver.com/kang10107/224440503474",
+      "publishedAt": "2026-10-14",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224440503474.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTNfMTY4/MDAxNzkxODgyNjgzMTMz.WWX7_zGli2Kj3t3rgga1tZY_JA7i2fux1AoVbRH5upsg.s-Fr_JGE7eRmJd9D_2NO5mFQ0PIbabM0x2QkqXtrDhog.JPEG/image-gn7-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 강동구 상일동에서 2022년식 현대 그랜저GN7 배터리 교체를 진행했습니다. 이번 고객님은 주차 후 실내등이 켜진 상태인 걸 모르고 밤을 보낸 뒤 다음 날 아침 시동이 걸리지 않아 상담을 주셨습니다. 실내등 하나 정도는 큰 전기를 쓰지 않을 것처럼 느껴질 수 있지만, 시동을 끈 뒤 여러 시간 계속 켜져 있다면 배터리에는 분명 부담이 됩니다. 특히 밤새 전력을 사용한 뒤 아침에 바로 시동을 걸어야 하는 상황에서는 배터리에 남아 있는 여유가 부족하면 방전으로 이어질 수 있습니다.......",
+      "tags": [
+        "강동구배터리",
+        "강동구출장배터리",
+        "상일동출장배터리",
+        "강동구자동차배터리",
+        "현대배터리",
+        "그랜저배터리",
+        "그랜저gn7배터리",
+        "그랜저배터리교체비용",
+        "그랜저gn7배터리가격",
+        "gn7배터리가격",
+        "델코agm70",
+        "출장배터리교체",
+        "자동차배터리",
+        "자동차배터리교체",
+        "자동차배터리가격",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "그랜저",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayName": "그랜저",
+            "urlPath": "/car-battery/hyundai/grandeur.html",
+            "matchedAlias": "그랜저",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayVehicleName": "그랜저",
+            "label": "GN7",
+            "slug": "gn7",
+            "urlPath": "/car-battery/hyundai/grandeur/gn7.html",
+            "vehicleUrlPath": "/car-battery/hyundai/grandeur.html",
+            "matchedAlias": "GN7"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayName": "그랜저",
+            "urlPath": "/car-battery/hyundai/grandeur.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangdong-gu",
+          "regionName": "강동구",
+          "neighborhoodName": "상일동",
+          "label": "서울 강동구 상일동",
+          "urlPath": "/area/seoul/gangdong-gu/sangil-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "label": "서울 강동구",
+            "urlPath": "/area/seoul/gangdong-gu.html",
+            "matchedAlias": "강동구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "name": "상일동",
+            "legalName": "서울특별시 강동구 상일동",
+            "label": "서울 강동구 상일동",
+            "urlPath": "/area/seoul/gangdong-gu/sangil-dong.html",
+            "matchedAlias": "상일동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/grandeur.html"
+          ],
+          "details": [
+            "/car-battery/hyundai/grandeur/gn7.html"
+          ],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangdong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gangdong-gu/sangil-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "강동구 상일동에서 그랜저 GN7 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224440499208",
+      "title": "인천 부평구 일신동 2018년식 GLC하이브리드 델코 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224440499208",
+      "publishedAt": "2026-10-14",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224440499208.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTNfMjcw/MDAxNzkxODgyMzk1OTkw.m45pNf2loThST0oWijFyHVnG7_-WPa7NJeoQPTddtGsg.-hs2wPWH0Bt0LUcwMVOxkQ52B5fCYmoJM1GvADiHXzMg.JPEG/image-glc-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 부평구 일신동에서 2018년식 벤츠 GLC하이브리드 배터리 교체를 진행했습니다. 이번 고객님은 차량을 세워둔 상태에서 전원 소켓에 기기를 연결해 둔 뒤 다시 차량을 사용하려고 했는데 시동이 걸리지 않아 상담을 주셨습니다. 전원 소켓에 꽂아둔 기기가 작아 보여도 차량이 꺼진 뒤에도 전원이 공급되는 구조라면 배터리 전력을 계속 사용할 수 있습니다. 특히 장시간 주차와 전기 사용이 겹치면 평소에는 느끼지 못했던 배터리 상태가 방전으로 먼저 나타나기도 합니다. 차량 정보를 확.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "일등밧데리",
+        "부평구배터리",
+        "부평배터리",
+        "일신동출장배터리",
+        "glc하이브리드배터리",
+        "glc배터리",
+        "glc배터리교체",
+        "glc배터리가격",
+        "델코agm80",
+        "agm80",
+        "agm80가격",
+        "델코agm80교체비용",
+        "출장배터리교체",
+        "출장배터리가격",
+        "출장배터리비용",
+        "자동차배터리방전",
+        "자동차배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "벤츠",
+        "manufacturers": [
+          {
+            "id": "benz",
+            "name": "벤츠"
+          }
+        ],
+        "vehicle": "벤츠 GLC-클래스",
+        "vehicles": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "GLC-클래스",
+            "displayName": "벤츠 GLC-클래스",
+            "urlPath": "/car-battery/benz/glc-class.html",
+            "matchedAlias": "벤츠GLC",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "GLC-클래스",
+            "displayName": "벤츠 GLC-클래스",
+            "urlPath": "/car-battery/benz/glc-class.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "bupyeong-gu",
+          "regionName": "부평구",
+          "neighborhoodName": "일신동",
+          "label": "인천 부평구 일신동",
+          "urlPath": "/area/incheon/bupyeong-gu/ilsin-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "label": "인천 부평구",
+            "urlPath": "/area/incheon/bupyeong-gu.html",
+            "matchedAlias": "부평구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "name": "일신동",
+            "legalName": "인천광역시 부평구 일신동",
+            "label": "인천 부평구 일신동",
+            "urlPath": "/area/incheon/bupyeong-gu/ilsin-dong.html",
+            "matchedAlias": "일신동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/benz/glc-class.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/benz.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/bupyeong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/bupyeong-gu/ilsin-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "부평구 일신동에서 벤츠 GLC-클래스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224438713779",
       "title": "김포 김포본동 2022년식 아우디 A3 델코 AGM70 출장배터리교체 가격 및 비용 안내｜자동차배터리교체요청",
