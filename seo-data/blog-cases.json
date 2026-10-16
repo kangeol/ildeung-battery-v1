@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-16T07:27:58.445Z",
+  "syncedAt": "2026-10-16T14:10:12.461Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 404,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 406,
+    "newPosts": 1,
+    "preservedPreviousPosts": 406,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 407,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 358,
-    "vehicleMatches": 337,
+    "manufacturerMatches": 359,
+    "vehicleMatches": 338,
     "detailMatches": 77,
-    "regionMatches": 290,
-    "neighborhoodMatches": 238,
-    "batteryMatches": 289,
+    "regionMatches": 291,
+    "neighborhoodMatches": 239,
+    "batteryMatches": 290,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,165 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 290,
-    "actualRegionMatches": 290,
-    "actualNeighborhoodMatches": 238,
+    "actualAreaMatches": 291,
+    "actualRegionMatches": 291,
+    "actualNeighborhoodMatches": 239,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224443371363",
+      "title": "인천 서해구 석남동 2022년식 스타리아 로케트 AGM80R 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224443371363",
+      "publishedAt": "2026-10-16",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224443371363.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTZfMjcz/MDAxNzkyMTA3NjkzOTY3.Guc61c8d1wrBmSEFrwQ2vmBKwMJkGmhF3tsc2YWq9NAg.P1tP6YdDMtgkGpTN1RWBU5yNP10v1u30CqGdVdZPPw0g.JPEG/image-image-agm80r-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 서해구 석남동에서 2022년식 현대 스타리아 배터리 교체를 진행했습니다. 이번 고객님은 캠핑을 떠나기 위해 차량에 짐을 싣고 정리하다가 예상하지 못한 방전을 겪으셨습니다. 캠핑용품을 하나씩 옮기다 보면 트렁크를 열어둔 상태에서 짐을 넣었다 뺐다 하는 시간이 길어질 수 있습니다. 이번에도 준비하는 동안 트렁크를 오래 열어두셨고, 짐 정리를 마친 뒤 출발하려는데 시동이 걸리지 않아 교체 상담으로 이어졌습니다. 차량 정보를 확인해 로케트 AGM80R을 준비했고, 석남동으로 방.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "인천배터리교체",
+        "서해구출장배터리",
+        "석남동출장배터리",
+        "스타리아배터리",
+        "스타리아배터리가격",
+        "스타이라배터리교체",
+        "일등밧데리",
+        "agm80r",
+        "자동차배터리",
+        "출장배터리교체",
+        "배터리교체",
+        "자동차배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "스타리아",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "스타리아",
+            "displayName": "스타리아",
+            "urlPath": "/car-battery/hyundai/staria.html",
+            "matchedAlias": "스타리아",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "스타리아",
+            "displayName": "스타리아",
+            "urlPath": "/car-battery/hyundai/staria.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "seohae-gu",
+          "regionName": "서해구",
+          "neighborhoodName": "석남동",
+          "label": "인천 서해구 석남동",
+          "urlPath": "/area/incheon/seohae-gu/seoknam-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "seohae-gu",
+            "regionName": "서해구",
+            "label": "인천 서해구",
+            "urlPath": "/area/incheon/seohae-gu.html",
+            "matchedAlias": "서해구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "seohae-gu",
+            "regionName": "서해구",
+            "name": "석남동",
+            "legalName": "인천광역시 서해구 석남동",
+            "label": "인천 서해구 석남동",
+            "urlPath": "/area/incheon/seohae-gu/seoknam-dong.html",
+            "matchedAlias": "석남동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/staria.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/seohae-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/seohae-gu/seoknam-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "서해구 석남동에서 스타리아 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224443368630",
       "title": "군포 수리동 2025년식 팰리세이드 하이브리드 LX3 델코 AGM60 출장배터리교체 가격 및 비용 안내｜차량 청소 후 시동 안 걸릴 때",
