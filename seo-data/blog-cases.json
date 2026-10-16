@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-15T07:40:47.507Z",
+  "syncedAt": "2026-10-16T07:27:58.445Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 403,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 404,
+    "newPosts": 2,
+    "preservedPreviousPosts": 404,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 406,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 356,
-    "vehicleMatches": 335,
-    "detailMatches": 76,
-    "regionMatches": 288,
+    "manufacturerMatches": 358,
+    "vehicleMatches": 337,
+    "detailMatches": 77,
+    "regionMatches": 290,
     "neighborhoodMatches": 238,
-    "batteryMatches": 287,
+    "batteryMatches": 289,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,305 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 288,
-    "actualRegionMatches": 288,
+    "actualAreaMatches": 290,
+    "actualRegionMatches": 290,
     "actualNeighborhoodMatches": 238,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224443368630",
+      "title": "군포 수리동 2025년식 팰리세이드 하이브리드 LX3 델코 AGM60 출장배터리교체 가격 및 비용 안내｜차량 청소 후 시동 안 걸릴 때",
+      "url": "https://blog.naver.com/kang10107/224443368630",
+      "publishedAt": "2026-10-16",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224443368630.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTZfMzQg/MDAxNzkyMTA3NDI4NzI5.UiaG9egP5tavUswG6vJX7jI0S-jQqz80Lpmic4nb1aAg.kEte7D1qXH7mRT9j3jgzQ28IefhF4kE8gxDVjwhCVdog.PNG/%C0%DA%B5%BF%C2%F7%B9%E8%C5%CD%B8%AE%B1%B3%C3%BC.png?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 군포시 수리동에서 2025년식 팰리세이드 하이브리드 LX3 배터리 교체를 진행했습니다. 이번 고객님은 차량 실내를 청소하면서 문을 오랫동안 열어두셨고, 청소를 마친 뒤 다시 차량을 사용하려는데 전원 문제로 시동이 걸리지 않아 상담을 주셨습니다. 차 안에 있는 짐을 꺼내고 시트와 바닥을 청소하다 보면 생각보다 시간이 오래 걸릴 때가 있습니다. 그동안 문이 열려 있으면 실내조명이나 차량 전자장치가 작동할 수 있어 배터리 전력을 사용하게 됩니다. 다만 문을 오래 열어뒀다는 이.......",
+      "tags": [
+        "군포배터리",
+        "군포출장배터리",
+        "군포자동차배터리",
+        "수리동출장배터리",
+        "팰리세이드배터리",
+        "팰리세이드하이브리드배터리",
+        "팰리세이드하이브리드배터리교체",
+        "델코agm60",
+        "델코agm60가격",
+        "agm60",
+        "agm60교체",
+        "agm60가격",
+        "출장배터리",
+        "자동차배터리",
+        "일등밧데리",
+        "배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "팰리세이드",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "팰리세이드",
+            "displayName": "팰리세이드",
+            "urlPath": "/car-battery/hyundai/palisade.html",
+            "matchedAlias": "팰리세이드",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "팰리세이드",
+            "displayVehicleName": "팰리세이드",
+            "label": "LX3",
+            "slug": "lx3",
+            "urlPath": "/car-battery/hyundai/palisade/lx3.html",
+            "vehicleUrlPath": "/car-battery/hyundai/palisade.html",
+            "matchedAlias": "LX3"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "팰리세이드",
+            "displayName": "팰리세이드",
+            "urlPath": "/car-battery/hyundai/palisade.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gunpo-si",
+          "regionName": "군포시",
+          "label": "경기 군포시",
+          "urlPath": "/area/gyeonggi/gunpo-si.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gunpo-si",
+            "regionName": "군포시",
+            "label": "경기 군포시",
+            "urlPath": "/area/gyeonggi/gunpo-si.html",
+            "matchedAlias": "군포"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM60"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/palisade.html"
+          ],
+          "details": [
+            "/car-battery/hyundai/palisade/lx3.html"
+          ],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gunpo-si.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm60.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "경기 군포시에서 팰리세이드 LX3 AGM60 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224443364466",
+      "title": "관악구 인헌동 2018년식 기아 스팅어 델코 AGM95 출장배터리교체 가격 및 비용 안내｜전조등 켜둔 채 주차 후 시동 안 걸릴 때",
+      "url": "https://blog.naver.com/kang10107/224443364466",
+      "publishedAt": "2026-10-16",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224443364466.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTZfMTI1/MDAxNzkyMTA3MDg1OTMy.FiIgG8fXLk0yJesT0yErjqR6qH4K8L5RTBo3xLSEOAwg.ef-XyX_qKzsVT_d476pK-OUrzdCH9bnkGCl5FFbzaJkg.JPEG/image-image-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 관악구 인헌동에서 2018년식 기아 스팅어 배터리 교체를 진행했습니다. 이번 고객님은 주차 후 전조등을 끄지 않은 상태로 차량을 세워뒀다가 다시 시동을 걸려고 했을 때 배터리가 방전돼 상담을 주셨습니다. 전조등은 실내등보다 전력 사용이 큰 편이라 시동을 끈 상태에서 오랫동안 켜져 있으면 배터리에 부담이 커질 수 있습니다. 고객님도 처음에는 전조등을 켜둔 실수 때문에 생긴 단순 방전이라고 생각하셨지만, 한 번 크게 전력을 사용한 뒤에는 현재 배터리 상태도 같이 확인해보.......",
+      "tags": [
+        "관악구배터리",
+        "관악구출장배터리",
+        "관악구자동차배터리",
+        "인헌동출장배터리",
+        "스팅어배터리",
+        "스팅어배터리교체",
+        "스팅어배터리가격",
+        "델코agm95",
+        "agm95",
+        "agm95가격",
+        "출장배터리",
+        "자동차배터리",
+        "출장배터리가격",
+        "자동차배터리교체비용",
+        "출장배터리교체비용",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "스팅어",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "스팅어",
+            "displayName": "스팅어",
+            "urlPath": "/car-battery/kia/stinger.html",
+            "matchedAlias": "스팅어",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "스팅어",
+            "displayName": "스팅어",
+            "urlPath": "/car-battery/kia/stinger.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gwanak-gu",
+          "regionName": "관악구",
+          "label": "서울 관악구",
+          "urlPath": "/area/seoul/gwanak-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gwanak-gu",
+            "regionName": "관악구",
+            "label": "서울 관악구",
+            "urlPath": "/area/seoul/gwanak-gu.html",
+            "matchedAlias": "관악구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/stinger.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gwanak-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "서울 관악구에서 스팅어 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224440512205",
       "title": "인천 미추홀구 문학동 2022년식 스포티지NQ5 델코 AGM80 출장배터리교체 가격 및 비용 안내｜비상등 오래 켜둔 뒤 시동 안 걸릴 때",
