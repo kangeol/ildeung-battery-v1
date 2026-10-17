@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-17T07:08:47.155Z",
+  "syncedAt": "2026-10-17T13:08:09.098Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,10 +479,10 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 407,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 409,
+    "newPosts": 1,
+    "preservedPreviousPosts": 409,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 410,
     "thumbnailFallback": 0,
     "manufacturerMatches": 361,
     "vehicleMatches": 340,
@@ -507,6 +507,73 @@
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224443382301",
+      "title": "자동차출장배터리 교체 AGM배터리 가격 및 비용 교체 일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224443382301",
+      "publishedAt": "2026-10-17",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224443382301.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTdfMTg5/MDAxNzkyMjM4NDg2ODU4.NsXvtxXLMJ-bfC-Msmfq8wI3u8W0N3kMlDylNM22WSsg.jFmBGBKPYSPM3VTW3LMluqDcQRcvMhRcc6J967th9usg.JPEG/KakaoTalk_20250326_185358257.jpg?type=s3",
+      "sourceExcerpt": "자동차 출장배터리교체 전문 서울 / 경기 / 인천 배터리출장교체! 고객센터 1644-9141 안녕하세요 자동차배터리 출장전문 일등밧데리 입니다~! 배터리교체 비싼 가격에 당황하셨나요??? 배터리전문 일등밧데리에 전화 한통이면 해결 됩니다! 카센타나 서비스센터보다 30~50% 저렴한 가격 과 비용으로 집앞에서 배터리교체 서비스 받으세요! 일반 타입 DIN 타입 비용 안내 -일반적인 타입 DF 타입과 DIN타입 가격 및 비용 안내 일반적인 차량배터리교체 가격은 7만5천원에서~15만5천원 으로 출장비 포함 배터리 출장교체 가격이 구성 되어 있습니다.^^ 합리적인 가격과 투명한 가격으로 언제든지 편하게 문의 주세요! AGM 배터리 가격 및 비용 안.......",
+      "tags": [
+        "자동차출장배터리",
+        "출장배터리교체",
+        "agm배터리",
+        "agm배터리가격",
+        "출장배터리가격",
+        "자동차배터리가격",
+        "일등밧데리",
+        "배터리교체",
+        "배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": null,
+        "manufacturers": [],
+        "vehicle": null,
+        "vehicles": [],
+        "detailModels": [],
+        "vehicleHierarchy": [],
+        "actualWorkLocation": null,
+        "mentionedServiceAreas": [],
+        "areas": [],
+        "regions": [],
+        "neighborhoods": [],
+        "batteryModels": [],
+        "symptoms": [
+          "교체"
+        ],
+        "matchedPages": {
+          "vehicles": [],
+          "details": [],
+          "manufacturers": [],
+          "areas": [],
+          "regions": [],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "일등밧데리 네이버 블로그에 공개된 자동차배터리 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 0,
+        "vehicle": 0,
+        "detail": 0,
+        "actualLocation": 0,
+        "mentionedServiceArea": 0,
+        "region": 0,
+        "neighborhood": 0,
+        "battery": 0
+      }
+    },
     {
       "id": "224443379438",
       "title": "의왕 오전동 2019년식 아우디 Q7 바르타 AGM95 출장배터리교체 가격 및 비용 안내｜차 안에서 전기장치 오래 쓰다가 시동이 약할 때",
