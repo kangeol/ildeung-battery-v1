@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-18T07:23:02.769Z",
+  "syncedAt": "2026-10-18T08:18:50.072Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 1,
-    "preservedPreviousPosts": 410,
+    "preservedPreviousPosts": 411,
     "duplicateRemoved": 49,
-    "thumbnailSuccess": 411,
+    "thumbnailSuccess": 412,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 362,
-    "vehicleMatches": 341,
-    "detailMatches": 77,
-    "regionMatches": 294,
-    "neighborhoodMatches": 242,
-    "batteryMatches": 293,
+    "manufacturerMatches": 363,
+    "vehicleMatches": 342,
+    "detailMatches": 78,
+    "regionMatches": 295,
+    "neighborhoodMatches": 243,
+    "batteryMatches": 294,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,176 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 294,
-    "actualRegionMatches": 294,
-    "actualNeighborhoodMatches": 242,
+    "actualAreaMatches": 295,
+    "actualRegionMatches": 295,
+    "actualNeighborhoodMatches": 243,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224443388935",
+      "title": "서초 서초동 2018년식 기아 올뉴쏘렌토 델코 AGM95 출장배터리교체 가격 및 비용 안내｜갑자기 추워진 아침 시동 안 걸릴 때",
+      "url": "https://blog.naver.com/kang10107/224443388935",
+      "publishedAt": "2026-10-18",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224443388935.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTZfMjkg/MDAxNzkyMTA5MDgwNzg1.pRVu32VSEgxGPVv6N4y820z04tQCFsOjIOG386lKXwcg.RQ8ibRezTcyb8wgOyO7sriPpoLAosRL7ZAYeN-Lggesg.JPEG/image-image-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 서초구 서초동에서 2018년식 기아 올뉴쏘렌토 배터리 교체를 진행했습니다. 이번 고객님은 그동안 별다른 방전 없이 차량을 사용하시다가 갑자기 추워진 날 아침, 처음으로 시동이 걸리지 않아 연락을 주셨습니다. 전날까지 사용하던 차량이 아침에 갑자기 움직이지 않으면 당황스러울 수밖에 없습니다. 특히 날씨가 추워진 직후 이런 일이 생기면 “어제까지 멀쩡했는데 추위 때문에 그런 건가요?”라고 궁금해하시는 분들이 많습니다. 이번에도 고객님께서 겪으신 상황을 확인한 뒤 델코.......",
+      "tags": [
+        "서초배터리",
+        "서초출장배터리",
+        "서초자동차배터리",
+        "서초동출장배터리",
+        "올뉴쏘렌토배터리",
+        "올뉴쏘렌토배터리교체",
+        "올뉴쏘렌토배터리교체비용",
+        "출장배터리",
+        "자동차배터리교체",
+        "자동차배터리교체비용",
+        "출장배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "쏘렌토",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayName": "쏘렌토",
+            "urlPath": "/car-battery/kia/sorento.html",
+            "matchedAlias": "쏘렌토",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayVehicleName": "쏘렌토",
+            "label": "올 뉴 쏘렌토",
+            "slug": "all-new-sorento",
+            "urlPath": "/car-battery/kia/sorento/all-new-sorento.html",
+            "vehicleUrlPath": "/car-battery/kia/sorento.html",
+            "matchedAlias": "올 뉴 쏘렌토"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayName": "쏘렌토",
+            "urlPath": "/car-battery/kia/sorento.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "seocho-gu",
+          "regionName": "서초구",
+          "neighborhoodName": "서초동",
+          "label": "서울 서초구 서초동",
+          "urlPath": "/area/seoul/seocho-gu/seocho-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "seocho-gu",
+            "regionName": "서초구",
+            "label": "서울 서초구",
+            "urlPath": "/area/seoul/seocho-gu.html",
+            "matchedAlias": "서초"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "seocho-gu",
+            "regionName": "서초구",
+            "name": "서초동",
+            "legalName": "서울특별시 서초구 서초동",
+            "label": "서울 서초구 서초동",
+            "urlPath": "/area/seoul/seocho-gu/seocho-dong.html",
+            "matchedAlias": "서초동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/sorento.html"
+          ],
+          "details": [
+            "/car-battery/kia/sorento/all-new-sorento.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/seocho-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/seocho-gu/seocho-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "서초구 서초동에서 쏘렌토 올 뉴 쏘렌토 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224443386124",
       "title": "인천 남동구 만수동 2019년식 벤츠E220D 델코 AGM95 출장배터리교체 가격 및 비용 안내｜일등밧데리",
