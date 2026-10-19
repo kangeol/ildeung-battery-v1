@@ -3,9 +3,11 @@ import {conversationTurn,createConversationState} from '../js/smart-consult-conv
 import {authoritativeBrands} from '../js/smart-consult-brand-query.js';
 import {batteryAliasLedger,batteryPrice,priceDescription} from '../js/smart-consult-prices.js';
 import {encodeSession,decodeSession} from '../js/smart-consult-session.js';
+import {approvedDin74rPrices} from './lib/din74r-approved-price-delta.js';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),catalog=read('data/battery-prices.json'),policy=read('data/consult-service-policy.json'),rows=read('data/manufacturers.json').flatMap(m=>read('data/'+m.file).map(r=>({...r,manufacturerId:m.id,manufacturerName:m.name}))),areas=read('seo-data/smart-consult-location-index.json').localities;
 const before=JSON.parse(execFileSync('git',['show','14deabe851b137eb2682a77512f98aa8b2805168:data/battery-prices.json'],{encoding:'utf8'}));
-assert.deepEqual(catalog,{...before,nonAgmBrandPolicy:{brand:'DELKOR',scope:'canonical_non_agm',authority:'Owner: ILDEUNG_AI_CONSULT_OWNER_NON_AGM_DELKOR_BRAND_POLICY_V1'}});
+const expectedPrices=approvedDin74rPrices(before.prices);
+assert.deepEqual(catalog,{...before,prices:expectedPrices,nonAgmBrandPolicy:{brand:'DELKOR',scope:'canonical_non_agm',authority:'Owner: ILDEUNG_AI_CONSULT_OWNER_NON_AGM_DELKOR_BRAND_POLICY_V1'}});
 const names=['NON_AGM_BRAND_CONFIRMATION_FALLBACK_REMAINING','NON_AGM_BRAND_WRONG','AGM_BRAND_SUPPORT_CHANGED','VARTA_UNSUPPORTED_BRAND_FALSE_SUPPORTED','VARTA_UNSUPPORTED_PRICE_FABRICATED','UNSUPPORTED_BRAND_FABRICATED','BRAND_QUERY_SPEC_LOST','BRAND_QUERY_ALIAS_LOST','BRAND_PRICE_MULTI_INTENT_LOST','BRAND_SESSION_CONTEXT_LOST','AMBIGUOUS_ALIAS_BRAND_AUTOCONFIRM','CANONICAL_PRICE_WRONG'];
 const gates=Object.fromEntries(names.map(n=>[n,0])),checks=Object.fromEntries(names.map(n=>[n,0])),evidence=[];
 const check=(n,ok)=>{checks[n]++;if(!ok)gates[n]++;};
@@ -13,7 +15,7 @@ const turn=(q,state=createConversationState())=>{const o=conversationTurn(state,
 for(const code of Object.keys(catalog.prices)){
  const agm=code.startsWith('AGM'),brands=agm?['DELKOR',...(Object.hasOwn(before.brands.VARTA.prices,code)?['VARTA']:[])]:['DELKOR'];
  check(agm?'AGM_BRAND_SUPPORT_CHANGED':'NON_AGM_BRAND_WRONG',JSON.stringify(authoritativeBrands(code,catalog))===JSON.stringify(brands));
- for(const q of [code+' 어디 브랜드예요?',code+'은 어디꺼예요?',code+' 브랜드랑 가격 알려줘']){const o=turn(q),s=o.messages.join(' ');check('BRAND_QUERY_SPEC_LOST',o.state.quotedSpec===code);if(!agm){check('NON_AGM_BRAND_WRONG',s.includes(code+' 규격은 델코 제품'));check('NON_AGM_BRAND_CONFIRMATION_FALLBACK_REMAINING',!/브랜드.*확인/.test(s));}if(q.includes('가격'))for(const brand of brands){check('BRAND_PRICE_MULTI_INTENT_LOST',o.messages.includes(priceDescription(code,catalog,brand)));check('CANONICAL_PRICE_WRONG',batteryPrice(code,catalog,brand).amount===(brand==='VARTA'?before.brands.VARTA.prices[code]:before.prices[code]));}}
+ for(const q of [code+' 어디 브랜드예요?',code+'은 어디꺼예요?',code+' 브랜드랑 가격 알려줘']){const o=turn(q),s=o.messages.join(' ');check('BRAND_QUERY_SPEC_LOST',o.state.quotedSpec===code);if(!agm){check('NON_AGM_BRAND_WRONG',s.includes(code+' 규격은 델코 제품'));check('NON_AGM_BRAND_CONFIRMATION_FALLBACK_REMAINING',!/브랜드.*확인/.test(s));}if(q.includes('가격'))for(const brand of brands){check('BRAND_PRICE_MULTI_INTENT_LOST',o.messages.includes(priceDescription(code,catalog,brand)));check('CANONICAL_PRICE_WRONG',batteryPrice(code,catalog,brand).amount===(brand==='VARTA'?before.brands.VARTA.prices[code]:expectedPrices[code]));}}
  const quoted=turn(code+' 가격은?').state,follow=turn('브랜드는?',quoted);check('BRAND_SESSION_CONTEXT_LOST',follow.state.quotedSpec===code&&JSON.stringify(decodeSession(encodeSession(follow.state,[])).state)===JSON.stringify(follow.state));
  if(!brands.includes('VARTA')){const o=turn(code+' 바르타 브랜드랑 가격 알려줘'),s=o.messages.join(' ');check('VARTA_UNSUPPORTED_BRAND_FALSE_SUPPORTED',/판매 지원 규격이 아닙니다/.test(s));check('VARTA_UNSUPPORTED_PRICE_FABRICATED',!/바르타 기준 교체 가격/.test(s)&&!/[0-9]+(?:만|천)원/.test(s));}
 }

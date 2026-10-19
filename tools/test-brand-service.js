@@ -1,5 +1,6 @@
 import './lib/blog-sync-approved-freeze.js';
-import {assertHistoricalProductHtml,assertNoCurrentHtml} from './lib/location-task-validation.js';
+import {approvedDin74rPrices} from './lib/din74r-approved-price-delta.js';
+import {assertHistoricalProductHtml,assertNoCurrentHtml,assertApprovedTraverseData} from './lib/location-task-validation.js';
 import {assertHomepageFreeze} from './lib/homepage-approved-freeze.js';
 assertHomepageFreeze();
 import fs from 'node:fs';
@@ -17,7 +18,7 @@ const areas=read('seo-data/smart-consult-location-index.json').localities;
 const baseline='4b7ce6fbb2f0747e05a56bac96a54fc637a56322';
 const git=a=>execFileSync('git',['-c','core.safecrlf=false',...a],{encoding:'utf8',maxBuffer:20e6});
 const before=JSON.parse(git(['show',`${baseline}:data/battery-prices.json`]));
-assert.deepEqual(catalog.prices,before.prices);assert.deepEqual(catalog.aliases,before.aliases);assert.deepEqual(catalog.unpriced,[]);assert.equal(Object.keys(catalog.prices).length,26);
+assert.deepEqual(catalog.prices,approvedDin74rPrices(before.prices));assert.deepEqual(catalog.aliases,before.aliases);assert.deepEqual(catalog.unpriced,[]);assert.equal(Object.keys(catalog.prices).length,26);
 const varta={AGM70:220000,AGM80:240000,AGM95:270000,AGM105:330000};
 assert.deepEqual(catalog.brands.VARTA.prices,varta);assert.equal(catalog.defaultAgmBrand,'DELKOR');
 assert.equal(catalog.brands.DELKOR.prices,undefined,'DELKOR references existing base truth');
@@ -91,7 +92,7 @@ for(const row of rows)for(const brand of ['','DELKOR','VARTA']){
  if(/또는|\//.test(row.defaultBattery))assert.equal(o.state.confirmedBattery,null);
  massCases++;
 }
-for(const m of manufacturers){const expected=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='chevrolet.json')expected[30].defaultBattery='DIN74L';assert.deepEqual(read(`data/${m.file}`),expected);}
+for(const m of manufacturers){const expected=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='chevrolet.json'){expected[30].defaultBattery='DIN74L';assertApprovedTraverseData(read(`data/${m.file}`),expected);}else assert.deepEqual(read(`data/${m.file}`),expected);}
 const htmlChanged=assertHistoricalProductHtml(baseline);
 assertNoCurrentHtml();
 assert.equal(fs.readFileSync('smart-consult/index.html','utf8').replace(/\r\n/g,'\n'),git(['show',`${baseline}:smart-consult/index.html`]).replace(/\r\n/g,'\n').replace('?v=price-v1','?v=brand-query-v1').replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1'));

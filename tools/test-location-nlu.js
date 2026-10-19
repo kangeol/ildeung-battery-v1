@@ -3,6 +3,7 @@ import {assertHomepageFreeze} from './lib/homepage-approved-freeze.js';
 assertHomepageFreeze();
 import fs from 'node:fs';
 import {assertNonAgmOwnerPolicy} from './lib/assert-non-agm-owner-policy.js';
+import {assertApprovedTraverseData} from './lib/location-task-validation.js';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {resolveLocation,classifyLocationAliases} from '../js/smart-consult-location.js';
@@ -74,7 +75,9 @@ const changed=execFileSync('git',['diff','--name-only',approvedAreaBaseline],{en
 const html=changed.filter(p=>p.endsWith('.html')&&p!=='index.html'&&!approvedSyncFiles.has(p));assert.ok(html.every(p=>p==='smart-consult/index.html'));
 assertNonAgmOwnerPolicy();
 const exactApprovedGeneratedSnapshot=changed.filter(p=>p===approvedGroupsPath&&approvedGroups.length>0);
-assert.equal(changed.filter(p=>!approvedSyncFiles.has(p)&&!exactApprovedGeneratedSnapshot.includes(p)&&/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&p!=='data/battery-prices.json'&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
+const traversePath='data/chevrolet.json';
+assertApprovedTraverseData(read(traversePath),JSON.parse(execFileSync('git',['show',`${approvedAreaBaseline}:${traversePath}`],{encoding:'utf8'})));
+assert.equal(changed.filter(p=>!approvedSyncFiles.has(p)&&!exactApprovedGeneratedSnapshot.includes(p)&&/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&p!==traversePath&&p!=='data/battery-prices.json'&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
 const evidence={canonicalCases,aliasCases,totalCases:cases,areas:areas.length,rows:records.length,gates,failures,transcripts,changedHTML:html};
 const evidenceDir=process.argv.includes('--faq')?'docs/evidence/final-faq/location':'docs/evidence/location-nlu';
 fs.mkdirSync(evidenceDir,{recursive:true});fs.writeFileSync(`${evidenceDir}/matrix.json`,JSON.stringify(evidence,null,2)+'\n');

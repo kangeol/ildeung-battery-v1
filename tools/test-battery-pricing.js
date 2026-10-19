@@ -15,7 +15,7 @@ const manufacturers=read('data/manufacturers.json');
 const records=manufacturers.flatMap(m=>read(`data/${m.file}`).map((r,index)=>({...r,manufacturerId:m.id,manufacturerName:m.name,source:m.file,index})));
 const areas=read('seo-data/smart-consult-location-index.json').localities;
 // Independent Owner acceptance fixture, not a runtime price source.
-const expected={DF40AL:75000,DF60L:95000,DF60R:100000,DF80L:100000,DF80R:110000,DF90L:110000,DF90R:110000,DF100L:120000,DF100R:125000,DIN50L:90000,DIN60L:105000,DIN60HL:105000,DIN74:125000,DIN74L:125000,DIN74R:130000,DIN90:140000,DIN90L:140000,DIN100L:150000,'65-900':155000,AGM60:155000,AGM70:170000,AGM80:190000,AGM80R:220000,AGM95:220000,AGM95R:240000,AGM105:280000};
+const expected={DF40AL:75000,DF60L:95000,DF60R:100000,DF80L:100000,DF80R:110000,DF90L:110000,DF90R:110000,DF100L:120000,DF100R:125000,DIN50L:90000,DIN60L:105000,DIN60HL:105000,DIN74:125000,DIN74L:125000,DIN74R:140000,DIN90:140000,DIN90L:140000,DIN100L:150000,'65-900':155000,AGM60:155000,AGM70:170000,AGM80:190000,AGM80R:220000,AGM95:220000,AGM95R:240000,AGM105:280000};
 assert.deepEqual(catalog.prices,expected);assert.equal(catalog.currency,'KRW');assert.ok(catalog.version&&catalog.effectiveAt);
 assert.equal(records.length,917);assert.equal(areas.length,665);
 const transcripts=[];
