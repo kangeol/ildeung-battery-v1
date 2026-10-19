@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-18T08:18:50.072Z",
+  "syncedAt": "2026-10-19T08:02:20.215Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 411,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 412,
+    "newPosts": 2,
+    "preservedPreviousPosts": 412,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 414,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 363,
-    "vehicleMatches": 342,
-    "detailMatches": 78,
-    "regionMatches": 295,
-    "neighborhoodMatches": 243,
-    "batteryMatches": 294,
+    "manufacturerMatches": 365,
+    "vehicleMatches": 344,
+    "detailMatches": 79,
+    "regionMatches": 297,
+    "neighborhoodMatches": 245,
+    "batteryMatches": 296,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,334 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 295,
-    "actualRegionMatches": 295,
-    "actualNeighborhoodMatches": 243,
+    "actualAreaMatches": 297,
+    "actualRegionMatches": 297,
+    "actualNeighborhoodMatches": 245,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224446226917",
+      "title": "인천 계양구 작전동 2019년식 올뉴K7 델코 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224446226917",
+      "publishedAt": "2026-10-19",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224446226917.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTlfMjM1/MDAxNzkyMzY5OTE1NTIz.fZJdp_Iw_wXGeKSEyjvcUTzbgFgTW2eR-qf0ofI8HvQg.s4pdlI_kAekG6af6W6XMxNyTqpHRCGxfSW8uJZzez6Eg.JPEG/image-k7-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 계양구 작전동에서 2019년식 기아 올뉴K7 배터리 교체를 진행했습니다. 이번 고객님은 추운 날씨가 며칠 동안 이어진 뒤 처음으로 배터리 방전을 경험하셨습니다. 평소에는 별다른 문제 없이 사용하던 차량이었는데, 추위가 계속되던 어느 날 시동을 걸려고 하니 반응이 없어 당황하셨다고 합니다. “그동안 잘 타던 차인데 추워졌다고 갑자기 방전될 수 있나요?” 고객님께서 궁금해하셨던 부분입니다. 배터리는 기온의 영향을 받기 때문에 평소에는 드러나지 않았던 성능 저하가 추운 날.......",
+      "tags": [
+        "인천배터리",
+        "계양구배터리",
+        "작전동출장배터리",
+        "올뉴k7배터리",
+        "k7배터리",
+        "k7배터리가격",
+        "델코agm80",
+        "agm80",
+        "agm80가격",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "K7",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K7",
+            "displayName": "K7",
+            "urlPath": "/car-battery/kia/k7.html",
+            "matchedAlias": "K7",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K7",
+            "displayVehicleName": "K7",
+            "label": "올 뉴 K7",
+            "slug": "all-new-k7",
+            "urlPath": "/car-battery/kia/k7/all-new-k7.html",
+            "vehicleUrlPath": "/car-battery/kia/k7.html",
+            "matchedAlias": "올 뉴 K7"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K7",
+            "displayName": "K7",
+            "urlPath": "/car-battery/kia/k7.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "gyeyang-gu",
+          "regionName": "계양구",
+          "neighborhoodName": "작전동",
+          "label": "인천 계양구 작전동",
+          "urlPath": "/area/incheon/gyeyang-gu/jakjeon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "label": "인천 계양구",
+            "urlPath": "/area/incheon/gyeyang-gu.html",
+            "matchedAlias": "계양구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "name": "작전동",
+            "legalName": "인천광역시 계양구 작전동",
+            "label": "인천 계양구 작전동",
+            "urlPath": "/area/incheon/gyeyang-gu/jakjeon-dong.html",
+            "matchedAlias": "작전동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/k7.html"
+          ],
+          "details": [
+            "/car-battery/kia/k7/all-new-k7.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/gyeyang-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/gyeyang-gu/jakjeon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "계양구 작전동에서 K7 올 뉴 K7 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224443394650",
+      "title": "과천 문원동 2020년식 BMW X4 델코 AGM95 출장배터리교체 가격 및 비용 안내｜야외주차 후 아침 시동이 힘들 때",
+      "url": "https://blog.naver.com/kang10107/224443394650",
+      "publishedAt": "2026-10-19",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224443394650.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTZfMTM4/MDAxNzkyMTA5NDA3NTA0.K72ont6FOd9EzjorGDw8Q3HGmXQ75qbEpMLkDVTG93kg.a0C4V0jEBUj_JLOQLCf0ZSqsXJKd9kzzDKKGaoRrPtkg.JPEG/bmw-bmw-x4-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 과천시 문원동에서 2020년식 BMW X4 배터리 교체를 진행했습니다. 이번 고객님은 겨울철 야외주차를 한 뒤부터 아침 첫 시동이 평소보다 약하게 느껴져 상담을 요청하셨습니다. 차량을 실외에 세워두고 다음 날 아침 시동을 걸면 이전보다 힘겹게 걸리는 느낌이 들었고, 이런 상황이 반복되면서 배터리를 교체해야 할지 고민하셨다고 합니다. 완전히 방전돼 움직이지 못하는 상태는 아니었지만, 추운 날마다 시동이 신경 쓰이니 미리 교체하는 쪽으로 결정하셨습니다. 이번에는 델코 AGM95.......",
+      "tags": [
+        "과천배터리",
+        "과천출장배터리",
+        "과천출장배터리가격",
+        "문원동출장배터리",
+        "문원동자동차배터리",
+        "bmw배터리",
+        "bmw배터리교체",
+        "x4배터리",
+        "x4배터리가격",
+        "델코agm95",
+        "agm95가격",
+        "agm95교체비용",
+        "델코agm95가격",
+        "x4배터리교체비용",
+        "bmw배터리비용",
+        "출장배터리",
+        "자동차배터리",
+        "일등밧데리",
+        "출장배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW X4",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X4",
+            "displayName": "BMW X4",
+            "urlPath": "/car-battery/bmw/x4.html",
+            "matchedAlias": "BMW X4",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X4",
+            "displayName": "BMW X4",
+            "urlPath": "/car-battery/bmw/x4.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gwacheon-si",
+          "regionName": "과천시",
+          "neighborhoodName": "문원동",
+          "label": "경기 과천시 문원동",
+          "urlPath": "/area/gyeonggi/gwacheon-si/munwon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwacheon-si",
+            "regionName": "과천시",
+            "label": "경기 과천시",
+            "urlPath": "/area/gyeonggi/gwacheon-si.html",
+            "matchedAlias": "과천"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwacheon-si",
+            "regionName": "과천시",
+            "name": "문원동",
+            "legalName": "경기도 과천시 문원동",
+            "label": "경기 과천시 문원동",
+            "urlPath": "/area/gyeonggi/gwacheon-si/munwon-dong.html",
+            "matchedAlias": "문원동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/x4.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gwacheon-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/gwacheon-si/munwon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "과천시 문원동에서 BMW X4 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224443388935",
       "title": "서초 서초동 2018년식 기아 올뉴쏘렌토 델코 AGM95 출장배터리교체 가격 및 비용 안내｜갑자기 추워진 아침 시동 안 걸릴 때",
