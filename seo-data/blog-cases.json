@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-20T07:52:26.228Z",
+  "syncedAt": "2026-10-20T08:51:44.687Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 415,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 417,
+    "newPosts": 1,
+    "preservedPreviousPosts": 417,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 418,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 370,
-    "vehicleMatches": 348,
-    "detailMatches": 80,
-    "regionMatches": 300,
-    "neighborhoodMatches": 247,
-    "batteryMatches": 299,
+    "manufacturerMatches": 371,
+    "vehicleMatches": 349,
+    "detailMatches": 81,
+    "regionMatches": 301,
+    "neighborhoodMatches": 248,
+    "batteryMatches": 300,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,186 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 300,
-    "actualRegionMatches": 300,
-    "actualNeighborhoodMatches": 247,
+    "actualAreaMatches": 301,
+    "actualRegionMatches": 301,
+    "actualNeighborhoodMatches": 248,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224447413294",
+      "title": "양천구 신정동 2016년식 현대 제네시스DH 델코 AGM105 출장배터리교체 가격 및 비용 안내｜휴가 다녀온 뒤 시동 안 걸릴 때",
+      "url": "https://blog.naver.com/kang10107/224447413294",
+      "publishedAt": "2026-10-20",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224447413294.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjBfNjIg/MDAxNzkyNDU2NDQ2OTY2.ncmbwJrPX-Xv3ePmjUyZC5LtkgjJmfhhwtemLP2N7Lsg.7doRzUfwKju_C1NjlEYbU_6_Mdab22YIlcU8UJUy2JYg.JPEG/image-dh-agm105-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 양천구 신정동에서 2016년식 현대 제네시스DH 배터리 교체를 진행했습니다. 이번 고객님은 여름휴가를 떠나면서 차량을 며칠 동안 세워두셨고, 휴가를 마치고 돌아와 처음 시동을 걸었을 때 배터리가 방전된 것을 확인하셨습니다. 휴가 전까지는 평소처럼 사용하던 차량이었기 때문에 고객님도 예상하지 못한 상황이었다고 하셨습니다. 특히 여행을 다녀온 뒤에는 짐도 정리해야 하고 다음 일정도 준비해야 하는데, 차량까지 움직이지 않으면 불편할 수밖에 없습니다. 이번에는 방전 당시.......",
+      "tags": [
+        "양천구배터리",
+        "양천구출장배터리",
+        "신정동출장배터리",
+        "제네시스dh배터리",
+        "제네시스배터리",
+        "dh배터리",
+        "제네시스dh배터리가격",
+        "델코agm105",
+        "agm105가격",
+        "agm105교체비용",
+        "델코agm105가격",
+        "출장배터리교체",
+        "출장배터리",
+        "자동차배터리",
+        "출장배터리교체비용",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "제네시스",
+        "manufacturers": [
+          {
+            "id": "genesis",
+            "name": "제네시스"
+          },
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "제네시스",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "제네시스",
+            "displayName": "제네시스",
+            "urlPath": "/car-battery/hyundai/genesis.html",
+            "matchedAlias": "제네시스",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "제네시스",
+            "displayVehicleName": "제네시스",
+            "label": "DH",
+            "slug": "dh",
+            "urlPath": "/car-battery/hyundai/genesis/dh.html",
+            "vehicleUrlPath": "/car-battery/hyundai/genesis.html",
+            "matchedAlias": "DH"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "제네시스",
+            "displayName": "제네시스",
+            "urlPath": "/car-battery/hyundai/genesis.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "yangcheon-gu",
+          "regionName": "양천구",
+          "neighborhoodName": "신정동",
+          "label": "서울 양천구 신정동",
+          "urlPath": "/area/seoul/yangcheon-gu/sinjeong-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yangcheon-gu",
+            "regionName": "양천구",
+            "label": "서울 양천구",
+            "urlPath": "/area/seoul/yangcheon-gu.html",
+            "matchedAlias": "양천구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yangcheon-gu",
+            "regionName": "양천구",
+            "name": "신정동",
+            "legalName": "서울특별시 양천구 신정동",
+            "label": "서울 양천구 신정동",
+            "urlPath": "/area/seoul/yangcheon-gu/sinjeong-dong.html",
+            "matchedAlias": "신정동"
+          }
+        ],
+        "batteryModels": [
+          "AGM105"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/genesis.html"
+          ],
+          "details": [
+            "/car-battery/hyundai/genesis/dh.html"
+          ],
+          "manufacturers": [
+            "/car-battery/genesis.html",
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/yangcheon-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/yangcheon-gu/sinjeong-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm105.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "양천구 신정동에서 제네시스 DH AGM105 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 2,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224447401926",
       "title": "인천 검단구 아라동 2015년식 아반떼AD 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
