@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-19T09:16:44.594Z",
+  "syncedAt": "2026-10-20T07:52:26.228Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 414,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 415,
+    "newPosts": 2,
+    "preservedPreviousPosts": 415,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 417,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 366,
-    "vehicleMatches": 344,
-    "detailMatches": 79,
-    "regionMatches": 298,
-    "neighborhoodMatches": 246,
-    "batteryMatches": 297,
+    "manufacturerMatches": 370,
+    "vehicleMatches": 348,
+    "detailMatches": 80,
+    "regionMatches": 300,
+    "neighborhoodMatches": 247,
+    "batteryMatches": 299,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,318 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 298,
-    "actualRegionMatches": 298,
-    "actualNeighborhoodMatches": 246,
+    "actualAreaMatches": 300,
+    "actualRegionMatches": 300,
+    "actualNeighborhoodMatches": 247,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224447401926",
+      "title": "인천 검단구 아라동 2015년식 아반떼AD 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224447401926",
+      "publishedAt": "2026-10-20",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224447401926.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjBfMjEx/MDAxNzkyNDU1Nzc1MTQ0.3caJpFrXY7XdaSbxx4cFavB6hntJRR6mF_ICnSChkYwg.vHzMBnK2PtHJtRG1oRwf8lParsuJxiyDL8HRDtVjjB8g.JPEG/image-ad-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 검단구 아라동에서 2015년식 아반떼AD 배터리 교체를 진행했습니다. 이번 고객님은 폭염이 이어지는 동안 차량을 오랫동안 세워두셨다가 다시 운행하려는 날 시동이 걸리지 않아 상담을 요청하셨습니다. 차량을 운행하지 않으면 배터리도 거의 사용하지 않을 것 같지만, 주차 중에도 일부 전자장치는 전기를 사용합니다. 여기에 높은 기온까지 겹치면 배터리 상태에 영향을 줄 수 있는데요. 고객님께서는 단순히 오래 세워둬서 생긴 방전인지, 배터리를 교체해야 하는 상황인지 궁금해하셨.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "검단구배터리",
+        "검단배터리",
+        "검단출장배터리",
+        "아라동출장배터리",
+        "아반떼ad배터리",
+        "아반떼ad배터리가격",
+        "아반떼배터리",
+        "델코agm70",
+        "델코agm70가격",
+        "agm70가격",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "아반떼",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "아반떼",
+            "displayName": "아반떼",
+            "urlPath": "/car-battery/hyundai/avante.html",
+            "matchedAlias": "아반떼",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "아반떼",
+            "displayVehicleName": "아반떼",
+            "label": "AD",
+            "slug": "ad",
+            "urlPath": "/car-battery/hyundai/avante/ad.html",
+            "vehicleUrlPath": "/car-battery/hyundai/avante.html",
+            "matchedAlias": "AD"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "아반떼",
+            "displayName": "아반떼",
+            "urlPath": "/car-battery/hyundai/avante.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "geomdan-gu",
+          "regionName": "검단구",
+          "label": "인천 검단구",
+          "urlPath": "/area/incheon/geomdan-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "geomdan-gu",
+            "regionName": "검단구",
+            "label": "인천 검단구",
+            "urlPath": "/area/incheon/geomdan-gu.html",
+            "matchedAlias": "검단구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/avante.html"
+          ],
+          "details": [
+            "/car-battery/hyundai/avante/ad.html"
+          ],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/geomdan-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "인천 검단구에서 아반떼 AD AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224446242779",
+      "title": "용인 수지구 신봉동 2022년식 BMW X4 델코 AGM95 출장배터리교체 가격 및 비용 안내｜겨울철 차를 자주 안 타다가 배터리 방전될 때",
+      "url": "https://blog.naver.com/kang10107/224446242779",
+      "publishedAt": "2026-10-20",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224446242779.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMTlfNDUg/MDAxNzkyMzcwOTIxMTMz._f_qFH98TbX3MWJ2pqbbfB-icoA5oh7jLyEldHXGrE4g.ZANnKWDZpioSVMqnjMbFdFWkigWvt0mMPUkQ9f_m5CMg.JPEG/image-x4-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 용인시 수지구 신봉동에서 2022년식 BMW X4 배터리 교체를 진행했습니다. 이번 고객님은 겨울이 되면서 차량을 이용하는 횟수가 눈에 띄게 줄었고, 그 이후 배터리 방전이 자주 발생해 상담을 요청하셨습니다. 추운 날씨에는 차량을 이용하기보다 대중교통을 이용하거나 가까운 거리는 다른 방법으로 이동하는 경우도 있습니다. 그러다 며칠 만에 다시 차를 타려고 하면 시동이 걸리지 않아 불편을 겪게 되는 것인데요. 고객님께서도 겨울철 들어 차량을 사용하는 횟수가 줄어든 뒤 방전이.......",
+      "tags": [
+        "용인출장배터리",
+        "용인배터리",
+        "용인자동차배터리",
+        "수지구출장배터리",
+        "신봉동출장배터리",
+        "x4배터리",
+        "델코agm95",
+        "bmwx4배터리가격",
+        "bmwx4배터리교체",
+        "x4배터리교체",
+        "델코agm95가격",
+        "일등밧데리",
+        "출장배터리가격",
+        "자동차배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW X4",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X4",
+            "displayName": "BMW X4",
+            "urlPath": "/car-battery/bmw/x4.html",
+            "matchedAlias": "BMW X4",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X4",
+            "displayName": "BMW X4",
+            "urlPath": "/car-battery/bmw/x4.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "yongin-si",
+          "regionName": "용인시",
+          "neighborhoodName": "신봉동",
+          "label": "경기 용인시 신봉동",
+          "urlPath": "/area/gyeonggi/yongin-si/sinbong-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "yongin-si",
+            "regionName": "용인시",
+            "label": "경기 용인시",
+            "urlPath": "/area/gyeonggi/yongin-si.html",
+            "matchedAlias": "용인"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "yongin-si",
+            "regionName": "용인시",
+            "name": "신봉동",
+            "legalName": "경기도 용인시 수지구 신봉동",
+            "label": "경기 용인시 신봉동",
+            "urlPath": "/area/gyeonggi/yongin-si/sinbong-dong.html",
+            "matchedAlias": "신봉동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/x4.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/yongin-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/yongin-si/sinbong-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "용인시 신봉동에서 BMW X4 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224446237208",
       "title": "송파 마천동 2018년식 벤츠A220 델코 AGM80 출장배터리교체 가격 및 비용 안내｜추운 날 며칠 주차 후 시동 안 걸릴 때",
@@ -47498,12 +47803,37 @@
       "thumbnailStatus": "downloaded",
       "thumbnailError": "",
       "facts": {
-        "manufacturer": null,
-        "manufacturers": [],
-        "vehicle": null,
-        "vehicles": [],
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "모하비",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "모하비",
+            "displayName": "모하비",
+            "urlPath": "/car-battery/kia/mohave.html",
+            "matchedAlias": "모하비",
+            "specificity": "vehicle"
+          }
+        ],
         "detailModels": [],
-        "vehicleHierarchy": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "모하비",
+            "displayName": "모하비",
+            "urlPath": "/car-battery/kia/mohave.html",
+            "specificity": "vehicle"
+          }
+        ],
         "actualWorkLocation": null,
         "mentionedServiceAreas": [],
         "areas": [],
@@ -47514,9 +47844,13 @@
           "교체"
         ],
         "matchedPages": {
-          "vehicles": [],
+          "vehicles": [
+            "/car-battery/kia/mohave.html"
+          ],
           "details": [],
-          "manufacturers": [],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
           "areas": [],
           "regions": [],
           "neighborhoods": [],
@@ -47529,10 +47863,10 @@
           ]
         }
       },
-      "summary": "일등밧데리 네이버 블로그에 공개된 자동차배터리 실제 작업 사례입니다.",
+      "summary": "모하비 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
-        "manufacturer": 0,
-        "vehicle": 0,
+        "manufacturer": 1,
+        "vehicle": 1,
         "detail": 0,
         "actualLocation": 0,
         "mentionedServiceArea": 0,
@@ -52161,12 +52495,37 @@
       "thumbnailStatus": "downloaded",
       "thumbnailError": "",
       "facts": {
-        "manufacturer": null,
-        "manufacturers": [],
-        "vehicle": null,
-        "vehicles": [],
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "모하비",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "모하비",
+            "displayName": "모하비",
+            "urlPath": "/car-battery/kia/mohave.html",
+            "matchedAlias": "모하비",
+            "specificity": "vehicle"
+          }
+        ],
         "detailModels": [],
-        "vehicleHierarchy": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "모하비",
+            "displayName": "모하비",
+            "urlPath": "/car-battery/kia/mohave.html",
+            "specificity": "vehicle"
+          }
+        ],
         "actualWorkLocation": null,
         "mentionedServiceAreas": [],
         "areas": [],
@@ -52175,19 +52534,23 @@
         "batteryModels": [],
         "symptoms": [],
         "matchedPages": {
-          "vehicles": [],
+          "vehicles": [
+            "/car-battery/kia/mohave.html"
+          ],
           "details": [],
-          "manufacturers": [],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
           "areas": [],
           "regions": [],
           "neighborhoods": [],
           "batteries": []
         }
       },
-      "summary": "일등밧데리 네이버 블로그에 공개된 자동차배터리 실제 작업 사례입니다.",
+      "summary": "모하비 배터리 관련 실제 작업 사례입니다.",
       "matchConfidence": {
-        "manufacturer": 0,
-        "vehicle": 0,
+        "manufacturer": 1,
+        "vehicle": 1,
         "detail": 0,
         "actualLocation": 0,
         "mentionedServiceArea": 0,
