@@ -14,18 +14,18 @@ const tempRoot=fs.realpathSync(os.tmpdir());
 const fixture=fs.mkdtempSync(path.join(tempRoot,'ildeung-location-validator-'));
 const git=args=>execFileSync('git',['-c','core.autocrlf=false',...args],{cwd:fixture,encoding:'utf8'}).trim();
 const write=(p,value)=>{const target=path.resolve(fixture,p);assert.ok(target.startsWith(fixture+path.sep));fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,value);};
-const blocked=['.github/workflows/naver-blog-sync.yml','js/smart-consult-location.js','data/hyundai.json','css/smart-consult.css','area/gyeonggi/index.html','js/analytics-logger.js','js/unrelated-runtime.js'];
+const blocked=['.github/workflows/naver-blog-sync.yml','js/smart-consult-location.js','data/battery-prices.json','data/hyundai.json','css/smart-consult.css','area/gyeonggi/index.html','js/analytics-logger.js','js/unrelated-runtime.js'];
 let rejected=0;
 try{
  git(['init','--quiet']);git(['config','user.name','Isolated validation fixture']);git(['config','user.email','fixture@example.invalid']);
  for(const p of blocked)write(p,'approved before task\n');
- write('data/battery-prices.json','baseline\n');write('tools/test-din74r-price.js','baseline\n');
+ write('data/kia.json','baseline\n');write('tools/test-mohave.js','baseline\n');
  git(['add','.']);git(['commit','--quiet','-m','Accepted pre-task files']);
  // Model an accepted sync BEFORE the fixed task baseline, not a blanket exemption.
  write('area/gyeonggi/index.html','approved sync output\n');git(['add','.']);git(['commit','--quiet','-m','Sync Naver blog work cases']);
  const baseline=git(['rev-parse','HEAD']);
  assert.deepEqual(currentTaskChanges(fixture,baseline),[]);
- write('data/battery-prices.json','authorized price path (contents tested separately)\n');write('tools/test-din74r-price.js','authorized test change\n');
+ write('data/kia.json','authorized Mohave path (exact row contents tested separately)\n');write('tools/test-mohave.js','authorized test change\n');
  assertCurrentTaskScope(currentTaskChanges(fixture,baseline));
  git(['add','.']);git(['commit','--quiet','-m','Authorized task changes']);
  assert.equal(currentTaskChanges(fixture,baseline).length,2,'committed changes must remain visible');

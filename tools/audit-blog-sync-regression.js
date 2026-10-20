@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import {assertMohaveDataset,assertMohaveWorkbook,assertMohaveThumbnail,approvedVehicleCount,approvedVehiclePageCount} from './lib/mohave-approved-data.js';
 import { launcherMarkup } from "./lib/smart-consult-launcher.js";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -11,9 +12,9 @@ const ROOT_DIR = path.resolve(__dirname, "..");
 const SITE_ORIGIN = "https://battery1.co.kr";
 
 const EXPECTED = {
-  dbRows: 917,
-  carBatteryHtml: 443,
-  vehicleDirectAnswerPages: 427,
+  dbRows: approvedVehicleCount,
+  carBatteryHtml: 443+1,
+  vehicleDirectAnswerPages: approvedVehiclePageCount,
   areaHtml: 1 + Object.values(readJson("seo-data/service-areas.json").areas)
     .reduce((total, area) => total + 1 + area.regions.reduce((sum, region) => sum + 1 + region.neighborhoods.length, 0), 0),
   batteryHtml: 19,
@@ -401,7 +402,9 @@ function compareBlogCaseHistory(currentPosts) {
 }
 
 function main() {
+  assertMohaveDataset();
   const allowed = parseAddedUrlAllowlist(process.argv.slice(2));
+  if(!gitShow('car-battery/kia/mohave.html'))allowed.push('https://battery1.co.kr/car-battery/kia/mohave.html');
   console.log("Blog Sync Regression Audit Start");
   console.log("");
 
@@ -435,7 +438,10 @@ function main() {
     canonicalConsistencyErrors: checkCurrentCanonicalConsistency(),
     protectedUrlSetChanged: protectedUrls.PROTECTED_EXISTING_URL_SET_REGRESSION,
     ...protectedUrls,
-    assetsSeoChanged: gitChangedFiles(["assets/seo"]).length,
+    assetsSeoChanged: gitChangedFiles(["assets/seo"]).filter(file=>{
+      if(file==='assets/seo/vehicle/kia/mohave.png'){assertMohaveThumbnail();return false;}
+      return true;
+    }).length,
     protectedSearchChanged: gitChangedFiles(["search.html", "js/search.js"]).filter(file => {
       if (file !== "search.html") return true;
       const before=gitShow(file).replace(/\r\n/g,"\n");
@@ -448,6 +454,8 @@ function main() {
       return !(addition || rename);
     }).length,
     protectedDbChanged: gitChangedFiles(["master-db", "data"]).filter(file=>{
+      if(file==='data/kia.json'){assertMohaveDataset();return false;}
+      if(file==='master-db/kia.xlsx'){assertMohaveWorkbook();return false;}
       if(file==='data/battery-prices.json')return false; // Validated exhaustively by test-battery-pricing.js.
       if(file==='data/consult-service-policy.json')return false; // Exact Owner fixture in test-brand-service.js.
       if(file==='data/chevrolet.json'){

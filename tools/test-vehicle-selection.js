@@ -1,3 +1,5 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import fs from 'node:fs';import assert from 'node:assert/strict';
 const baselineModule=process.env.VEHICLE_SELECTION_BASELINE_MODULE;
 const {conversationTurn,createConversationState,filteredRows}=await import(baselineModule||'../js/smart-consult-conversation.js');
@@ -6,7 +8,7 @@ import {buildAliasIndex} from '../js/vehicle-aliases.js';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const rows=read('data/manufacturers.json').flatMap(m=>read('data/'+m.file).map((r,i)=>({...r,manufacturerId:m.id,manufacturerName:m.name,source:m.file,index:i})));
 const areas=read('seo-data/smart-consult-location-index.json').localities,catalog=read('data/battery-prices.json'),policy=read('data/consult-service-policy.json');
-assert.equal(rows.length,917);
+assert.equal(rows.length,approvedVehicleCount);
 const id=r=>`${r.source}:${r.index}`,ids=rs=>rs.map(id).sort();
 const turn=(state,text,selection)=>conversationTurn(state,text,rows,areas,catalog,policy,selection);
 const apply=(state,field,value)=>{const s=structuredClone(state);s.previousQuestion=null;s.ambiguity=null;s.result=null;s.confirmedBattery=null;s.quotedSpec='';if(field==='vehicle'){const c=state.previousQuestion.choices.find(c=>c.value===value);s.selectedVehicleKey=c.key;}else if(field==='detailModel'){s.detailModels=[...new Set(filteredRows(rows,state).filter(r=>normalizeText(r.detailModel)===normalizeText(value)).map(r=>r.detailModel))];s.detailModel=s.detailModels.length===1?s.detailModels[0]:'';s.generation='';}else if(field==='year')s.yearRange=value;else if(field==='engine')s.engine=String(parseInt(value,10));else s[field]=value;return s;};

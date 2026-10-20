@@ -1,3 +1,5 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { conversationTurn,createConversationState } from "../js/smart-consult-conversation.js";
@@ -13,7 +15,7 @@ const ok=(value,label="")=>{assert.ok(value,label);assertions++;};
 const forbidden=/DB|조회 결과|매칭 결과|데이터 기준|선택 조건|프로세스|후보군|alias|정규화/i;
 function flow(inputs){let state=createConversationState();const outputs=[];for(const input of inputs){const output=conversationTurn(state,input,records,localities);state=output.state;outputs.push(output);ok(!forbidden.test(output.messages.join(" ")+output.chips.map(c=>c.label).join(" ")),input);ok(output.chips.length<=4,input);}return{state,outputs};}
 
-eq(records.length,917);
+eq(records.length,approvedVehicleCount);
 const districtQuery=flow(["동작구 출장돼?"]);
 eq(districtQuery.state.region,null,"area inquiry is not a confirmed service location");
 ok(districtQuery.outputs[0].messages.join(" ").includes("서울 동작구"));

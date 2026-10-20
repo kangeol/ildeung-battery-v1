@@ -1,3 +1,5 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import fs from 'node:fs';import os from 'node:os';import assert from 'node:assert/strict';
 import {conversationTurn,createConversationState,extractEntities} from '../js/smart-consult-conversation.js';
 import {batteryKnowledgePlan,batteryKnowledgeCopy} from '../js/smart-consult-battery-knowledge.js';
@@ -59,7 +61,7 @@ for(const word of lexemes){const e=extractEntities(word,rows,createConversationS
  for(const a of areas)check('COLD_WEATHER_FALSE_AREA_MATCH',![a.name,a.fullName,a.fullLabel].some(s=>compact(s).includes(word)),word);
  for(const s of specs)check('COLD_WEATHER_FALSE_SPEC_MATCH',!compact(s).includes(word),word);
 }
-assert.equal(rows.length,917);assert.equal(areas.length,665);
+assert.equal(rows.length,approvedVehicleCount);assert.equal(areas.length,665);
 const inventory={rows:rows.length,vehicleAliasEntries:aliasIndex.entries.length,uniqueVehicleAliases:aliasIndex.map.size,areas:areas.length,productSpecAliases:specs.size,weatherLexemes:lexemes.length};
 fs.writeFileSync(os.tmpdir()+'/cold-weather-focused.json',JSON.stringify({turns:evidence.length,inventory,gates,checks,evidence},null,2));
 console.log({turns:evidence.length,inventory,gates,checks});for(const k of names){assert.ok(checks[k]>0,k+' untested');assert.equal(gates[k],0,k);}

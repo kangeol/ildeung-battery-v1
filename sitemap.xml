@@ -5680,4 +5680,9 @@
     <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
+  <url>
+    <loc>https://battery1.co.kr/car-battery/kia/mohave.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

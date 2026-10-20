@@ -130,6 +130,12 @@ export function resolveVehicleText(text, records, state = {}) {
   return {...result,matches:[...result.matches],...(result.detailModels?{detailModels:[...result.detailModels]}:{})};
 }
 function resolveVehicleTextUncached(text, records, state) {
+  const named = searchVehicles(text, records);
+  const generationIndex=buildGenerationIndex(records);
+  const compatibleCodeContext=named.conflictingVehicles && [...generationIndex.values()].some(entry =>
+    named.matches.some(g=>entry.familyKeys.has(g.key)) &&
+    named.matches.every(g=>entry.familyKeys.has(g.key)||entry.canonicalFamilies.some(f=>f.key===g.key)));
+  if (named.conflictingVehicles&&!compatibleCodeContext) return {text, matches: [], shorthand: false, recognitionFailure: 'UNSAFE_AMBIGUITY'};
   const base=resolveVehicleTextBase(text,records,state),index=buildGenerationIndex(records);
   const groups=buildAliasIndex(records).groups;
   // The same boundary rules used by established family matching also protect codes.

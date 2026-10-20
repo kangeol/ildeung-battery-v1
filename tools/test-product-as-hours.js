@@ -1,4 +1,7 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import './lib/blog-sync-approved-freeze.js';
+import {approvedMohaveRows} from './lib/mohave-approved-data.js';
 import {approvedDin74rPrices} from './lib/din74r-approved-price-delta.js';
 import {assertHistoricalProductHtml,assertNoCurrentHtml,assertApprovedTraverseData} from './lib/location-task-validation.js';
 import {assertHomepageFreeze} from './lib/homepage-approved-freeze.js';
@@ -18,8 +21,8 @@ const areas=read('seo-data/smart-consult-location-index.json').localities;
 const catalog=read('data/battery-prices.json'),policy=read('data/consult-service-policy.json');
 const oldRows=manufacturers.flatMap(m=>old(`data/${m.file}`));
 assert.equal(oldRows.filter(r=>r.defaultBattery==='DIN70L'||r.upgradeBattery==='DIN70L').length,1);
-assert.equal(rows.filter(r=>r.defaultBattery==='DIN70L'||r.upgradeBattery==='DIN70L').length,0);assert.equal(rows.length,917);assert.equal(areas.length,665);
-for(const m of manufacturers){const expected=old(`data/${m.file}`);if(m.file==='chevrolet.json'){assert.deepEqual(expected[30],{manufacturer:'쉐보레',vehicle:'알페온',year:'10~15년',fuel:'가솔린',detailModel:'알페온',defaultBattery:'DIN70L',upgradeBattery:'',status:'완료'});expected[30].defaultBattery='DIN74L';assertApprovedTraverseData(read(`data/${m.file}`),expected);}else assert.deepEqual(read(`data/${m.file}`),expected);}
+assert.equal(rows.filter(r=>r.defaultBattery==='DIN70L'||r.upgradeBattery==='DIN70L').length,0);assert.equal(rows.length,approvedVehicleCount);assert.equal(areas.length,665);
+for(const m of manufacturers){const expected=old(`data/${m.file}`);if(m.file==='chevrolet.json'){assert.deepEqual(expected[30],{manufacturer:'쉐보레',vehicle:'알페온',year:'10~15년',fuel:'가솔린',detailModel:'알페온',defaultBattery:'DIN70L',upgradeBattery:'',status:'완료'});expected[30].defaultBattery='DIN74L';assertApprovedTraverseData(read(`data/${m.file}`),expected);}else assert.deepEqual(read(`data/${m.file}`),m.id==='kia'?approvedMohaveRows(expected):expected);}
 const beforePrices=old('data/battery-prices.json');assert.deepEqual(catalog,{...beforePrices,prices:approvedDin74rPrices(beforePrices.prices),version:catalog.version,unpriced:[],nonAgmBrandPolicy:{brand:'DELKOR',scope:'canonical_non_agm',authority:'Owner: ILDEUNG_AI_CONSULT_OWNER_NON_AGM_DELKOR_BRAND_POLICY_V1'}});assert.equal(catalog.prices.DIN74L,125000);assert.ok(!JSON.stringify(catalog).includes('DIN70L'));
 const beforePolicy=old('data/consult-service-policy.json');for(const key of ['authority','facts','answers','summary'])assert.deepEqual(policy[key],beforePolicy[key]);
 assert.deepEqual(Object.fromEntries(Object.entries(policy.product).filter(([key])=>!['assurance','comparisonContext'].includes(key))),{

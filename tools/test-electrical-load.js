@@ -1,3 +1,5 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import fs from 'node:fs';import os from 'node:os';import assert from 'node:assert/strict';import{pathToFileURL}from'node:url';
 import{conversationTurn,createConversationState}from'../js/smart-consult-conversation.js';
 import{electricalLoadPlan}from'../js/smart-consult-electrical-load.js';
@@ -29,6 +31,6 @@ export function run(){
  for(const q of negatives){check('ACCESSORY_LOAD_FALSE_POSITIVE',electricalLoadPlan(q)===null,q);const o=turn(q);if(/블랙박스.*(?:설치|가격)/.test(q))assert.match(o.messages.join(' '),/기기 서비스.*별도 확인/);}
  for(const[i,q]of combined.entries()){const o=turn(q),s=o.messages.join(' ');check('MULTI_INTENT_LOST',/여러 요인/.test(s)&&[/실시간/,/교체.*단정|증상만/,/28만원/,/현금결제/][i].test(s),q);}
  for(const[fi,f]of flows.entries()){let state=createConversationState();for(const[ti,q]of f.entries()){const before=state,o=turn(q,state);state=o.state;const relevant=fi===0&&ti>=1||fi===1||fi===2&&ti===1||fi===3&&ti===1||fi===4&&ti<2;if(relevant)check('SESSION_CONTEXT_LOST',!/차량명|어떤 차량|차량마다 배터리/.test(o.messages.join(' ')),q);if(before.quotedSpec)check('SESSION_CONTEXT_LOST',state.quotedSpec===before.quotedSpec,q);}}
- assert.equal(rows.length,917);assert.equal(areas.length,665);fs.writeFileSync(os.tmpdir()+'/electrical-load-focused.json',JSON.stringify({count:evidence.length,gates,checks,evidence},null,2));console.log(JSON.stringify({count:evidence.length,gates,checks}));assert.equal(Object.values(gates).reduce((a,b)=>a+b,0),0);
+ assert.equal(rows.length,approvedVehicleCount);assert.equal(areas.length,665);fs.writeFileSync(os.tmpdir()+'/electrical-load-focused.json',JSON.stringify({count:evidence.length,gates,checks,evidence},null,2));console.log(JSON.stringify({count:evidence.length,gates,checks}));assert.equal(Object.values(gates).reduce((a,b)=>a+b,0),0);
 }
 if(import.meta.url===pathToFileURL(process.argv[1]).href)run();

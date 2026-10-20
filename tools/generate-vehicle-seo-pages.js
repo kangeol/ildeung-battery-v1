@@ -62,6 +62,7 @@ const VEHICLE_SLUG_OVERRIDES = {
   "코나": "kona",
   "테라칸": "terracan",
   "카니발": "carnival",
+  "모하비": "mohave",
   "쏘렌토": "sorento",
   "레이": "ray",
   "스포티지": "sportage",
@@ -246,6 +247,11 @@ function readJson(filePath) {
 }
 
 function writeFile(filePath, content) {
+  // New approved page uses clean blank lines. Keep all historical page bytes
+  // stable rather than reformatting the existing SEO inventory.
+  if (path.relative(ROOT_DIR, filePath).split(path.sep).join("/") === "car-battery/kia/mohave.html") {
+    content = content.replace(/^[\t ]+$/gm, "");
+  }
   writeGeneratedFile(filePath, content);
 }
 

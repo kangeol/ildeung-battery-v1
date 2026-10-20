@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {assertCurrentTaskScope,assertNoCurrentHtml,assertHistoricalFactualHtml,taskBaseline} from './lib/location-task-validation.js';
-import {approvedDin74rPrices} from './lib/din74r-approved-price-delta.js';
+import {assertMohaveDataset} from './lib/mohave-approved-data.js';
 const baseline='667b555971603325a4504b6f6e74bd282317c939';
 const git=a=>execFileSync('git',['-c','core.safecrlf=false',...a],{encoding:'utf8',maxBuffer:50e6});
 const before=JSON.parse(git(['show',`${baseline}:data/hyundai.json`]));
@@ -14,11 +14,12 @@ expected[40].defaultBattery='AGM60';
 assert.equal(before[40].detailModel,'더 뉴 싼타페 하이브리드 TM');
 assert.deepEqual(after,expected,'only reviewed GN7 and AG60 canonical corrections');
 // Historical factual oracles above/below stay fixed; current task permission
-// is the exact DIN74R price task list, with no generated-file or workflow bypass.
+// is the exact Mohave registration list, with no broad generated/workflow bypass.
 const historicalPages=assertHistoricalFactualHtml();
 const paths=assertCurrentTaskScope();
 assertNoCurrentHtml(paths);
 for(const p of ['css/unrelated-shared.css','js/unrelated-runtime.js','data/hyundai.json','js/analytics-logger.js','.github/workflows/naver-blog-sync.yml','car-battery/chevrolet/alpheon.html'])assert.throws(()=>assertCurrentTaskScope([p]),/out of current task scope/);
 const previousPrices=JSON.parse(git(['show',`${taskBaseline}:data/battery-prices.json`]));
-assert.deepEqual(JSON.parse(fs.readFileSync('data/battery-prices.json','utf8')),{...previousPrices,prices:approvedDin74rPrices(previousPrices.prices)},'only approved DIN74R price delta');
-console.log({status:'PASS',taskBaseline,currentTaskPaths:paths,historicalPages,protectedSeoStructure:'unchanged',databaseCorrection:'reviewed GN7 + Owner AG60 and DIN70L typos only'});
+assert.deepEqual(JSON.parse(fs.readFileSync('data/battery-prices.json','utf8')),previousPrices,'all prices unchanged during Mohave registration');
+assertMohaveDataset();
+console.log({status:'PASS',taskBaseline,currentTaskPaths:paths,historicalPages,protectedSeoStructure:'exact Mohave generation only',databaseCorrection:'historical facts preserved plus one approved Mohave row'});

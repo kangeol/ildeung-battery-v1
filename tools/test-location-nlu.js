@@ -1,3 +1,6 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+import {approvedMohaveRows} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import {approvedSyncFiles,canonical} from './lib/blog-sync-approved-freeze.js';
 import {assertHomepageFreeze} from './lib/homepage-approved-freeze.js';
 assertHomepageFreeze();
@@ -65,7 +68,7 @@ const airportChange=flow(['공항 호텔 주차장으로 장소 바꿔도 돼요
 assert.equal(airportChange.state.region,null,'an unresolved landmark must not be stored as a service region');
 assert.ok(airportChange.messages.join(' ').includes('변경된 차량 위치'),'location-change intent must survive an unresolved landmark');
 assert.ok(!airportChange.messages.join(' ').includes('차량명·연식·세부 모델'),'location change must not restart generic fitment');
-assert.equal(records.length,917);assert.equal(areas.length,665);
+assert.equal(records.length,approvedVehicleCount);assert.equal(areas.length,665);
 const approvedAreaBaseline='458ab46419f62584c81eef7c7d4570b95c85e6c7';
 const approvedGroupsPath='seo-data/vehicle-detail-groups.json';
 // Exact regeneration from canonical inputs and archived sync clock, including metadata.
@@ -77,7 +80,8 @@ assertNonAgmOwnerPolicy();
 const exactApprovedGeneratedSnapshot=changed.filter(p=>p===approvedGroupsPath&&approvedGroups.length>0);
 const traversePath='data/chevrolet.json';
 assertApprovedTraverseData(read(traversePath),JSON.parse(execFileSync('git',['show',`${approvedAreaBaseline}:${traversePath}`],{encoding:'utf8'})));
-assert.equal(changed.filter(p=>!approvedSyncFiles.has(p)&&!exactApprovedGeneratedSnapshot.includes(p)&&/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&p!==traversePath&&p!=='data/battery-prices.json'&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
+assert.deepEqual(read('data/kia.json'),approvedMohaveRows(JSON.parse(execFileSync('git',['show',`${approvedAreaBaseline}:data/kia.json`],{encoding:'utf8'}))));
+assert.equal(changed.filter(p=>!approvedSyncFiles.has(p)&&!exactApprovedGeneratedSnapshot.includes(p)&&/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&p!==traversePath&&p!=='data/kia.json'&&p!=='data/battery-prices.json'&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
 const evidence={canonicalCases,aliasCases,totalCases:cases,areas:areas.length,rows:records.length,gates,failures,transcripts,changedHTML:html};
 const evidenceDir=process.argv.includes('--faq')?'docs/evidence/final-faq/location':'docs/evidence/location-nlu';
 fs.mkdirSync(evidenceDir,{recursive:true});fs.writeFileSync(`${evidenceDir}/matrix.json`,JSON.stringify(evidence,null,2)+'\n');

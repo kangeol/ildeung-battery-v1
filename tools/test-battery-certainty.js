@@ -1,10 +1,12 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {batteryCertainty,resolveConsultation,parseYearRange,yearMatches,usableBattery,buildVehicleGroups} from '../js/smart-consult-core.js';
 import {conversationTurn,createConversationState,filteredRows} from '../js/smart-consult-conversation.js';
 const manufacturers=JSON.parse(fs.readFileSync('data/manufacturers.json'));
 const records=manufacturers.flatMap(m=>JSON.parse(fs.readFileSync(`data/${m.file}`)).map((r,index)=>({...r,manufacturerId:m.id,manufacturerName:m.name,source:`data/${m.file}`,index})));
-assert.equal(records.length,917);
+assert.equal(records.length,approvedVehicleCount);
 const groups=buildVehicleGroups(records), failures=[],transcripts=[];
 let cases=0,ambiguousPrevented=0;
 let partialNluCases=0,yearCases=0,ambiguousAutoConfirm=0,unknownRowOverridden=0;

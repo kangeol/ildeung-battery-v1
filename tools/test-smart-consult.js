@@ -1,3 +1,5 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -51,7 +53,7 @@ function onlyMatch(query, manufacturerId, vehicle) {
   return result;
 }
 
-equal(records.length, 917, "canonical vehicle row count changed unexpectedly");
+equal(records.length, approvedVehicleCount, "canonical vehicle row count changed unexpectedly");
 check(records.every((record) => record.status === "완료"), "all current vehicle rows must be complete");
 
 equal(normalizeText(" BMW 520d "), "bmw520d", "spacing normalization failed");

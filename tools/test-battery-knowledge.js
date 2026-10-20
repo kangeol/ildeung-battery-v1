@@ -1,3 +1,5 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import fs from 'node:fs';import os from 'node:os';import assert from 'node:assert/strict';
 import {conversationTurn,createConversationState} from '../js/smart-consult-conversation.js';
 import {encodeSession,decodeSession,safeUserMessage} from '../js/smart-consult-session.js';
@@ -27,5 +29,5 @@ const reset=turn('처음부터',s);assert.equal(reset.state.lastIntent,'UNKNOWN'
 assert.equal(safeUserMessage('CCA가 뭐예요?',createConversationState(),rows,areas),'배터리 상태·규격·코딩 정보 문의');
 for(const spec of Object.keys(catalog.prices))for(const q of [spec+' CCA 높으면 좋은가요?',spec+' Ah가 뭐예요?',spec+' 코딩 필요한가요?']){const o=turn(q);assert.equal(o.state.confirmedBattery,null);assert.equal(o.state.selectedVehicleKey,'');assert.equal(o.state.quotedSpec,spec);}
 for(const [q,patterns] of [['왜 방전돼요? 갈아야 하나요?',['교체','여러 요인']],['CCA랑 Ah가 뭐예요?',['Cold Cranking Amps','암페어아워']],['코딩이 뭐고 비용도 포함인가요?',['등록','별도 코딩비']]]){const o=turn(q);check('KNOWLEDGE_MULTI_INTENT_LOST',patterns.every(p=>o.messages.join(' ').includes(p)),q);}
-assert.equal(rows.length,917);assert.equal(areas.length,665);for(const k of names){assert.ok(checks[k]>0,k+' untested');assert.equal(gates[k],0,k);}
+assert.equal(rows.length,approvedVehicleCount);assert.equal(areas.length,665);for(const k of names){assert.ok(checks[k]>0,k+' untested');assert.equal(gates[k],0,k);}
 fs.writeFileSync(os.tmpdir()+'/battery-knowledge-focused.json',JSON.stringify({count:evidence.length,gates,checks,evidence},null,2));console.log({status:'PASS',count:evidence.length,gates,checks});

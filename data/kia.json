@@ -1518,5 +1518,15 @@
     "defaultBattery": "DF80L",
     "upgradeBattery": "",
     "status": "완료"
+  },
+  {
+    "manufacturer": "기아",
+    "vehicle": "모하비",
+    "year": "19~24년",
+    "fuel": "디젤",
+    "detailModel": "모하비 더 마스터",
+    "defaultBattery": "DF100L",
+    "upgradeBattery": "",
+    "status": "완료"
   }
 ]

@@ -1,9 +1,11 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 import {conversationTurn,createConversationState} from '../js/smart-consult-conversation.js';
 import {encodeSession,decodeSession} from '../js/smart-consult-session.js';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),policy=read('data/consult-service-policy.json'),catalog=read('data/battery-prices.json');
 const rows=read('data/manufacturers.json').flatMap(m=>read('data/'+m.file).map(r=>({...r,manufacturerId:m.id,manufacturerName:m.name}))),areas=read('seo-data/smart-consult-location-index.json').localities;
-assert.equal(rows.length,917);assert.equal(areas.length,665);
+assert.equal(rows.length,approvedVehicleCount);assert.equal(areas.length,665);
 const old=JSON.parse(execFileSync('git',['show','6ea87f5c:data/consult-service-policy.json'],{encoding:'utf8'}));
 const stripped=structuredClone(policy);delete stripped.purchaseStage;delete stripped.purchaseKnowledge;stripped.version=old.version;delete stripped.operational;delete stripped.product.comparisonContext;delete stripped.product.assurance;delete stripped.finalFaq.facts.CASH_PAYMENT_AVAILABLE;delete stripped.finalFaq.answers.CASH;stripped.finalFaq.answers.PAYMENT_COMBINED=old.finalFaq.answers.PAYMENT_COMBINED;assert.deepEqual(stripped,old);
 assert.equal(policy.finalFaq.facts.CASH_PAYMENT_AVAILABLE,true);

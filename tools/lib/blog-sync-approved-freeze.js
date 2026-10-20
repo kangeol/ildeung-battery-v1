@@ -1,5 +1,6 @@
 import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 import {canonicalGenerated,contentHash} from './canonical-generated-validation.js';
+import {assertMohaveSitemap} from './mohave-approved-data.js';
 export const canonical=canonicalGenerated();
 // A source provenance reference for legacy callers, not a generated-output oracle.
 export const postSyncBaseline=execFileSync('git',['log','-1','--format=%H','--','seo-data/blog-cases.json'],{encoding:'utf8'}).trim();
@@ -115,6 +116,7 @@ for(const p of git('diff','--name-only','04d1dc4f9f4412b8a680fe4c38efb82589afabe
 }
 export function assertApprovedSyncContent(p,now){
  assert.ok(approvedSyncFiles.has(p),p+' is not an audited blog-sync path');
+ if(p==='sitemap.xml'){assertMohaveSitemap(now);return;}
  if(canonical.hashes[p]){assert.equal(contentHash(now),canonical.hashes[p],p+' canonical generation');return;}
  const before=git('show','HEAD:'+p);
  if(p.endsWith('.webp'))assert.deepEqual(now,before,p);

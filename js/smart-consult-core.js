@@ -87,10 +87,9 @@ export function vehicleAliasOccurs(value, alias, manufacturerId = "") {
   const needle = normalizeText(alias);
   if (!needle) return false;
   if (!/[a-z가-힣]/.test(needle)) return normalizeText(source).includes(needle);
-  if (!/[a-z]/.test(needle)) {
+  if (!/[a-z]/.test(needle) && needle.length <= 2) {
     // Short Korean family names must be complete entities, not syllables inside
     // an unrelated word (for example a mechanical-part name).
-    if (needle.length > 2) return normalizeText(source).includes(needle);
     for (let at = source.indexOf(needle); at >= 0; at = source.indexOf(needle, at + 1)) {
       const before = source.slice(0, at), after = source.slice(at + needle.length);
       const brands = MANUFACTURER_ALIASES[manufacturerId] || [];
@@ -117,6 +116,7 @@ export function vehicleAliasOccurs(value, alias, manufacturerId = "") {
     const before = source.slice(0, start), after = source.slice(end);
     const left = !before || /[^a-z0-9가-힣]$/.test(before)
       || /(?:^|[^a-z0-9가-힣])(?:아니|차는|차량은|차가|타는)$/.test(before)
+      || /(?:^|[^a-z0-9가-힣])(?:더\s*뉴|올\s*뉴|디\s*올\s*뉴|더\s*넥스트|뉴|구형|신형)$/.test(before)
       || brands.some(brand => {
         const brandKey = normalizeText(brand), brandAt = at - brandKey.length;
         if (brandAt < 0 || !normalizeText(before).endsWith(brandKey)) return false;
@@ -196,6 +196,20 @@ export function searchVehicles(query, records = []) {
   const withoutManufacturer = manufacturer ? normalizedQuery.replace(manufacturer.alias, "") : normalizedQuery;
   const queryVehicle = withoutManufacturer.replace(/(?:19|20)\d{2}(?:년식?)?/g, "").replace(/\d{2}년식?/g, "");
   const groups = buildVehicleGroups(records);
+  // Keep distinct named vehicles visible before a brand or score can hide one.
+  // A full canonical detail owns its embedded shorter names; separate mentions
+  // do not. This also retains legitimate family/generation combinations.
+  const mentions = groups.flatMap(group => [...new Set([group.vehicle, ...group.records.map(r => r.detailModel)])]
+    .filter(name => vehicleAliasOccurs(query, name, group.manufacturerId))
+    .map(name => ({group, name: normalizeText(name), at: normalizedQuery.indexOf(normalizeText(name))})));
+  const independent = mentions.filter(m => !mentions.some(other => other.name.length > m.name.length
+    && other.at <= m.at && other.at + other.name.length >= m.at + m.name.length));
+  const named = [...new Map(independent.filter(m => !independent.some(other => other.group.key !== m.group.key
+    && m.at < other.at && (MANUFACTURER_ALIASES[other.group.manufacturerId] || []).some(alias => normalizeText(alias) === m.name)))
+    .map(m => [m.group.key, m.group])).values()];
+  if (new Set(named.map(g => g.manufacturerId)).size > 1 && new Set(named.map(g => normalizeText(g.vehicle))).size > 1) {
+    return {query, normalizedQuery, year, fuel, matches: named, conflictingVehicles: true};
+  }
   const scored = [];
 
   groups.forEach((group) => {
@@ -221,6 +235,9 @@ export function searchVehicles(query, records = []) {
           detailScore = Math.min(detailScore, 0);
           matchedDetails.add(record.detailModel);
           exactMatchedDetails.add(record.detailModel);
+        } else if (detail !== vehicle && vehicleAliasOccurs(query, record.detailModel, group.manufacturerId)) {
+          detailScore = Math.min(detailScore, 1);
+          matchedDetails.add(record.detailModel);
         } else if (queryVehicle.length >= 2 && detail.includes(queryVehicle) && vehicleAliasOccurs(record.detailModel, queryVehicle, group.manufacturerId)) {
           detailScore = Math.min(detailScore, 1);
           matchedDetails.add(record.detailModel);

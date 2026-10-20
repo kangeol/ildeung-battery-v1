@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-05",
+  "generatedAt": "2026-10-19",
   "stats": {
-    "dbRows": 917,
+    "dbRows": 918,
     "manufacturerCount": 15,
-    "vehicleParentPages": 184,
-    "detailModelRawValues": 470,
+    "vehicleParentPages": 185,
+    "detailModelRawValues": 471,
     "confidentDetailGroups": 243,
-    "ambiguousDetailGroups": 193,
+    "ambiguousDetailGroups": 194,
     "detailPagesCreated": 243,
     "slugCollisions": 0
   },
@@ -1546,6 +1546,18 @@
       "imagePath": "/assets/seo/vehicle/kia/lotze.png",
       "urlPath": "/car-battery/kia/lotze.html",
       "loc": "https://battery1.co.kr/car-battery/kia/lotze.html"
+    },
+    {
+      "manufacturerId": "kia",
+      "manufacturerName": "기아",
+      "name": "모하비",
+      "sourceVehicleName": "모하비",
+      "slug": "mohave",
+      "isPriority": false,
+      "rowCount": 1,
+      "imagePath": "/assets/seo/vehicle/kia/mohave.png",
+      "urlPath": "/car-battery/kia/mohave.html",
+      "loc": "https://battery1.co.kr/car-battery/kia/mohave.html"
     },
     {
       "manufacturerId": "kia",
@@ -6876,6 +6888,15 @@
       "vehicleName": "포르테",
       "sourceVehicleName": "포르테",
       "detailModel": "포르테 쿱",
+      "reason": "명확한 세대 코드/세대명 없음",
+      "rowCount": 1
+    },
+    {
+      "manufacturerId": "kia",
+      "manufacturerName": "기아",
+      "vehicleName": "모하비",
+      "sourceVehicleName": "모하비",
+      "detailModel": "모하비 더 마스터",
       "reason": "명확한 세대 코드/세대명 없음",
       "rowCount": 1
     },

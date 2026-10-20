@@ -1,3 +1,5 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -27,7 +29,7 @@ function flow(texts) {
   const outputs = texts.map(text => { const output = turn(state,text); state=output.state; return output; });
   return {state,outputs};
 }
-equal(records.length,917,"canonical row count");
+equal(records.length,approvedVehicleCount,"canonical row count");
 for (const text of ["bmw 520d 2019년식이야", "BMW520d 2019", "520d 19년식", "2019년식 520d"]) {
   const {state,outputs} = flow([text]);
   equal(state.manufacturer,"bmw",text);

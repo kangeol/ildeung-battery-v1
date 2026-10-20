@@ -1,3 +1,5 @@
+import {approvedVehicleCount,assertMohaveDataset,assertMohaveSitemap,assertMohaveProtectedPaths} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import {postSyncBaseline,approvedBlogCount} from './lib/blog-sync-approved-freeze.js';
 import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync}from'node:child_process';
 import {assertNonAgmOwnerPolicy} from './lib/assert-non-agm-owner-policy.js';
@@ -28,11 +30,17 @@ for(const [gate,qs]of Object.entries(families))for(const q of qs){const o=run(q)
 for(const q of ['저녁 7시에 교체하는 데 얼마나 걸려요?','내일 아침에 교체하면 작업시간은?','오늘 저녁 가능해요? 교체는 얼마나 걸려요?','오전에 방문 가능해요? 작업은 몇 분 걸려요?']){const s=run(q).messages.join(' ');check('SCHEDULE_WORKTIME_MULTI_INTENT_LOST',/1644-9141/.test(s)&&/10~20/.test(s)&&/상황|달라/.test(s),q);}
 const scheduled=run('아침에 가능한가요?').state;
 for(const q of ['오전에 가능해요?','오전 10시에 가능해요? AGM105는 얼마인가요?']){const o=run(q);assert.equal(o.state.region,null,'daypart must not become 오전동');assert.ok(!/어떤 차량/.test(o.messages.join(' ')));}
-assert.match(run('오전동에서 오전 10시에 가능해요?').state.region.fullLabel,/오전동/);
+// Like test-location-nlu's 구월동 inquiry, availability is not a confirmed
+// session location. Preserve the resolved locality and live scheduling answer.
+const namedLocalityInquiry=run('오전동에서 오전 10시에 가능해요?');
+assert.equal(namedLocalityInquiry.state.region,null);
+assert.match(namedLocalityInquiry.messages.join(' '),/경기 의왕시 오전동.*출장 교체 가능 지역/);
+assert.match(namedLocalityInquiry.messages.join(' '),/실시간 확인/);
+assert.match(namedLocalityInquiry.messages.join(' '),/1644-9141/);
 for(const q of ['오늘은?','내일은?','아침은?','점심은?','오후는?','저녁은?','7시는?','주말은?']){check('SCHEDULE_SHORT_CONTEXT_WRONG_INTENT',/1644-9141/.test(run(q,scheduled).messages.join(' ')),q);const o=run(q);check('SCHEDULE_SHORT_CONTEXT_HALLUCINATION',/어떤|말씀/.test(o.messages.join(' '))&&!/10~20/.test(o.messages.join(' ')),q);}
 for(const q of ['내 차에 AGM105 맞아?','BMW 5시리즈에 AGM105 들어가?']){const o=run(q);assert.ok(!/AGM105.*(?:적용|장착됩니다)/.test(o.messages.join(' ')));assert.notEqual(o.state.confirmedBattery,'AGM105');}
 let state=run('구월동 BMW 5시리즈 2020년식').state;const vehicle=state.selectedVehicleKey,region=state.region;
 for(const q of ['AGM105는 얼마인가요?','아침에 가능해요?','저녁은?','현금돼요?']){state=run(q,state).state;assert.equal(state.selectedVehicleKey,vehicle);assert.deepEqual(state.region,region);}
 for(const [q,re]of [['AGM70는 얼마예요?',/17만원/],['AGM80R은 얼마예요?',/22만원/]])assert.match(run(q).messages.join(' '),re);
-const baseline='6baaf054f841af5bcf47b673dbf4d919312f0649';const protectedDiff=execFileSync('git',['diff',postSyncBaseline,'--name-only','--','data','seo-data','car-battery','area','battery','index.html','sitemap.xml','css',':(exclude)data/consult-service-policy.json'],{encoding:'utf8'});assert.equal(protectedDiff.trim(),'');assertNonAgmOwnerPolicy();const priorPolicy=JSON.parse(execFileSync('git',['show',baseline+':data/consult-service-policy.json'],{encoding:'utf8'}));const preservedPolicy=structuredClone(policy);delete preservedPolicy.purchaseStage;delete preservedPolicy.purchaseKnowledge;assert.deepEqual(preservedPolicy,priorPolicy);assert.equal(rows.length,917);assert.equal(areas.length,665);assert.equal(read('seo-data/blog-cases.json').posts.length,approvedBlogCount);assert.equal((fs.readFileSync('sitemap.xml','utf8').match(/<loc>/g)||[]).length,1133);
+const baseline='6baaf054f841af5bcf47b673dbf4d919312f0649';const protectedDiff=execFileSync('git',['diff',postSyncBaseline,'--name-only','--','data','seo-data','car-battery','area','battery','index.html','sitemap.xml','css',':(exclude)data/consult-service-policy.json'],{encoding:'utf8'});assertMohaveProtectedPaths(protectedDiff);assertNonAgmOwnerPolicy();const priorPolicy=JSON.parse(execFileSync('git',['show',baseline+':data/consult-service-policy.json'],{encoding:'utf8'}));const preservedPolicy=structuredClone(policy);delete preservedPolicy.purchaseStage;delete preservedPolicy.purchaseKnowledge;assert.deepEqual(preservedPolicy,priorPolicy);assert.equal(rows.length,approvedVehicleCount);assert.equal(areas.length,665);assert.equal(read('seo-data/blog-cases.json').posts.length,approvedBlogCount);assertMohaveSitemap(fs.readFileSync('sitemap.xml'));
 for(const n of names)assert.ok(checks[n]>0,n);const dir=process.env.SPEC_SCHEDULE_EVIDENCE||'C:/Users/kang1/AppData/Local/Temp/ildeung-spec-schedule';fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(dir+'/safety.json',JSON.stringify({turns,gates,checks,evidence,freeze:true},null,2));console.log({turns,gates,checks});assert.equal(Object.values(gates).reduce((a,b)=>a+b,0),0);

@@ -1,4 +1,9 @@
 import assert from "node:assert/strict";
+import {approvedVehiclePageCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+import {canonical} from './lib/blog-sync-approved-freeze.js';
+import {contentHash} from './lib/canonical-generated-validation.js';
+import {launcherMarkup} from './lib/smart-consult-launcher.js';
+assertMohaveDataset();
 import fs from "node:fs";
 import {execFileSync} from "node:child_process";
 import {pageBaseline,assertConsultPage,assertNegativeMutations,AUTHORIZED_PAGE_BASELINE} from "./lib/smart-consult-page-regression.js";
@@ -58,7 +63,7 @@ for(const text of ["홍길동 010-1234-5678 12가3456 BMW520d 2019년식","김�
   const f=flow([text]);const raw=encodeSession(f.state,f.messages);
   ok(!/홍길동|김철수|010-1234|12가3456|<img|onerror|test@example/.test(raw),"no raw personal content");
 }
-eq(index.vehicles.length,427);eq(new Set(index.vehicles.map(e=>e.id)).size,427);
+eq(index.vehicles.length,approvedVehiclePageCount);eq(new Set(index.vehicles.map(e=>e.id)).size,approvedVehiclePageCount);
 const mapping=json("seo-data/vehicle-detail-groups.json");
 for(const entry of index.vehicles) {
   eq(findEntry(entry.id,index),entry);
@@ -70,7 +75,12 @@ for(const entry of index.vehicles) {
   eq((html.match(/이 차량 스마트 상담하기/g)||[]).length,0,page);
   ok(html.includes('href="/smart-consult/"'));
   // Includes the latest owner-authorized blog content; only the exact CTA line differs.
-  assertConsultPage(html,pageBaseline(page),entry.id); assertions++;
+  if(entry.id==='kia/mohave'){
+    eq(contentHash(html),canonical.hashes[page],'new approved Mohave page equals canonical generation');
+    eq(html.split(launcherMarkup).length-1,1,'one common launcher');
+    ok(html.includes('DF100L'));
+  }else assertConsultPage(html,pageBaseline(page),entry.id);
+  assertions++;
 }
 const mutationPage="car-battery/chevrolet/impala.html";
 const mutations=assertNegativeMutations(read(mutationPage),pageBaseline(mutationPage),"chevrolet/impala");
@@ -96,4 +106,4 @@ ok(!/localStorage|indexedDB|Math\.random|innerHTML|insertAdjacentHTML|document\.
 for(const value of ["tel:1644-9141","https://smartstore.naver.com/battery1/products/414050800","https://smartstore.naver.com/battery1/products/575288571"]) ok(read("js/smart-consult-core.js").includes(value));
 const modified=["js/smart-consult.js","js/smart-consult-conversation.js","js/smart-consult-location.js","js/conversation-copy.js"];
 const addedBytes=modified.reduce((sum,p)=>sum+Buffer.byteLength(read(p))-execFileSync("git",["show",`90eb274e:${p}`]).length,0)+Buffer.byteLength(read("js/smart-consult-entry.js"))+Buffer.byteLength(read("js/smart-consult-session.js"));
-console.log(JSON.stringify({status:"PASS",assertions,vehiclePages:427,initialAddedJsBytes:addedBytes,typicalSessionBytes:Buffer.byteLength(encoded),entryIndexBytes:Buffer.byteLength(read("seo-data/smart-consult-vehicles.json")),canonicalMappingPages:mapping.vehiclePages.length+mapping.detailPages.length},null,2));
+console.log(JSON.stringify({status:"PASS",assertions,vehiclePages:approvedVehiclePageCount,initialAddedJsBytes:addedBytes,typicalSessionBytes:Buffer.byteLength(encoded),entryIndexBytes:Buffer.byteLength(read("seo-data/smart-consult-vehicles.json")),canonicalMappingPages:mapping.vehiclePages.length+mapping.detailPages.length},null,2));

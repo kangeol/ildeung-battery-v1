@@ -1,3 +1,5 @@
+import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {conversationTurn,createConversationState} from '../js/smart-consult-conversation.js';
@@ -7,7 +9,7 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const catalog=read('data/battery-prices.json'),policy=read('data/consult-service-policy.json');
 const rows=read('data/manufacturers.json').flatMap(m=>read(`data/${m.file}`).map(r=>({...r,manufacturerId:m.id,manufacturerName:m.name})));
 const areas=read('seo-data/smart-consult-location-index.json').localities;
-assert.equal(rows.length,917);assert.equal(areas.length,665);assert.equal(Object.keys(catalog.prices).length,26);
+assert.equal(rows.length,approvedVehicleCount);assert.equal(areas.length,665);assert.equal(Object.keys(catalog.prices).length,26);
 const transcripts=[];
 function turn(input,state=createConversationState()) {const o=conversationTurn(state,input,rows,areas,catalog,policy);transcripts.push({input,messages:o.messages,state:o.state});return o;}
 const wording=['',' 가격',' 얼마',' 얼마예요?',' 얼마야?'];

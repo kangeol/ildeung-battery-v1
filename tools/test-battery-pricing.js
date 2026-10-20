@@ -1,3 +1,5 @@
+import {approvedVehicleCount,assertMohaveDataset,approvedMohaveRows} from './lib/mohave-approved-data.js';
+assertMohaveDataset();
 import {approvedSyncFiles} from './lib/blog-sync-approved-freeze.js';
 import {maskCaseBlocks} from './lib/blog-case-protection.js';
 import {assertHomepageFreeze} from './lib/homepage-approved-freeze.js';
@@ -17,7 +19,7 @@ const areas=read('seo-data/smart-consult-location-index.json').localities;
 // Independent Owner acceptance fixture, not a runtime price source.
 const expected={DF40AL:75000,DF60L:95000,DF60R:100000,DF80L:100000,DF80R:110000,DF90L:110000,DF90R:110000,DF100L:120000,DF100R:125000,DIN50L:90000,DIN60L:105000,DIN60HL:105000,DIN74:125000,DIN74L:125000,DIN74R:140000,DIN90:140000,DIN90L:140000,DIN100L:150000,'65-900':155000,AGM60:155000,AGM70:170000,AGM80:190000,AGM80R:220000,AGM95:220000,AGM95R:240000,AGM105:280000};
 assert.deepEqual(catalog.prices,expected);assert.equal(catalog.currency,'KRW');assert.ok(catalog.version&&catalog.effectiveAt);
-assert.equal(records.length,917);assert.equal(areas.length,665);
+assert.equal(records.length,approvedVehicleCount);assert.equal(areas.length,665);
 const transcripts=[];
 function assertAuthorizedAmounts(messages){for(const message of messages)for(const match of message.matchAll(/([A-Z0-9-]+) (?:델코 기준 )?교체 가격은 ([\d만천]+원)/g)){assert.ok(Object.hasOwn(expected,match[1]),match[1]);assert.equal(match[2],formatWon(expected[match[1]]));}}
 function flow(inputs){let state=createConversationState(),out;for(const text of inputs){out=conversationTurn(state,text,records,areas,catalog);state=out.state;transcripts.push({text,messages:out.messages,chips:out.chips,battery:state.confirmedBattery,area:state.region?.fullLabel,priceIntent:state.priceIntent});}return out;}
@@ -60,7 +62,7 @@ assert.equal(catalog.prices.AGM105,280000); // VARTA AGM95 now legitimately cost
 for(const path of ['js/smart-consult-prices.js','js/smart-consult-conversation.js','js/smart-consult.js'])assert.ok(!/270000|27만원/.test(fs.readFileSync(path,'utf8')),path);
 const baseline='da2e2c0f93e119d82123e5d63b868e30195c00b6';
 const git=args=>execFileSync('git',['-c','core.safecrlf=false',...args],{encoding:'utf8',maxBuffer:20e6});
-for(const m of manufacturers){const old=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='hyundai.json')old[40].defaultBattery='AGM60';if(m.file==='chevrolet.json'){old[30].defaultBattery='DIN74L';old[44].defaultBattery='AGM80';}assert.deepEqual(read(`data/${m.file}`),old);}
+for(const m of manufacturers){const old=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='hyundai.json')old[40].defaultBattery='AGM60';if(m.file==='chevrolet.json'){old[30].defaultBattery='DIN74L';old[44].defaultBattery='AGM80';}assert.deepEqual(read(`data/${m.file}`),m.id==='kia'?approvedMohaveRows(old):old);}
 const htmlChanges=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n').filter(p=>p&&p!=='index.html'&&!approvedSyncFiles.has(p));
 const generatedTraverseSeoPages=['battery/agm/capacity/agm80.html','battery/agm/capacity/agm95.html','battery/agm/index.html','car-battery/chevrolet/traverse.html'];
 const pricingPages=['car-battery/chevrolet/alpheon.html','car-battery/hyundai/santafe.html','car-battery/hyundai/santafe/tm.html','smart-consult/index.html'];
