@@ -19,13 +19,13 @@ let rejected=0;
 try{
  git(['init','--quiet']);git(['config','user.name','Isolated validation fixture']);git(['config','user.email','fixture@example.invalid']);
  for(const p of blocked)write(p,'approved before task\n');
- write('data/kia.json','baseline\n');write('tools/test-mohave.js','baseline\n');
+ write('js/smart-consult-conversation.js','baseline\n');write('tools/test-stale-detail-confirmation.js','baseline\n');
  git(['add','.']);git(['commit','--quiet','-m','Accepted pre-task files']);
  // Model an accepted sync BEFORE the fixed task baseline, not a blanket exemption.
  write('area/gyeonggi/index.html','approved sync output\n');git(['add','.']);git(['commit','--quiet','-m','Sync Naver blog work cases']);
  const baseline=git(['rev-parse','HEAD']);
  assert.deepEqual(currentTaskChanges(fixture,baseline),[]);
- write('data/kia.json','authorized Mohave path (exact row contents tested separately)\n');write('tools/test-mohave.js','authorized test change\n');
+ write('js/smart-consult-conversation.js','authorized stale-detail runtime change\n');write('tools/test-stale-detail-confirmation.js','authorized test change\n');
  assertCurrentTaskScope(currentTaskChanges(fixture,baseline));
  git(['add','.']);git(['commit','--quiet','-m','Authorized task changes']);
  assert.equal(currentTaskChanges(fixture,baseline).length,2,'committed changes must remain visible');

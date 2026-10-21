@@ -7,7 +7,7 @@ import {gn7FactualDelta} from './gn7-factual-regression.js';
 
 // Owner-approved start, deliberately NOT HEAD: committed task changes must
 // remain checked, and old accepted workflow changes are not new permission.
-export const taskBaseline='08dad1223abca7f2048144790483084e04f6c5d1';
+export const taskBaseline='12fd4948da55effc6f834405ad9eae10ccec6faa';
 export const taskPaths=new Set([
  'data/battery-prices.json','tools/test-din74r-price.js','tools/test-battery-pricing.js',
  'tools/lib/din74r-approved-price-delta.js','tools/lib/assert-non-agm-owner-policy.js',
@@ -30,6 +30,12 @@ for(const p of [
  'tools/test-standalone-spec.js','tools/test-vehicle-selection.js','tools/test-waste-noncollection.js'
 ])taskPaths.add(p);
 taskPaths.delete('data/battery-prices.json');
+// This task authorizes no new data/generated changes. Historical facts below
+// remain fixed; accepted Mohave/blog commits are already in the start baseline.
+taskPaths.clear();
+for(const p of ['js/vehicle-aliases.js','js/smart-consult-conversation.js',
+ 'tools/test-stale-detail-confirmation.js','tools/lib/location-task-validation.js',
+ 'tools/test-location-validation.js','tools/test-smart-consult-v5.js'])taskPaths.add(p);
 const git=(args,cwd=process.cwd())=>execFileSync('git',['-c','core.safecrlf=false',...args],{cwd,encoding:'utf8',maxBuffer:50e6});
 const lines=text=>text.trim().split(/\r?\n/).filter(Boolean);
 export function currentTaskChanges(cwd=process.cwd(),baseline=taskBaseline){
@@ -44,7 +50,7 @@ export function assertCurrentTaskScope(paths=currentTaskChanges()){
  return paths;
 }
 export function assertNoCurrentHtml(paths=currentTaskChanges()){
- const approved=new Set(['car-battery/index.html','car-battery/kia.html','car-battery/kia/mohave.html']);
+ const approved=new Set();
  assert.deepEqual(paths.filter(p=>p.endsWith('.html')&&!approved.has(p)),[],'current task must not change HTML outside exact Mohave generation');
 }
 export const productApproval='de199b25c62cf2d6ef0faa1e0e2bb6f9af65f8c8';

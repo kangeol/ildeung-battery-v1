@@ -1334,6 +1334,23 @@ function conversationCore(previous, text, records, localities = [], priceCatalog
     if (match.matchedDetail && !(entities.detailModels?.length>1)) entities.detailModel = match.matchedDetail;
     answered = true;
   }
+  // Re-entering the same year is new evidence too. Drop only inherited detail
+  // constraints that contradict it, never a detail/code explicitly supplied now.
+  const familyRows=records.filter(r=>`${r.manufacturerId}|${r.vehicle}`===state.selectedVehicleKey);
+  const explicitDetail=entities.detailModel || entities.matches.some(m=>m.matchedDetail)
+    || (entities.detailModels?.length && entities.detailModels.length < unique(familyRows.map(r=>r.detailModel)).length);
+  if(entities.year && !explicitDetail && familyRows.some(r=>yearMatches(r.year,entities.year))){
+    const inherited=familyRows.filter(r=>(!state.detailModel||r.detailModel===state.detailModel)
+      &&(!state.detailModels?.length||state.detailModels.includes(r.detailModel))
+      &&(!state.generation||r.detailModel.toUpperCase().includes(state.generation.toUpperCase())));
+    if(!inherited.some(r=>yearMatches(r.year,entities.year))){
+      state.detailModel='';state.detailModels=[];state.generation='';state.yearRange='';
+      state.exactFuel='';state.pendingVehicleConfirmation=null;
+      state.priceReference='';state.quotedSpec='';state.priceSummaryShown=false;
+    }
+  }
+  if(explicitDetail){state.detailModel='';state.detailModels=[];state.generation='';}
+  if(entities.year)state.yearRange='';
   const changedYear = entities.year && entities.year !== state.year;
   if (changedYear) {
     if (state.year || (intent==='CORRECTION' && state.yearRange)) { state.detailModel = ""; state.detailModels=[]; state.generation = ""; }
@@ -1474,6 +1491,9 @@ function conversationCore(previous, text, records, localities = [], priceCatalog
     return output;
   }
   if (!answered && !state.priceIntent && !["BATTERY_QUESTION","PRICE_QUESTION"].includes(intent)) {
+    if(affirmative.test(text)&&state.previousQuestion?.field==='fuel'&&rows.length){
+      ask('fuel',copy.fuel,state.previousQuestion.choices);return output;
+    }
     if (state.selectedVehicleKey) { say(copy.unsupported); output.actions = ["phone"]; }
     else { state.failures += 1; say(state.failures > 1 ? copy.noMatchAgain : variant("fallback",state.turnIndex)); if (state.failures > 1) output.actions = ["phone"]; }
     return output;

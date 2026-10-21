@@ -77,7 +77,7 @@ for(const entry of index.vehicles) {
   // Includes the latest owner-authorized blog content; only the exact CTA line differs.
   if(entry.id==='kia/mohave'){
     eq(contentHash(html),canonical.hashes[page],'new approved Mohave page equals canonical generation');
-    eq(html.split(launcherMarkup).length-1,1,'one common launcher');
+    eq(html.replace(/\r\n/g,'\n').split(launcherMarkup).length-1,1,'one common launcher');
     ok(html.includes('DF100L'));
   }else assertConsultPage(html,pageBaseline(page),entry.id);
   assertions++;

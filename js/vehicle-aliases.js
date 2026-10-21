@@ -37,6 +37,10 @@ export function buildAliasIndex(records) {
 // Codes are governed by source detail names, never guessed from edit distance.
 const generationCache=new WeakMap();
 const resolutionCache=new WeakMap();
+// Input vocabulary only; fitment and year ranges still come from canonical rows.
+// Kia: https://update.kia.com/KR/KO/updateNoticeView/software-version
+// "3세대 K5" is listed with the DL3 software/model identifier.
+const ORDINAL_GENERATION_ALIASES = Object.freeze({'kia|K5': {3:'DL3'}});
 const typoCache=new WeakMap();
 // Deliberately conservative: Korean names of at least three syllables only.
 // Short/Latin models, codes, capacities and manufacturer names are not fuzzy targets.
@@ -120,7 +124,7 @@ export function buildGenerationIndex(records){
 }
 export function resolveVehicleText(text, records, state = {}) {
   if(!resolutionCache.has(records))resolutionCache.set(records,new Map());
-  const cache=resolutionCache.get(records),key=JSON.stringify([state.manufacturer||'',text]);
+  const cache=resolutionCache.get(records),key=JSON.stringify([state.manufacturer||'',state.selectedVehicleKey||'',text]);
   if(!cache.has(key)){
     if(cache.size>=512)cache.clear();
     cache.set(key,resolveVehicleTextUncached(text,records,state));
@@ -130,6 +134,31 @@ export function resolveVehicleText(text, records, state = {}) {
   return {...result,matches:[...result.matches],...(result.detailModels?{detailModels:[...result.detailModels]}:{})};
 }
 function resolveVehicleTextUncached(text, records, state) {
+  // Split an ordinal only after a known complete family (K5 + 3세대, not K53).
+  // Never infer generation numbers by sorting years or reading arbitrary code digits.
+  let ordinalText=text.normalize('NFKC');
+  if(ordinalText.includes('세대'))for(const g of buildAliasIndex(records).groups){
+    ordinalText=ordinalText.replace(new RegExp(`(${escapePattern(g.vehicle)})([1-9])\\s*세대`,'gi'),'$1 $2세대');
+  }
+  const exactOrdinalDetail=ordinalText.includes('세대')&&records.some(r=>/\d\s*세대/.test(r.detailModel)&&vehicleAliasOccurs(text,r.detailModel,r.manufacturerId));
+  const ordinal=!exactOrdinalDetail&&ordinalText.match(/(?:^|[^\d])([1-9]\d?)\s*세대/);
+  if(ordinal){
+    const bare=ordinalText.replace(new RegExp(`${ordinal[1]}\\s*세대`),' ').trim();
+    const base=resolveVehicleTextUncached(bare,records,state);
+    if(base.recognitionFailure)return base;
+    const groups=base.matches.length?base.matches:!bare?buildAliasIndex(records).groups.filter(g=>g.key===state.selectedVehicleKey):[];
+    if(groups.length===1){
+      const g=groups[0],code=ORDINAL_GENERATION_ALIASES[g.key]?.[Number(ordinal[1])];
+      const rows=g.records.filter(r=>new RegExp(`(?:^|[^\\d])${ordinal[1]}\\s*세대`).test(r.detailModel)
+        ||(code&&generationCodesForRow(r).includes(code)));
+      const details=[...new Set(rows.map(r=>r.detailModel))];
+      if(!details.length)return {...base,matches:[],recognitionFailure:'GENERATION_UNKNOWN'};
+      const explicit=base.detailModels?.filter(d=>details.includes(d));
+      if(base.detailModels?.length&&base.generationCodeDetected&&!explicit.length)return {...base,matches:[],recognitionFailure:'GENERATION_FAMILY_CONFLICT'};
+      return {...base,matches:[{...g,matchedDetail:''}],detailModels:explicit?.length?explicit:details,generation:code||'',ordinalGeneration:Number(ordinal[1])};
+    }
+    return base;
+  }
   const named = searchVehicles(text, records);
   const generationIndex=buildGenerationIndex(records);
   const compatibleCodeContext=named.conflictingVehicles && [...generationIndex.values()].some(entry =>
