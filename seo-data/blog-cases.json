@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-21T07:56:14.060Z",
+  "syncedAt": "2026-10-21T14:36:41.068Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 418,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 420,
+    "newPosts": 1,
+    "preservedPreviousPosts": 420,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 421,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 372,
+    "manufacturerMatches": 373,
     "vehicleMatches": 350,
     "detailMatches": 81,
-    "regionMatches": 303,
-    "neighborhoodMatches": 250,
-    "batteryMatches": 302,
+    "regionMatches": 304,
+    "neighborhoodMatches": 251,
+    "batteryMatches": 303,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,148 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 303,
-    "actualRegionMatches": 303,
-    "actualNeighborhoodMatches": 250,
+    "actualAreaMatches": 304,
+    "actualRegionMatches": 304,
+    "actualNeighborhoodMatches": 251,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224448609177",
+      "title": "마포구 대흥동 2015년식 폭스바겐 파샤트 바르타 AGM70 출장배터리교체 가격 및 비용 안내｜출장배터리교체 처음신청 고객",
+      "url": "https://blog.naver.com/kang10107/224448609177",
+      "publishedAt": "2026-10-21",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224448609177.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjFfMTQ0/MDAxNzkyNTQwODk3MjEw.hHWSA2Zjhrr34sVtRLN4HzaScCqMo1uQ39P_LjeGpcIg.jMJAF1-Toofg_F6a7XijAxbYSdCupPpi4hHDpF_lzMAg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 마포구 대흥동에서 2015년식 폭스바겐 파샤트 배터리 교체를 진행했습니다. 이번 고객님은 차량 출고 당시 장착된 배터리를 오랫동안 사용해 오셨고, 이번에 처음으로 교체를 상담하신 경우였습니다. 배터리 방전 때문에 급하게 긴급출동을 요청하신 것은 아니었습니다. 그동안 별다른 교체 없이 사용해 왔지만, 이제는 배터리 상태가 걱정돼 새 제품으로 바꾸는 것이 좋겠다고 판단하셨습니다. 오래 사용한 배터리라고 해서 무조건 정해진 시점에 고장 나는 것은 아닙니다. 다만 시간이 지.......",
+      "tags": [
+        "마포구배터리",
+        "마포구출장배터리",
+        "마포배터리",
+        "대흥동출장배터리",
+        "폭스바겐배터리",
+        "파샤트배터리",
+        "파샤트배터리가격",
+        "파샤트배터리교체",
+        "폭스바겐배터리가격",
+        "바르타배터리",
+        "바르타agm70",
+        "바르타agm70교체",
+        "바르타agm70가격",
+        "출장배터리교체",
+        "일등밧데리",
+        "자동차배터리",
+        "배터리교체",
+        "출장배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "폭스바겐",
+        "manufacturers": [
+          {
+            "id": "volkswagen",
+            "name": "폭스바겐"
+          }
+        ],
+        "vehicle": null,
+        "vehicles": [],
+        "detailModels": [],
+        "vehicleHierarchy": [],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "mapo-gu",
+          "regionName": "마포구",
+          "neighborhoodName": "대흥동",
+          "label": "서울 마포구 대흥동",
+          "urlPath": "/area/seoul/mapo-gu/daeheung-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "mapo-gu",
+            "regionName": "마포구",
+            "label": "서울 마포구",
+            "urlPath": "/area/seoul/mapo-gu.html",
+            "matchedAlias": "마포구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "mapo-gu",
+            "regionName": "마포구",
+            "name": "대흥동",
+            "legalName": "서울특별시 마포구 대흥동",
+            "label": "서울 마포구 대흥동",
+            "urlPath": "/area/seoul/mapo-gu/daeheung-dong.html",
+            "matchedAlias": "대흥동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/volkswagen.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/mapo-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/mapo-gu/daeheung-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "마포구 대흥동에서 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 0,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224448604500",
       "title": "인천 연수구 선학동 2020년식 에스컬레이더 바르타 AGM95 출장배터리교체 가격 및 비용 안내｜일등밧데리",
