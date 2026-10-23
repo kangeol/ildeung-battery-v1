@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-22T14:37:25.659Z",
+  "syncedAt": "2026-10-23T07:51:59.393Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 423,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 424,
+    "newPosts": 2,
+    "preservedPreviousPosts": 424,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 426,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 376,
-    "vehicleMatches": 353,
+    "manufacturerMatches": 378,
+    "vehicleMatches": 355,
     "detailMatches": 81,
-    "regionMatches": 307,
-    "neighborhoodMatches": 254,
-    "batteryMatches": 306,
+    "regionMatches": 309,
+    "neighborhoodMatches": 256,
+    "batteryMatches": 308,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,314 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 307,
-    "actualRegionMatches": 307,
-    "actualNeighborhoodMatches": 254,
+    "actualAreaMatches": 309,
+    "actualRegionMatches": 309,
+    "actualNeighborhoodMatches": 256,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224450938850",
+      "title": "인천 미추홀구 도화동 2013년식 BMW X1 델코 AGM80 출장배터리교체 가격 및 비용 안내｜매일 차를 써야 해서 미리 교체할 때",
+      "url": "https://blog.naver.com/kang10107/224450938850",
+      "publishedAt": "2026-10-23",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224450938850.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjNfMjYx/MDAxNzkyNzEzNjgyNDIy.l4yQMzPTiiTcJXeHmE3a9Z44WVmAsXJtYclopJHl-jYg.T76ZIjZonXOTUkusTQzstVHgokQ1wxDmy4OQNEe9ookg.JPEG/bmw-bmw-x1-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 미추홀구 도화동에서 2013년식 BMW X1 배터리 교체를 진행했습니다. 이번 고객님은 갑자기 시동이 걸리지 않거나 긴급출동을 요청해야 하는 상황은 아니었습니다. 앞으로 매일 차량을 사용해야 하는 일정이 생기면서 기존 배터리를 계속 사용해도 괜찮을지 고민하다 교체 상담을 요청하셨습니다. 가끔 차량을 이용할 때는 혹시 문제가 생기더라도 일정을 조정할 여유가 있지만, 매일 차가 필요한 상황이라면 이야기가 달라집니다. 특히 출근이나 정해진 시간에 이동해야 하는 일이 많아지.......",
+      "tags": [
+        "미추홀구출장배터리",
+        "미추홀구자동차배터리",
+        "도화동출장배터리",
+        "x1배터리",
+        "x1배터리가격",
+        "x1배터리교체비용",
+        "x1배터리교체",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리교체",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW X1",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X1",
+            "displayName": "BMW X1",
+            "urlPath": "/car-battery/bmw/x1.html",
+            "matchedAlias": "BMW X1",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X1",
+            "displayName": "BMW X1",
+            "urlPath": "/car-battery/bmw/x1.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "michuhol-gu",
+          "regionName": "미추홀구",
+          "neighborhoodName": "도화동",
+          "label": "인천 미추홀구 도화동",
+          "urlPath": "/area/incheon/michuhol-gu/dohwa-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "michuhol-gu",
+            "regionName": "미추홀구",
+            "label": "인천 미추홀구",
+            "urlPath": "/area/incheon/michuhol-gu.html",
+            "matchedAlias": "미추홀구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "michuhol-gu",
+            "regionName": "미추홀구",
+            "name": "도화동",
+            "legalName": "인천광역시 미추홀구 도화동",
+            "label": "인천 미추홀구 도화동",
+            "urlPath": "/area/incheon/michuhol-gu/dohwa-dong.html",
+            "matchedAlias": "도화동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/x1.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/michuhol-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/michuhol-gu/dohwa-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "미추홀구 도화동에서 BMW X1 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224448625433",
+      "title": "성남시 수정구 단대동 2020년식 BMW530i 바르타 AGM95 출장배터리교체 가격 및 비용 안내｜장거리 여행 전 배터리 미리 교체할 때",
+      "url": "https://blog.naver.com/kang10107/224448625433",
+      "publishedAt": "2026-10-23",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224448625433.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjFfMjU2/MDAxNzkyNTQxOTM3NTg4.clCa9EbCcQj-UBGWvXWP2Jg3joGeDTsvhw8Wzh498xgg.fI1vwPBHCF6vGg40LVB3g8oAmAWXlGm_181cp4CbHyAg.JPEG/bmw-bmw530i-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 성남시 수정구 단대동에서 2020년식 BMW530i 배터리 교체를 진행했습니다. 이번 고객님은 장거리 여행을 앞두고 차량 배터리가 걱정돼 상담을 요청하셨습니다. 당장 시동이 걸리지 않거나 긴급출동을 이용한 상황은 아니었습니다. 다만 여행을 떠난 뒤 낯선 곳에서 갑자기 배터리 문제가 생기면 일정이 불편해질 수 있어 미리 교체를 결정하셨습니다. 평소에는 집이나 회사 근처에서 차량을 사용하지만 장거리 여행 중에는 주차 장소나 이동 일정이 달라지기 때문에 출발 전에 차량 상태를.......",
+      "tags": [
+        "성남시배터리",
+        "성남출장배터리",
+        "성남자동차배터리",
+        "수정구배터리",
+        "단대동출장배터리",
+        "bmw530i배터리",
+        "bmw530i배터리교체비용",
+        "530i배터리교체",
+        "바르타agm95",
+        "바르타agm95교체비용",
+        "바르타agm95가격",
+        "agm95가격",
+        "출장배터리교체",
+        "출장배터리교체가격",
+        "출장배터리비용",
+        "자동차배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 5시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "BMW5",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "seongnam-si",
+          "regionName": "성남시",
+          "neighborhoodName": "단대동",
+          "label": "경기 성남시 단대동",
+          "urlPath": "/area/gyeonggi/seongnam-si/dandae-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "seongnam-si",
+            "regionName": "성남시",
+            "label": "경기 성남시",
+            "urlPath": "/area/gyeonggi/seongnam-si.html",
+            "matchedAlias": "성남시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "seongnam-si",
+            "regionName": "성남시",
+            "name": "단대동",
+            "legalName": "경기도 성남시 수정구 단대동",
+            "label": "경기 성남시 단대동",
+            "urlPath": "/area/gyeonggi/seongnam-si/dandae-dong.html",
+            "matchedAlias": "단대동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/5-series.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/seongnam-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/seongnam-si/dandae-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "성남시 단대동에서 BMW 5시리즈 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224448621472",
       "title": "용산 효창동 2018년식 벤츠S클래스 바르타 AGM105 출장배터리교체 가격 및 비용 안내｜겨울 오기 전 배터리 미리 교체할 때",
