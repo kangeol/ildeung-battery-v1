@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-23T07:51:59.393Z",
+  "syncedAt": "2026-10-23T14:21:43.453Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 424,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 426,
+    "newPosts": 1,
+    "preservedPreviousPosts": 426,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 427,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 378,
-    "vehicleMatches": 355,
+    "manufacturerMatches": 379,
+    "vehicleMatches": 356,
     "detailMatches": 81,
-    "regionMatches": 309,
-    "neighborhoodMatches": 256,
-    "batteryMatches": 308,
+    "regionMatches": 310,
+    "neighborhoodMatches": 257,
+    "batteryMatches": 309,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,160 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 309,
-    "actualRegionMatches": 309,
-    "actualNeighborhoodMatches": 256,
+    "actualAreaMatches": 310,
+    "actualRegionMatches": 310,
+    "actualNeighborhoodMatches": 257,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224450944521",
+      "title": "금천구 시흥동 2016년식 르노삼성 QM6 델코 AGM70 출장배터리교체 가격 및 비용 안내｜한 번 방전된 뒤 미리 교체하고 싶을 때",
+      "url": "https://blog.naver.com/kang10107/224450944521",
+      "publishedAt": "2026-10-23",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224450944521.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjNfMjY2/MDAxNzkyNzE0MDA2NDQz.oKaXbkcQdWHWW5lx-LafvkOPcpiScnHot7ANcjfQZVQg.lDO12TLvj4aEAsdl_XtThNoOoqBcnzIkjIe4xbUGDWog.JPEG/image-qm6-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 금천구 시흥동에서 2016년식 르노삼성 QM6 배터리 교체를 진행했습니다. 이번 고객님은 최근 한 차례 배터리 방전을 경험하신 뒤 다시 같은 일이 생기기 전에 교체하고 싶다고 상담을 주셨습니다. 갑자기 시동이 안 걸리는 일을 한 번 겪고 나면 이후에는 정상적으로 운행하더라도 다음 시동이 신경 쓰일 수 있습니다. 특히 출근이나 약속이 있는 날 또 방전된다면 그때는 시간까지 낭비하게 되니 미리 교체를 결정하시는 분들도 계십니다. 이번에는 델코 AGM70을 준비해 시흥동에서 출장.......",
+      "tags": [
+        "금천구출장배터리",
+        "금천구자동차배터리",
+        "시흥동출장배터리",
+        "시흥동배터리",
+        "qm6배터리",
+        "qm6배터리가격",
+        "qm6배터리교체",
+        "agm70",
+        "델코agm70가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "르노",
+        "manufacturers": [
+          {
+            "id": "renault",
+            "name": "르노"
+          }
+        ],
+        "vehicle": "QM6",
+        "vehicles": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "QM6",
+            "displayName": "QM6",
+            "urlPath": "/car-battery/renault/qm6.html",
+            "matchedAlias": "QM6",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "renault",
+            "manufacturerName": "르노",
+            "vehicleName": "QM6",
+            "displayName": "QM6",
+            "urlPath": "/car-battery/renault/qm6.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "geumcheon-gu",
+          "regionName": "금천구",
+          "neighborhoodName": "시흥동",
+          "label": "서울 금천구 시흥동",
+          "urlPath": "/area/seoul/geumcheon-gu/siheung-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "geumcheon-gu",
+            "regionName": "금천구",
+            "label": "서울 금천구",
+            "urlPath": "/area/seoul/geumcheon-gu.html",
+            "matchedAlias": "금천구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "geumcheon-gu",
+            "regionName": "금천구",
+            "name": "시흥동",
+            "legalName": "서울특별시 금천구 시흥동",
+            "label": "서울 금천구 시흥동",
+            "urlPath": "/area/seoul/geumcheon-gu/siheung-dong.html",
+            "matchedAlias": "시흥동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/renault/qm6.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/renault.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/geumcheon-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/geumcheon-gu/siheung-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "금천구 시흥동에서 QM6 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224450938850",
       "title": "인천 미추홀구 도화동 2013년식 BMW X1 델코 AGM80 출장배터리교체 가격 및 비용 안내｜매일 차를 써야 해서 미리 교체할 때",
