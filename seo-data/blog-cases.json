@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-24T07:33:02.420Z",
+  "syncedAt": "2026-10-24T13:32:45.449Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 427,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 429,
+    "newPosts": 1,
+    "preservedPreviousPosts": 429,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 430,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 381,
-    "vehicleMatches": 358,
-    "detailMatches": 81,
-    "regionMatches": 312,
-    "neighborhoodMatches": 258,
-    "batteryMatches": 311,
+    "manufacturerMatches": 382,
+    "vehicleMatches": 359,
+    "detailMatches": 82,
+    "regionMatches": 313,
+    "neighborhoodMatches": 259,
+    "batteryMatches": 312,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,183 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 312,
-    "actualRegionMatches": 312,
-    "actualNeighborhoodMatches": 258,
+    "actualAreaMatches": 313,
+    "actualRegionMatches": 313,
+    "actualNeighborhoodMatches": 259,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224452012073",
+      "title": "영등포 양평동 2019년식 기아 올뉴쏘렌토 델코 AGM95 출장배터리교체 가격 및 비용 안내｜갑자기 방전돼 일정에 차질 생겼을 때",
+      "url": "https://blog.naver.com/kang10107/224452012073",
+      "publishedAt": "2026-10-24",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224452012073.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjRfMTkx/MDAxNzkyODAxNzk4NDU0.XjDOa92WksAcyJ4M7pzmgiV0hnVhdJKfYPceeeOKSkwg.m6N1ntAjVqzpnVYgG5FzksrGLhBZai4GNrI59WttNqwg.JPEG/image-image-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 영등포구 양평동에서 2019년식 기아 올뉴쏘렌토 배터리 교체를 진행했습니다. 이번 고객님은 예상하지 못한 배터리 방전 때문에 예정된 일정에 차질이 생겼던 경험이 있으셨습니다. 차량이 필요한 시간에 시동이 걸리지 않으면 단순히 자동차 한 대가 움직이지 못하는 것에서 끝나지 않습니다. 약속 시간을 변경하거나 이동 수단을 다시 알아봐야 하는 등 여러 불편이 생길 수 있습니다. 고객님께서는 이런 상황을 다시 겪고 싶지 않아 기존 배터리를 계속 사용하기보다 미리 교체하는 쪽.......",
+      "tags": [
+        "영등포배터리",
+        "영등포출장배터리",
+        "영등포배터리가격",
+        "영등포자동차배터리",
+        "양평동출장배터리",
+        "올뉴쏘렌토배터리",
+        "올뉴쏘렌토배터리가격",
+        "올뉴쏘렌토배터리교체",
+        "올뉴쏘렌토배터리교체비용",
+        "일등밧데리",
+        "출장배터리",
+        "델코agm95",
+        "델코amg95배터리",
+        "델코agm95배터리가격",
+        "agm95배터리가격",
+        "agm95배터리교체비용",
+        "출장배터리교체",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "쏘렌토",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayName": "쏘렌토",
+            "urlPath": "/car-battery/kia/sorento.html",
+            "matchedAlias": "쏘렌토",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayVehicleName": "쏘렌토",
+            "label": "올 뉴 쏘렌토",
+            "slug": "all-new-sorento",
+            "urlPath": "/car-battery/kia/sorento/all-new-sorento.html",
+            "vehicleUrlPath": "/car-battery/kia/sorento.html",
+            "matchedAlias": "올 뉴 쏘렌토"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayName": "쏘렌토",
+            "urlPath": "/car-battery/kia/sorento.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "yeongdeungpo-gu",
+          "regionName": "영등포구",
+          "neighborhoodName": "양평동",
+          "label": "서울 영등포구 양평동",
+          "urlPath": "/area/seoul/yeongdeungpo-gu/yangpyeong-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yeongdeungpo-gu",
+            "regionName": "영등포구",
+            "label": "서울 영등포구",
+            "urlPath": "/area/seoul/yeongdeungpo-gu.html",
+            "matchedAlias": "영등포"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yeongdeungpo-gu",
+            "regionName": "영등포구",
+            "name": "양평동",
+            "legalName": "서울특별시 영등포구 양평동",
+            "label": "서울 영등포구 양평동",
+            "urlPath": "/area/seoul/yeongdeungpo-gu/yangpyeong-dong.html",
+            "matchedAlias": "양평동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/sorento.html"
+          ],
+          "details": [
+            "/car-battery/kia/sorento/all-new-sorento.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/yeongdeungpo-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/yeongdeungpo-gu/yangpyeong-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "영등포구 양평동에서 쏘렌토 올 뉴 쏘렌토 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224452009073",
       "title": "인천 서해구 검암경서동 2020년식 쉐보레 트레일블레이저 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
