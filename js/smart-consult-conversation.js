@@ -736,6 +736,11 @@ function priceReferenceKind(text, catalog) {
 }
 
 const restrictedLocalityReply = '일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요.';
+const restrictedAdministrativeAliases = new Set([
+  '고양동', '관산동', '능곡동', '대덕동', '삼송1동', '삼송2동', '성사1동',
+  '성사2동', '원신동', '주교동', '창릉동', '행신1동', '행신2동', '행신3동',
+  '행신4동', '행주동', '화전동', '화정1동', '화정2동', '효자동', '흥도동'
+].map(normalizeText));
 
 // Deogyang-gu and its supported localities require phone confirmation ahead
 // of every normal price or dispatch branch. A bare locality alias is accepted,
@@ -753,6 +758,16 @@ function restrictedLocality(text, previous, localities) {
       ? resolved.locationCandidates?.find(isRestrictedLocality) || null
       : null;
   if (target) return target;
+  const compact = normalizeText(text);
+  const administrativeAlias = [...restrictedAdministrativeAliases].find(alias => compact.includes(alias));
+  const deogyangContext = /(?:경기도)?고양시덕양구/.test(compact);
+  // The official administrative-dong names are additional bot aliases. Bare
+  // aliases use Deogyang-gu by policy; a preceding explicit municipality is
+  // preserved by the resolver and therefore cannot be overridden here.
+  if (administrativeAlias && (deogyangContext || (compact.startsWith(administrativeAlias) && (resolved.locationState === 'MISSING_AREA'
+    || (resolved.region && !isRestrictedLocality(resolved.region))))) ) {
+    return { city: '고양시', district: '덕양구', level: 'district', canonicalId: 'deogyang-admin-alias' };
+  }
   if (resolved.locationState !== 'MISSING_AREA') return null;
   return isRestrictedLocality(previous.location) ? previous.location : null;
 }

@@ -82,6 +82,12 @@ const changedArea=flow(["인천인데","부산 출장가능해?"]); equal(change
 const rangeAnswer=flow(["BMW 520d 2023","2017~2023년형 · 5시리즈 (G30)"]); equal(rangeAnswer.state.year,2023); equal(rangeAnswer.state.confirmedBattery,"AGM95");
 const deogyangLocations=localities.filter(item=>item.city==="고양시"&&item.district==="덕양구"&&["district","locality"].includes(item.level));
 check(deogyangLocations.some(item=>item.name==="신원동")&&deogyangLocations.some(item=>item.name==="대자동"),"Deogyang source locations must include the requested dongs");
+const officialDeogyangAdministrativeDongs=["고양동","관산동","능곡동","대덕동","삼송1동","삼송2동","성사1동","성사2동","원신동","주교동","창릉동","행신1동","행신2동","행신3동","행신4동","행주동","화전동","화정1동","화정2동","효자동","흥도동"];
+equal(officialDeogyangAdministrativeDongs.length,21,"official Deogyang administrative-dong list");
+for (const name of officialDeogyangAdministrativeDongs) for (const text of [name,`고양시 덕양구 ${name}`]) {
+  const response=flow([text]).outputs[0];
+  equal(response.messages,["일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."],`official administrative dong: ${text}`);
+}
 for (const item of deogyangLocations) for (const alias of locationAliases(item)) {
   const resolved=resolveLocation(alias,localities);
   if (resolved.region?.canonicalId!==item.canonicalId && !resolved.locationCandidates?.some(candidate=>candidate.canonicalId===item.canonicalId)) continue;
@@ -100,7 +106,7 @@ const restrictedFollowup=flow(["대자동", "가격은요?"]);
 equal(restrictedFollowup.outputs[1].messages,["일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."]);
 const restrictedChange=flow(["대자동", "인천 송도동으로 변경할게요"]);
 check(!restrictedChange.outputs[1].messages.includes("일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."),"a new locality must replace restricted-locality handling");
-for (const text of ["서울 신원동", "서울 서초구 신원동", "파주시 신원동"]) {
+for (const text of ["서울 신원동", "서울 서초구 신원동", "파주시 신원동", "서울 능곡동", "파주시 능곡동"]) {
   const response=flow([text]).outputs[0];
   check(!response.messages.includes("일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."),`different municipality must not match: ${text}`);
 }
