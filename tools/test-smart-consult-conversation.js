@@ -13,6 +13,8 @@ const read = name => fs.readFileSync(path.join(root,name), "utf8");
 const json = name => JSON.parse(read(name));
 const records = json("data/manufacturers.json").flatMap(m => json(`data/${m.file}`).map(row => ({...row,manufacturerId:m.id,manufacturerName:m.name})));
 const localities = json("seo-data/smart-consult-location-index.json").localities;
+const priceCatalog = json("data/battery-prices.json");
+const servicePolicy = json("data/consult-service-policy.json");
 let assertions = 0;
 const check = (condition, message) => { assert.ok(condition, message); assertions++; };
 const equal = (actual, expected, message) => { assert.deepEqual(actual, expected, message); assertions++; };
@@ -28,6 +30,15 @@ function turn(state, text) {
 function flow(texts) {
   let state = createConversationState();
   const outputs = texts.map(text => { const output = turn(state,text); state=output.state; return output; });
+  return {state,outputs};
+}
+function productionFlow(texts) {
+  let state = createConversationState();
+  const outputs = texts.map(text => {
+    const output = conversationTurn(state,text,records,localities,priceCatalog,servicePolicy);
+    state=output.state;
+    return output;
+  });
   return {state,outputs};
 }
 equal(records.length,approvedVehicleCount,"canonical row count");
@@ -119,6 +130,12 @@ check(restrictedWithinGoyang.outputs[1].messages.includes(restrictedWithinGoyang
 check(restrictedWithinGoyang.outputs[2].messages.includes(restrictedWithinGoyang.outputs[0].messages[0]),"Goyang restriction remains active after a Goyang-locality change");
 const restrictedReapplied=flow(["\uC2E0\uC6D0\uB3D9", "\uC778\uCC9C \uC5F0\uC218\uAD6C\uB294 \uCD9C\uC7A5 \uB418\uB098\uC694?", "\uB300\uC790\uB3D9"]);
 check(restrictedReapplied.outputs[2].messages.includes(restrictedReapplied.outputs[0].messages[0]),"a later Goyang locality reapplies the restriction");
+const productionRestrictedTransition=productionFlow(["\uC2E0\uC6D0\uB3D9", "\uC778\uCC9C \uC5F0\uC218\uAD6C\uB294 \uCD9C\uC7A5 \uB418\uB098\uC694?", "\uAC00\uACA9\uC740 \uC5BC\uB9C8\uC608\uC694?"]);
+equal(productionRestrictedTransition.outputs[1].state.region.name,"\uC5F0\uC218\uAD6C","production call contract replaces Goyang with explicit Incheon service area");
+check(!productionRestrictedTransition.outputs[2].messages.includes(productionRestrictedTransition.outputs[0].messages[0]),"production price follow-up after Incheon transition is not restricted");
+const productionGoyangReapply=productionFlow(["\uC2E0\uC6D0\uB3D9", "\uC778\uCC9C \uC5F0\uC218\uAD6C\uB294 \uCD9C\uC7A5 \uB418\uB098\uC694?", "\uB300\uC790\uB3D9", "\uAC00\uACA9\uC740 \uC5BC\uB9C8\uC608\uC694?"]);
+check(productionGoyangReapply.outputs[2].messages.includes(productionGoyangReapply.outputs[0].messages[0]),"production contract reapplies restriction when returning to Goyang");
+check(productionGoyangReapply.outputs[3].messages.includes(productionGoyangReapply.outputs[0].messages[0]),"production price follow-up remains restricted after returning to Goyang");
 check(!/innerHTML|insertAdjacentHTML|document\.write/.test(read("js/smart-consult.js")),"safe DOM rendering");
 check(!/localStorage|indexedDB/.test(read("js/smart-consult.js")+read("js/smart-consult-conversation.js")),"session only; no persistent storage");
 for(const value of Object.values(copy)) {

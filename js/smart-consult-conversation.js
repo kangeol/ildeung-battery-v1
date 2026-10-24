@@ -379,6 +379,7 @@ function composeConversion(previous, text, out, localities, priceCatalog, policy
     && !/취소(?:는|가|를)?(?:말고|아니|않|안하|되면|되더라도)/.test(s);
   const localityText=String(text).replace(/공항\s*주차장|회사\s*주차장|기계식\s*주차장|갓길/g,'');
   const located=resolveLocation(localityText,localities,previous.location||previous.region,previous.pendingLocationDisambiguation);
+  const replacesRestrictedAreaInquiry=Boolean(isRestrictedLocality(previous.location)&&located.region&&!isRestrictedLocality(located.region));
   const directVisit=/(?:직접|제가|내가|제가직접|매장).{0,12}(?:방문|가도|가면|갈게|가려고|찾아가)|출장말고.{0,12}(?:방문|가도|갈게)/.test(s);
   const areaQuestion=!directVisit&&!has(/직접 방문(?:도|은) 가능|매장 방문도 가능/)&&(/(?:출장(?!비)|방문).{0,20}(?:가능|요청|되|돼|와주|와요|오실|올수|지역)|(?:지역|동네|주소|차량위치).{0,20}(?:출장|가능|와|오)|(?:여기|거기|이곳|그곳).{0,15}(?:와|와요|오실|올수|출장)/.test(s)||Boolean(located.region && /와주|와주세요|오실|올수/.test(s)));
   const areaInquiry=areaQuestion&&/(?:가능(?:한가요|해요|합니까)?|되(?:나요|습니까)?|돼요|와(?:주시나요|요|주실수)?|오(?:나요|실수)?|올수)[?？！.!]*$/.test(s);
@@ -398,7 +399,7 @@ function composeConversion(previous, text, out, localities, priceCatalog, policy
     messages.splice(0,messages.length,...messages.filter(message=>!/예약·신청·접수는 고객센터|네, 출장 배터리 교체 가능합니다|증상만으로 교체가 필요한지|차량명과 연식을|차량명과 연식을 조금|어떤 차량이세요|호환성을 확정할 수 없습니다/.test(message)));
     add('변경된 차량 위치의 동이나 구를 알려주세요. 방문 장소의 실제 변경은 고객센터 {phone}에서 확인해야 하며, 이 채팅에서 변경을 확정하지 않습니다.',/변경된 차량 위치의 동이나 구/,true);
   } else if(!explicitUnsupported&&located.region&&(areaQuestion||locationChange||out.state.region)){
-    if(!areaInquiry){state.region=located.region;state.location=located.region;state.city=located.region.city;state.district=located.region.district;}
+    if(!areaInquiry||replacesRestrictedAreaInquiry){state.region=located.region;state.location=located.region;state.city=located.region.city;state.district=located.region.district;}
     if(areaQuestion&&!/(?:가격|얼마|규격|배터리.+(?:뭐|어떤))/.test(s))messages.splice(0,messages.length,...messages.filter(message=>!/차량명과 연식을|어떤 차량이세요/.test(message)));
     if(areaQuestion)add(`${located.region.fullLabel} 지역은 출장 배터리 교체 가능 지역입니다. 정확한 현장 접근 조건과 방문 일정은 확인이 필요합니다.`,/출장 배터리 교체 가능 지역|출장 교체 가능 지역|출장 가능 지역/);
   } else if(areaQuestion&&!explicitUnsupported&&!state.region&&!located.ambiguousRegion&&!has(/출장 가능 지역으로 확인되지 않|지역을 알려|동이나 구|정확한 위치/)){
@@ -409,7 +410,7 @@ function composeConversion(previous, text, out, localities, priceCatalog, policy
     messages.splice(0,messages.length,...messages.filter(message=>!/차량 확인 후 바로 안내|차량명과 연식을|어떤 차량이세요/.test(message)));
     add('날짜에 따라 현장이 다르군요. 방문을 원하시는 차량의 현재 동이나 구와 희망 일정을 알려주세요. 실제 방문 가능 시간은 고객센터 {phone}로 확인이 필요합니다.',/날짜에 따라 현장이 다르군요/,true);
   }
-  if(areaInquiry||conditionalLocationChange){
+  if((areaInquiry||conditionalLocationChange)&&!replacesRestrictedAreaInquiry){
     state.region=previous.region;state.location=previous.location;state.city=previous.city;state.district=previous.district;
     out.region=previous.region;
   }
