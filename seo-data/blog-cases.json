@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-23T14:21:43.453Z",
+  "syncedAt": "2026-10-24T07:33:02.420Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 426,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 427,
+    "newPosts": 2,
+    "preservedPreviousPosts": 427,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 429,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 379,
-    "vehicleMatches": 356,
+    "manufacturerMatches": 381,
+    "vehicleMatches": 358,
     "detailMatches": 81,
-    "regionMatches": 310,
-    "neighborhoodMatches": 257,
-    "batteryMatches": 309,
+    "regionMatches": 312,
+    "neighborhoodMatches": 258,
+    "batteryMatches": 311,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,307 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 310,
-    "actualRegionMatches": 310,
-    "actualNeighborhoodMatches": 257,
+    "actualAreaMatches": 312,
+    "actualRegionMatches": 312,
+    "actualNeighborhoodMatches": 258,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224452009073",
+      "title": "인천 서해구 검암경서동 2020년식 쉐보레 트레일블레이저 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224452009073",
+      "publishedAt": "2026-10-24",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224452009073.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjRfMjE3/MDAxNzkyODAxNTIwNzAz.05tIAFCcaB9RDpjbX_saJJsX-9NCA0byrzMyydoU_ygg.nXbuaanTXmbEiQTqt0nShv6-wgatfiNjJThcoLFJjL0g.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 서해구 검암경서동에서 2020년식 쉐보레 트레일블레이저 배터리 교체를 진행했습니다. 이번 고객님은 시동이 안 걸리거나 배터리가 방전돼 급하게 연락하신 경우가 아니었습니다. 지금까지 특별한 문제 없이 차량을 사용하고 계셨지만, 배터리를 사용한 기간이 길어지면서 앞으로도 계속 써도 괜찮을지 고민하셨다고 합니다. 배터리는 엔진오일처럼 일정한 주행거리마다 반드시 교체하는 부품은 아닙니다. 하지만 오래 사용했다면 현재 상태를 확인하고 교체 시기를 생각해볼 수 있습니다.......",
+      "tags": [
+        "인천배터리",
+        "서해구출장배터리",
+        "서해구배터리",
+        "검암경서동출장배터리",
+        "트레일블레이저배터리",
+        "트레일블레이저배터리교체비용",
+        "트레일블레이저배터리가격",
+        "트레일블레이저배터리교체",
+        "일등밧데리",
+        "출장배터리교체",
+        "자동차배터리",
+        "자동차배터리교체",
+        "출장배터리교체비용",
+        "배터리교체비용",
+        "배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "쉐보레",
+        "manufacturers": [
+          {
+            "id": "chevrolet",
+            "name": "쉐보레"
+          }
+        ],
+        "vehicle": "트레일블레이저",
+        "vehicles": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트레일블레이저",
+            "displayName": "트레일블레이저",
+            "urlPath": "/car-battery/chevrolet/trailblazer.html",
+            "matchedAlias": "트레일블레이저",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트레일블레이저",
+            "displayName": "트레일블레이저",
+            "urlPath": "/car-battery/chevrolet/trailblazer.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "seohae-gu",
+          "regionName": "서해구",
+          "label": "인천 서해구",
+          "urlPath": "/area/incheon/seohae-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "seohae-gu",
+            "regionName": "서해구",
+            "label": "인천 서해구",
+            "urlPath": "/area/incheon/seohae-gu.html",
+            "matchedAlias": "서해구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/chevrolet/trailblazer.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/chevrolet.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/seohae-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "인천 서해구에서 트레일블레이저 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224450950507",
+      "title": "시흥 신천동 2014년식 아우디 A8 델코 AGM105 출장배터리교체 가격 및 비용 안내｜작년 겨울보다 시동이 힘들게 걸릴 때",
+      "url": "https://blog.naver.com/kang10107/224450950507",
+      "publishedAt": "2026-10-24",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224450950507.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjNfMTk2/MDAxNzkyNzE0Mzg3MDgw.53uBc-B9EuvketjhlfrxswnrflKOzqiDOck9e4trB_Ug.eT4mkajO9O0qZ5MEPTMtpMTRb5DA7oQNXgphaVwEjesg.JPEG/image-a8-agm105-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 시흥시 신천동에서 2014년식 아우디 A8 배터리 교체를 진행했습니다. 이번 고객님은 시동이 완전히 안 걸리거나 긴급출동을 이용한 상황은 아니었습니다. 다만 이전 겨울과 비교했을 때 아침 첫 시동이 조금씩 힘겹게 느껴지면서 배터리를 교체해야 할지 고민하셨습니다. 같은 차량을 계속 운전하다 보면 평소 시동 소리나 반응이 익숙하기 때문에 작은 변화도 느끼실 수 있습니다. 고객님께서는 앞으로 더 추워졌을 때 시동 문제가 생길까 걱정돼 예방 교체를 선택하셨습니다. 이번에는 델.......",
+      "tags": [
+        "시흥출장배터리",
+        "시흥배터리",
+        "시흥자동차배터리",
+        "신천동배터리",
+        "신천동출장배터리",
+        "아우디배터리",
+        "아우디a8배터리",
+        "a8배터리",
+        "a8배터리교체",
+        "a8배터리가격",
+        "델코agm105",
+        "agm105",
+        "agm105교체",
+        "agm105가격",
+        "출장배터리교체",
+        "자동차배터리교체",
+        "일등밧데리",
+        "배터리교체",
+        "배터리교체가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "아우디",
+        "manufacturers": [
+          {
+            "id": "audi",
+            "name": "아우디"
+          }
+        ],
+        "vehicle": "아우디 A8",
+        "vehicles": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A8",
+            "displayName": "아우디 A8",
+            "urlPath": "/car-battery/audi/a8.html",
+            "matchedAlias": "아우디 A8",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A8",
+            "displayName": "아우디 A8",
+            "urlPath": "/car-battery/audi/a8.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "siheung-si",
+          "regionName": "시흥시",
+          "neighborhoodName": "신천동",
+          "label": "경기 시흥시 신천동",
+          "urlPath": "/area/gyeonggi/siheung-si/sincheon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "siheung-si",
+            "regionName": "시흥시",
+            "label": "경기 시흥시",
+            "urlPath": "/area/gyeonggi/siheung-si.html",
+            "matchedAlias": "시흥"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "siheung-si",
+            "regionName": "시흥시",
+            "name": "신천동",
+            "legalName": "경기도 시흥시 신천동",
+            "label": "경기 시흥시 신천동",
+            "urlPath": "/area/gyeonggi/siheung-si/sincheon-dong.html",
+            "matchedAlias": "신천동"
+          }
+        ],
+        "batteryModels": [
+          "AGM105"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/audi/a8.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/audi.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/siheung-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/siheung-si/sincheon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm105.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "시흥시 신천동에서 아우디 A8 AGM105 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224450944521",
       "title": "금천구 시흥동 2016년식 르노삼성 QM6 델코 AGM70 출장배터리교체 가격 및 비용 안내｜한 번 방전된 뒤 미리 교체하고 싶을 때",
