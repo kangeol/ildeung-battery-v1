@@ -739,15 +739,18 @@ const restrictedLocalityReply = '일부 지역 제한이 있습니다. 고객센
 const restrictedAdministrativeAliases = new Set([
   '고양동', '관산동', '능곡동', '대덕동', '삼송1동', '삼송2동', '성사1동',
   '성사2동', '원신동', '주교동', '창릉동', '행신1동', '행신2동', '행신3동',
-  '행신4동', '행주동', '화전동', '화정1동', '화정2동', '효자동', '흥도동'
+  '행신4동', '행주동', '화전동', '화정1동', '화정2동', '효자동', '흥도동',
+  '백석1동', '백석2동', '식사동', '중산1동', '중산2동', '정발산동', '풍산동',
+  '고봉동', '마두1동', '마두2동', '장항1동', '장항2동', '일산1동', '일산2동',
+  '일산3동', '탄현1동', '탄현2동', '주엽1동', '주엽2동', '대화동', '송포동',
+  '송산동', '가좌동'
 ].map(normalizeText));
 
-// Deogyang-gu and its supported localities require phone confirmation ahead
+// Goyang-si and its supported localities require phone confirmation ahead
 // of every normal price or dispatch branch. A bare locality alias is accepted,
 // while an explicitly resolved different municipality is not.
 function isRestrictedLocality(item) {
-  return item?.city === '고양시' && item.district === '덕양구'
-    && ['district', 'locality'].includes(item.level);
+  return item?.city === '고양시' && ['city', 'district', 'locality'].includes(item.level);
 }
 
 function restrictedLocality(text, previous, localities) {
@@ -760,13 +763,13 @@ function restrictedLocality(text, previous, localities) {
   if (target) return target;
   const compact = normalizeText(text);
   const administrativeAlias = [...restrictedAdministrativeAliases].find(alias => compact.includes(alias));
-  const deogyangContext = /(?:경기도)?고양시덕양구/.test(compact);
+  const goyangContext = /(?:경기도)?고양시(?:덕양구|일산동구|일산서구)?/.test(compact);
   // The official administrative-dong names are additional bot aliases. Bare
   // aliases use Deogyang-gu by policy; a preceding explicit municipality is
   // preserved by the resolver and therefore cannot be overridden here.
-  if (administrativeAlias && (deogyangContext || (compact.startsWith(administrativeAlias) && (resolved.locationState === 'MISSING_AREA'
+  if (administrativeAlias && (goyangContext || (compact.startsWith(administrativeAlias) && (resolved.locationState === 'MISSING_AREA'
     || (resolved.region && !isRestrictedLocality(resolved.region))))) ) {
-    return { city: '고양시', district: '덕양구', level: 'district', canonicalId: 'deogyang-admin-alias' };
+    return { city: '고양시', level: 'city', canonicalId: 'goyang-admin-alias' };
   }
   if (resolved.locationState !== 'MISSING_AREA') return null;
   return isRestrictedLocality(previous.location) ? previous.location : null;

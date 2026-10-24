@@ -80,15 +80,15 @@ const reset=flow(["BMW 520d 2019","처음부터"]); equal(reset.state,createConv
 const unknownArea=flow(["인천인데","부산인데 출장돼?"]); equal(unknownArea.outputs[1].messages,[copy.serviceUnknown]);
 const changedArea=flow(["인천인데","부산 출장가능해?"]); equal(changedArea.outputs[1].messages,[copy.serviceUnknown]);
 const rangeAnswer=flow(["BMW 520d 2023","2017~2023년형 · 5시리즈 (G30)"]); equal(rangeAnswer.state.year,2023); equal(rangeAnswer.state.confirmedBattery,"AGM95");
-const deogyangLocations=localities.filter(item=>item.city==="고양시"&&item.district==="덕양구"&&["district","locality"].includes(item.level));
-check(deogyangLocations.some(item=>item.name==="신원동")&&deogyangLocations.some(item=>item.name==="대자동"),"Deogyang source locations must include the requested dongs");
-const officialDeogyangAdministrativeDongs=["고양동","관산동","능곡동","대덕동","삼송1동","삼송2동","성사1동","성사2동","원신동","주교동","창릉동","행신1동","행신2동","행신3동","행신4동","행주동","화전동","화정1동","화정2동","효자동","흥도동"];
-equal(officialDeogyangAdministrativeDongs.length,21,"official Deogyang administrative-dong list");
-for (const name of officialDeogyangAdministrativeDongs) for (const text of [name,`고양시 덕양구 ${name}`]) {
+const goyangLocations=localities.filter(item=>item.city==="고양시"&&["city","district","locality"].includes(item.level));
+check(goyangLocations.some(item=>item.name==="신원동")&&goyangLocations.some(item=>item.name==="대자동"),"Goyang source locations must include the requested dongs");
+const officialGoyangAdministrativeDongs=["고양동","관산동","능곡동","대덕동","삼송1동","삼송2동","성사1동","성사2동","원신동","주교동","창릉동","행신1동","행신2동","행신3동","행신4동","행주동","화전동","화정1동","화정2동","효자동","흥도동","백석1동","백석2동","식사동","중산1동","중산2동","정발산동","풍산동","고봉동","마두1동","마두2동","장항1동","장항2동","일산1동","일산2동","일산3동","탄현1동","탄현2동","주엽1동","주엽2동","대화동","송포동","송산동","가좌동"];
+equal(officialGoyangAdministrativeDongs.length,44,"official Goyang administrative-dong list");
+for (const name of officialGoyangAdministrativeDongs) for (const text of [name,`고양시 ${name}`]) {
   const response=flow([text]).outputs[0];
   equal(response.messages,["일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."],`official administrative dong: ${text}`);
 }
-for (const item of deogyangLocations) for (const alias of locationAliases(item)) {
+for (const item of goyangLocations) for (const alias of locationAliases(item)) {
   const resolved=resolveLocation(alias,localities);
   if (resolved.region?.canonicalId!==item.canonicalId && !resolved.locationCandidates?.some(candidate=>candidate.canonicalId===item.canonicalId)) continue;
   const response=flow([alias]).outputs[0];
@@ -96,7 +96,7 @@ for (const item of deogyangLocations) for (const alias of locationAliases(item))
   equal(response.actions,["phone"],`${item.fullLabel}: ${alias}`);
   equal(response.result,null,`${item.fullLabel}: ${alias}`);
 }
-for (const text of ["덕양구", "신원동", "대자동", "고양시 덕양구 신원동", "경기도 고양시 덕양구 대자동", "고양시 덕양구 신원동 101번지", "BMW 520d 2019 신원동 가격 얼마예요?", "대자동 출장 가능해요?"]) {
+for (const text of ["고양시", "덕양구", "일산동구", "일산서구", "신원동", "대자동", "백석동", "대화동", "고양시 덕양구 신원동", "경기도 고양시 일산동구 백석동", "고양시 일산서구 대화동", "BMW 520d 2019 신원동 가격 얼마예요?", "대자동 출장 가능해요?"]) {
   const response=flow([text]).outputs[0];
   equal(response.messages,["일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."],text);
   equal(response.actions,["phone"],text);
