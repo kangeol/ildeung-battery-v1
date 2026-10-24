@@ -734,6 +734,43 @@ function priceReferenceKind(text, catalog) {
   if(new RegExp(`^그(?:걸로|제품|배터리)(?:로|으로|하면|는|은)*${price}$`).test(s))return 'product';
   return null;
 }
+
+const restrictedLocalityReply = '일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요.';
+
+// Deogyang-gu and its supported localities require phone confirmation ahead
+// of every normal price or dispatch branch. A bare locality alias is accepted,
+// while an explicitly resolved different municipality is not.
+function isRestrictedLocality(item) {
+  return item?.city === '고양시' && item.district === '덕양구'
+    && ['district', 'locality'].includes(item.level);
+}
+
+function restrictedLocality(text, previous, localities) {
+  const resolved = resolveLocation(text, localities);
+  const target = isRestrictedLocality(resolved.region)
+    ? resolved.region
+    : resolved.locationState === 'AMBIGUOUS_AREA'
+      ? resolved.locationCandidates?.find(isRestrictedLocality) || null
+      : null;
+  if (target) return target;
+  if (resolved.locationState !== 'MISSING_AREA') return null;
+  return isRestrictedLocality(previous.location) ? previous.location : null;
+}
+
+function restrictedLocalityTurn(previous, target) {
+  const state = {
+    ...previous,
+    region: target,
+    location: target,
+    city: target.city,
+    district: target.district,
+    pendingLocationDisambiguation: null,
+    lastIntent: 'RESTRICTED_LOCALITY_PHONE',
+    turnIndex: previous.turnIndex + 1
+  };
+  return { state, messages: [restrictedLocalityReply], actions: ['phone'], chips: [], result: null, region: target };
+}
+
 export function conversationTurn(previous, text, records, localities = [], priceCatalog = null, servicePolicy = null, selection = null) {
   // Observed price-word typo, not fuzzy spec/vehicle correction. Only a whole
   // explicit catalog-backed price question may enter this normalization path.
@@ -742,6 +779,10 @@ export function conversationTurn(previous, text, records, localities = [], price
     const spec=directPriceSpec(withoutBrand(corrected,priceCatalog),priceCatalog,Boolean(brandIntent(corrected,priceCatalog)));
     const code=spec?normalizeBatteryCode(spec,priceCatalog):'';
     if(code&&(Object.hasOwn(priceCatalog?.prices||{},code)||priceCatalog?.unpriced?.includes(code)))text=corrected;
+  }
+  if (selection === null) {
+    const target = restrictedLocality(text, previous, localities);
+    if (target) return restrictedLocalityTurn(previous, target);
   }
   const pending=previous.pendingVehicleConfirmation;
   if(selection===null&&pending?.typo===true&&!/아니|다른\s*차|말고/.test(text)){

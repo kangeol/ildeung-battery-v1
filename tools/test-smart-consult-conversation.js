@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 import { conversationTurn, createConversationState, extractEntities } from "../js/smart-consult-conversation.js";
 import { copy } from "../js/conversation-copy.js";
 import { parseYearRange, yearMatches } from "../js/smart-consult-core.js";
+import { locationAliases, resolveLocation } from "../js/smart-consult-location.js";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = name => fs.readFileSync(path.join(root,name), "utf8");
 const json = name => JSON.parse(read(name));
@@ -79,6 +80,30 @@ const reset=flow(["BMW 520d 2019","처음부터"]); equal(reset.state,createConv
 const unknownArea=flow(["인천인데","부산인데 출장돼?"]); equal(unknownArea.outputs[1].messages,[copy.serviceUnknown]);
 const changedArea=flow(["인천인데","부산 출장가능해?"]); equal(changedArea.outputs[1].messages,[copy.serviceUnknown]);
 const rangeAnswer=flow(["BMW 520d 2023","2017~2023년형 · 5시리즈 (G30)"]); equal(rangeAnswer.state.year,2023); equal(rangeAnswer.state.confirmedBattery,"AGM95");
+const deogyangLocations=localities.filter(item=>item.city==="고양시"&&item.district==="덕양구"&&["district","locality"].includes(item.level));
+check(deogyangLocations.some(item=>item.name==="신원동")&&deogyangLocations.some(item=>item.name==="대자동"),"Deogyang source locations must include the requested dongs");
+for (const item of deogyangLocations) for (const alias of locationAliases(item)) {
+  const resolved=resolveLocation(alias,localities);
+  if (resolved.region?.canonicalId!==item.canonicalId && !resolved.locationCandidates?.some(candidate=>candidate.canonicalId===item.canonicalId)) continue;
+  const response=flow([alias]).outputs[0];
+  equal(response.messages,["일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."],`${item.fullLabel}: ${alias}`);
+  equal(response.actions,["phone"],`${item.fullLabel}: ${alias}`);
+  equal(response.result,null,`${item.fullLabel}: ${alias}`);
+}
+for (const text of ["덕양구", "신원동", "대자동", "고양시 덕양구 신원동", "경기도 고양시 덕양구 대자동", "고양시 덕양구 신원동 101번지", "BMW 520d 2019 신원동 가격 얼마예요?", "대자동 출장 가능해요?"]) {
+  const response=flow([text]).outputs[0];
+  equal(response.messages,["일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."],text);
+  equal(response.actions,["phone"],text);
+  equal(response.result,null,text);
+}
+const restrictedFollowup=flow(["대자동", "가격은요?"]);
+equal(restrictedFollowup.outputs[1].messages,["일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."]);
+const restrictedChange=flow(["대자동", "인천 송도동으로 변경할게요"]);
+check(!restrictedChange.outputs[1].messages.includes("일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."),"a new locality must replace restricted-locality handling");
+for (const text of ["서울 신원동", "서울 서초구 신원동", "파주시 신원동"]) {
+  const response=flow([text]).outputs[0];
+  check(!response.messages.includes("일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."),`different municipality must not match: ${text}`);
+}
 const xss=flow(["<img src=x onerror=alert(1)>"]); equal(xss.state.confirmedBattery,null);
 check(!/innerHTML|insertAdjacentHTML|document\.write/.test(read("js/smart-consult.js")),"safe DOM rendering");
 check(!/localStorage|indexedDB/.test(read("js/smart-consult.js")+read("js/smart-consult-conversation.js")),"session only; no persistent storage");
