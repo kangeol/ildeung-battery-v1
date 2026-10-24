@@ -111,6 +111,14 @@ for (const text of ["서울 신원동", "서울 서초구 신원동", "파주시
   check(!response.messages.includes("일부 지역 제한이 있습니다. 고객센터 1644-9141로 문의해 주세요."),`different municipality must not match: ${text}`);
 }
 const xss=flow(["<img src=x onerror=alert(1)>"]); equal(xss.state.confirmedBattery,null);
+const restrictedPriceAfterChange=flow(["\uC2E0\uC6D0\uB3D9", "\uC778\uCC9C \uC5F0\uC218\uAD6C\uB294 \uCD9C\uC7A5 \uB418\uB098\uC694?", "\uAC00\uACA9\uC740 \uC5BC\uB9C8\uC608\uC694?"]);
+equal(restrictedPriceAfterChange.outputs[1].state.region.name,"\uC5F0\uC218\uAD6C","restricted-to-Incheon service transition retains Incheon");
+check(!restrictedPriceAfterChange.outputs[2].messages.includes(restrictedPriceAfterChange.outputs[0].messages[0]),"price follow-up after an explicit non-Goyang service question is not restricted");
+const restrictedWithinGoyang=flow(["\uC2E0\uC6D0\uB3D9", "\uB300\uC790\uB3D9 \uCD9C\uC7A5\uB418\uB098\uC694?", "\uAC00\uACA9\uC740 \uC5BC\uB9C8\uC608\uC694?"]);
+check(restrictedWithinGoyang.outputs[1].messages.includes(restrictedWithinGoyang.outputs[0].messages[0]),"another Goyang locality remains restricted");
+check(restrictedWithinGoyang.outputs[2].messages.includes(restrictedWithinGoyang.outputs[0].messages[0]),"Goyang restriction remains active after a Goyang-locality change");
+const restrictedReapplied=flow(["\uC2E0\uC6D0\uB3D9", "\uC778\uCC9C \uC5F0\uC218\uAD6C\uB294 \uCD9C\uC7A5 \uB418\uB098\uC694?", "\uB300\uC790\uB3D9"]);
+check(restrictedReapplied.outputs[2].messages.includes(restrictedReapplied.outputs[0].messages[0]),"a later Goyang locality reapplies the restriction");
 check(!/innerHTML|insertAdjacentHTML|document\.write/.test(read("js/smart-consult.js")),"safe DOM rendering");
 check(!/localStorage|indexedDB/.test(read("js/smart-consult.js")+read("js/smart-consult-conversation.js")),"session only; no persistent storage");
 for(const value of Object.values(copy)) {

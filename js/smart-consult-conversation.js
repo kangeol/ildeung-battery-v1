@@ -775,6 +775,12 @@ function restrictedLocality(text, previous, localities) {
   return isRestrictedLocality(previous.location) ? previous.location : null;
 }
 
+function replacesRestrictedLocality(text, previous, localities) {
+  if (!isRestrictedLocality(previous.location)) return false;
+  const resolved = resolveLocation(text, localities);
+  return Boolean(resolved.region && !isRestrictedLocality(resolved.region));
+}
+
 function restrictedLocalityTurn(previous, target) {
   const state = {
     ...previous,
@@ -943,9 +949,11 @@ function conversationTurnImpl(previous, text, records, localities = [], priceCat
   if(selection===null && composed.locationState!=='EXPLICIT_UNSUPPORTED_AREA' && (/(?:출장|방문|와(?:요|주|줄|실)?|오(?:나요|실)?|가능|되나요|돼요|돼|되나)[^?？]{0,6}[?？]\s*$/.test(text)
       || (/(?:지역|동네)/.test(text)&&/[?？]\s*$/.test(text)&&resolveLocation(text,localities).region))
     && !/(?:차량|차|현장|주차|지하|집|회사|아파트|오피스텔|주소|위치).{0,20}(?:있|세워|에|에서|교체)/.test(text)){
-    composed.state.region=previous.region;composed.state.location=previous.location;
-    composed.state.city=previous.city;composed.state.district=previous.district;
-    composed.region=previous.region;
+    if (!replacesRestrictedLocality(text,previous,localities)) {
+      composed.state.region=previous.region;composed.state.location=previous.location;
+      composed.state.city=previous.city;composed.state.district=previous.district;
+      composed.region=previous.region;
+    }
   }
   if(composed.locationState==='EXPLICIT_UNSUPPORTED_AREA'){
     composed.state.region=null;composed.state.location=null;composed.state.city='';composed.state.district='';
