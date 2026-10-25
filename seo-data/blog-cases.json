@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-24T13:32:45.449Z",
+  "syncedAt": "2026-10-25T07:46:03.832Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 1,
-    "preservedPreviousPosts": 429,
+    "preservedPreviousPosts": 430,
     "duplicateRemoved": 49,
-    "thumbnailSuccess": 430,
+    "thumbnailSuccess": 431,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 382,
-    "vehicleMatches": 359,
-    "detailMatches": 82,
-    "regionMatches": 313,
-    "neighborhoodMatches": 259,
-    "batteryMatches": 312,
+    "manufacturerMatches": 383,
+    "vehicleMatches": 360,
+    "detailMatches": 83,
+    "regionMatches": 314,
+    "neighborhoodMatches": 260,
+    "batteryMatches": 313,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,180 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 313,
-    "actualRegionMatches": 313,
-    "actualNeighborhoodMatches": 259,
+    "actualAreaMatches": 314,
+    "actualRegionMatches": 314,
+    "actualNeighborhoodMatches": 260,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224452015493",
+      "title": "부천 원미구 도당동 2020년식 K5 DL3 델코 AGM70 출장배터리교체 가격 및 비용 안내｜중고차 배터리 언제 교체했는지 모를 때",
+      "url": "https://blog.naver.com/kang10107/224452015493",
+      "publishedAt": "2026-10-25",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224452015493.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjRfMTk5/MDAxNzkyODAyMTA1MjE2.FOTDkI86GXSL8wiXbgZRa0zREv3fX-xWEI9JUPVohHAg.kHhsGHw_HcWvKZ2p2TDztStKnrdAK7Njr_L9hyFvPrAg.JPEG/image-k5-dl3-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 부천시 원미구 도당동에서 2020년식 기아 K5 DL3 배터리 교체를 진행했습니다. 이번 고객님은 중고차를 구입하셨는데 이전 차주가 배터리를 언제 교체했는지 알 수 없어 상담을 요청하셨습니다. 중고차를 인수하면 엔진오일이나 타이어처럼 눈에 띄는 소모품은 확인하기 쉽지만, 배터리는 시동만 잘 걸리면 그냥 넘어가는 경우가 많습니다. 그런데 막상 교체 기록을 찾아보려니 정비 내역이 없고, 현재 장착된 제품이 얼마나 사용된 것인지도 알기 어려웠던 상황이었습니다. 고객님께서는.......",
+      "tags": [
+        "부천배터리",
+        "부천출장배터리",
+        "부천자동차배터리",
+        "도당동출장배터리",
+        "k5배터리",
+        "k5dl3배터리",
+        "k5dl3배터리교체",
+        "dl3배터리가격",
+        "dl3배터리교체",
+        "델코agm70",
+        "agm70",
+        "agm70교체",
+        "델코agm70교체비용",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "K5",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K5",
+            "displayName": "K5",
+            "urlPath": "/car-battery/kia/k5.html",
+            "matchedAlias": "K5",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K5",
+            "displayVehicleName": "K5",
+            "label": "DL3",
+            "slug": "dl3",
+            "urlPath": "/car-battery/kia/k5/dl3.html",
+            "vehicleUrlPath": "/car-battery/kia/k5.html",
+            "matchedAlias": "DL3"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "K5",
+            "displayName": "K5",
+            "urlPath": "/car-battery/kia/k5.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "bucheon-si",
+          "regionName": "부천시",
+          "neighborhoodName": "도당동",
+          "label": "경기 부천시 도당동",
+          "urlPath": "/area/gyeonggi/bucheon-si/dodang-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "bucheon-si",
+            "regionName": "부천시",
+            "label": "경기 부천시",
+            "urlPath": "/area/gyeonggi/bucheon-si.html",
+            "matchedAlias": "부천"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "bucheon-si",
+            "regionName": "부천시",
+            "name": "도당동",
+            "legalName": "경기도 부천시 원미구 도당동",
+            "label": "경기 부천시 도당동",
+            "urlPath": "/area/gyeonggi/bucheon-si/dodang-dong.html",
+            "matchedAlias": "도당동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/k5.html"
+          ],
+          "details": [
+            "/car-battery/kia/k5/dl3.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/bucheon-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/bucheon-si/dodang-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "부천시 도당동에서 K5 DL3 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224452012073",
       "title": "영등포 양평동 2019년식 기아 올뉴쏘렌토 델코 AGM95 출장배터리교체 가격 및 비용 안내｜갑자기 방전돼 일정에 차질 생겼을 때",
