@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-25T07:46:03.832Z",
+  "syncedAt": "2026-10-25T08:42:24.004Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 1,
-    "preservedPreviousPosts": 430,
+    "preservedPreviousPosts": 431,
     "duplicateRemoved": 49,
-    "thumbnailSuccess": 431,
+    "thumbnailSuccess": 432,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 383,
-    "vehicleMatches": 360,
+    "manufacturerMatches": 384,
+    "vehicleMatches": 361,
     "detailMatches": 83,
-    "regionMatches": 314,
-    "neighborhoodMatches": 260,
-    "batteryMatches": 313,
+    "regionMatches": 315,
+    "neighborhoodMatches": 261,
+    "batteryMatches": 314,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,166 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 314,
-    "actualRegionMatches": 314,
-    "actualNeighborhoodMatches": 260,
+    "actualAreaMatches": 315,
+    "actualRegionMatches": 315,
+    "actualNeighborhoodMatches": 261,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224452857974",
+      "title": "인천 남동구 간석동 2022년식 지프 레니게이드 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224452857974",
+      "publishedAt": "2026-10-25",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224452857974.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjVfODYg/MDAxNzkyODg4NDM4MjIz.gt7q1H0yqOtHsAbhR0nKQx2i-2iGoW1EtIDWOstsb18g.LqSeYaoviTl9cdwnTUGBgfObqTrezs_3nkZqcXntKeAg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 남동구 간석동에서 2022년식 지프 레니게이드 배터리 교체를 진행했습니다. 이번 고객님은 중고차를 인수한 뒤 배터리를 새 제품으로 교체하기 위해 상담을 요청하셨습니다. 차량을 인수하기 전까지 오랫동안 세워져 있었다는 이야기를 들으셨고, 앞으로 직접 운행해야 하는 만큼 배터리 상태가 마음에 걸리셨다고 합니다. 중고차는 외관이나 주행거리뿐 아니라 이전에 어떻게 관리됐는지도 중요한데요. 특히 오랫동안 운행하지 않았던 차량은 배터리가 충분히 충전되지 못했을 가능성도 있.......",
+      "tags": [
+        "인천배터리",
+        "남동구출장배터리",
+        "남동구배터리",
+        "간석동자동차배터리",
+        "간석동배터리",
+        "간석동출장배터리",
+        "델코agm70",
+        "레니게이드배터리",
+        "레니게이드배터리교체",
+        "레니게이드배터리가격",
+        "델코agm70교체",
+        "agm70가격",
+        "출장배터리교체",
+        "자동차배터리교체",
+        "일등밧데리",
+        "배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "지프",
+        "manufacturers": [
+          {
+            "id": "jeep",
+            "name": "지프"
+          }
+        ],
+        "vehicle": "지프 레니게이드",
+        "vehicles": [
+          {
+            "manufacturerId": "jeep",
+            "manufacturerName": "지프",
+            "vehicleName": "레니게이드",
+            "displayName": "지프 레니게이드",
+            "urlPath": "/car-battery/jeep/renegade.html",
+            "matchedAlias": "지프 레니게이드",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "jeep",
+            "manufacturerName": "지프",
+            "vehicleName": "레니게이드",
+            "displayName": "지프 레니게이드",
+            "urlPath": "/car-battery/jeep/renegade.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "namdong-gu",
+          "regionName": "남동구",
+          "neighborhoodName": "간석동",
+          "label": "인천 남동구 간석동",
+          "urlPath": "/area/incheon/namdong-gu/ganseok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "namdong-gu",
+            "regionName": "남동구",
+            "label": "인천 남동구",
+            "urlPath": "/area/incheon/namdong-gu.html",
+            "matchedAlias": "남동구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "namdong-gu",
+            "regionName": "남동구",
+            "name": "간석동",
+            "legalName": "인천광역시 남동구 간석동",
+            "label": "인천 남동구 간석동",
+            "urlPath": "/area/incheon/namdong-gu/ganseok-dong.html",
+            "matchedAlias": "간석동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/jeep/renegade.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/jeep.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/namdong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/namdong-gu/ganseok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "남동구 간석동에서 지프 레니게이드 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224452015493",
       "title": "부천 원미구 도당동 2020년식 K5 DL3 델코 AGM70 출장배터리교체 가격 및 비용 안내｜중고차 배터리 언제 교체했는지 모를 때",
