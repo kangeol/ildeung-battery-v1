@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-25T08:42:24.004Z",
+  "syncedAt": "2026-10-26T08:02:45.605Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 431,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 432,
+    "newPosts": 2,
+    "preservedPreviousPosts": 432,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 434,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 384,
-    "vehicleMatches": 361,
+    "manufacturerMatches": 386,
+    "vehicleMatches": 363,
     "detailMatches": 83,
-    "regionMatches": 315,
-    "neighborhoodMatches": 261,
-    "batteryMatches": 314,
+    "regionMatches": 317,
+    "neighborhoodMatches": 263,
+    "batteryMatches": 316,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,325 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 315,
-    "actualRegionMatches": 315,
-    "actualNeighborhoodMatches": 261,
+    "actualAreaMatches": 317,
+    "actualRegionMatches": 317,
+    "actualNeighborhoodMatches": 263,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224452862869",
+      "title": "안산 단원구 성곡동 2022년식 BMW530i 바르타 AGM95 출장배터리교체 가격 및 비용 안내｜부모님이 타실 차 배터리 미리 교체할 때",
+      "url": "https://blog.naver.com/kang10107/224452862869",
+      "publishedAt": "2026-10-26",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224452862869.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjVfMjMw/MDAxNzkyODg4OTg4MTMx.Zstxeijbsl5KF8wVKwv0_3oIgVe_L50puNTQFH9e7rAg.6UuOQnff16yDWYXG_0GaCkVDT2Hvg6lWjRKe8FBq1jIg.JPEG/bmw-bmw530i-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 안산시 단원구 성곡동에서 2022년식 BMW530i 배터리 교체를 진행했습니다. 이번 고객님은 앞으로 부모님께서 주로 운행하실 차량이라 배터리부터 새것으로 교체하고 싶다고 상담을 요청하셨습니다. 갑자기 시동이 걸리지 않거나 방전으로 긴급출동을 이용한 상황은 아니었습니다. 다만 부모님께서 차량을 이용하시다가 예상하지 못한 배터리 문제로 불편을 겪으실까 걱정돼 미리 교체를 결정하신 경우였습니다. 가족이 사용할 차량을 준비하다 보면 평소에는 크게 신경 쓰지 않았던 소모품.......",
+      "tags": [
+        "안산배터리",
+        "안산출장배터리",
+        "안산자동차배터리",
+        "단원구출장배터리",
+        "성곡동출장배터리",
+        "bmw5배터리",
+        "bmw530i배터리",
+        "bmw배터리",
+        "bmw530i배터리가격",
+        "530i배터리교체",
+        "바르타배터리",
+        "바르타agm95",
+        "바르타agm95가격",
+        "바르타agm95교체",
+        "출장배터리교체",
+        "출장배터리가격",
+        "자동차배터리교체",
+        "일등밧데리",
+        "자동차배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 5시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "BMW5",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "ansan-si",
+          "regionName": "안산시",
+          "neighborhoodName": "성곡동",
+          "label": "경기 안산시 성곡동",
+          "urlPath": "/area/gyeonggi/ansan-si/seonggok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "ansan-si",
+            "regionName": "안산시",
+            "label": "경기 안산시",
+            "urlPath": "/area/gyeonggi/ansan-si.html",
+            "matchedAlias": "안산"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "ansan-si",
+            "regionName": "안산시",
+            "name": "성곡동",
+            "legalName": "경기도 안산시 단원구 성곡동",
+            "label": "경기 안산시 성곡동",
+            "urlPath": "/area/gyeonggi/ansan-si/seonggok-dong.html",
+            "matchedAlias": "성곡동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/5-series.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/ansan-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/ansan-si/seonggok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "안산시 성곡동에서 BMW 5시리즈 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224452860435",
+      "title": "강남 청담동 2018년식 제네시스G70 델코 AGM80 출장배터리교체 가격 및 비용 안내｜가족에게 차 넘기기 전 배터리 교체할 때",
+      "url": "https://blog.naver.com/kang10107/224452860435",
+      "publishedAt": "2026-10-26",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224452860435.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjVfMjky/MDAxNzkyODg4NzI5NDM3.ha6CYYPCOdByU7HU-9olV9QMbex9Q1Qx2G0y0FU5tHog.BGB-ptJvVzstMKhnyOCVVti0E0A3vNqU19osBv77r9gg.JPEG/image-g70-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 강남구 청담동에서 2018년식 제네시스G70 배터리 교체를 진행했습니다. 이번 고객님은 차량에 문제가 생겨 급하게 연락하신 것이 아니라 가족에게 차를 넘겨주기 전에 배터리를 새것으로 교체하고 싶다고 상담을 주셨습니다. 가족이 타게 될 차량이라면 단순히 차 키만 전달하는 것보다 앞으로 불편 없이 사용할 수 있도록 기본적인 부분을 챙겨주고 싶은 마음이 있으실 텐데요. 특히 배터리는 평소 시동이 잘 걸리면 크게 신경 쓰지 않다가 갑자기 방전됐을 때 불편을 느끼는 부품입니다.......",
+      "tags": [
+        "강남배터리",
+        "강남출장배터리",
+        "청담동배터리",
+        "청담동출장배터리",
+        "제네시스g70배터리",
+        "제네시스배터리",
+        "제네시스g70배터리가격",
+        "제네시스g70배터리교체비용",
+        "배터리교체비용",
+        "g70배터리가격",
+        "g70교체가격",
+        "델코agm80",
+        "agm80교체비용",
+        "일등밧데리",
+        "자동차배터리",
+        "배터리교체",
+        "출장배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "제네시스",
+        "manufacturers": [
+          {
+            "id": "genesis",
+            "name": "제네시스"
+          }
+        ],
+        "vehicle": "G70",
+        "vehicles": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "G70",
+            "displayName": "G70",
+            "urlPath": "/car-battery/genesis/g70.html",
+            "matchedAlias": "G70",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "G70",
+            "displayName": "G70",
+            "urlPath": "/car-battery/genesis/g70.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangnam-gu",
+          "regionName": "강남구",
+          "neighborhoodName": "청담동",
+          "label": "서울 강남구 청담동",
+          "urlPath": "/area/seoul/gangnam-gu/cheongdam-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangnam-gu",
+            "regionName": "강남구",
+            "label": "서울 강남구",
+            "urlPath": "/area/seoul/gangnam-gu.html",
+            "matchedAlias": "강남"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangnam-gu",
+            "regionName": "강남구",
+            "name": "청담동",
+            "legalName": "서울특별시 강남구 청담동",
+            "label": "서울 강남구 청담동",
+            "urlPath": "/area/seoul/gangnam-gu/cheongdam-dong.html",
+            "matchedAlias": "청담동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/genesis/g70.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/genesis.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangnam-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gangnam-gu/cheongdam-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "강남구 청담동에서 G70 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224452857974",
       "title": "인천 남동구 간석동 2022년식 지프 레니게이드 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
