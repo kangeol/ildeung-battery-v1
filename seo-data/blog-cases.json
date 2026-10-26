@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-26T08:02:45.605Z",
+  "syncedAt": "2026-10-26T09:19:57.862Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 432,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 434,
+    "newPosts": 1,
+    "preservedPreviousPosts": 434,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 435,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 386,
-    "vehicleMatches": 363,
+    "manufacturerMatches": 387,
+    "vehicleMatches": 364,
     "detailMatches": 83,
-    "regionMatches": 317,
-    "neighborhoodMatches": 263,
-    "batteryMatches": 316,
+    "regionMatches": 318,
+    "neighborhoodMatches": 264,
+    "batteryMatches": 317,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,167 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 317,
-    "actualRegionMatches": 317,
-    "actualNeighborhoodMatches": 263,
+    "actualAreaMatches": 318,
+    "actualRegionMatches": 318,
+    "actualNeighborhoodMatches": 264,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224452865211",
+      "title": "인천 계양구 효성동 2019년식 쉐보레 트래버스 델코 AGM80 출장배터리교체 가격 및 비용 안내｜업무용 차량 다시 운행하기 전 배터리 교체",
+      "url": "https://blog.naver.com/kang10107/224452865211",
+      "publishedAt": "2026-10-26",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224452865211.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjVfNTUg/MDAxNzkyODg5MjE1ODY4.XYGYiYAKRv9EJcnHINxxApRvx9ItJEGiY0SEkOQ3hKsg._cWE1V0dsM_M05t21pmCUqZCPsTVJ4znmtnsYIowzmIg.JPEG/image-image-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 인천 계양구 효성동에서 2019년식 쉐보레 트래버스 배터리 교체를 진행했습니다. 이번 고객님은 차량이 방전돼 급하게 출동을 요청하신 것이 아니라, 업무용으로 다시 사용하기 전에 배터리를 교체하고 싶다고 연락을 주셨습니다. 업무에 사용하는 차량은 정해진 시간에 이동해야 하는 일이 많다 보니 예상하지 못한 시동 문제 하나로 하루 일정이 달라질 수 있습니다. 특히 한동안 업무에 투입하지 않았던 차량이라면 다시 운행을 시작하기 전에 배터리를 비롯한 기본 상태를 확인해두는 것이.......",
+      "tags": [
+        "인천출장배터리교체",
+        "인천배터리교체",
+        "인천자동차배터리",
+        "효성동출장배터리",
+        "트래버스배터리",
+        "트래버스배터리교체",
+        "트래버스배터리교체비용",
+        "델코agm80",
+        "agm80",
+        "델코agm80교체비용",
+        "agm80가격",
+        "agm80교체비용",
+        "일등밧데리",
+        "자동차배터리교체비용",
+        "자동차배터리",
+        "일등밧데리출장"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "쉐보레",
+        "manufacturers": [
+          {
+            "id": "chevrolet",
+            "name": "쉐보레"
+          }
+        ],
+        "vehicle": "트래버스",
+        "vehicles": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트래버스",
+            "displayName": "트래버스",
+            "urlPath": "/car-battery/chevrolet/traverse.html",
+            "matchedAlias": "트래버스",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트래버스",
+            "displayName": "트래버스",
+            "urlPath": "/car-battery/chevrolet/traverse.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "gyeyang-gu",
+          "regionName": "계양구",
+          "neighborhoodName": "효성동",
+          "label": "인천 계양구 효성동",
+          "urlPath": "/area/incheon/gyeyang-gu/hyoseong-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "label": "인천 계양구",
+            "urlPath": "/area/incheon/gyeyang-gu.html",
+            "matchedAlias": "계양구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "name": "효성동",
+            "legalName": "인천광역시 계양구 효성동",
+            "label": "인천 계양구 효성동",
+            "urlPath": "/area/incheon/gyeyang-gu/hyoseong-dong.html",
+            "matchedAlias": "효성동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/chevrolet/traverse.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/chevrolet.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/gyeyang-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/gyeyang-gu/hyoseong-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "계양구 효성동에서 트래버스 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224452862869",
       "title": "안산 단원구 성곡동 2022년식 BMW530i 바르타 AGM95 출장배터리교체 가격 및 비용 안내｜부모님이 타실 차 배터리 미리 교체할 때",
