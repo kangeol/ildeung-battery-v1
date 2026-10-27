@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-26T09:19:57.862Z",
+  "syncedAt": "2026-10-27T08:17:01.409Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 434,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 435,
+    "newPosts": 2,
+    "preservedPreviousPosts": 435,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 437,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 387,
-    "vehicleMatches": 364,
+    "manufacturerMatches": 389,
+    "vehicleMatches": 366,
     "detailMatches": 83,
-    "regionMatches": 318,
-    "neighborhoodMatches": 264,
-    "batteryMatches": 317,
+    "regionMatches": 320,
+    "neighborhoodMatches": 265,
+    "batteryMatches": 319,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,305 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 318,
-    "actualRegionMatches": 318,
-    "actualNeighborhoodMatches": 264,
+    "actualAreaMatches": 320,
+    "actualRegionMatches": 320,
+    "actualNeighborhoodMatches": 265,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224455049291",
+      "title": "안양 동안구 평촌동 2020년식 포드 익스플로러 바르타 AGM80 출장배터리교체 가격 및 비용 안내｜시동이 약할 때",
+      "url": "https://blog.naver.com/kang10107/224455049291",
+      "publishedAt": "2026-10-27",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224455049291.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjdfNzIg/MDAxNzkzMDYxNDU5NTg4.VbnRDFth7_dI55m7jMEOSmHCpUx5JicifQx8ReaZ1yQg.NJBeCHcZSJPntXeJ4EDxzpfcQiGpgKa0SoyKPWAIdycg.JPEG/image-image-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 안양시 동안구 평촌동에서 2020년식 포드 익스플로러 배터리 교체를 진행했습니다. 이번 고객님은 차량 판매를 준비하던 중 시동이 예전보다 힘없이 걸리는 느낌이 들어 상담을 요청하셨습니다. 차를 판매할 예정이라면 굳이 배터리를 새것으로 바꾸지 않아도 된다고 생각하실 수 있습니다. 하지만 차량을 보러 온 사람이 시동을 걸었을 때 반응이 좋지 않거나, 인도하는 과정에서 갑자기 방전된다면 판매자와 구매자 모두 불편해질 수 있습니다. 고객님께서는 이런 상황을 미리 정리하고.......",
+      "tags": [
+        "안양배터리",
+        "안양출장배터리",
+        "안양자동차배터리",
+        "평촌동출장배터리",
+        "포드익스플로러배터리",
+        "포드익스플로러배터리교체",
+        "바르타배터리",
+        "바르타agm80",
+        "바르타agm80가격",
+        "바르타agm80교체",
+        "바르타agm80출장",
+        "agm80가격",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "차량배터리",
+        "배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "포드",
+        "manufacturers": [
+          {
+            "id": "ford",
+            "name": "포드"
+          }
+        ],
+        "vehicle": "포드 익스플로러",
+        "vehicles": [
+          {
+            "manufacturerId": "ford",
+            "manufacturerName": "포드",
+            "vehicleName": "익스플로러",
+            "displayName": "포드 익스플로러",
+            "urlPath": "/car-battery/ford/explorer.html",
+            "matchedAlias": "포드 익스플로러",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "ford",
+            "manufacturerName": "포드",
+            "vehicleName": "익스플로러",
+            "displayName": "포드 익스플로러",
+            "urlPath": "/car-battery/ford/explorer.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "anyang-si",
+          "regionName": "안양시",
+          "neighborhoodName": "평촌동",
+          "label": "경기 안양시 평촌동",
+          "urlPath": "/area/gyeonggi/anyang-si/pyeongchon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "anyang-si",
+            "regionName": "안양시",
+            "label": "경기 안양시",
+            "urlPath": "/area/gyeonggi/anyang-si.html",
+            "matchedAlias": "안양"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "anyang-si",
+            "regionName": "안양시",
+            "name": "평촌동",
+            "legalName": "경기도 안양시 동안구 평촌동",
+            "label": "경기 안양시 평촌동",
+            "urlPath": "/area/gyeonggi/anyang-si/pyeongchon-dong.html",
+            "matchedAlias": "평촌동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/ford/explorer.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/ford.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/anyang-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/anyang-si/pyeongchon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "안양시 평촌동에서 포드 익스플로러 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224452868142",
+      "title": "강서구 우장산동 2023년식 폭스바겐 제타 델코 AGM70 출장배터리교체 가격 및 비용 안내｜오래 세워둔 가족 차 다시 타기 전 배터리 교체",
+      "url": "https://blog.naver.com/kang10107/224452868142",
+      "publishedAt": "2026-10-27",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224452868142.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjVfOTAg/MDAxNzkyODg5NTI2MzEx.HsAZ4wKAZrmDL0cAsIKrJxWbxfgOcHwMiWtEcYeZIgkg.DqUps6fKG5zK4l-X0syFnOb8PYqSc1_p1wzsNRQUvWMg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 강서구 우장산동에서 2023년식 폭스바겐 제타 배터리 교체를 진행했습니다. 이번 고객님은 가족이 사용하던 차량을 오랫동안 세워두었다가 다시 운행하게 되면서 배터리 교체를 요청하셨습니다. 평소 자주 사용하는 차라면 시동 상태나 작은 변화를 알아차리기 쉽지만, 한동안 운행하지 않았던 차량은 현재 배터리가 어떤 상태인지 판단하기 어려울 수 있습니다. 특히 가족이 번갈아 사용하던 차량이라면 마지막으로 언제 운행했는지, 배터리를 교체한 적이 있는지도 정확히 기억하지 못하.......",
+      "tags": [
+        "강서구배터리",
+        "강서구출장배터리",
+        "강서구자동차배터리",
+        "우장산동출장배터리",
+        "제타배터리",
+        "폭스바겐배터리",
+        "제타배터리교체",
+        "제타배터리교체비용",
+        "폭스바겐배터리가격",
+        "델코agm70",
+        "델코agm70가격",
+        "배터리교체비용",
+        "배터리가격",
+        "출장배터리교체비용",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "폭스바겐",
+        "manufacturers": [
+          {
+            "id": "volkswagen",
+            "name": "폭스바겐"
+          }
+        ],
+        "vehicle": "폭스바겐 제타",
+        "vehicles": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "제타",
+            "displayName": "폭스바겐 제타",
+            "urlPath": "/car-battery/volkswagen/jetta.html",
+            "matchedAlias": "폭스바겐 제타",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "제타",
+            "displayName": "폭스바겐 제타",
+            "urlPath": "/car-battery/volkswagen/jetta.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangseo-gu",
+          "regionName": "강서구",
+          "label": "서울 강서구",
+          "urlPath": "/area/seoul/gangseo-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangseo-gu",
+            "regionName": "강서구",
+            "label": "서울 강서구",
+            "urlPath": "/area/seoul/gangseo-gu.html",
+            "matchedAlias": "강서구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/volkswagen/jetta.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/volkswagen.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangseo-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "서울 강서구에서 폭스바겐 제타 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224452865211",
       "title": "인천 계양구 효성동 2019년식 쉐보레 트래버스 델코 AGM80 출장배터리교체 가격 및 비용 안내｜업무용 차량 다시 운행하기 전 배터리 교체",
