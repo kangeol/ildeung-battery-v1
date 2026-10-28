@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-27T09:18:59.455Z",
+  "syncedAt": "2026-10-28T08:54:05.951Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 437,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 438,
+    "newPosts": 2,
+    "preservedPreviousPosts": 438,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 440,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 390,
-    "vehicleMatches": 367,
+    "manufacturerMatches": 392,
+    "vehicleMatches": 368,
     "detailMatches": 84,
-    "regionMatches": 321,
-    "neighborhoodMatches": 265,
-    "batteryMatches": 320,
+    "regionMatches": 323,
+    "neighborhoodMatches": 267,
+    "batteryMatches": 322,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,298 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 321,
-    "actualRegionMatches": 321,
-    "actualNeighborhoodMatches": 265,
+    "actualAreaMatches": 323,
+    "actualRegionMatches": 323,
+    "actualNeighborhoodMatches": 267,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224456294833",
+      "title": "김포 걸포동 2017년식 BMW640D 바르타 실버 AGM95 출장배터리교체 가격 및 비용 안내｜배터리관리",
+      "url": "https://blog.naver.com/kang10107/224456294833",
+      "publishedAt": "2026-10-28",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224456294833.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjhfMTg0/MDAxNzkzMTQ3NDMzMDQ3.bK1aZ1EoP6Qlvb0gg9hBKToK_6YAukIPKr1pwb8QPe0g.RhL8cDiM06IKM3rcjMerU1z2gOe4f1QIOEAVsf-c7a4g.JPEG/bmw-bmw640d-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 김포시 걸포동에서 2017년식 BMW640D 배터리 교체를 진행했습니다. 이번 고객님은 평소 이용하던 차량을 앞으로는 세컨드카로 사용하실 예정이었습니다. 매일 운행하던 차량을 주말이나 필요한 날에만 타게 되면 배터리 관리 방식도 달라질 수 있습니다. 운행 횟수가 줄어들면 배터리가 충전될 기회도 적어지는 반면, 주차 중 차량에서 사용하는 전기는 계속 발생하기 때문입니다. 고객님께서는 앞으로 운행이 줄어들 것을 고려해 기존 배터리를 새 제품으로 교체하기로 하셨습니다. 이번.......",
+      "tags": [
+        "김포배터리",
+        "김포출장배터리",
+        "김포자동차배터리",
+        "걸포동출장배터리",
+        "bmw640d배터리",
+        "bmw배터리",
+        "640d배터리",
+        "바르타배터리",
+        "바르타실버배터리",
+        "실버배터리",
+        "바르타agm95배터리",
+        "바르타agm95실버",
+        "바르타실버agm95",
+        "바르타agm95가격",
+        "일등밧데리",
+        "자동차배터리",
+        "배터리교체비용",
+        "출장배터리교체비용",
+        "자동차배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": null,
+        "vehicles": [],
+        "detailModels": [],
+        "vehicleHierarchy": [],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gimpo-si",
+          "regionName": "김포시",
+          "neighborhoodName": "걸포동",
+          "label": "경기 김포시 걸포동",
+          "urlPath": "/area/gyeonggi/gimpo-si/geolpo-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gimpo-si",
+            "regionName": "김포시",
+            "label": "경기 김포시",
+            "urlPath": "/area/gyeonggi/gimpo-si.html",
+            "matchedAlias": "김포"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gimpo-si",
+            "regionName": "김포시",
+            "name": "걸포동",
+            "legalName": "경기도 김포시 걸포동",
+            "label": "경기 김포시 걸포동",
+            "urlPath": "/area/gyeonggi/gimpo-si/geolpo-dong.html",
+            "matchedAlias": "걸포동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gimpo-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/gimpo-si/geolpo-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "김포시 걸포동에서 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 0,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224455059161",
+      "title": "동작구 신대방동 2018년식 제네시스 G70 델코 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224455059161",
+      "publishedAt": "2026-10-28",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224455059161.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjdfMjI5/MDAxNzkzMDYyMDQ1OTEw.GjTob96FtDOoL_JZCwRkyGOXnU7URQEGTnvLXiY-lrEg.GBvw_yrBoFcvxltKFE3Dow2gn-PXUOdefgufsdITvA0g.JPEG/image-g70-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘 소개해 드릴 차량은 서울 동작구 신대방동에서 배터리를 교체한 2018년식 제네시스 G70입니다. 이번 고객님은 차량을 장기간 다른 곳에 맡겨두셨다가 다시 돌려받으신 상황이었습니다. 차를 오랫동안 직접 운행하지 않다 보니 그동안 배터리가 어떤 상태로 관리됐는지 확인하기 어려우셨다고 합니다. 자동차는 주차해두었다고 해서 전기 사용이 완전히 멈추는 것은 아닙니다. 시동을 끈 상태에서도 일부 전자장치가 전력을 사용하기 때문에 운행하지 않는 기간이 길어지면 배터리 충전량이 줄어들.......",
+      "tags": [
+        "동작구배터리",
+        "동작출장배터리",
+        "신대방동배터리",
+        "제네시스배터리",
+        "g70배터리",
+        "델코agm80",
+        "델코agm80가격",
+        "g70배터리가격",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리",
+        "배터리교체",
+        "차량배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "제네시스",
+        "manufacturers": [
+          {
+            "id": "genesis",
+            "name": "제네시스"
+          }
+        ],
+        "vehicle": "G70",
+        "vehicles": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "G70",
+            "displayName": "G70",
+            "urlPath": "/car-battery/genesis/g70.html",
+            "matchedAlias": "G70",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "G70",
+            "displayName": "G70",
+            "urlPath": "/car-battery/genesis/g70.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "dongjak-gu",
+          "regionName": "동작구",
+          "neighborhoodName": "신대방동",
+          "label": "서울 동작구 신대방동",
+          "urlPath": "/area/seoul/dongjak-gu/sindaebang-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "dongjak-gu",
+            "regionName": "동작구",
+            "label": "서울 동작구",
+            "urlPath": "/area/seoul/dongjak-gu.html",
+            "matchedAlias": "동작구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "dongjak-gu",
+            "regionName": "동작구",
+            "name": "신대방동",
+            "legalName": "서울특별시 동작구 신대방동",
+            "label": "서울 동작구 신대방동",
+            "urlPath": "/area/seoul/dongjak-gu/sindaebang-dong.html",
+            "matchedAlias": "신대방동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/genesis/g70.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/genesis.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/dongjak-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/dongjak-gu/sindaebang-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "동작구 신대방동에서 G70 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224455055043",
       "title": "인천 검단구 검단동 2017년식 쉐보레 올뉴말리부 델코 AGM70 출장배터리교체 가격 및 비용 안내｜중고차 구입 후 오래된 배터리 교체 비용",
