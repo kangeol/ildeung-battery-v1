@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-28T09:59:37.303Z",
+  "syncedAt": "2026-10-29T08:48:59.600Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 440,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 441,
+    "newPosts": 3,
+    "preservedPreviousPosts": 441,
+    "duplicateRemoved": 47,
+    "thumbnailSuccess": 444,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 393,
-    "vehicleMatches": 369,
+    "manufacturerMatches": 396,
+    "vehicleMatches": 372,
     "detailMatches": 85,
-    "regionMatches": 324,
-    "neighborhoodMatches": 268,
-    "batteryMatches": 323,
+    "regionMatches": 327,
+    "neighborhoodMatches": 271,
+    "batteryMatches": 326,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,474 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 324,
-    "actualRegionMatches": 324,
-    "actualNeighborhoodMatches": 268,
+    "actualAreaMatches": 327,
+    "actualRegionMatches": 327,
+    "actualNeighborhoodMatches": 271,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224457463842",
+      "title": "인천 부평 산곡동 2021년식 BMW 520i G바디 바르타 실버 AGM95 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224457463842",
+      "publishedAt": "2026-10-29",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224457463842.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjlfODEg/MDAxNzkzMjMzNzM0MTg4.7BAbBKEke6EO_-r3HXicLVEJC27NAxitW5bOFDZD2Jgg.Igyoc9j9Ai3gPFpwNGQl3aVbXy9NKQUh2JowRWUEoPcg.JPEG/bmw-bmw52oi-g-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 인천 부평구 산곡동에서 2021년식 BMW 520i G바디 배터리를 교체한 현장입니다. 이번 고객님은 기존 AGM 배터리를 오랫동안 사용해오셨는데, 최근 시동을 걸 때 예전보다 힘이 부족한 느낌이 든다고 하셨습니다. 아예 시동이 걸리지 않는 것은 아니지만 처음 엔진이 돌아가는 순간이 전보다 무겁게 느껴지는 상황이었습니다. 평소 같은 차량을 계속 운전하다 보면 시동 소리나 반응이 익숙해져 작은 차이도 느끼실 수 있습니다. 특히 기온이 낮아지는 시기에는 배터리 성능이 떨어져 있다면 이러한 변.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "부평배터리",
+        "부평출장배터리",
+        "산곡동출장배터리",
+        "bmw배터리",
+        "bmw520i배터리",
+        "bmw520i배터리교체",
+        "바르타실버",
+        "바르타배터리",
+        "바르타실버배터리",
+        "바르타agm95",
+        "바르타agm95가격",
+        "바르타agm95교체",
+        "바르타agm95교체비용",
+        "일등밧데리",
+        "자동차배터리",
+        "배터리교체비용",
+        "배터리교체가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 5시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "BMW5",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "bupyeong-gu",
+          "regionName": "부평구",
+          "neighborhoodName": "산곡동",
+          "label": "인천 부평구 산곡동",
+          "urlPath": "/area/incheon/bupyeong-gu/sangok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "label": "인천 부평구",
+            "urlPath": "/area/incheon/bupyeong-gu.html",
+            "matchedAlias": "부평"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "name": "산곡동",
+            "legalName": "인천광역시 부평구 산곡동",
+            "label": "인천 부평구 산곡동",
+            "urlPath": "/area/incheon/bupyeong-gu/sangok-dong.html",
+            "matchedAlias": "산곡동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/5-series.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/bupyeong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/bupyeong-gu/sangok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "부평구 산곡동에서 BMW 5시리즈 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224457457879",
+      "title": "광명 일직동 2023년식 토레스 델코 AGM70 출장배터리교체 가격 및 비용 안내｜배터리 시동약함 증상",
+      "url": "https://blog.naver.com/kang10107/224457457879",
+      "publishedAt": "2026-10-29",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224457457879.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjlfMTQ0/MDAxNzkzMjMzMzg5NzEw.FIMk9RgMj8Bq5-rSdS179c8sTK1GUzi3fqqKF7u0Fb0g.ciS5YEbLsWPiGx-WnPZBAngGGe4z_DqqdPaawI044pAg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 광명시 일직동에서 진행한 2023년식 토레스 배터리 교체 현장을 소개해 드리겠습니다. 이번 고객님은 시동이 잘 걸리지 않아서가 아니라 배터리 겉면에 금이 간 것처럼 보이는 부분을 발견하고 연락을 주셨습니다. 배터리는 평소 눈에 잘 띄지 않는 부품이라 외관까지 살펴보는 경우가 많지 않습니다. 그런데 케이스에 균열이 의심된다면 시동이 정상적으로 걸리더라도 주의가 필요합니다. 고객님께서는 더 이상 차량을 사용하지 않고 교체를 요청하셨습니다. 이번에는 델코 AGM70 신품을.......",
+      "tags": [
+        "광명배터리",
+        "광명출장배터리",
+        "광명자동차배터리",
+        "일직동출장배터리",
+        "토레스배터리",
+        "토레스배터리교체",
+        "토레스배터리가격",
+        "토레스배터리방전",
+        "토레스배터리교체가격",
+        "일등밧데리",
+        "자동차배터리",
+        "출장배터리",
+        "배터리교체",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "KG모빌리티",
+        "manufacturers": [
+          {
+            "id": "kgm",
+            "name": "KG모빌리티",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "토레스",
+        "vehicles": [
+          {
+            "manufacturerId": "kgm",
+            "manufacturerName": "KG모빌리티",
+            "vehicleName": "토레스",
+            "displayName": "토레스",
+            "urlPath": "/car-battery/kgm/torres.html",
+            "matchedAlias": "토레스",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kgm",
+            "manufacturerName": "KG모빌리티",
+            "vehicleName": "토레스",
+            "displayName": "토레스",
+            "urlPath": "/car-battery/kgm/torres.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gwangmyeong-si",
+          "regionName": "광명시",
+          "neighborhoodName": "일직동",
+          "label": "경기 광명시 일직동",
+          "urlPath": "/area/gyeonggi/gwangmyeong-si/iljik-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwangmyeong-si",
+            "regionName": "광명시",
+            "label": "경기 광명시",
+            "urlPath": "/area/gyeonggi/gwangmyeong-si.html",
+            "matchedAlias": "광명"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwangmyeong-si",
+            "regionName": "광명시",
+            "name": "일직동",
+            "legalName": "경기도 광명시 일직동",
+            "label": "경기 광명시 일직동",
+            "urlPath": "/area/gyeonggi/gwangmyeong-si/iljik-dong.html",
+            "matchedAlias": "일직동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kgm/torres.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/kgm.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gwangmyeong-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/gwangmyeong-si/iljik-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "광명시 일직동에서 토레스 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224456302690",
+      "title": "강동구 길동 2020년식 폭스바겐 티구안 델코 AGM70 출장배터리교체 가격 및 비용 안내｜배터리 단자에 하얀 가루와 시동 약해짐 증상",
+      "url": "https://blog.naver.com/kang10107/224456302690",
+      "publishedAt": "2026-10-29",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224456302690.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMjhfNTEg/MDAxNzkzMTQ3ODgyOTk3.kG2q6LXPvG_jiWyXhfqWhZCZphZIhk2-32BXx4yOjOkg.e3Ufiu7XqTL47DtAcMYlkbLifWuv7Wz8UtJbjX4N68Mg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 강동구 길동에서 2020년식 폭스바겐 티구안 배터리를 교체했습니다. 이번 고객님께서는 배터리 단자 주변에 하얀 가루가 쌓여 있는 것을 발견하셨다고 합니다. 처음에는 단순히 먼지가 묻은 것으로 생각하셨지만, 최근 들어 시동을 걸 때도 예전보다 힘이 부족한 느낌이 있어 교체를 문의하셨습니다. 자동차배터리는 시동이 완전히 걸리지 않을 때만 문제가 나타나는 것은 아닙니다. 단자 주변에 부식 흔적이 생기거나 시동 반응이 달라지는 등 평소와 다른 변화가 나타날 수도 있습니다. .......",
+      "tags": [
+        "강동구배터리",
+        "길동출장배터리",
+        "강동구자동차배터리",
+        "강동구출장배터리",
+        "폭스바겐배터리",
+        "폭스바겐배터리가격",
+        "티구안배터리",
+        "티구안배터리교체비용",
+        "티구안배터리가격",
+        "델코agm70가격",
+        "티구안출장배터리",
+        "일등밧데리",
+        "자동차배터리",
+        "배터리교체",
+        "출장배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "폭스바겐",
+        "manufacturers": [
+          {
+            "id": "volkswagen",
+            "name": "폭스바겐"
+          }
+        ],
+        "vehicle": "폭스바겐 티구안",
+        "vehicles": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "티구안",
+            "displayName": "폭스바겐 티구안",
+            "urlPath": "/car-battery/volkswagen/tiguan.html",
+            "matchedAlias": "폭스바겐 티구안",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "티구안",
+            "displayName": "폭스바겐 티구안",
+            "urlPath": "/car-battery/volkswagen/tiguan.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangdong-gu",
+          "regionName": "강동구",
+          "neighborhoodName": "길동",
+          "label": "서울 강동구 길동",
+          "urlPath": "/area/seoul/gangdong-gu/gil-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "label": "서울 강동구",
+            "urlPath": "/area/seoul/gangdong-gu.html",
+            "matchedAlias": "강동구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "name": "길동",
+            "legalName": "서울특별시 강동구 길동",
+            "label": "서울 강동구 길동",
+            "urlPath": "/area/seoul/gangdong-gu/gil-dong.html",
+            "matchedAlias": "길동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/volkswagen/tiguan.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/volkswagen.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangdong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gangdong-gu/gil-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "강동구 길동에서 폭스바겐 티구안 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224456298245",
       "title": "인천 연수구 동춘동 2015년식 현대 그랜저HG 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
