@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-10-30T08:56:04.255Z",
+  "syncedAt": "2026-10-31T08:44:54.217Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 3,
-    "preservedPreviousPosts": 444,
-    "duplicateRemoved": 47,
-    "thumbnailSuccess": 447,
+    "newPosts": 2,
+    "preservedPreviousPosts": 447,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 449,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 399,
-    "vehicleMatches": 374,
+    "manufacturerMatches": 401,
+    "vehicleMatches": 375,
     "detailMatches": 85,
-    "regionMatches": 330,
-    "neighborhoodMatches": 272,
-    "batteryMatches": 329,
+    "regionMatches": 332,
+    "neighborhoodMatches": 274,
+    "batteryMatches": 331,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,304 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 330,
-    "actualRegionMatches": 330,
-    "actualNeighborhoodMatches": 272,
+    "actualAreaMatches": 332,
+    "actualRegionMatches": 332,
+    "actualNeighborhoodMatches": 274,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224459869851",
+      "title": "김포 걸포동 2020년식 BMW620d 델코 AGM95 출장배터리교체 가격 및 비용 안내｜세컨드카 전환 전 배터리 교체와 장기주차 관리",
+      "url": "https://blog.naver.com/kang10107/224459869851",
+      "publishedAt": "2026-10-31",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224459869851.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMzFfMTI5/MDAxNzkzNDA2MzMyNTQ0.99RV6uLr7Wc6oQkZLw2cDy9sGj_k77_RUEqUT6Nervgg.Au7HHsy3ujGlo4G_a4fcpeY7lhFIeAvsEU4wS4Skam8g.JPEG/bmw-bmw620d-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 매일 타던 BMW를 가끔 운행하는 차량으로 바꾼다면? 안녕하세요. 일등밧데리입니다. 차량을 두 대 이상 사용하게 되면 기존에 타던 자동차는 자연스럽게 운행 횟수가 줄어들기 마련입니다. 그런데 자동차배터리 입장에서는 매일 운행하던 때와 일주일에 한두 번, 또는 그보다 적게 운행하는 상황이 다를 수 있습니다. 오늘 경기 김포시 걸포동에서 작업한 차량은 2020년식 BMW620d입니다. 고객님께서는 기존에 사용하던 차량을 앞으로 세컨드카로 운행할 예정이라 배터리를 미리 교체하고 싶다고 하셨습니다. 현재 시동이 완전히.......",
+      "tags": [
+        "김포배터리",
+        "김포출장배터리",
+        "김포자동차배터리",
+        "걸포동출장배터리",
+        "bmw배터리",
+        "bmw배터리가격",
+        "bmw배터리교체비용",
+        "bmw620d배터리",
+        "bmw620d배터리가격",
+        "620d배터리교체비용",
+        "일등밧데리",
+        "델코agm95",
+        "agm95가격",
+        "델코agm95교체비용",
+        "agm95교체비용",
+        "출장배터리",
+        "자동차배터리",
+        "출장배터리교체",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": null,
+        "vehicles": [],
+        "detailModels": [],
+        "vehicleHierarchy": [],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gimpo-si",
+          "regionName": "김포시",
+          "neighborhoodName": "걸포동",
+          "label": "경기 김포시 걸포동",
+          "urlPath": "/area/gyeonggi/gimpo-si/geolpo-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gimpo-si",
+            "regionName": "김포시",
+            "label": "경기 김포시",
+            "urlPath": "/area/gyeonggi/gimpo-si.html",
+            "matchedAlias": "김포"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gimpo-si",
+            "regionName": "김포시",
+            "name": "걸포동",
+            "legalName": "경기도 김포시 걸포동",
+            "label": "경기 김포시 걸포동",
+            "urlPath": "/area/gyeonggi/gimpo-si/geolpo-dong.html",
+            "matchedAlias": "걸포동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gimpo-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/gimpo-si/geolpo-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "김포시 걸포동에서 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 0,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224458661553",
+      "title": "구로 오류동 2018년식 BMW X5 xDrive 30d 바르타 AGM105 출장배터리교체 가격 및 비용 안내｜오래된 수입차 배터리 한파 전 예방 교체",
+      "url": "https://blog.naver.com/kang10107/224458661553",
+      "publishedAt": "2026-10-31",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224458661553.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjEwMzBfMjU1/MDAxNzkzMzE4MDM5NDk2.U9Mz8djkQM88gwxZ_W1Eb6ufs1PIm46hPV3L5v5aHLMg.88iQfY1MoTTZobUrNXcst76LLkF3J1YO_Z2YNZqNykkg.JPEG/bmw-bmw-x5-xdrive-30d-agm105-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 아직 시동은 걸리는데 배터리를 바꿔야 할까요? BMW X5를 오랫동안 운행하셨다면 배터리 교체 시기를 한 번쯤 고민하게 됩니다. 특히 기존 배터리를 몇 년째 사용하고 있다면 지금은 별문제가 없더라도 갑자기 방전될까 걱정되실 수 있는데요. 안녕하세요. 일등밧데리입니다. 오늘은 서울 구로구 오류동에서 2018년식 BMW X5 xDrive 30d 배터리를 교체했습니다. 고객님께서는 기존 수입차 배터리를 오래 사용해오셨고, 앞으로 추운 날씨에도 차량을 이용해야 하기에 예방 차원에서 교체를 상담하셨습니다. 이번 작업은 시동이 완.......",
+      "tags": [
+        "구로배터리",
+        "구로출장배터리",
+        "오류동배터리",
+        "오류동출장배터리",
+        "bmw배터리",
+        "bmwx5배터리",
+        "x5배터리가격",
+        "x5배터리교체",
+        "bmwx5배터리교체",
+        "바르타배터리",
+        "바르타agm105",
+        "바르타agm배터리",
+        "바르타agm105가격",
+        "바르타agm105교체비용",
+        "출장배터리",
+        "자동차배터리",
+        "배터리교체",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW X5",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X5",
+            "displayName": "BMW X5",
+            "urlPath": "/car-battery/bmw/x5.html",
+            "matchedAlias": "BMW X5",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X5",
+            "displayName": "BMW X5",
+            "urlPath": "/car-battery/bmw/x5.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "guro-gu",
+          "regionName": "구로구",
+          "neighborhoodName": "오류동",
+          "label": "서울 구로구 오류동",
+          "urlPath": "/area/seoul/guro-gu/oryu-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "guro-gu",
+            "regionName": "구로구",
+            "label": "서울 구로구",
+            "urlPath": "/area/seoul/guro-gu.html",
+            "matchedAlias": "구로"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "guro-gu",
+            "regionName": "구로구",
+            "name": "오류동",
+            "legalName": "서울특별시 구로구 오류동",
+            "label": "서울 구로구 오류동",
+            "urlPath": "/area/seoul/guro-gu/oryu-dong.html",
+            "matchedAlias": "오류동"
+          }
+        ],
+        "batteryModels": [
+          "AGM105"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/x5.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/guro-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/guro-gu/oryu-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm105.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "구로구 오류동에서 BMW X5 AGM105 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224458657662",
       "title": "인천 미추홀구 숭의동 2024년식 기아 EV3 델코 AGM60 출장배터리교체 가격 및 비용 안내｜일등밧데리",
