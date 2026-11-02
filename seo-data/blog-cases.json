@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-01T09:35:32.358Z",
+  "syncedAt": "2026-11-02T09:51:27.153Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 449,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 450,
+    "newPosts": 3,
+    "preservedPreviousPosts": 450,
+    "duplicateRemoved": 47,
+    "thumbnailSuccess": 453,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 402,
-    "vehicleMatches": 376,
-    "detailMatches": 86,
-    "regionMatches": 333,
-    "neighborhoodMatches": 275,
-    "batteryMatches": 332,
+    "manufacturerMatches": 405,
+    "vehicleMatches": 379,
+    "detailMatches": 87,
+    "regionMatches": 336,
+    "neighborhoodMatches": 278,
+    "batteryMatches": 335,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,490 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 333,
-    "actualRegionMatches": 333,
-    "actualNeighborhoodMatches": 275,
+    "actualAreaMatches": 336,
+    "actualRegionMatches": 336,
+    "actualNeighborhoodMatches": 278,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224461932506",
+      "title": "인천 부평 산곡동 2019년식 BMW 3GT F34 바르타 실버 AGM95 출장배터리교체 가격 및 비용 안내｜오래 사용한 배터리 시동이 약해졌을 때",
+      "url": "https://blog.naver.com/kang10107/224461932506",
+      "publishedAt": "2026-11-02",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224461932506.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDJfODQg/MDAxNzkzNTgxMTU0Mzky.rLBFGlmifUe9bqbWxPbCLHjCOPyu2Eif1AIlQRbolVEg.khDmWB0gRHMsnMS8RonCvBVQ8c3gfrV-y2dMlEsxQcQg.JPEG/bmw-bmw-3gt-f34-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 시동은 걸리지만 예전처럼 경쾌하지 않다면? 평소 운전하던 자동차의 시동 소리가 달라지면 운전자분들은 금방 알아차리시는 경우가 많습니다. 시동이 아예 안 걸리는 것은 아닌데 처음 엔진이 돌아가는 순간이 조금 무겁게 느껴지는 것이죠. 이번에 인천 부평구 산곡동에서 작업한 2019년식 BMW 3GT F34도 비슷한 이유로 배터리 교체를 요청하셨습니다. 안녕하세요. 일등밧데리입니다. 고객님께서는 기존 AGM 배터리를 오랫동안 사용하셨고, 최근 시동 반응이 이전보다 약해져 교체를 결정하셨습니다. 특히 날씨가 추워지는 시.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "인천자동차배터리",
+        "부평배터리",
+        "부평출장배터리",
+        "산곡동출장배터리",
+        "bmw배터리",
+        "3gt배터리",
+        "bmw3gt배터리교체",
+        "바르타배터리",
+        "바르타agm95",
+        "바르타agm95가격",
+        "바르타agm95실버",
+        "출장배터리교체",
+        "자동차배터리",
+        "출장배터리",
+        "인천출장배터리교체",
+        "차량배터리",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 3시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "3시리즈",
+            "displayName": "BMW 3시리즈",
+            "urlPath": "/car-battery/bmw/3-series.html",
+            "matchedAlias": "BMW3",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "3시리즈",
+            "displayName": "BMW 3시리즈",
+            "urlPath": "/car-battery/bmw/3-series.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "bupyeong-gu",
+          "regionName": "부평구",
+          "neighborhoodName": "산곡동",
+          "label": "인천 부평구 산곡동",
+          "urlPath": "/area/incheon/bupyeong-gu/sangok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "label": "인천 부평구",
+            "urlPath": "/area/incheon/bupyeong-gu.html",
+            "matchedAlias": "부평"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "name": "산곡동",
+            "legalName": "인천광역시 부평구 산곡동",
+            "label": "인천 부평구 산곡동",
+            "urlPath": "/area/incheon/bupyeong-gu/sangok-dong.html",
+            "matchedAlias": "산곡동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/3-series.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/bupyeong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/bupyeong-gu/sangok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "부평구 산곡동에서 BMW 3시리즈 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224461926799",
+      "title": "광명 일직동 2023년식 현대 팰리세이드 델코 AGM80 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224461926799",
+      "publishedAt": "2026-11-02",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224461926799.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDJfMjU1/MDAxNzkzNTgwODM3MzUy.qq38mok2bmQ4XVv7Mnzc_Qr9jL-gsquOzEMksZ4DD0gg.QMnky13rIWuL9rdK1ChPJgez_sFqNRWW285jL1XtKlAg.JPEG/image-image-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 배터리 겉면에 금이 보인다면 그냥 운행해도 될까요? 자동차배터리를 사용하다 보면 시동이 잘 걸리는지만 신경 쓰기 쉽습니다. 하지만 배터리 겉면에 균열처럼 보이는 부분이 생겼다면 이야기가 달라집니다. 안녕하세요. 일등밧데리입니다. 이번에는 경기 광명시 일직동에서 2023년식 현대 팰리세이드 배터리를 교체했습니다. 고객님께서는 배터리 겉면에 금이 간 것처럼 보이는 부분을 발견하셨고, 혹시 문제가 생길까 걱정돼 차량 사용을 멈추고 출장 교체를 요청하셨습니다. 이번 작업은 배터리가 방전됐거나 시동이 약해져.......",
+      "tags": [
+        "광명배터리",
+        "광명출장배터리",
+        "광명자동차배터리",
+        "일직동출장배터리",
+        "팰리세이드배터리",
+        "팰리세이드배터리가격",
+        "팰리세이드배터리교체비용",
+        "팰리세이드배터리교체",
+        "출장배터리교체",
+        "차량배터리교체",
+        "자동차배터리교체",
+        "일등밧데리",
+        "배터리교체비용",
+        "배터리교체",
+        "차량배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "팰리세이드",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "팰리세이드",
+            "displayName": "팰리세이드",
+            "urlPath": "/car-battery/hyundai/palisade.html",
+            "matchedAlias": "팰리세이드",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "팰리세이드",
+            "displayName": "팰리세이드",
+            "urlPath": "/car-battery/hyundai/palisade.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gwangmyeong-si",
+          "regionName": "광명시",
+          "neighborhoodName": "일직동",
+          "label": "경기 광명시 일직동",
+          "urlPath": "/area/gyeonggi/gwangmyeong-si/iljik-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwangmyeong-si",
+            "regionName": "광명시",
+            "label": "경기 광명시",
+            "urlPath": "/area/gyeonggi/gwangmyeong-si.html",
+            "matchedAlias": "광명"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwangmyeong-si",
+            "regionName": "광명시",
+            "name": "일직동",
+            "legalName": "경기도 광명시 일직동",
+            "label": "경기 광명시 일직동",
+            "urlPath": "/area/gyeonggi/gwangmyeong-si/iljik-dong.html",
+            "matchedAlias": "일직동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/palisade.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gwangmyeong-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/gwangmyeong-si/iljik-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "광명시 일직동에서 팰리세이드 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224461922361",
+      "title": "강동구 길동 2022년식 BMW530i G30 바르타 실버 AGM95 출장배터리교체 가격 및 비용 안내｜배터리 시동 약함",
+      "url": "https://blog.naver.com/kang10107/224461922361",
+      "publishedAt": "2026-11-02",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224461922361.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDJfMjk2/MDAxNzkzNTgwNTIzNDUy.hKOWf2wCNc1cRs46kFX2WFF4H2hDpUq2PMVI_3N47mAg.wtvmdT1wFKsuXRBOknWjqo5Ly_mZi9lMMOkkTYgmbbcg.JPEG/bmw-bmw530i-g30-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 BMW 시동이 약해졌는데 배터리 단자에도 하얀 가루가? 안녕하세요. 일등밧데리입니다. 이번에는 서울 강동구 길동에서 2022년식 BMW530i G30 배터리를 교체했습니다. 고객님께서 연락을 주신 이유는 두 가지였습니다. 최근 시동을 걸 때 이전보다 힘이 부족하게 느껴졌고, 배터리 단자 주변에는 하얀 가루 같은 물질이 쌓여 있었다고 합니다. 시동이 약해지는 증상만 있었다면 배터리 충전 상태부터 의심할 수 있지만, 연결 부분에 부식 흔적까지 보인다면 조금 더 살펴볼 필요가 있습니다. 배터리 자체의 성능 문제인지, 전기를.......",
+      "tags": [
+        "강동구배터리",
+        "강동구출장배터리",
+        "길동출장배터리",
+        "강동구자동차배터리",
+        "자동차배터리",
+        "출장배터리",
+        "자동차배터리교체",
+        "출장배터리교체",
+        "자동차배터리가격",
+        "출장배터리교체비용",
+        "bmw배터리",
+        "bmw배터리가격",
+        "bmw530i배터리",
+        "530i배터리",
+        "차량배터리",
+        "530i배터리교체",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 5시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "BMW5",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayVehicleName": "BMW 5시리즈",
+            "label": "G30",
+            "slug": "g30",
+            "urlPath": "/car-battery/bmw/5-series/g30.html",
+            "vehicleUrlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "G30"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangdong-gu",
+          "regionName": "강동구",
+          "neighborhoodName": "길동",
+          "label": "서울 강동구 길동",
+          "urlPath": "/area/seoul/gangdong-gu/gil-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "label": "서울 강동구",
+            "urlPath": "/area/seoul/gangdong-gu.html",
+            "matchedAlias": "강동구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "name": "길동",
+            "legalName": "서울특별시 강동구 길동",
+            "label": "서울 강동구 길동",
+            "urlPath": "/area/seoul/gangdong-gu/gil-dong.html",
+            "matchedAlias": "길동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/5-series.html"
+          ],
+          "details": [
+            "/car-battery/bmw/5-series/g30.html"
+          ],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangdong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gangdong-gu/gil-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "강동구 길동에서 BMW 5시리즈 G30 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224460886606",
       "title": "인천 연수구 동춘동 2015년식 현대 그랜저HG 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
