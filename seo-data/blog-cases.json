@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-02T09:51:27.153Z",
+  "syncedAt": "2026-11-03T09:55:24.727Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 3,
-    "preservedPreviousPosts": 450,
+    "preservedPreviousPosts": 453,
     "duplicateRemoved": 47,
-    "thumbnailSuccess": 453,
+    "thumbnailSuccess": 456,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 405,
-    "vehicleMatches": 379,
-    "detailMatches": 87,
-    "regionMatches": 336,
-    "neighborhoodMatches": 278,
-    "batteryMatches": 335,
+    "manufacturerMatches": 408,
+    "vehicleMatches": 381,
+    "detailMatches": 89,
+    "regionMatches": 339,
+    "neighborhoodMatches": 280,
+    "batteryMatches": 338,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,477 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 336,
-    "actualRegionMatches": 336,
-    "actualNeighborhoodMatches": 278,
+    "actualAreaMatches": 339,
+    "actualRegionMatches": 339,
+    "actualNeighborhoodMatches": 280,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224463103043",
+      "title": "강동구 길동 2017년식 BMW640D 바르타 실버 AGM95 출장배터리교체 가격 및 비용 안내｜시동불량으로 인한 배터리교체",
+      "url": "https://blog.naver.com/kang10107/224463103043",
+      "publishedAt": "2026-11-03",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224463103043.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDNfMjA0/MDAxNzkzNjYzOTYzODQ2.MY-7B4ciflaKYHLN7L4pn1Lw5S0DHCnhkH0y4zDR_xMg.MRl4V0Y46xaG5H5CYEAbSW0jrElV9OxzemCTyXeUcgEg.JPEG/bmw-bmw640d-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 BMW640D 시동이 약해지고 단자에 하얀 가루까지 보인다면? 안녕하세요. 일등밧데리입니다. 오늘은 서울 강동구 길동에서 2017년식 BMW640D 배터리 교체를 진행했습니다. 이번 고객님께서는 최근 시동이 예전보다 힘겹게 걸리고, 배터리 단자 주변에 하얀 가루도 쌓여 있어 문의를 주셨습니다. 시동이 약해지면 배터리 수명부터 생각하기 쉽지만, 이번처럼 연결 부위에 부식이 의심되는 흔적까지 있다면 다른 부분도 살펴볼 필요가 있습니다. 배터리가 전기를 충분히 공급하지 못하는 것인지, 단자 접촉 상태가 좋지 않은 것인지.......",
+      "tags": [
+        "강동구배터리",
+        "강동구출장배터리",
+        "강동구자동차배터리",
+        "길동출장배터리",
+        "bmw640d배터리",
+        "bmw배터리",
+        "bmw배터리교체",
+        "bmw배터리경고등",
+        "bmw배터리가격",
+        "bmw6배터리",
+        "640d배터리",
+        "바르타배터리",
+        "바르타agm95",
+        "바르타agm95실버",
+        "바르타agm95가격",
+        "일등밧데리",
+        "출장배터리",
+        "배터리교체",
+        "자동차배터리",
+        "배터리교체비용",
+        "출장배터리교체가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": null,
+        "vehicles": [],
+        "detailModels": [],
+        "vehicleHierarchy": [],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gangdong-gu",
+          "regionName": "강동구",
+          "neighborhoodName": "길동",
+          "label": "서울 강동구 길동",
+          "urlPath": "/area/seoul/gangdong-gu/gil-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "label": "서울 강동구",
+            "urlPath": "/area/seoul/gangdong-gu.html",
+            "matchedAlias": "강동구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gangdong-gu",
+            "regionName": "강동구",
+            "name": "길동",
+            "legalName": "서울특별시 강동구 길동",
+            "label": "서울 강동구 길동",
+            "urlPath": "/area/seoul/gangdong-gu/gil-dong.html",
+            "matchedAlias": "길동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "시동불량",
+          "시동 불량",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gangdong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/gangdong-gu/gil-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "강동구 길동에서 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 0,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224463097943",
+      "title": "인천 연수구 동춘동 2015년식 현대 그랜저HG 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224463097943",
+      "publishedAt": "2026-11-03",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224463097943.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDNfNjYg/MDAxNzkzNjYzNjQ1NzI0.-MF6qrTI378mdd2ehoYIRjCnoC8CCwZSLlWJL7gkZNcg.nCKW_YivUVV6WGACpgLwAL04FJOste7X13JmHIlyLVkg.JPEG/image-hg-agm70-image-replacement-01-01-1.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 시동보다 배터리 겉모습이 먼저 걱정됐던 그랜저HG 배터리가 부풀어 보인다는 연락을 받으면 단순히 사용 기간이 얼마나 됐는지보다 실제로 케이스가 손상된 상태인지 먼저 생각하게 됩니다. 안녕하세요. 일등밧데리입니다. 오늘은 인천 연수구 동춘동에서 2015년식 현대 그랜저HG 배터리를 교체했습니다. 고객님께서는 배터리 겉면이 평소와 다르게 부풀어 보이는 것을 발견하고 교체를 문의하셨습니다. 자동차배터리는 보통 시동이 잘 걸리지 않거나 방전됐을 때 교체를 생각하시지만, 이번에는 외관 이상이 걱정돼 연락을 주.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "인천자동차배터리",
+        "연수구배터리",
+        "동춘동출장배터리",
+        "그랜저배터리",
+        "그랜저hg배터리",
+        "그랜저배터리가격",
+        "그랜저배터리교체비용",
+        "델코agm70",
+        "agm70",
+        "델코agm70배터리",
+        "델코agm70교체",
+        "agm70가격",
+        "출장배터리",
+        "일등밧데리",
+        "자동차배터리",
+        "배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "그랜저",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayName": "그랜저",
+            "urlPath": "/car-battery/hyundai/grandeur.html",
+            "matchedAlias": "그랜저",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayVehicleName": "그랜저",
+            "label": "HG",
+            "slug": "hg",
+            "urlPath": "/car-battery/hyundai/grandeur/hg.html",
+            "vehicleUrlPath": "/car-battery/hyundai/grandeur.html",
+            "matchedAlias": "HG"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "그랜저",
+            "displayName": "그랜저",
+            "urlPath": "/car-battery/hyundai/grandeur.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "yeonsu-gu",
+          "regionName": "연수구",
+          "neighborhoodName": "동춘동",
+          "label": "인천 연수구 동춘동",
+          "urlPath": "/area/incheon/yeonsu-gu/dongchun-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "label": "인천 연수구",
+            "urlPath": "/area/incheon/yeonsu-gu.html",
+            "matchedAlias": "연수구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "name": "동춘동",
+            "legalName": "인천광역시 연수구 동춘동",
+            "label": "인천 연수구 동춘동",
+            "urlPath": "/area/incheon/yeonsu-gu/dongchun-dong.html",
+            "matchedAlias": "동춘동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/grandeur.html"
+          ],
+          "details": [
+            "/car-battery/hyundai/grandeur/hg.html"
+          ],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/yeonsu-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/yeonsu-gu/dongchun-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "연수구 동춘동에서 그랜저 HG AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224461936727",
+      "title": "관악구 신원동 2023년식 기아 카니발 KA4 4세대 델코 AGM80 출장배터리교체 가격 및 비용 안내｜오래 사용한 배터리 겨울철 방전 예방",
+      "url": "https://blog.naver.com/kang10107/224461936727",
+      "publishedAt": "2026-11-03",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224461936727.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDJfMjM3/MDAxNzkzNTgxMzkyMTg3.TZWKT5ad5J073JMBlW9Gj6o6-RZqOs61ah7T_6pnkz0g.te1ZN9DqwiGfF7YNpYmDHXr_1h-Un0cQZTxqmUUJU4cg.JPEG/image-ka4-4-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 카니발 배터리, 방전되기 전에 교체해도 될까요? 안녕하세요. 일등밧데리입니다. 가족과 함께 이동하거나 짐을 싣고 다닐 일이 많은 카니발은 갑자기 시동이 걸리지 않으면 불편이 클 수 있습니다. 특히 차량을 자주 사용하시는 분이라면 배터리가 완전히 방전되기 전에 교체 시기를 고민하시기도 하는데요. 이번에는 서울 관악구 신원동에서 2023년식 기아 카니발 KA4 4세대 배터리를 교체했습니다. 고객님께서는 기존 AGM 배터리를 계속 사용해오셨고, 사용 기간이 길어졌다는 생각에 미리 교체를 결정하셨습니다. 시동이 걸리.......",
+      "tags": [
+        "관악구배터리",
+        "관악구출장배터리",
+        "관악구자동차배터리",
+        "카니발배터리",
+        "카니발배터리교체",
+        "카니발ka4배터리",
+        "카니발ka4배터리가격",
+        "카니발4세대배터리",
+        "카니발4세대배터리교체",
+        "카니발4세대배터리가격",
+        "델코agm80",
+        "델코agm80배터리",
+        "델코agm80가격",
+        "일등밧데리",
+        "자동차배터리",
+        "배터리교체",
+        "배터리출장",
+        "자동차출장배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "카니발",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "카니발",
+            "displayName": "카니발",
+            "urlPath": "/car-battery/kia/carnival.html",
+            "matchedAlias": "카니발",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "카니발",
+            "displayVehicleName": "카니발",
+            "label": "KA4",
+            "slug": "ka4",
+            "urlPath": "/car-battery/kia/carnival/ka4.html",
+            "vehicleUrlPath": "/car-battery/kia/carnival.html",
+            "matchedAlias": "KA4"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "카니발",
+            "displayName": "카니발",
+            "urlPath": "/car-battery/kia/carnival.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "gwanak-gu",
+          "regionName": "관악구",
+          "label": "서울 관악구",
+          "urlPath": "/area/seoul/gwanak-gu.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "gwanak-gu",
+            "regionName": "관악구",
+            "label": "서울 관악구",
+            "urlPath": "/area/seoul/gwanak-gu.html",
+            "matchedAlias": "관악구"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/carnival.html"
+          ],
+          "details": [
+            "/car-battery/kia/carnival/ka4.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/gwanak-gu.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "서울 관악구에서 카니발 KA4 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224461932506",
       "title": "인천 부평 산곡동 2019년식 BMW 3GT F34 바르타 실버 AGM95 출장배터리교체 가격 및 비용 안내｜오래 사용한 배터리 시동이 약해졌을 때",
