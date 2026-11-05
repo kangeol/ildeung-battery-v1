@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-04T11:31:09.008Z",
+  "syncedAt": "2026-11-05T09:46:14.753Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 3,
-    "preservedPreviousPosts": 456,
+    "preservedPreviousPosts": 459,
     "duplicateRemoved": 47,
-    "thumbnailSuccess": 459,
+    "thumbnailSuccess": 462,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 411,
-    "vehicleMatches": 384,
-    "detailMatches": 91,
-    "regionMatches": 342,
-    "neighborhoodMatches": 282,
-    "batteryMatches": 341,
+    "manufacturerMatches": 414,
+    "vehicleMatches": 387,
+    "detailMatches": 92,
+    "regionMatches": 345,
+    "neighborhoodMatches": 284,
+    "batteryMatches": 344,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,481 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 342,
-    "actualRegionMatches": 342,
-    "actualNeighborhoodMatches": 282,
+    "actualAreaMatches": 345,
+    "actualRegionMatches": 345,
+    "actualNeighborhoodMatches": 284,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224465626308",
+      "title": "구로 오류동 2022년식 벤츠 S500 4MATIC 바르타 AGM105 출장배터리교체 가격 및 비용 안내｜오래 사용한 수입차 배터리 예방 교체",
+      "url": "https://blog.naver.com/kang10107/224465626308",
+      "publishedAt": "2026-11-05",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224465626308.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDVfMjM3/MDAxNzkzODQwMTYzNjAz.J6aM6PZ_JJdZfnRtvH52P2xGoGVkmQA5qKA7U9uYD4gg.IuNyBwTcqUHfNyOGkKR8noXARSyJQen3sE66KuSbbSQg.JPEG/image-s500-4matic-agm105-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 벤츠 S500, 배터리 교체 시기는 어떻게 결정할까요? 안녕하세요. 일등밧데리입니다. 오늘은 서울 구로구 오류동에서 진행한 2022년식 벤츠 S500 4MATIC 배터리 교체 작업을 소개해 드리겠습니다. 수입차를 운행하다 보면 배터리가 완전히 방전되지 않았더라도 사용 기간이 길어졌을 때 교체를 고민하게 됩니다. 특히 벤츠 S클래스처럼 여러 전자장치가 적용된 차량은 배터리 관리에도 관심을 갖는 것이 좋습니다. 다만 전자장치가 많다는 이유만으로 배터리 수명이 무조건 짧아지는 것은 아닙니다. 차량을 사용하는 환경과 충전.......",
+      "tags": [
+        "구로배터리",
+        "구로자동차배터리",
+        "구로출장배터리",
+        "오류동출장배터리",
+        "벤츠배터리",
+        "벤츠배터리가격",
+        "벤츠배터리교체비용",
+        "벤츠배터리교체가격",
+        "벤츠s500배터리",
+        "벤츠s500배터리가격",
+        "바르타배터리",
+        "바르타agm105",
+        "바르타agm105가격",
+        "바르타agm105배터리",
+        "바르타agm105출장",
+        "출장배터리교체",
+        "일등밧데리",
+        "자동차배터리",
+        "자동차배터리가격",
+        "출장배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "벤츠",
+        "manufacturers": [
+          {
+            "id": "benz",
+            "name": "벤츠"
+          }
+        ],
+        "vehicle": "벤츠 S-클래스",
+        "vehicles": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "S-클래스",
+            "displayName": "벤츠 S-클래스",
+            "urlPath": "/car-battery/benz/s-class.html",
+            "matchedAlias": "벤츠 S-클래스",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "benz",
+            "manufacturerName": "벤츠",
+            "vehicleName": "S-클래스",
+            "displayName": "벤츠 S-클래스",
+            "urlPath": "/car-battery/benz/s-class.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "guro-gu",
+          "regionName": "구로구",
+          "neighborhoodName": "오류동",
+          "label": "서울 구로구 오류동",
+          "urlPath": "/area/seoul/guro-gu/oryu-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "guro-gu",
+            "regionName": "구로구",
+            "label": "서울 구로구",
+            "urlPath": "/area/seoul/guro-gu.html",
+            "matchedAlias": "구로"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "guro-gu",
+            "regionName": "구로구",
+            "name": "오류동",
+            "legalName": "서울특별시 구로구 오류동",
+            "label": "서울 구로구 오류동",
+            "urlPath": "/area/seoul/guro-gu/oryu-dong.html",
+            "matchedAlias": "오류동"
+          }
+        ],
+        "batteryModels": [
+          "AGM105"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/benz/s-class.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/benz.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/guro-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/guro-gu/oryu-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm105.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "구로구 오류동에서 벤츠 S-클래스 AGM105 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224465618396",
+      "title": "인천 미추홀구 숭의동 2016년식 올뉴쏘렌토 델코 AGM95 출장배터리교체 가격 및 비용 안내｜주말 주차 후 첫 시동이 걱정될 때",
+      "url": "https://blog.naver.com/kang10107/224465618396",
+      "publishedAt": "2026-11-05",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224465618396.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDVfMjEg/MDAxNzkzODM5NzkzNjk1.a3SHrs9bByTjFkxX0n_2C6O8Z3qSgbJ5wiyOYS3SxvQg.uDQSXneFff1IRaQ-tGjZuioVgjHm3fAMJYyt_hwJHLcg.JPEG/image-image-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 며칠 세워둔 자동차, 첫 시동이 걱정된다면? 안녕하세요. 일등밧데리입니다. 주말 동안 차량을 운행하지 않다가 월요일 아침에 다시 시동을 걸어야 하는 상황, 운전자라면 익숙하실 텐데요. 평소 배터리 상태가 좋지 않다고 느꼈거나 교체한 지 오래됐다면 며칠 주차한 뒤 첫 시동이 걱정될 수 있습니다. 오늘 소개할 작업은 인천 미추홀구 숭의동에서 진행한 2016년식 올뉴쏘렌토 배터리 교체입니다. 이번 차량에는 델코 AGM95를 장착했으며 교체 비용은 22만원입니다. 오늘은 실제 교체 내용과 함께, 주말처럼 며칠간 차량을 세.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "인천자동차배터리",
+        "미추홀구배터리",
+        "숭의동출장배터리",
+        "올뉴쏘렌토배터리",
+        "올뉴쏘렌토배터리가격",
+        "올뉴쏘렌토배터리교체",
+        "올뉴쏘렌토배터리교체비용",
+        "델코agm95",
+        "델코agm95가격",
+        "델코agm95교체",
+        "델코agm95교체비용",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "자동차배터리교체",
+        "자동차배터리가격",
+        "출장배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아",
+            "inferredFromVehicle": true
+          }
+        ],
+        "vehicle": "쏘렌토",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayName": "쏘렌토",
+            "urlPath": "/car-battery/kia/sorento.html",
+            "matchedAlias": "쏘렌토",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayVehicleName": "쏘렌토",
+            "label": "올 뉴 쏘렌토",
+            "slug": "all-new-sorento",
+            "urlPath": "/car-battery/kia/sorento/all-new-sorento.html",
+            "vehicleUrlPath": "/car-battery/kia/sorento.html",
+            "matchedAlias": "올 뉴 쏘렌토"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayName": "쏘렌토",
+            "urlPath": "/car-battery/kia/sorento.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "michuhol-gu",
+          "regionName": "미추홀구",
+          "neighborhoodName": "숭의동",
+          "label": "인천 미추홀구 숭의동",
+          "urlPath": "/area/incheon/michuhol-gu/sungui-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "michuhol-gu",
+            "regionName": "미추홀구",
+            "label": "인천 미추홀구",
+            "urlPath": "/area/incheon/michuhol-gu.html",
+            "matchedAlias": "미추홀구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "michuhol-gu",
+            "regionName": "미추홀구",
+            "name": "숭의동",
+            "legalName": "인천광역시 미추홀구 숭의동",
+            "label": "인천 미추홀구 숭의동",
+            "urlPath": "/area/incheon/michuhol-gu/sungui-dong.html",
+            "matchedAlias": "숭의동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/sorento.html"
+          ],
+          "details": [
+            "/car-battery/kia/sorento/all-new-sorento.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/michuhol-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/michuhol-gu/sungui-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "미추홀구 숭의동에서 쏘렌토 올 뉴 쏘렌토 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224464339849",
+      "title": "군포 송부동 2021년식 BMW 520i G바디 바르타 실버 AGM95 출장배터리교체 가격 및 비용 안내｜시동 반응이 약해졌을 때",
+      "url": "https://blog.naver.com/kang10107/224464339849",
+      "publishedAt": "2026-11-05",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224464339849.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDRfMjQy/MDAxNzkzNzUxMzgyNzIy.AfwxSkEecgypUigf1jCPNVIxmMN-n_ylvCHwTcrm7wQg.wcGqzbRkmQmbHqfyZ1rU4m_20SxYElwMWdlPl732ZZ0g.JPEG/bmw-bmw52oi-g-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 BMW 520i, 시동이 예전보다 힘겹게 걸린다면? 안녕하세요. 일등밧데리입니다. 오늘 소개할 차량은 경기 군포시 송부동에서 배터리 출장 교체를 진행한 2021년식 BMW 520i G바디입니다. 수입차를 운행하다 보면 어느 날 시동이 평소보다 느리거나 무겁게 느껴지는 경우가 있습니다. 처음에는 날씨 때문이라고 생각할 수도 있지만, 같은 현상이 반복된다면 배터리 상태를 확인해볼 필요가 있습니다. 이번 작업은 시동 반응이 약해졌을 때 배터리 교체를 고려하는 상황을 중심으로 소개해 드리겠습니다. 시동 반응이 달라졌다는 사.......",
+      "tags": [
+        "군포배터리",
+        "군포자동차배터리",
+        "군포출장배터리",
+        "송부동출장배터리",
+        "bmw배터리",
+        "bmw배터리교체",
+        "bmw520i배터리교체",
+        "bmw520i배터리",
+        "520i배터리교체비용",
+        "바르타배터리",
+        "바르타agm95실버",
+        "바르타agm95",
+        "바르타agm95가격",
+        "출장배터리교체",
+        "자동차배터리교체비용",
+        "차량배터리",
+        "출장배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW 5시리즈",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "matchedAlias": "BMW5",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "5시리즈",
+            "displayName": "BMW 5시리즈",
+            "urlPath": "/car-battery/bmw/5-series.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "region",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gunpo-si",
+          "regionName": "군포시",
+          "label": "경기 군포시",
+          "urlPath": "/area/gyeonggi/gunpo-si.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gunpo-si",
+            "regionName": "군포시",
+            "label": "경기 군포시",
+            "urlPath": "/area/gyeonggi/gunpo-si.html",
+            "matchedAlias": "군포"
+          }
+        ],
+        "neighborhoods": [],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/5-series.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gunpo-si.html"
+          ],
+          "neighborhoods": [],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "경기 군포시에서 BMW 5시리즈 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 0,
+        "battery": 1
+      }
+    },
     {
       "id": "224464324829",
       "title": "관악구 신원동 2019년식 소나타DN8 바르타 AGM70 출장배터리교체 가격 및 비용 안내｜출고 후 첫 배터리 교체",
