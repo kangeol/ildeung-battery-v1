@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-06T09:44:09.238Z",
+  "syncedAt": "2026-11-07T09:06:18.489Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 3,
-    "preservedPreviousPosts": 462,
+    "preservedPreviousPosts": 465,
     "duplicateRemoved": 47,
-    "thumbnailSuccess": 465,
+    "thumbnailSuccess": 468,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 417,
-    "vehicleMatches": 390,
-    "detailMatches": 92,
-    "regionMatches": 348,
-    "neighborhoodMatches": 287,
-    "batteryMatches": 347,
+    "manufacturerMatches": 420,
+    "vehicleMatches": 393,
+    "detailMatches": 93,
+    "regionMatches": 351,
+    "neighborhoodMatches": 290,
+    "batteryMatches": 350,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,483 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 348,
-    "actualRegionMatches": 348,
-    "actualNeighborhoodMatches": 287,
+    "actualAreaMatches": 351,
+    "actualRegionMatches": 351,
+    "actualNeighborhoodMatches": 290,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224467466745",
+      "title": "송파 석촌동 2023년식 쉐보레 트랙스 크로스오버 델코 AGM70 출장배터리교체 가격 및 비용 안내｜시동만 켜두면 배터리가 충전될까요?",
+      "url": "https://blog.naver.com/kang10107/224467466745",
+      "publishedAt": "2026-11-07",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224467466745.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDZfMTAw/MDAxNzkzOTU1MjU5MjQ4.Ivvq51A5IFkdCvV4fopRV-eQ94rYvaA_5nTbnfxdwy4g.fmX8p8lVAJU3aO7QACIZRD5Zx7ZMtWZwMG9tt--6VGog.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 주차한 채 시동만 걸어두면 배터리 관리가 될까요? 차량을 자주 운행하지 않을 때 배터리가 방전될까 걱정돼 가끔 시동만 걸어두시는 분들이 계십니다. 그런데 시동을 걸었다는 사실만으로 배터리가 충분히 충전됐다고 생각해도 될까요? 안녕하세요. 일등밧데리입니다. 이번에 소개할 차량은 서울 송파구 석촌동에서 배터리 교체를 진행한 2023년식 쉐보레 트랙스 크로스오버입니다. 오늘 장착한 제품은 델코 AGM70이며, 출장 교체 비용은 17만원입니다. 이번 글에서는 실제 배터리 교체 과정과 함께 차량을 움직이지 않고 시동.......",
+      "tags": [
+        "송파배터리",
+        "송파자동차배터리",
+        "송파출장배터리",
+        "송파배터리교체",
+        "석촌동출장배터리",
+        "쉐보레배터리",
+        "쉐보레배터리교체비용",
+        "쉐보레배터리교체",
+        "트랙스배터리",
+        "트랙스배터리교체",
+        "트랙스배터리가격",
+        "트랙스크로스오버배터리교체",
+        "트랙스크로스오버배터리교체비용",
+        "일등밧데리",
+        "차량배터리",
+        "자동차배터리",
+        "출장배터리교체",
+        "출장배터리비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "쉐보레",
+        "manufacturers": [
+          {
+            "id": "chevrolet",
+            "name": "쉐보레"
+          }
+        ],
+        "vehicle": "트랙스",
+        "vehicles": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트랙스",
+            "displayName": "트랙스",
+            "urlPath": "/car-battery/chevrolet/trax.html",
+            "matchedAlias": "트랙스",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트랙스",
+            "displayVehicleName": "트랙스",
+            "label": "트랙스 크로스오버",
+            "slug": "trax-crossover",
+            "urlPath": "/car-battery/chevrolet/trax/trax-crossover.html",
+            "vehicleUrlPath": "/car-battery/chevrolet/trax.html",
+            "matchedAlias": "트랙스 크로스오버"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트랙스",
+            "displayName": "트랙스",
+            "urlPath": "/car-battery/chevrolet/trax.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "songpa-gu",
+          "regionName": "송파구",
+          "neighborhoodName": "석촌동",
+          "label": "서울 송파구 석촌동",
+          "urlPath": "/area/seoul/songpa-gu/seokchon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "songpa-gu",
+            "regionName": "송파구",
+            "label": "서울 송파구",
+            "urlPath": "/area/seoul/songpa-gu.html",
+            "matchedAlias": "송파"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "songpa-gu",
+            "regionName": "송파구",
+            "name": "석촌동",
+            "legalName": "서울특별시 송파구 석촌동",
+            "label": "서울 송파구 석촌동",
+            "urlPath": "/area/seoul/songpa-gu/seokchon-dong.html",
+            "matchedAlias": "석촌동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/chevrolet/trax.html"
+          ],
+          "details": [
+            "/car-battery/chevrolet/trax/trax-crossover.html"
+          ],
+          "manufacturers": [
+            "/car-battery/chevrolet.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/songpa-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/songpa-gu/seokchon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "송파구 석촌동에서 트랙스 트랙스 크로스오버 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224467456248",
+      "title": "인천 남동구 서창동 2014년식 아우디 A6 35TDI 델코 AGM95 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224467456248",
+      "publishedAt": "2026-11-07",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224467456248.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDZfOTgg/MDAxNzkzOTU0NzI0OTgz.Co66hv7qKnzE5QLhGvwyD0-muEYWlgBozQxTPhL-4Vkg.3birpwhkOMB4UkwxDsS-eOiVuDZxSRY4eYXKAVPwrsAg.JPEG/image-a6-35tdi-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 가끔 타는 자동차일수록 첫 시동이 걱정된다면? 안녕하세요. 일등밧데리입니다. 매일 운행하는 자동차와 일주일에 한두 번씩 사용하는 세컨드카는 배터리를 관리하는 방법에도 차이가 있습니다. 평소 자주 타는 차량은 시동 반응이 달라지면 비교적 빨리 알아차릴 수 있지만, 가끔 사용하는 차는 오랜만에 시동을 걸 때 배터리 상태가 걱정되기도 합니다. 오늘 소개해 드릴 차량은 인천 남동구 서창동에서 출장배터리교체를 진행한 2014년식 아우디 A6 35TDI입니다. 이번 작업에는 델코 AGM95를 장착했으며, 배터리 등록 작업까.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "자동차배터리",
+        "차량배터리",
+        "일등밧데리",
+        "서창동출장배터리",
+        "인천배터리교체",
+        "인천출장배터리교체",
+        "아우디배터리",
+        "아우디a6배터리",
+        "a6배터리",
+        "아우디a6배터리교체",
+        "a6배터리가격",
+        "a6배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "아우디",
+        "manufacturers": [
+          {
+            "id": "audi",
+            "name": "아우디"
+          }
+        ],
+        "vehicle": "아우디 A6",
+        "vehicles": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A6",
+            "displayName": "아우디 A6",
+            "urlPath": "/car-battery/audi/a6.html",
+            "matchedAlias": "아우디 A6",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A6",
+            "displayName": "아우디 A6",
+            "urlPath": "/car-battery/audi/a6.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "namdong-gu",
+          "regionName": "남동구",
+          "neighborhoodName": "서창동",
+          "label": "인천 남동구 서창동",
+          "urlPath": "/area/incheon/namdong-gu/seochang-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "namdong-gu",
+            "regionName": "남동구",
+            "label": "인천 남동구",
+            "urlPath": "/area/incheon/namdong-gu.html",
+            "matchedAlias": "남동구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "namdong-gu",
+            "regionName": "남동구",
+            "name": "서창동",
+            "legalName": "인천광역시 남동구 서창동",
+            "label": "인천 남동구 서창동",
+            "urlPath": "/area/incheon/namdong-gu/seochang-dong.html",
+            "matchedAlias": "서창동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/audi/a6.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/audi.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/namdong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/namdong-gu/seochang-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "남동구 서창동에서 아우디 A6 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224467448721",
+      "title": "과천 원문동 2021년식 아반떼N 델코 AGM70 출장배터리교체 가격 및 비용 안내｜가끔 운행하는 차량의 배터리 관리",
+      "url": "https://blog.naver.com/kang10107/224467448721",
+      "publishedAt": "2026-11-07",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224467448721.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDZfMjkz/MDAxNzkzOTU0Mjk5MTY1.qtZVo1DRc0TXaghZbAg_0JA_M17TLqshPJ1mgpnyxasg.05YQUsEAxD_zLq_l4hsDX8fk2upvwJ-i_Lw2y9AvbW4g.JPEG/image-n-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 차를 가끔 운행해도 배터리가 부족해질 수 있을까요? 안녕하세요. 일등밧데리입니다. 자동차를 매일 운행하지 않더라도 필요할 때마다 한 번씩 사용하시는 분들이 많습니다. 특히 재택근무를 하거나 출퇴근에 차량을 이용하지 않는다면 운행 횟수가 자연스럽게 줄어들 수 있는데요. 이럴 때 중요한 것은 차를 운행했는지 여부보다 실제로 얼마나 자주, 어느 정도 운행했는지입니다. 오늘 소개할 작업은 경기 과천시 원문동에서 진행한 2021년식 현대 아반떼N 배터리 교체입니다. 이번 차량에는 델코 AGM70을 장착했으며, 출장 교.......",
+      "tags": [
+        "과천배터리",
+        "과천출장배터리",
+        "과천자동차배터리",
+        "원문동출장배터리",
+        "아반떼n배터리",
+        "아반떼n배터리가격",
+        "아반떼n배터리교체",
+        "출장배터리",
+        "자동차배터리",
+        "배터리교체",
+        "일등밧데리",
+        "차량배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "아반떼",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "아반떼",
+            "displayName": "아반떼",
+            "urlPath": "/car-battery/hyundai/avante.html",
+            "matchedAlias": "아반떼",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "아반떼",
+            "displayName": "아반떼",
+            "urlPath": "/car-battery/hyundai/avante.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "gwacheon-si",
+          "regionName": "과천시",
+          "neighborhoodName": "원문동",
+          "label": "경기 과천시 원문동",
+          "urlPath": "/area/gyeonggi/gwacheon-si/wonmun-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwacheon-si",
+            "regionName": "과천시",
+            "label": "경기 과천시",
+            "urlPath": "/area/gyeonggi/gwacheon-si.html",
+            "matchedAlias": "과천"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "gwacheon-si",
+            "regionName": "과천시",
+            "name": "원문동",
+            "legalName": "경기도 과천시 원문동",
+            "label": "경기 과천시 원문동",
+            "urlPath": "/area/gyeonggi/gwacheon-si/wonmun-dong.html",
+            "matchedAlias": "원문동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/avante.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/gwacheon-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/gwacheon-si/wonmun-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "과천시 원문동에서 아반떼 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224465645553",
       "title": "서초구 반포동 2023년식 아이오닉5 델코 AGM60 출장배터리교체 가격 및 비용 안내｜장기주차 후 12V 배터리 충전 상태 확인",
