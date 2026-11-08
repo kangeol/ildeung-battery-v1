@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-07T09:06:18.489Z",
+  "syncedAt": "2026-11-08T09:24:54.778Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 3,
-    "preservedPreviousPosts": 465,
-    "duplicateRemoved": 47,
-    "thumbnailSuccess": 468,
+    "newPosts": 2,
+    "preservedPreviousPosts": 468,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 470,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 420,
-    "vehicleMatches": 393,
+    "manufacturerMatches": 422,
+    "vehicleMatches": 395,
     "detailMatches": 93,
-    "regionMatches": 351,
-    "neighborhoodMatches": 290,
-    "batteryMatches": 350,
+    "regionMatches": 353,
+    "neighborhoodMatches": 292,
+    "batteryMatches": 352,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,322 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 351,
-    "actualRegionMatches": 351,
-    "actualNeighborhoodMatches": 290,
+    "actualAreaMatches": 353,
+    "actualRegionMatches": 353,
+    "actualNeighborhoodMatches": 292,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224467477203",
+      "title": "인천 계양구 계산동 2023년식 폭스바겐 아테온 바르타 실버 AGM70 출장배터리교체 가격 및 비용 안내｜두 대 중 덜 타는 차량의 배터리 관리",
+      "url": "https://blog.naver.com/kang10107/224467477203",
+      "publishedAt": "2026-11-08",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224467477203.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDZfMjQ3/MDAxNzkzOTU1ODMwMzQ2.bg9wb9DC-X0XNpiOMMOraaHhMYZz3ZWqmHS0zlWsr7wg.jd2_qx6gpqdZLj_RVgAjgIfWO7pzh-1ulDCRDYccJJYg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 자동차가 두 대라면 배터리 관리도 똑같이 하면 될까요? 안녕하세요. 일등밧데리입니다. 집에 자동차가 두 대 있으면 한 대는 자주 운행하고 다른 한 대는 필요할 때만 사용하는 경우가 있습니다. 같은 집에 주차하고 있어도 차량마다 운행 간격이 다르기 때문에 배터리 충전 상태에도 차이가 생길 수 있는데요. 오늘 소개해 드릴 작업은 인천 계양구 계산동에서 진행한 2023년식 폭스바겐 아테온 배터리 교체입니다. 이번 차량에는 바르타 실버 AGM70을 장착하고 배터리 등록 작업까지 진행했습니다. 교체 비용은 22만원입니다.......",
+      "tags": [
+        "인천배터리",
+        "계양구배터리",
+        "인천자동차배터리",
+        "계산동출장배터리",
+        "인천출장배터리교체",
+        "폭스바겐배터리",
+        "폭스바겐배터리금액",
+        "폭스바겐아테온배터리",
+        "아테온배터리",
+        "아테온배터리교체",
+        "아테온배터리교체비용",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리교체",
+        "차량배터리교체",
+        "출장배터리교체가격",
+        "자동차배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "폭스바겐",
+        "manufacturers": [
+          {
+            "id": "volkswagen",
+            "name": "폭스바겐"
+          }
+        ],
+        "vehicle": "폭스바겐 아테온",
+        "vehicles": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "아테온",
+            "displayName": "폭스바겐 아테온",
+            "urlPath": "/car-battery/volkswagen/arteon.html",
+            "matchedAlias": "폭스바겐 아테온",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "volkswagen",
+            "manufacturerName": "폭스바겐",
+            "vehicleName": "아테온",
+            "displayName": "폭스바겐 아테온",
+            "urlPath": "/car-battery/volkswagen/arteon.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "gyeyang-gu",
+          "regionName": "계양구",
+          "neighborhoodName": "계산동",
+          "label": "인천 계양구 계산동",
+          "urlPath": "/area/incheon/gyeyang-gu/gyesan-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "label": "인천 계양구",
+            "urlPath": "/area/incheon/gyeyang-gu.html",
+            "matchedAlias": "계양구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "gyeyang-gu",
+            "regionName": "계양구",
+            "name": "계산동",
+            "legalName": "인천광역시 계양구 계산동",
+            "label": "인천 계양구 계산동",
+            "urlPath": "/area/incheon/gyeyang-gu/gyesan-dong.html",
+            "matchedAlias": "계산동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/volkswagen/arteon.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/volkswagen.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/gyeyang-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/gyeyang-gu/gyesan-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "계양구 계산동에서 폭스바겐 아테온 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224467471940",
+      "title": "용인 수지구 풍덕천동 2023년식 포드 브롱코 6세대 델코 AGM70 출장배터리교체 가격 및 비용 안내｜장기주차 후 충전과 교체 판단",
+      "url": "https://blog.naver.com/kang10107/224467471940",
+      "publishedAt": "2026-11-08",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224467471940.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDZfMTc3/MDAxNzkzOTU1NTYzMDY2.kfEjWPYHUH8Djfe1d3LEsVyaSuDiNyzCrOwoAUYUiCcg.agOOyx9tBp9Z00jVOgjWFooywxCDHWfNSy9pvjNTc9Mg.JPEG/image-6-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 오래 세워둔 포드 브롱코, 배터리를 충전해야 할까요? 한동안 사용하지 않았던 자동차를 다시 운행하려고 할 때 가장 신경 쓰이는 부분 중 하나가 배터리입니다. 시동이 정상적으로 걸릴지 걱정되기도 하고, 충전만 하면 충분한지 아니면 새 제품으로 교체해야 하는지 궁금하실 수 있습니다. 안녕하세요. 일등밧데리입니다. 이번에 소개해 드릴 차량은 경기 용인시 수지구 풍덕천동에서 출장배터리교체를 진행한 2023년식 포드 브롱코 6세대입니다. 장착한 제품은 델코 AGM70이며, 배터리 등록 작업까지 함께 진행했습니다. 출장.......",
+      "tags": [
+        "용인배터리",
+        "용인출장배터리",
+        "용인자동차배터리",
+        "용인배터리전문점",
+        "풍덕천동출장배터리",
+        "포드배터리",
+        "포드브롱코배터리",
+        "브롱코배터리",
+        "브롱코배터리가격",
+        "브롱코배터리교체비용",
+        "델코agm70",
+        "델코agm70가격",
+        "델코agm70교체비용",
+        "agm70가격",
+        "일등밧데리",
+        "배터리교체비용",
+        "차량배터리",
+        "출장배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "포드",
+        "manufacturers": [
+          {
+            "id": "ford",
+            "name": "포드"
+          }
+        ],
+        "vehicle": "포드 브롱코",
+        "vehicles": [
+          {
+            "manufacturerId": "ford",
+            "manufacturerName": "포드",
+            "vehicleName": "브롱코",
+            "displayName": "포드 브롱코",
+            "urlPath": "/car-battery/ford/bronco.html",
+            "matchedAlias": "포드 브롱코",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "ford",
+            "manufacturerName": "포드",
+            "vehicleName": "브롱코",
+            "displayName": "포드 브롱코",
+            "urlPath": "/car-battery/ford/bronco.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "yongin-si",
+          "regionName": "용인시",
+          "neighborhoodName": "풍덕천동",
+          "label": "경기 용인시 풍덕천동",
+          "urlPath": "/area/gyeonggi/yongin-si/pungdeokcheon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "yongin-si",
+            "regionName": "용인시",
+            "label": "경기 용인시",
+            "urlPath": "/area/gyeonggi/yongin-si.html",
+            "matchedAlias": "용인"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "yongin-si",
+            "regionName": "용인시",
+            "name": "풍덕천동",
+            "legalName": "경기도 용인시 수지구 풍덕천동",
+            "label": "경기 용인시 풍덕천동",
+            "urlPath": "/area/gyeonggi/yongin-si/pungdeokcheon-dong.html",
+            "matchedAlias": "풍덕천동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/ford/bronco.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/ford.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/yongin-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/yongin-si/pungdeokcheon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "용인시 풍덕천동에서 포드 브롱코 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224467466745",
       "title": "송파 석촌동 2023년식 쉐보레 트랙스 크로스오버 델코 AGM70 출장배터리교체 가격 및 비용 안내｜시동만 켜두면 배터리가 충전될까요?",
