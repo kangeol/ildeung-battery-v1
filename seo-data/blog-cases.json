@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-11T09:45:57.532Z",
+  "syncedAt": "2026-11-12T10:08:08.657Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 1,
-    "preservedPreviousPosts": 474,
+    "preservedPreviousPosts": 475,
     "duplicateRemoved": 49,
-    "thumbnailSuccess": 475,
+    "thumbnailSuccess": 476,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 427,
-    "vehicleMatches": 400,
-    "detailMatches": 94,
-    "regionMatches": 358,
-    "neighborhoodMatches": 296,
-    "batteryMatches": 357,
+    "manufacturerMatches": 428,
+    "vehicleMatches": 401,
+    "detailMatches": 95,
+    "regionMatches": 359,
+    "neighborhoodMatches": 297,
+    "batteryMatches": 358,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,180 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 358,
-    "actualRegionMatches": 358,
-    "actualNeighborhoodMatches": 296,
+    "actualAreaMatches": 359,
+    "actualRegionMatches": 359,
+    "actualNeighborhoodMatches": 297,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224473927474",
+      "title": "인천 연수구 연수동 2019년식 아우디 A5(F5) 델코 AGM95 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224473927474",
+      "publishedAt": "2026-11-12",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224473927474.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMTJfMjcw/MDAxNzk0NDQzMDI4OTQ2.So2Qhlpj_axyafKN5m2uQ8TOM6PXmt0x6yXbjBY6B7Ig.ZG4sY4vseb6ODphoCvACkCV1ya83zKQJNULNqmgOXLsg.JPEG/image-a5-f5-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 하루에 여러 번 운전하는데 배터리는 충분히 충전될까요? 안녕하세요. 일등밧데리입니다. 차량을 하루에 여러 번 사용하면 배터리도 충분히 충전되고 있다고 생각하기 쉽습니다. 그런데 가까운 거래처나 업무 장소를 오가면서 잠깐 운전하고 시동을 끄는 일이 반복된다면 이야기가 조금 달라집니다. 운행 횟수는 많아도 실제로 배터리가 충전될 시간은 부족할 수 있기 때문입니다. 오늘 소개할 차량은 인천 연수구 연수동에서 출장배터리교체를 진행한 2019년식 아우디 A5(F5)입니다. 이번 작업에는 델코 AGM95를 사용했으며, 신.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "연수구배터리",
+        "인천배터리교체",
+        "연수동배터리",
+        "연수동출장배터리",
+        "아우디배터리",
+        "a5배터리",
+        "아우디a5배터리",
+        "a5배터리가격",
+        "델코agm95",
+        "agm95",
+        "델코배터리",
+        "일등밧데리",
+        "출장배터리교체",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "아우디",
+        "manufacturers": [
+          {
+            "id": "audi",
+            "name": "아우디"
+          }
+        ],
+        "vehicle": "아우디 A5",
+        "vehicles": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A5",
+            "displayName": "아우디 A5",
+            "urlPath": "/car-battery/audi/a5.html",
+            "matchedAlias": "아우디 A5",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A5",
+            "displayVehicleName": "아우디 A5",
+            "label": "F5",
+            "slug": "f5",
+            "urlPath": "/car-battery/audi/a5/f5.html",
+            "vehicleUrlPath": "/car-battery/audi/a5.html",
+            "matchedAlias": "F5"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A5",
+            "displayName": "아우디 A5",
+            "urlPath": "/car-battery/audi/a5.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "yeonsu-gu",
+          "regionName": "연수구",
+          "neighborhoodName": "연수동",
+          "label": "인천 연수구 연수동",
+          "urlPath": "/area/incheon/yeonsu-gu/yeonsu-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "label": "인천 연수구",
+            "urlPath": "/area/incheon/yeonsu-gu.html",
+            "matchedAlias": "연수구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "name": "연수동",
+            "legalName": "인천광역시 연수구 연수동",
+            "label": "인천 연수구 연수동",
+            "urlPath": "/area/incheon/yeonsu-gu/yeonsu-dong.html",
+            "matchedAlias": "연수동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/audi/a5.html"
+          ],
+          "details": [
+            "/car-battery/audi/a5/f5.html"
+          ],
+          "manufacturers": [
+            "/car-battery/audi.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/yeonsu-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/yeonsu-gu/yeonsu-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "연수구 연수동에서 아우디 A5 F5 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224472589443",
       "title": "하남 덕풍동 2015년식 벤츠 E220 델코 AGM95 출장배터리교체 가격 및 비용 안내｜출퇴근 거리가 짧아졌을 때 배터리 관리",
