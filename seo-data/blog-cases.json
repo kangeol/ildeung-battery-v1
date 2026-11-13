@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-12T10:08:08.657Z",
+  "syncedAt": "2026-11-13T09:53:11.148Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 1,
-    "preservedPreviousPosts": 475,
+    "preservedPreviousPosts": 476,
     "duplicateRemoved": 49,
-    "thumbnailSuccess": 476,
+    "thumbnailSuccess": 477,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 428,
-    "vehicleMatches": 401,
+    "manufacturerMatches": 429,
+    "vehicleMatches": 402,
     "detailMatches": 95,
-    "regionMatches": 359,
-    "neighborhoodMatches": 297,
-    "batteryMatches": 358,
+    "regionMatches": 360,
+    "neighborhoodMatches": 298,
+    "batteryMatches": 359,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,167 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 359,
-    "actualRegionMatches": 359,
-    "actualNeighborhoodMatches": 297,
+    "actualAreaMatches": 360,
+    "actualRegionMatches": 360,
+    "actualNeighborhoodMatches": 298,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224475273792",
+      "title": "용산 용문동 2018년식 미니쿠퍼 바르타 AGM80 출장배터리교체 가격 및 비용 안내｜자주 운행해도 배터리 점검이 필요한 이유",
+      "url": "https://blog.naver.com/kang10107/224475273792",
+      "publishedAt": "2026-11-13",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224475273792.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMTNfMTQ0/MDAxNzk0NTI4Mjk5NjYz.bl6dEBQqN4PeiahD5yQlKqZ2B-qja8Ne2FSZmw4n5eEg.PY0c64v78yCoLDb2i_Bohk4gCnI-Mw8FUMedirzg0NQg.JPEG/image-image-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 하루에 차를 여러 번 타면 배터리 걱정은 안 해도 될까요? 안녕하세요. 일등밧데리입니다. 자동차를 자주 사용하는 분들은 배터리가 충분히 충전되고 있을 거라고 생각하시기도 합니다. 실제로 운행 중에는 배터리에 전기가 보충되지만, 여기서 중요한 것은 시동을 몇 번 걸었느냐보다 실제로 얼마나 충전됐느냐는 점입니다. 오늘 소개할 차량은 서울 용산구 용문동에서 배터리 교체를 진행한 2018년식 미니쿠퍼입니다. 이번에 장착한 제품은 바르타 AGM80이며, 출장 교체 비용은 24만원입니다. 신품 장착 후에는 배터리 등록 작.......",
+      "tags": [
+        "용산배터리",
+        "용산자동차배터리",
+        "용산출장배터리",
+        "용문동출장배터리",
+        "미니쿠퍼배터리",
+        "미니쿠퍼배터리가격",
+        "미니쿠퍼배터리교체비용",
+        "바르타배터리",
+        "바르타agm80",
+        "바르타agm80가격",
+        "바르타agm80교체비용",
+        "바르타배터리교체",
+        "agm80",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "미니",
+        "manufacturers": [
+          {
+            "id": "mini",
+            "name": "미니"
+          }
+        ],
+        "vehicle": "미니 쿠퍼",
+        "vehicles": [
+          {
+            "manufacturerId": "mini",
+            "manufacturerName": "미니",
+            "vehicleName": "쿠퍼",
+            "displayName": "미니 쿠퍼",
+            "urlPath": "/car-battery/mini/cooper.html",
+            "matchedAlias": "미니 쿠퍼",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "mini",
+            "manufacturerName": "미니",
+            "vehicleName": "쿠퍼",
+            "displayName": "미니 쿠퍼",
+            "urlPath": "/car-battery/mini/cooper.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "yongsan-gu",
+          "regionName": "용산구",
+          "neighborhoodName": "용문동",
+          "label": "서울 용산구 용문동",
+          "urlPath": "/area/seoul/yongsan-gu/yongmun-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yongsan-gu",
+            "regionName": "용산구",
+            "label": "서울 용산구",
+            "urlPath": "/area/seoul/yongsan-gu.html",
+            "matchedAlias": "용산"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yongsan-gu",
+            "regionName": "용산구",
+            "name": "용문동",
+            "legalName": "서울특별시 용산구 용문동",
+            "label": "서울 용산구 용문동",
+            "urlPath": "/area/seoul/yongsan-gu/yongmun-dong.html",
+            "matchedAlias": "용문동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/mini/cooper.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/mini.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/yongsan-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/yongsan-gu/yongmun-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "용산구 용문동에서 미니 쿠퍼 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224473927474",
       "title": "인천 연수구 연수동 2019년식 아우디 A5(F5) 델코 AGM95 출장배터리교체 가격 및 비용 안내｜일등밧데리",
