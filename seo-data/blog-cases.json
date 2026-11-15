@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-14T09:17:29.747Z",
+  "syncedAt": "2026-11-15T09:47:26.323Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 1,
-    "preservedPreviousPosts": 477,
+    "preservedPreviousPosts": 478,
     "duplicateRemoved": 49,
-    "thumbnailSuccess": 478,
+    "thumbnailSuccess": 479,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 430,
-    "vehicleMatches": 403,
+    "manufacturerMatches": 431,
+    "vehicleMatches": 404,
     "detailMatches": 95,
-    "regionMatches": 361,
-    "neighborhoodMatches": 299,
-    "batteryMatches": 360,
+    "regionMatches": 362,
+    "neighborhoodMatches": 300,
+    "batteryMatches": 361,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,161 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 361,
-    "actualRegionMatches": 361,
-    "actualNeighborhoodMatches": 299,
+    "actualAreaMatches": 362,
+    "actualRegionMatches": 362,
+    "actualNeighborhoodMatches": 300,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224477597912",
+      "title": "인천 부평구 청천동 2022년식 제네시스 GV70 델코 AGM80R 출장배터리교체 가격 및 비용 안내｜겨울철 단거리 운행과 배터리 관리",
+      "url": "https://blog.naver.com/kang10107/224477597912",
+      "publishedAt": "2026-11-15",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224477597912.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMTVfMTQz/MDAxNzk0NzAyMDMzMzYz.1mvI4tV7FGOaBgGyYzdM2VrHI1HCvtjhf-A91O_Eff4g.SLp5ZCrxHk6xpLLyedNzD-SGmVcsKyzULUljcz6Tth4g.JPEG/image-gv70-agm80r-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 겨울철 짧은 운행, 전기장치를 많이 사용해도 괜찮을까요? 안녕하세요. 일등밧데리입니다. 추운 날 자동차를 운전하면 히터와 열선시트, 열선핸들 등 여러 전기장치를 사용하게 됩니다. 그런데 출퇴근이나 가까운 거리 이동이 대부분이라면 배터리가 충분히 충전되고 있는지 궁금하실 수 있습니다. 오늘 소개해 드릴 차량은 인천 부평구 청천동에서 출장배터리교체를 진행한 2022년식 제네시스 GV70입니다. 이번 작업에는 델코 AGM80R을 사용했으며, 배터리 교체와 등록 작업을 함께 진행했습니다. 교체 비용은 21만원입니다. 이.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "인천자동차배터리",
+        "청천동출장배터리",
+        "제네시스배터리",
+        "제네시스gv70배터리",
+        "gv70배터리가격",
+        "gv70배터리교체",
+        "델코agm80",
+        "출장배터리교체",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "제네시스",
+        "manufacturers": [
+          {
+            "id": "genesis",
+            "name": "제네시스"
+          }
+        ],
+        "vehicle": "GV70",
+        "vehicles": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "GV70",
+            "displayName": "GV70",
+            "urlPath": "/car-battery/genesis/gv70.html",
+            "matchedAlias": "GV70",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "GV70",
+            "displayName": "GV70",
+            "urlPath": "/car-battery/genesis/gv70.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "bupyeong-gu",
+          "regionName": "부평구",
+          "neighborhoodName": "청천동",
+          "label": "인천 부평구 청천동",
+          "urlPath": "/area/incheon/bupyeong-gu/cheongcheon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "label": "인천 부평구",
+            "urlPath": "/area/incheon/bupyeong-gu.html",
+            "matchedAlias": "부평구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "name": "청천동",
+            "legalName": "인천광역시 부평구 청천동",
+            "label": "인천 부평구 청천동",
+            "urlPath": "/area/incheon/bupyeong-gu/cheongcheon-dong.html",
+            "matchedAlias": "청천동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/genesis/gv70.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/genesis.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/bupyeong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/bupyeong-gu/cheongcheon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "부평구 청천동에서 GV70 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224476592676",
       "title": "성남 수정구 위례동 2019년식 벤츠 E250 바르타 AGM80 출장배터리교체 가격 및 비용 안내｜주행거리 적은 차량의 배터리 관리",
