@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-15T09:47:26.323Z",
+  "syncedAt": "2026-11-16T10:04:58.080Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 1,
-    "preservedPreviousPosts": 478,
+    "preservedPreviousPosts": 479,
     "duplicateRemoved": 49,
-    "thumbnailSuccess": 479,
+    "thumbnailSuccess": 480,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 431,
-    "vehicleMatches": 404,
+    "manufacturerMatches": 432,
+    "vehicleMatches": 405,
     "detailMatches": 95,
-    "regionMatches": 362,
-    "neighborhoodMatches": 300,
-    "batteryMatches": 361,
+    "regionMatches": 363,
+    "neighborhoodMatches": 301,
+    "batteryMatches": 362,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,166 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 362,
-    "actualRegionMatches": 362,
-    "actualNeighborhoodMatches": 300,
+    "actualAreaMatches": 363,
+    "actualRegionMatches": 363,
+    "actualNeighborhoodMatches": 301,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224478689479",
+      "title": "마포구 공덕동 2021년식 KG모빌리티 베리뉴티볼리 델코 AGM70 출장배터리교체 가격 및 비용 안내｜장거리 운전 후 배터리 충전은 충분할까요?",
+      "url": "https://blog.naver.com/kang10107/224478689479",
+      "publishedAt": "2026-11-16",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224478689479.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMTZfMjEz/MDAxNzk0Nzg3OTQyNzUy.I-0EotBPY1Gklc8R4rYwUiPefKKn5clciTlG_K7R7Jsg.hxy2VIAQAj6veotyrjWXUffEThI7wVfEDSQWwBs7frkg.JPEG/kg-kg-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 가끔 장거리 운전하면 배터리 충전 걱정은 없어질까요? 안녕하세요. 일등밧데리입니다. 평소 가까운 거리만 운전하다가 주말에 멀리 다녀오면 배터리도 충분히 충전됐을 거라고 생각하기 쉽습니다. 실제로 주행 중에는 발전기를 통해 배터리에 전기가 보충됩니다. 하지만 한 번 장거리를 운행했다고 해서 배터리 상태가 모두 회복되는 것은 아닙니다. 오늘 소개할 차량은 서울 마포구 공덕동에서 배터리를 교체한 2021년식 KG모빌리티 베리뉴티볼리입니다. 이번 작업에 사용한 제품은 델코 AGM70이며, 출장배터리교체 비용은 17만.......",
+      "tags": [
+        "마포구배터리",
+        "마포구출장배터리",
+        "공덕동출장배터리",
+        "베리뉴티볼리배터리",
+        "티볼리배터리",
+        "베리뉴티볼리배터리가격",
+        "티볼리배터리가격",
+        "티볼리배터리교체비용",
+        "델코agm70",
+        "델코agm70가격",
+        "agm70가격",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "배터리교체",
+        "배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "KG모빌리티",
+        "manufacturers": [
+          {
+            "id": "kgm",
+            "name": "KG모빌리티"
+          }
+        ],
+        "vehicle": "티볼리",
+        "vehicles": [
+          {
+            "manufacturerId": "kgm",
+            "manufacturerName": "KG모빌리티",
+            "vehicleName": "티볼리",
+            "displayName": "티볼리",
+            "urlPath": "/car-battery/kgm/tivoli.html",
+            "matchedAlias": "티볼리",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kgm",
+            "manufacturerName": "KG모빌리티",
+            "vehicleName": "티볼리",
+            "displayName": "티볼리",
+            "urlPath": "/car-battery/kgm/tivoli.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "mapo-gu",
+          "regionName": "마포구",
+          "neighborhoodName": "공덕동",
+          "label": "서울 마포구 공덕동",
+          "urlPath": "/area/seoul/mapo-gu/gongdeok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "mapo-gu",
+            "regionName": "마포구",
+            "label": "서울 마포구",
+            "urlPath": "/area/seoul/mapo-gu.html",
+            "matchedAlias": "마포구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "mapo-gu",
+            "regionName": "마포구",
+            "name": "공덕동",
+            "legalName": "서울특별시 마포구 공덕동",
+            "label": "서울 마포구 공덕동",
+            "urlPath": "/area/seoul/mapo-gu/gongdeok-dong.html",
+            "matchedAlias": "공덕동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kgm/tivoli.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/kgm.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/mapo-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/mapo-gu/gongdeok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "마포구 공덕동에서 티볼리 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224477597912",
       "title": "인천 부평구 청천동 2022년식 제네시스 GV70 델코 AGM80R 출장배터리교체 가격 및 비용 안내｜겨울철 단거리 운행과 배터리 관리",
