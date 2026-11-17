@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-16T10:04:58.080Z",
+  "syncedAt": "2026-11-17T11:00:24.615Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 1,
-    "preservedPreviousPosts": 479,
-    "duplicateRemoved": 49,
-    "thumbnailSuccess": 480,
+    "newPosts": 2,
+    "preservedPreviousPosts": 480,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 482,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 432,
-    "vehicleMatches": 405,
-    "detailMatches": 95,
-    "regionMatches": 363,
-    "neighborhoodMatches": 301,
-    "batteryMatches": 362,
+    "manufacturerMatches": 434,
+    "vehicleMatches": 407,
+    "detailMatches": 97,
+    "regionMatches": 365,
+    "neighborhoodMatches": 303,
+    "batteryMatches": 364,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,355 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 363,
-    "actualRegionMatches": 363,
-    "actualNeighborhoodMatches": 301,
+    "actualAreaMatches": 365,
+    "actualRegionMatches": 365,
+    "actualNeighborhoodMatches": 303,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224480141457",
+      "title": "인천 연수구 옥련동 2019년식 현대 싼타페TM 델코 AGM95 출장배터리교체 가격 및 비용 안내｜일등밧데리",
+      "url": "https://blog.naver.com/kang10107/224480141457",
+      "publishedAt": "2026-11-17",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224480141457.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMTdfMzYg/MDAxNzk0ODc1NDA3Mjk3.6M8N-joNiwRjWvXEZzLeGY1Vcc2QJt8MB7UUC2OwwsMg.dnqin0y8NZ2QZv0N4i0v9tLzVLEWEIh9frGmHi7p6uIg.JPEG/image-tm-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 점프 시동 후 다시 잘 걸리면 안심해도 될까요? 안녕하세요. 일등밧데리입니다. 배터리가 방전돼 점프 시동을 받은 뒤 다시 정상적으로 시동이 걸리면 일단 문제가 해결됐다고 생각하기 쉽습니다. 그런데 지금 시동이 걸린다는 사실과 다음에도 문제없이 시동을 걸 수 있다는 것은 조금 다른 이야기입니다. 오늘 소개할 차량은 인천 연수구 옥련동에서 출장배터리교체를 진행한 2019년식 현대 싼타페TM입니다. 이번 작업에는 델코 AGM95를 사용했으며, 교체 비용은 22만원입니다. 실제 교체 내용과 함께 점프 시동 이후 배터리 상.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리",
+        "인천자동차배터리",
+        "인천배터리교체",
+        "연수구배터리",
+        "옥련동배터리",
+        "옥련동출장배터리",
+        "싼타페배터리",
+        "싼타페배터리가격",
+        "싼타페배터리교체",
+        "싼타페tm배터리",
+        "싼타페tm배터리가격",
+        "델코agm95",
+        "agm95",
+        "델코agm95배터리",
+        "일등밧데리",
+        "배터리교체",
+        "출장배터리교체",
+        "자동차배터리교체",
+        "자동차배터리교체비용"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "현대",
+        "manufacturers": [
+          {
+            "id": "hyundai",
+            "name": "현대"
+          }
+        ],
+        "vehicle": "싼타페",
+        "vehicles": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "싼타페",
+            "displayName": "싼타페",
+            "urlPath": "/car-battery/hyundai/santafe.html",
+            "matchedAlias": "싼타페",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "싼타페",
+            "displayVehicleName": "싼타페",
+            "label": "TM",
+            "slug": "tm",
+            "urlPath": "/car-battery/hyundai/santafe/tm.html",
+            "vehicleUrlPath": "/car-battery/hyundai/santafe.html",
+            "matchedAlias": "TM"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "hyundai",
+            "manufacturerName": "현대",
+            "vehicleName": "싼타페",
+            "displayName": "싼타페",
+            "urlPath": "/car-battery/hyundai/santafe.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "yeonsu-gu",
+          "regionName": "연수구",
+          "neighborhoodName": "옥련동",
+          "label": "인천 연수구 옥련동",
+          "urlPath": "/area/incheon/yeonsu-gu/okryeon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "label": "인천 연수구",
+            "urlPath": "/area/incheon/yeonsu-gu.html",
+            "matchedAlias": "연수구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "name": "옥련동",
+            "legalName": "인천광역시 연수구 옥련동",
+            "label": "인천 연수구 옥련동",
+            "urlPath": "/area/incheon/yeonsu-gu/okryeon-dong.html",
+            "matchedAlias": "옥련동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/hyundai/santafe.html"
+          ],
+          "details": [
+            "/car-battery/hyundai/santafe/tm.html"
+          ],
+          "manufacturers": [
+            "/car-battery/hyundai.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/yeonsu-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/yeonsu-gu/okryeon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "연수구 옥련동에서 싼타페 TM AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224480135801",
+      "title": "수원 장안구 파장동 2022년식 KIA 카니발 4세대 KA4 델코 AGM80 출장배터리교체 가격 및 비용 안내｜첫 점프 시동 후 배터리 교체 판단",
+      "url": "https://blog.naver.com/kang10107/224480135801",
+      "publishedAt": "2026-11-17",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224480135801.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMTdfODEg/MDAxNzk0ODc1MTAxNTMx.k4ZwSpQ9nbzW-5rwVZrCgU0GQNLXba_XGCvrkcbRvzIg.rtqBH-D5BDVuIVg37AC6P05LK1bayFkcM1DtLU2UD4Ig.JPEG/image-kia-4-ka4-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 점프 시동을 한 번 받았다면 배터리부터 바꿔야 할까요? 안녕하세요. 일등밧데리입니다. 자동차배터리가 방전돼 처음으로 점프 시동을 받았다면 고민이 생깁니다. 다시 시동이 걸리니 그대로 사용해도 될 것 같지만, 다음에도 같은 일이 생기지 않을까 걱정되기 때문입니다. 그렇다고 점프 시동을 한 번 받았다는 이유만으로 배터리를 반드시 교체해야 하는 것은 아닙니다. 오늘 소개할 작업은 경기 수원시 장안구 파장동에서 진행한 2022년식 기아 카니발 4세대 KA4 배터리 교체입니다. 이번에는 델코 AGM80을 장착했으며 출장.......",
+      "tags": [
+        "수원배터리",
+        "수원출장배터리",
+        "수원자동차배터리",
+        "파장동출장배터리",
+        "카니발4세대배터리",
+        "카니발배터리",
+        "카니발배터리교체",
+        "카니발4세대배터리교체",
+        "agm80",
+        "agm80교체",
+        "agm80가격",
+        "델코agm80",
+        "델코agm80교체",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리",
+        "배터리교체",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "카니발",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "카니발",
+            "displayName": "카니발",
+            "urlPath": "/car-battery/kia/carnival.html",
+            "matchedAlias": "카니발",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "카니발",
+            "displayVehicleName": "카니발",
+            "label": "KA4",
+            "slug": "ka4",
+            "urlPath": "/car-battery/kia/carnival/ka4.html",
+            "vehicleUrlPath": "/car-battery/kia/carnival.html",
+            "matchedAlias": "KA4"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "카니발",
+            "displayName": "카니발",
+            "urlPath": "/car-battery/kia/carnival.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "suwon-si",
+          "regionName": "수원시",
+          "neighborhoodName": "파장동",
+          "label": "경기 수원시 파장동",
+          "urlPath": "/area/gyeonggi/suwon-si/pajang-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "suwon-si",
+            "regionName": "수원시",
+            "label": "경기 수원시",
+            "urlPath": "/area/gyeonggi/suwon-si.html",
+            "matchedAlias": "수원"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "suwon-si",
+            "regionName": "수원시",
+            "name": "파장동",
+            "legalName": "경기도 수원시 장안구 파장동",
+            "label": "경기 수원시 파장동",
+            "urlPath": "/area/gyeonggi/suwon-si/pajang-dong.html",
+            "matchedAlias": "파장동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/carnival.html"
+          ],
+          "details": [
+            "/car-battery/kia/carnival/ka4.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/suwon-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/suwon-si/pajang-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "수원시 파장동에서 카니발 KA4 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224478689479",
       "title": "마포구 공덕동 2021년식 KG모빌리티 베리뉴티볼리 델코 AGM70 출장배터리교체 가격 및 비용 안내｜장거리 운전 후 배터리 충전은 충분할까요?",
