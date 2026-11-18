@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-17T11:00:24.615Z",
+  "syncedAt": "2026-11-18T10:34:04.777Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -480,16 +480,16 @@
   "stats": {
     "fetchedPosts": 50,
     "newPosts": 2,
-    "preservedPreviousPosts": 480,
+    "preservedPreviousPosts": 482,
     "duplicateRemoved": 48,
-    "thumbnailSuccess": 482,
+    "thumbnailSuccess": 484,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 434,
-    "vehicleMatches": 407,
+    "manufacturerMatches": 436,
+    "vehicleMatches": 409,
     "detailMatches": 97,
-    "regionMatches": 365,
-    "neighborhoodMatches": 303,
-    "batteryMatches": 364,
+    "regionMatches": 367,
+    "neighborhoodMatches": 305,
+    "batteryMatches": 366,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,313 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 365,
-    "actualRegionMatches": 365,
-    "actualNeighborhoodMatches": 303,
+    "actualAreaMatches": 367,
+    "actualRegionMatches": 367,
+    "actualNeighborhoodMatches": 305,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224481656611",
+      "title": "양천구 목동 2020년식 쉐보레 트레일블레이저 델코 AGM70 출장배터리교체 가격 및 비용 안내｜첫 배터리 교체와 단거리 운행 관리",
+      "url": "https://blog.naver.com/kang10107/224481656611",
+      "publishedAt": "2026-11-18",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224481656611.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMThfMjMy/MDAxNzk0OTY1MjY1MDYx.E0XikB61MPLd35YXbn4Bwp9rj1WLLsisIO31wCaduDQg.tCEb8L4VuumctQxWnidQCOQBnGaUXl02sKZF8v7SRK8g.JPEG/image-image-agm70-mok-dong-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 배터리를 새것으로 바꿔도 운행 습관은 그대로라면? 안녕하세요. 일등밧데리입니다. 자동차배터리를 처음 교체하실 때는 어떤 제품을 장착할지, 비용은 얼마인지부터 궁금하실 텐데요. 그런데 배터리를 교체하고 나서도 한 가지 생각해볼 부분이 있습니다. 바로 평소 차량을 어떻게 사용하고 있는지입니다. 가까운 거리만 반복해서 운행한다면 새 배터리를 장착한 뒤에도 이전과 같은 충전 환경이 이어질 수 있기 때문입니다. 오늘은 서울 양천구 목동에서 진행한 2020년식 쉐보레 트레일블레이저 출장배터리교체 작업을 소개해.......",
+      "tags": [
+        "양천구배터리",
+        "양천구출장배터리",
+        "목동배터리",
+        "트레일블레이저배터리",
+        "트레일블레이저배터리교체",
+        "트레일블레이저배터리교체비용",
+        "자동차배터리",
+        "출장배터리",
+        "배터리교체",
+        "출장배터리교체비용",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "쉐보레",
+        "manufacturers": [
+          {
+            "id": "chevrolet",
+            "name": "쉐보레"
+          }
+        ],
+        "vehicle": "트레일블레이저",
+        "vehicles": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트레일블레이저",
+            "displayName": "트레일블레이저",
+            "urlPath": "/car-battery/chevrolet/trailblazer.html",
+            "matchedAlias": "트레일블레이저",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "chevrolet",
+            "manufacturerName": "쉐보레",
+            "vehicleName": "트레일블레이저",
+            "displayName": "트레일블레이저",
+            "urlPath": "/car-battery/chevrolet/trailblazer.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "yangcheon-gu",
+          "regionName": "양천구",
+          "neighborhoodName": "목동",
+          "label": "서울 양천구 목동",
+          "urlPath": "/area/seoul/yangcheon-gu/mok-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yangcheon-gu",
+            "regionName": "양천구",
+            "label": "서울 양천구",
+            "urlPath": "/area/seoul/yangcheon-gu.html",
+            "matchedAlias": "양천구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "yangcheon-gu",
+            "regionName": "양천구",
+            "name": "목동",
+            "legalName": "서울특별시 양천구 목동",
+            "label": "서울 양천구 목동",
+            "urlPath": "/area/seoul/yangcheon-gu/mok-dong.html",
+            "matchedAlias": "목동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/chevrolet/trailblazer.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/chevrolet.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/yangcheon-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/yangcheon-gu/mok-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "양천구 목동에서 트레일블레이저 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224481598390",
+      "title": "인천 연수구 연수동 2015년식 아우디 A4 35TDI 델코 AGM95 출장배터리교체 가격 및 비용 안내｜시동이 약해질 때 확인할 사항",
+      "url": "https://blog.naver.com/kang10107/224481598390",
+      "publishedAt": "2026-11-18",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224481598390.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMThfMzYg/MDAxNzk0OTYyNjc3OTY1.xQXZFFEc-llLyFZsBnQAIapKHOdKf8AiuzaMBWtqRV8g.vtwX76Gn7IPTFORhyCnosFzGWpO2lTFIRCLy9udS6gsg.JPEG/image-a4-35tdi-agm95-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 아우디 A4 시동이 힘겹다면 배터리부터 교체해야 할까요? 자동차를 오래 운행하다 보면 시동을 걸 때 예전보다 힘이 부족하게 느껴지는 순간이 있습니다. 특히 수입차는 배터리를 교체한 뒤 차량에 필요한 등록 작업도 확인해야 하므로 제품 선택부터 신경 쓰이실 텐데요. 안녕하세요. 일등밧데리입니다. 이번에는 인천 연수구 연수동에서 2015년식 아우디 A4 35TDI 배터리를 교체했습니다. 장착한 제품은 델코 AGM95이며, 신품 교체와 배터리 등록 작업까지 진행했습니다. 출장배터리교체 비용은 22만원입니다. 오늘은 아우디 A.......",
+      "tags": [
+        "인천배터리",
+        "인천출장배터리교체",
+        "인천자동차배터리",
+        "연수구배터리",
+        "연수동출장배터리",
+        "아우디배터리",
+        "아우디a4배터리",
+        "a4배터리가격",
+        "a4배터리교체비용",
+        "델코agm95",
+        "agm95",
+        "agm95가격",
+        "일등밧데리",
+        "출장배터리",
+        "자동차배터리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "아우디",
+        "manufacturers": [
+          {
+            "id": "audi",
+            "name": "아우디"
+          }
+        ],
+        "vehicle": "아우디 A4",
+        "vehicles": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A4",
+            "displayName": "아우디 A4",
+            "urlPath": "/car-battery/audi/a4.html",
+            "matchedAlias": "아우디 A4",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "audi",
+            "manufacturerName": "아우디",
+            "vehicleName": "A4",
+            "displayName": "아우디 A4",
+            "urlPath": "/car-battery/audi/a4.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "yeonsu-gu",
+          "regionName": "연수구",
+          "neighborhoodName": "연수동",
+          "label": "인천 연수구 연수동",
+          "urlPath": "/area/incheon/yeonsu-gu/yeonsu-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "label": "인천 연수구",
+            "urlPath": "/area/incheon/yeonsu-gu.html",
+            "matchedAlias": "연수구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "yeonsu-gu",
+            "regionName": "연수구",
+            "name": "연수동",
+            "legalName": "인천광역시 연수구 연수동",
+            "label": "인천 연수구 연수동",
+            "urlPath": "/area/incheon/yeonsu-gu/yeonsu-dong.html",
+            "matchedAlias": "연수동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95"
+        ],
+        "symptoms": [
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/audi/a4.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/audi.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/yeonsu-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/yeonsu-gu/yeonsu-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "연수구 연수동에서 아우디 A4 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224480141457",
       "title": "인천 연수구 옥련동 2019년식 현대 싼타페TM 델코 AGM95 출장배터리교체 가격 및 비용 안내｜일등밧데리",
