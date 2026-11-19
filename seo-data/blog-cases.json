@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-18T10:34:04.777Z",
+  "syncedAt": "2026-11-19T10:40:35.066Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 482,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 484,
+    "newPosts": 1,
+    "preservedPreviousPosts": 484,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 485,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 436,
-    "vehicleMatches": 409,
-    "detailMatches": 97,
-    "regionMatches": 367,
-    "neighborhoodMatches": 305,
-    "batteryMatches": 366,
+    "manufacturerMatches": 437,
+    "vehicleMatches": 410,
+    "detailMatches": 98,
+    "regionMatches": 368,
+    "neighborhoodMatches": 306,
+    "batteryMatches": 367,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,181 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 367,
-    "actualRegionMatches": 367,
-    "actualNeighborhoodMatches": 305,
+    "actualAreaMatches": 368,
+    "actualRegionMatches": 368,
+    "actualNeighborhoodMatches": 306,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224483005968",
+      "title": "용인시 수지구 죽전동 2021년식 제네시스 G80 RG3 델코 AGM95R 출장배터리교체 가격 및 비용 안내｜점프 후 시동이 다시 약해질 때",
+      "url": "https://blog.naver.com/kang10107/224483005968",
+      "publishedAt": "2026-11-19",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224483005968.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMTlfMjUz/MDAxNzk1MDQ3MTI5OTg0.Mz-BBvOFp-s_rrY3T4DqQZypKM3QcoMPVBDPpEtYSvcg.Q6VgVTh6c2bbjsp-Xz6GkDsKSxfsSFtyLRtBkO79yp8g.JPEG/image-g80-rg3-agm95r-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 점프 시동을 받았는데 또 시동이 약하다면? 안녕하세요. 일등밧데리입니다. 배터리가 방전돼 점프 시동을 받은 뒤 차량을 다시 사용할 수 있게 되면 일단 안심하게 됩니다. 그런데 이후에도 시동이 힘겹게 걸린다면 기존 배터리를 계속 사용해도 될지 고민되실 텐데요. 이때 중요한 것은 점프 시동으로 엔진을 다시 작동시킨 것과 배터리가 정상적인 성능을 회복한 것은 다르다는 점입니다. 오늘 소개할 차량은 경기 용인시 수지구 죽전동에서 배터리 교체를 진행한 2021년식 제네시스 G80 RG3입니다. 이번 작업에는 델코 AGM95R.......",
+      "tags": [
+        "용인배터리",
+        "용인출장배터리",
+        "죽전동출장배터리",
+        "제네시스배터리",
+        "제네시스g80배터리",
+        "g80배터리",
+        "g80배터리가격",
+        "델코agm95r",
+        "델코agm95r가격",
+        "출장배터리교체",
+        "배터리교체비용",
+        "자동차배터리",
+        "배터리교체",
+        "자동차밧데리",
+        "일등밧데리"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "제네시스",
+        "manufacturers": [
+          {
+            "id": "genesis",
+            "name": "제네시스"
+          }
+        ],
+        "vehicle": "G80",
+        "vehicles": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "G80",
+            "displayName": "G80",
+            "urlPath": "/car-battery/genesis/g80.html",
+            "matchedAlias": "G80",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "G80",
+            "displayVehicleName": "G80",
+            "label": "RG3",
+            "slug": "rg3",
+            "urlPath": "/car-battery/genesis/g80/rg3.html",
+            "vehicleUrlPath": "/car-battery/genesis/g80.html",
+            "matchedAlias": "RG3"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "G80",
+            "displayName": "G80",
+            "urlPath": "/car-battery/genesis/g80.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "yongin-si",
+          "regionName": "용인시",
+          "neighborhoodName": "죽전동",
+          "label": "경기 용인시 죽전동",
+          "urlPath": "/area/gyeonggi/yongin-si/jukjeon-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "yongin-si",
+            "regionName": "용인시",
+            "label": "경기 용인시",
+            "urlPath": "/area/gyeonggi/yongin-si.html",
+            "matchedAlias": "용인시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "yongin-si",
+            "regionName": "용인시",
+            "name": "죽전동",
+            "legalName": "경기도 용인시 수지구 죽전동",
+            "label": "경기 용인시 죽전동",
+            "urlPath": "/area/gyeonggi/yongin-si/jukjeon-dong.html",
+            "matchedAlias": "죽전동"
+          }
+        ],
+        "batteryModels": [
+          "AGM95",
+          "AGM95R"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/genesis/g80.html"
+          ],
+          "details": [
+            "/car-battery/genesis/g80/rg3.html"
+          ],
+          "manufacturers": [
+            "/car-battery/genesis.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/yongin-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/yongin-si/jukjeon-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm95.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "용인시 죽전동에서 G80 RG3 AGM95 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 2
+      }
+    },
     {
       "id": "224481656611",
       "title": "양천구 목동 2020년식 쉐보레 트레일블레이저 델코 AGM70 출장배터리교체 가격 및 비용 안내｜첫 배터리 교체와 단거리 운행 관리",
