@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "approval": "ILDEUNG_REMOVE_TWO_OWNER_DELETED_NAVER_POSTS_FROM_WEBSITE_V1",
+  "approvedAt": "2026-11-21",
+  "reason": "Owner deleted these exact Naver posts and authorized website removal.",
+  "posts": [
+    {
+      "id": "224463108563",
+      "url": "https://blog.naver.com/kang10107/224463108563",
+      "publishedAt": "2026-11-04"
+    },
+    {
+      "id": "224460886606",
+      "url": "https://blog.naver.com/kang10107/224460886606",
+      "publishedAt": "2026-11-01"
+    }
+  ]
+}

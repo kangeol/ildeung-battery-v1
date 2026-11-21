@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { isSuppressedBlogCase } from "./lib/blog-case-suppression.js";
 import {
   BLOG_CASE_FALLBACK_IMAGE,
   BLOG_CASES_FILE,
@@ -30,6 +31,7 @@ function main() {
   assert(fs.existsSync(BLOG_CASES_FILE), "seo-data/blog-cases.json is missing");
   const archive = JSON.parse(fs.readFileSync(BLOG_CASES_FILE, "utf8"));
   const posts = Array.isArray(archive.posts) ? archive.posts : [];
+  assert(!posts.some(isSuppressedBlogCase), "Owner-deleted blog post remains in archive");
   const index = createBlogCaseIndex();
   const manufacturerIds = new Set(index.manufacturers.map((manufacturer) => manufacturer.id));
   const vehicleByPath = new Map(index.vehicles.map((vehicle) => [vehicle.urlPath, vehicle]));

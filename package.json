@@ -1,6 +1,7 @@
 {
   "type": "module",
   "scripts": {
+    "test:blog-case-suppression": "node tools/test-blog-case-suppression.js",
     "test:canonical-generated-validation": "node tools/test-canonical-generated-validation.js",
     "test:blog-case-selection": "node tools/test-blog-case-selection.js",
     "test:indexnow-batches": "node tools/test-indexnow-batches.js",

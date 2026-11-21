@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
+import { pathToFileURL } from "node:url";
+import { filterSuppressedBlogCases } from "./lib/blog-case-suppression.js";
 import {
   BLOG_CASE_FALLBACK_IMAGE,
   BLOG_CASES_ASSET_DIR,
@@ -198,7 +200,9 @@ function mergePost(existingPost = {}, incomingPost = {}) {
   return merged;
 }
 
-function mergePosts(existingPosts, fetchedPosts) {
+export function mergePosts(existingPosts, fetchedPosts) {
+  existingPosts = filterSuppressedBlogCases(existingPosts);
+  fetchedPosts = filterSuppressedBlogCases(fetchedPosts);
   const byKey = new Map();
   const existingKeys = new Set();
   const urlToKey = new Map();
@@ -279,7 +283,7 @@ function hasMaterialArchiveChange(existing, candidate) {
   return JSON.stringify(archiveForComparison(existing)) !== JSON.stringify(archiveForComparison(candidate));
 }
 
-async function main() {
+export async function main() {
   console.log("Naver Blog Cases Sync Start");
   console.log("");
   console.log(`Blog URL: ${BLOG_URL}`);
@@ -409,7 +413,7 @@ async function main() {
   console.log("Naver Blog Cases Sync Complete");
 }
 
-main().catch((error) => {
+if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) main().catch((error) => {
   console.error("Naver Blog Cases Sync Failed");
   console.error(error.message);
   process.exit(1);

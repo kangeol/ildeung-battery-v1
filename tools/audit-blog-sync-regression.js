@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { isApprovedBlogCaseRemoval } from "./lib/blog-case-suppression.js";
 import {assertMohaveDataset,assertMohaveWorkbook,assertMohaveThumbnail,approvedVehicleCount,approvedVehiclePageCount} from './lib/mohave-approved-data.js';
 import { launcherMarkup } from "./lib/smart-consult-launcher.js";
 import path from "node:path";
@@ -347,6 +348,7 @@ function compareBlogCaseHistory(currentPosts) {
   const previousPosts = JSON.parse(previous).posts || [];
   const currentById = new Map(currentPosts.map((post) => [post.id, post]));
   let historicalLoss = 0;
+  let approvedOwnerRemovals = 0;
   let originalUrlChanged = 0;
   let originalTitleChanged = 0;
   let publishedAtChanged = 0;
@@ -357,6 +359,10 @@ function compareBlogCaseHistory(currentPosts) {
     const currentPost = currentById.get(previousPost.id);
 
     if (!currentPost) {
+      if (isApprovedBlogCaseRemoval(previousPost)) {
+        approvedOwnerRemovals += 1;
+        return;
+      }
       historicalLoss += 1;
       return;
     }
@@ -392,6 +398,7 @@ function compareBlogCaseHistory(currentPosts) {
 
   return {
     previousPosts: previousPosts.length,
+    approvedOwnerRemovals,
     historicalLoss,
     originalUrlChanged,
     originalTitleChanged,

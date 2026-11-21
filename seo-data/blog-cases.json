@@ -482,14 +482,14 @@
     "newPosts": 3,
     "preservedPreviousPosts": 485,
     "duplicateRemoved": 47,
-    "thumbnailSuccess": 488,
+    "thumbnailSuccess": 486,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 440,
-    "vehicleMatches": 413,
-    "detailMatches": 99,
-    "regionMatches": 371,
-    "neighborhoodMatches": 308,
-    "batteryMatches": 370,
+    "manufacturerMatches": 438,
+    "vehicleMatches": 411,
+    "detailMatches": 98,
+    "regionMatches": 369,
+    "neighborhoodMatches": 306,
+    "batteryMatches": 368,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,9 +500,9 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 371,
-    "actualRegionMatches": 371,
-    "actualNeighborhoodMatches": 308,
+    "actualAreaMatches": 369,
+    "actualRegionMatches": 369,
+    "actualNeighborhoodMatches": 306,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
@@ -5366,167 +5366,6 @@
       }
     },
     {
-      "id": "224463108563",
-      "title": "광명 일직동 2020년식 폭스바겐 티구안 델코 AGM70 출장배터리교체 가격 및 비용 안내｜배터리 장기간 누적 사용",
-      "url": "https://blog.naver.com/kang10107/224463108563",
-      "publishedAt": "2026-11-04",
-      "publishedAtBasis": "naver-rss-kst",
-      "thumbnail": "/assets/blog-cases/224463108563.webp",
-      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDNfMTc3/MDAxNzkzNjY0MzM0MzE5.q2VZ2mJaHhGFxDLKsoOl65DuzT1Lb-p_hHOGnP7kDYAg.SBnaQjkdO31Kuh4esGINjskVDKiL6l-Vh6q4OHTc-rEg.JPEG/image-image-agm70-image-replacement-01-01.jpg?type=s3",
-      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 배터리에 금이 보인다면 시동이 걸려도 주의해야 합니다 안녕하세요. 일등밧데리입니다. 이번에 소개해 드릴 차량은 경기 광명시 일직동에서 출장 배터리 교체를 진행한 2020년식 폭스바겐 티구안입니다. 고객님께서 연락하신 이유는 시동 불량이 아니라 배터리 겉면에 금이 간 것처럼 보이는 부분을 발견하셨기 때문입니다. 자동차배터리는 평소 시동이 잘 걸리면 별다른 문제가 없다고 생각하기 쉽습니다. 하지만 배터리 케이스에 실제로 균열이 생겼다면 이야기가 달라집니다. 내부 전해액이 새거나 가스가 배출되는 등 안전.......",
-      "tags": [
-        "광명배터리",
-        "광명출장배터리",
-        "광명자동차배터리",
-        "일직동출장배터리",
-        "폭스바겐배터리",
-        "폭스바겐티구안배터리",
-        "폭스바겐티구안배터리교체",
-        "티구안배터리",
-        "티구안배터리가격",
-        "티구안배터리교체비용",
-        "티구안배터리교체",
-        "델코agm70",
-        "agm70",
-        "agm70가격",
-        "델코agm70배터리",
-        "일등밧데리",
-        "출장배터리교체",
-        "출장배터리비용",
-        "출장배터리가격",
-        "자동차배터리교체",
-        "자동차배터리",
-        "자동차배터리교체비용"
-      ],
-      "thumbnailStatus": "downloaded",
-      "thumbnailError": "",
-      "sources": [],
-      "facts": {
-        "manufacturer": "폭스바겐",
-        "manufacturers": [
-          {
-            "id": "volkswagen",
-            "name": "폭스바겐"
-          }
-        ],
-        "vehicle": "폭스바겐 티구안",
-        "vehicles": [
-          {
-            "manufacturerId": "volkswagen",
-            "manufacturerName": "폭스바겐",
-            "vehicleName": "티구안",
-            "displayName": "폭스바겐 티구안",
-            "urlPath": "/car-battery/volkswagen/tiguan.html",
-            "matchedAlias": "폭스바겐 티구안",
-            "specificity": "vehicle"
-          }
-        ],
-        "detailModels": [],
-        "vehicleHierarchy": [
-          {
-            "manufacturerId": "volkswagen",
-            "manufacturerName": "폭스바겐",
-            "vehicleName": "티구안",
-            "displayName": "폭스바겐 티구안",
-            "urlPath": "/car-battery/volkswagen/tiguan.html",
-            "specificity": "vehicle"
-          }
-        ],
-        "actualWorkLocation": {
-          "level": "neighborhood",
-          "areaId": "gyeonggi",
-          "areaName": "경기",
-          "regionId": "gwangmyeong-si",
-          "regionName": "광명시",
-          "neighborhoodName": "일직동",
-          "label": "경기 광명시 일직동",
-          "urlPath": "/area/gyeonggi/gwangmyeong-si/iljik-dong.html"
-        },
-        "mentionedServiceAreas": [],
-        "areas": [
-          {
-            "areaId": "gyeonggi",
-            "areaName": "경기",
-            "label": "경기",
-            "urlPath": "/area/gyeonggi/"
-          }
-        ],
-        "regions": [
-          {
-            "areaId": "gyeonggi",
-            "areaName": "경기",
-            "regionId": "gwangmyeong-si",
-            "regionName": "광명시",
-            "label": "경기 광명시",
-            "urlPath": "/area/gyeonggi/gwangmyeong-si.html",
-            "matchedAlias": "광명"
-          }
-        ],
-        "neighborhoods": [
-          {
-            "areaId": "gyeonggi",
-            "areaName": "경기",
-            "regionId": "gwangmyeong-si",
-            "regionName": "광명시",
-            "name": "일직동",
-            "legalName": "경기도 광명시 일직동",
-            "label": "경기 광명시 일직동",
-            "urlPath": "/area/gyeonggi/gwangmyeong-si/iljik-dong.html",
-            "matchedAlias": "일직동"
-          }
-        ],
-        "batteryModels": [
-          "AGM70"
-        ],
-        "symptoms": [
-          "시동불량",
-          "시동 불량",
-          "교체",
-          "점검",
-          "코딩"
-        ],
-        "matchedPages": {
-          "vehicles": [
-            "/car-battery/volkswagen/tiguan.html"
-          ],
-          "details": [],
-          "manufacturers": [
-            "/car-battery/volkswagen.html"
-          ],
-          "areas": [
-            "/area/gyeonggi/"
-          ],
-          "regions": [
-            "/area/gyeonggi/gwangmyeong-si.html"
-          ],
-          "neighborhoods": [
-            "/area/gyeonggi/gwangmyeong-si/iljik-dong.html"
-          ],
-          "batteries": [
-            "/battery/agm/",
-            "/battery/agm/price.html",
-            "/battery/agm/capacity/agm70.html",
-            "/battery/",
-            "/battery/car-battery.html",
-            "/battery/replacement.html",
-            "/battery/price.html",
-            "/battery/mobile-replacement.html"
-          ]
-        }
-      },
-      "summary": "광명시 일직동에서 폭스바겐 티구안 AGM70 배터리 교체 실제 작업 사례입니다.",
-      "matchConfidence": {
-        "manufacturer": 1,
-        "vehicle": 1,
-        "detail": 0,
-        "actualLocation": 1,
-        "mentionedServiceArea": 0,
-        "region": 1,
-        "neighborhood": 1,
-        "battery": 1
-      }
-    },
-    {
       "id": "224463103043",
       "title": "강동구 길동 2017년식 BMW640D 바르타 실버 AGM95 출장배터리교체 가격 및 비용 안내｜시동불량으로 인한 배터리교체",
       "url": "https://blog.naver.com/kang10107/224463103043",
@@ -6456,173 +6295,6 @@
         }
       },
       "summary": "강동구 길동에서 BMW 5시리즈 G30 AGM95 배터리 교체 실제 작업 사례입니다.",
-      "matchConfidence": {
-        "manufacturer": 1,
-        "vehicle": 1,
-        "detail": 1,
-        "actualLocation": 1,
-        "mentionedServiceArea": 0,
-        "region": 1,
-        "neighborhood": 1,
-        "battery": 1
-      }
-    },
-    {
-      "id": "224460886606",
-      "title": "인천 연수구 동춘동 2015년식 현대 그랜저HG 델코 AGM70 출장배터리교체 가격 및 비용 안내｜일등밧데리",
-      "url": "https://blog.naver.com/kang10107/224460886606",
-      "publishedAt": "2026-11-01",
-      "publishedAtBasis": "naver-rss-kst",
-      "thumbnail": "/assets/blog-cases/224460886606.webp",
-      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMDFfMTI5/MDAxNzkzNDk1NjY5NzIy.PBMmkVBSwqP0YetvxRdIYjLERtzf7CFecU5scJ1nI7Ig.oM1oqsxdQWNOX-dTFxzGJ55un_8ulQ1ypXQMtxwlt8Qg.JPEG/image-hg-agm70-image-replacement-01-01.jpg?type=s3",
-      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 시동이 아니라 배터리 겉모습 때문에 연락을 주셨습니다 안녕하세요. 일등밧데리입니다. 자동차배터리는 보통 시동이 걸리지 않을 때 교체를 생각하시지만, 이번에는 조금 다른 이유로 연락을 받았습니다. 인천 연수구 동춘동에서 2015년식 현대 그랜저HG를 운행하시는 고객님께서 배터리 겉면이 부풀어 보인다며 교체를 문의하셨습니다. 배터리 케이스에 평소와 다른 모양이 보인다면 단순히 오래 사용해서 그런 것이라고 넘겨서는 안 됩니다. 실제 변형이 발생한 상태라면 안전과 관련된 문제일 수 있기 때문입니다. 고객님께.......",
-      "tags": [
-        "인천배터리",
-        "인천출장배터리",
-        "인천자동차배터리",
-        "연수구배터리",
-        "연수구출장배터리",
-        "동춘동배터리",
-        "동춘동출장배터리",
-        "그랜저배터리",
-        "그랜저hg배터리",
-        "그랜저배터리가격",
-        "그랜저배터리교체비용",
-        "그랜저hg배터리교체",
-        "델코agm70",
-        "agm70",
-        "델코agm70비용",
-        "일등밧데리"
-      ],
-      "thumbnailStatus": "downloaded",
-      "thumbnailError": "",
-      "sources": [],
-      "facts": {
-        "manufacturer": "현대",
-        "manufacturers": [
-          {
-            "id": "hyundai",
-            "name": "현대"
-          }
-        ],
-        "vehicle": "그랜저",
-        "vehicles": [
-          {
-            "manufacturerId": "hyundai",
-            "manufacturerName": "현대",
-            "vehicleName": "그랜저",
-            "displayName": "그랜저",
-            "urlPath": "/car-battery/hyundai/grandeur.html",
-            "matchedAlias": "그랜저",
-            "specificity": "detail"
-          }
-        ],
-        "detailModels": [
-          {
-            "manufacturerId": "hyundai",
-            "manufacturerName": "현대",
-            "vehicleName": "그랜저",
-            "displayVehicleName": "그랜저",
-            "label": "HG",
-            "slug": "hg",
-            "urlPath": "/car-battery/hyundai/grandeur/hg.html",
-            "vehicleUrlPath": "/car-battery/hyundai/grandeur.html",
-            "matchedAlias": "HG"
-          }
-        ],
-        "vehicleHierarchy": [
-          {
-            "manufacturerId": "hyundai",
-            "manufacturerName": "현대",
-            "vehicleName": "그랜저",
-            "displayName": "그랜저",
-            "urlPath": "/car-battery/hyundai/grandeur.html",
-            "specificity": "detail"
-          }
-        ],
-        "actualWorkLocation": {
-          "level": "neighborhood",
-          "areaId": "incheon",
-          "areaName": "인천",
-          "regionId": "yeonsu-gu",
-          "regionName": "연수구",
-          "neighborhoodName": "동춘동",
-          "label": "인천 연수구 동춘동",
-          "urlPath": "/area/incheon/yeonsu-gu/dongchun-dong.html"
-        },
-        "mentionedServiceAreas": [],
-        "areas": [
-          {
-            "areaId": "incheon",
-            "areaName": "인천",
-            "label": "인천",
-            "urlPath": "/area/incheon/"
-          }
-        ],
-        "regions": [
-          {
-            "areaId": "incheon",
-            "areaName": "인천",
-            "regionId": "yeonsu-gu",
-            "regionName": "연수구",
-            "label": "인천 연수구",
-            "urlPath": "/area/incheon/yeonsu-gu.html",
-            "matchedAlias": "연수구"
-          }
-        ],
-        "neighborhoods": [
-          {
-            "areaId": "incheon",
-            "areaName": "인천",
-            "regionId": "yeonsu-gu",
-            "regionName": "연수구",
-            "name": "동춘동",
-            "legalName": "인천광역시 연수구 동춘동",
-            "label": "인천 연수구 동춘동",
-            "urlPath": "/area/incheon/yeonsu-gu/dongchun-dong.html",
-            "matchedAlias": "동춘동"
-          }
-        ],
-        "batteryModels": [
-          "AGM70"
-        ],
-        "symptoms": [
-          "교체",
-          "점검",
-          "코딩"
-        ],
-        "matchedPages": {
-          "vehicles": [
-            "/car-battery/hyundai/grandeur.html"
-          ],
-          "details": [
-            "/car-battery/hyundai/grandeur/hg.html"
-          ],
-          "manufacturers": [
-            "/car-battery/hyundai.html"
-          ],
-          "areas": [
-            "/area/incheon/"
-          ],
-          "regions": [
-            "/area/incheon/yeonsu-gu.html"
-          ],
-          "neighborhoods": [
-            "/area/incheon/yeonsu-gu/dongchun-dong.html"
-          ],
-          "batteries": [
-            "/battery/agm/",
-            "/battery/agm/price.html",
-            "/battery/agm/capacity/agm70.html",
-            "/battery/",
-            "/battery/car-battery.html",
-            "/battery/replacement.html",
-            "/battery/price.html",
-            "/battery/mobile-replacement.html"
-          ]
-        }
-      },
-      "summary": "연수구 동춘동에서 그랜저 HG AGM70 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,

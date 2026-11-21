@@ -52,7 +52,7 @@ jobs:
           fi
           START_SHA="$(git rev-parse HEAD)"
           export BLOG_CASE_AS_OF="$(node --input-type=module -e "import {getKstCalendarDate} from './tools/lib/blog-case-selection.js'; console.log(getKstCalendarDate())")"
-          BEFORE_POSTS="$(node -e "console.log((JSON.parse(require('fs').readFileSync('seo-data/blog-cases.json', 'utf8')).posts || []).length)")"
+          BEFORE_POSTS="$(node --input-type=module -e "import {loadBlogCases} from './tools/lib/blog-case-data.js'; console.log(loadBlogCases().length)")"
           BEFORE_NEWEST="$(node -e "const posts=JSON.parse(require('fs').readFileSync('seo-data/blog-cases.json','utf8')).posts||[]; console.log(posts.map(p=>p.publishedAt).filter(Boolean).sort().at(-1)||'')")"
           RSS_FETCHED="n/a"
           AFTER_POSTS="n/a"

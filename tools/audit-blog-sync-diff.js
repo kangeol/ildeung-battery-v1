@@ -10,6 +10,12 @@ const RUNTIME_ALLOWED_FILES = new Set([
 ]);
 
 const IMPLEMENTATION_ALLOWED_FILES = new Set([
+  "seo-data/blog-case-suppressions.json",
+  "tools/lib/blog-case-suppression.js",
+  "tools/lib/blog-case-data.js",
+  "tools/backfill-naver-blog-cases.js",
+  "tools/audit-blog-cases.js",
+  "tools/test-blog-case-suppression.js",
   "tools/lib/generated-file-writer.js",
   "tools/lib/canonical-generated-artifact.js",
   "tools/lib/canonical-generated-validation.js",

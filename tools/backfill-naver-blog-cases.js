@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
+import { filterSuppressedBlogCases } from "./lib/blog-case-suppression.js";
 import {
   BLOG_CASE_FALLBACK_IMAGE,
   BLOG_CASES_ASSET_DIR,
@@ -302,6 +303,8 @@ function mergePost(existingPost, incomingPost) {
 }
 
 function mergePosts(existingPosts, discoveredPosts) {
+  existingPosts = filterSuppressedBlogCases(existingPosts);
+  discoveredPosts = filterSuppressedBlogCases(discoveredPosts);
   const byKey = new Map();
   const urlToKey = new Map();
   const existingKeys = new Set();
