@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-20T10:21:03.800Z",
+  "syncedAt": "2026-11-21T10:05:40.581Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 3,
-    "preservedPreviousPosts": 485,
-    "duplicateRemoved": 47,
-    "thumbnailSuccess": 486,
+    "newPosts": 2,
+    "preservedPreviousPosts": 486,
+    "duplicateRemoved": 48,
+    "thumbnailSuccess": 488,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 438,
-    "vehicleMatches": 411,
-    "detailMatches": 98,
-    "regionMatches": 369,
-    "neighborhoodMatches": 306,
-    "batteryMatches": 368,
+    "manufacturerMatches": 440,
+    "vehicleMatches": 413,
+    "detailMatches": 99,
+    "regionMatches": 371,
+    "neighborhoodMatches": 308,
+    "batteryMatches": 370,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,347 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 369,
-    "actualRegionMatches": 369,
-    "actualNeighborhoodMatches": 306,
+    "actualAreaMatches": 371,
+    "actualRegionMatches": 371,
+    "actualNeighborhoodMatches": 308,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224485682079",
+      "title": "구로구 신도림동 2019년식 제네시스 G70 델코 AGM80 출장배터리교체 가격 및 비용 안내｜반복 점프 시동 시 확인할 사항",
+      "url": "https://blog.naver.com/kang10107/224485682079",
+      "publishedAt": "2026-11-21",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224485682079.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMjFfMTcx/MDAxNzk1MjIwMTk4NTQ5.-ICB8B8fjPFWTZM58tsfyTFoYXUJoYOEdqND4rg57UMg.wSgiK8WlC2Peupv3AXdMtxYsmGPk82kYtUrIptj-BnEg.JPEG/image-g70-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 서울 구로구 신도림동에서 진행한 2019년식 제네시스 G70 출장배터리교체 작업을 소개해 드리겠습니다. 이번 차량에는 델코 AGM80 배터리를 장착했으며, 배터리 등록 작업까지 함께 진행했습니다. 교체 비용은 19만원입니다. 자동차배터리가 방전돼 점프 시동을 받은 뒤에도 비슷한 문제가 반복된다면 배터리부터 교체해야 할지 고민하실 수 있는데요. 이럴 때는 단순히 배터리가 오래됐는지만 보는 것보다 충전 상태와 차량에서 전기를 공급하는 부분을 함께 확인하는 것이 중요합니다. 이.......",
+      "tags": [
+        "구로구배터리",
+        "구로구출장배터리",
+        "구로구자동차배터리",
+        "신도림동배터리",
+        "신도림동자동차배터리",
+        "신도림동출장배터리",
+        "제네시스배터리",
+        "제네시스배터리가격",
+        "제네시스g70배터리",
+        "제네시스g70배터리가격",
+        "제네시스g70배터리교체비용",
+        "델코agm80",
+        "agm80가격",
+        "agm80교체비용",
+        "agm80출장교체",
+        "출장배터리교체",
+        "출장배터리가격",
+        "자동차배터리가격",
+        "일등밧데리",
+        "배터리교체비용",
+        "일등밧데리출장"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "제네시스",
+        "manufacturers": [
+          {
+            "id": "genesis",
+            "name": "제네시스"
+          }
+        ],
+        "vehicle": "G70",
+        "vehicles": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "G70",
+            "displayName": "G70",
+            "urlPath": "/car-battery/genesis/g70.html",
+            "matchedAlias": "G70",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "genesis",
+            "manufacturerName": "제네시스",
+            "vehicleName": "G70",
+            "displayName": "G70",
+            "urlPath": "/car-battery/genesis/g70.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "seoul",
+          "areaName": "서울",
+          "regionId": "guro-gu",
+          "regionName": "구로구",
+          "neighborhoodName": "신도림동",
+          "label": "서울 구로구 신도림동",
+          "urlPath": "/area/seoul/guro-gu/sindorim-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "label": "서울",
+            "urlPath": "/area/seoul/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "guro-gu",
+            "regionName": "구로구",
+            "label": "서울 구로구",
+            "urlPath": "/area/seoul/guro-gu.html",
+            "matchedAlias": "구로구"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "seoul",
+            "areaName": "서울",
+            "regionId": "guro-gu",
+            "regionName": "구로구",
+            "name": "신도림동",
+            "legalName": "서울특별시 구로구 신도림동",
+            "label": "서울 구로구 신도림동",
+            "urlPath": "/area/seoul/guro-gu/sindorim-dong.html",
+            "matchedAlias": "신도림동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/genesis/g70.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/genesis.html"
+          ],
+          "areas": [
+            "/area/seoul/"
+          ],
+          "regions": [
+            "/area/seoul/guro-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/seoul/guro-gu/sindorim-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "구로구 신도림동에서 G70 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
+    {
+      "id": "224485676736",
+      "title": "인천 부평 부평동 2022년식 기아 쏘렌토 4세대 MQ4 2.2 디젤 델코 AGM80 출장배터리교체 가격 및 비용 안내｜한 번 방전된 배터리 계속 사용해도 될까요?",
+      "url": "https://blog.naver.com/kang10107/224485676736",
+      "publishedAt": "2026-11-21",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224485676736.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMjFfNzAg/MDAxNzk1MjE5NzYzNTk1.PVHTL2Nb68TDkMJLshrH_G3dKEjh0uO9-E8lee-vaMwg.dRsnOvzEN3JCODjxFLml2bIZ1st9jojGW2RPVKkmiiog.JPEG/image-4-2-2-agm80-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 배터리가 한 번 방전되면 무조건 교체해야 할까요? 안녕하세요. 일등밧데리입니다. 자동차배터리가 한 번 방전되면 계속 사용해도 괜찮을지 고민하게 됩니다. 특히 점프 시동으로 다시 엔진이 작동한다면 당장 교체할 필요가 없는 것 같기도 합니다. 하지만 방전됐다는 사실 하나만으로 배터리 수명이 끝났다고 판단하기는 어렵습니다. 반대로 시동이 다시 걸린다고 해서 배터리 상태가 정상이라고 확신할 수도 없고요. 오늘 소개할 차량은 인천 부평구 부평동에서 배터리 출장 교체를 진행한 2022년식 기아 쏘렌토 4세대 2.2 디.......",
+      "tags": [
+        "부평배터리",
+        "부평출장배터리",
+        "부평자동차배터리",
+        "부평자동차배터리교체",
+        "기아쏘렌토배터리",
+        "쏘렌토4세대배터리",
+        "쏘렌토4세대배터리교체",
+        "쏘렌토4세대",
+        "mq4배터리",
+        "쏘렌토mq4배터리교체",
+        "MQ4배터리가격",
+        "델코AGM80",
+        "AGM80",
+        "델코AGM80가격",
+        "델코AGM80교체비용",
+        "AGM80교체가격",
+        "일등밧데리",
+        "출장배터리교체비용",
+        "출장배터리가격",
+        "자동차배터리교체비용",
+        "자동차배터리출장교체",
+        "배터리교체비용",
+        "배터리가격"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "기아",
+        "manufacturers": [
+          {
+            "id": "kia",
+            "name": "기아"
+          }
+        ],
+        "vehicle": "쏘렌토",
+        "vehicles": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayName": "쏘렌토",
+            "urlPath": "/car-battery/kia/sorento.html",
+            "matchedAlias": "쏘렌토",
+            "specificity": "detail"
+          }
+        ],
+        "detailModels": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayVehicleName": "쏘렌토",
+            "label": "MQ4",
+            "slug": "mq4",
+            "urlPath": "/car-battery/kia/sorento/mq4.html",
+            "vehicleUrlPath": "/car-battery/kia/sorento.html",
+            "matchedAlias": "MQ4"
+          }
+        ],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "kia",
+            "manufacturerName": "기아",
+            "vehicleName": "쏘렌토",
+            "displayName": "쏘렌토",
+            "urlPath": "/car-battery/kia/sorento.html",
+            "specificity": "detail"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "incheon",
+          "areaName": "인천",
+          "regionId": "bupyeong-gu",
+          "regionName": "부평구",
+          "neighborhoodName": "부평동",
+          "label": "인천 부평구 부평동",
+          "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "label": "인천",
+            "urlPath": "/area/incheon/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "label": "인천 부평구",
+            "urlPath": "/area/incheon/bupyeong-gu.html",
+            "matchedAlias": "부평"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "incheon",
+            "areaName": "인천",
+            "regionId": "bupyeong-gu",
+            "regionName": "부평구",
+            "name": "부평동",
+            "legalName": "인천광역시 부평구 부평동",
+            "label": "인천 부평구 부평동",
+            "urlPath": "/area/incheon/bupyeong-gu/bupyeong-dong.html",
+            "matchedAlias": "부평동"
+          }
+        ],
+        "batteryModels": [
+          "AGM80"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/kia/sorento.html"
+          ],
+          "details": [
+            "/car-battery/kia/sorento/mq4.html"
+          ],
+          "manufacturers": [
+            "/car-battery/kia.html"
+          ],
+          "areas": [
+            "/area/incheon/"
+          ],
+          "regions": [
+            "/area/incheon/bupyeong-gu.html"
+          ],
+          "neighborhoods": [
+            "/area/incheon/bupyeong-gu/bupyeong-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm80.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "부평구 부평동에서 쏘렌토 MQ4 AGM80 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 1,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224484358017",
       "title": "성남 수정구 신흥동 2021년식 벤츠 GLB250 바르타 실버 AGM80 출장배터리교체 가격 및 비용 안내｜매일 탈 때 괜찮다가 며칠 세우면 방전이 걱정될 때",
