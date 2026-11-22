@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {approvedBmw2Rows,bmw2HtmlPaths} from './bmw2-approved-data.js';
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {inflateRawSync} from 'node:zlib';
@@ -26,6 +27,7 @@ export function assertMohaveThumbnail(bytes=fs.readFileSync('assets/seo/vehicle/
 }
 export function assertMohaveProtectedPaths(diffPaths){
  const allowed=new Set(['data/kia.json','seo-data/smart-consult-vehicles.json','seo-data/vehicle-detail-groups.json','car-battery/index.html','car-battery/kia.html','car-battery/kia/mohave.html','sitemap.xml']);
+ for(const p of ['data/bmw.json',...bmw2HtmlPaths])allowed.add(p);
  for(const p of diffPaths.trim().split(/\r?\n/).filter(Boolean))assert.ok(allowed.has(p),`unapproved protected change: ${p}`);
  assertMohaveDataset();
  assertMohaveSitemap(fs.readFileSync('sitemap.xml'));
@@ -81,7 +83,7 @@ export function assertMohaveDataset(read=p=>JSON.parse(fs.readFileSync(p,'utf8')
  let count=0;
  for(const m of manufacturers){
   const p='data/'+m.file,current=read(p),before=old(p);
-  assert.deepEqual(current,m.id==='kia'?approvedMohaveRows(before):before,`${p}: exact approved Mohave delta only`);
+  assert.deepEqual(current,m.id==='kia'?approvedMohaveRows(before):m.id==='bmw'?approvedBmw2Rows(before):before,`${p}: exact approved Mohave/BMW 2 Series deltas only`);
   count+=current.length;
  }
  assert.equal(count,approvedVehicleCount);

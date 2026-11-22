@@ -65,7 +65,7 @@
     "year": "22년~현재",
     "fuel": "가솔린 4WD",
     "detailModel": "2시리즈 (G42)",
-    "defaultBattery": "AGM80",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },
@@ -75,7 +75,7 @@
     "year": "13~15년",
     "fuel": "가솔린",
     "detailModel": "2시리즈 (F22)",
-    "defaultBattery": "AGM80",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },
@@ -85,7 +85,7 @@
     "year": "13~15년",
     "fuel": "디젤",
     "detailModel": "2시리즈 (F22)",
-    "defaultBattery": "AGM80",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },
@@ -95,7 +95,7 @@
     "year": "25년~현재",
     "fuel": "가솔린 2WD",
     "detailModel": "2시리즈 그란쿠페 (F74)",
-    "defaultBattery": "AGM80",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },
@@ -105,7 +105,7 @@
     "year": "25년~현재",
     "fuel": "가솔린 4WD",
     "detailModel": "2시리즈 그란쿠페 (F74)",
-    "defaultBattery": "AGM80",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },
@@ -115,7 +115,7 @@
     "year": "20~25년",
     "fuel": "가솔린 2WD",
     "detailModel": "2시리즈 그란쿠페 (F44)",
-    "defaultBattery": "AGM80",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },
@@ -125,7 +125,7 @@
     "year": "20~25년",
     "fuel": "가솔린 4WD",
     "detailModel": "2시리즈 그란쿠페 (F44)",
-    "defaultBattery": "AGM80",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },
@@ -135,7 +135,7 @@
     "year": "20~25년",
     "fuel": "디젤 2WD",
     "detailModel": "2시리즈 그란쿠페 (F44)",
-    "defaultBattery": "AGM80",
+    "defaultBattery": "고객센터문의",
     "upgradeBattery": "",
     "status": "완료"
   },

@@ -1,4 +1,5 @@
 import {approvedVehicleCount,assertMohaveDataset,approvedMohaveRows} from './lib/mohave-approved-data.js';
+import {approvedBmw2Rows} from './lib/bmw2-approved-data.js';
 assertMohaveDataset();
 import {approvedSyncFiles} from './lib/blog-sync-approved-freeze.js';
 import {maskCaseBlocks} from './lib/blog-case-protection.js';
@@ -62,7 +63,7 @@ assert.equal(catalog.prices.AGM105,280000); // VARTA AGM95 now legitimately cost
 for(const path of ['js/smart-consult-prices.js','js/smart-consult-conversation.js','js/smart-consult.js'])assert.ok(!/270000|27만원/.test(fs.readFileSync(path,'utf8')),path);
 const baseline='da2e2c0f93e119d82123e5d63b868e30195c00b6';
 const git=args=>execFileSync('git',['-c','core.safecrlf=false',...args],{encoding:'utf8',maxBuffer:20e6});
-for(const m of manufacturers){const old=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='hyundai.json')old[40].defaultBattery='AGM60';if(m.file==='chevrolet.json'){old[30].defaultBattery='DIN74L';old[44].defaultBattery='AGM80';}assert.deepEqual(read(`data/${m.file}`),m.id==='kia'?approvedMohaveRows(old):old);}
+for(const m of manufacturers){const old=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='hyundai.json')old[40].defaultBattery='AGM60';if(m.file==='chevrolet.json'){old[30].defaultBattery='DIN74L';old[44].defaultBattery='AGM80';}assert.deepEqual(read(`data/${m.file}`),m.id==='kia'?approvedMohaveRows(old):m.id==='bmw'?approvedBmw2Rows(old):old);}
 const htmlChanges=git(['diff',baseline,'--name-only','--','*.html']).trim().split('\n').filter(p=>p&&p!=='index.html'&&!approvedSyncFiles.has(p));
 const generatedTraverseSeoPages=['battery/agm/capacity/agm80.html','battery/agm/capacity/agm95.html','battery/agm/index.html','car-battery/chevrolet/traverse.html'];
 const pricingPages=['car-battery/chevrolet/alpheon.html','car-battery/hyundai/santafe.html','car-battery/hyundai/santafe/tm.html','smart-consult/index.html'];

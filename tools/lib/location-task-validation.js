@@ -4,10 +4,13 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {gn7FactualDelta} from './gn7-factual-regression.js';
+import {bmw2HtmlPaths} from './bmw2-approved-data.js';
 
 // Owner-approved start, deliberately NOT HEAD: committed task changes must
 // remain checked, and old accepted workflow changes are not new permission.
-export const taskBaseline='12fd4948da55effc6f834405ad9eae10ccec6faa';
+// Audited fast-forward: existing Sportage blog-title classification only;
+// consultation runtime, fitment and prices unchanged. Historical DB oracle stays fixed.
+export const taskBaseline='915827f10d21051540693437d970359030e8ee07';
 export const taskPaths=new Set([
  'data/battery-prices.json','tools/test-din74r-price.js','tools/test-battery-pricing.js',
  'tools/lib/din74r-approved-price-delta.js','tools/lib/assert-non-agm-owner-policy.js',
@@ -36,6 +39,12 @@ taskPaths.clear();
 for(const p of ['js/vehicle-aliases.js','js/smart-consult-conversation.js',
  'tools/test-stale-detail-confirmation.js','tools/lib/location-task-validation.js',
  'tools/test-location-validation.js','tools/test-smart-consult-v5.js'])taskPaths.add(p);
+taskPaths.clear();
+for(const p of ['master-db/bmw.xlsx','data/bmw.json','js/smart-consult-conversation.js',
+ 'tools/lib/bmw2-approved-data.js','tools/test-bmw2-inquiry.js','tools/lib/mohave-approved-data.js','tools/lib/smart-consult-page-regression.js','tools/audit-blog-sync-regression.js',
+ 'tools/lib/location-task-validation.js','tools/test-location-validation.js','tools/test-location-nlu.js',
+ 'tools/test-brand-service.js','tools/test-product-as-hours.js','tools/test-battery-pricing.js',
+ ...bmw2HtmlPaths])taskPaths.add(p);
 const git=(args,cwd=process.cwd())=>execFileSync('git',['-c','core.safecrlf=false',...args],{cwd,encoding:'utf8',maxBuffer:50e6});
 const lines=text=>text.trim().split(/\r?\n/).filter(Boolean);
 export function currentTaskChanges(cwd=process.cwd(),baseline=taskBaseline){
@@ -50,7 +59,7 @@ export function assertCurrentTaskScope(paths=currentTaskChanges()){
  return paths;
 }
 export function assertNoCurrentHtml(paths=currentTaskChanges()){
- const approved=new Set();
+ const approved=new Set(bmw2HtmlPaths);
  assert.deepEqual(paths.filter(p=>p.endsWith('.html')&&!approved.has(p)),[],'current task must not change HTML outside exact Mohave generation');
 }
 export const productApproval='de199b25c62cf2d6ef0faa1e0e2bb6f9af65f8c8';

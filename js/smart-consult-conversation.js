@@ -1345,7 +1345,11 @@ function conversationCore(previous, text, records, localities = [], priceCatalog
 
   const explicitFamilyAnswer=state.previousQuestion?.field==="vehicle" && entities.matches.length===1 && normalizeText(text)===normalizeText(entities.matches[0].vehicle);
   const canonicalNamedWithYear=entities.matches.length===1 && entities.year && normalizeText(text).includes(normalizeText(entities.matches[0].manufacturerName)) && normalizeText(text).includes(normalizeText(entities.matches[0].vehicle));
-  const shorthand = entities.shorthand && !explicitFamilyAnswer && !canonicalNamedWithYear && entities.matches.length === 1 ? entities.matches[0] : null;
+  // A unique manufacturer-qualified family whose entire DB requires inquiry
+  // can route to the center directly; this does not confirm any fitment.
+  const inquiryFamily=entities.matches.length===1 && entities.manufacturer===entities.matches[0].manufacturerId
+    && entities.matches[0].records.every(r=>r.defaultBattery==='고객센터문의');
+  const shorthand = entities.shorthand && !explicitFamilyAnswer && !canonicalNamedWithYear && !inquiryFamily && entities.matches.length === 1 ? entities.matches[0] : null;
   if (shorthand) {
     if (state.selectedVehicleKey && state.selectedVehicleKey !== shorthand.key) {
       state = {...createConversationState(),brand:state.brand,originalIntent:state.originalIntent,priceIntent:state.priceIntent,serviceIntent:state.serviceIntent,symptom:state.symptom,customerGoal:state.customerGoal,turnIndex:state.turnIndex,region:state.region,location:state.location,city:state.city,district:state.district,lastIntent:intent}; output.state=state;
@@ -1597,6 +1601,10 @@ function conversationCore(previous, text, records, localities = [], priceCatalog
     if(priceCatalog) { quote(state.result.defaultBattery); output.actions=["phone","stores"]; }
     else if(state.priceIntent) { say(variant("price",state.turnIndex)); output.actions=["phone","stores"]; }
     return output;
+  }
+  if(rows.every(row=>row.defaultBattery==='고객센터문의')){
+    say(`${state.manufacturerName} ${state.vehicleFamily}는 차량의 정확한 배터리 규격과 교체가격을 확인해야 합니다. 고객센터 ${PHONE_LABEL}로 문의해 주시면 안내해 드리겠습니다.`);
+    output.actions=['phone'];return output;
   }
   const next=vehicleCandidateOptions(records,state);
   if(next){

@@ -11,6 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, "..");
 const SITE_ORIGIN = "https://battery1.co.kr";
+let bmw2Validated=false;
 
 const EXPECTED = {
   dbRows: approvedVehicleCount,
@@ -461,6 +462,10 @@ function main() {
       return !(addition || rename);
     }).length,
     protectedDbChanged: gitChangedFiles(["master-db", "data"]).filter(file=>{
+      if(file==='data/bmw.json'||file==='master-db/bmw.xlsx'){
+        if(!bmw2Validated){execFileSync(process.execPath,['tools/test-bmw2-inquiry.js'],{cwd:ROOT_DIR});bmw2Validated=true;}
+        return false; // Exact eight cells, native workbook parts, all other rows/prices checked above.
+      }
       if(file==='data/kia.json'){assertMohaveDataset();return false;}
       if(file==='master-db/kia.xlsx'){assertMohaveWorkbook();return false;}
       if(file==='data/battery-prices.json')return false; // Validated exhaustively by test-battery-pricing.js.

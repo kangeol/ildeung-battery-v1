@@ -1,4 +1,5 @@
 import {approvedVehicleCount,assertMohaveDataset} from './lib/mohave-approved-data.js';
+import {approvedBmw2Rows} from './lib/bmw2-approved-data.js';
 import {approvedMohaveRows} from './lib/mohave-approved-data.js';
 assertMohaveDataset();
 import {approvedSyncFiles,canonical} from './lib/blog-sync-approved-freeze.js';
@@ -81,7 +82,8 @@ const exactApprovedGeneratedSnapshot=changed.filter(p=>p===approvedGroupsPath&&a
 const traversePath='data/chevrolet.json';
 assertApprovedTraverseData(read(traversePath),JSON.parse(execFileSync('git',['show',`${approvedAreaBaseline}:${traversePath}`],{encoding:'utf8'})));
 assert.deepEqual(read('data/kia.json'),approvedMohaveRows(JSON.parse(execFileSync('git',['show',`${approvedAreaBaseline}:data/kia.json`],{encoding:'utf8'}))));
-assert.equal(changed.filter(p=>!approvedSyncFiles.has(p)&&!exactApprovedGeneratedSnapshot.includes(p)&&/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&p!==traversePath&&p!=='data/kia.json'&&p!=='data/battery-prices.json'&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
+assert.deepEqual(read('data/bmw.json'),approvedBmw2Rows(JSON.parse(execFileSync('git',['show',`${approvedAreaBaseline}:data/bmw.json`],{encoding:'utf8'}))));
+assert.equal(changed.filter(p=>!approvedSyncFiles.has(p)&&!exactApprovedGeneratedSnapshot.includes(p)&&/^(data|seo-data|car-battery|areas|blog)\//.test(p)&&p!==traversePath&&p!=='data/kia.json'&&p!=='data/bmw.json'&&p!=='data/battery-prices.json'&&!(process.argv.includes('--faq')&&p==='data/consult-service-policy.json')).length,0,'canonical/SEO freeze');
 const evidence={canonicalCases,aliasCases,totalCases:cases,areas:areas.length,rows:records.length,gates,failures,transcripts,changedHTML:html};
 const evidenceDir=process.argv.includes('--faq')?'docs/evidence/final-faq/location':'docs/evidence/location-nlu';
 fs.mkdirSync(evidenceDir,{recursive:true});fs.writeFileSync(`${evidenceDir}/matrix.json`,JSON.stringify(evidence,null,2)+'\n');

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import {approvedBmw2Html,bmw2Baseline,bmw2HtmlPaths} from './bmw2-approved-data.js';
 import { execFileSync } from "node:child_process";
 import { launcherMarkup } from "./smart-consult-launcher.js";
 import { gn7FactualDelta } from './gn7-factual-regression.js';
@@ -15,7 +16,8 @@ export function pageBaseline(page) {
     // Reconstruct only the historical CTA delta; retain all audited blog bytes.
     const id=page.replace(/^car-battery\//,'').replace(/\.html$/,'');
     const line=`              <a class="btn secondary smart-consult-link" href="/smart-consult/?vehicleId=${encodeURIComponent(id)}">이 차량 스마트 상담하기</a>\n`;
-    return lf(git(['show',`${postSyncBaseline}:${page}`])).replace(launcherMarkup,'').replace('</main>',line+'</main>');
+    const source=bmw2HtmlPaths.includes(page)?bmw2Baseline:postSyncBaseline;
+    return lf(git(['show',`${source}:${page}`])).replace(launcherMarkup,'').replace('</main>',line+'</main>');
   }
   return lf(git(["show",`${AUTHORIZED_PAGE_BASELINE}:${page}`]));
 }
@@ -31,7 +33,7 @@ export function assertConsultPage(actual, before, id) {
   const approved=approvedSyncFiles.has(page);
   if(approved)assertApprovedSyncContent(page,html);
   const protectedHtml=value=>approved?maskCaseBlocks(value):value;
-  assert.equal(protectedHtml(html.replace(launcherMarkup,"")),protectedHtml(gn7FactualDelta(lf(before).replace(line,""),id)),`${id}: protected full page differs from authorized production baseline`);
+  assert.equal(protectedHtml(html.replace(launcherMarkup,"")),protectedHtml(approvedBmw2Html(gn7FactualDelta(lf(before).replace(line,""),id),id)),`${id}: protected full page differs from authorized production baseline`);
 }
 export function assertNegativeMutations(actual, before, id) {
   const html=lf(actual);

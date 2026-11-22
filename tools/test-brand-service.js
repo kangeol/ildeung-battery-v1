@@ -1,4 +1,5 @@
 import './lib/blog-sync-approved-freeze.js';
+import {approvedBmw2Rows} from './lib/bmw2-approved-data.js';
 import {approvedMohaveRows} from './lib/mohave-approved-data.js';
 import {approvedDin74rPrices} from './lib/din74r-approved-price-delta.js';
 import {assertHistoricalProductHtml,assertNoCurrentHtml,assertApprovedTraverseData} from './lib/location-task-validation.js';
@@ -93,7 +94,7 @@ for(const row of rows)for(const brand of ['','DELKOR','VARTA']){
  if(/또는|\//.test(row.defaultBattery))assert.equal(o.state.confirmedBattery,null);
  massCases++;
 }
-for(const m of manufacturers){const expected=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='chevrolet.json'){expected[30].defaultBattery='DIN74L';assertApprovedTraverseData(read(`data/${m.file}`),expected);}else assert.deepEqual(read(`data/${m.file}`),m.id==='kia'?approvedMohaveRows(expected):expected);}
+for(const m of manufacturers){const expected=JSON.parse(git(['show',`${baseline}:data/${m.file}`]));if(m.file==='chevrolet.json'){expected[30].defaultBattery='DIN74L';assertApprovedTraverseData(read(`data/${m.file}`),expected);}else assert.deepEqual(read(`data/${m.file}`),m.id==='kia'?approvedMohaveRows(expected):m.id==='bmw'?approvedBmw2Rows(expected):expected);}
 const htmlChanged=assertHistoricalProductHtml(baseline);
 assertNoCurrentHtml();
 assert.equal(fs.readFileSync('smart-consult/index.html','utf8').replace(/\r\n/g,'\n'),git(['show',`${baseline}:smart-consult/index.html`]).replace(/\r\n/g,'\n').replace('?v=price-v1','?v=brand-query-v1').replace('/css/smart-consult.css?v=ai-mobile-v1','/css/smart-consult.css?v=consult-ui-v1'));
