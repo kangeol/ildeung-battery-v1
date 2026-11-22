@@ -3392,11 +3392,11 @@
             "manufacturerName": "기아",
             "vehicleName": "스포티지",
             "displayVehicleName": "스포티지",
-            "label": "QL",
-            "slug": "ql",
-            "urlPath": "/car-battery/kia/sportage/ql.html",
+            "label": "NQ5",
+            "slug": "nq5",
+            "urlPath": "/car-battery/kia/sportage/nq5.html",
             "vehicleUrlPath": "/car-battery/kia/sportage.html",
-            "matchedAlias": "QL"
+            "matchedAlias": "스포티지 5세대"
           }
         ],
         "vehicleHierarchy": [
@@ -3465,7 +3465,7 @@
             "/car-battery/kia/sportage.html"
           ],
           "details": [
-            "/car-battery/kia/sportage/ql.html"
+            "/car-battery/kia/sportage/nq5.html"
           ],
           "manufacturers": [
             "/car-battery/kia.html"
@@ -3491,7 +3491,7 @@
           ]
         }
       },
-      "summary": "수원시 송죽동에서 스포티지 QL AGM80 배터리 교체 실제 작업 사례입니다.",
+      "summary": "수원시 송죽동에서 스포티지 NQ5 AGM80 배터리 교체 실제 작업 사례입니다.",
       "matchConfidence": {
         "manufacturer": 1,
         "vehicle": 1,

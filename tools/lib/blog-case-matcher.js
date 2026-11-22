@@ -681,6 +681,25 @@ function matchDetails(textLoose, vehicleMatches, index) {
   return matched;
 }
 
+// A model-scoped ordinal in the title is stronger evidence than stale tags.
+// Deliberately limited to Sportage 5th generation; a model year alone is not evidence.
+function preferSportageTitleGeneration(title, vehicles, details, index) {
+  const vehicleTitle = title.split(/출장배터리교체|[｜|:：]/, 1)[0];
+  const alias = /(?:스포티지\s*5\s*세대|(?<![0-9])5\s*세대\s*스포티지)/.exec(vehicleTitle)?.[0];
+  if (!alias) return details;
+  const vehicle = vehicles.find((item) => item.manufacturerId === "kia" && item.vehicleName === "스포티지");
+  if (!vehicle) return details;
+  // Do not resolve a title that explicitly names competing generations itself.
+  const titleDetails = matchDetails(normalizeLoose(vehicleTitle), [vehicle], index);
+  if (titleDetails.some((item) => item.slug !== "nq5")) return details;
+  const nq5 = matchDetails("nq5", [vehicle], index)[0];
+  if (!nq5) return details;
+  return [
+    ...details.filter((item) => item.vehicleUrlPath !== vehicle.urlPath),
+    { ...nq5, matchedAlias: alias }
+  ];
+}
+
 function findGenericServiceAreaMentions(text, index) {
   const normalized = normalizeText(text);
   const genericMatches = GENERIC_SERVICE_AREA_PATTERNS.some((pattern) => {
@@ -1030,7 +1049,7 @@ export function extractFactsFromPost(post, index = createBlogCaseIndex()) {
   const textLoose = normalizeLoose(text);
   const explicitManufacturers = matchManufacturers(textLoose, index);
   const vehicles = matchVehicles(text, textLoose, explicitManufacturers, index);
-  const detailModels = matchDetails(textLoose, vehicles, index);
+  const detailModels = preferSportageTitleGeneration(title, vehicles, matchDetails(textLoose, vehicles, index), index);
   const vehiclesWithSpecificity = applyVehicleSpecificity(vehicles, detailModels);
   const manufacturers = mergeInferredManufacturers(explicitManufacturers, vehiclesWithSpecificity, detailModels, index);
   const {
