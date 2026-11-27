@@ -3,7 +3,7 @@
   "blogId": "kang10107",
   "sourceUrl": "https://blog.naver.com/kang10107",
   "rssUrl": "https://rss.blog.naver.com/kang10107.xml",
-  "syncedAt": "2026-11-26T11:22:38.287Z",
+  "syncedAt": "2026-11-27T11:15:42.946Z",
   "historicalBackfill": {
     "type": "naver-public-postlist",
     "archiveUrl": "https://blog.naver.com/PostList.naver?blogId=kang10107&categoryNo=0&currentPage=1",
@@ -479,17 +479,17 @@
   },
   "stats": {
     "fetchedPosts": 50,
-    "newPosts": 2,
-    "preservedPreviousPosts": 492,
-    "duplicateRemoved": 48,
-    "thumbnailSuccess": 494,
+    "newPosts": 1,
+    "preservedPreviousPosts": 494,
+    "duplicateRemoved": 49,
+    "thumbnailSuccess": 495,
     "thumbnailFallback": 0,
-    "manufacturerMatches": 446,
-    "vehicleMatches": 419,
+    "manufacturerMatches": 447,
+    "vehicleMatches": 420,
     "detailMatches": 103,
-    "regionMatches": 377,
-    "neighborhoodMatches": 313,
-    "batteryMatches": 376,
+    "regionMatches": 378,
+    "neighborhoodMatches": 314,
+    "batteryMatches": 377,
     "existingPosts": 50,
     "discoveredHistoricalPosts": 299,
     "historicalNewPosts": 249,
@@ -500,13 +500,164 @@
     "ambiguousPosts": 7,
     "oldestCachedDate": "2016-01-11",
     "newestCachedDate": "2026-08-26",
-    "actualAreaMatches": 377,
-    "actualRegionMatches": 377,
-    "actualNeighborhoodMatches": 313,
+    "actualAreaMatches": 378,
+    "actualRegionMatches": 378,
+    "actualNeighborhoodMatches": 314,
     "mentionedServiceAreaPosts": 45,
     "serviceAreaOnlyMentionsExcluded": 41
   },
   "posts": [
+    {
+      "id": "224494211662",
+      "title": "안양시 동안구 비산동 2020년식 BMW X1 xDrive18d 델코 AGM70 출장배터리교체 가격 및 비용 안내｜겨울철 운행이 줄어들 때 배터리 관리",
+      "url": "https://blog.naver.com/kang10107/224494211662",
+      "publishedAt": "2026-11-27",
+      "publishedAtBasis": "naver-rss-kst",
+      "thumbnail": "/assets/blog-cases/224494211662.webp",
+      "sourceThumbnailUrl": "https://blogthumb.pstatic.net/MjAyNjExMjdfMjM1/MDAxNzk1NzQxMzAyNTI3.Wv_tcG3uWMf_ELNASnzRNWLk2gPsAIQb3AMaZTWAko4g.cU6RkC0rt1RYah0OWgFsOKsrkbfZ0NiodUUGu5kqqVcg.JPEG/bmw-bmw-x1-xdrivce18d-agm70-image-replacement-01-01.jpg?type=s3",
+      "sourceExcerpt": "서울 / 경기 / 인천 출장배터리 국산차 . 수입차 전 차종 진단기 무료코딩. 기본점검 무료 고객센터 1644-9141 안녕하세요. 일등밧데리입니다. 오늘은 경기 안양시 동안구 비산동에서 진행한 2020년식 BMW X1 xDrive18d 배터리 출장 교체 작업을 소개해 드리겠습니다. 이번 차량에는 델코 AGM70을 장착하고 배터리 등록 작업까지 진행했습니다. 출장 교체 비용은 17만원입니다. 겨울에는 추운 날씨 때문에 자동차를 사용하는 횟수가 줄어드는 경우가 있습니다. 이럴 때 배터리 방전이 걱정된다면 두 가지를 구분해서 생각해보시면 좋습니다. 하나는 낮은 기온이 배터리에 미치는 영향이고, 다른 하나는 운행이 줄어들면서 배터리를 충전할 기.......",
+      "tags": [
+        "안양배터리",
+        "안양배터리교체",
+        "안양출장배터리",
+        "동안구배터리",
+        "비산동배터리교체",
+        "bmw배터리",
+        "bmwx1배터리",
+        "x1배터리가격",
+        "델코agm70",
+        "일등밧데리",
+        "출장배터리교체",
+        "배터리교체비용",
+        "자동차배터리교체"
+      ],
+      "thumbnailStatus": "downloaded",
+      "thumbnailError": "",
+      "sources": [],
+      "facts": {
+        "manufacturer": "BMW",
+        "manufacturers": [
+          {
+            "id": "bmw",
+            "name": "BMW"
+          }
+        ],
+        "vehicle": "BMW X1",
+        "vehicles": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X1",
+            "displayName": "BMW X1",
+            "urlPath": "/car-battery/bmw/x1.html",
+            "matchedAlias": "BMW X1",
+            "specificity": "vehicle"
+          }
+        ],
+        "detailModels": [],
+        "vehicleHierarchy": [
+          {
+            "manufacturerId": "bmw",
+            "manufacturerName": "BMW",
+            "vehicleName": "X1",
+            "displayName": "BMW X1",
+            "urlPath": "/car-battery/bmw/x1.html",
+            "specificity": "vehicle"
+          }
+        ],
+        "actualWorkLocation": {
+          "level": "neighborhood",
+          "areaId": "gyeonggi",
+          "areaName": "경기",
+          "regionId": "anyang-si",
+          "regionName": "안양시",
+          "neighborhoodName": "비산동",
+          "label": "경기 안양시 비산동",
+          "urlPath": "/area/gyeonggi/anyang-si/bisan-dong.html"
+        },
+        "mentionedServiceAreas": [],
+        "areas": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "label": "경기",
+            "urlPath": "/area/gyeonggi/"
+          }
+        ],
+        "regions": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "anyang-si",
+            "regionName": "안양시",
+            "label": "경기 안양시",
+            "urlPath": "/area/gyeonggi/anyang-si.html",
+            "matchedAlias": "안양시"
+          }
+        ],
+        "neighborhoods": [
+          {
+            "areaId": "gyeonggi",
+            "areaName": "경기",
+            "regionId": "anyang-si",
+            "regionName": "안양시",
+            "name": "비산동",
+            "legalName": "경기도 안양시 동안구 비산동",
+            "label": "경기 안양시 비산동",
+            "urlPath": "/area/gyeonggi/anyang-si/bisan-dong.html",
+            "matchedAlias": "비산동"
+          }
+        ],
+        "batteryModels": [
+          "AGM70"
+        ],
+        "symptoms": [
+          "방전",
+          "교체",
+          "점검",
+          "코딩"
+        ],
+        "matchedPages": {
+          "vehicles": [
+            "/car-battery/bmw/x1.html"
+          ],
+          "details": [],
+          "manufacturers": [
+            "/car-battery/bmw.html"
+          ],
+          "areas": [
+            "/area/gyeonggi/"
+          ],
+          "regions": [
+            "/area/gyeonggi/anyang-si.html"
+          ],
+          "neighborhoods": [
+            "/area/gyeonggi/anyang-si/bisan-dong.html"
+          ],
+          "batteries": [
+            "/battery/agm/",
+            "/battery/agm/price.html",
+            "/battery/agm/capacity/agm70.html",
+            "/battery/",
+            "/battery/car-battery.html",
+            "/battery/replacement.html",
+            "/battery/price.html",
+            "/battery/mobile-replacement.html"
+          ]
+        }
+      },
+      "summary": "안양시 비산동에서 BMW X1 AGM70 배터리 교체 실제 작업 사례입니다.",
+      "matchConfidence": {
+        "manufacturer": 1,
+        "vehicle": 1,
+        "detail": 0,
+        "actualLocation": 1,
+        "mentionedServiceArea": 0,
+        "region": 1,
+        "neighborhood": 1,
+        "battery": 1
+      }
+    },
     {
       "id": "224492618399",
       "title": "영등포구 영등포본동 2020년식 기아 K5 델코 AGM70 출장배터리교체 가격 및 비용 안내｜지난겨울보다 시동이 느려졌다면?",
